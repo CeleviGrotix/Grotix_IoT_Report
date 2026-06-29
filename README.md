@@ -496,7 +496,353 @@ Este segmento incluye a organizaciones que agrupan a múltiples productores con 
 
 Los resultados de la ENA 2022 muestran que el 81,8% de la producción agrícola nacional se destina a la venta, lo que impulsa a las asociaciones a buscar tecnologías que aseguren estándares de calidad. Si bien el acceso a crédito es de solo el 9,1%, el 91,3% de quienes lo solicitaron lograron obtenerlo, lo que posiciona a las asociaciones como entes con capacidad financiera para adquirir sistemas IoT mediante financiamiento formal. La asociatividad permite que el despliegue de Grotix escale masivamente, impactando en las unidades agropecuarias que generan ingresos brutos conjuntos que llegan a los 26780 millones de soles anuales.
 
+# CAPÍTULO II: Requirements Elicitation & Analysis
+## 2.1. Competidores
+
+El ecosistema de agricultura inteligente en la región está compuesto por actores que buscan resolver la ineficiencia hídrica mediante la digitalización del campo. Sin embargo, la mayoría de estas soluciones están diseñadas para la gran agroexportación, dejando un espacio estratégico para que Grotix se posicione como una alternativa accesible y especializada en la mediana y pequeña escala. Estos competidores han validado el uso de tecnologías IoT y Big Data, estableciendo los estándares que Grotix busca democratizar para el agricultor local.
+- **Hunter Agro (Hunter Perú):** Es la línea de agrotecnología de una corporación consolidada en seguridad y monitoreo. Su solución IoT se basa en un ecosistema de sensores inteligentes (suelo, clima, radiación y temperatura de hoja) y una plataforma en la nube diseñada específicamente para el sector agroexportador. Destacan por su capacidad de personalización mediante impresión 3D de componentes y su enfoque en tecnología limpia, ayudando a grandes fundos a prevenir enfermedades y optimizar el riego con hardware de alta gama.
+- **Space AG (Perú):** Es una startup peruana líder en la transformación digital de operaciones agrícolas. Su plataforma centraliza la información recolectada en campo a través de una aplicación móvil y vuelos de drones, permitiendo digitalizar procesos como el control de plagas y la estimación de cosechas. Aunque su fuerte es la gestión operativa de grandes hectáreas, su presencia en el mercado peruano es un referente directo para cualquier arquitectura de software que busque centralizar datos agrícolas.
+- **Kilimo (Argentina/Regional):** Esta startup se especializa en la gestión del riego mediante Inteligencia Artificial y Big Data. A diferencia de las soluciones basadas estrictamente en hardware, Kilimo utiliza datos satelitales y meteorológicos para enviar recomendaciones de riego directamente al dispositivo del agricultor. Su modelo de negocio se enfoca en generar "beneficios hídricos volumétricos" y sostenibilidad a gran escala, compitiendo con Grotix en el ámbito del soporte de decisiones estratégico y el ahorro de agua.
+
+### 2.1.1. Análisis Competitivo
+
+| Pregunta | Respuesta |
+|---|---|
+| ¿Por qué realizar este análisis? | Este análisis es fundamental para que Celevi identifique brechas de mercado y valide la diferenciación de Grotix frente a soluciones consolidadas. Al mapear las fortalezas y debilidades de la competencia, la startup puede posicionar su tecnología IoT como la opción más accesible y precisa para el sector desatendido, transformando riesgos en ventajas estratégicas que aseguren la escalabilidad del proyecto. |
+
+| Perfil | Criterio | Grotix | Hunter Agro | SpaceAG | Kilimo |
+|---|---|---|---|---|---|
+| Identificación | Nombre | Grotix | Hunter Agro | SpaceAG | Kilimo |
+| Identificación | Logo | <img src="https://imgur.com/1MiRLSx.png"> | <img src="https://imgur.com/GF45cgH.png"> | <img src="https://imgur.com/ryqU4x8.png"> | <img src="https://imgur.com/qnHh0C0.png"> |
+| Perfil | Overview | Es una plataforma de agricultura inteligente para democratizar la tecnología de precisión en el agro peruano. Se enfoca en productores independientes y asociaciones agrarias, facilitando un sistema de riego automatizado y escalable basado en una arquitectura IoT centralizada. | Es la división tecnológica de Hunter Perú, orientada a la agroexportación de gran escala. Ofrece un ecosistema integral de sensores y software para el monitoreo de alta precisión de variables críticas como clima, radiación y salud foliar. | Startup peruana especializada en la digitalización de operaciones agrícolas mediante una plataforma que centraliza datos de campo, uso de drones y aplicaciones móviles para optimizar procesos como el control de plagas y estimación de cosechas. | Empresa regional de base tecnológica que utiliza Big Data e Inteligencia Artificial para la gestión del riego. Se apoya en datos meteorológicos y satelitales para enviar recomendaciones sin necesidad de hardware en campo. |
+| Ventaja competitiva | ¿Qué valor ofrece a los clientes? | Ofrece precisión técnica local a bajo costo mediante sensores de humedad en terreno. Su valor reside en la simplicidad de su interfaz y en un modelo accesible para el agricultor que no cuenta con gran capital, asegurando sostenibilidad y cumplimiento de los ODS. | Resalta por su robustez corporativa y el uso de hardware de alta gama personalizable (impresión 3D). Su principal valor es la prevención de enfermedades y el soporte técnico de una marca consolidada en seguridad y monitoreo. | Posee una fuerte capacidad de gestión operativa masiva. Su ventaja competitiva es la integración de drones y software móvil que permite a los grandes fundos tener una “vista aérea” y administrativa total de sus hectáreas en una sola herramienta. | Ofrece una solución de “cero hardware”, lo que elimina costos de mantenimiento de sensores. Su propuesta de valor se centra en la facilidad de implementación inmediata y el ahorro volumétrico de agua basado en modelos climáticos regionales. |
+| Perfil de marketing | Mercado objetivo | Pequeños y medianos agricultores independientes y asociaciones agrarias en vías de tecnificación. Se dirige a productores que buscan optimizar recursos sin inversiones prohibitivas y que están alineados con programas de sostenibilidad y ODS. | Grandes empresas agroexportadoras y corporaciones agrícolas con operaciones de alta intensidad. Su cliente busca tecnología de punta, soporte corporativo y personalización técnica para fundos de gran escala. | Gerentes de operaciones y administradores de fundos extensos que necesitan digitalizar la logística de campo. Su mercado es la gran agroindustria que maneja cientos de trabajadores y diversas variedades de cultivos. | Empresas agrícolas y corporaciones que buscan certificar su huella hídrica y sostenibilidad. Atiende a productores que prefieren soluciones de software puro sin la gestión de hardware físico en sus campos. |
+| Perfil de marketing | Estrategias de marketing | Marketing de impacto social y educativo. Se apoya en alianzas, ferias tecnológicas y centros de innovación. Utiliza demostraciones de campo y casos de éxito locales para generar confianza en la efectividad del ahorro hídrico. | Estrategia de ventas B2B directa y relacional. Participación en ferias tecnológicas internacionales y marketing de autoridad, resaltando la robustez de sus dispositivos y su capacidad de fabricación a medida. | Inbound marketing enfocado en la gestión de datos. Ofrecen webinars técnicos y consultorías sobre digitalización agrícola, posicionándose como los líderes en la “oficina digital” para el campo peruano. | Marketing digital basado en resultados y sostenibilidad (ESG). Su comunicación se centra en el ahorro volumétrico de agua medible y en la facilidad de implementar IA para mejorar el ROI sin instalar sensores. |
+| Perfil de producto | Productos y servicios | Sistema integral que combina nodos de sensores IoT (humedad/suelo) con una plataforma centralizada de monitoreo. Ofrece automatización de riego basada en umbrales personalizados y soporte técnico remoto. | Ecosistema de hardware de alta gama (sensores climáticos, radiación, hoja) integrado a una plataforma en la nube. Incluye mantenimiento preventivo y personalización de piezas mediante impresión 3D. | Software de gestión operativa (SaaS) que integra datos de campo, uso de drones y gestión de personal. Ofrece digitalización de cuadernos de campo y control de plagas/cosechas. | Software de inteligencia climática basado en Big Data. Proporciona recomendaciones de riego semanales y reportes de huella hídrica sin necesidad de instalación de hardware. |
+| Perfil de producto | Precios y costos | Costo de hardware accesible (pago único inicial) y una cuota mensual por el uso y soporte de la plataforma de datos. | Inversión inicial de alto capital (CAPEX) por la adquisición del hardware robusto y contratos de servicio anuales por soporte y analítica de datos a medida. | Suscripción mensual o anual basada en el número de hectáreas gestionadas. Incluye costos adicionales por servicios especializados como vuelos de drones o consultoría. | Suscripción por servicio (SaaS) basada en hectáreas y tipo de cultivo. Al no usar hardware, se enfoca en un costo operativo directo (OPEX) por el soporte de decisiones. |
+| Perfil de producto | Canales de distribución (Web y/o Móvil) | Híbrido: Aplicación móvil y web para el control en campo y landing page para distribución del producto. | B2B Directo: Consultoría técnica presencial, portal web corporativo para visualización de datos y ejecutivos de cuenta especializados. | Digital: Plataforma web robusta y aplicación móvil diseñada para trabajadores de campo (offline/online) y gestores de flota. | 100% Digital: Plataforma web y notificaciones vía móvil o correo electrónico. Su distribución es global/regional debido a su naturaleza de software puro. |
+| Análisis FODA o SWOT | Fortalezas | **Enfoque Dual Único:** Capacidad de atender tanto la rentabilidad privada (ODS 2) como el bienestar público (ODS 3).<br><br>**Precisión Local:** Uso de sensores en terreno que garantizan la calidad del cultivo para exportación.<br><br>**Tecnología avanzada:** Mezcla de sensores con inteligencia artificial, microcontroladores y supervisión remota. | Cuentan con una infraestructura de postventa en todo el Perú. Sus equipos tienen certificaciones industriales que los grandes agroexportadores exigen por temas de seguros y auditorías. | Su interfaz es de las mejores del mercado; es muy visual y fácil de usar para gerentes agrícolas. Han logrado centralizar datos que antes estaban dispersos en papeles. | Tienen una capacidad de escalamiento brutal. Pueden cerrar un contrato en Piura y otro en Ica el mismo día porque no tienen que enviar técnicos a instalar nada físico. |
+| Análisis FODA o SWOT | Oportunidades | **Licitaciones Públicas:** Alianzas con municipalidades para combatir la anemia mediante cultivos con riego controlado y nutritivo.<br><br>**Mercado de Exportación:** Creciente demanda de certificaciones de “uso eficiente del agua” para exportar a Europa/EE.UU.<br><br>**Estacionalidad:** El mercado peruano tiene periodos de estrés hídrico debido a condiciones climáticas.<br><br>**Demanda por certificaciones:** El mercado alimentario peruano requiere que sus proveedores cumplan con altos estándares de calidad. | Pueden absorber tecnologías emergentes comprando startups más pequeñas para integrarlas a su ecosistema corporativo. | El uso de IA para predecir plagas a través de fotos satelitales, lo cual es muy atractivo para el segmento exportador de monocultivos. | Venta de bonos de agua y certificados de sostenibilidad hídrica a empresas que cotizan en bolsa. |
+| Análisis FODA o SWOT | Debilidades | **Curva de Implementación:** El tiempo que toma coordinar con entidades públicas (burocracia municipal).<br><br>**Escalabilidad Inicial:** Necesidad de un equipo técnico para mantenimiento en regiones diversas. | **Incompatibilidad con el Sector Público:** Su modelo de negocio se basa en márgenes altos por equipo. Para una municipalidad que busca combatir la anemia en 50 comunidades, el presupuesto de Hunter resultaría inviable, ya que no están diseñados para la “tecnología social” de bajo costo. | **Falta de uso de recursos del suelo:** Su fuerte es lo aéreo. Sin embargo, para cumplir con el ODS 3, se requiere un monitoreo químico y de humedad del suelo constante para asegurar la densidad nutricional del cultivo. Space AG ve la planta “por fuera”, pero Grotix la entiende “desde la raíz”. | **Desconfianza Técnica Local:** En regiones con orografía compleja (como la sierra peruana, donde las municipalidades combaten la anemia), los modelos climáticos generales fallan. El agricultor que exporta necesita la certeza del sensor en su tierra, no un cálculo basado en una estación meteorológica a 20 km de distancia. |
+| Análisis FODA o SWOT | Amenazas | **Inestabilidad Política:** Cambios de gestión en municipalidades que puedan pausar proyectos de salud alimentaria.<br><br>**Brecha Digital:** Resistencia inicial de agricultores tradicionales a depender de una app para exportar. | La obsolescencia de hardware. Al fabricar sus propios sensores, una innovación en componentes más baratos y precisos (como los que usa Grotix) puede hacer que sus equipos caros se vean como “tecnología del pasado”. | Dependencia de terceros. Si los proveedores de imágenes satelitales o drones suben sus costos, su modelo de suscripción se encarece, alejándolos aún más del mediano productor. | Al ser un algoritmo cerrado, si el sistema recomienda regar y el cultivo se estresa, el agricultor pierde la confianza totalmente al no haber un sensor físico que respalde el dato. |
+
+### 2.1.2. Estrategias y tácticas frente a competidores
+
+#### Estrategia de Democratización Tecnológica (B2C)
+**Objetivo:** Captar al pequeño agricultor independiente mediante un equilibrio entre propiedad del hardware y servicios inteligentes en la nube.
+
+**Modelo Híbrido "Hardware-as-a-Service" (HaaS):** Ofrecer el kit de sensores a un precio de costo (pago único) vinculado a una suscripción mensual que habilita las funciones de Inteligencia Artificial y el Riego Automático Adaptativo.
+* **Fortaleza aprovechada:** Tecnología avanzada (Sensores + IA + Azure).
+* **Debilidad de la competencia aprovechada:** El modelo de Hunter Agro, donde el cliente debe pagar miles de dólares por adelantado. En Grotix, el agricultor "es dueño" de su equipo pero "se suscribe" a la inteligencia que lo hace funcionar.
+
+**Suscripción con "Garantía de Cosecha":** Posicionar la cuota mensual de soporte y datos no como un gasto operativo, sino como un seguro técnico que garantiza actualizaciones del modelo de IA y soporte remoto ante fallos.
+* **Fortaleza aprovechada:** Supervisión remota y soporte técnico.
+* **Amenaza mitigada:** La Brecha Digital; el agricultor paga la suscripción para que el equipo de Celevi vigile sus datos por él, reduciendo su miedo a equivocarse al usar la aplicación.
+
+**Interfaz de Micro-pagos o Prepago:** Evaluar una modalidad donde la suscripción solo se pague durante los meses de la campaña agrícola (agosto-diciembre), permitiendo que el agricultor no gaste dinero cuando su tierra está en descanso.
+* **Oportunidad aprovechada:** Flexibilidad ante la estacionalidad del agro peruano.
+* **Debilidad de la competencia aprovechada:** Los contratos anuales rígidos de SpaceAG o Kilimo, que obligan a pagar por hectárea incluso si el terreno no está sembrado.
+
+#### Estrategia de Valor Agregado por Inteligencia de Suelo
+**Objetivo:** Posicionarse frente a las asociaciones agrarias como la fuente de "la verdad en el campo".
+
+**Sistema de Certificación de Riego para Asociaciones:** Proveer reportes automatizados que las asociaciones puedan usar para certificar ante compradores internacionales que sus socios cumplen con estándares de sostenibilidad (ODS 3).
+* **Oportunidad aprovechada:** Creciente demanda de certificaciones para el Mercado de Exportación.
+* **Debilidad de competencia aprovechada:** La Desconfianza técnica que genera Kilimo al no tener sensores físicos; Grotix ofrece el respaldo del dato real en la raíz.
+
+#### Estrategia de Posicionamiento ODS
+**Objetivo:** Utilizar el cumplimiento de ODS como herramienta de marketing y reputación, no como canal de venta burocrático.
+
+**Sello "Cultivado con Grotix" para el consumidor final:** Ayudar a las asociaciones a etiquetar sus productos resaltando que su producción contribuye a la salud (ODS 3) y al ahorro de agua.
+* **Fortaleza aprovechada:** El impacto en el bienestar público.
+* **Debilidad de la competencia aprovechada:** La falta de propósito social de competidores meramente industriales, permitiendo que Grotix gane una Ventaja Competitiva emocional y reputacional.
+
+## 2.2. Entrevistas
+### 2.2.1. Diseño de Entrevistas
+Las entrevistas se adaptan a cada segmento con el fin de obtener información relevante para comprender sus necesidades y expectativas.
+#### Segmento Objetivo #1: Productores Independientes de Pequeña y Mediana Escala
+1. Para comenzar, ¿podría describir su trayectoria en la agricultura y qué cultivos representan el sustento principal de su campaña actual?
+2. ¿Cómo está compuesto su círculo familiar cercano y qué rol desempeña cada miembro en las decisiones o tareas diarias de la parcela?
+3. En su jornada diaria, ¿cuál es la tarea que le demanda mayor esfuerzo físico o preocupación mental, y cómo afecta esto su calidad de vida?
+4. ¿Cuáles son sus metas principales para su cosecha de este año y qué importancia tiene el éxito de esta producción para el futuro de su familia?
+5. ¿Qué criterios o señales físicas utiliza actualmente para determinar el momento exacto en que una semilla o planta necesita agua y qué tan seguro se siente de esa decisión?
+6. Cuéntenos sobre la última vez que una mala temporada de riego afectó sus planes personales o familiares; ¿qué fue lo que más le dolió de esa situación?
+7. ¿De qué manera integra actualmente el uso del teléfono móvil en sus actividades diarias dentro del campo?
+
+    a. Si lo utiliza: Basado en las aplicaciones que ya conoce, ¿qué características hacen que una herramienta le resulte fácil de usar y cuáles le generan tanta complicación que prefiere dejar de usarlas?
+
+    b. Si NO lo utiliza: ¿A qué factores atribuye el no utilizar su teléfono para el trabajo y de qué manera prefiere gestionar o registrar la información de sus cultivos hoy en día?
+8. Cuando se le presenta una plaga o un problema técnico que no sabe resolver, ¿a qué aplicaciones, redes sociales o contactos digitales acude primero para buscar consejo?
+9. ¿Qué factores o condiciones técnicas tendrían que cumplirse para que usted confíe plenamente en una herramienta que ejecute el riego de forma autónoma?
+10. ¿Ha evaluado anteriormente la posibilidad de invertir en sistemas para tecnificar sus parcelas? ¿Cuáles han sido los mayores impedimentos o riesgos identificados para concretar esa mejora?
+
+#### Segmento Objetivo #2: Asociaciones Agrarias y Cooperativas
+1. ¿Podría detallarnos su rol en la cadena productiva y qué trayectoria tiene trabajando como nexo entre los agricultores y los mercados finales?
+2. ¿De qué manera logra usted equilibrar el respeto por las costumbres tradicionales de los agricultores con la necesidad de introducir nuevas tecnologías para mejorar la competitividad? ¿Cuáles son las resistencias más comunes que ellos manifiestan?
+3. ¿Cómo es el proceso de supervisión que usted realiza para asegurar que los diversos productores con los que trabaja mantengan una calidad homogénea desde la siembra hasta la cosecha?
+4. ¿Cuáles son sus metas comerciales de venta o exportación para el próximo periodo y qué exigencias técnicas de calidad son innegociables para cumplirlas?
+5. ¿Qué estándares internacionales, certificaciones o instituciones agrarias son los que dictan hoy en día la pauta de calidad para los productos que usted comercializa?
+6. ¿Cuáles son las principales limitaciones o "vacíos de información" que enfrenta usted al intentar monitorear el progreso de las parcelas de forma remota o centralizada?
+7. ¿Podría describirnos una situación en la que la falta de control las parcelas haya comprometido un contrato de venta o la relación con un comprador importante?
+8. ¿A través de qué plataformas digitales o formatos de reporte suele demostrar usted a sus compradores que la producción cumple con estándares de sostenibilidad y riego eficiente?
+9. ¿Qué criterios específicos prioriza usted al momento de evaluar una inversión en tecnología o automatización para mejorar la producción de los agricultores bajo su gestión?
+10. En su experiencia trabajando con diversos productores, ¿cuáles son las resistencias más comunes que ellos manifiestan cuando se les propone cambiar su forma tradicional de gestionar el agua?
+
+### 2.2.2. Registro de Entrevistas
+
+#### Segmento Objetivo #1: Productores Independientes de Pequeña y Mediana Escala
+
+**Entrevistado N.º 1: Nicolás Medina**
+* **Edad:** 22
+* **Departamento:** Lima (Huaral)
+* **Estado civil:** Soltero
+* **Ocupación:** Productor de Agricultura Familiar
+
+<img src="https://i.imgur.com/pUlEqBZ.png">
+
+**Acerca de la entrevista:** 
+* **Link:** [Grotix 202610 - Entrevista 1 Segmento 1.mp4](https://upcedupe-my.sharepoint.com/:v:/g/personal/u202312287_upc_edu_pe/IQBi8fHpjrklQJWqd5vH3HuSAbegq-6E9EchsLHWzlhryQI?nav=eyJyZWZlcnJhbEluZm8iOnsicmVmZXJyYWxBcHAiOiJPbmVEcml2ZUZvckJ1c2luZXNzIiwicmVmZXJyYWxBcHBQbGF0Zm9ybSI6IldlYiIsInJlZmVycmFsTW9kZSI6InZpZXciLCJyZWZlcnJhbFZpZXciOiJNeUZpbGVzTGlua0NvcHkifX0&e=mJKUh4)
+* **Instante en el que inicia:** 0:00
+* **Duración:** 8:05
+
+Nicolás Medina es un joven agricultor de Huaral cuya familia mantiene una tradición agrícola centrada en cultivos de naranja, mandarina y manzana, además de productos para consumo personal como el maracuyá. Aunque sus padres han liderado la gestión de la parcela, Nicolás participa activamente en las tareas del campo, identificando la cosecha y el riego como las actividades de mayor exigencia física. Especialmente en verano, el traslado de mangueras y baldes bajo el sol representa un desgaste significativo que impacta directamente en su calidad de vida, sumado a la preocupación constante por el estado de las plantas.
+
+En cuanto a la gestión del agua, el entrevistado destaca que actualmente se guían por el paso del tiempo y la observación visual de las hojas para decidir cuándo regar. Sin embargo, este método empírico ha fallado anteriormente, como en el caso de su viña de maracuyá, la cual se perdió por un exceso de riego que detuvo la producción. Esta experiencia subraya una oportunidad crítica para la implementación de sensores de humedad que eviten el error humano y optimicen el suministro de agua.
+
+Respecto al uso de tecnología, Nicolás integra el teléfono móvil de forma funcional pero simplista, utilizando el calendario como una agenda para registrar fechas de riego y cosecha. Aunque ha intentado usar herramientas más complejas como Notion, las abandonó por considerarlas demasiado específicas o difíciles de configurar, lo que indica una clara preferencia por interfaces intuitivas y directas. Asimismo, utiliza Google Imágenes para diagnosticar plagas, aunque reconoce que no siempre obtiene resultados precisos o confiables.
+
+Finalmente, el interés por la automatización en su parcela está condicionado a la fiabilidad del sistema. Nicolás se muestra abierto a soluciones autónomas siempre que existan pruebas verídicas de su funcionamiento y programación. Un dato clave es que su familia ya ha realizado inversiones importantes en infraestructura, como la construcción de un pozo propio para no depender de la red pública, lo que demuestra que están dispuestos a invertir en tecnología si esta garantiza autonomía, reducción de costos y mejores resultados en la producción.
+
+**Entrevistado N.º 2: Leandro Machaca**
+* **Edad:** 26
+* **Departamento:** Oxapampa, Pasco
+* **Estado civil:** Soltero
+* **Ocupación:** Productor de agricultura familiar (5 años de trayectoria)
+
+<img src="https://imgur.com/in5V239.png">
+
+**Acerca de la entrevista:** 
+* **Link:** [Grotix 202610 - Entrevista 2 Segmento 1.mp4](https://upcedupe-my.sharepoint.com/:v:/g/personal/u202311157_upc_edu_pe/IQBxLrXh3NBsTJ9ClOpcbnJtAUEVsDl0JL8L7q44-nb9UuU?nav=eyJyZWZlcnJhbEluZm8iOnsicmVmZXJyYWxBcHAiOiJTdHJlYW1XZWJBcHAiLCJyZWZlcnJhbFZpZXciOiJTaGFyZURpYWxvZy1MaW5rIiwicmVmZXJyYWxBcHBQbGF0Zm9ybSI6IldlYiIsInJlZmVycmFsTW9kZSI6InZpZXcifX0%3D&e=6v4VeH)
+* **Instante en el que inicia:** 0:22
+* **Duración:** 12:48
+
+Leandro Machaca es un productor de Oxapampa que, junto a su familia, gestiona una unidad agrícola de mediana escala dedicada principalmente al cultivo de palta (Hass y Fuerte), granadilla y pituca. Con apenas cinco años en el sector y un año y medio de cosechas reales, Leandro se considera un "aprendiz" en la ciencia agrícola, delegando la administración a su madre mientras él y su padre supervisan las tareas de campo. Para ellos, el éxito de la campaña es crítico, ya que representa el 100% de los ingresos familiares, y su meta principal es alcanzar los estándares de calidad exigidos por las distribuidoras internacionales para evitar que su producto sea rechazado y vendido a bajo precio en el mercado local. En cuanto a la gestión fitosanitaria y de recursos, el entrevistado enfrenta el desafío de la falta de experiencia técnica.
+
+Actualmente, ante cualquier sospecha de plaga o deficiencia, debe trasladar físicamente muestras de hojas o frutos hasta el pueblo para que expertos de la municipalidad realicen un diagnóstico. Este método, aunque funcional, evidencia una dependencia total de terceros y una falta de herramientas de monitoreo en tiempo real en la propia parcela. Leandro reconoce que la agricultura es una disciplina compleja donde factores como el color de la hoja o la presencia de insectos determinan la salud del cultivo, pero carece de un sistema que le permita anticiparse a estos problemas de forma autónoma.
+
+Respecto al uso de tecnología, el teléfono móvil cumple un rol estrictamente logístico y de coordinación con los distribuidores. La principal barrera detectada es la inestabilidad de la red de internet en su zona de cultivo, lo que ha impedido que Leandro adopte aplicaciones de diagnóstico digital o herramientas de inteligencia artificial. Aunque tiene referencias de soluciones como ChatGPT para analizar imágenes, la brecha de conectividad en Oxapampa limita su uso a funciones básicas, manteniendo una preferencia por el asesoramiento humano presencial hasta que la infraestructura digital permita una alternativa confiable.
+
+Finalmente, Leandro muestra un interés genuino en tecnificar su chacra mediante sistemas IoT y sensores de humedad, reconociendo el valor de automatizar el riego para optimizar el desarrollo de sus plantas. Sin embargo, su disposición a invertir está sujeta a la superación de obstáculos económicos y, fundamentalmente, de seguridad. Un riesgo crítico identificado por el productor es la vulnerabilidad de los equipos ante posibles robos, dado que no residen permanentemente en la parcela. Para él, una solución técnica exitosa no solo debe ser precisa y funcionar con baja señal, sino también ser lo suficientemente segura y accesible para garantizar un retorno de inversión en un negocio familiar aún en crecimiento.
 
 
+**Entrevistado N.º 3: Joseph Medina**
+* **Edad:** 23
+* **Departamento:** Lima
+* **Estado civil:** Soltero
+* **Ocupación:** Productor de Agricultura Familiar
 
+<img src="https://imgur.com/nOCm95N.png">
+
+**Acerca de la entrevista:** 
+* **Link:** [Grotix 202610 - Entrevista 3 Segmento 1.mp4](https://upcedupe-my.sharepoint.com/:v:/g/personal/u202312287_upc_edu_pe/IQCCmjlnReChQZ7sj4Np6kFOAe7iJb1K15lWL-JAr9bgitk?nav=eyJyZWZlcnJhbEluZm8iOnsicmVmZXJyYWxBcHAiOiJPbmVEcml2ZUZvckJ1c2luZXNzIiwicmVmZXJyYWxBcHBQbGF0Zm9ybSI6IldlYiIsInJlZmVycmFsTW9kZSI6InZpZXciLCJyZWZlcnJhbFZpZXciOiJNeUZpbGVzTGlua0NvcHkifX0&e=sdSari)
+* **Instante en el que inicia:** 0:00
+* **Duración:** 8:00
+
+Joseph Medina posee una herencia agrícola directa de sus padres y abuelos, habiendo trabajado personalmente la tierra en el cultivo de hortalizas y tubérculos como zanahoria, cebolla, lechuga, papa y alfalfa. A pesar de su experiencia práctica, Joseph reconoce que la agricultura es una labor sumamente sacrificada donde el éxito de la cosecha es el pilar fundamental de la economía familiar. Para su entorno, la meta principal no es la expansión ambiciosa, sino la estabilidad; el objetivo es "mantenerse" y asegurar que el ciclo productivo se repita sin alteraciones que pongan en riesgo su sustento.
+
+El riego es identificado como la tarea más crítica y compleja de la jornada, ya que su frecuencia y duración varían drásticamente según el tipo de cultivo. Actualmente, la familia toma decisiones basadas exclusivamente en el conocimiento empírico transmitido por generaciones; "simplemente saben" cuándo regar por pura práctica. No obstante, Joseph manifiesta una duda razonable sobre la precisión científica de estos métodos tradicionales, especialmente cuando factores externos como sequías, variaciones en el caudal de agua o desastres naturales (huaycos) impactan negativamente en la producción.
+
+Existe una brecha digital marcada en su unidad familiar: mientras Joseph utiliza el teléfono móvil para investigar nuevos métodos que simplifiquen el trabajo, sus padres y abuelos mantienen una resistencia al uso de tecnología, confiando más en su memoria y en el intercambio de consejos con otros campesinos de la zona ante problemas como plagas. Esta red de contactos vecinales es su principal recurso de resolución de conflictos, desplazando cualquier herramienta digital o aplicación técnica que pudiera existir en el mercado actual.
+
+Finalmente, el interés por la tecnificación de sus parcelas se ha visto frenado por la incertidumbre y el miedo al riesgo. Aunque la familia ha evaluado modernizar sus sistemas en el pasado, la falta de conocimiento técnico y el temor a que una herramienta nueva complique el trabajo en lugar de facilitarlo impidieron la inversión. Para que Joseph y su familia confíen en un sistema de riego autónomo como Grotix, la herramienta no solo debe demostrar que puede igualar la eficacia del trabajo manual, sino garantizar que reducirá la carga operativa sin añadir niveles de complejidad que no puedan manejar.
+
+#### Segmento Objetivo #2: Asociaciones Agrarias y Cooperativas
+**Entrevistado N.º 4: Jossimar Atoche Escobar**
+* **Edad:** 29
+* **Departamento:** Piura
+* **Estado civil:** Soltero
+* **Ocupación:** Gerente general de una exportadora
+
+<img src="https://imgur.com/qI0pkZB.png">
+
+**Acerca de la entrevista:** 
+* **Link:** [Grotix 202610 - Entrevista 1 Segmento 2.mp4](https://upcedupe-my.sharepoint.com/:v:/g/personal/u202311701_upc_edu_pe/IQDvOjh_Y_CTRr2USrz-vIFFAVDrnXe2OfXt0yPZ_Ca38Y8?nav=eyJyZWZlcnJhbEluZm8iOnsicmVmZXJyYWxBcHAiOiJPbmVEcml2ZUZvckJ1c2luZXNzIiwicmVmZXJyYWxBcHBQbGF0Zm9ybSI6IldlYiIsInJlZmVycmFsTW9kZSI6InZpZXciLCJyZWZlcnJhbFZpZXciOiJNeUZpbGVzTGlua0NvcHkifX0&e=cLpP2K)
+* **Instante en el que inicia:** 00:01
+* **Duración:** 16:49
+
+La entrevista con Jossimar Escobar, gerente de una exportadora en Piura, confirma que la trazabilidad y la uniformidad del producto son los pilares del éxito en el mercado internacional. Jossimar destaca que para cumplir con certificaciones exigentes como GlobalGAP o la FDA, es innegociable mantener un control estricto del riego que garantice "calibres uniformes". Para un exportador, la falta de datos en tiempo real es un cuello de botella; relata cómo la demora en obtener reportes manuales para un cliente de productos orgánicos puso en pausa una negociación, validando que una herramienta como Grotix facilitaría el cierre de contratos al ofrecer información instantánea desde el celular.
+
+Por otro lado, el entrevistado identifica una marcada resistencia cultural y tecnológica en el campo. Los agricultores suelen ver la tecnificación como un costo elevado y no como una inversión, sumado al temor de que la automatización desplace la mano de obra humana. Sin embargo, Jossimar subraya que ante crisis hídricas críticas como las que vive el norte del Perú, la "costumbre al riego tradicional" ya no es sostenible. Existe una necesidad urgente de combatir la desinformación sobre el ahorro real de agua para asegurar la rentabilidad de campañas clave como las del mango y el limón.
+
+Él piensa que el rol de las asociaciones y exportadoras es actuar como el nexo técnico que introduzca estas innovaciones de forma gradual. Jossimar priorizaría el retorno de inversión (ROI) y la facilidad de adaptación para el agricultor como criterios de compra. Para Grotix, esto significa que el valor no está solo en el ahorro de agua, sino en convertirse en un respaldo de calidad y transparencia frente a compradores extranjeros, transformando datos complejos de sensores en una ventaja comercial tangible para el productor y la exportadora.
+
+**Entrevistado N.º 5: Jorge Luis Chanamé Miranda**
+* **Edad:** 62
+* **Departamento:** Chiclayo
+* **Estado civil:** Casado
+* **Ocupación:** Presidente de una pequeña asociación agraria
+
+<img src="https://imgur.com/IRsG0E3.png">
+
+**Acerca de la entrevista:** 
+* **Link:** [Grotix 202610 - Entrevista 2 Segmento 2.mp4](https://upcedupe-my.sharepoint.com/:v:/g/personal/u202311701_upc_edu_pe/IQA-rgERTQtqRLH70dwO_ks-AenzdjgfENUL99NIJK0VqjQ?nav=eyJyZWZlcnJhbEluZm8iOnsicmVmZXJyYWxBcHAiOiJPbmVEcml2ZUZvckJ1c2luZXNzIiwicmVmZXJyYWxBcHBQbGF0Zm9ybSI6IldlYiIsInJlZmVycmFsTW9kZSI6InZpZXciLCJyZWZlcnJhbFZpZXciOiJNeUZpbGVzTGlua0NvcHkifX0&e=QYeCMF)
+* **Instante en el que inicia:** 00:01
+* **Duración:** 09:57
+
+La entrevista con Jorge Luis, presidente de una asociación de productores, revela que el mayor desafío de las cooperativas es la fragmentación de la información y la falta de homogeneidad en la producción. Actualmente, la supervisión es manual y reactiva, lo que genera una "brecha de datos" entre las visitas técnicas. Jorge Luis enfatiza que la falta de telemetría en tiempo real no solo afecta la calidad del fruto y el calibre, sino que pone en riesgo contratos internacionales; menciona que la incapacidad de reaccionar ante cambios climáticos imprevistos ha causado pérdidas de lotes enteros por no cumplir con los estándares de firmeza y grados Brix exigidos por los brokers.
+
+El entrevistado señala que el uso de herramientas informales como Excel o fotos de WhatsApp ya no es suficiente para los compradores europeos, quienes ahora demandan reportes de "Huella Hídrica" y pruebas de sostenibilidad. La capacidad de Grotix para generar dashboards de telemetría y reportes automáticos de eficiencia hídrica (ahorro del 60%) se percibe como una ventaja competitiva crítica para transformar a la asociación en un exportador directo, eliminando la dependencia de reportes manuales tardíos.
+
+Jorge Luis destaca que la identificación inteligente de cultivos por IA es el factor determinante para vencer la resistencia cultural del agricultor. Al ver que el dispositivo reconoce automáticamente su planta, se reduce el escepticismo inicial y el miedo a la complejidad técnica.
+
+**Entrevistado N.º 6: Ana Otsuka**
+* **Edad:** 64
+* **Departamento:** Lima (Huaral)
+* **Estado civil:** Casada
+* **Ocupación:** Fiscal del Consagra de la Querencia (Comité de Sanidad Agraria) y Productora Exportadora
+
+<img src="https://imgur.com/XYtKCwd.png">
+
+**Acerca de la entrevista:** 
+* **Link:** [Grotix 202610 - Entrevista 3 Segmento 2.mp4](https://upcedupe-my.sharepoint.com/:v:/g/personal/u20201f855_upc_edu_pe/IQD85zV4Yde8T75p6W89L_yEAXnQdgmYi1tDIqYR61-pXg8?nav=eyJyZWZlcnJhbEluZm8iOnsicmVmZXJyYWxBcHAiOiJPbmVEcml2ZUZvckJ1c2luZXNzIiwicmVmZXJyYWxBcHBQbGF0Zm9ybSI6IldlYiIsInJlZmVycmFsTW9kZSI6InZpZXciLCJyZWZlcnJhbFZpZXciOiJNeUZpbGVzTGlua0NvcHkifX0&e=cusvPf)
+* **Instante en el que inicia:** 00:01
+* **Duración:** 20:27
+
+La entrevista con Ana Otsuka, productora exportadora en Huaral, confirma que la viabilidad de la agricultura de precisión depende de la capacidad del sistema para adaptarse a los ciclos biológicos específicos del cultivo. Ana destaca que en la producción de cítricos es vital el manejo del "estrés hídrico" (suspensión del riego por meses para forzar la floración), validando que Grotix debe ofrecer una programación inteligente que no se limite a mantener la humedad constante, sino que responda a las necesidades metabólicas de la planta. Para un exportador, la precisión en el riego es lo que determina el calibre de la fruta, factor crítico para cumplir con las exigencias diferenciadas de mercados como Japón (fruta pequeña) y Europa (fruta grande).
+
+Por otro lado, la entrevistada identifica una falla crítica en el sistema de riego tradicional por turnos, donde la falta de control genera un desperdicio involuntario de agua. Relata que, debido a la rigidez de los horarios de riego del río, se ve obligada a "botar" el recurso sobrante que su parcela no puede absorber. Asimismo, subraya que el costo de la energía eléctrica es la principal barrera para usar sistemas de riego tecnificado existentes; Ana solo activa estos sistemas en emergencias de sequía, lo que valida la propuesta de Grotix de utilizar energía solar para eliminar el costo operativo y permitir un monitoreo constante sin afectar la rentabilidad.
+
+Ella concluye que el valor de la tecnología en el campo radica en la facilidad de gestión y el ahorro de costos. Ana percibe la identificación automática de cultivos por IA como una herramienta para superar la complejidad técnica, permitiendo que el sistema configure automáticamente las fases de riego según el estado fenológico detectado. Para Grotix, esto significa que el éxito del proyecto está en convertirse en un gestor autónomo de recursos que garantice la calidad exportable del producto mientras elimina la dependencia de fuentes de energía costosas y reduce el desperdicio hídrico estructural.
+
+### 2.2.3. Análisis de Entrevistas
+#### Segmento Objetivo #1: Productores Independientes de Pequeña y Mediana Escala
+El primer segmento identificado corresponde a familias agricultoras con una fuerte herencia generacional, donde el éxito de la campaña representa el sustento económico principal. De acuerdo con las entrevistas realizadas, se observa que el 100% de los sujetos dependen de un modelo de gestión empírica, basado en la observación visual y el conocimiento transmitido por sus ancestros. No obstante, este método tradicional presenta fallas críticas ante factores externos; por ejemplo, un 33.3% del segmento reportó la pérdida total de cultivos específicos, como el maracuyá, debido a errores humanos en el cálculo del riego. Esta problemática objetiva se complementa con una brecha en el diagnóstico técnico: el 66.7% de los entrevistados manifiesta dificultades para identificar plagas o deficiencias de forma autónoma, obligándolos a recurrir a herramientas imprecisas como Google Imágenes o a traslados físicos hacia centros urbanos en busca de expertos, como es el caso de Leandro en Oxapampa.
+
+En cuanto al perfil tecnológico, el 100% de los productores posee y utiliza dispositivos móviles, pero su uso se limita a funciones logísticas y de comunicación básica. Existe una resistencia marcada hacia aplicaciones de gestión complejas; un 66.7% del segmento ha intentado o evaluado el uso de herramientas digitales más avanzadas, pero las terminaron descartando por considerarlas difíciles de configurar o ajenas a su realidad operativa. Este hallazgo es fundamental para la construcción del arquetipo, pues revela que la tecnología no es rechazada por falta de interés, sino por una excesiva complejidad percibida. Además, el factor de la infraestructura actúa como una barrera objetiva relevante para el 33.3% de los usuarios, cuya ubicación geográfica presenta inestabilidad en la red, lo que exige que cualquier solución propuesta sea resiliente a entornos de baja conectividad.
+
+Desde una perspectiva subjetiva, el segmento está profundamente marcado por la carga emocional y el sacrificio físico que implica la labor del campo. El 100% de los entrevistados define la agricultura como una actividad de alta exigencia que impacta directamente en su calidad de vida y estabilidad familiar. Existe un sentimiento común de incertidumbre y miedo al riesgo que frena la inversión tecnológica; por ejemplo, Joseph y Nicolás coinciden en que solo confiarían en un sistema automatizado si existen pruebas contundentes de su fiabilidad. Por otro lado, un 33.3% introduce una preocupación subjetiva adicional: la vulnerabilidad física de los equipos ante posibles robos en parcelas no habitadas. En conclusión, el arquetipo de este segmento se define por la búsqueda de autonomía técnica y seguridad económica, valorando soluciones que garanticen mejores resultados productivos sin añadir niveles de complejidad que pongan en duda su capacidad de manejo.
+
+
+#### Segmento Objetivo #2: Asociaciones Agrarias y Cooperativas
+El segundo segmento objetivo se caracteriza por una orientación profesional hacia la exportación y la estandarización de la calidad. El 100% de los entrevistados coincide en que la uniformidad del producto y el control de calibres son los pilares del éxito comercial, vinculando directamente la precisión hídrica con la capacidad de cumplir con certificaciones internacionales como GlobalGAP o la FDA. Este segmento enfrenta un cuello de botella logístico: el 66.7% de los sujetos identifica una "brecha de datos" crítica debido al uso de métodos manuales e informales, como reportes en Excel o fotos por WhatsApp, que resultan insuficientes para las exigencias de sostenibilidad y trazabilidad demandadas por mercados europeos. Esta necesidad de información instantánea es objetiva, pues la demora en la obtención de reportes ha llegado a pausar negociaciones comerciales o causar la pérdida de lotes enteros por falta de firmeza en el fruto.
+
+En términos de gestión de recursos y tecnología, el análisis revela una transición necesaria impulsada por factores externos. El 100% de los participantes reconoce que el riego tradicional por turnos o por inundación es insostenible ante crisis hídricas o la rigidez de los horarios de riego de los ríos. Sin embargo, surge una barrera económica específica para el 33.3% de los productores: el alto costo de la energía eléctrica para el riego tecnificado, lo que valida la implementación de energía solar en Grotix como un factor de viabilidad financiera. Asimismo, existe una demanda de especialización técnica; el caso de Ana Otsuka subraya que el sistema no debe ser solo un monitor de humedad, sino un gestor del ciclo biológico que permita aplicar técnicas avanzadas como el "estrés hídrico" para forzar la floración, demostrando que la tecnología debe adaptarse a las necesidades metabólicas de cada cultivo para garantizar la rentabilidad.
+
+Desde la dimensión subjetiva, el segmento lidia con una marcada resistencia cultural y el escepticismo de los agricultores de campo. El 66.7% de los líderes menciona que la tecnificación es percibida erróneamente como un costo o una amenaza para la mano de obra humana. Para contrarrestar este miedo, se identifica un hallazgo psicológico clave: el 66.7% de los entrevistados considera que la identificación automática de cultivos por IA actúa como un "reductor de escepticismo", facilitando la adopción al simplificar la configuración inicial. Subjetivamente, el valor de Grotix para este segmento no reside solo en el ahorro de agua, sino en la paz mental que otorga la transparencia de datos frente a compradores extranjeros. El éxito para este grupo se define como la transformación de datos técnicos complejos en una ventaja comercial tangible que asegure el retorno de inversión (ROI) y posicione a la asociación como un exportador directo y sostenible.
+
+## 2.3. NeedFinding
+### 2.3.1. User Personas
+La presente sección de User Personas sintetiza las características principales de los usuarios objetivo de Grotix, a partir del análisis de entrevistas, el estudio de la competencia y los resultados del proceso Lean UX. Estos perfiles semi ficticios permiten representar necesidades, comportamientos y limitaciones clave detectados en los agricultores y actores del ecosistema agrario, sirviendo como base para orientar las decisiones de diseño y desarrollo de la solución.
+
+#### Segmento Objetivo #1: Productores Independientes de Pequeña y Mediana Escala
+
+[foto]
+
+#### Segmento Objetivo #2: Asociaciones Agrarias y Cooperativa
+
+<img src="https://imgur.com/gIZYZJr.png">
+
+### 2.3.2. User Task Matrix
+
+La presente sección presenta el User Task Matrix, considerando los dos segmentos definidos: productores independientes y representantes de asociaciones agrarias. A partir de los User Personas, se identifican las tareas clave que estos usuarios realizan para cumplir sus objetivos, independientemente de la existencia de la solución propuesta. Este análisis permite comprender la frecuencia e importancia de cada actividad, sirviendo como base para identificar oportunidades de mejora y priorización en el desarrollo del sistema.
+
+| User Task Matrix | Mateo Rojas |  | Carlos Mendoza |  |
+|---|---|---|---|---|
+|  | Frecuencia | Importancia | Frecuencia | Importancia |
+| Monitorear humedad y salud del suelo | Siempre | Alta | Con frecuencia | Alta |
+| Inspeccionar presencia de plagas y enfermedades | Siempre | Alta | Con frecuencia | Alta |
+| Ejecutar y supervisar las jornadas de riego | Con frecuencia | Alta | Siempre | Alta |
+| Gestionar logística de cosecha y venta | Con frecuencia | Alta | Siempre | Alta |
+| Obtener certificaciones de calidad | A veces | Media | Con frecuencia | Alta |
+| Reportar estado de cultivos a compradores finales | Rara vez | Baja | Siempre | Alta |
+| Consultar pronósticos y alertas climáticas | Con frecuencia | Media | Con frecuencia | Media |
+| Capacitarse o brindar asistencia técnica | A veces | Media | Con frecuencia | Media |
+| Vigilar la seguridad de la infraestructura en campo | Siempre | Media | A veces | Media |
+
+
+### 2.3.3. User Journey Mapping
+
+Los User Journey Maps actúan como el sustento empírico de Grotix, permitiendo mapear el escenario actual (As-Is) para identificar las deficiencias críticas en la gestión agrícola. Al visibilizar los puntos de dolor y las ineficiencias operativas de nuestros usuarios, estos mapas transforman necesidades reales en oportunidades de ingeniería, garantizando que cada funcionalidad del proyecto esté alineada con la resolución de problemas tangibles y la optimización de recursos en el campo.
+
+#### Productores Independientes de Pequeña y Mediana Escala
+User journey mapping 1 de Productores Independientes de Pequeña y Mediana Escala
+
+[foto]
+
+
+#### Asociaciones Agrarias y Cooperativas
+User journey mapping 2 de Asociaciones Agrarias y Cooperativas
+
+[foto]
+
+### 2.3.4. Empathy Maps
+
+En esta sección se presenta el proceso de elaboración de los Empathy Maps para cada uno de los User Personas definidos en el contexto de Grotix. A partir del análisis de entrevistas, insights del sector agrícola y validación del problema, el equipo identificó comportamientos, necesidades y percepciones clave de los usuarios. Se abordaron aspectos como lo que el usuario ve, dice, hace, escucha, piensa y siente en su día a día, permitiendo reconocer sus principales pains (limitaciones en acceso a información, toma de decisiones y monitoreo) y gains (optimización de recursos, mejora en productividad y reducción de riesgos). Este análisis facilita una comprensión profunda del usuario y orienta el diseño de soluciones centradas en sus necesidades reales.
+
+#### Segmento Objetivo #1: Productores Independientes de Pequeña y Mediana Escala
+
+[foto]
+
+#### Segmento Objetivo #2: Asociaciones Agrarias y Cooperativa
+
+<img src="https://imgur.com/vPR6Qqt.png">
+
+## 2.4. Big Picture EventStorming
+En esta sección, se detalla el desarrollo del Big Picture Event Storming, una metodología colaborativa empleada para explorar y definir el dominio del proyecto Grotix. A través de este proceso, el equipo de trabajo ha logrado identificar los eventos clave, los roles de usuario y las dependencias tecnológicas que estructuran la solución, permitiendo establecer una visión compartida y exhaustiva del comportamiento del sistema en su conjunto. 
+
+El proceso se llevó a cabo de manera incremental, iniciando con la identificación de Domain Events que representan cada cambio de estado significativo en el ciclo de vida del monitoreo agrícola. Posteriormente, estos eventos fueron organizados cronológicamente para dar coherencia al flujo de negocio, permitiendo la asignación precisa de Actores y la integración de Sistemas Externos críticos para la automatización e inteligencia del sistema. Las capturas y explicaciones presentadas a continuación evidencian la transición de una lluvia de ideas técnica hacia un modelo de arquitectura funcional y robusto. 
+
+**Step 1: Generating Domain Events**
+
+En esta fase de Big Picture Event Storming, el equipo se enfocó en el reconocimiento y definición de los Domain Events que integran el ecosistema de Grotix. A través de una lluvia de ideas masiva, se identificaron todos los eventos o cambios de estado relevantes para el negocio, abarcando desde la gestión de identidad y telemetría de sensores hasta la lógica inteligente de riego y análisis visual. Este inventario de eventos permite consolidar una visión compartida de todas las capacidades del sistema, sirviendo como base fundamental para la posterior identificación de actores y  sistemas externos. 
+
+[foto]
+
+**Step 2: Sorting Domain Events**
+
+En esta etapa, el equipo procedió a organizar los eventos identificados siguiendo una línea de tiempo lógica y cronológica. Este proceso permitió estructurar el flujo del sistema desde el registro y vinculación del usuario hasta los ciclos automáticos de monitoreo, análisis visual por IA y riego inteligente. Al ordenar los eventos, se establecieron las relaciones de dependencia entre ellos, logrando una narrativa visual clara del recorrido del usuario y el comportamiento autónomo del hardware ante las condiciones del entorno. 
+
+[foto]
+
+**Step 3: Actors**
+
+En esta fase, el equipo identificó y asignó los actores responsables de disparar o interactuar con los eventos de dominio previamente ordenados. Se determinó que, si bien el Usuario Agrícola centraliza la mayoría de las interacciones, existen roles especializados que enriquecen el flujo del sistema. Por ejemplo, se identificó la participación de un actor secundario para la solicitud de acceso a zonas de cultivo, permitiendo la colaboración en la parcela. Asimismo, se definió el rol del Supervisor Agrícola como el actor encargado de la gestión de datos de alto nivel y la visualización de reportes hídricos, diferenciándolo del usuario operativo para alinearse con las necesidades de gestión y toma de decisiones de las cooperativas agrarias. 
+
+**Step 4: External Systems**
+
+En la cuarta etapa del Event Storming, el equipo identificó y vinculó los sistemas externos que actúan como proveedores de servicios críticos para el cumplimiento de ciertos eventos de dominio. Se determinó la dependencia de un servicio de autenticación para la seguridad de acceso, un servicio de análisis visual con IA para el procesamiento de imágenes y un motor de inteligencia agronómica para la configuración experta de umbrales de cultivo. Asimismo, se integraron un servicio de notificaciones para la comunicación en tiempo real y un servicio meteorológico encargado de proporcionar datos climáticos para la optimización del riego. La identificación de estos sistemas permite definir claramente los límites de Grotix y asegurar que la arquitectura soporte integraciones robustas que potencien la autonomía y precisión del monitoreo agrícola. 
+
+[foto]
+
+**Step 5: Conclusion and Storytelling**
+
+Tras concluir la integración de los sistemas externos en el Paso 4, el equipo procedió a realizar una fase de Storytelling. En esta etapa final, se validó narrativamente todo el flujo diseñado, confirmando que la interacción entre los eventos, los actores y los servicios externos mantiene una coherencia total con la experiencia de uso real de la aplicación. Este ejercicio permitió verificar que la lógica de Grotix responde de manera eficiente a las necesidades del entorno agrícola, asegurando que cada funcionalidad esté debidamente respaldada por la arquitectura propuesta. 
+
+[foto]
+
+## 2.5. Ubiquitous Language
+
+| Término | Definición |
+|---|---|
+| Smart Agriculture (Agricultura Inteligente) | Modelo de producción que emplea plataformas tecnológicas, sensores IoT y analítica de datos para optimizar recursos, gestionar el agua eficientemente y garantizar cosechas de alta calidad. |
+| Precision Irrigation (Riego de Precisión) | Método de gestión hídrica que suministra la cantidad exacta de agua requerida basándose en las condiciones físicas del entorno y en las necesidades metabólicas específicas del cultivo. |
+| Gravity Irrigation (Riego por Gravedad) | Método de riego tradicional predominante y de baja eficiencia que ocasiona el desperdicio del 65% del agua aplicada debido a la falta de tecnificación en las parcelas. |
+| Pressurized Irrigation (Riego Presurizado) | Sistema de suministro de agua, como el riego por goteo, que incrementa sustancialmente la eficiencia hídrica pero que suele implicar altas barreras de inversión inicial. |
+| Water Stress (Estrés Hídrico) | Condición crítica originada por la escasez de agua que compromete el rendimiento del cultivo; o bien, una técnica aplicada intencionalmente durante meses para forzar el ciclo biológico de floración. |
+| Phenological Stage (Fase Fenológica) | Etapa específica del desarrollo biológico de la planta (ej. floración, llenado de grano o germinación) que determina sus requerimientos hídricos y de iluminación particulares. |
+| Crop Yield (Rendimiento de Cosecha) | Volumen y calidad de la producción agrícola obtenida por hectárea, la cual puede optimizarse directamente mediante la mitigación de déficits hídricos y el control de umbrales ambientales. |
+| Food Security (Seguridad Alimentaria) | Condición que garantiza el acceso continuo a alimentos con densidad nutricional adecuada para la población, vinculada a la productividad agrícola y al Objetivo de Desarrollo Sostenible 2. |
+| Agricultural Plot (Parcela Agrícola) | Unidad de tierra cultivable gestionada técnica y operativamente por los productores agrarios, donde se instalan los nodos de sensores para el monitoreo de variables ambientales. |
+| Smallholder Farmer (Productor Independiente) | Agricultor de pequeña o mediana escala que tradicionalmente gestiona sus recursos mediante decisiones basadas en experiencia empírica y observación visual del entorno. |
+| Agrarian Association (Asociación Agraria) | Organización formal que agrupa a múltiples agricultores con el propósito de centralizar el monitoreo técnico, estandarizar la producción colectiva y acceder a mercados internacionales de exportación. |
+| Evapotranspiration (Evapotranspiración) | Volumen total de agua perdida tanto por la evaporación directa desde el suelo como por la transpiración intrínseca de las plantas cultivadas. |
+| Crop Threshold (Umbral de Cultivo) | Valores máximos de temperatura, humedad e intensidad lumínica que una especie vegetal puede tolerar antes de que se vea comprometida su integridad biológica o la calidad de la cosecha. |
+| Field Capacity (Capacidad de Campo) | Nivel máximo y óptimo de humedad que un suelo específico es capaz de retener antes de que se produzca la saturación, utilizado como parámetro base en diagnósticos previos a la instalación de riego. |
+| Permanent Wilting Point (Punto de Marchitez Permanente) | Nivel mínimo crítico de retención de humedad en el cual la planta es incapaz de extraer agua del sustrato, sufriendo daños metabólicos irreversibles. |
+| Water Footprint (Huella Hídrica) | Indicador técnico de sostenibilidad ambiental que documenta y cuantifica el volumen de agua utilizado para producir los alimentos, siendo una métrica exigida como certificación de exportación. |
+| Fruit Caliber (Calibre del Fruto) | Estándar de tamaño, firmeza y uniformidad morfológica exigido por brokers y mercados internacionales (ej. FDA, GlobalGAP) para aceptar la producción de una campaña. |
+| Brix Degrees (Grados Brix) | Unidad de medida analítica utilizada en campo para determinar la concentración de azúcares presentes en la fruta como indicador primario de madurez y calidad comercial. |
+| Telemetry (Telemetría) | Sistema de comunicación y monitoreo constante que recolecta, transmite y visualiza datos del entorno agrícola a un panel de control para la toma de decisiones sin presencia física en campo. |
+| Sensor Node (Nodo de Sensor) | Dispositivo de hardware de campo, energéticamente autónomo, encargado de registrar mediciones precisas de humedad, intensidad lumínica y temperatura del suelo. |
+| Actuator / Valve (Actuador / Válvula) | Componente físico o electromecánico integrado al sistema de tuberías que se abre o cierra de forma remota para ejecutar el flujo y suministro de agua hacia las parcelas. |
 
