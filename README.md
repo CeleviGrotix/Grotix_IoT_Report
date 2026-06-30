@@ -2148,3 +2148,596 @@ El diseño de persistencia para el Bounded Context de Telemetry ha sido optimiza
 
 Una vez que los datos son procesados por el RegisterMeasurementHandler, la persistencia definitiva se realiza en la tabla sensor_reading dentro de la base de datos maestra. Esta tabla ha sido diseñada siguiendo principios de bases de datos de series de tiempo, utilizando tipos de datos de alta capacidad como BigInt para el ReadingID y Float para el MeasurementValue, lo que permite almacenar millones de registros sin degradación del rendimiento. La vinculación con la entidad SensorSource se resuelve mediante una clave foránea hacia el SensorID, permitiendo que el TimeSeriesTelemetryRepository realice agregaciones y consultas históricas eficientes por zona o tipo de sensor. Además, el servicio de dominio ThresholdValidator utiliza esta estructura de persistencia para comparar en tiempo real la lectura entrante con los registros históricos, asegurando que solo los datos validados y consistentes alimenten los gráficos y motores de análisis del agricultor.
 
+# CAPÍTULO V: Solution UI/UX Design
+
+## 5.1. Style Guidelines
+Para asegurar la integridad visual y funcional del ecosistema Grotix, se define este marco de Style Guidelines como el eje central de diseño y estandarización para el equipo de desarrollo. Esta sección establece las normas fundamentales para el uso de activos, tipografías y elementos gráficos, garantizando una transición fluida y profesional entre la landing page, la aplicación móvil y las interfaces de gestión IoT. Al centralizar estas directrices, no solo se refuerza la identidad de marca orientada a la innovación agrícola y tecnológica, sino que se optimiza la eficiencia operativa del equipo al proporcionar un lenguaje visual común que responde estrictamente a los criterios de usabilidad, accesibilidad y consistencia multiplataforma definidos en los requerimientos del sistema.
+
+### 5.1.1. General Style Guidelines
+Las General Style Guidelines de Grotix se fundamentan en la creación de una identidad visual que equilibre la innovación tecnológica con la confiabilidad agrícola. Basándonos en principios de diseño centrados en el usuario, hemos seleccionado una paleta de colores y una jerarquía tipográfica que garantizan la legibilidad y accesibilidad (WCAG), facilitando la interacción de los agricultores con datos complejos de telemetría e IA. En cuanto al tono de comunicación, Grotix adopta una dimensión entusiasta, respetuosa y profesional, eliminando tecnicismos innecesarios para asegurar que el lenguaje sea sereno y comprensible, transformando así la experiencia técnica en una herramienta de gestión cotidiana cercana y efectiva.
+
+#### Branding y Logo
+
+[foto]
+
+El branding de Grotix se ha diseñado para proyectar una identidad que fusiona la naturaleza con la precisión tecnológica. El logotipo utiliza una tipografía moderna y de alta legibilidad, donde el isotipo destaca por la integración de hojas verdes que simbolizan la vida y el crecimiento agrícola. La incorporación de un elemento circular y una letra "i" en tonos celestes refuerza el concepto de inteligencia y fluidez hídrica, comunicando visualmente que Grotix no es solo una herramienta de monitoreo, sino una solución inteligente enfocada en la sostenibilidad y el éxito de la germinación. Esta composición visual garantiza que la marca sea fácilmente reconocible tanto en interfaces digitales como en dispositivos físicos, manteniendo una estética profesional y vanguardista.
+
+#### Paleta de Colores (Colors)
+
+[foto]
+
+La paleta de colores de Grotix ha sido seleccionada estratégicamente para evocar un equilibrio entre la vitalidad del campo y la innovación digital. Los tonos principales, como el Verde Pasto (#4FD16C) y el Azul Cerúleo (#40BFE2), refuerzan la conexión con la agricultura y la gestión inteligente de recursos hídricos, mientras que el Rojo Coral (#FF5757) actúa como un color de acento crítico para alertas y notificaciones prioritarias. Esta gama se complementa con una paleta secundaria que incluye el Verde Esmeralda (#01A070) para dar profundidad visual, y tonos neutros como el Gris Claro (#DDDDDD), Negro (#000000) y Blanco (#FFFFFF), que aseguran un alto contraste y una interfaz limpia, facilitando la legibilidad de datos técnicos en diversas condiciones de iluminación ambiental.
+
+#### Tipografía (Typography)
+
+[foto]
+
+La elección tipográfica para Grotix se centra en la familia Gabarito, una fuente de estilo geométrico y moderno que refuerza la identidad tecnológica del proyecto. Se han definido cuatro variantes principales (Regular, Semibold, Bold y Extrabold) para establecer una jerarquía visual clara y estructurada en todas las interfaces. Mientras que las variantes Bold y Extrabold se reservan para títulos e indicadores de datos críticos, permitiendo una rápida lectura en entornos de campo, las versiones Regular y Semibold garantizan una legibilidad óptima para textos descriptivos y navegación. Esta versatilidad asegura una presentación consistente, facilitando que el usuario identifique de manera intuitiva los diferentes niveles de información dentro de la plataforma.
+
+#### Iconografía (Iconography)
+
+La iconografía de Grotix ha sido seleccionada para ser intuitiva y funcional, permitiendo que el agricultor interprete el estado de su cultivo de un vistazo sin necesidad de leer textos extensos.
+
+* **Estilo:** Se utilizan iconos de estilo lineal (outline) con terminaciones redondeadas para mantener una estética moderna, limpia y profesional.
+
+* **Tamaño Estándar:** Se establece un formato base de 24px para garantizar la nitidez en pantallas de dispositivos móviles y paneles de control industriales.
+
+* **Propósito:** El set incluye iconos especializados en IoT y agricultura (gotas de agua para riego, sol para radiación UV, termómetros para clima y brotes para etapas de germinación), además de iconos de gestión (alertas críticas, configuraciones y reportes), asegurando que cada interacción técnica tenga un soporte visual claro.
+
+#### Espaciado (Spacing)
+
+La organización visual de Grotix se basa en un sistema de rejilla modular que garantiza que la densidad de información (gráficos de telemetría y alertas) no abrume al usuario.
+
+* **Sistema de 8 Puntos:** Se adopta una escala basada en múltiplos de 8px (8, 16, 24, 32, 40, etc.) para definir márgenes, paddings y la separación entre tarjetas de datos. Este estándar asegura que los elementos se alineen de forma armónica en cualquier resolución de pantalla.
+
+* **Agrupación y Claridad:** El espaciado se utiliza estratégicamente para separar las zonas de monitoreo de las de control (actuadores), evitando activaciones accidentales del riego manual y mejorando la legibilidad de las métricas históricas.
+
+#### Tono de Comunicación y Lenguaje Aplicado
+
+El Tono de Comunicación de Grotix es Profesional, Confiable y Sereno, diseñado para transmitir la precisión de una herramienta tecnológica avanzada mientras se mantiene una conexión cercana con la labor del campo.
+
+* **Personalidad:** Se define como un acompañante técnico experto que es Entusiasta respecto al éxito de la cosecha, pero Sereno al reportar alertas, evitando generar pánico innecesario en el usuario.
+
+* **Lenguaje Aplicado:** Se prioriza la Simplicidad Técnica; aunque el sistema maneja conceptos complejos de IA y telemetría, el lenguaje hacia el usuario evita tecnicismos de programación, optando por términos agrícolas directos y de fácil comprensión para usuarios de diversos niveles de experiencia tecnológica. El estilo es Formal pero Accesible, asegurando una experiencia de uso auténtica que refuerza la confianza en la autonomía del sistema.
+
+### 5.1.2. Web, Mobile and IoT Style Guide
+
+1. **Estándares Visuales y de Interacción para Responsive Web Interfaces**
+
+El diseño web (Landing Page y Staff Web App) se centra en la conversión, accesibilidad y eficiencia administrativa:
+
+* **Identidad y Accesibilidad:** La interfaz debe aplicar una jerarquía de colores con contrastes que cumplan estrictamente los estándares de accesibilidad WCAG.
+* **Tipografía y Legibilidad:** Se aplicará una escala tipográfica estandarizada y clara que facilite la lectura rápida, evitando tecnicismos excesivos.
+* **Navegación e Interacción:** El menú de navegación debe ser persistente (sticky header) e incluir resaltado visual de la sección activa. En pantallas menores al "breakpoint" definido, el menú colapsará en un ícono de hamburguesa legible. Las transiciones entre secciones en una misma página deben usar desplazamiento suave (smooth scrolling).
+* **Manejo de Estados y Errores:** Se implementará la carga diferida (lazy loading) para imágenes inferiores. En los formularios, los errores por campos vacíos o inválidos se resaltarán en tiempo real con mensajes de ayuda descriptivos.
+
+[foto]
+
+2. **Estándares para Mobile Application Interfaces**
+
+La aplicación móvil prioriza un bajo esfuerzo cognitivo y la tolerancia a contextos de campo (mala conectividad, uso con una sola mano):
+
+* **Navegación Intuitiva:** Se utilizará un menú de navegación claro con iconos representativos y etiquetas directas para asegurar una curva de aprendizaje mínima.
+* **Interacción Táctil (Touch-Optimized):** Se implementarán gestos nativos como "Pull-to-refresh" (arrastrar hacia abajo) para sincronización manual de datos y "Swipe" (deslizar) para acciones rápidas como reactivar servicios. Los ajustes de umbrales se realizarán mediante controles deslizantes (sliders) táctiles.
+* **Jerarquía Visual y Alertas:** La vista principal utilizará tarjetas de resumen apilables verticalmente (scroll). Ante anomalías o estados críticos (ej. contratos vencidos o humedad baja), las tarjetas e indicadores cambiarán de color (rojo) para resaltar la alerta.
+* **Tolerancia a Fallos de Red y Carga:** Se mostrarán estados de carga visuales (spinners) para evitar la sensación de congelamiento de la app. Si se pierde la conexión, la interfaz mostrará datos cacheados localmente acompañados de un indicador visual de "Sin conexión".
+* **Prevención de Errores:** La captura de datos complejos usará formularios divididos en pasos (stepper). Acciones destructivas (como desactivar un cliente) requerirán una doble confirmación mediante ventanas modales.
+
+[foto]
+
+3. **Estándares de Interacción con la Interfaz Física (IoT)**
+
+La interacción del usuario a través de la interfaz digital debe reflejar con fidelidad el estado del hardware físico en el campo:
+
+* **Correspondencia Físico-Digital:** Cualquier cambio en el entorno o fallo del sensor debe reflejarse inmediatamente en la interfaz, mostrando avisos explícitos como "Sensor no disponible". Además, se debe mostrar un indicador de "Última sincronización" con fecha y hora exacta para garantizar la vigencia del dato.
+* **Feedback de Actuación Manual:** Cuando el usuario acciona manualmente un actuador (ej. válvula de riego), el sistema debe confirmar la acción visualmente. Si el comando falla, la interfaz debe explicar el motivo (ej. "Sensor desconectado").
+* **Control y Aborto de Emergencia:** La interfaz debe proveer un mecanismo visible e inmediato para cancelar un ciclo de riego en curso, otorgando prioridad al mando manual sobre las reglas autónomas de la IA.
+
+[foto]
+
+## 5.2. Information Architecture
+
+La arquitectura de información es fundamental para plantear la manera en que se organizarán los diferentes componentes de Grotix, de modo que el usuario pueda interactuar y adaptarse a ellos de manera intuitiva. La buena organización de la información se debe priorizar para retener la atención del usuario e incentivar el uso constante de la aplicación.
+
+### 5.2.1. Organization System
+Los diagramas presentados a continuación están organizados de manera jerárquica y en categorías para ilustrar las relaciones entre los componentes de manera visual. Estos sistemas de organización de información contribuyen a una navegación más intuitiva para los usuarios, lo que mejorará su experiencia de uso.
+
+#### Landing Page
+
+[foto]
+
+#### Web App Page (For Staff)
+
+[foto]
+
+#### Mobile App (For Clients)
+
+[foto]
+
+### 5.2.2. Labeling Systems
+
+La interfaz de Livria ha sido diseñada de manera eficiente y organizada, ofreciéndole al cliente una experiencia de uso dinámica que le permitirá encontrar una ruta rápida hacia la información que quiere consultar o las herramientas que quiere utilizar sin complicaciones. Para lograr esto, nuestro equipo ha propuesto un diseño que emplea etiquetas concisas y efectivas, favoreciendo una experiencia intuitiva. A continuación, se dará una descripción detallada de aquellas que se encuentran en nuestro proyecto.
+
+#### Landing Page
+
+[foto]
+
+Al ingresar a la plataforma, el usuario se encontrará primero con el encabezado (Header). En esta sección, se presentan las etiquetas diseñadas para facilitar una navegación intuitiva y un acceso rápido a la propuesta de valor de Grotix:
+
+* **GENERAL:** Esta etiqueta permite al usuario regresar al inicio de la Landing Page desde cualquier sección, ofreciendo una visión global de la plataforma y su propósito principal.
+* **SERVICES:** Provee un acceso directo a la descripción detallada de los servicios tecnológicos de Grotix, como el monitoreo de cultivos, automatización de riego y análisis de datos.
+* **APP:** Esta etiqueta redirige al usuario a la sección informativa sobre la aplicación móvil, destacando sus funcionalidades de control remoto y visualización de telemetría en tiempo real.
+* **US:** Esta ruta lleva a la sección "Nosotros", donde se presenta la visión de la startup, el equipo detrás del proyecto y el compromiso con la innovación en la agricultura.
+* **CONTACT:** Tiene la función de acceso directo al área de contacto, facilitando un formulario para consultas comerciales, soporte técnico o alianzas estratégicas.
+* **SOCIAL:** Esta etiqueta agrupa los enlaces a las redes sociales oficiales, permitiendo al usuario interactuar con la marca fuera de la plataforma web.
+* **GET NOW!:** Es la etiqueta de llamada a la acción (CTA) principal. Resaltada visualmente, dirige al usuario al proceso de adquisición, registro o contratación de los servicios de Grotix.
+* **EN/ES:** Esta etiqueta permite alternar el idioma del sitio web entre inglés (EN) y español (ES), adaptando el contenido a las preferencias lingüísticas del usuario global o local.
+
+#### Web App (For Staff)
+
+[foto]
+
+La Web App para el staff administrativo utiliza una barra de navegación lateral (Sidebar) con iconos intuitivos. Cada etiqueta ha sido seleccionada para representar con precisión el módulo de gestión correspondiente, asegurando que el personal operativo pueda identificar y acceder a las métricas y registros de manera inmediata:
+
+* **HOME:** Esta etiqueta dirige al Dashboard Principal, donde el staff visualiza una vista previa del estado general del sistema, incluyendo indicadores clave sobre clientes activos, contratos vigentes y el estado de salud de los dispositivos desplegados.
+* **SEARCH:** Provee una herramienta de filtrado y búsqueda global. Permite al administrador localizar rápidamente expedientes específicos de agricultores, números de serie de dispositivos o contratos mediante términos de búsqueda clave.
+* **AGRICULTURISTS:** Da acceso al módulo de Gestión de Clientes. Aquí se administra el directorio completo de los agricultores registrados en la plataforma, permitiendo la edición de perfiles, revisión de datos de contacto y estatus de cuenta.
+* **CONTRACTS:** Representa el repositorio de Gestión de Contratos. En esta sección, el staff puede revisar los términos de servicio, fechas de vencimiento y el historial de facturación vinculado a cada agricultor y dispositivo.
+* **DEVICES:** Esta ruta lleva al inventario técnico de Hardware e IoT. Permite monitorear el estado de conectividad, batería y telemetría de cada sensor y actuador instalado en el campo, facilitando el mantenimiento preventivo.
+* **CROPS:** Esta etiqueta permite acceder al catálogo de Tipos de Cultivos. Es el área donde se configuran los parámetros óptimos de humedad, temperatura y nutrientes para cada especie vegetal soportada por la IA de Grotix.
+* **SETTINGS:** Representa el acceso a la Configuración y Perfil. En esta sección, el personal de staff puede gestionar sus credenciales de acceso, preferencias de la interfaz y ajustes de seguridad de la cuenta administrativa.
+
+#### Mobile App (For Clients)
+
+[foto]
+
+La aplicación móvil utiliza un menú de navegación inferior (Bottom Navigation Bar) con iconos de alto contraste y etiquetas directas. Este sistema permite al agricultor desplazarse entre el monitoreo en tiempo real, el análisis predictivo de la IA y la gestión administrativa con un solo toque:
+
+* **DASHBOARD:** Representada por el icono de gráfica, esta etiqueta dirige a la pantalla principal de monitoreo. Aquí el usuario visualiza los niveles críticos (humedad, temperatura, luz) de la zona de cultivo seleccionada y el listado de participantes o colaboradores con acceso a dicha zona.
+* **AI ADVISOR:** Identificada con el icono de destello (star), esta sección centraliza las capacidades de inteligencia artificial de Grotix. El usuario puede consultar el estado de germinación detallado por zona y recibir recomendaciones predictivas basadas en la telemetría recolectada.
+* **ZONES:** Es el botón central y destacado de la interfaz (icono de brote). Esta etiqueta da acceso al listado completo de las parcelas o sectores de cultivo registrados. Permite al usuario conmutar rápidamente entre diferentes áreas geográficas para actualizar los datos del Dashboard.
+* **REPORTS:** Esta etiqueta, asociada al icono de documento, permite acceder al historial de datos y reportes de rendimiento. Aquí el agricultor puede revisar eventos pasados, ciclos de riego completados y descargar resúmenes de actividad para la toma de decisiones estratégicas.
+* **PROFILE:** Representada por el icono de usuario, esta etiqueta dirige a la gestión de la cuenta personal. Incluye la configuración de notificaciones de alerta, datos de contacto del suscriptor y opciones de seguridad de la aplicación.
+* **NOTIFICACIONES:** Muestra las notificaciones importantes del usuario, así como su configuración. Puede elegir de qué tipo y categoría recibe.
+
+### 5.2.3. SEO Tags and Meta Tags
+
+#### Landing Page
+
+**Title**
+
+[foto]
+
+En este meta tag, se define el título que tendrá el sitio web del proyecto. El equipo decidió usar el nombre de la startup seguido del nombre del producto para resaltar nuestra autoría sobre la idea, optando por una mayor simplicidad que facilite la lectura por parte del usuario.
+
+**Meta Tags**
+
+[foto]
+
+Para garantizar que la Landing Page de Grotix sea indexada correctamente y presente una identidad visual coherente al ser compartida en plataformas digitales, se ha implementado un sistema de Meta Tags técnicos y descriptivos.
+
+* **charset="UTF-8"**: Define la codificación de caracteres universal. Es vital para que el navegador renderice correctamente tildes, eñes y símbolos especiales sin errores visuales.
+* **viewport**: Es la etiqueta base para el diseño responsivo. Ajusta el ancho de la página al tamaño de la pantalla del dispositivo y establece la escala inicial en 1.0, evitando que el sitio se vea "miniatura" en móviles.
+* **description**: Es el resumen que aparece bajo el título en los resultados de búsqueda de Google. Su función es puramente de marketing y conversión (CTR), resumiendo el valor de Grotix en una frase impactante.
+* **keywords**: Lista de términos clave que ayudan a los motores de búsqueda a categorizar el sitio. Incluye los pilares del proyecto: Machine Learning, Sensors e Irrigation.
+* **author**: Establece la autoría intelectual del código y el diseño, vinculando el proyecto directamente con su creador, Celevi.
+* **og:site_name**: Define el nombre oficial de la plataforma (Grotix) para que los sistemas de redes sociales reconozcan la marca detrás del enlace.
+* **og:title**: Es el título principal que aparecerá en negrita cuando compartas el link por WhatsApp, LinkedIn o Facebook. En este caso, posiciona la identidad de Celevi - Grotix.
+* **og:description**: Cumple la misma función que la descripción SEO, pero optimizada específicamente para la vista previa de las "cards" en redes sociales.
+* **og:type**: Indica a los algoritmos que el contenido es un sitio web estático (website), lo que ayuda a las plataformas a decidir qué tipo de visualización darle al enlace.
+
+#### Web App (For Staff)
+
+[foto]
+
+Para la aplicación web de Grotix, se ha configurado el archivo principal (index.html) con un conjunto de etiquetas (tags) y metaetiquetas (meta tags) estructurales y de SEO. Esta configuración base tiene el doble propósito de asegurar una correcta visualización en diversos dispositivos móviles, y de establecer la identidad fundamental del portal. Además, considerando que el Dashboard gestiona datos sensibles de los agricultores y telemetría de los cultivos, se ha implementado una directiva de privacidad por defecto en los motores de búsqueda, asegurando que la información interna no quede expuesta públicamente. 
+
+* **Viewport (<meta name="viewport">)**: Configurado con los valores width=device-width, initial-scale=1.0 para garantizar que la interfaz de usuario se escale y adapte correctamente a cualquier tamaño de pantalla, cumpliendo con los estándares de diseño responsivo.
+* **Title (<title>)**: Se ha definido el valor "Grotix Portal - Farm Management Dashboard" para mostrar claramente el propósito de la plataforma en las pestañas del navegador y proveer un título por defecto antes de que el enrutador dinámico (Vue Router) actúe.
+* **Description (<meta name="description">)**: Incluye un resumen descriptivo en inglés de las capacidades del sistema ("Access the Grotix management portal to monitor telemetry, control hardware, and review crop health reports"), lo cual mejora la presentación del enlace si se comparte en plataformas de mensajería o redes corporativas.
+* **Keywords (<meta name="keywords">)**: Establece términos clave como "Grotix login" y "agricultural telemetry portal" para definir semánticamente el nicho de la aplicación.
+* **Author (<meta name="author">)**: Identifica a "Celevi" como el autor o entidad responsable del desarrollo de este producto digital.
+* **Robots (<meta name="robots">)**: Configurado como "noindex, nofollow". Esta es una medida de seguridad preventiva vital para un entorno administrativo, ya que instruye a los rastreadores web (como el bot de Google) a no indexar la página de entrada en sus resultados de búsqueda y a no seguir sus enlaces internos, protegiendo así las rutas privadas.
+
+#### Mobile App (For Clients)
+
+[foto]
+
+**ASO (App Store Optimizaton) elements:**
+La optimización para tiendas de aplicaciones (ASO) de la aplicación se centra en los siguientes elementos visibles:
+
+* **Título de la Aplicación (App Title/Name):** Este está definido por el atributo android:label tanto en la etiqueta <application> como en la <activity> principal. Este es el nombre que los usuarios verán bajo el icono de la aplicación en la pantalla de inicio y en la tienda de aplicaciones.
+* **Icono de la Aplicación (App Icon):** El atributo android:icon especifica el recurso @mipmap/ic_launcher y android:roundIcon especifica @mipmap/ic_launcher_round. Aunque no se muestra el diseño real, este es un elemento crucial de ASO ya que es la primera impresión visual de la aplicación.
+
+### 5.2.4. Searching Systems
+En Grotix, los Searching Systems fueron diseñados para simplificar la experiencia de búsqueda y mejorar la experiencia del usuario, ayudándolo a localizar la información que quiere consultar rápidamente y de manera eficiente. Esto nos ayudará a evitar que los clientes se sientan abrumados y ayudará al staff a supervisar correctamente el servicio que ofrecen.
+
+#### Web App (For Staff)
+
+[foto]
+
+En primer lugar, está la pantalla de Búsqueda, que está diseñada para ofrecer una experiencia de descubrimiento de catálogo rápida y directa al usuario. Su diseño conciso se enfoca en la eficiencia y la relevancia de los resultados. Permite explorar entre agricultores, contratos y dispositivos.
+
+[foto]
+
+La pantalla de Contratos incluye un ícono de filtros (representado por barras verticales de diferentes alturas) en la esquina superior derecha. Esta funcionalidad es crucial, ya que permite al staff refinar los resultados obtenidos en la lista general de contratos, aplicando criterios adicionales.
+
+[foto]
+
+De manera similar, en la pantalla de Dispositivos aparece el mismo ícono que permite filtrar entre la lista general de los microcontroladores aplicando ciertos criterios.
+
+[foto]
+
+En la pantalla de Cultivos hay una barra de búsqueda que permite explorar entre el listado de cultivos mediante dos criterios: nombre común o el científico.
+
+[foto]
+
+#### Mobile App (For Clients)
+
+[foto]
+
+Los usuarios poseen una barra de búsqueda en cada zona (Dashboard de Cultivation Area) que creen y posean para la funcionalidad de buscar otros usuarios. Esta le permite encontrar agricultores dentro de su asociación e invitarlos a participar u observar en la zona específica, así como eliminarlos de la misma.
+
+[foto]
+
+En la pantalla de IA (Image Processing), el usuario puede buscar las zonas en específico que tiene para ver su estado. El sistema muestra un listado con las zonas y el estado de germinación que posee; con esta barra de búsqueda se le facilita el encuentro de algún área en particular.
+
+[foto]
+
+En la pantalla general de zonas (Cultivation Areas), el usuario tiene la opción de buscar entre aquellas ya existentes, así como crear una nueva o filtrarlas mediante criterios específicos. Esto le permite realizar su objetivo de manera eficiente.
+
+### 5.2.5. Navigation Systems
+El diseño de la navegación de Grotix se basa en una arquitectura de información clara, utilizando patrones probados para garantizar que tanto los agricultores como el personal administrativo puedan acceder a sus flujos de trabajo clave de manera eficiente. 
+
+#### Web App (For Staff)
+
+[foto]
+
+En primer lugar, la barra lateral de navegación de la web app para el staff funciona como el eje central del sistema de navegación global, facilitando el acceso directo a los módulos críticos de Grotix.
+
+Diseñada bajo un enfoque de navegación persistente, permite al usuario moverse de manera fluida entre el dashboard principal, el buscador, la gestión de clientes (agricultores), contratos y el monitoreo técnico de microcontroladores y zonas de cultivo. 
+
+La jerarquía visual se apoya en una iconografía minimalista y escalable que optimiza el espacio de trabajo, asegurando que las herramientas de configuración y el acceso a la identidad de la marca permanezcan siempre al alcance del equipo operativo.
+
+[foto]
+
+Al momento de seleccionar un agricultor en específico en la pantalla de Agricultores (Agriculturists), la aplicación web dirige al miembro del staff a la pantalla de cliente en singular (Agriculturist). En caso de que desee regresar a ver la lista general de agricultores, puede hacerlo al hacer click en el ícono de flecha a la izquierda al costado del título (o a través del menú lateral).
+
+[foto]
+
+La pantalla de Cultivos (Crops) (y sus singulares) tienen la misma función de navegación que en Agricultores, permitiendo el regreso a la pantalla general de cultivos desde uno en singular.
+
+#### Mobile App (For Clients)
+
+[foto]
+
+En la pantalla de una zona en específico (Dashboard de Cultivation Area) hay botones de navegación. En primer lugar está Main (Principal), que muestra los valores actuales de los criterios de la zona (humedad, luz, etc.) y la información general. En el medio se encuentra Settings (Configuración), que permite cambiar los valores de límite para cada criterio, así como el riego de la zona. Por último, está People (Personas), que permite buscar entre los agricultores de la asociación para que el administrador de la zona lo pueda agregar o eliminar.
+
+[foto]
+
+La parte más importante de la navegación en la aplicación móvil es la barra inferior de menú. Cuenta con 5 íconos, cada uno dando acceso a diferentes funcionalidades. El primero, el dashboard, muestra una zona en específico a elección. Le sigue la estrella de cuatro puntas que dirige a la pantalla de AI Image Processing. En el medio se encuentra la planta, que muestra el listado de zonas (Cultivation Areas). El ícono de papel lleva a la pantalla de Reportes, que le permite al usuario generar informes sobre sus zonas y cultivos. Por último, el ícono de persona es el acceso a la pantalla de perfil (Profile), en la cual se muestran los detalles de la cuenta del usuario.
+
+[foto]
+
+Por último, la barra superior de cada pantalla de la aplicación posee dos accesos directos. El logo de Grotix lleva a la pantalla de zonas, como un acceso directo a información general. Y el ícono de campanita abre un drawer o sidebar (pantalla modal) con las notificaciones que recibe el usuario y una opción para configurarlas.
+
+## 5.3. Landing Page UI Design
+La propuesta de diseño para la interfaz de usuario (UI) de la Landing Page de Grotix es la culminación visual de la arquitectura de información y el diseño centrado en el usuario. Desde el primer impacto, esta interfaz está diseñada para proyectar una identidad accesible, amigable y culturalmente cercana. La estructura se organiza en secciones clave que garantizan una navegación fluida e intuitiva. Estéticamente, el diseño emplea una jerarquía visual limpia, ilustraciones cálidas, tipografías legibles y un uso estratégico de la paleta de colores para despertar el interés, generar confianza e impulsar al visitante a interactuar con los llamados a la acción, asegurando que la primera impresión sea tanto funcional como emocionalmente atractiva.
+
+### 5.3.1. Landing Page Wireframe
+La sección de Landing Page Wireframes presenta la arquitectura visual y la disposición estratégica de los elementos diseñados para comunicar la propuesta de valor de Grotix de manera efectiva. A través de una narrativa digital estructurada en secciones como Hero, Services, App, y Us, estos mockups definen la jerarquía de información necesaria para guiar al usuario desde el descubrimiento de la solución de riego inteligente hasta la conversión directa. El diseño prioriza una experiencia de usuario (UX) intuitiva en modo oscuro, integrando componentes visuales modernos y puntos de contacto estratégicos que refuerzan la identidad de Celevi y su compromiso con la sostenibilidad agrícola.
+
+A continuación, se muestra cada wireframe pensado para la Landing Page:
+
+[foto]
+[foto]
+[foto]
+[foto]
+[foto]
+[foto]
+
+### 5.3.2. Landing Page Mock-up
+
+[foto]
+
+La sección General de la landing page de Grotix presenta una introducción impactante y profesional orientada a soluciones de agricultura de precisión. En el centro de una estética de modo oscuro, destaca el nombre de la plataforma acompañado de su propuesta de valor. Un botón destacado de "GET NOW!" invita a la conversión inmediata, mientras que en la base de la pantalla se despliega una galería visual que ilustra el uso de sensores en campo, monitoreo móvil y análisis de datos en tiempo real. En la parte superior, un menú de navegación claro permite acceder a las secciones de servicios, aplicación, nosotros, contacto y redes sociales, incluyendo además un selector de idioma para mayor accesibilidad.
+
+[foto]
+
+La sección de Services de la landing page de Grotix detalla las capacidades tecnológicas de la plataforma para la agricultura de precisión mediante un diseño de tarjetas moderno y visual. Muestra un total de 6 tarjetas mostrando las principales características de la aplicación, dando un pequeño resumen de cada una con una imagen representativa de la información brindada.
+
+[foto]
+
+La sección App de la landing page destaca la movilidad y el control total bajo el lema "Your crops in the palm of your hand". En esta parte, se muestra un mockup de la aplicación móvil de Grotix. La descripción enfatiza el uso de inteligencia artificial para transformar datos complejos de sensores en decisiones accionables y reportes detallados de ahorro de agua, facilitando el acceso a estos insights directamente desde el teléfono. Finalmente, se presentan los botones de descarga para las principales tiendas de aplicaciones, reforzando la accesibilidad de la plataforma para el agricultor.
+
+[foto]
+
+La sección Us (Sobre Nosotros) de la landing page presenta a Celevi, la startup detrás de Grotix. En esta parte se explica que el equipo proviene de la Universidad Peruana de Ciencias Aplicadas (UPC) y se enfoca en promover la agricultura inteligente mediante una plataforma IoT escalable. Su misión principal es utilizar la automatización y el análisis de datos para optimizar el riego, buscando mitigar el hambre y transformar la gestión de recursos agrícolas en un motor de bienestar social y sostenibilidad nacional. La interfaz mantiene el estilo de modo oscuro con elementos gráficos abstractos y coloridos que resaltan la identidad de la marca y utilizan los colores de la paleta designada en style guidelines.
+
+[foto]
+
+La sección Contact de la landing page invita a la colaboración bajo el lema "Let’s grow the future together". En el lado izquierdo, destaca un formulario de contacto sobre un fondo verde vibrante que incluye campos para el nombre, correo electrónico, asunto y mensaje, finalizando con un botón de "SEND". El texto descriptivo a la derecha motiva tanto a productores individuales como a grandes asociaciones a realizar consultas técnicas o comerciales sobre los sensores IoT y la plataforma Grotix. Esta interfaz proporciona un canal directo y sencillo para resolver dudas y fomentar la adopción de sus soluciones agrícolas.
+
+[foto]
+
+La sección final de la landing page, denominada Social, junto con el pie de página (footer), cierra la experiencia del usuario facilitando la conexión con la marca a través de diversos canales. Bajo el encabezado "Find us everywhere", se presentan iconos destacados de redes sociales como Instagram, Facebook, Twitter y LinkedIn, invitando a la comunidad a seguir las actualizaciones de Grotix. El footer está organizado en cuatro columnas principales:
+
+* **Identidad:** Incluye el logotipo de Grotix, el eslogan sobre agricultura inteligente y accesos directos a redes sociales.
+* **Navigation:** Réplica del menú principal con enlaces a las secciones de General, Services, App, Us, Contact y Social.
+* **Legal:** Contiene enlaces a documentos normativos esenciales como Términos y Condiciones, Política de Privacidad, Política de Cookies y el Libro de Reclamaciones.
+* **Support:** Ofrece recursos de ayuda, una sección de preguntas frecuentes y un acceso directo para contactar al equipo de soporte.
+
+## 5.4. Applications UX/UI Design 
+El diseño UX/UI de las aplicaciones de Livria (tanto la web para el Staff como la móvil para los Clientes) se ha abordado bajo la premisa de accesibilidad, rendimiento y optimización táctil. El objetivo principal es trasladar la experiencia de lectura y comunidad a un entorno móvil de forma fluida y nativa, respetando los patrones de diseño de cada sistema operativo. Se ha priorizado la simplicidad en la navegación y la claridad de la información, utilizando grandes zonas de toque, una tipografía legible y un contraste adecuado.
+
+### 5.4.1. Applications Wireframes
+Los wireframes de las aplicaciones móviles de Grotix (tanto para la versión web como para la móvil) representan la columna vertebral estructural del diseño, priorizando la usabilidad táctil y la eficiencia de navegación. Esta etapa se enfoca en definir la organización jerárquica del contenido y la disposición óptima de los elementos clave dentro de los patrones de diseño móvil. Al concentrarse únicamente en la estructura y el flujo de tareas sin la distracción de elementos visuales, los wireframes permiten optimizar la experiencia de usuario en movimiento y asegurar que las funcionalidades críticas del sistema sean accesibles y fluidas.
+
+#### Web App (For Staff)
+
+**Pantalla Principal (Main)**
+
+[foto]
+
+**Pantalla de Búsqueda**
+
+[foto]
+
+**Pantalla de Agricultores**
+
+[foto]
+
+**Pantalla de Agricultor Individual**
+
+[foto]
+
+**Pantalla de Contratos**
+
+[foto]
+
+**Pantalla de Listado de Dispositivos**
+
+[foto]
+
+**Pantalla de Bitácora en Dispositivos**
+
+[foto]
+
+**Pantalla Mantenimiento de Dispositivos**
+
+[foto]
+
+**Pantalla Dispositivo Individual**
+
+[foto]
+
+**Pantalla de Cultivos**
+
+[foto]
+
+**Pantalla Cultivo Individual**
+
+[foto]
+
+**Pantalla de Perfil**
+
+[foto]
+
+
+#### Mobile App (For Clients)
+**Pantallas de Dashboard; Main, Settings, People**
+
+[foto]
+
+**Pantallas de AI, Cultivation Areas**
+
+[foto]
+
+**Pantallas de Reports, Profile**
+
+[foto]
+
+**Pantallas de Notifications**
+
+[foto]
+
+### 5.4.2. Applications Wireflow Diagrams
+
+Los diagramas de wireflow de la aplicación móvil de Grotix constituyen la representación integrada de la arquitectura de pantallas y los flujos de interacción del agricultor con la plataforma. A diferencia de un wireframe estático, el wireflow combina la estructura visual de cada pantalla con las transiciones de navegación entre ellas, permitiendo verificar que cada acción del usuario desencadena una respuesta coherente del sistema. Los flujos descritos a continuación han sido diseñados tomando como eje la barra de navegación inferior (Bottom Navigation Bar) compuesta por cinco accesos directos: Dashboard, AI Advisor, Zones (botón central), Reports y Profile. De manera transversal, la cabecera superior de cada pantalla expone el logotipo de Grotix —que actúa como atajo directo hacia la pantalla de zonas— y el ícono de campanita, que despliega el panel lateral de notificaciones.
+
+#### User Goal para Segmento 1: Agricultores Independientes 
+Como agricultor usuario de Grotix, quiero visualizar en tiempo real los indicadores de humedad, temperatura e intensidad lumínica de mi zona de cultivo para tomar decisiones operativas de forma inmediata.
+**Task flow:**
+
+[foto]
+
+**Wireflow:**
+
+[foto]
+
+Para poder interactuar con el monitoreo de variables de cultivo que ofrece Grotix, el agricultor accede, en primer lugar, a la pantalla principal del Dashboard al abrir la aplicación. El sistema lo sitúa automáticamente en la vista MAIN de la zona de cultivo activa, donde se despliegan en tiempo real tres métricas críticas obtenidas de los sensores IoT: el nivel de humedad del suelo representado como un indicador circular con valor porcentual y etiqueta semántica, la intensidad lumínica mediante una barra de progreso graduada con nivel descriptivo, y la temperatura ambiental en grados Celsius con indicador de estado. En caso de que alguna variable supere los umbrales configurados, el sistema resalta visualmente el indicador afectado con un cambio de color para facilitar una respuesta inmediata.
+
+Desde esta misma pantalla, al presionar la pestaña SETTINGS ubicada en la barra de navegación superior del dashboard, el sistema presenta la vista de configuración de la zona activa. Aquí el agricultor puede activar o desactivar el riego automático mediante un toggle switch, iniciar manualmente una sesión de riego y definir el tiempo máximo de irrigación mediante un selector desplegable. Asimismo, puede establecer los niveles críticos mínimos aceptables para cada variable monitoreada —humedad, luz y temperatura— cuyos valores serán empleados por el sistema para generar alertas automáticas.
+
+Finalmente, al seleccionar la pestaña PEOPLE, el sistema presenta el listado de colaboradores con acceso activo a la zona. El agricultor administrador puede eliminar a un colaborador existente mediante el botón REMOVE, acción que actualiza la lista de forma inmediata. Para añadir un nuevo colaborador, utiliza la barra de búsqueda superior para localizar a otro agricultor registrado en la plataforma y presiona el botón INVITE, con lo que el sistema envía una solicitud de acceso al usuario seleccionado.
+
+#### User Goal para Segmento 2: Asociaciones Agrarias 
+Como miembro de una asociación agraria, quiero consultar el análisis visual del estado de germinación y crecimiento de todas las zonas de cultivo gestionadas por la asociación, generado por la inteligencia artificial de Grotix, para conocer el progreso biológico de cada parcela sin necesidad de ser un especialista en botánica.
+**Task flow:**
+
+[foto]
+
+**Wireflow:**
+
+[foto]
+
+Para poder consultar el diagnóstico fenológico que ofrece el módulo de inteligencia artificial de Grotix, el usuario accede, en primer lugar, a la pantalla de Cultivation Areas (Zones), ya sea tocando el ícono central de brote en la barra de navegación inferior o a través del logotipo de Grotix en la cabecera. En esta pantalla se presenta el listado completo de las zonas registradas por la asociación, cada una con su imagen representativa, nombre, timestamp de última sincronización y una etiqueta de estado de sensores —verde si todos están activos, roja si alguno presenta falla.
+
+Desde cualquier pantalla de la aplicación, al presionar el ícono de destello (✦ AI Advisor) en la barra de navegación inferior, el sistema navega hacia la pantalla de AI Image Processing. En ella se muestra el indicador de confianza del modelo (AI Trust Level: 80%) y, bajo el título ZONE STATUS, el listado de todas las zonas de la asociación con sus respectivas tarjetas. Cada tarjeta presenta la imagen capturada por la cámara del microcontrolador IoT, el nombre de la zona y la etiqueta de etapa fenológica diagnosticada por el modelo (ej. Stage: SEED, Stage: GERMINATION). Si el usuario desea actualizar el diagnóstico de una zona específica, puede presionar el ícono de sincronización (↻) en la tarjeta correspondiente, tras lo cual el sistema procesa la imagen más reciente disponible y actualiza la etiqueta fenológica en pantalla.
+
+Para acceder al detalle completo de una zona, el usuario toca directamente la tarjeta de la zona de interés. Asimismo, si gestiona una cantidad considerable de parcelas, puede utilizar la barra de búsqueda superior para filtrar las zonas por nombre y localizar rápidamente el área deseada. En ambos casos, el sistema navega hacia la pantalla dashboard_main de la zona seleccionada, donde se muestran las métricas de los sensores en tiempo real —humedad, luz y temperatura— actualizadas con los datos del dispositivo IoT asociado a esa parcela.
+
+### 5.4.3. Applications Mock-ups
+La etapa de Mockups representa la traducción fiel de la estructura definida en los wireframes a una propuesta visual de alta fidelidad. Utilizando los Style Guidelines de Grotix, esta sección ilustra el look and feel final de la plataforma. El objetivo es mostrar al detalle cómo se aplicarán los elementos visuales para generar una interfaz coherente, atractiva y funcional. Los mockups no solo respetan la jerarquía y el flujo de navegación establecidos, sino que también garantizan que la experiencia de usuario (UX) sea intuitiva y esté completamente alineada con el tono cálido y motivador de la marca.
+
+#### Web App (For Staff)
+
+[foto]
+
+El Main Dashboard de la web app para el staff de Grotix presenta una interfaz intuitiva en modo oscuro organizada en tres columnas clave para la gestión operativa. La primera sección permite visualizar el estatus de los clientes activos, mientras que la columna central detalla los contratos vigentes con sus respectivas fechas de inicio. Finalmente, la sección de dispositivos monitorea en tiempo real la conectividad de los microcontroladores, diferenciando mediante etiquetas de color si se encuentran online u offline.
+
+[foto]
+
+La pantalla de Search de la web app para el staff ofrece una herramienta de búsqueda global integrada en una interfaz de modo oscuro, diseñada para filtrar agricultores, contratos o dispositivos de forma simultánea. Los resultados se organizan en tarjetas detalladas que muestran perfiles de usuarios con interruptores de estado, información de microcontroladores con su última fecha de mantenimiento, y el estatus de los contratos (como Active, Draft o Terminated). Esta vista unificada facilita la gestión rápida y el monitoreo del ecosistema de Grotix mediante una disposición limpia y etiquetas visuales de alta legibilidad.
+
+[foto]
+
+La pantalla de Agriculturists de la web app de Grotix presenta una interfaz de gestión de clientes organizada en una cuadrícula de tarjetas individuales bajo una estética de modo oscuro. Cada tarjeta muestra la fotografía del agricultor, su nombre completo y un interruptor (switch) lateral que permite activar o desactivar su estatus de forma rápida y visual. Esta disposición facilita al staff la supervisión y el control administrativo de los usuarios de la plataforma mediante un diseño limpio y funcional.
+
+[foto]
+
+La pantalla Single Agriculturist de la web app para el staff de Grotix ofrece una vista detallada del perfil de un usuario específico dentro de un contenedor centralizado en modo oscuro. En la parte superior del perfil, se muestra la fotografía del agricultor junto a su nombre y ocupación, acompañada de un interruptor de estado que indica claramente si el usuario está Active. El resto del formulario organiza la información de contacto y administrativa en campos de lectura, incluyendo la asociación a la que pertenece, correo electrónico, número telefónico y el rol asignado dentro de la plataforma. Esta interfaz permite al staff revisar los datos personales de manera estructurada y rápida mediante un diseño limpio y profesional.
+
+[foto]
+
+La pantalla de Contracts de la web app para el staff de Grotix presenta un repositorio centralizado de los acuerdos legales con clientes, organizado en una cuadrícula de tarjetas descriptivas sobre un fondo oscuro. En la parte superior, la interfaz incluye botones para alternar entre la vista de List y la opción de Add para registrar nuevos contratos, además de un icono de filtros para búsquedas avanzadas. Cada tarjeta identifica a la organización, la fecha de inicio del servicio y el estado actual del contrato mediante etiquetas de color, tales como Active, Draft, Pending, Renewed, Expired o Terminated. Esta visualización permite al equipo administrativo supervisar el ciclo de vida de cada suscripción y la vigencia de los servicios de manera eficiente.
+
+[foto]
+
+La pantalla de Devices de la aplicación web de Grotix permite al staff supervisar el hardware desplegado mediante una interfaz en modo oscuro organizada en una cuadrícula de tarjetas de microcontroladores. En la sección superior, el usuario puede navegar entre las funciones de List, Logbook y Maintenance, además de acceder a herramientas de filtrado. Cada tarjeta identifica un dispositivo por su código único y muestra en tiempo real si su estado es Online u Offline, junto con la fecha y hora exacta de su último mantenimiento. Esta disposición facilita un monitoreo técnico preventivo y una respuesta rápida ante cualquier desconexión en las zonas de cultivo.
+
+[foto]
+
+La sección Logbook dentro del módulo de Devices presenta un formulario de registro diseñado para documentar las intervenciones técnicas realizadas en el hardware de Grotix. Enmarcada en una interfaz de modo oscuro, la pantalla permite seleccionar el Device ID correspondiente, detallar la actividad realizada en un campo de texto amplio para la Action y definir el Status After mediante botones de selección rápida para marcar el dispositivo como Online u Offline. Finalmente, la vista incluye botones de acción destacados para Save o Cancel, asegurando que cada mantenimiento quede registrado correctamente en el historial del sistema.
+
+La vista de Maintenance en el módulo de dispositivos de Grotix proporciona una interfaz de control operativo para gestionar las tareas de soporte técnico sobre el hardware. Manteniendo la estética de modo oscuro, esta pantalla organiza los microcontroladores en tarjetas que incluyen botones de acción contextuales: Start Maintenance para iniciar un proceso de revisión o End Maintenance para concluir intervenciones en curso. Cada tarjeta muestra el ID del dispositivo, su estado de conectividad actual y la marca temporal de su último mantenimiento, permitiendo al staff coordinar las tareas de campo y asegurar que todos los equipos funcionen correctamente dentro de los cronogramas establecidos.
+
+[foto]
+
+La pantalla de Single Device en la web app de Grotix ofrece una vista técnica integral de un microcontrolador específico, dividida en dos secciones principales sobre un fondo oscuro. En el panel izquierdo, se presentan los detalles técnicos del hardware, incluyendo el Zone ID, el modelo del dispositivo, su dirección MAC y el estatus de conexión en tiempo real (ONLINE). La sección derecha está dedicada a los Maintenance Logs, donde se listan de forma cronológica las intervenciones realizadas, detallando fechas y acciones técnicas específicas como actualizaciones de firmware o reemplazo de componentes. Esta estructura permite al staff de Grotix tener una trazabilidad completa del ciclo de vida y el estado operativo de cada unidad de hardware.
+
+[foto]
+
+La pantalla de Crops de la aplicación web para el staff de Grotix presenta un catálogo visual de los tipos de cultivos soportados por la plataforma, organizado en una cuadrícula de tarjetas descriptivas sobre un fondo oscuro. En la parte superior, se incluye una barra de búsqueda que permite filtrar los resultados por nombre común o científico. Cada tarjeta contiene una imagen representativa del cultivo y su nombre correspondiente (como tomate, zanahoria o albahaca), facilitando una identificación rápida y clara para la gestión agrícola. Esta interfaz mantiene la coherencia visual con el resto del sistema, ofreciendo una navegación fluida a través de la barra lateral persistente.
+
+[foto]
+
+La pantalla de Single Crop de la aplicación web de Grotix permite al staff gestionar los parámetros específicos de un cultivo, como el brócoli, mediante una interfaz técnica en modo oscuro. En el panel izquierdo, se muestra una imagen identificativa junto al nombre común y científico del cultivo, además de un selector para definir el Maximum Stress Time permitido. La sección derecha, bajo el encabezado Statistics, presenta controles deslizantes para configurar los rangos ideales de temperatura, humedad y luz, permitiendo ajustar los niveles óptimos de crecimiento de forma visual. Finalmente, la pantalla incluye botones prominentes para Save o Delete, asegurando un control administrativo total sobre la base de datos de cultivos.
+
+[foto]
+
+La pantalla de Profile en la aplicación web ofrece una vista consolidada de la información del usuario autenticado. En el panel central, se muestra la identidad del equipo o usuario, incluyendo su nombre, el registro del último acceso al sistema y una etiqueta de estado ACTIVE. Debajo de la cabecera, se organizan campos informativos sobre la cuenta. La pantalla se completa con botones de acción rápida para realizar cambios mediante la opción Edit o para finalizar la sesión de forma segura con el botón Log Out.
+
+#### Mobile App (For Clients)
+
+[foto]
+
+La pantalla de Main Dashboard de la aplicación móvil de Grotix constituye el centro de control operativo para el usuario, permitiendo el monitoreo en tiempo real de zonas de cultivo específicas. Bajo una estética de modo oscuro, la interfaz presenta una tarjeta informativa del cultivo que detalla el estado de germinación y las coordenadas geográficas exactas de la plantación. El núcleo de la pantalla utiliza indicadores visuales dinámicos para reportar variables críticas: un gráfico circular para la humedad (Moisture) que indica niveles óptimos, una barra de progreso para la radiación lumínica y medidores de temperatura, todos acompañados por marcas de tiempo de la última actualización para garantizar la precisión de los datos. Asimismo, más abajo en la pantalla sale el resumen de sensores utilizados en esta zona. Esta disposición funcional se complementa con una barra de navegación inferior y pestañas superiores para ajustes y gestión de participantes, facilitando una toma de decisiones informada para mejorar la cosecha.
+
+[foto]
+
+La pantalla de Dashboard Settings en la aplicación móvil de Grotix permite al usuario personalizar de manera precisa el comportamiento del hardware en una zona de cultivo específica. En la sección de Irrigation, la interfaz ofrece interruptores para habilitar el riego automático o iniciar un riego manual de forma inmediata, además de un selector para establecer el Max. time of irrigation. Complementariamente, el apartado de Critical Levels permite definir los umbrales mínimos de humedad y radiación, así como el rango de temperatura ideal, asegurando que el sistema actúe según los requerimientos técnicos del cultivo. Esta configuración granular garantiza una gestión eficiente de los recursos y la protección de la salud de las plantas directamente desde el dispositivo móvil.
+
+[foto]
+
+La pantalla de Dashboard People en la aplicación móvil de Grotix facilita la gestión colaborativa de las zonas de cultivo al permitir la administración de los participantes asociados a cada proyecto. Bajo una interfaz de modo oscuro, esta sección presenta una lista de agricultores con sus respectivas fotografías, nombres y roles, integrando una barra de búsqueda superior para una localización rápida de usuarios. Los controles interactivos permiten invitar a nuevos colaboradores o remover a miembros existentes de la zona seleccionada, asegurando que el equipo de trabajo esté siempre actualizado y coordinado en las tareas de monitoreo agrícola.
+
+[foto]
+
+La pantalla de AI Image Processing en la aplicación móvil de Grotix permite al usuario visualizar el análisis avanzado de sus cultivos mediante inteligencia artificial. En la parte superior, se destaca el AI Trust Level, que indica el grado de confiabilidad del procesamiento actual (ej. 80%). Bajo la sección de Zone Status, se presenta un listado de las diferentes áreas de cultivo, mostrando para cada una la etapa de crecimiento detectada —como Seed o Germination— junto con la hora de la última actualización. Esta interfaz facilita el seguimiento automatizado del desarrollo de las plantas, permitiendo una supervisión precisa de múltiples zonas desde una sola vista centralizada.
+
+[foto]
+
+La pantalla de Cultivation Areas en la aplicación móvil de Grotix sirve como el inventario principal de los sectores de cultivo gestionados por el usuario. En esta interfaz de modo oscuro, se listan todas las zonas activas (como la "Zona Tomatitos" o el "Área de Zanahorias") mediante tarjetas que incluyen una imagen referencial, el nombre del área y la hora de su última sincronización. Un elemento crítico de esta pantalla es el indicador de estado de los dispositivos IoT, el cual notifica visualmente si todos los sensores operan correctamente o si existen fallas técnicas (ej. "Some sensors are failing"). Además, la parte superior integra herramientas funcionales para buscar zonas específicas, añadir nuevas áreas mediante un botón de "+" y acceder a filtros de configuración, manteniendo la coherencia con la barra de navegación inferior del sistema.
+
+[foto]
+
+La pantalla de Generate Report en la aplicación móvil de Grotix proporciona al usuario las herramientas necesarias para extraer y analizar datos históricos de sus cultivos de manera personalizada. Manteniendo la línea visual de modo oscuro de la plataforma, esta sección se enfoca específicamente en reportes de riego (Irrigation), permitiendo configurar rangos de tiempo exactos mediante selectores de fecha de inicio y fin, o mediante un menú desplegable para periodos predefinidos (3 meses, 6 meses, etc.). Una vez establecidos los parámetros, el botón de GENERATE procesa la información para mostrarla en el área de visualización inferior, facilitando al agricultor la revisión de tendencias y el consumo de recursos para una mejor planificación de futuras cosechas.
+
+[foto]
+
+La pantalla de Personal Info en la aplicación móvil de Grotix permite al agricultor gestionar su identidad digital y datos de contacto de manera centralizada. Bajo un saludo personalizado, la interfaz despliega un formulario que incluye campos para el nombre completo, correo electrónico, número telefónico y el rol del usuario, además de un espacio dedicado para la visualización y actualización de la foto de perfil. En la base de la tarjeta informativa, se ubican los botones de Edit para realizar modificaciones y Log Out para cerrar la sesión, manteniendo la coherencia visual del modo oscuro y la accesibilidad a través de la barra de navegación inferior que conecta con el resto de los módulos de la plataforma.
+Abajo de esta sección podrá encontrar una línea de soporte para contactar con el staff en caso de que uno de sus sensores esté fallando.
+
+[foto]
+
+La sección de Notifications en la aplicación móvil de Grotix se presenta como un panel superpuesto de acceso rápido (drawer) que mantiene al usuario informado sobre eventos clave del sistema. Con un diseño limpio en modo oscuro, el panel organiza las alertas de forma cronológica, permitiendo visualizar mensajes de bienvenida, estados de los sensores o alertas de riego. Cada notificación incluye una opción de eliminación individual mediante un icono de papelera, además de un botón global de CLEAR ALL en la parte inferior para gestionar el historial de avisos de manera eficiente. Esta funcionalidad garantiza que el agricultor no pierda de vista ninguna actualización crítica sobre el rendimiento y la salud de sus cultivos.
+
+[foto]
+
+La vista de Configuration dentro del panel de notificaciones de la aplicación móvil permite al usuario personalizar sus preferencias de alerta de manera detallada. En esta sección, el agricultor puede gestionar los canales de recepción mediante interruptores para Push Notifications y Email Notifications. Además, ofrece un control específico sobre el tipo de contenido que genera avisos, permitiendo activar o desactivar alertas para cambios en el riego (irrigation), alcance de niveles críticos en los sensores o actualizaciones sobre el estado de germinación de los cultivos. Esta flexibilidad asegura que el usuario reciba únicamente la información más relevante.
+
+
+### 5.4.4. Applications User Flow Diagrams
+
+#### Segmento Objetivo #1: Productores Independientes
+
+**Contexto del User Persona (Mateo Rojas):** Él busca optimizar su tiempo, reducir el trabajo manual y necesita una interfaz que no lo abrume tecnológicamente, dándole seguridad sobre su chacra de forma remota.
+
+**User Goal:** Monitorear las variables críticas de su cultivo en tiempo real y delegar el trabajo manual habilitando el riego automático para optimizar su tiempo.
+
+**Task flow:**
+
+[foto]
+
+**User flow:**
+
+[foto]
+
+Para interactuar con el flujo de monitoreo inteligente y automatización que ofrece Grotix, el agricultor accede inicialmente a la pantalla de Cultivation Areas al abrir la aplicación, donde visualiza un listado general de sus parcelas registradas. Al seleccionar una zona específica, como la "Zona Tomatitos", el sistema lo dirige automáticamente a la vista MAIN del Dashboard. En esta sección, se despliegan en tiempo real las métricas críticas capturadas por los sensores IoT: el nivel de humedad del suelo representado porcentualmente, la intensidad lumínica y la temperatura ambiental. Estas variables permiten al usuario supervisar la salud de su cultivo de manera inmediata, alertando visualmente si algún parámetro se encuentra fuera de los umbrales seguros establecidos.  Sin perder tiempo en navegaciones complejas, el agricultor puede desplazarse hacia la pestaña SETTINGS mediante un toque en la barra de navegación superior de la zona. En esta vista, el usuario tiene la capacidad de configurar con precisión los niveles críticos mínimos para cada variable ambiental (humedad, luz y temperatura), así como activar el interruptor de riego automático mediante un toggle switch. Esta acción garantiza que el hardware en campo responda de forma autónoma a las necesidades hídricas detectadas, optimizando el uso del recurso y permitiendo al agricultor delegar el esfuerzo físico del riego manual.  Finalmente, para validar el progreso biológico y obtener una mayor tranquilidad sobre el estado de su inversión, el usuario selecciona el icono de destello en la barra de navegación inferior para acceder al módulo de AI Image Processing. Aquí, el sistema muestra el diagnóstico generado por inteligencia artificial, identificando automáticamente la etapa fenológica actual del cultivo (como germinación o crecimiento) junto con un nivel de confianza del análisis. Este flujo integrado permite una supervisión remota completa y ágil, transformando datos sensoriales y visuales complejos en decisiones técnicas seguras para el productor.
+
+#### Segmento Objetivo #2: Asociaciones Agrarias (Carlos Mendoza)
+
+**Contexto del Persona (Carlos Mendoza):** Él es un gerente racional que necesita datos precisos, trazabilidad para exportación (GlobalGAP) y control sobre múltiples agricultores o zonas desde una sola plataforma.
+
+**User Goal:** Auditar el personal asignado a una zona de cultivo específica y generar un reporte de riego trimestral para cumplir con los estándares de calidad de exportación.
+
+**Task flow:**
+
+[foto]
+
+**User flow:**
+
+[foto]
+
+Para que el usuario logre auditar el personal asignado a una zona de cultivo específica y generar reportes de riego trimestrales que cumplan con los estándares de calidad de exportación, Grotix ofrece un flujo administrativo centralizado y eficiente. En primer lugar, si el objetivo es la auditoría de personal, el usuario accede desde la pantalla de Cultivation Areas a la zona específica de interés. Una vez dentro, se desplaza a la vista PEOPLE a través de la barra de navegación superior del dashboard. En esta sección, se visualiza la información detallada de los encargados actuales de la zona y un listado de otros agricultores de la granja disponibles para ser vinculados. El administrador tiene la facultad de gestionar estos accesos de forma dinámica: puede remover a un colaborador existente mediante el botón REMOVE, lo que actualiza la lista al instante, o añadir nuevos integrantes utilizando la barra de búsqueda y presionando el botón INVITE. Este control bidireccional asegura que siempre se tenga claridad sobre quién opera cada sector de la producción.  Por otro lado, para la generación de documentación técnica, el usuario accede a la vista de REPORTS directamente desde el menú de navegación inferior. Dentro de este módulo, el proceso de configuración está diseñado para minimizar errores de entrada: al seleccionar la fecha de inicio del reporte, el sistema utiliza una lógica de autocompletado para determinar la fecha de fin basada en el rango de tiempo seleccionado (por ejemplo, "3 months" para trazabilidad trimestral). El agricultor puede ajustar estos periodos mediante un selector desplegable, lo que actualiza automáticamente los límites temporales del informe. Una vez validados los parámetros, el usuario acciona el botón GENERATE, lo que inicia el procesamiento de la telemetría histórica y la descarga del reporte directamente en el dispositivo. Este flujo garantiza la obtención ágil de pruebas de sostenibilidad y huella hídrica, facilitando el cumplimiento de normativas internacionales.
+
+## 5.5. Applications Prototyping 
+Con el objetivo de evaluar y perfeccionar la accesibilidad y la experiencia de usuario (UX) antes del desarrollo final, se elaboró un prototipo interactivo a partir de los mockups de alta fidelidad, centrado exclusivamente en la navegación móvil.
+Este modelo funcional simula de forma integral el recorrido del usuario dentro de la aplicación, permitiendo explorar directamente sus secciones, elementos y flujos de interacción tal como se verá en un dispositivo móvil.
+
+El prototipo fue diseñado siguiendo principios de arquitectura de la información clara, jerarquía visual lógica y diseño inclusivo. Se priorizó la facilidad de uso, asegurando que cada componente respete los estándares de usabilidad y coherencia visual para una navegación fluida e intuitiva. Esta versión navegable actúa como una fiel representación de la futura interfaz de la aplicación, siendo clave para validar decisiones de diseño y garantizar una experiencia consistente y accesible.
+
+### Web App (For Staff)
+
+[foto]
+
+Video explicativo:
+
+[foto]
+
+Link del video:
+https://drive.google.com/file/d/1DgfYWx-fN4A5AzBG1_7rw40WK8VJpxDh/view?usp=sharing
+
+Link al prototipo interactivo:
+https://www.figma.com/proto/oG0SittF4VvPKSelZNuj6J/Grotix?node-id=40-63&p=f&t=dB36gijF28heh7zW-1&scaling=scale-down&content-scaling=fixed&page-id=40%3A61 
+
+### Mobile App (For Clients)
+
+[foto]
+
+Video explicativo:
+
+[foto]
+
+Link del video:
+https://drive.google.com/file/d/1_v9BDa8tAwhBIG6wpW-Yj4evmoUe0aWg/view?usp=sharing
+
+Link al prototipo interactivo:
+https://www.figma.com/proto/oG0SittF4VvPKSelZNuj6J/Grotix?node-id=148-1047&p=f&t=JdOOShNAUIqGebVF-1&scaling=scale-down&content-scaling=fixed&page-id=40%3A62 
+
+## 5.6. IoT Device Design 
+
+El diseño del dispositivo (Device Design) es la fase arquitectónica fundamental que planifica y documenta la interconexión física del hardware, asegurando una asignación lógica de pines, niveles de voltaje adecuados y aislamiento eléctrico para evitar fallos antes del ensamblaje. Bajo este enfoque técnico, la siguiente figura presenta el diagrama del nodo IoT de Grotix, ilustrando la integración del microcontrolador central ESP32-S3 con la red de sensores de percepción y los componentes de actuación e interfaz local. Este esquema sirve como la guía técnica estandarizada para la construcción del circuito, garantizando la estabilidad operativa y la correcta captura de telemetría en el entorno agrícola. 
+
+[foto]
