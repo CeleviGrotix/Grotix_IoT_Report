@@ -846,3 +846,621 @@ Tras concluir la integración de los sistemas externos en el Paso 4, el equipo p
 | Sensor Node (Nodo de Sensor) | Dispositivo de hardware de campo, energéticamente autónomo, encargado de registrar mediciones precisas de humedad, intensidad lumínica y temperatura del suelo. |
 | Actuator / Valve (Actuador / Válvula) | Componente físico o electromecánico integrado al sistema de tuberías que se abre o cierra de forma remota para ejecutar el flujo y suministro de agua hacia las parcelas. |
 
+# CAPÍTULO III: Requirements Specification 
+
+## 3.1. User Stories
+
+En esta sección se detallan las Historias de Usuario (US) que definen el alcance funcional y técnico de Grotix. El objetivo principal de este apartado es traducir los requisitos del sistema en necesidades reales desde la perspectiva del agricultor, asegurando que cada desarrollo aporte un valor tangible a la gestión del cultivo.
+
+Para garantizar la calidad en la implementación y facilitar las pruebas de software, cada historia ha sido estructurada bajo el formato estándar (Como... quiero... para...) y validada mediante Criterios de Aceptación redactados en lenguaje Gherkin (Dado que, Cuando, Entonces). Este enfoque permite al equipo de desarrollo mantener una trazabilidad clara entre los objetivos de negocio —como la sostenibilidad hídrica y la automatización mediante Inteligencia Artificial— y la ejecución técnica en el hardware y la plataforma web.
+
+Las historias están organizadas en 8 épicas que cubren todo el ciclo de vida del producto: desde la adquisición de datos sensoriales y el diagnóstico visual, hasta la gestión del modelo de suscripción y los estándares de seguridad de la información.
+
+#### US01 - Visualización de propuesta de valor y servicios
+
+| Story ID | US01 |
+|---|---|
+| Epic ID | E01 - Presencia Digital y Propuesta de Valor |
+| Título | Visualización de propuesta de valor y servicios |
+| Descripción | Como visitante, quiero visualizar la información principal del servicio para comprender cómo Grotix soluciona mis problemas de germinación y riego mediante tecnología. |
+| Criterios de Aceptación | **Escenario 1: Explicación clara de la propuesta de valor (Hero Section)**<br>Dado que el usuario ingresa a la URL de la landing page, Cuando la página cargue completamente, Entonces el usuario debe visualizar un título impactante (Headline) y una breve descripción que resuma que Grotix es una plataforma de riego inteligente con Inteligencia Artificial.<br><br>**Escenario 2: Detalle de las funcionalidades principales**<br>Dado que el usuario se encuentra en la sección de inicio, Cuando el usuario se dirija hacia la sección de Servicios, Entonces el sistema debe mostrar al menos tres pilares clave: Monitoreo por sensores, Reconocimiento de germinación (IA) y Riego automatizado.<br><br>**Escenario 3: Comprensibilidad del lenguaje**<br>Dado que el usuario lee el contenido de la landing page, Cuando navega por las diferentes secciones de información, Entonces el texto debe ser legible, sin tecnicismos excesivos que impidan a un agricultor o usuario no técnico entender el beneficio del producto.<br><br>**Escenario 4: Fallo en la carga de recursos visuales**<br>Dado que el usuario tiene una conexión a internet inestable o lenta, Cuando accede a la landing page y las imágenes pesadas no cargan, Entonces el sistema debe mostrar un color de fondo sólido coherente y asegurar que el texto sea legible de inmediato para no perder el interés del visitante. |
+
+#### US02 - Enlaces de acceso a la aplicación móvil
+
+| Story ID | US02 |
+|---|---|
+| Epic ID | E01 - Presencia Digital y Propuesta de Valor |
+| Título | Enlaces de acceso a la aplicación móvil |
+| Descripción | Como visitante, quiero tener botones claros de acceso para dirigirme rápidamente a la plataforma donde gestionaré mis cultivos. |
+| Criterios de Aceptación | **Escenario 1: Redirección a la aplicación Móvil**<br>Dado que el usuario desea instalar la aplicación en su dispositivo, Cuando el usuario seleccione en el link de “GET NOW!”, Entonces el sistema debe redirigirlo a la tienda de aplicaciones oficial correspondiente al sistema operativo de su smartphone.<br><br>**Escenario 2: Validación de enlaces operativos**<br>Dado que la landing page se encuentra disponible para los usuarios, Cuando un usuario intenta usar cualquiera de los botones de redirección, Entonces el sistema debe asegurar que no existan enlaces rotos (error 404) y que el destino sea el entorno correcto. |
+
+#### US03 - Implementación de CTA
+
+| Story ID | US03 |
+|---|---|
+| Epic ID | E01 - Presencia Digital y Propuesta de Valor |
+| Título | Implementación de CTA |
+| Descripción | Como visitante, quiero encontrar botones de acción claros y visibles para interactuar con la plataforma sin tener que buscar los accesos. |
+| Criterios de Aceptación | **Escenario 1: Ubicación estratégica en la sección principal (Hero)**<br>Dado que el usuario accede la landing page, Cuando visualiza la primera sección (Hero Section), Entonces debe aparecer al menos un botón de acción principal ("Comienza ahora") resaltado visualmente.<br><br>**Escenario 2: Persistencia en la barra de navegación (Sticky Header)**<br>Dado que el usuario se desplaza hacia abajo para leer más información, Cuando la barra de navegación se mantenga fija en la parte superior, Entonces un botón de CTA secundario debe permanecer visible para permitir el acceso en cualquier momento.<br><br>**Escenario 3: Tiempo de respuesta excedido (Timeout)**<br>Dado que el usuario hace clic en el CTA "Comienza ahora", Cuando el servidor de la aplicación está bajo mantenimiento o caído, Entonces el sistema debe mostrar una página de error personalizada en lugar de un error genérico del navegador. |
+
+#### US04 - Visualización de misión, visión y equipo
+
+| Story ID | US04 |
+|---|---|
+| Epic ID | E01 - Presencia Digital y Propuesta de Valor |
+| Título | Visualización de misión, visión y equipo |
+| Descripción | Como visitante, quiero conocer la historia, misión y quiénes están detrás de Grotix para generar confianza en la solución tecnológica que ofrecen. |
+| Criterios de Aceptación | **Escenario 1: Exposición de la misión y visión del proyecto**<br>Dado que el usuario navega hacia la sección "Nosotros", Cuando visualice el contenido, Entonces el sistema debe presentar de forma clara el nombre del startup y su descripción<br><br>**Escenario 2: Presentación del equipo de trabajo**<br>Dado que el usuario se encuentra en la sección de equipo, Cuando la página cargue los elementos visuales, Entonces el usuario puede leer la misión del startup a través de Grotix.<br><br>**Escenario 3: Fallo en la carga de imágenes de perfil**<br>Dado que el servidor de imágenes tiene un problema de latencia, Cuando el usuario entra a la sección del equipo, Entonces el sistema debe mostrar placeholders (avatares genéricos) con el nombre y cargo del integrante, evitando que la sección se vea vacía o rota. |
+
+#### US05 - Implementación de formulario y canales de contacto
+
+| Story ID | US05 |
+|---|---|
+| Epic ID | E01 - Presencia Digital y Propuesta de Valor |
+| Título | Implementación de formulario y canales de contacto |
+| Descripción | Como visitante, quiero tener un medio de comunicación directo para enviar consultas, reportar problemas o solicitar información personalizada sobre Grotix. |
+| Criterios de Aceptación | **Escenario 1: Envío exitoso del formulario de contacto**<br>Dado que el usuario se encuentra en la sección de Contacto, Cuando completa los campos obligatorios (Nombre, Correo, Asunto y Mensaje) y envíe el formulario, Entonces el sistema debe procesar la información y mostrar un mensaje de éxito indicando que el mensaje ha sido enviado correctamente.<br><br>**Escenario 2: Validación de campos obligatorios**<br>Dado que el usuario intenta enviar el formulario, Cuando deja uno o más campos obligatorios vacíos y lo envía, Entonces el sistema debe impedir el envío y resaltar los campos faltantes con un mensaje de error descriptivo.<br><br>**Escenario 3: Disponibilidad de métodos de contacto alternativos**<br>Dado que el usuario prefiere no usar el formulario, Cuando visualiza la sección de contacto, Entonces el sistema debe mostrar claramente otros medios como el correo corporativo o un enlace directo a WhatsApp.<br><br>**Escenario 4: Fallo en el envío por pérdida de conexión**<br>Dado que el usuario envía el formulario, Cuando el servicio de mensajería falla o no hay internet, Entonces el sistema debe mostrar un mensaje de error y no borrar los datos que el usuario ya escribió en el formulario.<br><br>**Escenario 5: Validación de formato de correo**<br>Dado que el usuario ingresa un texto que no es un correo, Cuando intenta enviar el formulario, Entonces el sistema debe detectar el formato inválido y pedir un correo electrónico real. |
+
+#### US06 - Enlaces a redes sociales
+
+| Story ID | US06 |
+|---|---|
+| Epic ID | E01 - Presencia Digital y Propuesta de Valor |
+| Título | Enlaces a redes sociales |
+| Descripción | Como visitante, quiero encontrar los accesos a las redes sociales oficiales de Grotix para mantenerme actualizado sobre las novedades y el desarrollo del proyecto. |
+| Criterios de Aceptación | **Escenario 1: Ubicación en el pie de página (Footer)**<br>Dado que el usuario se desplaza hasta el final de la landing page, Cuando visualice el área del footer, Entonces el sistema debe mostrar enlaces de acceso de las redes sociales oficiales (Instagram, LinkedIn, Facebook.<br><br>**Escenario 2: Uso de iconografía oficial y reconocible**<br>Dado que el usuario observa la sección de redes sociales, Cuando carguen los elementos visuales, Entonces los iconos utilizados deben corresponder a los logotipos oficiales de cada plataforma para facilitar su identificación inmediata.<br><br>**Escenario 3: Validación de enlaces externos activos**<br>Dado que el sitio está en producción, Cuando el administrador del sitio actualice las URLs de las redes sociales, Entonces el sistema debe asegurar que los enlaces dirijan exactamente a los perfiles oficiales de Grotix y no a páginas de inicio genéricas de las plataformas.<br><br>**Escenario 4: Apertura de enlaces en ventana nueva**<br>Dado que el usuario selecciona un ícono de red social, Cuando el enlace se activa, Entonces el sistema debe abrir la red social en una pestaña nueva para asegurar que el usuario no abandone la landing page de Grotix accidentalmente. |
+
+#### US07 - Implementación de sistemas de navegación simplificada
+
+| Story ID | US07 |
+|---|---|
+| Epic ID | E02 - Optimización de Usabilidad y Rendimiento Web |
+| Título | Implementación de sistemas de navegación simplificada |
+| Descripción | Como visitante, quiero disponer de elementos de navegación claros y accesibles para encontrar la información que busco sin esfuerzo y reducir la tasa de abandono. |
+| Criterios de Aceptación | **Escenario 1: Menú de navegación persistente**<br>Dado que el usuario se desplaza hacia abajo en la página, Cuando la navegación principal se mantenga fija en el borde superior, Entonces el usuario debe poder acceder a las secciones del sitio en cualquier momento sin tener que volver al inicio manualmente.<br><br>**Escenario 2: Implementación de navegación móvil**<br>Dado que el usuario accede desde un dispositivo con pantalla reducida (móvil/tablet), Cuando el ancho de la pantalla sea inferior al punto de quiebre (breakpoint) definido, Entonces el menú horizontal debe colapsar en un icono de "hamburguesa" que despliegue las opciones de forma vertical y legible.<br><br>**Escenario 3: Desplazamiento suave entre secciones**<br>Dado que el usuario selecciona un enlace del menú que apunta a una sección de la misma página, Cuando el navegador realice la transición, Entonces el desplazamiento debe ser fluido y no un salto brusco, permitiendo al usuario mantener el contexto visual.<br><br>**Escenario 4: Resaltado de sección activa en el menú**<br>Dado que el usuario se encuentra visualizando una sección específica, Cuando el elemento del menú correspondiente esté activo, Entonces este debe cambiar su estilo para indicar visualmente al usuario en qué parte de la página se encuentra ubicado.<br><br>**Escenario 5: Cierre del menú móvil tras selección o acción externa**<br>Dado que el usuario tiene abierto el menú de hamburguesa en su móvil, Cuando haga clic en un enlace o toque el área fuera del menú, Entonces el sistema debe cerrar el menú automáticamente para permitir la visualización de la sección seleccionada sin obstrucciones.<br><br>**Escenario 6: Prevención de superposición**<br>Dado que el usuario utiliza el menú persistente, Cuando se desplaza sobre secciones con elementos flotantes o imágenes pesadas, Entonces el menú debe permanecer siempre en la capa superior sin que el contenido de la página lo tape. |
+
+#### US08 - Implementación de Identidad y Consistencia Visual
+
+| Story ID | US08 |
+|---|---|
+| Epic ID | E02 - Optimización de Usabilidad y Rendimiento Web |
+| Título | Implementación de Identidad y Consistencia Visual |
+| Descripción | Como visitante de la landing page, quiero una interfaz visual coherente para navegar de forma clara y agradable. |
+| Criterios de Aceptación | **Escenario 1: Aplicación de la paleta de colores y temas**<br>Dado que el usuario navega por cualquier sección de la landing page, Cuando se visualicen los elementos de la interfaz, Entonces estos deben seguir una jerarquía de colores basada con contrastes que cumplan los estándares de accesibilidad WCAG.<br><br>**Escenario 2: Jerarquía Tipográfica estandarizada**<br>Dado que se presenta contenido textual en la página, Cuando el navegador renderice los textos, Entonces el sistema debe aplicar una escala tipográfica clara que facilite la lectura rápida. |
+
+#### US09 - Optimización de tiempos de respuesta y carga inicial
+
+| Story ID | US09 |
+|---|---|
+| Epic ID | E02 - Optimización de Usabilidad y Rendimiento Web |
+| Título | Optimización de tiempos de respuesta y carga inicial |
+| Descripción | Como visitante, quiero que la landing page cargue de forma inmediata para acceder a la información sin frustraciones y evitar el abandono del sitio. |
+| Criterios de Aceptación | **Escenario 1: Tiempo de carga**<br>Dado que el usuario ingresa la URL de Grotix en su navegador, Cuando se inicie la petición al servidor, Entonces la página debe cargar en menos de 1.5 segundos en condiciones normales de red.<br><br>**Escenario 2: Implementación de carga diferida**<br>Dado que la landing page tiene secciones extensas, Cuando el usuario abra la página, Entonces solo se deben cargar los recursos visibles en la pantalla inicial, posponiendo la carga de las imágenes inferiores hasta que el usuario se desplaza hacia ellas.<br><br>**Escenario 3: Rendimiento en dispositivos móviles**<br>Dado que un usuario accede desde una conexión de datos móviles, Cuando interactúe con la landing page, Entonces el tiempo total de interacción no debe superar los 3.5 segundos, garantizando una experiencia fluida incluso en redes de velocidad media.<br><br>**Escenario 4: Tiempo de espera de respuesta de red**<br>Dado que la red del usuario es lenta, Cuando el tiempo de carga supera los 5 segundos, Entonces el sistema debe dar prioridad a la carga del texto (HTML/CSS) sobre los scripts pesados para que el usuario pueda empezar a leer aunque las animaciones no estén listas. |
+
+#### US10 - Vinculación del Microcontrolador con la Aplicación
+
+| Story ID | US10 |
+|---|---|
+| Epic ID | E03 - Monitoreo Sensorial y Sincronización de Dispositivos |
+| Título | Vinculación del Microcontrolador con la Aplicación |
+| Descripción | Como usuario de Grotix, quiero vincular mi microcontrolador con la aplicación para establecer un canal de comunicación seguro y visualizar la telemetría de mis plantas. |
+| Criterios de Aceptación | **Escenario 1: Emparejamiento exitoso del dispositivo**<br>Dado que el microcontrolador se encuentra en modo de configuración y la aplicación está abierta, Cuando el usuario ingresa el ID único del dispositivo, Entonces el sistema debe validar el identificador y confirmar el enlace exitoso, mostrando el dispositivo como "Activo" en el perfil del usuario.<br><br>**Escenario 2: Persistencia de la conexión tras reinicio**<br>Dado que el microcontrolador ya ha sido vinculado con éxito previamente, Cuando el hardware se reinicie debido a un corte de energía o mantenimiento, Entonces el sistema debe reconectarse automáticamente a la red y a la aplicación sin requerir que el usuario repita el proceso de vinculación manual.<br><br>**Escenario 3: Validación de identificador único existente**<br>Dado que el usuario intenta vincular un dispositivo, Cuando ingresa un ID que no existe en la base de datos de manufactura de Grotix o que ya está vinculado a otra cuenta, Entonces el sistema debe mostrar un mensaje de error. |
+
+#### US11 - Monitoreo fiel de las condiciones del entorno
+
+| Story ID | US11 |
+|---|---|
+| Epic ID | E03 - Monitoreo Sensorial y Sincronización de Dispositivos |
+| Título | Monitoreo fiel de las condiciones del entorno |
+| Descripción | Como usuario de Grotix, quiero que mi sistema detecte con precisión los cambios en mi cultivo para confiar en que la información que veo en la app es el reflejo real de mis plantas. |
+| Criterios de Aceptación | **Escenario 1: Reflejo inmediato de cambios físicos**<br>Dado que el usuario está observando el dashboard de la aplicación, Cuando ocurra un cambio físico en el cultivo (ej. se empieza a regar o sale el sol), Entonces el sistema debe procesar la señal del sensor y actualizar el valor en la pantalla.<br><br>**Escenario 2: Verificación de la integridad del sensor**<br>Dado que el sistema está monitoreando en segundo plano, Cuando un sensor se desconecte o falle, Entonces el usuario debe recibir una notificación o aviso visual de "Sensor no disponible" para que pueda revisar la instalación física.<br><br>**Escenario 3: Correspondencia entre el estado físico y el dato digital**<br>Dado que el usuario introduce el sensor en un sustrato más húmedo, Cuando el sistema procese la señal eléctrica, Entonces el valor porcentual de humedad en la app debe aumentar proporcionalmente, validando la correcta comunicación hardware-software. |
+
+#### US12 - Actualización periódica y automática de telemetría
+
+| Story ID | US12 |
+|---|---|
+| Epic ID | E03 - Monitoreo Sensorial y Sincronización de Dispositivos |
+| Título | Actualización periódica y automática de telemetría |
+| Descripción | Como usuario de Grotix, quiero que mi sistema capture datos cada 15 minutos para mantener un seguimiento detallado de la evolución de mi cultivo sin intervención manual. |
+| Criterios de Aceptación | **Escenario 1: Ejecución del ciclo de lectura programado**<br>Dado que el microcontrolador se encuentra encendido y conectado a la red, Cuando el temporizador interno alcance el intervalo de 15 minutos, Entonces el sistema debe activar los sensores, realizar la captura de datos y enviarlos automáticamente a la nube.<br><br>**Escenario 2: Visualización de la última actualización**<br>Dado que el usuario consulta el estado de su planta en la aplicación, Cuando se reciba una nueva lectura programada, Entonces la interfaz debe actualizar el mensaje de "Última sincronización" con la hora y fecha exacta del reporte para dar certeza de la vigencia del dato..<br><br>**Escenario 3: Optimización de recursos del dispositivo**<br>Dado que el sistema opera bajo una frecuencia de 15 minutos, Cuando el dispositivo termine de enviar la lectura, Entonces debe entrar en un estado de espera o bajo consumo hasta el siguiente ciclo, evitando el sobrecalentamiento del hardware o el uso innecesario de ancho de banda.<br><br>**Escenario 4: Reanudación del ciclo tras desconexión**<br>Dado que el dispositivo sufre una desconexión temporal durante el intervalo de espera, Cuando la conexión se restablezca, Entonces el sistema debe sincronizar el reloj interno y retomar el ciclo de lectura de 15 minutos de forma inmediata para minimizar los vacíos de información. |
+
+#### US13 - Garantía de exactitud en la medición de datos
+
+| Story ID | US13 |
+|---|---|
+| Epic ID | E03 - Monitoreo Sensorial y Sincronización de Dispositivos |
+| Título | Garantía de exactitud en la medición de datos |
+| Descripción | Como usuario, quiero que las mediciones tengan un margen de error máximo del 2% para asegurar que mis plantas reciban el tratamiento exacto que necesitan sin riesgos de sobre-riego o sequedad. |
+| Criterios de Aceptación | **Escenario 1: Validación contra valores de referencia**<br>Dado que el microcontrolador está realizando lecturas en un entorno con condiciones controladas, Cuando el sistema procese los datos de los sensores de humedad y temperatura, Entonces el valor digital reportado debe tener una desviación máxima del 2% en comparación con un instrumento de medición patrón o de referencia industrial.<br><br>**Escenario 2: Filtrado de ruido eléctrico en la señal**<br>Dado que el sensor realiza múltiples capturas rápidas para promediar un dato, Cuando existan fluctuaciones eléctricas menores en el ambiente, Entonces el sistema debe aplicar algoritmos de suavizado (como media móvil) para eliminar valores atípicos y asegurar que el dato final enviado a la nube sea estable y preciso.<br><br>**Escenario 3: Resolución de la conversión Analógico-Digital (ADC)**<br>Dado que el sensor entrega una señal de voltaje analógica, Cuando el microcontrolador (ESP32) convierta dicha señal a un valor digital, Entonces el mapeo del algoritmo debe garantizar que la resolución sea lo suficientemente fina para detectar cambios mínimos, manteniendo el error de cuantización por debajo del umbral de precisión requerido.<br><br>**Escenario 4: Detección de inconsistencias físicas**<br>Dado que el sistema recibe una serie de lecturas constantes, Cuando ocurra un salto brusco o físicamente imposible en los datos (ej: la humedad pasa de 40% a 90% en un segundo sin riego activo), Entonces el sistema debe marcar la lectura como "pendiente de validación" y repetir la captura para confirmar que el dato reportado al usuario sea real y exacto. |
+
+#### US14 - Dashboard de Monitoreo Integral y Resumen de Estado
+
+| Story ID | US14 |
+|---|---|
+| Epic ID | E04 - Administración de Cultivos y Monitoreo Multi-Entorno |
+| Título | Dashboard de Monitoreo Integral y Resumen de Estado |
+| Descripción | Como usuario de Grotix, quiero contar con un dashboard que resuma las variables de humedad, luz y temperatura para visualizar el estado de salud de mi cultivo de forma rápida y centralizada. |
+| Criterios de Aceptación | **Escenario 1: Vista consolidada del Dashboard (Resumen)**<br>Dado que el usuario abre la aplicación y se dirige a la vista principal del cultivo, Cuando el sistema cargue los datos, Entonces el usuario debe visualizar un dashboard que agrupe de forma simultánea los indicadores actuales de humedad, luz y temperatura en una sola pantalla sin necesidad de navegación adicional.<br><br>**Escenario 2: Interpretación de la humedad del suelo**<br>Dado que el sensor de humedad está enviando datos en tiempo real, Cuando el usuario observe el dashboard, Entonces el sistema debe mostrar el valor porcentual (0% a 100%) y una etiqueta descriptiva que indique si el nivel es "Bajo", "Óptimo" o "Excesivo".<br><br>**Escenario 3: Reporte de intensidad lumínica y radiación**<br>Dado que la planta requiere luz para la fotosíntesis, Cuando el sistema procese la señal del sensor de luz, Entonces el dashboard debe representar la intensidad en una escala legible (ej. Lux o niveles bajo/medio/alto) para que el usuario determine si la ubicación es adecuada.<br><br>**Escenario 4: Actualización dinámica de temperatura**<br>Dado que el ambiente del cultivo sufre variaciones térmicas, Cuando el sensor de temperatura realice una nueva lectura, Entonces el valor en pantalla debe actualizarse automáticamente en grados Celsius (°C), permitiendo al usuario detectar posibles riesgos de estrés térmico de inmediato.<br><br>**Escenario 5: Identificación visual de alertas en el resumen**<br>Dado que el sistema detecta que una de las variables está fuera de los umbrales seguros, Cuando el usuario visualice el dashboard de resumen, Entonces el indicador de la variable afectada debe cambiar de color para resaltar la anomalía y facilitar una respuesta rápida. |
+
+#### US15 - Organización de dispositivos por zonas y especies
+
+| Story ID | US15 |
+|---|---|
+| Epic ID | E04 - Administración de Cultivos y Monitoreo Multi-Entorno |
+| Título | Organización de dispositivos por zonas y especies |
+| Descripción | Como usuario de Grotix, quiero organizar mis dispositivos por zonas geográficas y tipos de cultivo para administrar diversos tipos de plantas de manera simultánea y ordenada. |
+| Criterios de Aceptación | **Escenario 1: Creación y personalización de zonas de cultivo**<br>Dado que el usuario se encuentra en la sección de configuración de la aplicación, Cuando seleccione la opción para añadir una zona, Entonces el sistema debe permitirle asignar un nombre personalizado (ej. "Bandeja Norte", "Invernadero 1") para diferenciar las áreas de trabajo.<br><br>**Escenario 2: Asignación de hardware a zonas y tipos de planta**<br>Dado que el usuario cuenta con un nuevo microcontrolador vinculado, Cuando proceda a configurar el dispositivo, Entonces el sistema debe permitirle asociar dicho hardware a una zona específica y seleccionar el tipo de planta (ej. Rabanito, Albahaca) que será monitoreada en ese punto.<br><br>**Escenario 3: Visualización de múltiples áreas en el panel principal**<br>Dado que el usuario tiene configuradas al menos dos zonas de cultivo diferentes, Cuando acceda a la vista general de la aplicación, Entonces el sistema debe presentar tarjetas o secciones independientes para cada zona, permitiendo observar el estado de cada una de forma simultánea.<br><br>**Escenario 4: Filtrado y búsqueda por tipo de cultivo**<br>Dado que el usuario gestiona una cantidad considerable de dispositivos y plantas, Cuando utilice la barra de búsqueda o filtros de la aplicación, Entonces el sistema debe mostrar únicamente las zonas o dispositivos que coincidan con el tipo de planta seleccionado (ej. mostrar solo "Lechugas").<br><br>**Escenario 5: Reubicación de dispositivos entre zonas**<br>Dado que un dispositivo ya está operativo en una zona determinada, Cuando el usuario decida mover el hardware físicamente a otro cultivo, Entonces el sistema debe permitir editar la información de la zona y el tipo de planta asociada al dispositivo sin necesidad de desvincularlo y volverlo a registrar. |
+
+#### US16 - Configuración de parámetros y umbrales de control
+
+| Story ID | US16 |
+|---|---|
+| Epic ID | E04 - Administración de Cultivos y Monitoreo Multi-Entorno |
+| Título | Configuración de parámetros y umbrales de control |
+| Descripción | Como usuario que busca optimizar su cosecha, quiero configurar los rangos ideales de humedad, luz y temperatura para que el sistema Grotix actúe según las necesidades específicas de mi tipo de cultivo. |
+| Criterios de Aceptación | **Escenario 1: Carga de valores predeterminados por especie**<br>Dado que el usuario ha seleccionado un tipo de planta (ej. Lechuga) en una zona, Cuando acceda a la configuración de parámetros, Entonces el sistema debe sugerir automáticamente los umbrales óptimos de humedad, luz y temperatura basados en una biblioteca técnica inteligente.<br><br>**Escenario 2: Ajuste manual de rangos de operación**<br>Dado que el usuario desea experimentar con condiciones específicas, Cuando modifique manualmente el valor mínimo o máximo de una variable (ej. subir el umbral de riego del 40% al 50%), Entonces el sistema debe guardar esta nueva configuración como la regla activa para ese dispositivo específico.<br><br>**Escenario 3: Validación de rangos lógicos**<br>Dado que el usuario introduce nuevos valores de configuración, Cuando intente guardar un valor que sea físicamente imposible o incoherente (ej. humedad del 150% o temperatura de -100 °C), Entonces el sistema debe impedir el guardado y mostrar una alerta solicitando valores dentro del rango de operación del sensor.<br><br>**Escenario 4: Sincronización de parámetros con el controlador**<br>Dado que el usuario ha guardado una nueva configuración en la aplicación, Cuando el microcontrolador realice su siguiente ciclo de comunicación, Entonces el sistema debe actualizar los umbrales en el hardware para que la lógica de riego autónomo se ejecute con los nuevos parámetros. |
+
+#### US17 - Persistencia de datos ante pérdida de conectividad
+
+| Story ID | US17 |
+|---|---|
+| Epic ID | E04 - Administración de Cultivos y Monitoreo Multi-Entorno |
+| Título | Persistencia de datos ante pérdida de conectividad |
+| Descripción | Como usuario, quiero que el sistema guarde los datos localmente cuando no haya señal para no perder el historial de monitoreo de mis plantas durante fallos de internet. |
+| Criterios de Aceptación | **Escenario 1: Almacenamiento local por falta de señal**<br>Dado que el microcontrolador intenta enviar una lectura programada (cada 15 min), Cuando el sistema detecte que no hay conexión al servidor o a la red Wi-Fi, Entonces el dispositivo debe almacenar el dato (humedad, luz, temperatura y timestamp) en su memoria local interna de forma temporal.<br><br>**Escenario 2: Sincronización automática al recuperar conexión**<br>Dado que el dispositivo tiene datos guardados en su memoria local por una desconexión previa, Cuando se restablezca la conexión a internet, Entonces el sistema debe enviar automáticamente todos los registros acumulados al servidor antes de continuar con las lecturas en tiempo real. |
+
+#### US18 - Notificaciones automáticas por condiciones críticas y cambios de estado
+
+| Story ID | US18 |
+|---|---|
+| Epic ID | E04 - Administración de Cultivos y Monitoreo Multi-Entorno |
+| Título | Notificaciones automáticas por condiciones críticas y cambios de estado |
+| Descripción | Como usuario, quiero recibir alertas automáticas en mi dispositivo para estar informado cuando empiecen ciclos de riego o un dispositivo deje de estar disponible. |
+| Criterios de Aceptación | **Escenario 1: Notificación de inicio de riego**<br>Dado que el sistema activa un ciclo de riego para una zona específica, Cuando el registro de inicio (ActuatorLog) es guardado exitosamente en la base de datos, Entonces el sistema debe disparar una notificación push al dispositivo del usuario confirmando que el riego ha comenzado en dicha zona.<br><br>**Escenario 2: Notificación de fin de riego**<br>Dado que el ciclo de riego se completa satisfactoriamente según la duración programada, Cuando se actualiza el registro de finalización en el ActuatorLog, Entonces el sistema debe enviar una notificación push al usuario informando que el ciclo de riego ha finalizado y el sistema ha vuelto a estado de espera.<br><br>**Escenario 3: Notificación por dispositivo offline**<br>Dado que la tarea de segundo plano detecta que el lastSeen de un microcontrolador no se ha actualizado en el periodo de gracia configurado, Cuando el estado del dispositivo es marcado como "Desconectado" en el sistema, Entonces el sistema debe emitir una alerta crítica al usuario indicando que el dispositivo se encuentra offline y requiere revisión técnica. |
+
+#### US19 - Activación manual del sistema de irrigación
+
+| Story ID | US19 |
+|---|---|
+| Epic ID | E05 - Gestión de Irrigación Autónoma y Control Hídrico |
+| Título | Activación manual del sistema de irrigación |
+| Descripción | Como usuario de Grotix, quiero poder activar o desactivar el riego manualmente desde la aplicación para intervenir en el cuidado de mi planta sin depender exclusivamente de la autonomía del sistema. |
+| Criterios de Aceptación | **Escenario 1: Activación remota del actuador**<br>Dado que el usuario se encuentra en el panel de control de una zona de cultivo, Cuando active el riego manual, Entonces el sistema debe enviar una señal inmediata al microcontrolador para abrir la válvula de agua e indicar que el riego está en curso desde la app.<br><br>**Escenario 2: Desactivación manual**<br>Dado que el riego manual está activo y el agua está fluyendo, Cuando el usuario detenga el riego, Entonces el sistema debe cerrar la válvula de forma instantánea y actualizar el estado en la interfaz para confirmar que el flujo se ha detenido.<br><br>**Escenario 3: Prioridad del mando manual sobre el automático**<br>Dado que el sistema se encuentra en modo autónomo, Cuando el usuario ejecute una acción manual de riego, Entonces el sistema debe pausar temporalmente la lógica automática para obedecer la orden directa del usuario, evitando conflictos de decisión.<br><br>**Escenario 4: Temporizador de seguridad para riego manual**<br>Dado que el usuario ha activado el riego manualmente, Cuando transcurra un tiempo máximo de seguridad definido sin que el usuario lo detenga, Entonces el sistema debe cerrar la válvula automáticamente para prevenir inundaciones o desperdicio de agua por olvido. |
+
+#### US20 - Automatización del riego mediante modelos de aprendizaje automático
+
+| Story ID | US20 |
+|---|---|
+| Epic ID | E05 - Gestión de Irrigación Autónoma y Control Hídrico |
+| Título | Automatización del riego mediante modelos de aprendizaje automático |
+| Descripción | Como usuario, quiero que el sistema active el riego por sí solo para garantizar que mis plantas reciben agua sólo cuando lo necesitan. |
+| Criterios de Aceptación | **Escenario 1: Activación por detección de necesidad hídrica**<br>Dado que el sistema está operando en modo autónomo, Cuando procese los datos de los sensores y determine que la planta requiere hidratación, Entonces el sistema debe enviar la orden de apertura a la válvula de riego sin intervención del usuario.<br><br>**Escenario 2: Optimización del suministro de agua**<br>Dado que se ha iniciado un evento de riego automático, Cuando el sistema calcule la cantidad de agua a suministrar, Entonces debe ajustar el tiempo de apertura de la válvula según el tipo de cultivo y su etapa de crecimiento, buscando el consumo más eficiente posible.<br><br>**Escenario 3: Registro de fin de ciclo de riego**<br>Dado que el sistema ha suministrado la cantidad de agua calculada, Cuando el sensor de humedad confirme el incremento en el sustrato, Entonces el sistema debe cerrar la válvula, volver al modo de monitoreo y registrar la duración del riego en el historial.<br><br>**Escenario 4: Postergación de riego por pronóstico de lluvia**<br>Dado que el sistema ha determinado una necesidad hídrica según los sensores de humedad, Cuando el sistema consulte el Servicio Meteorológico Externo y detecte una alta probabilidad de lluvia durante la jornada, Entonces el sistema debe postergar la activación del riego automático, registrar la decisión como "Ahorro por clima" y enviar una notificación al usuario informando la decisión de optimización. |
+
+#### US21 - Generación y descarga de reportes históricos
+
+| Story ID | US21 |
+|---|---|
+| Epic ID | E05 - Gestión de Irrigación Autónoma y Control Hídrico |
+| Título | Generación y descarga de reportes históricos |
+| Descripción | Como usuario, quiero generar y descargar reportes detallados de riego para analizar el consumo de agua y la eficiencia del sistema en periodos de tiempo específicos. |
+| Criterios de Aceptación | **Escenario 1: Selección de rangos de tiempo predefinidos**<br>Dado que el usuario se encuentra en la sección de Reportes, Cuando despliegue las opciones de tiempo, Entonces el sistema debe permitirle seleccionar periodos específicos: semanal, mensual, trimestral (3 meses), semestral (6 meses) y anual (12 meses).<br><br>**Escenario 2: Visualización previa de métricas clave**<br>Dado que el usuario ha seleccionado un periodo de reporte, Cuando el sistema procese la información, Entonces debe mostrar en pantalla un resumen con la telemetria promedio y la frecuencia de riego.<br><br>**Escenario 3: Exportación a formatos estándar**<br>Dado que el reporte ha sido generado correctamente en la interfaz, Cuando el usuario seleccione la opción para descargar, Entonces el sistema debe permitir elegir entre un formato PDF o un archivo CSV/Excel. |
+
+#### US22 - Gestión de registro fotográfico de cultivos.
+
+| Story ID | US22 |
+|---|---|
+| Epic ID | E06 - Subsistema de Visión Artificial y Diagnóstico Fenológico. |
+| Título | Gestión de registro fotográfico de cultivos. |
+| Descripción | Como usuario, quiero que el sistema reconozca fotos de mis cultivos para poder subir imágenes. |
+| Criterios de Aceptación | **Escenario 1: Acceso a la funcionalidad de captura o carga**<br>Dado que estoy en la pantalla de detalle de una zona de cultivo, Cuando presiono el botón de "Añadir registro visual", Entonces el sistema debe desplegar un menú contextual que me permita elegir entre tomar una fotografía nueva con la cámara o seleccionar un archivo existente desde la galería del dispositivo.<br><br>**Escenario 2: Validación de formato y calidad de imagen**<br>Dado que he seleccionado o capturado una imagen, Cuando el sistema procesa el archivo antes de la subida, Entonces debe verificar que el formato sea compatible (JPG o PNG) y que la resolución cumpla con el estándar mínimo definido (640x480 píxeles) para asegurar la claridad del registro visual.<br><br>**Escenario 3: Confirmación de subida y persistencia**<br>Dado que la imagen cumple con los criterios de validación, Cuando el proceso de subida al servidor finaliza exitosamente, Entonces la aplicación debe mostrar un mensaje de confirmación al usuario y efectuar el diagnóstico del cultivo. |
+
+#### US23 - Clasificación del estado fenológico mediante Inteligencia Artificial
+
+| Story ID | US23 |
+|---|---|
+| Epic ID | E06 - Subsistema de Visión Artificial y Diagnóstico Fenológico. |
+| Título | Clasificación del estado fenológico mediante Inteligencia Artificial |
+| Descripción | Como usuario de Grotix, quiero que el sistema identifique automáticamente la etapa de crecimiento de mi planta para conocer su progreso biológico sin necesidad de ser un experto en botánica. |
+| Criterios de Aceptación | **Escenario 1: Categorización exitosa de estados de crecimiento**<br>Dado que la Inteligencia Artificial ha recibido una imagen pre-procesada, Cuando se ejecute el algoritmo de inferencia, Entonces el sistema debe clasificar la planta en una de las categorías definidas con base en el dataset de entrenamiento.<br><br>**Escenario 2: Umbral de confianza de la inferencia**<br>Dado que el modelo genera un resultado de clasificación, Cuando el nivel de confianza sea inferior al 75%, Entonces el sistema debe marcar el estado como "Indeterminado" y disparar la lógica de reintento de la US22 para evitar diagnósticos erróneos.<br><br>**Escenario 3: Actualización automática del perfil del cultivo**<br>Dado que el modelo ha identificado un cambio de etapa (ej: de Semilla a Germinación), Cuando se valide el resultado, Entonces el sistema debe actualizar automáticamente el estado actual en la base de datos y reflejarlo de inmediato en el dashboard del usuario. |
+
+#### US24 - Registro, inicio y cierre de sesión de usuario
+
+| Story ID | US24 |
+|---|---|
+| Epic ID | E07 - Gestión de Identidad |
+| Título | Registro, inicio y cierre de sesión de usuario |
+| Descripción | Como usuario de Grotix, quiero contar con un sistema de autenticación seguro para proteger mis datos agrícolas y asegurar que solo yo pueda gestionar mis dispositivos y suscripciones. |
+| Criterios de Aceptación | **Escenario 1: Registro exitoso de nuevo usuario**<br>Dado que el usuario se encuentra en la pantalla de creación de cuenta, Cuando ingresa un correo electrónico válido, una contraseña segura y completa los datos requeridos, Entonces el sistema debe crear su perfil en la base de datos, enviar un correo de confirmación y redirigirlo al dashboard inicial.<br><br>**Escenario 2: Inicio de sesión con credenciales válidas**<br>Dado que el usuario ya tiene una cuenta registrada y activa, Cuando ingresa sus credenciales correctas (email y password) en el formulario de login, Entonces el sistema debe validar la identidad, generar un token de sesión seguro y otorgar acceso total a las funcionalidades de la aplicación.<br><br>**Escenario 3: Validación de seguridad en el inicio de sesión**<br>Dado que el usuario intenta acceder a su cuenta, Cuando introduce un correo no registrado o una contraseña incorrecta, Entonces el sistema debe denegar el acceso y mostrar un mensaje de error genérico para evitar dar pistas a posibles atacantes.<br><br>**Escenario 4: Cierre de sesión seguro**<br>Dado que el usuario ha finalizado su actividad en la aplicación, Cuando seleccione la opción de cerrar sesión, Entonces el sistema debe invalidar el token de sesión actual, limpiar los datos sensibles de la caché del navegador y redirigirlo a la pantalla de bienvenida.<br><br>**Escenario 5: Validación de formato y fortaleza de datos**<br>Dado que el usuario está completando el formulario de registro o login, Cuando el sistema detecte un formato de email inválido o una contraseña que no cumple con los requisitos mínimos de seguridad, Entonces debe impedir el envío del formulario y resaltar los campos erróneos con mensajes de ayuda en tiempo real. |
+
+#### US25 - Modificación de datos personales y de contacto
+
+| Story ID | US25 |
+|---|---|
+| Epic ID | E07 - Gestión de Identidad |
+| Título | Modificación de datos personales y de contacto |
+| Descripción | Como usuario de Grotix, quiero poder actualizar mi información personal para asegurar que las notificaciones, reportes y facturación se dirijan a los canales de contacto correctos. |
+| Criterios de Aceptación | **Escenario 1: Edición de campos básicos**<br>Dado que el usuario se encuentra en la sección de perfil, Cuando modifique campos como nombre, apellidos o teléfono y guarde los cambios, Entonces el sistema debe actualizar la base de datos y mostrar un mensaje de confirmación exitosa.<br><br>**Escenario 2: Validación de datos en tiempo real**<br>Dado que el usuario intenta modificar su información, Cuando ingrese un número de teléfono con formato inválido o deje campos obligatorios vacíos, Entonces el sistema debe resaltar el error y deshabilitar la opción de guardado hasta que los datos sean lógicos.<br><br>**Escenario 3: Cambio de correo electrónico con verificación**<br>Dado que el usuario solicita cambiar su dirección de correo electrónico principal, Cuando el sistema guarde el cambio, Entonces debe enviar automáticamente un mensaje de validación a la nueva dirección para confirmar que el usuario tiene acceso a dicho buzón antes de dar por definitivo el cambio.<br><br>**Escenario 4: Seguridad ante cambios sensibles**<br>Dado que el usuario intenta realizar cambios críticos en su perfil (como el correo o la contraseña), Cuando el sistema procese la solicitud, Entonces debe solicitar la contraseña actual del usuario como medida de re-autenticación para prevenir cambios no autorizados en caso de descuido del dispositivo. |
+
+#### US26 - Configuración y gestión de alertas de usuario
+
+| Story ID | US26 |
+|---|---|
+| Epic ID | E07 - Gestión de Identidad |
+| Título | Configuración y gestión de alertas de usuario |
+| Descripción | Como usuario de Grotix, quiero personalizar mis preferencias de notificación para recibir información relevante si es que lo deseo. |
+| Criterios de Aceptación | **Escenario 1: Activar/Desactivar notificaciones**<br>Dado que el usuario se encuentra en los ajustes de notificación, Cuando active o desactive el toggle de cada canal (Push y Correo electrónico), Entonces el sistema debe guardar estas preferencias y enviar las futuras alertas únicamente a través de los medios seleccionados por el usuario.<br><br>**Escenario 2: Filtrado por categoría de alerta**<br>Dado que Grotix genera diferentes tipos de avisos, Cuando el usuario elija qué categorías desea recibir (ej: solo "Alertas Críticas de Riego" y no "Actualizaciones de Germinación"), Entonces el sistema debe filtrar los envíos para que el usuario solo sea interrumpido por los eventos que él mismo marcó como prioritarios.<br><br>**Escenario 3: Persistencia y sincronización de preferencias**<br>Dado que el usuario ha modificado sus preferencias de notificación, Cuando guarde los cambios y cierre la aplicación, Entonces el servidor de Grotix debe actualizar estas reglas de inmediato, garantizando que el motor de notificaciones aplique la nueva configuración sin retrasos. |
+
+#### US27 - Visualización de estado de servicios
+
+| Story ID | US27 |
+|---|---|
+| Epic ID | E07 - Gestión de Identidad |
+| Título | Visualización de estado de servicios |
+| Descripción | Como usuario, quiero visualizar el estado de mis servicios inteligentes, para estar informado sobre la disponibilidad de la analítica y el riego automático sin gestionar pagos complejos desde el móvil. |
+| Criterios de Aceptación | **Escenario 1: Consulta de estado de servicios inteligentes**<br>Dado que el usuario se encuentra en la sección de Perfil, Cuando acceda al detalle de "Estado del Servicio", Entonces el sistema debe mostrar si las funciones de IA y Riego Automático están Habilitadas o Suspendidas según el pago realizado en la web.<br><br>**Escenario 2: Visualización del cronograma de campaña**<br>Dado que el agricultor tiene una campaña activa, Cuando consulte la sección de suscripción en la App, Entonces el sistema debe mostrar la fecha de inicio, la fecha de fin de la campaña actual y los días restantes de servicio inteligente.<br><br>**Escenario 3: Acceso restringido por periodo de descanso**<br>Dado que la campaña ha finalizado y el servicio está suspendido, Cuando el usuario intente activar manualmente un análisis de IA o riego automático, Entonces la App debe mostrar un mensaje informativo explicando que el servicio está en "Modo Lectura" y requiere reactivación vía web. |
+
+#### US28 - Diseño consistente y adaptabilidad multiplataforma
+
+| Story ID | US28 |
+|---|---|
+| Epic ID | E08 - Experiencia de Usuario y Atributos de Calidad del Software |
+| Título | Diseño consistente y adaptabilidad multiplataforma |
+| Descripción | Como usuario de Grotix, quiero una interfaz intuitiva que siga estándares de diseño modernos para navegar por la aplicación fácilmente. |
+| Criterios de Aceptación | **Escenario 1: Consistencia visual**<br>Dado que el usuario navega por las diferentes secciones de la aplicación, Cuando interactúe con botones, tarjetas, menús y formularios, Entonces todos los elementos deben cumplir con los estándares de diseño (elevación, tipografía, iconografía y paleta de colores), garantizando una experiencia visual profesional y cohesiva.<br><br>**Escenario 2: Navegación intuitiva y de bajo esfuerzo cognitivo**<br>Dado que un agricultor puede no estar familiarizado con términos técnicos complejos, Cuando intente realizar tareas críticas (como regar o ver la cámara), Entonces el sistema debe ofrecer un menú de navegación claro, iconos representativos y etiquetas directas que le permitan completar la acción rápidamente desde la pantalla de inicio.<br><br>**Escenario 3: Tiempo de respuesta visual**<br>Dado que el usuario solicita un cambio de sección o la carga de datos, Cuando la red sea lenta o el servidor esté procesando la información, Entonces la aplicación debe mostrar estados de carga (ej: spinners) para informar al usuario que el sistema está trabajando y evitar la sensación de que la app se ha congelado. |
+
+#### US29 - Acceso garantizado y fluidez en la consulta de datos
+
+| Story ID | US29 |
+|---|---|
+| Epic ID | E08 - Experiencia de Usuario y Atributos de Calidad del Software |
+| Título | Acceso garantizado y fluidez en la consulta de datos |
+| Descripción | Como usuario, quiero que la aplicación esté siempre disponible y cargue rápido para tomar decisiones a tiempo sin frustraciones por fallos técnicos. |
+| Criterios de Aceptación | **Escenario 1: Confianza en el acceso**<br>Dado que el usuario necesita revisar el estado de su cultivo en cualquier momento del día, Cuando intente ingresar a la plataforma, Entonces el sistema debe estar operativo el 99.9% del tiempo, asegurando que el agricultor nunca se encuentre con una pantalla de error en momentos críticos.<br><br>**Escenario 2: Agilidad en la carga de información**<br>Dado que el tiempo del agricultor es valioso, Cuando el usuario abra la aplicación o cambie entre secciones, Entonces la información debe aparecer en pantalla en menos de 2 segundos, permitiendo una navegación ágil y sin esperas que entorpezcan su jornada.<br><br>**Escenario 3: Estabilidad durante el uso masivo**<br>Dado que muchos agricultores podrían estar usando la app al mismo tiempo (ej: durante una alerta climática regional), Cuando haya una alta concurrencia de usuarios, Entonces la experiencia del usuario debe mantenerse fluida y sin cierres inesperados, garantizando que todos reciban sus datos por igual. |
+
+#### US30 - Protección y privacidad de los datos
+
+| Story ID | US30 |
+|---|---|
+| Epic ID | E08 - Experiencia de Usuario y Atributos de Calidad del Software |
+| Título | Protección y privacidad de los datos |
+| Descripción | Como usuario, quiero que mis datos personales y agrícolas estén protegidos bajo estándares de seguridad para sentirme tranquilo de que mi información no será vista ni utilizada por terceros sin mi permiso. |
+| Criterios de Aceptación | **Escenario 1: Cifrado de información sensible**<br>Dado que el sistema almacena y transmite datos del usuario, Cuando la información viaje entre el dispositivo y la nube, Entonces el sistema debe emplear protocolos de cifrado para asegurar que nadie pueda interceptar o leer los datos privados del agricultor.<br><br>**Escenario 2: Gestión transparente de permisos**<br>Dado que la aplicación requiere acceso a ciertos datos o funciones del dispositivo (como la ubicación), Cuando el usuario utilice estas funciones por primera vez, Entonces el sistema debe solicitar permiso explícito y explicar claramente para qué se usará esa información, dándole al usuario el control total sobre su privacidad.<br><br>**Escenario 3: Recuperación de cuenta segura**<br>Dado que el usuario ha olvidado su contraseña, Cuando solicite restablecerla, Entonces el sistema debe enviar un enlace de un solo uso y con tiempo limitado al correo verificado, asegurando que solo el dueño legítimo de la cuenta pueda recuperar el acceso.<br><br>**Escenario 4: Cumplimiento con la Protección de Datos**<br>Dado que el usuario se registra en la plataforma, Cuando acceda a los términos y condiciones, Entonces el sistema debe presentar una política de privacidad clara que cumpla con la Ley de Protección de Datos Personales de Perú, garantizando que el usuario puede solicitar la eliminación de sus datos en cualquier momento (Derechos ARCO). |
+
+#### US31 - Compartir acceso de lectura y monitoreo a otros usuarios
+
+| Story ID | US31 |
+|---|---|
+| Epic ID | E03 - Monitoreo Sensorial y Sincronización de Dispositivos |
+| Título | Compartir acceso de lectura y monitoreo a otros usuarios |
+| Descripción | Como usuario, quiero invitar a otros usuarios a visualizar la telemetría de mi dispositivo para permitir un monitoreo colaborativo y recibir asesoría técnica basada en datos reales sin compartir mis credenciales personales. |
+| Criterios de Aceptación | **Escenario 1: Invitación exitosa de un colaborador**<br>Dado que el usuario es el dueño registrado de un microcontrolador, Cuando ingrese el correo electrónico de otro usuario registrado y seleccione el rol de observador, Entonces el sistema debe vincular el dispositivo a la cuenta del invitado y enviarle una notificación de acceso compartido.<br><br>**Escenario 2: Restricción de permisos administrativos**<br>Dado que un usuario ha sido invitado como observador a un dispositivo, Cuando intente modificar los umbrales de riego o eliminar el dispositivo, Entonces el sistema debe denegar la acción y mostrar un mensaje indicando que solo el dueño tiene permisos de escritura.<br><br>**Escenario 3: Revocación de acceso**<br>Dado que un dispositivo tiene varios usuarios asociados, Cuando el dueño decida eliminar a un colaborador de la lista de acceso, Entonces el dispositivo debe desaparecer instantáneamente del dashboard del colaborador revocado.<br><br>**Escenario 4: Visualización multi-usuario en tiempo real**<br>Dado que dos o más usuarios tienen acceso al mismo microcontrolador, Cuando el dispositivo envíe una nueva lectura de humedad, Entonces la interfaz debe actualizar los gráficos de todos los usuarios autorizados de forma simultánea. |
+
+#### TS01 - Implementación de Endpoints de Monitoreo de Salud (Health Checks)
+
+| Story ID | TS01 |
+|---|---|
+| Epic ID | E09 - Arquitectura de Software y Atributos de Calidad Técnica. |
+| Título | Implementación de Endpoints de Monitoreo de Salud (Health Checks) |
+| Descripción | Como Developer, quiero implementar un sistema de Health Checks en la API REST para asegurar que la infraestructura de Grotix detecte y reporte caídas de servicios automáticamente, garantizando el cumplimiento del 99.9% de uptime. |
+| Criterios de Aceptación | **Escenario 1: Verificación de estado del servidor**<br>Dado que el servicio de la API está en ejecución, Cuando el sistema de monitoreo realice una petición GET al endpoint /health/live, Entonces la API debe responder con un status 200 OK y un JSON indicando que el proceso del servidor está activo.<br><br>**Escenario 2: Verificación de dependencias críticas**<br>Dado que la API depende de una base de datos para funcionar, Cuando se consulte el endpoint /health/ready, Entonces el sistema debe verificar la conexión activa con la BD y devolver 503 Service Unavailable si la conexión está caída, evitando procesar peticiones que fallarán.<br><br>**Escenario 3: Registro de disponibilidad del microcontrolador**<br>Dado que los dispositivos IoT pueden perder conexión, Cuando el hardware envíe una señal periódica que indique que se encuentra activo, Entonces el backend debe actualizar el estado de disponibilidad del dispositivo en la base de datos para que el sistema sepa que sigue en línea.<br><br>**Escenario 4: Alerta técnica ante fallos persistentes**<br>Dado que un componente crítico reporta un estado de error, Cuando el fallo persista por más de 3 chequeos consecutivos, Entonces el sistema debe disparar una notificación automática hacia el equipo de desarrollo para una intervención inmediata. |
+
+#### TS02 - Estandarización de Contratos de Interoperabilidad IoT
+
+| Story ID | TS02 |
+|---|---|
+| Epic ID | E09 - Arquitectura de Software y Atributos de Calidad Técnica. |
+| Título | Estandarización de Contratos de Interoperabilidad IoT |
+| Descripción | Como Developer, quiero definir un contrato de datos RESTful estandarizado para garantizar que el hardware, el backend y el servicio de IA intercambien información de forma consistente y sin errores de formato. |
+| Criterios de Aceptación | **Escenario 1: Procesamiento de telemetría con esquema válido**<br>Dado que un dispositivo de campo realiza una petición POST al endpoint /api/v1/telemetry, Cuando el cuerpo del mensaje cumpla estrictamente con el esquema JSON definido, Entonces la API debe responder con un status 201 Created y confirmar la persistencia del dato.<br><br>**Escenario 2: Rechazo de peticiones por esquema inválido**<br>Dado que un componente envía una trama de datos con campos faltantes o nombres de atributos incorrectos, Cuando el servicio de validación de la API procese el request, Entonces debe retornar un status 400 Bad Request indicando exactamente qué campo no cumple con el contrato.<br><br>**Escenario 3: Ciclo de confirmación de comandos**<br>Dado que el backend envía una orden de activación a un actuador (ej. válvula), Cuando el dispositivo confirme la ejecución mediante una respuesta de confirmación técnica, Entonces la API debe actualizar el estado del recurso mediante un PATCH exitoso para cerrar el ciclo de comunicación. |
+
+#### TS03 - Desacoplamiento de Lógica de Negocio mediante Inyección de Dependencias
+
+| Story ID | TS03 |
+|---|---|
+| Epic ID | E09 - Arquitectura de Software y Atributos de Calidad Técnica. |
+| Título | Desacoplamiento de Lógica de Negocio mediante Inyección de Dependencias |
+| Descripción | Como Developer, quiero implementar el patrón de Inyección de Dependencias y el patrón Repository en .NET para garantizar que la lógica de Grotix sea modificable y no dependa de implementaciones específicas de infraestructura. |
+| Criterios de Aceptación | **Escenario 1: Abstracción de la persistencia de datos**<br>Dado que la lógica de negocio requiere guardar datos de telemetría, Cuando el servicio solicite la persistencia, Entonces debe interactuar únicamente con una interfaz (ITelemetryRepository), permitiendo cambiar el motor de base de datos en el archivo Program.cs sin tocar la lógica de cálculo.<br><br>**Escenario 2: Validación de Lógica Independiente**<br>Dado que se recibe un request para procesar una regla de riego, Cuando se ejecute la validación, Entonces el controlador de la API solo debe actuar como mediador, delegando la lógica a un "Domain Service" puro, facilitando futuras modificaciones en las reglas de negocio.<br><br>**Escenario 3: Uso de DTOs para contratos de API estables**<br>Dado que la estructura de las tablas de la base de datos puede cambiar, Cuando la API devuelva una respuesta al frontend, Entonces debe usar Objetos de Transferencia de Datos (DTOs) en lugar de las entidades de base de datos, para que los cambios internos no rompan la integración con el cliente. |
+
+#### TS04 - Optimización de Latencia y Eficiencia en el Procesamiento
+
+| Story ID | TS04 |
+|---|---|
+| Epic ID | E09 - Arquitectura de Software y Atributos de Calidad Técnica. |
+| Título | Optimización de Latencia y Eficiencia en el Procesamiento |
+| Descripción | Como Developer, quiero implementar procesamiento asíncrono en .NET y optimización de recursos en el frontend para minimizar el tiempo de respuesta de la API y el tiempo de renderizado en el cliente. |
+| Criterios de Aceptación | **Escenario 1: Procesamiento asíncrono de peticiones de telemetría**<br>Dado que la API de telemetría recibe múltiples peticiones de sensores, Cuando el controlador de procese el request, Entonces debe utilizar programación asíncrona para evitar el bloqueo de hilos del servidor, permitiendo una mayor concurrencia.<br><br>**Escenario 2: Minimización de carga en el Frontend**<br>Dado que la aplicación en Vue contiene múltiples vistas y componentes, Cuando se genere el bundle de producción, Entonces el sistema debe implementar code-splitting y lazy loading, asegurando que el navegador solo descargue los recursos estrictamente necesarios para la vista actual.<br><br>**Escenario 3: Reducción del tamaño del Payload JSON**<br>Dado que se solicitan grandes volúmenes de datos históricos de sensores, Cuando la API envíe la respuesta al frontend, Entonces debe omitir valores nulos y utilizar DTOs optimizados para que el peso del archivo JSON se reduzca, acelerando la transferencia de datos sobre la red.<br><br>**Escenario 4: Gestión eficiente del estado en el cliente**<br>Dado que los datos de los sensores se actualizan frecuentemente, Cuando el frontend reciba la información, Entonces el sistema debe actualizar reactivamente solo los componentes afectados en el frontend, evitando re-renderizados innecesarios de toda la interfaz. |
+
+#### TS05 - Implementación de Protocolos de Autenticación y Protección de Recursos
+
+| Story ID | TS05 |
+|---|---|
+| Epic ID | E09 - Arquitectura de Software y Atributos de Calidad Técnica. |
+| Título | Implementación de Protocolos de Autenticación y Protección de Recursos |
+| Descripción | Como Developer, quiero implementar autenticación basada en JWT en el backend y guardias de navegación en el frontend para asegurar que solo los usuarios y dispositivos autorizados accedan a la API y a los datos de Grotix. |
+| Criterios de Aceptación | **Escenario 1: Autenticación robusta mediante JWT**<br>Dado que un usuario o dispositivo intenta acceder a un endpoint protegido de la API, Cuando envíe sus credenciales válidas, Entonces el backend debe generar un JSON Web Token (JWT) firmado digitalmente que expire tras un tiempo determinado, asegurando que las sesiones no queden abiertas indefinidamente.<br><br>**Escenario 2: Restricción de acceso mediante Política de CORS**<br>Dado que la API de Grotix está expuesta en la nube, Cuando reciba una petición desde un dominio no autorizado, Entonces el backend debe rechazar la solicitud mediante una política de CORS (Cross-Origin Resource Sharing) configurada estrictamente para proteger el servidor.<br><br>**Escenario 3: Protección de rutas en el cliente**<br>Dado que un usuario intenta acceder manualmente a una ruta protegida (ej: /dashboard), Cuando el sistema detecte que no existe un token válido en el estado de la aplicación, Entonces el frontend debe redirigir automáticamente al usuario a la pantalla de Login, impidiendo la visualización de la interfaz privada.<br><br>**Escenario 4: Almacenamiento seguro de credenciales**<br>Dado que se deben persistir contraseñas de usuarios en la base de datos, Cuando se registre un nuevo usuario, Entonces el backend debe aplicar un algoritmo de hashing robusto, garantizando que las contraseñas nunca se guarden en texto plano. |
+
+#### TS06 - Implementación de Infraestructura de Pruebas Automatizadas
+
+| Story ID | TS06 |
+|---|---|
+| Epic ID | E09 - Arquitectura de Software y Atributos de Calidad Técnica. |
+| Título | Implementación de Infraestructura de Pruebas Automatizadas |
+| Descripción | Como Developer, quiero configurar un entorno de pruebas unitarias e integrales para garantizar la detección temprana de errores y asegurar la estabilidad del sistema ante nuevos cambios. |
+| Criterios de Aceptación | **Escenario 1: Pruebas unitarias para lógica de negocio**<br>Dado que se ha desarrollado una nueva regla de cálculo para el riego automático, Cuando el desarrollador ejecute el motor de pruebas, Entonces el sistema debe validar los algoritmos de forma aislada, asegurando que los resultados coincidan con los valores esperados sin necesidad de conectar la base de datos real.<br><br>**Escenario 2: Simulación de dependencias externas**<br>Dado que un servicio de la API depende de Inteligencia Artificial o de la base de datos de Azure, Cuando se ejecute una prueba técnica, Entonces el sistema debe permitir el uso de objetos simulados para sustituir estas dependencias, garantizando que los tests sean rápidos y no dependan de la conexión a internet.<br><br>**Escenario 3: Pruebas de componentes en el frontend**<br>Dado que se ha creado un componente crítico (ej: el indicador de humedad en tiempo real), Cuando se ejecute la suite de pruebas, Entonces el sistema debe verificar que el componente renderice los datos correctamente y responda adecuadamente a los cambios de estado.<br><br>**Escenario 4: Ejecución automatizada en el flujo de trabajo**<br>Dado que el desarrollador sube un nuevo cambio al repositorio, Cuando se active el pipeline de integración continua, Entonces todos los tests deben ejecutarse automáticamente, bloqueando el despliegue si alguna prueba falla para evitar errores en producción. |
+
+#### TS07 - Estandarización de la Experiencia del Desarrollador y Documentación
+
+| Story ID | TS07 |
+|---|---|
+| Epic ID | E09 - Arquitectura de Software y Atributos de Calidad Técnica. |
+| Título | Estandarización de la Experiencia del Desarrollador y Documentación |
+| Descripción | Como Developer, quiero contar con una API documentada y una librería de componentes reutilizables para agilizar el desarrollo de nuevas funcionalidades y facilitar el mantenimiento del código a largo plazo. |
+| Criterios de Aceptación | **Escenario 1: Autodocumentación de la API**<br>Dado que el backend en expone múltiples servicios REST, Cuando el desarrollador acceda a la ruta /swagger, Entonces el sistema debe mostrar una interfaz interactiva con todos los endpoints, sus modelos de datos y permitir realizar pruebas de petición/respuesta en tiempo real.<br><br>**Escenario 2: Librería de componentes UI reutilizables**<br>Dado que el frontend requiere interfaces consistentes, Cuando el desarrollador necesite crear una nueva vista, Entonces debe poder utilizar un catálogo de componentes base (botones, selectores, modales) ya definidos, evitando la duplicación de código CSS y lógica de interfaz.<br><br>**Escenario 3: Estandarización de Respuestas de la API**<br>Dado que la API devuelve resultados al cliente, Cuando se envíe cualquier respuesta (éxito o error), Entonces el JSON debe seguir una estructura uniforme (ej: data, message, errors, statusCode), permitiendo que el desarrollador del frontend maneje las respuestas de forma predecible.<br><br>**Escenario 4: Legibilidad y Guía de Estilos de Código**<br>Dado que varios desarrolladores colaboran en el repositorio, Cuando se realice un análisis estático del código, Entonces el código debe cumplir con las convenciones de nomenclatura, garantizando que cualquier miembro del equipo pueda entender el código de otros rápidamente. |
+
+#### TS08 - Dashboard web con indicadores clave del sistema
+
+| Story ID | TS08 |
+|---|---|
+| Epic ID | E10 - Gestión de Clientes y Contratos |
+| Título | Dashboard web con indicadores clave del sistema |
+| Descripción | Como Administrador, quiero visualizar un panel de control centralizado y optimizado para pantallas táctiles con los KPIs más relevantes de Grotix para obtener en tiempo real una visión global del estado de la plataforma desde cualquier lugar (clientes activos, contratos, dispositivos y alertas) |
+| Criterios de Aceptación | **Escenario 1: Visualización del dashboard principal**<br>Dado que el administrador accede a la pantalla principal de la app, Cuando los datos terminan de cargar, Entonces el sistema muestra tarjetas de resumen apilables verticalmente (scroll) con: número de clientes activos, contratos vigentes, próximos a vencer, y dispositivos en línea/offline.<br><br>**Escenario 2: Resaltado visual de alertas críticas**<br>Dado que existen contratos vencidos o alertas críticas, Cuando el administrador visualiza el dashboard, Entonces estas tarjetas se resaltan en color rojo y permiten hacer "tap" para navegar directamente al detalle.<br><br>**Escenario 3: Tolerancia a fallos de red (Offline mode)**<br>Dado que el dispositivo pierde conexión a internet, Cuando se intenta cargar el dashboard, Entonces la app muestra los últimos datos cacheados localmente con un indicador visual de "Sin conexión".<br><br>**Escenario 4: Actualización manual de datos (Pull to refresh)**<br>Dado que el administrador desea ver los datos más recientes en el dashboard, Cuando realiza el gesto de arrastrar hacia abajo (pull-to-refresh), Entonces la app sincroniza los datos con el servidor y actualiza los indicadores en pantalla. |
+
+#### TS09 - Gestión web de clientes agricultores
+
+| Story ID | TS09 |
+|---|---|
+| Epic ID | E10 - Gestión de Clientes y Contratos |
+| Título | Gestión web de clientes agricultores |
+| Descripción | Como Administrador, quiero consultar y editar perfiles de clientes agricultores desde mi dispositivo para mantener actualizado el directorio de usuarios finales y su estado de servicio en cualquier momento |
+| Criterios de Aceptación | **Escenario 1: Búsqueda y filtrado en tiempo real**<br>Dado que el administrador busca un cliente específico, Cuando ingresa a la sección de búsqueda Y usa la barra de búsqueda superior en la app, Entonces el sistema filtra los resultados en tiempo real mostrando una lista con el nombre, ubicación y un indicador semafórico de su estado contractual (activo/vencido).<br><br>**Escenario 2: Registro de nuevo agricultor mediante Stepper**<br>Dado que el administrador necesita registrar un nuevo agricultor, Cuando completa el formulario móvil (dividido en pasos/stepper para mejor UX) y guarda, Entonces el sistema crea el perfil en estado 'Pendiente de contrato'.<br><br>**Escenario 3: Desactivación segura de cliente**<br>Dado que un agricultor deja de operar con Grotix, Cuando el administrador cambia su estado a 'Inactivo' mediante un toggle switch, Entonces el sistema requiere una confirmación doble (modal) para desvincular sus dispositivos y suspender el acceso.<br><br>**Escenario 4: Edición rápida de datos de contacto**<br>Dado que un cliente cambia su número de teléfono o dirección, Cuando el administrador edita el perfil desde la vista de detalle y guarda los cambios, Entonces el sistema actualiza la información inmediatamente y la refleja en la base de datos central. |
+
+#### TS10 - Registro de contratos externos en campo
+
+| Story ID | TS10 |
+|---|---|
+| Epic ID | E10 - Gestión de Clientes y Contratos |
+| Título | Registro de contratos externos en campo |
+| Descripción | Como Administrador, quiero registrar los contratos firmados con clientes, incluyendo fechas y planes para mantener la trazabilidad contractual de forma inmediata, incluso si me encuentro visitando al cliente en campo |
+| Criterios de Aceptación | **Escenario 1: Registro de nuevo contrato**<br>Dado que el administrador firma un contrato físico, Cuando registra los datos (fechas, plan, cliente) en la app, Entonces el sistema crea el contrato con estado 'Activo' y habilita los servicios IoT correspondientes.<br><br>**Escenario 2: Historial de contratos del cliente**<br>Dado que el administrador consulta el historial de un cliente en la app, Cuando navega a la pestaña de 'Contratos', Entonces la app lista todos los contratos históricos (Activos/Vencidos/Cancelados) en un formato de línea de tiempo o lista simplificada.<br><br>**Escenario 3: Validación de superposición de fechas**<br>Dado que el administrador intenta registrar un nuevo contrato para un cliente, Cuando las fechas de inicio y fin ingresadas se superponen con un contrato ya vigente, Entonces la app muestra un mensaje de error advirtiendo el conflicto y deshabilita el botón de guardar. |
+
+#### TS11 - Gestión de suspensión de servicios (Push & Manual)
+
+| Story ID | TS11 |
+|---|---|
+| Epic ID | E11- Supervisión y Operación de Infraestructura IoT |
+| Título | Gestión de suspensión de servicios (Push & Manual) |
+| Descripción | Como Administrador, quiero visualizar los servicios suspendidos automáticamente por el sistema y poder activar suspensiones manuales para proteger los recursos de la plataforma e impedir el uso no autorizado de la infraestructura IoT. |
+| Criterios de Aceptación | **Escenario 1: Notificación Push de suspensión automática**<br>Dado que la fecha de fin de un contrato llega a su término, Cuando el sistema central ejecuta la validación y suspende el servicio, Entonces el administrador recibe una notificación Push en su dispositivo móvil alertando del cambio de estado.<br><br>**Escenario 2: Reactivación rápida mediante gestos (Swipe)**<br>Dado que el administrador revisa la lista de clientes suspendidos, Cuando aplica el filtro rápido de 'Suspendidos' en la app, Entonces se muestran los clientes afectados con opción de "Deslizar (Swipe) para reactivar".<br><br>**Escenario 3: Suspensión manual inmediata**<br>Dado que el administrador activa manualmente la suspensión de un cliente, Cuando cambia el estado desde el perfil móvil, Entonces la app envía el comando de suspensión inmediata a los dispositivos y registra la acción.<br><br>**Escenario 4: Visualización de detalles de suspensión**<br>Dado que el administrador consulta a un cliente suspendido, Cuando presiona el icono de información en el estado de suspensión, Entonces la app despliega un modal con la fecha exacta de la suspensión, el usuario o proceso que la ejecutó y el motivo (vencimiento o manual). |
+
+#### TS12 - Gestión de mantenimiento de dispositivos IoT
+
+| Story ID | TS12 |
+|---|---|
+| Epic ID | E11- Supervisión y Operación de Infraestructura IoT |
+| Título | Gestión de mantenimiento de dispositivos IoT |
+| Descripción | Como Administrador, quiero gestionar el mantenimiento preventivo y correctivo de los dispositivos IoT desde mi celular para asegurar la continuidad operativa de los sensores en campo y prevenir fallas críticas en el monitoreo de los cultivos. |
+| Criterios de Aceptación | **Escenario 1: Reporte de inicio de mantenimiento**<br>Dado que un dispositivo requiere una revisión técnica o limpieza, Cuando el administrador selecciona el equipo y cambia su estado a "En Mantenimiento", Entonces el sistema suspende temporalmente las alertas de telemetría para ese ID y registra el inicio de la intervención con la marca de tiempo actual.<br><br>**Escenario 2: Registro de acciones de mantenimiento**<br>Dado que el administrador está realizando una intervención técnica en campo, Cuando completa el formulario de "Bitácora" con la descripción de la acción realizada (ej: limpieza de sensor o cambio de batería), Entonces el sistema guarda la nota técnica vinculada al historial del dispositivo para mantener la trazabilidad de su vida útil.<br><br>**Escenario 3: Finalización y reactivación del equipo**<br>Dado que el mantenimiento del dispositivo ha concluido con éxito, Cuando el administrador presiona el botón "Finalizar Mantenimiento”, Entonces la app reactiva la recepción de datos en tiempo real y actualiza el estado visual del sensor a "Activo".<br><br>**Escenario 4: Consulta de historial de intervenciones**<br>Dado que el administrador necesita conocer los antecedentes técnicos de un sensor, Cuando accede a la sección "Historial de Mantenimiento" dentro del detalle del dispositivo, Entonces la app muestra una lista cronológica de todas las intervenciones pasadas, incluyendo fechas y el resumen de las acciones realizadas |
+
+#### TS13 - Consulta rápida del catálogo de cultivos
+
+| Story ID | TS13 |
+|---|---|
+| Epic ID | E11- Supervisión y Operación de Infraestructura IoT |
+| Título | Consulta rápida del catálogo de cultivos |
+| Descripción | Como Administrador, quiero consultar y ajustar los parámetros del catálogo de cultivos para tener acceso a la información técnica de umbrales (humedad, luz, temperatura) mientras superviso zonas de cultivo |
+| Criterios de Aceptación | **Escenario 1: Visualización de rangos óptimos**<br>Dado que el administrador necesita ver los tipos de cultivos, Cuando navega al módulo de cultivos, Entonces la app muestra una lista con tarjetas que resumen los rangos óptimos de cada planta.<br><br>**Escenario 2: Actualización táctil de umbrales**<br>Dado que el administrador actualiza un parámetro, Cuando edita el rango de humedad mediante controles deslizantes (Sliders) táctiles y guarda, Entonces el sistema actualiza los valores y notifica la propagación a los dispositivos asociados.<br><br>**Escenario 3: Búsqueda dinámica de cultivo**<br>Dado que el catálogo contiene múltiples variedades de plantas, Cuando el administrador utiliza la barra de búsqueda e ingresa el nombre de un cultivo, Entonces la app filtra la lista instantáneamente para mostrar solo las coincidencias relevantes.<br><br>**Escenario 4: Manejo de errores al actualizar parámetros**<br>Dado que existe una falla de conexión temporal, Cuando el administrador edita un umbral y presiona guardar, Entonces la app muestra un mensaje emergente informando que los cambios no pudieron aplicarse y revierte los controles a su valor original. |
+
+#### TS14 - Autenticación y Control de Acceso para el Portal de Administración
+
+| Story ID | TS14 |
+|---|---|
+| Epic ID | E11- Supervisión y Operación de Infraestructura IoT |
+| Título | Autenticación y Control de Acceso para el Portal de Administración |
+| Descripción | Como Administrador de Grotix, quiero contar con un sistema de inicio y cierre de sesión exclusivo para acceder al portal web administrativo, asegurando la protección de la gestión de clientes y dispositivos. |
+| Criterios de Aceptación | **Escenario 1: Login de Administrador**<br>Dado que el administrador ingresa sus credenciales en el portal web, Cuando los datos son validados contra el rol de 'Admin' en el backend, Entonces el sistema debe otorgar un token JWT con privilegios elevados y redirigir al Dashboard Administrativo<br><br>**Escenario 2: Cierre de Sesión**<br>Dado que el administrador finaliza su jornada, Cuando selecciona "Salir", Entonces el sistema debe invalidar el token de sesión y denegar el acceso a las rutas protegidas del portal. |
+
+#### TS15 - Configuración de Arquitectura Base y Scaffolding para la App Móvil (Flutter)
+
+| Story ID | TS15 |
+|---|---|
+| Epic ID | E09 - Arquitectura de Software y Atributos de Calidad Técnica |
+| Título | Configuración de Arquitectura Base y Scaffolding para la App Móvil (Flutter) |
+| Descripción | Como Developer de Grotix, quiero configurar la estructura base del proyecto móvil en Flutter aplicando Clean Architecture, para asegurar la escalabilidad, la correcta separación de capas y la mantenibilidad del frontend móvil. |
+| Criterios de Aceptación | **Escenario 1: Inicialización del proyecto y dependencias Core**<br>Dado que el desarrollador inicializa el repositorio móvil de Flutter, Cuando se configuren los paquetes base de inyección de dependencias y el cliente HTTP para las solicitudes, Entonces el sistema debe compilar correctamente el entorno inicial sin errores de dependencias cruzadas.<br><br>**Escenario 2: Estructura de carpetas por capas limpias**<br>Dado que el equipo técnico inspecciona la estructura del proyecto en Flutter, Cuando se verifique la distribución del código fuente, Entonces las carpetas deben estar divididas estrictamente en las capas de Data, Domain y Presentation para aislar la lógica del cliente. |
+
+#### TS16 - Implementación del Microservicio de Telemetría e Ingesta IoT (.NET)
+
+| Story ID | TS16 |
+|---|---|
+| Epic ID | E09 - Arquitectura de Software y Atributos de Calidad Técnica |
+| Título | Implementación del Microservicio de Telemetría e Ingesta IoT (.NET) |
+| Descripción | Como Developer de Grotix, quiero construir el microservicio telemetry.api en .NET (C#) integrado con controladores de mensajería, para procesar, validar y estructurar de forma asíncrona las tramas de datos JSON de telemetría. |
+| Criterios de Aceptación | **Escenario 1: Procesamiento asíncrono de tramas JSON**<br>Dado que el microservicio de telemetría en .NET se encuentra activo, Cuando el sistema reciba un paquete JSON con lecturas de sensores, Entonces el backend debe capturar las tramas asíncronamente sin bloquear los hilos principales del servidor.<br><br>**Escenario 2: Validaciones de contratos técnicos establecidos**<br>Dado que la API de telemetría recibe un request, Cuando se ejecute la validación de tipos de datos, Entonces el sistema debe confirmar la correcta estructura o rechazar el objeto si los parámetros obligatorios son nulos. |
+
+#### TS17 - Implementación del Microservicio de Control y Orquestación de Riego (.NET)
+
+| Story ID | TS17 |
+|---|---|
+| Epic ID | E09 - Arquitectura de Software y Atributos de Calidad Técnica |
+| Título | Implementación del Microservicio de Control y Orquestación de Riego (.NET) |
+| Descripción | Como Developer de Grotix, quiero desarrollar el microservicio irrigation.api en .NET (C#) que evalúe las reglas hídricas autónomas y despache estados de riego, asegurando el desacoplamiento de la lógica de control. |
+| Criterios de Aceptación | **Escenario 1: Evaluación de reglas automáticas según umbrales agronómicos**<br>Dado que el microservicio de riego en .NET recibe nuevas lecturas del suelo, Cuando los valores porcentuales de humedad caigan por debajo del umbral mínimo configurado para la especie, Entonces el backend debe calcular las necesidades hídricas y registrar un nuevo evento automático de riego.<br><br>**Escenario 2: Despacho de comandos lógicos de irrigación**<br>Dado que el sistema procesa una activación de riego (manual o automática) en el backend, Cuando el controlador actualice el estado del actuador lógico en la base de datos, Entonces la respuesta debe ser inmediata y consistente para los clientes conectados. |
+
+#### TS18 - Desarrollo del Microservicio de Análisis de Cultivos e Integración de IA (Python)
+
+| Story ID | TS18 |
+|---|---|
+| Epic ID | E09 - Arquitectura de Software y Atributos de Calidad Técnica |
+| Título | Desarrollo del Microservicio de Análisis de Cultivos e Integración de IA (Python) |
+| Descripción | Como Developer de Grotix, quiero construir el microservicio cropanalysis.api en Python (FastAPI) para gestionar la recepción programada de capturas fotográficas y conectarlo con los servicios de clasificación fenológica, asegurando la inferencia de Inteligencia Artificial. |
+| Criterios de Aceptación | **Escenario 1: Recepción y procesamiento de imágenes en FastAPI**<br>Dado que el frontend envía una fotografía del cultivo, Cuando el endpoint en Python reciba el archivo a través de una petición HTTP optimizada, Entonces el sistema debe almacenar el recurso de forma segura y asociarlo al ID del cultivo correspondiente.<br><br>**Escenario 2: Orquestación del modelo de Inteligencia Artificial**<br>Dado que la imagen ha sido cargada con éxito en el backend de Python, Cuando se ejecute el script del modelo convolucional entrenado, Entonces el sistema debe retornar el estado de germinación del cultivo junto a su nivel de confianza. |
+
+#### TS19 - Implementación del Microservicio de Gestión de Hardware y Dispositivos (.NET)
+
+| Story ID | TS19 |
+|---|---|
+| Epic ID | E09 - Arquitectura de Software y Atributos de Calidad Técnica |
+| Título | Implementación del Microservicio de Gestión de Hardware y Dispositivos (.NET) |
+| Descripción | Como Developer de Grotix, quiero construir el microservicio hardware.api en .NET (C#) para centralizar el registro, inventario, asignación y estado lógico de los dispositivos asociados a los clientes agrícolas. |
+| Criterios de Aceptación | **Escenario 1: CRUD e inventariado de dispositivos en el Backend**<br>Dado que un administrador necesita registrar un lote de dispositivos, Cuando envíe los identificadores únicos a los endpoints correspondientes, Entonces el sistema debe persistir los registros asignándoles el estado inicial de "Inactivo".<br><br>**Escenario 2: Actualización de estado operativo del hardware**<br>Dado que el sistema requiere auditar los equipos, Cuando el backend actualice el estado de conexión de un identificador de hardware, Entonces los cambios deben reflejarse de forma inmediata en las consultas globales del sistema. |
+
+#### TS20 - Configuración de Estrategia de Simulación y Mocking de Telemetría e Ingesta de Datos
+
+| Story ID | TS20 |
+|---|---|
+| Epic ID | E09 - Arquitectura de Software y Atributos de Calidad Técnica |
+| Título | Configuración de Estrategia de Simulación y Mocking de Telemetría e Ingesta de Datos |
+| Descripción | Como Developer de Grotix, quiero diseñar un motor interno de simulación de datos en el backend, para mockear la inserción continua de lecturas de sensores y flujos de red sin depender de un hardware físico conectado. |
+| Criterios de Aceptación | **Escenario 1: Generación automatizada de lecturas mockeadas**<br>Dado que el simulador de telemetría está activo en el entorno de desarrollo, Cuando se dispare el cronómetro interno, Entonces el sistema debe autogenerar tramas lógicas de humedad, temperatura y luz dentro de rangos realistas para alimentar las interfaces de usuario.<br><br>**Escenario 2: Inyección de estados de conexión simulados**<br>Dado que el sistema requiere simular escenarios de conectividad, Cuando el administrador alterne el switch de simulación, Entonces el mock debe inyectar caídas de red lógicas para validar el comportamiento del software en condiciones de error. |
+
+## 3.2. Impact Map
+
+### Business Goal 1: Maximizar la rentabilidad del productor mediante el uso eficiente del agua.
+
+**Objetivo SMART:** Reducir el consumo de agua en un 25% para los usuarios de Grotix mediante el sistema de riego automatizado en un periodo de 12 meses tras la implementación.
+
+[foto]
+
+### Business Goal 2: Establecer una presencia digital sólida para convertir visitantes en usuarios registrados.
+
+**Objetivo SMART:** Lograr una tasa de conversión del 10% de visitantes a usuarios registrados en la plataforma web durante los primeros 6 meses de operación.
+
+[foto]
+
+### Business Goal 3: Asegurar la sostenibilidad financiera del proyecto mediante la recurrencia del servicio.
+
+**Objetivo SMART:** Alcanzar una tasa de retención del 80% en suscripciones inteligentes al finalizar cada campaña agrícola en el primer año.
+
+[foto]
+
+### Business Goal 4: Elevar el estándar de la producción para facilitar el acceso a mercados internacionales.
+
+**Objetivo SMART:** Lograr que el 90% de las parcelas monitoreadas alcancen calibres uniformes de exportación, reduciendo las mermas en un 15% para finales de 2026.
+
+[foto]
+
+### Riesgo para Grotix:
+Tras elaborar los Impact Maps, el equipo ha identificado que el mayor riesgo que puede afectar el impacto del proyecto es la inestabilidad de la infraestructura de conectividad en zonas rurales. Este riesgo invalidaría el impacto esperado al interrumpir el flujo de datos. Por ello, se han definido entregables específicos de resiliencia y persistencia de datos vinculados a las historias técnicas de arquitectura para asegurar que el comportamiento del usuario no se vea frustrado por factores externos, garantizando así el cumplimiento de nuestros Business Goals.
+
+## 3.3. Product Backlog
+
+| Prioridad | User Story Id | Título | Story Points |
+|---:|---|---|---:|
+| 1 | TS02 | Estandarización de Contratos de Interoperabilidad IoT | 3 |
+| 2 | US11 | Monitoreo fiel de las condiciones del entorno | 5 |
+| 3 | US12 | Actualización periódica y automática de telemetría | 5 |
+| 4 | US13 | Garantía de exactitud en la medición de datos | 3 |
+| 5 | US14 | Dashboard de Monitoreo Integral y Resumen de Estado | 3 |
+| 6 | US19 | Activación manual del sistema de irrigación | 3 |
+| 7 | US20 | Automatización del riego mediante modelos de aprendizaje automático | 8 |
+| 8 | US23 | Clasificación del estado fenológico mediante Inteligencia Artificial | 13 |
+| 9 | US10 | Vinculación del Microcontrolador con la Aplicación | 5 |
+| 10 | US22 | Gestión de registro fotográfico de cultivos. | 5 |
+| 11 | TS01 | Implementación de Endpoints de Monitoreo de Salud (Health Checks) | 3 |
+| 12 | US21 | Generación y descarga de reportes históricos | 1 |
+| 13 | US30 | Protección y privacidad de los datos | 5 |
+| 14 | TS07 | Estandarización de la Experiencia del Desarrollador y Documentación | 3 |
+| 15 | TS05 | Implementación de Protocolos de Autenticación y Protección de Recursos | 5 |
+| 16 | US17 | Persistencia de datos ante pérdida de conectividad | 3 |
+| 17 | US18 | Notificaciones automáticas por condiciones críticas y cambios de estado | 1 |
+| 18 | US15 | Organización de dispositivos por zonas y especies | 3 |
+| 19 | US16 | Configuración de parámetros y umbrales de control | 1 |
+| 20 | TS08 | Dashboard web con indicadores clave del sistema | 5 |
+| 21 | TS12 | Gestión de mantenimiento de dispositivos IoT | 5 |
+| 22 | TS13 | Consulta rápida del catálogo de cultivos | 3 |
+| 23 | TS09 | Gestión móvil de clientes agricultores | 5 |
+| 24 | TS10 | Registro de contratos externos en campo | 5 |
+| 25 | TS11 | Gestión de suspensión de servicios (Push & Manual) | 3 |
+| 26 | US27 | Visualización de estado de servicios y periodos de campaña | 3 |
+| 27 | US26 | Configuración y gestión de alertas de usuario | 1 |
+| 28 | US25 | Modificación de datos personales y de contacto | 1 |
+| 29 | US24 | Registro, inicio y cierre de sesión de usuario | 1 |
+| 30 | US29 | Acceso garantizado y fluidez en la consulta de datos | 3 |
+| 31 | US28 | Diseño consistente y adaptabilidad multiplataforma | 3 |
+| 32 | TS03 | Desacoplamiento de Lógica de Negocio mediante Inyección de Dependencias | 5 |
+| 33 | TS04 | Optimización de Latencia y Eficiencia en el Procesamiento | 3 |
+| 34 | TS06 | Implementación de Infraestructura de Pruebas Automatizadas | 5 |
+| 35 | US01 | Visualización de propuesta de valor y servicios | 1 |
+| 36 | US02 | Enlaces de acceso a la aplicación móvil | 1 |
+| 37 | US03 | Implementación de CTA | 1 |
+| 38 | US04 | Visualización de misión, visión y equipo | 1 |
+| 39 | US05 | Implementación de formulario y canales de contacto | 1 |
+| 40 | US06 | Enlaces a redes sociales | 1 |
+| 41 | US07 | Implementación de sistemas de navegación simplificada | 1 |
+| 42 | US08 | Implementación de Identidad y Consistencia Visual | 1 |
+| 43 | US09 | Optimización de tiempos de respuesta y carga inicial | 3 |
+| 44 | TS15 | Configuración de Arquitectura Base y Scaffolding para la App Móvil (Flutter) | 3 |
+| 45 | TS16 | Implementación del Microservicio de Telemetría e Ingesta IoT (.NET) | 5 |
+| 46 | TS17 | Implementación del Microservicio de Control y Orquestación de Riego (.NET) | 5 |
+| 47 | TS18 | Desarrollo del Microservicio de Análisis de Cultivos e Integración de IA (Python) | 8 |
+| 48 | TS19 | Implementación del Microservicio de Gestión de Hardware y Dispositivos (.NET) | 5 |
+| 49 | TS20 | Configuración de Estrategia de Simulación y Mocking de Telemetría e Ingesta de Datos | 3 |
+
+### Product Backlog Funcional:
+
+| Prioridad | ID | Título | Story Points |
+|---:|---|---|---:|
+| 2 | US11 | Monitoreo fiel de las condiciones del entorno | 5 |
+| 3 | US12 | Actualización periódica y automática de telemetría | 5 |
+| 5 | US14 | Dashboard de Monitoreo Integral y Resumen de Estado | 3 |
+| 6 | US19 | Activación manual del sistema de irrigación | 3 |
+| 7 | US20 | Automatización del riego mediante modelos de aprendizaje automático | 8 |
+| 8 | US23 | Clasificación del estado fenológico mediante Inteligencia Artificial | 13 |
+| 9 | US10 | Vinculación del Microcontrolador con la Aplicación | 5 |
+| 10 | US22 | Gestión de registro fotográfico de cultivos. | 5 |
+| 12 | US21 | Generación y descarga de reportes históricos | 1 |
+| 17 | US18 | Notificaciones automáticas por condiciones críticas y cambios de estado | 1 |
+| 18 | US15 | Organización de dispositivos por zonas y especies | 3 |
+| 19 | US16 | Configuración de parámetros y umbrales de control | 1 |
+| 20 | TS08 | Dashboard web con indicadores clave del sistema | 5 |
+| 21 | TS12 | Gestión de mantenimiento de dispositivos IoT | 5 |
+| 22 | TS13 | Consulta rápida del catálogo de cultivos | 3 |
+| 23 | TS09 | Gestión web de clientes agricultores | 5 |
+| 24 | TS10 | Registro de contratos externos en campo | 5 |
+| 25 | TS11 | Gestión de suspensión de servicios (Push & Manual) | 3 |
+| 26 | US27 | Visualización de estado de servicios y periodos de campaña | 3 |
+| 27 | US26 | Configuración y gestión de alertas de usuario | 1 |
+| 28 | US25 | Modificación de datos personales y de contacto | 1 |
+| 29 | US24 | Registro, inicio y cierre de sesión de usuario | 1 |
+| 35 | US01 | Visualización de propuesta de valor y servicios | 1 |
+| 36 | US02 | Enlaces de acceso a la aplicación móvil | 1 |
+| 37 | US03 | Implementación de CTA (Botones de acción) | 1 |
+| 38 | US04 | Visualización de misión, visión y equipo | 1 |
+| 39 | US05 | Implementación de formulario y canales de contacto | 1 |
+| 40 | US06 | Enlaces a redes sociales | 1 |
+
+### Product Backlog No Funcional:
+
+| Prioridad | ID | Título | Story Points |
+|---:|---|---|---:|
+| 1 | TS02 | Estandarización de Contratos de Interoperabilidad IoT | 3 |
+| 4 | US13 | Garantía de exactitud en la medición de datos | 3 |
+| 11 | TS01 | Implementación de Endpoints de Monitoreo de Salud | 3 |
+| 14 | US30 | Protección y privacidad de los datos | 5 |
+| 15 | TS07 | Estandarización de la Exp. del Desarrollador y Documentación | 3 |
+| 16 | TS05 | Implementación de Protocolos de Autenticación | 5 |
+| 17 | US17 | Persistencia de datos ante pérdida de conectividad | 3 |
+| 31 | US29 | Acceso garantizado y fluidez en la consulta de datos | 3 |
+| 32 | US28 | Diseño consistente y adaptabilidad multiplataforma | 3 |
+| 33 | TS03 | Desacoplamiento de Lógica mediante DI/Repository | 5 |
+| 34 | TS04 | Optimización de Latencia y Eficiencia (Async) | 3 |
+| 35 | TS06 | Infraestructura de Pruebas Automatizadas | 5 |
+| 42 | US07 | Implementación de sistemas de navegación simplificada | 1 |
+| 43 | US08 | Implementación de Identidad y Consistencia Visual | 1 |
+| 44 | US09 | Optimización de tiempos de respuesta y carga inicial | 3 |
+| 45 | TS15 | Configuración de Arquitectura Base y Scaffolding para la App Móvil (Flutter) | 3 |
+| 46 | TS16 | Implementación del Microservicio de Telemetría e Ingesta IoT (.NET) | 5 |
+| 47 | TS17 | Implementación del Microservicio de Control y Orquestación de Riego (.NET) | 5 |
+| 48 | TS18 | Desarrollo del Microservicio de Análisis de Cultivos e Integración de IA (.NET) | 8 |
+| 49 | TS19 | Integración de Hardware IoT y Configuración del Microcontrolador (ESP32) | 5 |
+| 50 | TS20 | Configuración de Persistencia de Datos para Telemetría Masiva | 3 |
+
+### Product Backlog en Jira: 
+
+<img src="https://imgur.com/1kBAtuw.png">
+
+<img src="https://imgur.com/lOUHtEA.png">
+
+<img src="https://imgur.com/BFsJeUl.png">
