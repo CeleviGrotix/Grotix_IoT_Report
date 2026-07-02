@@ -2158,19 +2158,19 @@ Las General Style Guidelines de Grotix se fundamentan en la creación de una ide
 
 #### Branding y Logo
 
-[foto]
+<img src="https://imgur.com/mBeabdf.png>
 
 El branding de Grotix se ha diseñado para proyectar una identidad que fusiona la naturaleza con la precisión tecnológica. El logotipo utiliza una tipografía moderna y de alta legibilidad, donde el isotipo destaca por la integración de hojas verdes que simbolizan la vida y el crecimiento agrícola. La incorporación de un elemento circular y una letra "i" en tonos celestes refuerza el concepto de inteligencia y fluidez hídrica, comunicando visualmente que Grotix no es solo una herramienta de monitoreo, sino una solución inteligente enfocada en la sostenibilidad y el éxito de la germinación. Esta composición visual garantiza que la marca sea fácilmente reconocible tanto en interfaces digitales como en dispositivos físicos, manteniendo una estética profesional y vanguardista.
 
 #### Paleta de Colores (Colors)
 
-[foto]
+<img src="https://imgur.com/e5Q3Lve.png>
 
 La paleta de colores de Grotix ha sido seleccionada estratégicamente para evocar un equilibrio entre la vitalidad del campo y la innovación digital. Los tonos principales, como el Verde Pasto (#4FD16C) y el Azul Cerúleo (#40BFE2), refuerzan la conexión con la agricultura y la gestión inteligente de recursos hídricos, mientras que el Rojo Coral (#FF5757) actúa como un color de acento crítico para alertas y notificaciones prioritarias. Esta gama se complementa con una paleta secundaria que incluye el Verde Esmeralda (#01A070) para dar profundidad visual, y tonos neutros como el Gris Claro (#DDDDDD), Negro (#000000) y Blanco (#FFFFFF), que aseguran un alto contraste y una interfaz limpia, facilitando la legibilidad de datos técnicos en diversas condiciones de iluminación ambiental.
 
 #### Tipografía (Typography)
 
-[foto]
+<img src="https://imgur.com/dIMdRhK.png">
 
 La elección tipográfica para Grotix se centra en la familia Gabarito, una fuente de estilo geométrico y moderno que refuerza la identidad tecnológica del proyecto. Se han definido cuatro variantes principales (Regular, Semibold, Bold y Extrabold) para establecer una jerarquía visual clara y estructurada en todas las interfaces. Mientras que las variantes Bold y Extrabold se reservan para títulos e indicadores de datos críticos, permitiendo una rápida lectura en entornos de campo, las versiones Regular y Semibold garantizan una legibilidad óptima para textos descriptivos y navegación. Esta versatilidad asegura una presentación consistente, facilitando que el usuario identifique de manera intuitiva los diferentes niveles de información dentro de la plataforma.
 
@@ -2211,7 +2211,7 @@ El diseño web (Landing Page y Staff Web App) se centra en la conversión, acces
 * **Navegación e Interacción:** El menú de navegación debe ser persistente (sticky header) e incluir resaltado visual de la sección activa. En pantallas menores al "breakpoint" definido, el menú colapsará en un ícono de hamburguesa legible. Las transiciones entre secciones en una misma página deben usar desplazamiento suave (smooth scrolling).
 * **Manejo de Estados y Errores:** Se implementará la carga diferida (lazy loading) para imágenes inferiores. En los formularios, los errores por campos vacíos o inválidos se resaltarán en tiempo real con mensajes de ayuda descriptivos.
 
-[foto]
+<img src="https://imgur.com/FZYMgOV.png">
 
 2. **Estándares para Mobile Application Interfaces**
 
@@ -2223,7 +2223,7 @@ La aplicación móvil prioriza un bajo esfuerzo cognitivo y la tolerancia a cont
 * **Tolerancia a Fallos de Red y Carga:** Se mostrarán estados de carga visuales (spinners) para evitar la sensación de congelamiento de la app. Si se pierde la conexión, la interfaz mostrará datos cacheados localmente acompañados de un indicador visual de "Sin conexión".
 * **Prevención de Errores:** La captura de datos complejos usará formularios divididos en pasos (stepper). Acciones destructivas (como desactivar un cliente) requerirán una doble confirmación mediante ventanas modales.
 
-[foto]
+<img src="https://imgur.com/uk01NQF.png">
 
 3. **Estándares de Interacción con la Interfaz Física (IoT)**
 
@@ -2233,7 +2233,7 @@ La interacción del usuario a través de la interfaz digital debe reflejar con f
 * **Feedback de Actuación Manual:** Cuando el usuario acciona manualmente un actuador (ej. válvula de riego), el sistema debe confirmar la acción visualmente. Si el comando falla, la interfaz debe explicar el motivo (ej. "Sensor desconectado").
 * **Control y Aborto de Emergencia:** La interfaz debe proveer un mecanismo visible e inmediato para cancelar un ciclo de riego en curso, otorgando prioridad al mando manual sobre las reglas autónomas de la IA.
 
-[foto]
+<img src="https://imgur.com/FO2aJui.png">
 
 ## 5.2. Information Architecture
 
@@ -2244,15 +2244,15 @@ Los diagramas presentados a continuación están organizados de manera jerárqui
 
 #### Landing Page
 
-[foto]
+<img src="https://imgur.com/85Kn2Fx.png">
 
 #### Web App Page (For Staff)
 
-[foto]
+<img src="https://imgur.com/KDxyzhu.png">
 
 #### Mobile App (For Clients)
 
-[foto]
+<img src="https://imgur.com/U5CvC67.png">
 
 ### 5.2.2. Labeling Systems
 
@@ -2260,7 +2260,7 @@ La interfaz de Livria ha sido diseñada de manera eficiente y organizada, ofreci
 
 #### Landing Page
 
-[foto]
+<img src="https://imgur.com/ARaiiQR.png">
 
 Al ingresar a la plataforma, el usuario se encontrará primero con el encabezado (Header). En esta sección, se presentan las etiquetas diseñadas para facilitar una navegación intuitiva y un acceso rápido a la propuesta de valor de Grotix:
 
@@ -2275,7 +2275,7 @@ Al ingresar a la plataforma, el usuario se encontrará primero con el encabezado
 
 #### Web App (For Staff)
 
-[foto]
+<img src="https://imgur.com/Z7TeSEa.png">
 
 La Web App para el staff administrativo utiliza una barra de navegación lateral (Sidebar) con iconos intuitivos. Cada etiqueta ha sido seleccionada para representar con precisión el módulo de gestión correspondiente, asegurando que el personal operativo pueda identificar y acceder a las métricas y registros de manera inmediata:
 
@@ -2289,9 +2289,11 @@ La Web App para el staff administrativo utiliza una barra de navegación lateral
 
 #### Mobile App (For Clients)
 
-[foto]
+<img src="https://imgur.com/xr2b4vt.png">
 
 La aplicación móvil utiliza un menú de navegación inferior (Bottom Navigation Bar) con iconos de alto contraste y etiquetas directas. Este sistema permite al agricultor desplazarse entre el monitoreo en tiempo real, el análisis predictivo de la IA y la gestión administrativa con un solo toque:
+
+<img src="https://imgur.com/3jmdhqT.png">
 
 * **DASHBOARD:** Representada por el icono de gráfica, esta etiqueta dirige a la pantalla principal de monitoreo. Aquí el usuario visualiza los niveles críticos (humedad, temperatura, luz) de la zona de cultivo seleccionada y el listado de participantes o colaboradores con acceso a dicha zona.
 * **AI ADVISOR:** Identificada con el icono de destello (star), esta sección centraliza las capacidades de inteligencia artificial de Grotix. El usuario puede consultar el estado de germinación detallado por zona y recibir recomendaciones predictivas basadas en la telemetría recolectada.
@@ -2741,3 +2743,1169 @@ https://www.figma.com/proto/oG0SittF4VvPKSelZNuj6J/Grotix?node-id=148-1047&p=f&t
 El diseño del dispositivo (Device Design) es la fase arquitectónica fundamental que planifica y documenta la interconexión física del hardware, asegurando una asignación lógica de pines, niveles de voltaje adecuados y aislamiento eléctrico para evitar fallos antes del ensamblaje. Bajo este enfoque técnico, la siguiente figura presenta el diagrama del nodo IoT de Grotix, ilustrando la integración del microcontrolador central ESP32-S3 con la red de sensores de percepción y los componentes de actuación e interfaz local. Este esquema sirve como la guía técnica estandarizada para la construcción del circuito, garantizando la estabilidad operativa y la correcta captura de telemetría en el entorno agrícola. 
 
 [foto]
+
+# CAPÍTULO VI: Product Implementation, Validation & Deployment
+## 6.1. Software Configuration Management
+### 6.1.1. Software Development Environment Configuration 
+
+La siguiente tabla describe las herramientas y productos de software que el equipo utilizará para colaborar en el ciclo de vida de Grotix:
+
+| Categoría | Producto | Propósito de uso | Ruta |
+|---|---|---|---|
+| Project Management | Jira | Seguimiento de tareas, gestión de Sprints y documentación de Historias de Usuario (US) y Técnicas (TS). | [SaaS] atlassian.com/jira |
+| UX/UI Design | Figma | Diseño colaborativo y prototipado de la Mobile App, Staff Web App y la Landing Page. | [SaaS] figma.com |
+| Backend Development | JetBrains Rider | Desarrollo principal de los microservicios en .NET (C#) para Telemetría, Irrigación, Perfiles, entre otros. | [Download] jetbrains.com/rider |
+| Frontend Development | VS Code | Desarrollo de la aplicación web utilizando Vue.js y Landing Page con HTML, CSS y JS. | [Download] code.visualstudio.com |
+| Mobile Development | Android Studio | IDE principal para el desarrollo de la aplicación móvil de Grotix utilizando el framework Flutter. | [Download] developer.android.com |
+| Embedded Systems | VS Code (PlatformIO) | Desarrollo de firmware para los microcontroladores ESP32 utilizando C++. | [Download] platformio.org |
+| API Documentation | Swagger | Documentación interactiva y ejecución de pruebas para los servicios web RESTful. | [Integrated] swagger.io |
+| Cloud Infrastructure | Microsoft Azure | Hosting en la nube, gestión de bases de datos y orquestación del API Gateway del sistema. | [SaaS] portal.azure.com |
+| Database Management | MySQL Workbench | Diseño visual y gestión de la Core DB para los datos transaccionales y maestros. | [Download] dev.mysql.com |
+| Software Testing | Postman | Ejecución de pruebas manuales de los endpoints de la API y validación de peticiones HTTP. | [Download] postman.com |
+| IoT Debugging | MQTT Explorer | Monitoreo y prueba de los mensajes MQTT enviados entre el ESP32 y el broker en la nube. | [Download] mqtt-explorer.com |
+| Containerization | Docker Desktop | Creación y gestión de contenedores ligeros para asegurar un despliegue eficiente de los microservicios. | [Download] docker.com |
+
+### 6.1.2. Source Code Management  
+El equipo de Grotix establece GitHub como la plataforma centralizada para la gestión del código fuente y el control de versiones. Este esquema asegura la trazabilidad de las modificaciones y permite una colaboración eficiente en el desarrollo de la solución IoT. 
+
+Cada producto digital cuenta con un repositorio independiente:
+
+| Producto | URL del Repositorio |
+|---|---|
+| Landing Page | https://github.com/CeleviGrotix/Grotix_LandingPage |
+| Web Services (Backend) | https://github.com/CeleviGrotix/Grotix_Web_Services |
+| Frontend Web Applications | https://github.com/CeleviGrotix/Grotix_Web |
+| Mobile Application (Flutter) | https://github.com/CeleviGrotix/Grotix_Mobile |
+
+Para la gestión de versiones se implementa el modelo GitFlow, el cual organiza el desarrollo mediante el uso de ramas específicas:
+* **Main:** Es la rama principal que contiene el código siempre estable y listo para producción.
+* **Develop:** Rama de integración donde se fusionan todas las funcionalidades terminadas antes de ser lanzadas.
+* **Feature Branches:** Ramas temporales creadas para el desarrollo de requerimientos específicos. Se originan desde develop.
+* **Release Branches:** Utilizadas para preparar un nuevo lanzamiento a producción, permitiendo corregir errores menores y preparar metadatos.
+* **Hotfix Branches:** Ramas urgentes para corregir errores críticos detectados directamente en la rama main.
+
+| Tipo de Rama | Convención de Nombre | Ejemplo |
+|---|---|---|
+| Feature | feature/[ID_Story]-[descripción-breve] | feature/US15-organizacion-zonas |
+| Release | release/v[Mayor].[Menor].[Parche] | release/v1.0.0 |
+| Hotfix | hotfix/v[Mayor].[Menor].[Parche]-[desc] | hotfix/v1.0.1-error-login |
+
+Grotix utiliza el formato MAYOR.MENOR.PARCHE para identificar sus versiones:
+1. **MAYOR:** Cambios que rompen la compatibilidad con versiones anteriores.
+2. **MENOR:** Nuevas funcionalidades que mantienen la compatibilidad.
+3. **PARCHE:** Corrección de errores menores que no afectan la funcionalidad general.
+Todos los mensajes de commit deben seguir la estructura <tipo>(<alcance>): <descripción> para estandarizar el historial:
+* **feat:** Nueva funcionalidad (asociada a una US o TS).
+* **fix:** Solución a un error.
+* **docs:** Cambios exclusivos en la documentación.
+* **test:** Adición o corrección de pruebas.
+* **refactor:** Cambios en el código que no añaden funciones ni corrigen errores.
+Ejemplo: feat(irrigation): implementar lógica de riego automático (US20)
+
+### 6.1.3. Source Code Style Guide & Conventions   
+Para garantizar la mantenibilidad y la legibilidad del sistema Grotix, el equipo ha adoptado un conjunto de estándares de codificación internacionales. El cumplimiento de estas normas es obligatorio para asegurar la consistencia técnica en todos los componentes de la solución. 
+
+#### Principios Generales
+* **Nomenclatura en Inglés:** Todos los nombres de variables, funciones, clases, tablas de base de datos y comentarios deben redactarse exclusivamente en inglés.
+* **Significado Semántico:** Los nombres deben ser descriptivos (ej. getSoilMoistureLevel en lugar de getMoist).
+* **Idioma de Programación:** Se prohíbe el uso de "Spanglish" en el código fuente.
+
+#### Guía de Estilo por Lenguaje
+
+| Lenguaje | Convención de Nombres | Guía de Estilo de Referencia |
+|---|---|---|
+| JavaScript | camelCase para variables/funciones; PascalCase para clases. | Google JavaScript Style Guide |
+| C++ (ESP32) | camelCase para funciones y snake_case para variables de hardware. | Google C++ Style Guide |
+| SQL | snake_case para tablas (plural) y columnas. Palabras clave en UPPERCASE. | SQL Style Guide (by Simon Holywell) |
+| HTML / CSS | kebab-case para IDs y clases (ej. status-card). | Google HTML/CSS Style Guide |
+| C# (.NET) | PascalCase para métodos/clases; _camelCase para campos privados. | Microsoft C# Coding Conventions |
+| Python (IA) | snake_case para funciones/variables; PascalCase para clases. | PEP 8 – Style Guide for Python Code |
+| Dart (Flutter) | camelCase para variables; PascalCase para tipos/clases. | Effective Dart Style Guide |
+
+#### Convenciones para Gherkin
+Para los archivos .feature, el equipo sigue las Gherkin Conventions for Readable Specifications:
+* **Lenguaje de Negocio:** Uso de términos agrícolas claros en las sentencias Given, When y Then.
+* **Estructura:** Un solo archivo .feature por cada Historia de Usuario, identificado con su ID respectivo (ej. US11_Moisture_Monitoring.feature).
+
+Para automatizar el cumplimiento de estas guías, se integrarán linters en los IDEs de los desarrolladores, tales como ESLint para JavaScript, StyleCop para C# y Pylint para Python, configurados para rechazar cualquier código que no cumpla con la nomenclatura en inglés o el formato estandarizado. 
+
+### 6.1.4. Software Deployment Configuration   
+Se ha diseñado una estrategia de despliegue continuo (Continuous Deployment) e integración continua (Continuous Integration) basada en repositorios de GitHub y GitHub Actions. Esta configuración garantiza que cada producto digital llegue a su respectivo entorno de producción de manera segura, automatizada y tras haber superado las validaciones técnicas.
+
+A continuación, se presenta el modelo de despliegue de la solución, dividido en la topología de la infraestructura y los flujos de publicación por producto.
+
+#### Diagrama de Despliegue (C4 Model) 
+El siguiente diagrama detalla la arquitectura física y de contenedores en el entorno de producción. La infraestructura se divide en tres grandes bloques: 
+1. **Capa de Usuario (Dispositivos):** Comprende los smartphones donde se ejecuta la Mobile App (Flutter) y las computadoras desde las cuales se accede a la Staff Web App (Vue.js) y la Landing Page.
+2. **Capa Edge/IoT (Infraestructura en Campo):** Representa el entorno rural. Incluye el Grotix Gateway (ej. Raspberry Pi) que ejecuta la Edge App (Python) apoyada en una caché local (SQLite), y los nodos físicos (ESP32) que ejecutan el firmware de control en C++.
+3. **Capa Cloud (Azure):** El núcleo central de procesamiento en la región us-east-1. Utiliza Azure API Gateway como único punto de entrada, un clúster EKS (Kubernetes) para orquestar los microservicios (.NET y Python), y servicios RDS para la persistencia políglota (MySQL para la Core DB y TimescaleDB para la Telemetry DB).
+
+[foto]
+
+Para materializar esta arquitectura a partir de los repositorios de código fuente, se han configurado los siguientes pipelines de despliegue automatizado:
+1. **Web Services (Microservicios Backend en C# y Python)**
+    * **Activador:** Fusión (merge) de un Pull Request hacia la rama main.
+    * **Proceso:**
+        1. GitHub Actions inicializa el entorno y ejecuta automáticamente la suite de pruebas (unitarias y de integración).
+        2. Si las pruebas son exitosas, se compila el código fuente y se genera una imagen de contenedor Docker.
+        3. La imagen se etiqueta con el Semantic Versioning correspondiente y se empuja (push) a un registro de contenedores (Amazon ECR).
+        4. Se actualizan los manifiestos de Kubernetes para desplegar la nueva versión de la imagen en los pods del clúster de Azure, garantizando Zero-Downtime.
+2. **Frontend Web Applications (Staff Web App y Landing Page)**
+    * **Activador:** Aprobación de cambios en la rama main.
+    * **Proceso:**
+        1. GitHub Actions clona el repositorio e instala las dependencias mediante el gestor de paquetes (npm install).
+        2. Se ejecuta el proceso de construcción (build) para minificar y ofuscar el código de Vue.js y los recursos estáticos de la Landing Page (npm run build).
+        3. Los archivos estáticos resultantes se transfieren automáticamente a un servicio de almacenamiento en la nube (Azure) distribuido mediante una red de entrega de contenido (CloudFront) para garantizar baja latencia global.
+3. **Mobile Application (Flutter)**
+    * **Activador:** Creación de un Release (tag) en la rama main.
+    * **Proceso:**
+        1. El pipeline de CI ejecuta el analizador estático de Dart y las pruebas de los widgets.
+        2. Se compilan los binarios nativos para producción: formato AAB (Android App Bundle) para la Play Store y formato IPA para iOS.
+        3. Los binarios generados se publican automáticamente en Firebase App Distribution para pruebas internas de la asociación agraria, o se envían a las consolas de Google Play y App Store Connect para su revisión pública.
+4. **Embedded Applications (Grotix Gateway y Nodos ESP32)**
+    * **Activador:** Lanzamiento de una versión de firmware estable en main.
+    * **Proceso:**
+        1. Para el Grotix Gateway: El script de despliegue actualiza automáticamente la imagen Docker de la Edge App en los dispositivos Raspberry Pi vinculados a través de un servicio de gestión IoT.
+        2. Para los Nodos ESP32 (Firmware en C++): El código fuente compilado mediante PlatformIO genera un archivo binario .bin. Este archivo se distribuye a los microcontroladores en el campo mediante un proceso de actualización OTA (Over-The-Air) a través de la red Wi-Fi local que provee el Gateway, sin requerir intervención física en los cultivos.
+
+## 6.2. Landing Page, Services & Applications Implementation
+
+Este apartado describe el proceso de diseño, desarrollo e implementación de soluciones digitales orientadas a fortalecer la presencia online y optimizar la experiencia del usuario. A través de la creación de landing pages, la implementación de servicios digitales y el desarrollo de aplicaciones, se busca ofrecer soluciones funcionales, escalables y alineadas con los objetivos del negocio.
+
+La implementación se enfoca en garantizar usabilidad, rendimiento y coherencia visual, asegurando que cada componente cumpla con estándares de calidad y responda a las necesidades específicas del cliente. Desde páginas orientadas a la conversión hasta aplicaciones que automatizan procesos, este apartado refleja un enfoque integral que combina diseño, tecnología y estrategia para generar valor real y medible.
+
+### 6.2.1. Sprint 1
+
+#### 6.2.1.1. Sprint Planning 1
+
+| Campo | Detalle |
+|---|---|
+| Sprint # | Sprint 1 |
+| **Sprint Planning Background** |  |
+| Date | 26/04/26 |
+| Time | 20:00 |
+| Location | Reunión Virtual de Google Meet |
+| Prepared By | Cassius Martel |
+| Attendees (to planning meeting) | Binda Arbañil, Marcelo Alejandro / Castillo Garay, Ainhoa Lucía / Martel Andrade, Cassius Estefano / Nakamurakare Teruya, Alex Tomio / Rodas Sotomayor, Ernesto / |
+| Review Summary | Presentación exitosa de los microservicios Profiles y Cultivation Area integrados con el API Gateway. Validación de la Landing Page y flujo de Auth con JWT. Todas las tareas (56 SP) marcadas como "Done". |
+| Retrospective Summary | Se identificó la necesidad de adelantar tareas de configuración de hardware para el Sprint 2 y mejorar la estimación en tareas de infraestructura inicial. |
+| **Sprint Goal & User Stories** |  |
+| Sprint 1 Goal | El objetivo de este primer sprint es establecer la presencia digital inicial de Grotix y desplegar el núcleo de servicios backend (Profiles y Cultivation Area) integrados mediante un API Gateway. Se busca que la plataforma sea capaz de gestionar identidades, autenticar usuarios mediante JWT y permitir la administración básica de clientes, contratos y catálogos de cultivos para su posterior vinculación con el hardware IoT. |
+| Sprint 1 Velocity | 56 |
+| Sum of Story Points | 56 |
+
+#### 6.2.1.2. Aspect Leaders and Collaborators
+
+| Team Member (Last Name, First Name) | GitHub Username | Frontend & UI/UX | Backend & API | QA & Testing | Infrastructure & Deployment | Project Management |
+|---|---|---|---|---|---|---|
+| Martel Andrade, Cassius Estefano | kcc12321 | C | C | L | C | L |
+| Binda Arbañil, Marcelo Alejandro | MarceHkd | L | C | C | C | C |
+| Castillo Garay, Ainhoa Lucía | noaa01100001 | L | C | C | C | C |
+| Nakamurakare Teruya, Alex Tomio | kistoo | C | L | C | C | C |
+| Rodas Sotomayor, Ernesto | ernesto1718 | C | C | C | L | C |
+
+#### 6.2.1.3. Sprint Backlog 1
+
+| Campo | Detalle |
+|---|---|
+| Sprint # | Sprint 1 |
+
+| User Story Id | User Story Title | Work-Item / Task Id | Task Title | Description | Estimation (Hours) | Assigned To | Status |
+|---|---|---|---|---|---:|---|---|
+| US01 | Visualización de propuesta de valor y servicios | T01 | Maquetado HTML/CSS de Hero Section | Creación de la estructura base del primer bloque visible (Hero) en la landing page. | 3 | Frontend Dev | Done |
+| US01 | Visualización de propuesta de valor y servicios | T02 | Inserción de Copywriting principal | Redacción y colocación del Headline impactante y la descripción de la plataforma. | 2 | Frontend Dev | Done |
+| US01 | Visualización de propuesta de valor y servicios | T03 | Maquetado de Layout de Servicios | Implementación del layout para mostrar los pilares clave del servicio. | 3 | Frontend Dev | Done |
+| US01 | Visualización de propuesta de valor y servicios | T04 | Integración de iconografía | Búsqueda, optimización e inserción de assets visuales para la web. | 2 | Frontend Dev | Done |
+| US02 | Enlaces de acceso a la aplicación móvil | T05 | Integración de insignias de tiendas | Colocación de los logos de "App Store" y "Google Play". | 1 | Frontend Dev | Done |
+| US02 | Enlaces de acceso a la aplicación móvil | T06 | Validación de redirección a App Store | Configuración de atributos href para redireccionar a la App Store. | 2 | Frontend Dev | Done |
+| US02 | Enlaces de acceso a la aplicación móvil | T07 | Validación de redirección a Play Store | Configuración de atributos href para redireccionar a la Play Store. | 2 | Frontend Dev | Done |
+| US03 | Implementación de CTA | T08 | Diseño del CTA primario (Hero) | Estilización del botón principal para que destaque visualmente. | 2 | Frontend Dev | Done |
+| US03 | Implementación de CTA | T09 | Integración de CTA secundario | Colocación de un botón de acción permanente dentro de la barra de navegación. | 2 | Frontend Dev | Done |
+| US04 | Visualización de misión, visión y equipo | T10 | Maquetado de la sección Nosotros | Construcción estructural del contenedor para la historia de la startup. | 3 | Frontend Dev | Done |
+| US04 | Visualización de misión, visión y equipo | T11 | Carga de contenido de misión/visión | Formateo del texto sobre la misión y presentación del nombre "Grotix". | 2 | Frontend Dev | Done |
+| US05 | Implementación de formulario y canales de contacto | T12 | Maquetado UI del formulario | Creación de los inputs para Nombre, Correo, Asunto y Mensaje. | 3 | Frontend Dev | Done |
+| US05 | Implementación de formulario y canales de contacto | T13 | Validaciones de cliente (Frontend) | Lógica en JS para evitar campos vacíos y validar el formato del email. | 3 | Frontend Dev | Done |
+| US05 | Implementación de formulario y canales de contacto | T14 | Configuración del transporte de correo | Enlace del formulario con un servicio de envío. | 4 | Backend Dev | Done |
+| US05 | Implementación de formulario y canales de contacto | T15 | Feedback visual (Modales) | Creación de alertas de éxito o error tras el intento de envío del formulario. | 2 | Frontend Dev | Done |
+| US06 | Enlaces a redes sociales | T16 | Maquetado del Footer | Creación de la estructura del pie de página. | 2 | Frontend Dev | Done |
+| US06 | Enlaces a redes sociales | T17 | Inserción de iconos vectoriales | Colocación de SVG oficiales de Instagram, LinkedIn y Facebook con enlaces. | 2 | Frontend Dev | Done |
+| US07 | Implementación de sistemas de navegación simplificada | T18 | Barra de navegación Desktop | Implementación del menú horizontal superior principal. | 3 | Frontend Dev | Done |
+| US07 | Implementación de sistemas de navegación simplificada | T19 | Menú Hamburguesa Móvil | Lógica de colapso y despliegue del menú para pantallas pequeñas. | 4 | Frontend Dev | Done |
+| US07 | Implementación de sistemas de navegación simplificada | T20 | Configuración de Scroll Suave | Aplicación de comportamiento CSS/JS para transiciones fluidas entre secciones. | 1 | Frontend Dev | Done |
+| US07 | Implementación de sistemas de navegación simplificada | T21 | Resaltado dinámico (ScrollSpy) | Lógica para cambiar el estilo del elemento del menú según la sección visible. | 3 | Frontend Dev | Done |
+| US08 | Implementación de Identidad y Consistencia Visual | T22 | Definición de variables de color CSS | Creación del archivo de estilos base con los colores primarios y secundarios. | 2 | Frontend Dev | Done |
+| US08 | Implementación de Identidad y Consistencia Visual | T23 | Configuración de escala tipográfica | Definición de tamaños y pesos para títulos (H1-H6) y párrafos en toda la web. | 2 | Frontend Dev | Done |
+| US09 | Optimización de tiempos de respuesta y carga inicial | T24 | Conversión y compresión de assets | Pasaje de imágenes a formatos modernos (WebP) y reducción de peso. | 3 | Frontend Dev | Done |
+| US09 | Optimización de tiempos de respuesta y carga inicial | T25 | Implementación de carga diferida | Agregado de atributos loading="lazy" a las imágenes fuera del Hero Section. | 2 | Frontend Dev | Done |
+| TS01 | Implementación de Endpoints de Monitoreo de Salud (Health Checks) | T26 | Implementación del endpoint /live | Creación del controlador REST básico que devuelva status 200 OK en el backend. | 2 | Backend Dev | Done |
+| TS01 | Implementación de Endpoints de Monitoreo de Salud (Health Checks) | T27 | Test de conexión MySQL (/ready) | Implementación del ping a la base de datos central en la lógica de salud. | 3 | Backend Dev | Done |
+| TS01 | Implementación de Endpoints de Monitoreo de Salud (Health Checks) | T28 | Test de conexión TimescaleDB (/ready) | Implementación de la verificación de la base de datos de telemetría. | 3 | Backend Dev | Done |
+| TS03 | Desacoplamiento de Lógica de Negocio mediante Inyección de Dependencias | T29 | Setup del contenedor IoC | Configuración de los servicios iniciales en la clase de arranque (Program.cs). | 3 | Backend Dev | Done |
+| TS03 | Desacoplamiento de Lógica de Negocio mediante Inyección de Dependencias | T30 | Configuración de ORM y Conexión DB | Setup del DbContext/Gestor de entidad y variables de entorno para MySQL. | 4 | Backend Dev | Done |
+| TS03 | Desacoplamiento de Lógica de Negocio mediante Inyección de Dependencias | T31 | Creación de Migración Inicial (Users) | Generación del script SQL y tabla física de Usuarios para habilitar el login. | 2 | Backend Dev | Done |
+| TS03 | Desacoplamiento de Lógica de Negocio mediante Inyección de Dependencias | T32 | Interfaz ITelemetryRepository | Definición de los métodos base de lectura y escritura para la telemetría. | 2 | Backend Dev | Done |
+| TS03 | Desacoplamiento de Lógica de Negocio mediante Inyección de Dependencias | T33 | Interfaz IUserRepository | Definición de los métodos base para la gestión de entidades de usuario. | 2 | Backend Dev | Done |
+| TS05 | Implementación de Protocolos de Autenticación y Protección de Recursos | T34 | Lógica de generación de JWT | Creación del servicio que emite tokens firmados con fecha de expiración. | 4 | Backend Dev | Done |
+| TS05 | Implementación de Protocolos de Autenticación y Protección de Recursos | T35 | Algoritmo de Hashing (BCrypt) | Implementación de la función de cifrado de contraseñas de un solo sentido. | 3 | Backend Dev | Done |
+| TS05 | Implementación de Protocolos de Autenticación y Protección de Recursos | T36 | Middleware de validación JWT | Creación del interceptor global para verificar el token en rutas protegidas. | 4 | Backend Dev | Done |
+| TS05 | Implementación de Protocolos de Autenticación y Protección de Recursos | T37 | Configuración estricta de CORS | Definición de los dominios autorizados para consumir la API de Grotix. | 2 | Backend Dev | Done |
+| TS06 | Implementación de Infraestructura de Pruebas Automatizadas | T38 | Instalación del framework de Testing | Setup inicial de la librería principal (xUnit/JUnit) en la solución. | 2 | QA/Dev | Done |
+| TS06 | Implementación de Infraestructura de Pruebas Automatizadas | T39 | Instalación de librerías de Mocking | Integración de Moq/Mockito para la futura simulación de dependencias. | 2 | QA/Dev | Done |
+| TS06 | Implementación de Infraestructura de Pruebas Automatizadas | T40 | Scaffolding de tests | Creación de la estructura de carpetas tests/unit y tests/integration. | 1 | QA/Dev | Done |
+| TS14 | Autenticación y Control de Acceso para el Portal de Administración | T41 | Inicialización del Repositorio Web App | Creación del proyecto base (Vue), instalación de Vite y Router. | 3 | Frontend Dev | Done |
+| TS14 | Autenticación y Control de Acceso para el Portal de Administración | T42 | Maquetado UI Login Web | Creación de la pantalla de inicio de sesión de uso exclusivo interno. | 3 | Frontend Dev | Done |
+| TS14 | Autenticación y Control de Acceso para el Portal de Administración | T43 | Validaciones locales del formulario | Comprobación de integridad de email y formato de contraseña en el front. | 2 | Frontend Dev | Done |
+| TS14 | Autenticación y Control de Acceso para el Portal de Administración | T44 | Integración con Auth API | Lógica de envío de peticiones POST y recepción del JWT. | 4 | Dev Team | Done |
+| TS14 | Autenticación y Control de Acceso para el Portal de Administración | T45 | Almacenamiento seguro en cliente | Lógica para guardar el token en la Web App para mantener la sesión. | 2 | Frontend Dev | Done |
+| TS14 | Autenticación y Control de Acceso para el Portal de Administración | T46 | Configuración de Auth Guards (Router) | Protección de las URL del portal web para redirigir a no autenticados. | 3 | Frontend Dev | Done |
+| TS14 | Autenticación y Control de Acceso para el Portal de Administración | T47 | Implementación de Cierre de Sesión | Lógica de destrucción del token almacenado y redirección a login. | 2 | Frontend Dev | Done |
+| TS08 | Dashboard web con indicadores clave del sistema | T48 | Maquetado del Layout principal | Creación del contenedor lateral o superior que alberga el Dashboard. | 3 | Frontend Dev | Done |
+| TS08 | Dashboard web con indicadores clave del sistema | T49 | Componentes UI de Tarjetas (Cards) | Creación de los bloques visuales para "Clientes Activos" y "Contratos". | 3 | Frontend Dev | Done |
+| TS08 | Dashboard web con indicadores clave del sistema | T50 | Lógica de Mock Data inicial | Llenado temporal del dashboard con datos estáticos para visualizar el frontend. | 2 | Frontend Dev | Done |
+| TS10 | Registro de contratos externos en campo | T51 | APIs de Registro de Contratos | Implementación en Backend de lógica de generación de contratos e invitaciones. | 6 | Backend Dev | Done |
+| TS10 | Registro de contratos externos en campo | T52 | UI de Contratos y Asociaciones | Desarrollo de vistas en Vue para listar asociaciones y generar contratos 1-a-1. | 8 | Frontend Dev | Done |
+| TS13 | Consulta rápida del catálogo de cultivos | T53 | APIs del Catálogo de Cultivos | Endpoints de CultivationArea para realizar el CRUD de plantas y sus umbrales. | 5 | Backend Dev | Done |
+| TS13 | Consulta rápida del catálogo de cultivos | T54 | UI de Catálogo de Cultivos | Implementación de CropListView y vistas de edición de parámetros táctiles. | 6 | Frontend Dev | Done |
+| TS09 | Gestión web de clientes agricultores | T55 | APIs de Gestión de Agricultores | Implementación de endpoints para consultar, buscar y editar perfiles de clientes. | 5 | Backend Dev | Done |
+| TS09 | Gestión web de clientes agricultores | T56 | UI de Perfiles de Agricultores | Creación de ListView y DetailsView en Vue para la administración de clientes. | 6 | Frontend Dev | Done |
+
+#### 6.2.1.4. Development Evidence for Sprint Review
+
+Durante el presente sprint se alcanzó un avance significativo en la implementación e integración funcional del ecosistema Grotix, logrando la convergencia exitosa de sus tres pilares tecnológicos: Backend, Web App y Landing Page. Se consolidó el consumo de los Web Services REST correspondientes a los microservicios Profiles.Api y CultivationArea.Api, abarcando flujos críticos de autenticación JWT, gestión de roles, contratos comerciales y administración de áreas de cultivo, validados rigurosamente mediante Postman y documentación OpenAPI/Swagger. Paralelamente, se avanzó en la lógica interactiva y el dashboard de la aplicación Grotix_Web desarrollada en Vue.js, garantizando una experiencia de usuario fluida y conectada en tiempo real, mientras que el repositorio Grotix_LandingPage fue finalizado para proyectar la identidad visual y propuesta de valor de la plataforma. Esta alineación integral asegura una arquitectura robusta y una interfaz cohesiva, validada tanto en su estructura técnica como en su despliegue visual.
+
+**Repository: Grotix_LandingPage**
+
+- **Branch:** main
+- **Total Commits:** 21
+
+| Secuencia | Repository | Branch | Commit Id | Commit Message | Commit Message Body | Committed on |
+|---|---|---|---|---|---|---|
+| #01 | https://github.com/CeleviGrotix/Grotix_LandingPage | main | 68a0001 | Initial commit | Inicialización del repositorio y configuración de entorno de desarrollo. | Apr 12, 2026 |
+| #02 | https://github.com/CeleviGrotix/Grotix_LandingPage | main | 9cc00c2 | Update in README description | Actualización de la documentación técnica inicial en el archivo README. | Apr 12, 2026 |
+| #03 | https://github.com/CeleviGrotix/Grotix_LandingPage | main | 7ea25b1 | Creation of directories and basic files | Configuración de la estructura de carpetas y archivos base del proyecto HTML/CSS. | Apr 12, 2026 |
+| #04 | https://github.com/CeleviGrotix/Grotix_LandingPage | main | fcd3451 | Creation of meta tags and description | Optimización SEO mediante la adición de etiquetas meta y descripciones para motores de búsqueda. | Apr 12, 2026 |
+| #05 | https://github.com/CeleviGrotix/Grotix_LandingPage | main | ca43e6a | Content of variables.css | Definición de la paleta de colores y variables globales de diseño (estilos corporativos). | Apr 12, 2026 |
+| #06 | https://github.com/CeleviGrotix/Grotix_LandingPage | main | 173507d | Header and Navigation implementation | Desarrollo funcional de la barra de navegación y el menú principal. | Apr 12, 2026 |
+| #07 | https://github.com/CeleviGrotix/Grotix_LandingPage | main | 3b71bf4 | Hero section implementation | Implementación de la sección principal (Hero) con el Call to Action destacado. | Apr 12, 2026 |
+| #08 | https://github.com/CeleviGrotix/Grotix_LandingPage | main | 4ef8040 | Start of Services section | Estructuración base de la sección dedicada a los servicios de monitoreo. | Apr 13, 2026 |
+| #09 | https://github.com/CeleviGrotix/Grotix_LandingPage | main | 2c4d114 | Services section information | Redacción e inclusión de los detalles informativos sobre los servicios ofrecidos. | Apr 13, 2026 |
+| #10 | https://github.com/CeleviGrotix/Grotix_LandingPage | main | 420b6ec | App sections | Definición y estructuración de los contenedores principales de la aplicación web. | Apr 13, 2026 |
+| #11 | https://github.com/CeleviGrotix/Grotix_LandingPage | main | e6d2662 | About us section | Desarrollo del contenido informativo sobre la misión y visión de Grotix. | Apr 13, 2026 |
+| #12 | https://github.com/CeleviGrotix/Grotix_LandingPage | main | b1387a8 | Contact us start of implementation | Maquetación inicial de la sección de contacto y canales de atención. | Apr 13, 2026 |
+| #13 | https://github.com/CeleviGrotix/Grotix_LandingPage | main | d9c3fcd | Contact form initial implementation | Creación de la estructura del formulario de contacto para la captación de leads. | May 06, 2026 |
+| #14 | https://github.com/CeleviGrotix/Grotix_LandingPage | main | 3b4373d | Addition of images in Services | Carga y optimización de recursos gráficos para la sección de servicios del sistema. | May 07, 2026 |
+| #15 | https://github.com/CeleviGrotix/Grotix_LandingPage | main | b2cac17 | General Section Carousel | Implementación de componente interactivo tipo carrusel para la exhibición de contenido dinámico. | May 07, 2026 |
+| #16 | https://github.com/CeleviGrotix/Grotix_LandingPage | main | cc1100e | Sections Help and FAQ | Desarrollo de la sección de soporte al usuario y preguntas frecuentes para resolución de dudas. | May 07, 2026 |
+| #17 | https://github.com/CeleviGrotix/Grotix_LandingPage | main | ced81a7 | Social Media Links | Vinculación de los canales oficiales de redes sociales en el footer de la página. | May 08, 2026 |
+| #18 | https://github.com/CeleviGrotix/Grotix_LandingPage | main | de2d5ae | Terms and Conditions, and Privacy Policy | Inclusión de las secciones legales y políticas de privacidad para el cumplimiento normativo. | May 08, 2026 |
+| #19 | https://github.com/CeleviGrotix/Grotix_LandingPage | main | 9e7fb5b | complaints Book | Adición de la sección de Libro de Reclamaciones conforme a las normativas de atención al cliente. | May 08, 2026 |
+| #20 | https://github.com/CeleviGrotix/Grotix_LandingPage | main | 7c894a1 | Responsive | Implementación de Media Queries para asegurar la adaptabilidad visual en dispositivos móviles y tablets. | May 08, 2026 |
+| #21 | https://github.com/CeleviGrotix/Grotix_LandingPage | main | 053d8bc | Minor change in header | Refinamiento estético y ajustes menores en los componentes de navegación del encabezado. | May 09, 2026 |
+
+**Repository: Grotix_Web**
+
+- **Branch:** develop
+- **Total Commits:** 20
+
+| Secuencia | Repository | Branch | Commit Id | Commit Message | Commit Message Body | Committed on |
+|---|---|---|---|---|---|---|
+| #01 | https://github.com/CeleviGrotix/Grotix_Web | develop | 39db31b | feat(frontend): initial project setup... | Inicialización del scaffolding del proyecto frontend utilizando el build tool Vite. | May 05, 2026 |
+| #02 | https://github.com/CeleviGrotix/Grotix_Web | develop | 6b9e820 | feat(setup): initial project structure... | Configuración base del proyecto con Vue 3, Vite, y estándares de calidad ESLint. | May 05, 2026 |
+| #03 | https://github.com/CeleviGrotix/Grotix_Web | develop | 6f22924 | feat(setup): add seo tags and meta tags... | Optimización de metadatos SEO y configuración de títulos dinámicos en el Router. | May 05, 2026 |
+| #04 | https://github.com/CeleviGrotix/Grotix_Web | develop | 0bde5d8 | feat(dashboard): set initial config... | Configuración de la estructura de archivos y carpetas para el módulo Dashboard. | May 06, 2026 |
+| #05 | https://github.com/CeleviGrotix/Grotix_Web | develop | 3fd50c4 | feat(dashboard): add initial side bar layout | Maquetación base de la barra lateral de navegación con soporte para rutas anidadas. | May 06, 2026 |
+| #06 | https://github.com/CeleviGrotix/Grotix_Web | develop | 862520b | feat(dashboard): change sidebar color... | Actualización estética del componente Sidebar utilizando efectos de gradiente radial. | May 06, 2026 |
+| #07 | https://github.com/CeleviGrotix/Grotix_Web | develop | a82a728 | feat(crops): CropListView and CropDetailView | Creación de componentes para visualización masiva y específica de cultivos. | May 09, 2026 |
+| #08 | https://github.com/CeleviGrotix/Grotix_Web | develop | fc2e913 | feat(crops): Fix index.js | Corrección en el enrutamiento de los archivos del módulo de cultivos. | May 09, 2026 |
+| #09 | https://github.com/CeleviGrotix/Grotix_Web | develop | 4d8765c | feat(crops): Add post, put, delete and search crops | Integración de operaciones CRUD completas para el catálogo de cultivos. | May 09, 2026 |
+| #10 | https://github.com/CeleviGrotix/Grotix_Web | develop | 5c26121 | feat(agriculturists): Add ListView, DetailsView | Implementación de las vistas de lista y detalle para la gestión de usuarios agrícolas. | May 09, 2026 |
+| #11 | https://github.com/CeleviGrotix/Grotix_Web | develop | 081d57c | feat(contracts): Add Register, Login, AssociationListView... | Implementación del flujo completo de autenticación y gestión de asociaciones/contratos. | May 10, 2026 |
+| #12 | https://github.com/CeleviGrotix/Grotix_Web | develop | 847941b | feat(shared): add gtx card structure | Desarrollo de componente reutilizable GtxCard para estandarizar el diseño de contenedores. | May 10, 2026 |
+| #13 | https://github.com/CeleviGrotix/Grotix_Web | develop | 7837c48 | feat(dashboard): add members, contracts and devices columns | Adición de columnas informativas dinámicas en la tabla principal del dashboard. | May 10, 2026 |
+| #14 | https://github.com/CeleviGrotix/Grotix_Web | develop | 716b56e | feat(contracts): add terminate contract logic | Implementación de la función lógica para la finalización de contratos desde la UI. | May 10, 2026 |
+| #15 | https://github.com/CeleviGrotix/Grotix_Web | develop | 17e9f03 | feat(agriculturist): add agriculturists view | Creación del módulo y vista para la gestión de perfiles de agricultores. | May 10, 2026 |
+| #16 | https://github.com/CeleviGrotix/Grotix_Web | develop | 24743d2 | Dashboard improvement | Mejora en la disposición de widgets y visualización de datos en el panel principal. | May 10, 2026 |
+| #17 | https://github.com/CeleviGrotix/Grotix_Web | develop | c803e9b | Searchview small improvement | Optimización de la reactividad en el componente SearchView para una respuesta más fluida. | May 10, 2026 |
+| #18 | https://github.com/CeleviGrotix/Grotix_Web | develop | ad3e616 | Changes in design | Ajustes de CSS dinámico y mejora en la paleta de colores de la interfaz administrativa. | May 10, 2026 |
+| #19 | https://github.com/CeleviGrotix/Grotix_Web | develop | 6cb8be1 | Fixing small detail in search | Refactorización menor en la lógica de filtrado del componente de búsqueda global. | May 10, 2026 |
+| #20 | https://github.com/CeleviGrotix/Grotix_Web | develop | 97c89f4 | Updating local version | Sincronización de dependencias y actualización de entorno local de desarrollo. | May 10, 2026 |
+
+**Repository: Grotix_Web_Services**
+
+- **Branch:** develop
+- **Total Commits:** 23
+
+| Secuencia | Repository | Branch | Commit Id | Commit Message | Commit Message Body | Committed on |
+|---|---|---|---|---|---|---|
+| #01 | https://github.com/CeleviGrotix/Grotix_Web_Services | develop | 168bda4 | Initial commit | Inicialización de la solución y configuración de los proyectos base de .NET Core. | May 04, 2026 |
+| #02 | https://github.com/CeleviGrotix/Grotix_Web_Services | develop | 752d0da | Add user | Implementación base de la entidad User y su repositorio correspondiente. | May 04, 2026 |
+| #03 | https://github.com/CeleviGrotix/Grotix_Web_Services | develop | 2d49f88 | Fix registration | Resolución de conflictos en la lógica de persistencia del registro de usuarios. | May 05, 2026 |
+| #04 | https://github.com/CeleviGrotix/Grotix_Web_Services | develop | d56e69a | Add Cultivation Area setup | Configuración inicial y estructuración del microservicio CultivationArea. | May 05, 2026 |
+| #05 | https://github.com/CeleviGrotix/Grotix_Web_Services | develop | 236ae1f | Add health checks | Implementación de servicios de monitoreo de salud (Liveness/Readiness) para los microservicios. | May 05, 2026 |
+| #06 | https://github.com/CeleviGrotix/Grotix_Web_Services | develop | 88e6d1e | Add EF Core initial migration | Generación del esquema inicial de base de datos utilizando migraciones de Entity Framework Core. | May 05, 2026 |
+| #07 | https://github.com/CeleviGrotix/Grotix_Web_Services | develop | c6ccea4 | Fix contract endpoints | Corrección de errores en las rutas de acceso a los servicios de gestión de contratos. | May 05, 2026 |
+| #08 | https://github.com/CeleviGrotix/Grotix_Web_Services | develop | 5fb283b | Update staff aggregate | Modificación del agregado Staff para incluir datos de acceso y roles técnicos. | May 05, 2026 |
+| #09 | https://github.com/CeleviGrotix/Grotix_Web_Services | develop | 137225b | Seed default roles in migration | Configuración de la semilla de datos (seeding) para roles predeterminados mediante EF Core. | May 05, 2026 |
+| #10 | https://github.com/CeleviGrotix/Grotix_Web_Services | develop | 4de07d8 | Migrate monolith architecture to microservices | Reestructuración de la solución para transicionar de una arquitectura monolítica a microservicios. | May 09, 2026 |
+| #11 | https://github.com/CeleviGrotix/Grotix_Web_Services | develop | 91e3c21 | Update roles and permissions | Actualización de la matriz de permisos y roles (RBAC) en el microservicio IAM. | May 09, 2026 |
+| #12 | https://github.com/CeleviGrotix/Grotix_Web_Services | develop | 946c67f | Add endpoint to get farmer users | Desarrollo de servicio de consulta de perfiles con rol de agricultor. | May 09, 2026 |
+| #13 | https://github.com/CeleviGrotix/Grotix_Web_Services | develop | ca64a1e | Add credentials for registration | Adición de campos de seguridad y credenciales para el proceso de creación de identidades. | May 09, 2026 |
+| #14 | https://github.com/CeleviGrotix/Grotix_Web_Services | develop | 61fa9b6 | Update data types | Ajuste y normalización de tipos de datos en los esquemas de la base de datos relacional. | May 09, 2026 |
+| #15 | https://github.com/CeleviGrotix/Grotix_Web_Services | develop | a1c386c | Add imageurl to crop | Extensión del modelo de dominio de cultivos para soportar URLs de recursos gráficos. | May 09, 2026 |
+| #16 | https://github.com/CeleviGrotix/Grotix_Web_Services | develop | d59aa07 | Add crud op to crop | Implementación de las operaciones CRUD (Crear, Leer, Actualizar, Borrar) para el catálogo de cultivos. | May 09, 2026 |
+| #17 | https://github.com/CeleviGrotix/Grotix_Web_Services | develop | f74ec53 | Add user management endpoints | Implementación de servicios para la administración de cuentas y asignación de roles. | May 10, 2026 |
+| #18 | https://github.com/CeleviGrotix/Grotix_Web_Services | develop | 566d173 | Update user registration logic | Refactorización del flujo de registro para incluir validaciones de tokens de invitación. | May 10, 2026 |
+| #19 | https://github.com/CeleviGrotix/Grotix_Web_Services | develop | 857e51a | Merge branch 'feat/profile' into develop | Integración de la rama de características de perfiles en la rama principal de desarrollo. | May 10, 2026 |
+| #20 | https://github.com/CeleviGrotix/Grotix_Web_Services | develop | ea18568 | Add Azure MySQL connection config... | Configuración de cadenas de conexión para bases de datos Azure MySQL en el entorno de desarrollo local. | May 10, 2026 |
+| #21 | https://github.com/CeleviGrotix/Grotix_Web_Services | develop | 275d401 | Point API gateway profiles cluster to Azure Profiles.Api | Reconfiguración del API Gateway (Ocelot) para enrutar el tráfico del clúster hacia la instancia de Azure. | May 10, 2026 |
+| #22 | https://github.com/CeleviGrotix/Grotix_Web_Services | develop | e90714b | add endpoints | Exposición de nuevos puntos de enlace REST para la gestión de recursos institucionales. | May 10, 2026 |
+| #23 | https://github.com/CeleviGrotix/Grotix_Web_Services | develop | 72c8820 | add contract edit and termination logic | Implementación de la lógica de negocio para la edición y finalización de contratos de servicio en Profiles.Api. | May 10, 2026 |
+
+#### 6.2.1.5. Testing Suite Evidence for Sprint Review
+
+Durante este Sprint se implementó una suite de pruebas automatizadas para el backend de Grotix, organizada en tres niveles.
+
+En primer lugar, se desarrollaron **26 unit tests** distribuidos en dos archivos: `ValueObjectsTests.cs`, que valida el comportamiento de los value objects `UserEmail` y `UserPhone` ante entradas válidas e inválidas, y `DomainTests.cs`, que verifica las reglas de negocio de los agregados `Farm`, `Zone`, `Crop`, `Contract` e `InviteTokenHasher`.
+
+En segundo lugar, se implementaron **10 integration tests** en `IntegrationTests.cs`, los cuales prueban el flujo completo de `FarmCommandService` y `ZoneCommandService` contra una base de datos en memoria (`EF Core InMemory`), cubriendo escenarios de creación, actualización y validación de errores sin dependencia de infraestructura real.
+
+Finalmente, se elaboraron **18 archivos `.feature`** escritos en lenguaje Gherkin bajo el enfoque BDD, uno por cada User Story y Technical Story del Sprint (`US01`–`US09`, `TS01`, `TS03`, `TS05`–`TS06`, `TS08`–`TS10`, `TS13`–`TS14`), describiendo los escenarios de aceptación que guiarán la validación funcional de la plataforma. Todos los tests unitarios e integrales se encuentran en la rama `test/sprint-testing-suite` del repositorio backend y pasan exitosamente con **0 fallos**.
+
+**Link del repositorio de Web Services (rama de testing):**  
+https://github.com/CeleviGrotix/Grotix_Web_Services/commits/test/sprint-testing-suite/
+
+**Commits de la suite de testing**
+
+| Secuencia | Repository | Branch | Commit Id | Commit Message | Committed on (Date) |
+|---|---|---|---|---|---|
+| #01 | https://github.com/CeleviGrotix/Grotix_Web_Services/tree/test/sprint-testing-suite | test/sprint-testing-suite | 9c1067f2f6c309571482748b970245d4152b75cf | feat(setup): add initial testing suite | 10/05/2026 |
+| #02 | https://github.com/CeleviGrotix/Grotix_Web_Services/tree/test/sprint-testing-suite | test/sprint-testing-suite | 3aa4b17ef6258fef870c1fc4119b094a0876379a | feat(test): add value object tests | 10/05/2026 |
+| #03 | https://github.com/CeleviGrotix/Grotix_Web_Services/tree/test/sprint-testing-suite | test/sprint-testing-suite | ba650793507745ae5ca9aadc8037bd008d3981ed | feat(test): add unit test for domain aggregates | 10/05/2026 |
+| #04 | https://github.com/CeleviGrotix/Grotix_Web_Services/tree/test/sprint-testing-suite | test/sprint-testing-suite | 1fd4232bd5205144d62f1f11666a14c0edb83e31 | feat(test): add user stories bdd tests | 10/05/2026 |
+| #05 | https://github.com/CeleviGrotix/Grotix_Web_Services/tree/test/sprint-testing-suite | test/sprint-testing-suite | a045e00647462ad071e30cc12aff6708e50d4d89 | feat(test): add technical stories bdd tests | 10/05/2026 |
+| #06 | https://github.com/CeleviGrotix/Grotix_Web_Services/tree/test/sprint-testing-suite | test/sprint-testing-suite | 17f8fa0802f3745d56874d863dc0b8d4a179d1fa | feat(test): add 10 integration tests for FarmCommandService and ZoneCommandService with InMemory DB | 10/05/2026 |
+
+**Control de Casos de Prueba - Pruebas Unitarias (Domain & Value Objects)**
+
+| Test Case ID | Componente / Clase | Tipo de Prueba | Descripción del Escenario | Datos de Entrada (Input) | Resultado Esperado (Output) | Estado |
+|---|---|---|---|---|---|---|
+| TC-U01 | Farm (Aggregate) | Unitaria (xUnit) | Construcción válida de un objeto de tipo Granja. | userId: 1, name: "Granja Los Andes", location: "Cusco, Perú" | Propiedades asignadas correctamente sin errores. | Pasó |
+| TC-U02 | Farm (Aggregate) | Unitaria (xUnit) | Intento de instanciación con un nombre vacío o con espacios. | userId: 1, name: " ", location: "Cusco, Perú" | Excepción `ArgumentException` es lanzada. | Pasó |
+| TC-U03 | Contract (Aggregate) | Unitaria (xUnit) | Intento de creación de contrato con fecha de fin anterior a la de inicio. | start: Today, end: Yesterday, status: Active, totalAmount: 1500f | Excepción `ArgumentException` es lanzada. | Pasó |
+| TC-U04 | Crop (Aggregate) | Unitaria (xUnit) | Intento de registro de cultivo con tiempo de estrés negativo. | commonName: "Papa", maxStressTime: -1 | Excepción `ArgumentException` es lanzada. | Pasó |
+| TC-U05 | UserEmail (Value Object) | Unitaria (xUnit) | Validación de cadena de texto que no cumple con estructura de correo electrónico. | raw: "noesuncorreo" o "@dominio.com" | Excepción `ArgumentException` es lanzada. | Pasó |
+| TC-U06 | UserPhone (Value Object) | Unitaria (xUnit) | Normalización automática de espacios en blanco en el número telefónico. | raw: "+51 999 888 777" | Cadena limpia y normalizada: "+51999888777". | Pasó |
+
+**Control de Casos de Prueba - Pruebas de Integración (Service ➔ Repository ➔ DB InMemory)**
+
+| Test Case ID | Servicio / Flujo Evaluado | Tipo de Prueba | Descripción del Escenario | Datos de Entrada (Input) | Resultado Esperado (Output) | Estado |
+|---|---|---|---|---|---|---|
+| TC-I01 | FarmCommandService | Integración (InMemory) | Persistencia correcta de una nueva granja asociada a un usuario existente. | UserId válido, Name: "Granja Andina", Location: "Cusco" | El objeto se almacena con un ID autogenerado mayor a 0 y los datos coinciden en BD. | Pasó |
+| TC-I02 | FarmCommandService | Integración (InMemory) | Intento de guardar una granja con nombre en blanco mediante comando. | UserId válido, Name: " ", Location: "Cusco" | El servicio detiene la operación y lanza un `ArgumentException`. No se guarda nada. | Pasó |
+| TC-I03 | FarmCommandService | Integración (InMemory) | Actualización completa de datos de una granja previamente registrada. | FarmId existente, NewName: "Nombre Nuevo", NewLocation: "Arequipa" | Los cambios se reflejan inmediatamente en la consulta física del contexto de base de datos. | Pasó |
+| TC-I04 | FarmCommandService | Integración (InMemory) | Intento de actualizar una granja usando un identificador inexistente. | FarmId: 99999, Name: "Nombre", Location: "Lugar" | El sistema lanza un `KeyNotFoundException` al no mapear el ID en los registros. | Pasó |
+| TC-I05 | ZoneCommandService | Integración (InMemory) | Registro exitoso de una zona agrícola vinculando una granja y un cultivo real. | FarmId válido, CropId válido, Coords: -12.046, -77.042, Phase: "Germinación" | La zona es guardada y vinculada correctamente en el esquema relacional de la BD. | Pasó |
+| TC-I06 | ZoneCommandService | Integración (InMemory) | Intento de registrar una zona asociándole un código de cultivo que no existe. | FarmId válido, CropId: 99999, Coords: -12.046, -77.042, Phase: "Germinación" | La integridad referencial simulada falla y el servicio arroja un `ArgumentException`. | Pasó |
+| TC-I07 | ZoneCommandService | Integración (InMemory) | Intento de actualización de coordenadas enviando parámetros incompletos (solo latitud). | ZoneId existente, Latitude: -13.0, Longitude: null | El validador del servicio detecta la inconsistencia geográfica y lanza `ArgumentException`. | Pasó |
+
+**Control de Casos de Prueba - Pruebas de Aceptación (User Stories & Technical Stories Coverage)**
+
+| Test Case ID | ID Historia (US/TS) | Tipo de Prueba | Descripción del Escenario (Escenario de Gherkin) | Acción / Datos de Entrada (Input) | Resultado Esperado (Output) | Estado |
+|---|---|---|---|---|---|---|
+| TC-A01 | US01 | Aceptación (UI) | Explicación clara de la propuesta de valor y los 3 pilares clave del servicio en la Landing Page. | Cargar la página inicial en el navegador y desplazarse a la sección de servicios. | Se visualiza el Headline y los tres bloques: "Monitoreo por sensores", "Reconocimiento de germinación con IA" y "Riego automatizado". | Pasó |
+| TC-A02 | US02 | Aceptación (UI) | Redirección correcta y operativa hacia las tiendas oficiales de apps móviles sin enlaces rotos. | Hacer clic en las insignias de "App Store", "Google Play" o el botón "GET NOW!". | El navegador redirige al entorno oficial de descarga correspondiente al sistema operativo del smartphone, sin errores 404. | Pasó |
+| TC-A03 | US03 | Aceptación (UI) | Visibilidad del CTA principal en Hero Section y persistencia del CTA secundario en la barra superior. | Hacer scroll vertical descendente a lo largo de toda la Landing Page. | El botón principal "Comienza ahora" destaca en el Hero y la barra de navegación se mantiene fija (sticky) arriba con su CTA visible. | Pasó |
+| TC-A04 | US04 | Aceptación (UI) | Despliegue de la sección "Nosotros" (misión, visión y equipo) controlando fallos de red con placeholders. | Forzar latencia alta en imágenes de perfil de los integrantes del equipo Grotix. | La app renderiza avatares genéricos temporales que muestran el nombre y cargo del integrante; la sección mantiene su estructura limpia. | Pasó |
+| TC-A05 | US05 | Aceptación (UI) | Validación de campos obligatorios y formato de correo electrónico en formulario de contacto. | Enviar formulario con campo vacío o con formato de email inválido (ej: agricultor_sin_arroba.com). | El frontend intercepta el envío, impide la petición al servidor, resalta los inputs en rojo y muestra mensajes de error descriptivos. | Pasó |
+| TC-A06 | US06 | Aceptación (UI) | Operatividad de los accesos a redes sociales corporativas configurados en el pie de página. | Hacer clic en los iconos SVG de Instagram, LinkedIn y Facebook en el footer de la página. | Los perfiles oficiales de Grotix se abren en una pestaña nueva del navegador (`target="_blank"`) manteniendo la Landing Page activa en la pestaña previa. | Pasó |
+| TC-A07 | US07 | Aceptación (UI) | Navegación simplificada mediante scroll suave, menú hamburguesa interactivo y resaltado dinámico (ScrollSpy). | Seleccionar una sección del menú en mobile o hacer scroll interactivo entre bloques. | Las transiciones son fluidas, el menú móvil se cierra automáticamente tras elegir un enlace y el menú activo cambia de estilo visual. | Pasó |
+| TC-A08 | US08 | Aceptación (UI) | Consistencia de la identidad visual de la startup según la paleta de colores y escala tipográfica. | Renderizar la interfaz en el navegador y auditar los elementos contra variables CSS de colores y pesos (H1-H6). | La jerarquía visual se mantiene coherente en todas las vistas y los contrastes de color cumplen con los estándares de accesibilidad WCAG. | Pasó |
+| TC-A09 | US09 | Aceptación (UI) | Optimización del rendimiento web mediante compresión de assets (WebP) y carga diferida (Lazy Loading). | Realizar la carga inicial del sitio bajo una conexión inestable o de datos móviles. | El tiempo de despliegue del contenido crítico en el Hero es inferior a 1.5s; las imágenes inferiores usan `loading="lazy"` y cargan al hacer scroll. | Pasó |
+| TC-A10 | TS01 | Aceptación (Backend) | Monitoreo automático de salud de la API y verificación del estado de dependencias críticas de infraestructura. | Realizar peticiones HTTP GET secuenciales a los endpoints `/health/live` y `/health/ready`. | `/live` retorna 200 OK (servidor activo). `/ready` comprueba MySQL/TimescaleDB y retorna 200 OK si están arriba, o 503 si la BD está caída. | Pasó |
+| TC-A11 | TS03 | Aceptación (Backend) | Desacoplamiento de la persistencia arquitectónica utilizando inyección de dependencias (IoC) y DTOs estables. | Modificar el motor de persistencia en `Program.cs` o alterar el esquema de tablas en Entity Framework Core. | El controlador sigue funcionando sin cambios al interactuar solo con la interfaz (`ITelemetryRepository`) y las respuestas usan DTOs estables. | Pasó |
+| TC-A12 | TS05 | Aceptación (Backend) | Emisión de JSON Web Tokens (JWT) seguros mediante credenciales válidas y protección estricta CORS. | Consumir el endpoint POST `/api/v1/auth/sign-in` con datos válidos desde un dominio autorizado. | El backend genera un token JWT firmado con algoritmo BCrypt para contraseñas, tiempo de expiración y claims; bloquea accesos externos por CORS. | Pasó |
+| TC-A13 | TS06 | Aceptación (QA) | Ejecución aislada de la suite de pruebas unitarias/integración en local y automatización en pipeline CI. | Ejecutar el comando `dotnet test` o subir un commit con errores al repositorio remoto. | Los algoritmos se validan rápidamente de forma aislada usando Mocks; si un test falla, el pipeline de Integración Continua bloquea el deploy. | Pasó |
+| TC-A14 | TS14 | Aceptación (UI) | Control de acceso seguro al Portal de Administración mediante Auth Guards en las rutas del cliente. | Intentar ingresar manualmente a una URL privada del portal administrativo sin haber iniciado sesión. | El enrutador de Vue intercepta la navegación debido a la ausencia de un JWT válido y redirige inmediatamente al usuario a la vista de Login. | Pasó |
+| TC-A15 | TS08 | Aceptación (UI) | Visualización centralizada de indicadores clave (KPIs) de negocio y alertas críticas en el Dashboard. | Iniciar sesión como Administrador y entrar al panel principal de control. | El panel renderiza tarjetas dinámicas con el número de clientes, contratos y dispositivos IoT, resaltando en rojo alertas críticas o contratos vencidos. | Pasó |
+| TC-A16 | TS10 | Aceptación (Ecosistema) | Registro de contratos comerciales externos en campo y aprovisionamiento automático de servicios IoT. | Enviar un formulario con fechas, planes y cliente mediante Vue App hacia el backend POST `/api/v1/contracts`. | El contrato se crea con estado "Activo", se genera el Token de invitación para el administrador de la granja y se habilitan los servicios IoT. | Pasó |
+| TC-A17 | TS13 | Aceptación (UI) | Consulta ágil del catálogo botánico y modificación dinámica de umbrales óptimos mediante sliders. | Buscar una especie por nombre y editar su rango óptimo de humedad usando el control deslizante de la UI. | El catálogo filtra dinámicamente, actualiza los valores biológicos en base de datos y propaga los nuevos parámetros a los dispositivos IoT asociados. | Pasó |
+| TC-A18 | TS09 | Aceptación (UI) | Búsqueda, filtrado en tiempo real y gestión integral del directorio de clientes agricultores. | Digitar un criterio de búsqueda en la barra de perfiles agrícolas dentro de la interfaz administrativa en Vue. | Los registros se filtran al instante en pantalla mostrando nombres, ubicaciones y un indicador semafórico del estado contractual del usuario. | Pasó |
+
+**Evidencia Visual de Ejecución de la Suite**
+
+<img src="https://imgur.com/6xsktt1.png">
+
+#### 6.2.1.6. Execution Evidence for Sprint Review
+Durante el presente sprint se consolidó la exposición y consumo de los Web Services REST del backend Grotix, con especial énfasis en el flujo de identidad y perfiles (autenticación JWT, roles, asociaciones, contratos comerciales e invitaciones con correo vinculado) y en la capa de área de cultivo (fincas, zonas y catálogo de cultivos). Las pruebas de ejecución se realizaron con Postman contra los hosts locales de Profiles.Api y CultivationArea.Api, verificando códigos HTTP, cuerpos JSON y reglas de autorización alineadas con la documentación OpenAPI/Swagger.
+
+De manera paralela, se avanzó en el desarrollo del frontend con la implementación de la vista de administrador, la cual abarca la gestión integral de perfiles de usuario, así como la creación y administración de asociaciones, contratos comerciales, invitaciones y cultivos. Esta vista constituye el punto central de control para los usuarios con rol administrador dentro de la plataforma Grotix.
+
+**POST**
+
+https://grotixgateway-fyevgmh2cvc4ghgv.chilecentral-01.azurewebsites.net/api/v1/auth/sign-in/ 
+
+<img src="https://imgur.com/yFIGrWX.png">
+
+Este endpoint permite el inicio de sesión de un usuario, devuelve el token que permite acceso a los demás endpoints.
+
+**GET**
+
+https://grotixgateway-fyevgmh2cvc4ghgv.chilecentral-01.azurewebsites.net/api/v1/catalog/crops
+
+<img src="https://imgur.com/HtPKt6D.png">
+
+Endpoint para obtener información de los diversos tipos de cultivo, con información clave sobre sus parámtros óptimos
+
+**POST**
+
+https://grotixgateway-fyevgmh2cvc4ghgv.chilecentral-01.azurewebsites.net/api/v1/associations/1/invites
+
+<img src="https://imgur.com/oyua2Sz.png">
+
+Este endpoint permite crear un token de invitación que permite a un nuevo usuario registrarse en la aplicación. Este tiene un correo como objetivo y se predefine el rol y asociación a la que pertenecerá el nuevo usuario.
+
+**POST**
+
+https://grotixgateway-fyevgmh2cvc4ghgv.chilecentral-01.azurewebsites.net/api/v1/contracts/Este endpoint permite la creación de un contrato con una asociación. Al crearse el contrato, se genera una invitación al representante de la granja para recibir sus permisos como administrador de la granja.
+
+<img src="https://imgur.com/2vyhZmP.png">
+
+Video de explicación: 
+
+https://upcedupe-my.sharepoint.com/:v:/g/personal/u20201f855_upc_edu_pe/IQAX8Qlo6yS-TYuInq-CellWAQNakaunluneG2IIEWIgkZE?nav=eyJyZWZlcnJhbEluZm8iOnsicmVmZXJyYWxBcHAiOiJPbmVEcml2ZUZvckJ1c2luZXNzIiwicmVmZXJyYWxBcHBQbGF0Zm9ybSI6IldlYiIsInJlZmVycmFsTW9kZSI6InZpZXciLCJyZWZlcnJhbFZpZXciOiJNeUZpbGVzTGlua0NvcHkifX0&e=NXcnhZ
+
+
+#### 6.2.1.7. Services Documentation Evidence for Sprint Review
+
+Durante el presente ciclo de desarrollo (Sprint), se ha fortalecido la arquitectura del ecosistema Grotix mediante la estandarización y documentación explícita de los servicios REST utilizando el estándar OpenAPI 3.0 (Swagger). El esfuerzo técnico se concentró estratégicamente en la maduración del microservicio `Profiles.Api`, componente crítico encargado de la gobernanza de identidades, jerarquías organizacionales y gestión contractual.
+
+En paralelo, se consolidaron las capacidades operativas del microservicio `CultivationArea.Api`, asegurando la persistencia y gestión del conocimiento agronómico.
+
+Un hito arquitectónico relevante de este sprint ha sido la implementación e integración de un **API Gateway**. Esta capa de abstracción centraliza el tráfico, optimiza el enrutamiento de peticiones hacia los distintos microservicios y garantiza un punto único de entrada seguro, mejorando significativamente la observabilidad y el control de los servicios. La siguiente tabla detalla los endpoints desarrollados, documentados y validados durante este periodo.
+
+**Matriz de endpoints documentados**
+
+| Microservicio | Método | Ruta relativa | Autorización | Parámetros / cuerpo | Respuesta de éxito y notas |
+|---|---|---|---|---|---|
+| Profiles.Api | POST | `/api/v1/auth/register` | Anónimo | `email`, `password`, `inviteToken` | `201 Created`. Registro vía invitación. |
+| Profiles.Api | POST | `/api/v1/auth/sign-in` | Anónimo | `email`, `password` | `200 OK`. Devuelve JWT y `LoginResponse`. |
+| Profiles.Api | POST | `/api/v1/auth/sign-out` | Bearer JWT | — | `204 No Content`. |
+| Profiles.Api | GET | `/api/v1/roles` | Anónimo | — | `200 OK`. Lista de roles: `id`, `name`, `desc`. |
+| Profiles.Api | GET | `/api/v1/associations` | Admin, Staff | — | `200 OK`. Lista de asociaciones. |
+| Profiles.Api | POST | `/api/v1/associations` | Admin, Staff | `name`, `email` | `201 Created`. |
+| Profiles.Api | PATCH | `/api/v1/associations/{id}` | Solo Admin | Path: `id`. JSON: `name`, `email`. | `200 OK`. Actualización parcial. |
+| Profiles.Api | POST | `/api/v1/admin/users` | Solo Admin | `email`, `roleId`, `assocId`, etc. | `201 Created`. Creación directa por admin. |
+| Profiles.Api | PATCH | `/api/v1/admin/users/{id}` | Solo Admin | Path: `userId`. JSON administrativo. | `200 OK`. Edición parcial. |
+| Profiles.Api | GET | `/api/v1/contracts` | Bearer JWT | — | `200 OK`. Lista según jerarquía. |
+| Profiles.Api | GET | `/api/v1/contracts/{id}` | Bearer JWT | Path: `contractId`. | `200 OK`. Detalle de contrato. |
+| Profiles.Api | POST | `/api/v1/contracts` | Admin, Staff | `associationId`, `totalAmount`, etc. | `201 Created`. Genera token `OrgAdmin`. |
+| Profiles.Api | PATCH | `/api/v1/contracts/{id}` | Admin, Staff | Path: `id`. JSON: `status`, `dates`, etc. | `200 OK`. Modificación de contrato. |
+| Profiles.Api | DELETE | `/api/v1/contracts/{id}` | Solo Admin | Path: `id`. | `204 No Content`. Borrado físico. |
+| Profiles.Api | POST | `/api/v1/associations/{id}/invites` | Bearer JWT | Path: `id`. JSON: `email`, `roleId`. | `200 OK`. Genera token de invitación. |
+| Profiles.Api | GET | `/api/v1/search` | Bearer JWT | Query: `q` (texto). | `200 OK`. Búsqueda global agregada. |
+| Profiles.Api | GET | `/api/v1/users` | Bearer JWT | — | `200 OK`. Lista agricultores (Profiles). |
+| Profiles.Api | GET | `/api/v1/users/{id}` | Bearer JWT | Path: `userId`. | `200 OK`. Recurso de usuario específico. |
+| Profiles.Api | GET | `/api/v1/profile/me` | Bearer JWT | — | `200 OK`. Mi perfil (`UserResource`). |
+| Profiles.Api | GET | `/api/v1/profile/me/staff` | Bearer JWT | — | `200 OK`. Datos técnicos si es staff. |
+| Profiles.Api | PATCH | `/api/v1/profile/{id}` | Bearer JWT | Path: `id`. JSON: `name`, `phone`, etc. | `200 OK`. Actualización de perfil propio. |
+| Profiles.Api | PATCH | `/api/v1/profile/{id}/preferences` | Bearer JWT | Path: `id`. JSON: `push`, `email` (bool). | `200 OK`. Ajustes de notificaciones. |
+| Profiles.Api | PATCH | `/api/v1/profile/{id}/role` | Solo Admin | Path: `id`. JSON: `roleId`. | `200 OK`. Cambio de rol forzado. |
+| Profiles.Api | GET | `/api/v1/staff` | Solo Admin | — | `200 OK`. Lista de staff técnico. |
+| Profiles.Api | POST | `/api/v1/staff` | Solo Admin | `userId`, `technicalRole`. | `201 Created`. Promoción a staff. |
+| Profiles.Api | PATCH | `/api/v1/staff/{id}` | Solo Admin | Path: `id`. `technicalRole`, `isActive`. | `200 OK`. Edición de staff. |
+| Shared | GET | `/live` | Anónimo | — | `200 OK`. Liveness probe. |
+| Shared | GET | `/ready/core` | Anónimo | — | `200 OK`. Health Check MySQL. |
+| Shared | GET | `/ready/telemetry` | Anónimo | — | `200 OK`. Health Check TimescaleDB. |
+| Cultivation.Api | GET | `/api/v1/farms` | Bearer JWT | — | `200 OK`. Granjas del agricultor. |
+| Cultivation.Api | POST | `/api/v1/farms` | Bearer JWT | `name`, `location`. | `201 Created`. |
+| Cultivation.Api | PATCH | `/api/v1/farms/{id}` | Bearer JWT | Path: `id`. `name`, `location`. | `200 OK`. Edición de granja. |
+| Cultivation.Api | GET | `/api/v1/farms/{id}/zones` | Bearer JWT | Path: `id`. | `200 OK`. Lista de zonas de la granja. |
+| Cultivation.Api | POST | `/api/v1/farms/{id}/zones` | Bearer JWT | Path: `id`. JSON: `cropId`, `coords`. | `201 Created`. Nueva zona de cultivo. |
+| Cultivation.Api | GET | `/api/v1/zones/{id}` | Bearer JWT | Path: `zoneId`. | `200 OK`. Detalle de zona. |
+| Cultivation.Api | PATCH | `/api/v1/zones/{id}` | Bearer JWT | Path: `id`. `cropId`, `phase`, `stats`. | `200 OK`. Edición de zona/fase. |
+| Cultivation.Api | GET | `/api/v1/catalog/crops` | Bearer JWT | — | `200 OK`. Catálogo completo de cultivos. |
+| Cultivation.Api | POST | `/api/v1/catalog/crops` | Admin, Staff | `commonName`, `scientificName`, `stats`. | `201 Created`. |
+| Cultivation.Api | PUT | `/api/v1/catalog/crops/{id}` | Admin, Staff | Path: `id`. Update de datos de cultivo. | `200 OK`. Reemplazo completo. |
+| Cultivation.Api | DELETE | `/api/v1/catalog/crops/{id}` | Admin, Staff | Path: `id`. | `204 No Content`. Borrado de catálogo. |
+
+**Evidencias de Validación Funcional (Core Endpoints)**
+
+Con el objetivo de verificar la integridad y el comportamiento esperado de la lógica de negocio, se han realizado pruebas de ejecución directa sobre los servicios utilizando la interfaz interactiva de Swagger. Las capturas presentadas a continuación no solo documentan la sintaxis de las llamadas, sino que constituyen una evidencia técnica de la interoperabilidad entre los componentes de software y sus respectivas capas de persistencia.
+
+En esta sección se destacan los procesos **Core** del sistema, incluyendo la generación de seguridad mediante tokens JWT, la automatización de flujos de invitación vinculados a contratos y la validación de umbrales técnicos en el catálogo de cultivos. Cada imagen representa una transacción exitosa que confirma que los microservicios están operativos, autorizados y listos para su integración con la capa de frontend.
+
+---
+
+**POST `/api/v1/auth/sign-in`**
+
+Módulo de autenticación centralizado que valida las credenciales del usuario contra el microservicio de IAM (*Identity and Access Management*). Tras una validación exitosa, el servicio emite un JSON Web Token (JWT) firmado, el cual encapsula los *claims* de identidad y el rol asignado.
+
+**A. Cabeceras (Headers)**
+
+| Campo (Field) | Tipo (Type) | Descripción |
+|---|---|---|
+| Content-Type | String | Tipo de contenido del cuerpo de la petición. Debe ser `application/json`. |
+
+**B. Parámetros del Cuerpo (Request Body Parameters)**
+
+| Campo (Field) | Tipo (Type) | Descripción |
+|---|---|---|
+| email | String | Correo electrónico registrado de la cuenta de usuario. |
+| password | String | Contraseña de acceso en texto plano. |
+
+**C. Ejemplo de Petición (Request-Example)**
+
+```json
+{
+  "email": "germinacion@grotix.pe",
+  "password": "PasswordSecure123!"
+}
+```
+
+**Respuestas del Servidor (Responses)**
+
+**Éxito: Código `200 OK`**
+
+| Campo (Field) | Tipo (Type) | Descripción |
+|---|---|---|
+| identityId | Integer | Identificador único global de la identidad dentro del microservicio IAM. |
+| email | String | Correo electrónico asociado a la identidad autenticada. |
+| success | Boolean | Flag booleano que indica el éxito de la operación (`true`). |
+| message | String | Mensaje descriptivo con el estado final del proceso. |
+| token | String | JSON Web Token (JWT) firmado para la protección de recursos protegidos. |
+
+**Ejemplo de Respuesta Exitosa (Success-Example)**
+
+```json
+{
+  "identityId": 104,
+  "email": "germinacion@grotix.pe",
+  "success": true,
+  "message": "Autenticación completada exitosamente.",
+  "token": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOiIxMDQiLCJyb2xlIjoiRmFybWVyIn0..."
+}
+```
+
+**Error: Código `401 Unauthorized`**
+
+```json
+{
+  "status": 401,
+  "message": "NOT_AUTHORIZED: Las credenciales ingresadas son incorrectas o la cuenta no existe."
+}
+```
+
+**D. Evidencia en Swagger**
+
+<img src="https://imgur.com/nV0Ze0P.png">
+
+---
+
+**POST `/api/v1/associations`**
+
+Servicio encargado de la creación de agregados de tipo **Asociación**. Este componente actúa como el nivel jerárquico superior dentro del dominio de perfiles, permitiendo agrupar agricultores, activos físicos y contratos bajo una misma entidad legal.
+
+**A. Cabeceras (Headers)**
+
+| Campo (Field) | Tipo (Type) | Descripción |
+|---|---|---|
+| Content-Type | String | Tipo de contenido del cuerpo de la petición. Debe ser `application/json`. |
+| Authorization | String | Token de autenticación obligatorio: `Bearer [token_jwt]`. |
+
+**B. Parámetros del Cuerpo (Request Body Parameters)**
+
+| Campo (Field) | Tipo (Type) | Descripción |
+|---|---|---|
+| name | String | Nombre oficial o razón social de la asociación agraria. No puede ser vacío. |
+| contactEmail | String | Correo electrónico de contacto principal y notificaciones de la asociación. |
+
+**C. Ejemplo de Petición (Request-Example)**
+
+```json
+{
+  "name": "Cooperativa Agraria Valle Sagrado",
+  "contactEmail": "contacto@vallesagrado.pe"
+}
+```
+
+**Respuestas del Servidor (Responses)**
+
+**Éxito: Código `201 Created`**
+
+| Campo (Field) | Tipo (Type) | Descripción |
+|---|---|---|
+| id | Integer | Identificador único asignado automáticamente por el servidor en la base de datos. |
+| name | String | Nombre confirmado de la asociación agraria, limpio de espacios en los extremos. |
+| contactEmail | String | Cadena con el correo electrónico de contacto persistido de forma segura. |
+
+**Ejemplo de Respuesta Exitosa (Success-Example)**
+
+```json
+{
+  "id": 8,
+  "name": "Cooperativa Agraria Valle Sagrado",
+  "contactEmail": "contacto@vallesagrado.pe"
+}
+```
+
+**Error: Código `400 Bad Request`**
+
+```json
+{
+  "status": 400,
+  "message": "BAD_REQUEST: El nombre de la asociación no puede estar vacío."
+}
+```
+
+**D. Evidencia en Swagger**
+
+<img src="https://imgur.com/YVhWQUe.png">
+
+---
+
+**GET `/api/v1/contracts`**
+
+Servicio de exposición de datos encargado de la recuperación masiva de registros contractuales persistidos en el microservicio de Profiles. Este endpoint implementa un patrón de filtrado por contexto de seguridad (*Tenant Scoping*); mientras que los roles administrativos (`Admin`, `Staff`) acceden a la totalidad de la base de datos contractual, los roles de Gestión Organizacional (`User Admin`) reciben una respuesta filtrada automáticamente por su identificador de asociación vinculado al token JWT.
+
+**A. Cabeceras (Headers)**
+
+| Campo (Field) | Tipo (Type) | Descripción |
+|---|---|---|
+| Authorization | String | Token de autenticación requerido con el formato obligatorio: `Bearer [token_jwt]`. |
+
+**B. Parámetros de Búsqueda (Query Parameters)**
+
+No requiere parámetros en la URL ni cuerpo de petición para su ejecución base.
+
+**C. Ejemplo de Petición (Request-Example)**
+
+```http
+GET /api/v1/contracts HTTP/1.1
+Host: api.grotix.pe
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9...
+```
+
+**Respuestas del Servidor (Responses)**
+
+**Éxito: Código `200 OK`**
+
+Retorna un arreglo JSON con la colección de contratos autorizados para el contexto del solicitante.
+
+| Campo (Field) | Tipo (Type) | Descripción |
+|---|---|---|
+| contractId | Integer | Identificador único e incremental del contrato comercial generado en la base de datos. |
+| associationId | Integer | Código de la asociación agraria asignada de forma fija al acuerdo. |
+| startDate | String | Fecha de inicio de vigencia de las prestaciones de la plataforma (ISO-8601). |
+| endDate | String | Fecha límite de caducidad y término de vigencia contractual (ISO-8601). |
+| status | String | Representación textual del estado operativo del contrato, por ejemplo: `Active` o `Pending`. |
+| maxZones | Integer | Límite máximo de áreas o zonas de cultivo permitidas para configuración en la app. |
+| maxMicrocontrollers | Integer | Umbral físico máximo de dispositivos y hardware IoT autorizados en los nodos. |
+| totalAmount | Float | Monto comercial final total pactado por la adquisición de los servicios Grotix. |
+| currency | String | Denominación de la divisa monetaria utilizada para la facturación, por ejemplo: `USD`. |
+| paymentFrequency | String | Modalidad periódica de cobro grabada en las reglas de negocio, por ejemplo: `Monthly`. |
+| isSuspended | Boolean | Flag de control para el congelamiento inmediato de servicios IoT ante impagos. |
+
+**Ejemplo de Respuesta Exitosa (Success-Example)**
+
+```json
+[
+  {
+    "contractId": 45,
+    "associationId": 12,
+    "startDate": "2026-05-15T00:00:00Z",
+    "endDate": "2027-05-15T00:00:00Z",
+    "status": "Active",
+    "maxZones": 10,
+    "maxMicrocontrollers": 5,
+    "totalAmount": 1500.50,
+    "currency": "USD",
+    "paymentFrequency": "Monthly",
+    "isSuspended": false
+  },
+  {
+    "contractId": 46,
+    "associationId": 12,
+    "startDate": "2026-06-01T00:00:00Z",
+    "endDate": "2027-06-01T00:00:00Z",
+    "status": "Pending",
+    "maxZones": 20,
+    "maxMicrocontrollers": 10,
+    "totalAmount": 3000.00,
+    "currency": "USD",
+    "paymentFrequency": "Annual",
+    "isSuspended": false
+  }
+]
+```
+
+**Error: Código `401 Unauthorized`**
+
+```json
+{
+  "status": 401,
+  "message": "NOT_AUTHORIZED: El token de seguridad JWT ha expirado o no cuenta con los privilegios requeridos."
+}
+```
+
+**D. Evidencia en Swagger**
+
+<img src="https://imgur.com/eyhVzJQ.png">
+
+---
+
+**POST `/api/v1/contracts`**
+
+Componente encargado de persistir la lógica comercial del sistema. Define parámetros operativos como límites de zonas, microcontroladores permitidos y vigencia temporal. Además, dispara el proceso de invitación para el rol de Administrador Organizacional.
+
+**A. Cabeceras (Headers)**
+
+| Campo (Field) | Tipo (Type) | Descripción |
+|---|---|---|
+| Content-Type | String | Tipo de contenido del cuerpo de la petición. Debe ser `application/json`. |
+| Authorization | String | Token de autenticación obligatorio: `Bearer [token_jwt]`. Requiere rol Admin o Staff. |
+
+**B. Parámetros del Cuerpo (Request Body Parameters)**
+
+| Campo (Field) | Tipo (Type) | Descripción |
+|---|---|---|
+| associationId | Integer | Identificador único de la asociación agraria vinculada al nuevo contrato. |
+| startDate | String | Fecha de inicio de vigencia del contrato en formato ISO-8601. |
+| endDate | String | Fecha límite de caducidad o término del contrato en formato ISO-8601. |
+| status | Integer | Enumerador numérico del estado inicial del contrato, por ejemplo: `1 = Active`, `2 = Pending`. |
+| maxZones | Integer | Cantidad máxima de áreas o zonas de cultivo asignadas para configuración en la app. |
+| maxMicrocontrollers | Integer | Umbral físico de microcontroladores y dispositivos IoT autorizados para transmitir. |
+| totalAmount | Float | Costo comercial total acordado por las prestaciones de la plataforma Grotix. |
+| currency | Integer | Enumerador numérico de la divisa de facturación, por ejemplo: `1 = USD`, `2 = PEN`. |
+| paymentFrequency | Integer | Enumerador numérico de la periodicidad del cobro, por ejemplo: `1 = Monthly`, `2 = Annual`. |
+| isSuspended | Boolean | Flag de control para congelamiento temporal de servicios en campo. Por defecto: `false`. |
+| orgAdminEmail | String | Correo electrónico institucional al que se enviará la invitación de alta para el rol `user_admin`. |
+
+**C. Ejemplo de Petición (Request-Example)**
+
+```json
+{
+  "associationId": 5,
+  "startDate": "2026-06-01T00:00:00Z",
+  "endDate": "2027-06-01T00:00:00Z",
+  "status": 1,
+  "maxZones": 12,
+  "maxMicrocontrollers": 6,
+  "totalAmount": 1800.00,
+  "currency": 1,
+  "paymentFrequency": 1,
+  "isSuspended": false,
+  "orgAdminEmail": "admin_cooperativa@grotix.pe"
+}
+```
+
+**Respuestas del Servidor (Responses)**
+
+**Éxito: Código `201 Created`**
+
+El contrato comercial ha sido registrado de forma exitosa y se ha encolado el evento de invitación para el administrador de la organización.
+
+| Campo (Field) | Tipo (Type) | Descripción |
+|---|---|---|
+| contractId | Integer | Código único autogenerado por el sistema tras la persistencia relacional en base de datos. |
+| associationId | Integer | Código de la asociación agraria vinculada. |
+| startDate | String | Fecha de inicio validada y confirmada por el servidor backend. |
+| endDate | String | Fecha de término validada y confirmada por el servidor backend. |
+| status | String | Representación textual legible del estado del contrato, por ejemplo: `Active`. |
+| maxZones | Integer | Capacidad total de zonas aprovisionadas para el catálogo de parcelas. |
+| maxMicrocontrollers | Integer | Límite de dispositivos autorizados para enlazarse a la pasarela IoT. |
+| totalAmount | Float | Monto comercial final grabado de forma segura en el agregador. |
+| currency | String | Sigla textual representativa de la moneda de pago procesada, por ejemplo: `USD`. |
+| paymentFrequency | String | Modalidad textual de cobro grabada en las reglas del negocio, por ejemplo: `Monthly`. |
+| isSuspended | Boolean | Flag que verifica que el contrato no se encuentra suspendido en el sistema (`false`). |
+
+**Ejemplo de Respuesta Exitosa (Success-Example)**
+
+```json
+{
+  "contractId": 89,
+  "associationId": 5,
+  "startDate": "2026-06-01T00:00:00Z",
+  "endDate": "2027-06-01T00:00:00Z",
+  "status": "Active",
+  "maxZones": 12,
+  "maxMicrocontrollers": 6,
+  "totalAmount": 1800.00,
+  "currency": "USD",
+  "paymentFrequency": "Monthly",
+  "isSuspended": false
+}
+```
+
+**Error: Código `400 Bad Request`**
+
+```json
+{
+  "status": 400,
+  "message": "BAD_REQUEST: El monto total (totalAmount) no puede ser un valor negativo."
+}
+```
+
+**D. Evidencia en Swagger**
+
+<img src="https://imgur.com/Ie3cH17.png">
+
+---
+
+**GET `/api/v1/users`**
+
+Servicio de consulta de perfiles de usuario que implementa lógica de filtrado por ámbito (*scoping*). Dependiendo de los *claims* del token JWT, el servicio limita la respuesta a los usuarios pertenecientes exclusivamente a la asociación del solicitante.
+
+**A. Cabeceras (Headers)**
+
+| Campo (Field) | Tipo (Type) | Descripción |
+|---|---|---|
+| Authorization | String | Token de autenticación obligatorio: `Bearer [token_jwt]`. |
+
+**B. Parámetros de Búsqueda (Query Parameters)**
+
+No requiere parámetros en la URL ni cuerpo de petición para su ejecución.
+
+**C. Ejemplo de Petición (Request-Example)**
+
+```http
+GET /api/v1/users HTTP/1.1
+Host: api.grotix.pe
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9...
+```
+
+**Respuestas del Servidor (Responses)**
+
+**Éxito: Código `200 OK`**
+
+Retorna un arreglo JSON con los recursos de perfil (`UserResource`) mapeados desde la capa de persistencia.
+
+| Campo (Field) | Tipo (Type) | Descripción |
+|---|---|---|
+| id | Integer | Identificador único del perfil de usuario dentro del microservicio de Profiles. |
+| identityId | Integer | Identificador global único de la identidad vinculada dentro del microservicio IAM. |
+| name | String (nullable) | Nombre completo registrado: nombres y apellidos. |
+| email | String | Dirección de correo electrónico principal del usuario. |
+| taxId | String (nullable) | Documento de identidad fiscal o registro tributario del agricultor. |
+| phone | String (nullable) | Número telefónico o celular de contacto. |
+| roleId | Integer | Identificador del rol de negocio asignado en la plataforma. |
+| associationId | Integer (nullable) | Código de la asociación agraria a la que pertenece el usuario. |
+| profilePicture | String (nullable) | URL de almacenamiento u objeto con la imagen de perfil cargada. |
+| isActive | Boolean | Flag de control de estado que determina si el usuario está operativo. |
+| preferences | Object (nullable) | Sub-recurso con los ajustes de notificaciones del usuario. |
+| createdAt | String | Marca de tiempo con la fecha y hora de registro inicial (ISO-8601). |
+| updatedAt | String | Marca de tiempo con la última fecha y hora de modificación del perfil (ISO-8601). |
+
+**Estructura del Objeto Interno `preferences` (`UserPreferencesResource`)**
+
+| Campo (Field) | Tipo (Type) | Descripción |
+|---|---|---|
+| push | Boolean | Flag que habilita o deshabilita las notificaciones push en dispositivos móviles. |
+| email | Boolean | Flag que determina si el usuario desea recibir alertas agronómicas vía correo electrónico. |
+
+**Ejemplo de Respuesta Exitosa (Success-Example)**
+
+```json
+[
+  {
+    "id": 1,
+    "identityId": 101,
+    "name": "Carlos Mendoza Ruiz",
+    "email": "carlos.mendoza@vallesagrado.pe",
+    "taxId": "10456789123",
+    "phone": "+51987654321",
+    "roleId": 3,
+    "associationId": 8,
+    "profilePicture": "https://storage.grotix.pe/avatars/user-1.jpg",
+    "isActive": true,
+    "preferences": {
+      "push": true,
+      "email": false
+    },
+    "createdAt": "2026-05-10T14:30:00Z",
+    "updatedAt": "2026-05-28T18:22:15Z"
+  }
+]
+```
+
+**Error: Código `401 Unauthorized`**
+
+```json
+{
+  "status": 401,
+  "message": "NOT_AUTHORIZED: El token de seguridad JWT proporcionado no es válido o ya ha expirado."
+}
+```
+
+**D. Evidencia en Swagger**
+
+<img src="https://imgur.com/rNQmFsL.png">
+
+---
+
+**GET `/api/v1/catalog/crops`**
+
+Servicio de consulta masiva para el catálogo de especies. Expone los metadatos técnicos y recursos visuales necesarios para que el frontend y otros microservicios puedan referenciar cultivos válidos.
+
+**A. Cabeceras (Headers)**
+
+| Campo (Field) | Tipo (Type) | Descripción |
+|---|---|---|
+| Authorization | String | Token de autenticación requerido: `Bearer [token_jwt]`. |
+
+**B. Parámetros de Búsqueda (Query Parameters)**
+
+No requiere parámetros en la URL ni cuerpo de petición para la consulta base del catálogo.
+
+**C. Ejemplo de Petición (Request-Example)**
+
+```http
+GET /api/v1/catalog/crops HTTP/1.1
+Host: api.grotix.pe
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9...
+```
+
+**Respuestas del Servidor (Responses)**
+
+**Éxito: Código `200 OK`**
+
+Retorna un arreglo JSON con el listado detallado de todos los cultivos registrados en el sistema.
+
+| Campo (Field) | Tipo (Type) | Descripción |
+|---|---|---|
+| id | Integer | Identificador único del cultivo en el catálogo. |
+| commonName | String | Nombre común o comercial de la especie. |
+| scientificName | String | Nombre científico o taxonómico de la especie. |
+| optimalTemperature | Double | Umbral óptimo de temperatura en grados Celsius (°C) para el desarrollo. |
+| optimalHumidity | Double | Umbral óptimo de humedad relativa (%) requerido. |
+| optimalLight | Double | Cantidad de horas de luz solar diaria recomendadas para un desarrollo eficiente. |
+| maxStressTime | Integer | Tiempo máximo de tolerancia, en horas, ante condiciones fuera de los umbrales óptimos antes de registrar una alerta crítica. |
+| imageUrl | String? | URL de referencia hacia el recurso visual de la especie en el almacenamiento. |
+
+**Ejemplo de Respuesta Exitosa (Success-Example)**
+
+```json
+[
+  {
+    "id": 1,
+    "commonName": "Tomate",
+    "scientificName": "Solanum lycopersicum",
+    "optimalTemperature": 22.5,
+    "optimalHumidity": 75.0,
+    "optimalLight": 12.0,
+    "maxStressTime": 48,
+    "imageUrl": "https://storage.grotix.pe/crops/tomate.jpg"
+  },
+  {
+    "id": 2,
+    "commonName": "Papa",
+    "scientificName": "Solanum tuberosum",
+    "optimalTemperature": 18.0,
+    "optimalHumidity": 65.0,
+    "optimalLight": 10.0,
+    "maxStressTime": 72,
+    "imageUrl": "https://storage.grotix.pe/crops/papa.jpg"
+  }
+]
+```
+
+**Error: Código `401 Unauthorized`**
+
+```json
+{
+  "status": 401,
+  "message": "NOT_AUTHORIZED: La sesión ha expirado o no se cuenta con los privilegios de acceso."
+}
+```
+
+**D. Evidencia en Swagger**
+
+<img src="https://imgur.com/Vb5aJDH.png">
+
+---
+
+**POST `/api/v1/catalog/crops`**
+
+Módulo de gestión del conocimiento agronómico. Permite la definición de umbrales óptimos y límites de estrés para diversas especies vegetales. Estos datos actúan como la línea base para los servicios de telemetría y alerta.
+
+**A. Cabeceras (Headers)**
+
+| Campo (Field) | Tipo (Type) | Descripción |
+|---|---|---|
+| Content-Type | String | Tipo de contenido. Debe ser `application/json`. |
+| Authorization | String | Token de autenticación obligatorio: `Bearer [token_jwt]`. Requiere rol Admin o Staff. |
+
+**B. Parámetros del Cuerpo (Request Body Parameters)**
+
+| Campo (Field) | Tipo (Type) | Descripción |
+|---|---|---|
+| commonName | String | Nombre común de la especie a registrar. |
+| scientificName | String | Nombre científico o taxonómico de la especie. |
+| optimalTemperature | Double | Umbral de temperatura óptima en grados Celsius (°C). |
+| optimalHumidity | Double | Umbral óptimo de humedad relativa (%). |
+| optimalLight | Double | Horas diarias de luz solar óptimas para el cultivo. |
+| maxStressTime | Integer | Límite de tolerancia en horas ante condiciones desfavorables antes de generar una alerta. |
+| imageUrl | String (optional) | URL externa hacia la imagen referencial de la especie. |
+
+**C. Ejemplo de Petición (Request-Example)**
+
+```json
+{
+  "commonName": "Tomate",
+  "scientificName": "Solanum lycopersicum",
+  "optimalTemperature": 22.5,
+  "optimalHumidity": 75.0,
+  "optimalLight": 12.0,
+  "maxStressTime": 48,
+  "imageUrl": "https://storage.grotix.pe/crops/tomate.jpg"
+}
+```
+
+**Respuestas del Servidor (Responses)**
+
+**Éxito: Código `201 Created`**
+
+Se ha persistido correctamente el nuevo cultivo en el catálogo agronómico.
+
+| Campo (Field) | Tipo (Type) | Descripción |
+|---|---|---|
+| id | Integer | Identificador único autogenerado en el catálogo. |
+| commonName | String | Nombre común registrado. |
+| scientificName | String | Nombre científico registrado. |
+| optimalTemperature | Double | Temperatura óptima configurada. |
+| optimalHumidity | Double | Humedad óptima configurada. |
+| optimalLight | Double | Horas de luz óptimas configuradas. |
+| maxStressTime | Integer | Tiempo máximo de estrés configurado. |
+| imageUrl | String? | URL de imagen asociada. |
+
+**Ejemplo de Respuesta Exitosa (Success-Example)**
+
+```json
+{
+  "id": 1,
+  "commonName": "Tomate",
+  "scientificName": "Solanum lycopersicum",
+  "optimalTemperature": 22.5,
+  "optimalHumidity": 75.0,
+  "optimalLight": 12.0,
+  "maxStressTime": 48,
+  "imageUrl": "https://storage.grotix.pe/crops/tomate.jpg"
+}
+```
+
+**Error: Código `400 Bad Request`**
+
+```json
+{
+  "status": 400,
+  "message": "BAD_REQUEST: Los campos 'commonName' y 'scientificName' son obligatorios."
+}
+```
+
+**D. Evidencia en Swagger**
+
+<img src="https://imgur.com/koxpmDX.png">
+
+#### 6.1.2.8 Software Deployment Evidence for Sprint Review
+
+Durante el presente sprint, se llevó a cabo el despliegue de la base de datos principal del sistema en una instancia de Azure Database for MySQL – Flexible Server, haciendo uso de la suscripción Azure for Students. Esta instancia constituye el núcleo de persistencia de datos de la aplicación y fue configurada bajo el plan de capacidad con ráfaga (Burstable B1ms), garantizando un entorno estable y escalable para las etapas de desarrollo y pruebas del proyecto. 
+
+<img src="https://imgur.com/dCXPZwy.png">
+
+Se configuran las credenciales de acceso (usuario y contraseña) para la base de datos principal. Respecto al tipo de carga de trabajo, se seleccionó la opción Desarrollo/Pruebas, dado que el proyecto se encuentra actualmente en fase de desarrollo y esta configuración representa el menor coste operativo, siendo la más adecuada para el entorno de trabajo del equipo en esta etapa del sprint.
+
+<img src="https://imgur.com/j9X6LBD.png">
+
+<img src="https://imgur.com/mCfW4yj.png">
+
+Una vez aprovisionada la instancia, se procede a actualizar la cadena de conexión en el proyecto con los datos del servidor recién creado. La contraseña de acceso se gestiona de forma segura mediante User Secrets, evitando así exponer credenciales sensibles en el repositorio. Finalmente, se ejecuta la migración de la base de datos para aplicar el esquema definido sobre la instancia remota.
+
+<img src="https://imgur.com/hiG4i7B.png">
+
+Para el despliegue de la API, se utilizó un App Service con sistema operativo Linux y runtime .NET 8, bajo el plan B1 de la categoría Basic, seleccionado por representar el balance óptimo entre coste y recursos disponibles para la etapa actual de desarrollo.
+
+<img src="https://imgur.com/JAAgXD4.png">
+
+Agregamos variables de entorno necesarias como la cadena de conexión y el tokensettings_secret.
+
+<img src="https://imgur.com/ifT7oOd.png">
+
+Publicamos el microservicio para linux.
+
+<img src="https://imgur.com/ahSmjE2.png">
+
+Quitamos la carpeta browser del publish, ya que no es necesario
+
+<img src="https://imgur.com/IHXqPsz.png">
+
+Se crea comprime en un zip
+
+<img src="https://imgur.com/IzpBYLl.png">
+
+Y se procede a deployear.
+
+<img src="https://imgur.com/WYp4gts.png">
+
+Probamos que el servicio funcione correctamente con el endpoint live.
+
+<img src="https://imgur.com/M8sWisS.png">
+
+Se realizo el mismo proceso para CultivationAreaApi y el Gateway.
+
+<img src="https://imgur.com/U4GJTvo.png">
+
+Por el lado de la aplicación web, se utilizó firebase para su despliegue. Se inicio con la instalacion de las herramientas en la carpeta del proyecto.
+
+Se selecciona el proyecto de firebase y se realiza la configuración correspondiente.
+
+<img src="https://imgur.com/cTfyDvw.png">
+
+Por último, se genera la versión de producción del frontend con npm run build y se publica en el alojamiento web.
+
+#### 6.2.1.9. Team Collaboration Insights during Sprint
+
+La implementación de la plataforma Grotix se ha desarrollado bajo un marco de trabajo ágil, priorizando la integración continua y la entrega de valor incremental. El equipo, adoptó una estrategia de GitFlow para la gestión de versiones, lo que permitió el desarrollo paralelo de la Landing Page, los Web Services (.NET) y la App Web.
+
+**Analíticos de Colaboración y Contribuciones**
+
+A continuación, se presentan los indicadores de actividad del repositorio oficial en GitHub, los cuales reflejan la dinámica de trabajo del equipo durante el último ciclo de desarrollo.
+
+**Github Contributors (Landing Page)**
+
+<img src="https://imgur.com/h8VNULy.png">
+
+**Github Contributors (Web Services)**
+
+<img src="https://imgur.com/jLIwWeR.png">
+
+**Github Contributors (Web App)**
+
+<img src="https://imgur.com/UKr0srs.png">
+
+Como se aprecia en las capturas anteriores, la carga de trabajo fue distribuida entre todos los integrantes del equipo, evidenciando una participación activa en los distintos repositorios del proyecto. Si bien no todos los miembros trabajaron en cada repositorio, cada participante contribuyó de manera significativa en uno o dos repos específicos, según las responsabilidades asignadas y el enfoque de cada módulo. Esto permitió una organización más eficiente del desarrollo, favoreciendo la especialización de tareas y una integración coordinada del sistema Grotix. 
+
+Frecuencia de Código y Ritmo de Desarrollo
+El ritmo de implementación se mantuvo constante, con un enfoque en la robustez de los Web Services como núcleo del ecosistema. 
+
+**Github Pulse**
+
+<img src="https://imgur.com/Yuwty5t.png">
+
+**Participación Transversal por Producto**
+
+|Producto|Participantes|Naturaleza de la Colaboración|
+|----|----|---|
+|Landing Page|Angie Yalán, Ainhoa Castillo|Diseño responsivo, maquetado de secciones y despliegue inicial. |
+|Web Services|Tomio Nakamurakare, Marcelo Binda, Cassius Martel|Definición de DTOs, implementación de controladores, lógica de persistencia y seguridad.| 
+|App Web|Ainhoa Castillo, Marcelo Binda, Cassius Martel|Consumo de APIs, gestión de estados, diseño de interfaz de usuario|
+
+**Commit History (Landing Page)**
+
+<img src="https://imgur.com/mK7hPW3.png">
+
+**Commit History (Web Services)**
+
+<img src="https://imgur.com/hYT40g7.png">
+
+**Commit History (Web App)**
+
+<img src="https://imgur.com/XTCI0Et.png">
