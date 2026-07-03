@@ -8012,7 +8012,7 @@ En esta sección el equipo establece, por cada segmento objetivo, los elementos 
 - Estado civil: Soltera
 - Ocupación:
 
-<img src="">
+<img src="https://imgur.com/KScRs8R.png">
 
 **Acerca de la entrevista:**
 
@@ -8029,7 +8029,7 @@ Carolina validó de manera muy positiva el ecosistema de Grotix, señalando que 
 - Estado civil: Soltero
 - Ocupación: Productor de agricultura familiar (5 años de trayectoria)
 
-<img src="">
+<img src="https://imgur.com/hGXcd8s.png">
 
 **Acerca de la entrevista:**
 
@@ -8046,7 +8046,7 @@ Leandro, enfocado en el cultivo de paltas, calificó a Grotix como una herramien
 - Estado civil: Soltero
 - Ocupación: Administrador agrícola de campo
 
-<img src="">
+<img src="https://imgur.com/9orG6se.png">
 
 **Acerca de la entrevista:**
 
@@ -8065,7 +8065,7 @@ Claudio validó a Grotix como una solución viable y estratégica para optimizar
 - Estado civil: Soltero
 - Ocupación: Administrador de Operaciones Agrícolas
 
-<img src="">
+<img src="https://imgur.com/INEMFK9.png">
 
 **Acerca de la entrevista:**
 
@@ -8086,7 +8086,7 @@ También señaló que la gestión de usuarios mediante enlaces de invitación fa
 - Estado civil: Soltero
 - Ocupación: Gerente de operaciones en empresa agroexportadora
 
-<img src="">
+<img src="https://imgur.com/tgZ8RjA.png">
 
 **Acerca de la entrevista:**
 
@@ -8109,7 +8109,7 @@ En cuanto a los dispositivos, mencionó que la información mostrada es suficien
 - Estado civil: Soltera
 - Ocupación: Coordinadora de soporte operativo empresa exportadora
 
-<img src="">
+<img src="https://imgur.com/Ene5fzJ.png">
 
 **Acerca de la entrevista:**
 
