@@ -7915,6 +7915,363 @@ A continuación, se presentan los indicadores de actividad de los repositorios o
 #### 6.2.3.9. Team Collaboration Insights during Sprint
 
 
+### 6.2.4. Validation Interviews
+
+En esta sección, el equipo registra y explica las actividades de entrevistas de validación durante el proyecto. Se debe realizar entrevistas de validación en las que usuarios de los segmentos objetivo interactúen con el landing page y con las aplicaciones de Grotix. El objetivo es comprobar la usabilidad y la correcta resolución de los problemas identificados durante la fase de Needfinding.
+
+#### 6.2.4.1. Diseño de entrevistas
+
+En esta sección el equipo establece, por cada segmento objetivo, los elementos a incluir en la sesión de validación, abarcando la presentación de la Landing Page para validar la propuesta de valor y la demostración de la aplicación móvil conectada a los servicios backend. Aquí se especifican los flujos de usuario (User Flows) que formarán parte principal del proceso de validación y las preguntas guía de la sesión.
+
+**User Flows utilizados:**
+
+- **Segmento Objetivo #1: Productores Independientes**
+  - *User Flow:* Como agricultor independiente, quiero monitorear las variables críticas de mi cultivo en tiempo real (humedad, temperatura, luz) y delegar el trabajo manual habilitando el riego automático mediante umbrales personalizables, para optimizar mi tiempo físico en campo.
+  - *User Flow:* Como agricultor independiente, quiero utilizar el procesamiento de imágenes por Inteligencia Artificial para diagnosticar el estado fenológico de mis cultivos y tener seguridad sobre el progreso de mi siembra.
+
+- **Segmento Objetivo #2: Asociaciones Agrarias**
+  - *User Flow:* Como administrador de una asociación, quiero auditar y gestionar el personal asignado a una zona de cultivo específica (añadir/remover colaboradores) para mantener el control de acceso a los datos de la granja.
+  - *User Flow:* Como administrador de una asociación, quiero generar y descargar reportes históricos de riego y telemetría de forma automatizada y segmentada por periodos de tiempo, para cumplir con los estándares de trazabilidad y calidad requeridos para la exportación.
+
+**Cuestionario de Entrevistas**
+
+**Segmento Objetivo #1: Productores Independientes**
+
+**1. Perfil y Contexto Actual:**
+
+- ¿Cuál es tu nombre, dónde está ubicada tu parcela y qué tipo de cultivos manejas?
+- ¿Cómo supervisas actualmente el riego y la salud de tus plantas cuando no estás físicamente en la chacra?
+- ¿Cuál es tu mayor preocupación o riesgo (plagas, sequía, heladas) cuando dejas tu cultivo sin supervisión presencial?
+- ¿Qué tan familiarizado estás con el uso de aplicaciones móviles para gestionar tu trabajo agrícola?
+
+**2. Interacción con la Landing Page:**
+
+- A primera vista, sin hacer mucho scroll, ¿qué entiendes que ofrece la plataforma Grotix para tu trabajo diario?
+- ¿El lenguaje y las palabras utilizadas en la página te resultan familiares o sientes que son demasiado técnicas?
+- Considerando los pilares de sensores IoT e Inteligencia Artificial, ¿crees que esta tecnología resolvería los problemas que mencionaste al inicio?
+- Al llegar a la sección de Contacto/Formulario, ¿te genera la confianza suficiente para dejar tus datos y solicitar el servicio? ¿Qué información extra te gustaría ver antes de dar ese paso?
+
+**3. Usabilidad de la App Móvil (Dashboard y Settings):**
+
+- Al ingresar a la pantalla principal del Dashboard de tu zona de cultivo, ¿te resulta clara la información sobre la humedad, temperatura y luz? ¿Los colores o medidores te ayudan a entender si todo está bien?
+- Te pido que vayas a la pestaña de Configuración e intentes ajustar el tiempo máximo de riego a 3 minutos. ¿Te resultó fácil e intuitivo usar estos controles? Finalmente, basado en tu experiencia, ¿tienes alguna idea o sugerencia para mejorar el diseño visual de este apartado?
+- Al activar el interruptor (toggle) del riego automático, ¿sientes que la aplicación te deja claro que el sistema ahora tiene el control del agua? ¿Te daría temor dejarlo activado?
+
+**4. Confianza en la Inteligencia Artificial (AI Image Processing):**
+
+- Al probar la función de Inteligencia Artificial para el análisis de tu planta, ¿sientes que el diagnóstico de la etapa de crecimiento (ej. germinación) es útil para ti?
+- Si la aplicación te da un "nivel de confianza del 80%" sobre el estado de tu cultivo, ¿confiarías ciegamente en ese dato o preferirías ir a comprobarlo tú mismo? ¿Por qué?
+
+**5. Cierre y Valor Percibido:**
+
+- ¿Hubo algún botón, ícono o pantalla que no entendiste para qué servía durante la prueba?
+- De las 3 funciones principales (monitoreo en vivo, riego automático o IA), ¿cuál sientes que te ahorraría más tiempo físico, dinero o estrés en tu día a día?
+- Si este sistema estuviera disponible hoy, ¿estarías dispuesto a instalar estos sensores en tu terreno? ¿Cuál sería tu principal duda antes de comprarlo?
+
+**Segmento Objetivo #2: Asociaciones Agrarias / Administradores de Grotix**
+
+**1. Perfil y Operativa Actual (Contexto)**
+
+- ¿Cuál es tu nombre y cuál es tu rol administrativo o técnico dentro de la organización?
+- ¿Cuántas parcelas, asociaciones agrícolas o clientes manejas actualmente y cómo centralizas la información de todos ellos?
+- ¿Qué tan complicado te resulta hoy en día llevar el control de los contratos vigentes y saber qué equipos (hardware) están instalados o fallando en el campo?
+
+**2. Navegación en el Dashboard Principal y Búsqueda**
+
+- Tras revisar el "Main Dashboard" con sus tres columnas (clientes activos, contratos y estado de dispositivos), ¿te resultó claro conocer de un solo vistazo la salud general del negocio y qué equipos estaban fuera de línea ("Offline")?
+- Sobre la función de búsqueda global ("Search") que te mostramos, ¿te pareció más intuitivo usar esta barra para encontrar una cooperativa específica de forma directa, en lugar de tener que buscarla navegando por las diferentes pestañas?
+
+**3. Gestión de Asociaciones y Contratos**
+
+- Cuando revisamos la sección para editar contratos ("Edit Contract") y viste cómo se modifican los límites de zonas o microcontroladores ("Max Zones", "Max Microcontrollers"), ¿te parecieron claros los campos y el funcionamiento del botón para actualizar los términos?
+- Al observar los datos que incluye el contrato (monto total, frecuencia de pago y el botón de terminar contrato), ¿sientes que cubre lo necesario para gestionar un acuerdo de servicio con un cliente agrícola, o crees que haría falta agregar algún otro campo legal o financiero?
+
+**4. Gestión de Personal y Accesos**
+
+- Respecto a la sección de miembros activos ("Active Members"), donde vimos que se genera un enlace de invitación ("Generate Invite Link") para un nuevo usuario con un rol específico, ¿te pareció un proceso rápido y seguro para delegar accesos a tu equipo?
+
+**5. Control de Dispositivos y Bitácora de Mantenimiento**
+
+- Al revisar la vista de dispositivos ("Grotix Devices"), donde cada tarjeta muestra el modelo del microcontrolador, la asociación, la zona asignada y su estado de conexión, ¿consideras que esta es información suficiente para saber rápidamente a dónde debes enviar a un técnico en caso de fallas?
+- Sobre el formulario de mantenimiento ("New Maintenance Log") que vimos para registrar acciones técnicas en los equipos, ¿te parece útil y completo para mantener un historial del hardware directamente desde la plataforma?
+
+**6. Cierre y Valor Empresarial**
+
+- Tras ver la navegación de la plataforma web, que utiliza un diseño en modo oscuro (Dark Mode), ¿los colores, el contraste y la distribución de los menús te parecieron cómodos para un uso administrativo diario, o crees que podrían cansarte la vista?
+- ¿Aproximadamente cuántas horas de trabajo administrativo estimas que Grotix le ahorraría a tu equipo al centralizar usuarios, contratos y el mantenimiento del hardware IoT en un solo portal?
+- Si pudieras pedir una función extra exclusivamente para tu rol de administrador dentro de esta plataforma, ¿cuál sería y por qué?
+
+#### 6.2.4.2. Registro de entrevistas
+
+**Segmento Objetivo #1: Productores Independientes de Pequeña y Mediana Escala**
+
+**Entrevistado N.º 1: Carolina Choquehuanca**
+
+- Edad: 27
+- Departamento: Huaral
+- Estado civil: Soltera
+- Ocupación:
+
+<img src="">
+
+**Acerca de la entrevista:**
+
+- Link: [https://1drv.ms/v/c/63ce8f5541876735/IQBJg4aIkSfVQJRhyRwiuYDIARsHnRY7MwYtMqVUe7aTx18?e=01MyLw](https://1drv.ms/v/c/63ce8f5541876735/IQBJg4aIkSfVQJRhyRwiuYDIARsHnRY7MwYtMqVUe7aTx18?e=01MyLw)
+- Instante en el que inicia: 0:00
+- Duración: 11:05
+
+Carolina validó de manera muy positiva el ecosistema de Grotix, señalando que tanto la landing page como la aplicación móvil le encantaron y le resultarían de gran utilidad para optimizar su día a día. Explicó que actualmente posee un huerto donde la activación presencial y manual del sistema de riego le consume una cantidad excesiva de tiempo y dinero, por lo que la automatización remota resuelve directamente su principal dolor operativo. Como única observación de usabilidad para prevenir errores de manipulación en el sistema, sugirió incorporar una ventana de confirmación obligatoria cada vez que se vaya a accionar el riego, independientemente de si este se ejecuta de forma automática o manual.
+
+**Entrevistado N.º 2: Leandro Machaca**
+
+- Edad: 26
+- Departamento: Oxapampa, Pasco
+- Estado civil: Soltero
+- Ocupación: Productor de agricultura familiar (5 años de trayectoria)
+
+<img src="">
+
+**Acerca de la entrevista:**
+
+- Link: [https://1drv.ms/v/c/63ce8f5541876735/IQCBrfQUMFa8TJTqt0ky7oUAAZzWVMqnEV7dk9zOl310F40?e=AAo6V8](https://1drv.ms/v/c/63ce8f5541876735/IQCBrfQUMFa8TJTqt0ky7oUAAZzWVMqnEV7dk9zOl310F40?e=AAo6V8)
+- Instante en el que inicia: 0:00
+- Duración: 21:31
+
+Leandro, enfocado en el cultivo de paltas, calificó a Grotix como una herramienta perfecta para mitigar su necesidad de trasladarse físicamente hasta su huerto ante cualquier anomalía, permitiéndole monitorear la estabilidad de su producción de forma remota. Tras revisar la interfaz, aportó comentarios clave para refinar la arquitectura de la información y la usabilidad: recomendó reubicar el apartado de niveles críticos del dispositivo junto al módulo de riego automático por su estrecha relación lógica, desplazando el riego manual a la parte inferior e implementar una alerta preventiva que le pregunte al usuario si está seguro de salir de la aplicación cuando el riego automático esté desactivado. Además, sugirió optimizar el diseño del dashboard de cada zona para que todas las métricas ambientales sean legibles de un solo vistazo en la pantalla, eliminando por completo la necesidad de hacer scroll.
+
+**Entrevistado N.º 3: Claudio Astocondor**
+
+- Edad: 25
+- Departamento: Huaral, Lima
+- Estado civil: Soltero
+- Ocupación: Administrador agrícola de campo
+
+<img src="">
+
+**Acerca de la entrevista:**
+
+- Link: [Entrevista de Validación - Claudio Astocondor](https://upcedupe-my.sharepoint.com/:v:/g/personal/u20201f855_upc_edu_pe/IQAOm2MB01IbRLuWlgKTunP5AfV0J-4KVq6Im47ajxRcWYY?nav=eyJyZWZlcnJhbEluZm8iOnsicmVmZXJyYWxBcHAiOiJPbmVEcml2ZUZvckJ1c2luZXNzIiwicmVmZXJyYWxBcHBQbGF0Zm9ybSI6IldlYiIsInJlZmVycmFsTW9kZSI6InZpZXciLCJyZWZlcnJhbFZpZXciOiJNeUZpbGVzTGlua0NvcHkifX0&e=IEXfc1)
+- Instante en el que inicia: 0:00
+- Duración: 23:15
+
+Claudio validó a Grotix como una solución viable y estratégica para optimizar el tiempo operativo y asegurar los rigurosos estándares de calidad exigidos en sus cultivos de fresa y mandarina destinados a la agroexportación. Destacó que el monitoreo remoto es clave para mantener el control del campo durante sus ausencias; sin embargo, manifestó cierta cautela respecto a la infalibilidad del sistema, dado que cualquier margen de error técnico podría traducirse en pérdidas financieras significativas. Tras evaluar la interfaz, consideró atractivas las funcionalidades, pero enfatizó que sus principales condicionantes para adoptar la tecnología radican en el costo de implementación, la autonomía y resistencia del hardware bajo condiciones climáticas reales, y la precisión de la inteligencia artificial antes de delegarle el control total del riego.
+
+**Segmento Objetivo #2: Asociaciones Agrarias y Cooperativas**
+
+**Entrevistado N.º 4: Diego Ahane Barrios**
+
+- Edad: 26
+- Departamento: Lima
+- Estado civil: Soltero
+- Ocupación: Administrador de Operaciones Agrícolas
+
+<img src="">
+
+**Acerca de la entrevista:**
+
+- Link: [Grotix 202610 - Entrevista de Validación 1 Segmento 2.mp4](https://upcedupe-my.sharepoint.com/:v:/g/personal/u202312443_upc_edu_pe/IQA3yLDKJ0aEQbOAPci2aMvWARh0WKr_GNLx497u29ZDwCM?e=vvaHJT)
+- Instante en el que inicia: 0:00
+- Duración: 13:45
+
+Diego Ahane se desempeña como administrador de operaciones en una empresa del sector agroexportador, donde supervisa contratos con asociaciones agrícolas, coordina el soporte técnico y realiza el seguimiento de los equipos instalados en campo. Actualmente gestiona alrededor de veinte clientes, cuya información se encuentra distribuida entre hojas de cálculo, correos electrónicos y otros registros, lo que dificulta obtener una visión clara y centralizada de las operaciones.
+
+Durante la validación de Grotix, Diego destacó que uno de los principales retos de su trabajo es identificar rápidamente qué contratos requieren atención y qué dispositivos presentan fallas. En ese sentido, valoró positivamente el Main Dashboard, ya que le permitió visualizar de manera inmediata el estado general del negocio y detectar equipos fuera de línea. Asimismo, consideró que la búsqueda global agiliza la localización de asociaciones específicas y que la edición de contratos resulta intuitiva y fácil de comprender, aunque sugirió incorporar opciones como renovaciones automáticas y documentos adjuntos.
+
+También señaló que la gestión de usuarios mediante enlaces de invitación facilita la delegación de accesos de forma segura. Respecto al módulo de dispositivos y mantenimiento, consideró que la información mostrada es suficiente para coordinar intervenciones técnicas y mantener un historial ordenado de las acciones realizadas. Finalmente, estimó que una plataforma como Grotix podría ahorrar entre ocho y doce horas semanales a su equipo administrativo y sugirió incorporar alertas predictivas y reportes automáticos para anticipar fallas y optimizar la toma de decisiones.
+
+**Entrevistado N.º 5: Santiago Cárdenas**
+
+- Edad: 25
+- Departamento: Huancayo
+- Estado civil: Soltero
+- Ocupación: Gerente de operaciones en empresa agroexportadora
+
+<img src="">
+
+**Acerca de la entrevista:**
+
+- Link: [Grotix 202610 - Entrevista de Validación 2 Segmento 2.mp4](https://upcedupe-my.sharepoint.com/:v:/g/personal/u202312443_upc_edu_pe/IQDlfNnfcV-CTLGJqtewwUbMAcmuuEit8Lndp2R6lKEoohE?e=VtsfpE&nav=eyJyZWZlcnJhbEluZm8iOnsicmVmZXJyYWxBcHAiOiJTdHJlYW1XZWJBcHAiLCJyZWZlcnJhbFZpZXciOiJTaGFyZURpYWxvZy1MaW5rIiwicmVmZXJyYWxBcHBQbGF0Zm9ybSI6IldlYiIsInJlZmVycmFsTW9kZSI6InZpZXcifX0%3D)
+- Instante en el que inicia: 0:00
+- Duración: 9:00
+
+Santiago Cárdenas se desempeña como gerente de operaciones en una empresa del sector agroexportador y es responsable de supervisar contratos, coordinar al equipo técnico y dar seguimiento a los dispositivos instalados en distintas asociaciones agrícolas. Actualmente gestiona alrededor de doce asociaciones, cuya información se encuentra distribuida entre hojas de cálculo, correos electrónicos y reportes internos, lo que dificulta la centralización de datos.
+
+Durante la validación de Grotix, Santiago indicó que uno de los principales problemas es la actualización oportuna de la información operativa. En ese sentido, valoró el Main Dashboard porque permite visualizar rápidamente el estado general del sistema e identificar incidencias. También destacó que la búsqueda global facilita encontrar asociaciones específicas sin necesidad de navegar por todo el sistema.
+
+Asimismo, señaló que la sección de contratos es clara y fácil de usar, aunque sugirió agregar alertas de vencimiento e historial de cambios. Respecto a la gestión de usuarios, consideró útil la generación de enlaces de invitación, pero recomendó incluir fechas de expiración por seguridad.
+
+En cuanto a los dispositivos, mencionó que la información mostrada es suficiente para coordinar soporte técnico rápidamente, y que el registro de mantenimiento ayuda a mantener un historial ordenado. Finalmente, estimó que la plataforma podría ahorrar entre cuatro y seis horas semanales y sugirió incorporar reportes ejecutivos exportables para mejorar la toma de decisiones.
+
+**Entrevistado N.º 6: Alyssa Ortega**
+
+- Edad: 24
+- Departamento: Lima
+- Estado civil: Soltera
+- Ocupación: Coordinadora de soporte operativo empresa exportadora
+
+<img src="">
+
+**Acerca de la entrevista:**
+
+- Link: [Grotix 202610 - Entrevista de Validación 3 Segmento 2.mp4](https://upcedupe-my.sharepoint.com/:v:/g/personal/u202312443_upc_edu_pe/IQDrvmcf_dk7RLI5vWh2yLxlAcFsmsLHsq7i8f9afnxibLA?e=vfBm3m&nav=eyJyZWZlcnJhbEluZm8iOnsicmVmZXJyYWxBcHAiOiJTdHJlYW1XZWJBcHAiLCJyZWZlcnJhbFZpZXciOiJTaGFyZURpYWxvZy1MaW5rIiwicmVmZXJyYWxBcHBQbGF0Zm9ybSI6IldlYiIsInJlZmVycmFsTW9kZSI6InZpZXcifX0%3D)
+- Instante en el que inicia: 0:00
+- Duración: 21:31
+
+Alyssa Ortega se desempeña como coordinadora de soporte operativo en una empresa del sector agroexportador y es responsable de supervisar incidencias en campo, coordinar al equipo técnico y dar seguimiento al estado de los dispositivos instalados en distintas asociaciones agrícolas. Actualmente gestiona alrededor de diez a doce asociaciones, cuya información se encuentra distribuida entre reportes en Excel, mensajes de WhatsApp y registros compartidos, lo que dificulta mantener una actualización centralizada y oportuna de los datos.
+
+Durante la validación de Grotix, Alyssa indicó que uno de los principales problemas es la falta de información en tiempo real, lo que puede retrasar la atención de incidencias. En ese sentido, valoró el Main Dashboard porque permite identificar rápidamente el estado general de los dispositivos y priorizar los casos urgentes. También destacó que la búsqueda global facilita encontrar asociaciones específicas de forma rápida sin navegar por todo el sistema.
+
+Asimismo, señaló que la sección de contratos es clara y fácil de usar, aunque sugirió incluir alertas de renovación y notas internas para mejorar la coordinación. Respecto a los dispositivos, mencionó que la información mostrada es suficiente para ubicar fallas y coordinar soporte técnico. Finalmente, estimó que la plataforma podría generar un ahorro de entre cinco y siete horas semanales, principalmente en la gestión de incidencias y búsqueda de información, y propuso incorporar alertas en tiempo real para mejorar la respuesta operativa.
+
+#### 6.2.4.3. Evaluaciones según heurísticas
+
+**UX Heuristics & Principles Evaluation**
+
+Usability – Inclusive Design – Information Architecture
+
+CARRERA: Ingeniería de Software
+
+CURSO: Desarrollo de Soluciones IoT
+
+SECCIÓN: 6772
+
+PROFESOR: Marco Antonio Leon Baca
+
+AUDITOR: Grotix Staff
+
+CLIENTE(S): Carolina Choquehuanca, Leandro Machaca, Claudio Astocondor, Diego Ahane, Santiago Cárdenas, Alyssa Ortega.
+
+**SITE o APP A EVALUAR:**
+
+*Grotix – Landing Page, Web App y App Móvil*
+
+**TAREAS EVALUADAS:**
+
+El alcance de esta evaluación incluye la revisión de la usabilidad de las siguientes tareas:
+
+- Navegación informativa del landing (servicios, app, equipo, contacto, redes, páginas legales y centro de ayuda).
+- Inicio de sesión y registro de cuenta (Web App y App Móvil).
+- Gestión de asociaciones, contratos y zonas de cultivo desde la Web App.
+- Gestión de dispositivos IoT: listado, detalle, sensores/actuadores, bitácora y mantenimiento.
+- Gestión de cultivos (crops) y sus parámetros óptimos.
+- Edición de perfil de usuario (Web App y App Móvil).
+- Monitoreo de zona de cultivo, configuración de riego automático/manual y gestión de personas (App Móvil).
+- Generación de reportes y revisión de notificaciones (App Móvil).
+
+**ESCALA DE SEVERIDAD:**
+
+Los errores serán puntuados tomando en cuenta la siguiente escala de severidad.
+
+| Nivel | Descripción |
+|---|---|
+| 1 | Problema superficial: puede ser fácilmente superado por el usuario o ocurre con muy poca frecuencia. No necesita ser arreglado a no ser que exista disponibilidad de tiempo. |
+| 2 | Problema menor: puede ocurrir un poco más frecuentemente o es un poco más difícil de superar para el usuario. Se le debería asignar una prioridad baja resolverlo de cara al siguiente release. |
+| 3 | Problema mayor: ocurre frecuentemente o los usuarios no son capaces de resolverlos. Es importante que sean corregidos y se les debe asignar una prioridad alta. |
+| 4 | Problema muy grave: un error de gran impacto que impide al usuario continuar con el uso de la herramienta. Es imperativo que sea corregido antes del lanzamiento. |
+
+**TABLA RESUMEN:**
+
+| # | Problema | Escala de severidad | Heurística/Principio violado |
+|---|---|---|---|
+| 1 | Botón "Terminate Contract" sin confirmación, ubicado junto a "Update Contract" | 4 | Usability: Prevención de errores |
+| 2 | Inconsistencia de idioma en toda la plataforma | 3 | Usability: Consistencia y estándares |
+| 3 | Sidebar de navegación de la Web App sin etiquetas de texto | 2 | Usability: Reconocimiento antes que memoria |
+| 4 | El botón "+" de "Cultivation Areas" no crea una zona, sino que muestra un número de teléfono | 2 | Usability: Coincidencia entre el sistema y el mundo real |
+| 5 | Campos de fecha sin formato indicado en "Generate Report" | 1 | Usability: Prevención de errores |
+
+**DESCRIPCIÓN DE PROBLEMAS:**
+
+**PROBLEMA #1: Botón "Terminate Contract" sin confirmación, ubicado junto a "Update Contract"**
+
+Severidad: 4
+
+Heurística violada: Usability: Prevención de errores
+
+Pantalla / Ubicación: *Web App – Detalle de Asociación*
+
+Problema:
+
+En la pantalla de detalle de una asociación ("Association Details"), el botón rojo "TERMINATE CONTRACT" aparece inmediatamente debajo del botón "UPDATE CONTRACT", con un tamaño y jerarquía visual similares. Terminar un contrato es una acción destructiva y probablemente irreversible (afecta el servicio activo de una asociación completa, sus zonas y dispositivos), por lo que un clic accidental ‒especialmente al intentar pulsar "Update Contract"‒ puede tener consecuencias graves para el negocio del cliente.
+
+<img src="">
+
+Recomendación:
+
+Separar visualmente el botón destructivo del resto de acciones (ubicación distinta o un área secundaria de "acciones peligrosas"). Modificar el modal de confirmación para que obligue al usuario a escribir el nombre de la asociación o confirmar explícitamente la acción, e indicar las consecuencias (qué pasa con las zonas, dispositivos y usuarios asociados al contrato).
+
+**PROBLEMA #2: Inconsistencia de idioma en toda la plataforma**
+
+Severidad: 3
+
+Heurística violada: Usability: Consistencia y estándares
+
+Pantalla / Ubicación: *Web App*
+
+Problema:
+
+La interfaz combina inglés y español de forma impredecible. La página "Mi Perfil" de la Web App está enteramente en español ("Información Personal", "Correo Electrónico", "Nombre Completo", "Identificación (Tax ID)") mientras el resto del dashboard (Main Dashboard, Devices, Crops, Associations) está en inglés. No existe un selector de idioma visible que justifique este comportamiento ni una razón aparente para la mezcla.
+
+<img src="">
+
+<img src="">
+
+Recomendación:
+
+Definir un idioma consistente por sesión de usuario (ya existe un selector EN/ES en el landing; debería propagarse a Web App). Auditar todas las cadenas de texto hardcodeadas (placeholders, modales, mensajes de sistema) y centralizarlas en un sistema de internacionalización (i18n) único.
+
+**PROBLEMA #3: Sidebar de navegación de la Web App sin etiquetas de texto**
+
+Severidad: 2
+
+Heurística violada: Usability: Reconocimiento antes que memoria
+
+Pantalla / Ubicación: *Web App – Navegación global*
+
+Problema:
+
+El menú lateral persistente muestra siete íconos (inicio, búsqueda, perfil/agricultores, documento, dispositivo, hoja/cultivos, engranaje) sin ningún texto que los acompañe ni tooltips visibles en las capturas analizadas. Íconos como el de "documento" o "dispositivo" (engranaje circular) no tienen un significado universalmente reconocible, por lo que un usuario nuevo debe recurrir a la prueba y error o memorizar la posición de cada función en lugar de reconocerla directamente.
+
+<img src="">
+
+Recomendación:
+
+Añadir etiquetas de texto junto a cada ícono (al menos en estado expandido del sidebar, o mediante tooltips accesibles al pasar el cursor/foco). Evaluar si conviene un sidebar expandible con texto visible por defecto, dado que el espacio horizontal en escritorio no es una restricción crítica.
+
+**PROBLEMA #4: El botón "+" de "Cultivation Areas" no crea una zona, sino que muestra un número de teléfono**
+
+Severidad: 2
+
+Heurística violada: Usability: Coincidencia entre el sistema y el mundo real
+
+Pantalla / Ubicación: *App Móvil – Cultivation Areas*
+
+Problema:
+
+El ícono "+" en la pantalla "Cultivation Areas" es el patrón universal para "crear/agregar un nuevo elemento". Al presionarlo, sin embargo, se abre un modal ("Añadir nueva zona") que explica que la creación de zonas está gestionada exclusivamente por el equipo de soporte, y ofrece únicamente un número de teléfono y un botón "Entendido". El usuario no puede completar la acción que el ícono prometía dentro de la misma app, lo que genera una expectativa incumplida.
+
+<img src="">
+
+Recomendación:
+
+Sustituir el ícono "+" por un botón con etiqueta explícita como "Solicitar nueva zona" o "Contactar soporte", evitando el ícono estándar de creación si la acción real es una derivación a un canal externo.
+
+**PROBLEMA #5: Campos de fecha sin formato indicado en "Generate Report"**
+
+Severidad: 1
+
+Heurística violada: Usability: Prevención de errores
+
+Pantalla / Ubicación: *App Móvil – Generate Report*
+
+Problema:
+
+Los campos "Start" y "Finish" del formulario de generación de reportes muestran el placeholder genérico "--/--/--", sin indicar si el formato esperado es DD/MM/AAAA (convención peruana) o MM/DD/AAAA. Aunque es probable que un selector de calendario evite el problema en la mayoría de los casos, el placeholder por sí solo no comunica el formato si el usuario llegara a escribir la fecha manualmente.
+
+<img src="">
+
+Recomendación:
+
+Mostrar el formato esperado explícitamente en el placeholder (p. ej. "DD/MM/AAAA") o apoyarse exclusivamente en un selector de calendario nativo que elimine la ambigüedad de entrada manual.
 
 # Conclusiones
 
