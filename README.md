@@ -7894,6 +7894,28 @@ La implementación de la plataforma Grotix se ha desarrollado bajo un marco de t
 
 A continuación, se presentan los indicadores de actividad de los repositorios oficiales en GitHub, los cuales reflejan la dinámica de trabajo, la frecuencia de integraciones y el flujo de colaboración del equipo durante el presente ciclo de desarrollo.
 
+### 6.2.3. Sprint 3
+
+#### 6.2.3.1. Sprint Planning 3
+
+#### 6.2.3.2. Aspect Leaders and Collaborators
+
+#### 6.2.3.3. Sprint Backlog 3
+
+#### 6.2.3.4. Development Evidence for Sprint Review
+
+#### 6.2.3.5. Testing Suite Evidence for Sprint Review
+
+#### 6.2.3.6. Execution Evidence for Sprint Review
+
+#### 6.2.3.7. Services Documentation Evidence for Sprint Review
+
+#### 6.2.3.8. Software Deployment Evidence for Sprint Review
+
+#### 6.2.3.9. Team Collaboration Insights during Sprint
+
+
+
 # Conclusiones
 
 * Validación del Modelo de Negocio y Enfoque Lean UX: La consolidación de Grotix como una solución de negocio tecnológicamente viable y financieramente escalable se fundamenta en la ejecución rigurosa del Lean UX Process. Se validó empíricamente que la severa ineficiencia hídrica en el agro peruano —donde el 80% del agua se pierde y el 97.4% de las tierras irrigadas depende del riego por gravedad— puede mitigarse críticamente mediante un ecosistema IoT combinado con Inteligencia Artificial. Este enfoque transforma las prácticas empíricas tradicionales de riego en decisiones técnicas basadas en la precisión de datos en tiempo real, maximizando el valor operativo bajo el modelo Hardware as a Service (HaaS).
