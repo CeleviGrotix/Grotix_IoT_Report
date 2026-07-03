@@ -3909,3 +3909,162 @@ El ritmo de implementación se mantuvo constante, con un enfoque en la robustez 
 **Commit History (Web App)**
 
 <img src="https://imgur.com/XTCI0Et.png">
+
+
+
+
+# Conclusiones
+
+* Validación del Modelo de Negocio y Enfoque Lean UX: La consolidación de Grotix como una solución de negocio tecnológicamente viable y financieramente escalable se fundamenta en la ejecución rigurosa del Lean UX Process. Se validó empíricamente que la severa ineficiencia hídrica en el agro peruano —donde el 80% del agua se pierde y el 97.4% de las tierras irrigadas depende del riego por gravedad— puede mitigarse críticamente mediante un ecosistema IoT combinado con Inteligencia Artificial. Este enfoque transforma las prácticas empíricas tradicionales de riego en decisiones técnicas basadas en la precisión de datos en tiempo real, maximizando el valor operativo bajo el modelo Hardware as a Service (HaaS).
+
+* Trazabilidad de Requerimientos centrado en el Usuario: La transición metodológica desde la fase de Needfinding (análisis de competidores, mapas de empatía y User Personas desarrollado en el Capítulo II) hacia la especificación técnica de requerimientos en el Capítulo III y el diseño del software en el Capítulo IV asegura una trazabilidad impecable. Cada User Story y Technical Story (TS) responde de forma directa a un dolor real del pequeño agricultor y de las asociaciones agrarias, garantizando que el software resuelva problemas críticos como la ausencia de históricos climáticos, el monitoreo remoto desarticulado y la falta de control preciso sobre el suelo.
+
+* Rigurosidad Técnica mediante Atributos de Calidad: La inclusión de Atributos de Calidad específicos y sus respectivas Technical Stories eleva la propuesta de Grotix de un prototipo académico a un nivel industrial de producción. Al diseñar el backend de microservicios y las interfaces frontend (Web/Mobile) bajo métricas estrictas de disponibilidad, modificabilidad, seguridad y performance, se garantiza una plataforma resiliente capaz de soportar las exigencias de un entorno agrícola real, controlando ráfagas masivas de ingesta de datos sin degradar el rendimiento del ecosistema cloud.
+
+* Resiliencia en la Última Milla mediante Edge Computing y Store-and-Forward: Se concluye que la arquitectura de hardware implementada sobre el microcontrolador ESP32 (WROOM/S3) es capaz de mitigar la inestabilidad de conectividad (Wi-Fi/4G) inherente a las zonas rurales peruanas gracias a la implementación de una Edge App con persistencia local (Edge DB). El diseño e integración del patrón Store-and-Forward demostró ser el mecanismo crítico para garantizar la integridad de las lecturas, sincronizando la información acumulada de manera asíncrona una vez restablecido el enlace con el Message Broker, eliminando así vacíos analíticos en el historial del cultivo.
+
+* Madurez Arquitectónica mediante el Proceso ADD (Iteraciones 1 a 5): La aplicación sistemática de la metodología Architecture-Driven Design (ADD), culminando con los ciclos ADD 3, ADD 4 y ADD 5 para esta entrega AV3, evitó decisiones técnicas arbitrarias y garantizó que la estructura de Grotix responda directamente a sus drivers arquitectónicos. El proceso iterativo refinó el procesamiento distribuido, la escalabilidad horizontal selectiva y las estrategias de integración, transformando las severas restricciones del entorno rural (latencia, intermitencia de red y bajo consumo energético) en una ventaja competitiva de robustez arquitectónica.
+
+* Desacoplamiento Operativo y Escalabilidad con DDD Estratégico: La separación física de los seis Bounded Contexts definidos (Profile, Cultivation Area, Hardware Device, Irrigation Cycle, Crop Analysis y Telemetry) en microservicios independientes programados en C# / .NET y coordinados a través de un API Gateway centralizado en Azure garantiza la resiliencia operativa de la solución. Esta disposición estratégica impide el acoplamiento sistémico, asegurando que fallos aislados en servicios adyacentes no comprometan las actividades críticas de telemetría y ejecución de ciclos de riego, permitiendo además la asignación eficiente de recursos en la nube.
+
+
+* Persistencia Políglota Optimizada para IoT: El diseño de la capa de datos bajo un esquema de persistencia políglota resuelve de forma eficiente las necesidades transaccionales y analíticas de la plataforma. La segregación física entre bases de datos relacionales (Core DB en MySQL para entidades y configuraciones de microservicios) y bases de datos optimizadas para series temporales (Telemetry DB implementada en TimescaleDB sobre Azure) evita cuellos de botella durante la ingesta masiva de lecturas concurrentes provenientes de los sensores de suelo y ambiente, optimizando los tiempos de respuesta de las consultas históricas.
+
+* Sinergia de Patrones Arquitectónicos (Repository y Pub-Sub): La combinación de los patrones de diseño Repository y Publisher-Subscriber dota a la plataforma de una flexibilidad de nivel industrial. Mientras que el patrón Repository independiza la lógica de negocio del dominio frente a los motores físicos de persistencia (facilitando pruebas unitarias y la mantenibilidad de la librería compartida BuildingBlocks), el patrón Pub-Sub operado mediante MQTT en el borde y RabbitMQ (CloudAMQP) en la nube actúa como el sistema circulatorio asíncrono de Grotix, distribuyendo eventos y comandos (OPEN/CLOSE) de forma eficiente y no bloqueante.
+
+* Inclusión Tecnológica mediante Visión Artificial (Crop Analysis): La integración del microservicio de análisis fenológico basado en visión artificial (Crop Analysis) actúa como un catalizador indispensable para la adopción digital en comunidades agrícolas con baja alfabetización tecnológica. Al automatizar la identificación de fases de crecimiento y fitopatologías visuales en las plantas, y comunicar estos datos procesados hacia el contexto de irrigación a través de una Capa Anticorrupción (Anti-Corruption Layer - ACL), se reduce significativamente la carga cognitiva del usuario, democratizando el acceso a la agricultura de precisión.
+
+* Validación Integral del Deployment en Sprints 1 y 2: Las actividades de despliegue continuo (CI/CD) orquestadas mediante GitHub Actions y scripts automatizados en la nube de Azure (Región Chile Central) validaron la viabilidad técnica y operativa de la solución al cierre del Sprint 2. La disponibilidad activa de los endpoints para servicios esenciales, la correcta configuración de variables de entorno y secretos de infraestructura, y el despliegue funcional de la aplicación Web (Firebase) y la aplicación Móvil (APK compilado automáticamente), reducen drásticamente la incertidumbre técnica y demuestran la viabilidad de puesta en producción real del ecosistema Grotix.
+
+* La implementación física de los nodos IoT demostró que la estabilidad del software depende críticamente de la topología eléctrica. Durante el desarrollo con el microcontrolador ESP32-C3, módulos de relé y bombas de agua, se validó empíricamente la necesidad de aislar lógicamente el "Cerebro" (microcontrolador) de los "Músculos" (actuadores mecánicos). La segregación de fuentes de alimentación (aislando las corrientes de 5V) evitó reinicios súbitos provocados por caídas de tensión (Brownouts) y ruido electromagnético (EMI) generados por los motores de las bombas, garantizando una ingesta de telemetría continua y sin interrupciones. 
+
+* Se concluye que en sistemas IoT aplicados a la agricultura, la dependencia exclusiva de la nube para el control de actuadores representa un riesgo crítico de negocio. El desarrollo del firmware validó la importancia de programar reglas de seguridad a nivel de hardware (como temporizadores Watchdog y funciones Auto-Stop en los pines GPIO). Estos mecanismos de defensa descentralizados aseguran que, ante una pérdida de conectividad Wi-Fi o caída del servidor durante un ciclo de riego activo, el microcontrolador cierre de forma autónoma el flujo de agua, previniendo daños irreparables en el cultivo por inundación 
+
+* El hito más representativo del trabajo final es la orquestación bidireccional exitosa. Grotix dejó de ser un sistema puramente de monitoreo (lectura de datos) para convertirse en un sistema de control activo. La capacidad de leer sensores físicos (DHT22, capacitivos de humedad), enviar payloads empaquetados en JSON mediante clientes HTTP/MQTT hacia la nube, y recibir comandos asíncronos en milisegundos para accionar los relés del ESP32, valida la madurez de la plataforma para operar el ciclo completo del Internet de las Cosas en tiempo real. 
+
+# Recomendaciones
+
+
+
+# Bibliografía
+
+Agencia Andina. (2011, 11 de abril). ANA: 80% del agua destinada a uso agrícola se pierde por deficiencias en riego. https://andina.pe/agencia/noticia-ana-80-del-agua-destinada-a-uso-agricola-se-pierde-deficiencias-riego-343493.aspx
+
+AgroPerú. (2024, noviembre 8). Déficit hídrico amenaza la campaña agrícola 2024–2025. [AgroPerú](https://www.agroperu.pe/deficit-hidrico-amenaza-la-campana-agricola-2024-2025/?utm_source=chatgpt.com)
+
+Alvarez, A. (2020, 5 de agosto). 5W2H: Qué significa, para qué sirve, cómo aplicarla y algunos ejemplos. LeanConstructionMexico. https://www.leanconstructionmexico.com.mx/post/5w2h-qué-significa-para-qué-sirve-cómo-aplicarla-y-algunos-ejemplos
+
+Centro Nacional de Planeamiento Estratégico. (s. f.). Ficha R10: Agricultura (Observatorio Nacional de Prospectiva). [CEPLAN](https://observatorio.ceplan.gob.pe/ficha/r10_an?utm_source=chatgpt.com)
+
+Centro Peruano de Estudios Sociales (CEPES). (2024). Índice Global del Hambre (IGH) 2024: Informe Perú. https://cepes.org.pe/
+
+Garay Canales, O. B. (2009). Manual de uso consuntivo del agua para los principales cultivos de los Andes centrales peruanos. [Instituto Geofísico del Perú](http://met.igp.gob.pe/proyectos/incagro/datos/ManualConsuntivo.pdf?utm_source=chatgpt.com)
+
+Escobal, J., Trivelli, C., & Revesz, B. (2006). Pequeña agricultura comercial: dinámica y retos en el Perú. Consorcio de Investigación Económica y Social (CIES), Centro de Investigación y Promoción del Campesinado (CIPCA), Instituto de Estudios Peruanos (IEP) y Grupo de Análisis para el Desarrollo (GRADE). https://www.grade.org.pe/upload/publicaciones/archivo/download/pubs/LIBROGRADE_PEQUENAAGRICULTURACOMERCIAL.pdf
+
+Excélsior Digital. (2022, 6 de abril). Sector agrícola ocupa hasta 76% de agua del país; es también en el que más se desperdicia. https://www.excelsior.com.mx/nacional/sector-agricola-ocupa-hasta-76-de-agua-del-pais-es-tambien-es-el-que-mas-la-desperdicia 
+
+Iberico, J. (2016). Abastecimiento de agua para la agricultura en la costa. En Revista Moneda, (N.º 168). [Banco Central de Reserva del Perú](https://www.bcrp.gob.pe/docs/Publicaciones/Revista-Moneda/moneda-168/moneda-168-07.pdf?utm_source=chatgpt.com)
+
+Instituto Nacional de Estadística e Informática. (2023). Encuesta Nacional Agropecuaria 2022: Principales Resultados. Lima: Instituto Nacional de Estadística e Informática. Recuperado de https://www.inei.gob.pe/media/MenuRecursivo/publicaciones_digitales/Est/Lib1912/libro.pdf
+
+Instituto Nacional de Estadística e Informática. (2023). Sistema de monitoreo y seguimiento de los indicadores de los Objetivos de Desarrollo Sostenible. https://ods.inei.gob.pe/ods/
+
+Instituto Nacional de Estadística e Informática. (2024). La agricultura familiar en el Perú: Retos y posibilidades para su transformación en el contexto de los Objetivos de Desarrollo Sostenible (ODS). [INEI](https://www.inei.gob.pe/media/MenuRecursivo/investigaciones/agricultura-familiar-en-el-peru.pdf?utm_source=chatgpt.com)
+
+Linares Nima, L. M. (2025, mayo 6). Crisis hídrica y cambio climático en Perú: el impacto de la agroexportación. Programa de Investigación en Cambio Climático, Universidad Nacional Autónoma de México (PINCC-UNAM).
+
+Ministerio de Transportes y Comunicaciones. (2025, diciembre 31). Más de 194 mil ciudadanos en 924 localidades rurales accedieron por primera vez a servicios móviles 4G en 2025. [Gob.pe](https://www.gob.pe/institucion/mtc/noticias/1324575-mtc-mas-de-194-mil-ciudadanos-en-924-localidades-rurales-accedieron-por-primera-vez-a-servicios-moviles-4g-en-2025?utm_source=chatgpt.com)
+
+Montaño, F. (2023, noviembre 5). La crisis histórica del agro impacta y amenaza la agricultura familiar. [Ojo Público](https://ojo-publico.com/derechos-humanos/la-crisis-historica-del-agro-impacta-y-amenaza-la-agricultura-familiar?utm_source=chatgpt.com)
+
+Nagel, J. (2012). Principales barreras para la adopción de las TIC en la agricultura y en las áreas rurales. Comisión Económica para América Latina y el Caribe (CEPAL). [CEPAL](https://www.cepal.org/es/publicaciones/4011-principales-barreras-la-adopcion-tic-la-agricultura-areas-rurales?utm_source=chatgpt.com)
+
+Organización de las Naciones Unidas para la Alimentación y la Agricultura (FAO). (2024). El estado de la seguridad alimentaria y la nutrición en el mundo (SOFI) 2024. https://www.fao.org/publications/sofi/es/ 
+
+Pintado, M. (2022, agosto 22). Calendario agrícola, fertilizantes y seguridad alimentaria. [Centro Peruano de Estudios Sociales](https://cepes.org.pe/2022/08/22/calendario-agricola-fertilizantes-y-seguridad-alimentaria/?utm_source=chatgpt.com)
+
+Pontificia Universidad Católica del Perú. (2024, abril 11). Los impactos de las sequías en el Perú. [Clima de Cambios PUCP](https://www.pucp.edu.pe/climadecambios/noticias/los-impactos-de-las-sequias-en-el-peru/?utm_source=chatgpt.com)
+
+Programa Subsectorial de Irrigaciones (PSI). (2009, abril). El Programa Subsectorial de Irrigaciones y la tecnificación del riego en el Perú. Ministerio de Agricultura. https://repositorio.midagri.gob.pe/bitstream/20.500.13036/418/1/Riego%20tecnificado.pdf
+Ramos, E. (2025, septiembre 3). Tecnologías IoT buscan transformar la agricultura peruana. [Agraria.pe](http://Agraria.pe)
+
+Rivadeneira, A. A. (2024). Avances y desafíos del ODS 2: Hambre cero [Presentación]. Foro de los Países de América Latina y el Caribe sobre el Desarrollo Sostenible 2024, CEPAL. https://foroalc2030.cepal.org/2024/sites/foro2024/files/presentations/mesa_2-peru-rivadeneira-_ods_2_hambre_cero.pdf
+
+Sociedad de Comercio Exterior del Perú. (2024, agosto 16). 1 de cada 5 peruanos padece de inseguridad alimentaria grave. [ComexPerú](https://www.comexperu.org.pe/articulo/1-de-cada-5-peruanos-padece-de-inseguridad-alimentaria-grave?utm_source=chatgpt.com)
+
+United Nations University Institute for Water, Environment and Health. (s. f.). Expandir el riego podría mejorar la nutrición infantil, pero conlleva riesgos. [UNU-INWEH](https://unu.edu/inweh/collection/expandir-el-riego-podria-mejorar-la-nutricion-infantil-pero-conlleva-el-riesgo-de?utm_source=chatgpt.com)
+
+# Anexos
+
+**Anexo 1**
+
+_Eficiencia y Costos de Métodos de Riego en el Perú_
+
+|Método de Riego|Eficiencia de Aplicación|Costo de Inversión (US$/ha)|Predominancia en el Agro|
+|:-:|:-:|:-:|:-:|
+|Gravedad / Surcos|35%|400|~85% en la costa|
+|Aspersión|75%|2,600 - 4,115|2%|
+|Goteo (Presurizado)|90%|2,775|13%|
+
+_Nota. Adaptado de Abastecimiento de agua para la agricultura en la costa, por J. Iberico (2016), Revista Moneda, (168), Banco Central de Reserva del Perú, [BCRP](https://www.bcrp.gob.pe/docs/Publicaciones/Revista-Moneda/moneda-168/moneda-168-07.pdf?utm_source=chatgpt.com)_
+
+**Anexo 2**
+
+_Indicadores de Salud y Seguridad Alimentaria (ODS 2 y 3)_
+
+|Indicador|Valor (2022-2023)|Tendencia / Estado|
+|:-:|:-:|:-:|
+|Prevalencia de Anemia (niños < 3 años)|42.4%|Al alza (Incremento vs 2021)|
+|Desnutrición Crónica Infantil|11.7%|Estancamiento|
+|Incidencia de Déficit Calórico|36.2%|Al alza (era 23.9% en 2015)|
+|Población Rural con Alta Inseguridad Alimentaria|> 70%|Crítica|
+
+_Nota. Adaptado de Perú: Indicadores de Resultados de los Programas Presupuestales. Encuesta Demográfica y de Salud Familiar (ENDES) 2023, por el Instituto Nacional de Estadística e Informática (2024), [INEI](https://www.inei.gob.pe/?utm_source=chatgpt.com); de Sistema de monitoreo y seguimiento de los indicadores de los Objetivos de Desarrollo Sostenible, por el Instituto Nacional de Estadística e Informática (2023), [INEI ODS](https://ods.inei.gob.pe/ods/?utm_source=chatgpt.com); de El estado de la seguridad alimentaria y la nutrición en el mundo (SOFI) 2024, por la Organización de las Naciones Unidas para la Alimentación y la Agricultura (2024), [FAO SOFI](https://www.fao.org/publications/sofi/es/?utm_source=chatgpt.com); y de Índice Global del Hambre (IGH) 2024: Informe Perú, por el Centro Peruano de Estudios Sociales (2024), [CEPES](https://cepes.org.pe/?utm_source=chatgpt.com)._
+
+
+# Links
+
+Celevi. 2026. Diagrama de Actividades y estados. https://lucid.app/lucidchart/c8bcf184-0676-40f7-8347-263e3babf686/edit?view_items=SgYRUQgH.nII&page=0_0&invitationId=inv_3a2bf95b-b22a-4add-b99f-02d0ed853fee
+
+Celevi. 2026. Diagrama de clase. https://lucid.app/lucidchart/c28cc6bf-8486-4dbb-ba7f-a3210df48a5c/edit?viewport_loc=-3394%2C-1465%2C6925%2C3224%2C0_0&invitationId=inv_67cd59c7-5703-4cb1-8122-5312a9ed8259 
+
+Celevi. 2026. Diagrama de base de datos. https://lucid.app/lucidchart/ecbadf35-cf2e-4657-9e6e-2cc36ad54304/edit?viewport_loc=-1240%2C-788%2C3271%2C1482%2C0_0&invitationId=inv_a764d72e-3f6f-41cc-9bb1-5cd2f9f05490
+
+Celevi. 2026. Esquemas realizados con UXPRESIA. https://drive.google.com/drive/folders/1AcRLc0XIIurTc_4bcvQW3vW6aLwbFvW2?usp=sharing
+
+Celevi. 2026. Grotix Diagrams. https://upcedupe-my.sharepoint.com/:b:/g/personal/u202312287_upc_edu_pe/IQAn8hVFx5EfTb4P72xVU794AZD90knyfQ6wPBYvp6LSBL4?e=7EV2FV
+
+Celevi. 2026. Grotix EventStorming.
+https://miro.com/welcomeonboard/RHE0Z0ZHYlYxSVU3Y0ozTjEya3JETTc1NzIyVmsyYy9UMHBEN0ovRUF2RDdEbjRQZFBpUEZ3a3lubXRFc0d1NzhHdkNvZUZHeElDWDFRc0lsZEVWUy9GYTVRRWtwZVF5enJyVlpZUzdXQmtYVUp1a2FIVXdESDJDVllXSEZYaXh3VHhHVHd5UWtSM1BidUtUYmxycDRnPT0hdjE=?share_link_id=31489203478
+
+Celevi. 2026. Lean UX Canvas. https://docs.google.com/document/d/1v9oqi4oCp-7cLg5QIZMB1egRKy5mVaJw/edit?usp=sharing&ouid=112054289490328588638&rtpof=true&sd=true
+
+Celevi. 2026. Proyecto en Jira. https://sacsayhuamanlover.atlassian.net/jira/software/projects/GTX/boards/2?atlOrigin=eyJpIjoiODViNjFlOWI0MjA5NDY1NzgyZWMyNDFjYzc1N2ZlNmIiLCJwIjoiaiJ9 
+
+Celevi. 2026. Segmento_1_As-Is/To-Be. https://miro.com/app/board/uXjVGjm4oO4=/?share_link_id=832410871375 
+
+Celevi. 2026. Segmento_2_As-Is/To-Be. https://miro.com/app/board/uXjVJHVbkR8=/ 
+
+Celevi. 2026. Sprint Backlog 2 en Jira,
+https://cassiusmartel21042006-1776311272559.atlassian.net/jira/software/projects/GSB2/list?jql=project%20%3D%20GSB2%20ORDER%20BY%20cf%5B10019%5D%20ASC
+
+Celevi. 2026. Api gateway service. https://grotixgateway1-hrftg6a4gqf0fqhd.chilecentral-01.azurewebsites.net/
+
+Celevi. 2026. Profile service. [grotixprofile-byc3drb9gqe9epev.chilecentral-01.azurewebsites.net/swagger/](http://grotixprofile-byc3drb9gqe9epev.chilecentral-01.azurewebsites.net/swagger/)
+
+Celevi. 2026. Cultivation area service. [grotixcultivationarea-c5d8hhd3c2defwda.chilecentral-01.azurewebsites.net/swagger/](http://grotixcultivationarea-c5d8hhd3c2defwda.chilecentral-01.azurewebsites.net/swagger/)
+
+Celevi. 2026. Hardware device service. [grotixhardware-dsfucydsavcyhffw.chilecentral-01.azurewebsites.net/swagger/](http://grotixhardware-dsfucydsavcyhffw.chilecentral-01.azurewebsites.net/swagger/)
+
+Celevi. 2026. Irrigation cycle service. [grotixirrigationcycle-enbkhfe7a4cye2cm.chilecentral-01.azurewebsites.net/swagger/](http://grotixirrigationcycle-enbkhfe7a4cye2cm.chilecentral-01.azurewebsites.net/swagger/)
+
+Celevi. 2026. [Telemetry service. grotixtelemetry-amakfshkb4ahbsbm.chilecentral-01.azurewebsites.net/swagger/](http://grotixirrigationcycle-enbkhfe7a4cye2cm.chilecentral-01.azurewebsites.net/swagger/)
+
+Celevi. 2026. Web Application. https://grotixweb.web.app/
+
+Celevi. 2026. Execution evidence for sprint review 1. https://upcedupe-my.sharepoint.com/:v:/g/personal/u20201f855_upc_edu_pe/IQAX8Qlo6yS-TYuInq-CellWAQNakaunluneG2IIEWIgkZE?nav=eyJyZWZlcnJhbEluZm8iOnsicmVmZXJyYWxBcHAiOiJPbmVEcml2ZUZvckJ1c2luZXNzIiwicmVmZXJyYWxBcHBQbGF0Zm9ybSI6IldlYiIsInJlZmVycmFsTW9kZSI6InZpZXciLCJyZWZlcnJhbFZpZXciOiJNeUZpbGVzTGlua0NvcHkifX0&e=NXcnhZ
+
+
+Celevi. 2026. Execution evidence for sprint review 2. https://upcedupe-my.sharepoint.com/personal/u202311157_upc_edu_pe/_layouts/15/stream.aspx?id=%2Fpersonal%2Fu202311157%5Fupc%5Fedu%5Fpe%2FDocuments%2FExecutionEvidenceAppWebSP2%2Emp4&nav=eyJyZWZlcnJhbEluZm8iOnsicmVmZXJyYWxBcHAiOiJTdHJlYW1XZWJBcHAiLCJyZWZlcnJhbFZpZXciOiJTaGFyZURpYWxvZy1MaW5rIiwicmVmZXJyYWxBcHBQbGF0Zm9ybSI6IldlYiIsInJlZmVycmFsTW9kZSI6InZpZXcifX0&ga=1&referrer=StreamWebApp%2EWeb&referrerScenario=AddressBarCopied%2Eview%2E7e736a7c%2D5e8a%2D4772%2Db375%2Dcddccb03b13d
+
