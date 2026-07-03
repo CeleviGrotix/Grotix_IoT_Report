@@ -2158,13 +2158,13 @@ Las General Style Guidelines de Grotix se fundamentan en la creación de una ide
 
 #### Branding y Logo
 
-<img src="https://imgur.com/mBeabdf.png>
+<img src="https://imgur.com/mBeabdf.png">
 
 El branding de Grotix se ha diseñado para proyectar una identidad que fusiona la naturaleza con la precisión tecnológica. El logotipo utiliza una tipografía moderna y de alta legibilidad, donde el isotipo destaca por la integración de hojas verdes que simbolizan la vida y el crecimiento agrícola. La incorporación de un elemento circular y una letra "i" en tonos celestes refuerza el concepto de inteligencia y fluidez hídrica, comunicando visualmente que Grotix no es solo una herramienta de monitoreo, sino una solución inteligente enfocada en la sostenibilidad y el éxito de la germinación. Esta composición visual garantiza que la marca sea fácilmente reconocible tanto en interfaces digitales como en dispositivos físicos, manteniendo una estética profesional y vanguardista.
 
 #### Paleta de Colores (Colors)
 
-<img src="https://imgur.com/e5Q3Lve.png>
+<img src="https://imgur.com/e5Q3Lve.png">
 
 La paleta de colores de Grotix ha sido seleccionada estratégicamente para evocar un equilibrio entre la vitalidad del campo y la innovación digital. Los tonos principales, como el Verde Pasto (#4FD16C) y el Azul Cerúleo (#40BFE2), refuerzan la conexión con la agricultura y la gestión inteligente de recursos hídricos, mientras que el Rojo Coral (#FF5757) actúa como un color de acento crítico para alertas y notificaciones prioritarias. Esta gama se complementa con una paleta secundaria que incluye el Verde Esmeralda (#01A070) para dar profundidad visual, y tonos neutros como el Gris Claro (#DDDDDD), Negro (#000000) y Blanco (#FFFFFF), que aseguran un alto contraste y una interfaz limpia, facilitando la legibilidad de datos técnicos en diversas condiciones de iluminación ambiental.
 
@@ -2910,7 +2910,7 @@ La implementación se enfoca en garantizar usabilidad, rendimiento y coherencia 
 |---|---|
 | Sprint # | Sprint 1 |
 
-| User Story Id | User Story Title | Work-Item / Task Id | Task Title | Description | Estimation (Hours) | Assigned To | Status |
+| User Story Id | User Story Title | Work-Item / Task Id | Task Title | Description | Estimation (Hours) | Assigned To | Status (To-do / In-Process / To-Review / Done) |
 |---|---|---|---|---|---:|---|---|
 | US01 | Visualización de propuesta de valor y servicios | T01 | Maquetado HTML/CSS de Hero Section | Creación de la estructura base del primer bloque visible (Hero) en la landing page. | 3 | Frontend Dev | Done |
 | US01 | Visualización de propuesta de valor y servicios | T02 | Inserción de Copywriting principal | Redacción y colocación del Headline impactante y la descripción de la plataforma. | 2 | Frontend Dev | Done |
@@ -3805,7 +3805,7 @@ Se ha persistido correctamente el nuevo cultivo en el catálogo agronómico.
 
 <img src="https://imgur.com/koxpmDX.png">
 
-#### 6.1.2.8 Software Deployment Evidence for Sprint Review
+#### 6.2.1.8 Software Deployment Evidence for Sprint Review
 
 Durante el presente sprint, se llevó a cabo el despliegue de la base de datos principal del sistema en una instancia de Azure Database for MySQL – Flexible Server, haciendo uso de la suscripción Azure for Students. Esta instancia constituye el núcleo de persistencia de datos de la aplicación y fue configurada bajo el plan de capacidad con ráfaga (Burstable B1ms), garantizando un entorno estable y escalable para las etapas de desarrollo y pruebas del proyecto. 
 
@@ -3910,8 +3910,3989 @@ El ritmo de implementación se mantuvo constante, con un enfoque en la robustez 
 
 <img src="https://imgur.com/XTCI0Et.png">
 
+### 6.2.2. Sprint 2
+
+#### 6.2.2.1. Sprint Planning 2
+
+| Campo | Detalle |
+|---|---|
+| Sprint # | Sprint 2 |
+| **Sprint Planning Background** |  |
+| Date | 15/05/26 |
+| Time | 20:00 |
+| Location | Reunión Virtual de Google Meet |
+| Prepared By | Cassius Martel |
+| Attendees (to planning meeting) | Binda Arbañil, Marcelo Alejandro / Castillo Garay, Ainhoa Lucía / Martel Andrade, Cassius Estefano / Nakamurakare Teruya, Alex Tomio / Rodas Sotomayor, Ernesto / |
+| Review Summary | Presentación exitosa de los nuevos microservicios core del sistema IoT (Telemetría, Hardware e Irrigación en .NET) y el microservicio de Análisis de Cultivos con Inteligencia Artificial (Python/FastAPI). Despliegue inicial de la aplicación móvil en Flutter con integración de autenticación, dashboard táctil y gestión de zonas. Optimización exitosa de latencia mediante DTOs y refinamiento de la aplicación Web para la gestión técnica de dispositivos. Todas las tareas (131 SP/Horas) marcadas como "Done". |
+| Retrospective Summary | El equipo logró una gran sinergia al paralelizar el desarrollo móvil en Flutter con la expansión masiva de los microservicios backend. Se identificó que la integración del motor de IA en Python requiere un ruteo estricto en el API Gateway. |
+| **Sprint Goal & User Stories** |  |
+| Sprint 2 Goal | El objetivo de este segundo sprint es expandir la arquitectura de microservicios para soportar la lógica core del ecosistema IoT (Ingesta de Telemetría, Control de Irrigación, Gestión de Hardware) y la inferencia de Inteligencia Artificial mediante FastAPI. Paralelamente, se busca establecer la aplicación móvil multiplataforma (Flutter), brindando a los agricultores acceso a dashboards de monitoreo táctil, gestión de zonas, invitaciones de colaboración y análisis fenológico en tiempo real directamente desde sus smartphones. |
+| Sprint 2 Velocity | 56 |
+| Sum of Story Points | 131 |
+
+#### 6.2.2.2. Aspect Leaders and Collaborators
+
+| Team Member (Last Name, First Name) | GitHub Username | Frontend & UI/UX | Backend & API | QA & Testing | Infrastructure & Deployment | Project Management |
+|---|---|---|---|---|---|---|
+| Martel Andrade, Cassius Estefano | kcc12321 | C | C | L | C | L |
+| Binda Arbañil, Marcelo Alejandro | MarceHkd | L | C | C | C | C |
+| Castillo Garay, Ainhoa Lucía | noaa01100001 | L | C | C | C | C |
+| Nakamurakare Teruya, Alex Tomio | kistoo | C | L | C | C | C |
+| Rodas Sotomayor, Ernesto | ernesto1718 | C | C | C | L | C |
+
+#### 6.2.2.3. Sprint Backlog 2
+
+| Campo | Detalle |
+|---|---|
+| Sprint # | Sprint 2 |
+
+| User Story Id | User Story Title | Work-Item / Task Id | Task Title | Description | Estimation (Hours) | Assigned To | Status (To-do / In-Process / To-Review / Done) |
+|---|---|---|---|---|---:|---|---|
+| TS16 | Implementación del Microservicio de Telemetría e Ingesta IoT (.NET) | T57 | Estructura base en Telemetry API | Creación del proyecto base en .NET (C#) y configuración de las rutas del controlador para la ingesta asíncrona. | 3 | Backend Dev | Done |
+| TS16 | Implementación del Microservicio de Telemetría e Ingesta IoT (.NET) | T58 | Modelado de contratos lógicos | Definición y validación del esquema de datos JSON estructurados para la recepción de paquetes de telemetría de campo. | 3 | Backend Dev | Done |
+| TS20 | Configuración de Estrategia de Simulación y Mocking de Telemetría e Ingesta de Datos | T59 | Poblado de simulación vía Swagger | Diseño y ejecución de endpoints de simulación en Telemetry.Api desde Swagger para popular la base de datos PostgreSQL con lecturas lógicas de sensores. | 3 | Backend Dev | Done |
+| TS20 | Configuración de Estrategia de Simulación y Mocking de Telemetría e Ingesta de Datos | T60 | Adaptación de controladores para contingencias | Configuración de controladores para manejar respuestas estáticas controladas y flujos alternos si la base de datos de telemetría no detecta tramas activas. | 2 | Backend Dev | Done |
+| TS19 | Implementación del Microservicio de Gestión de Hardware y Dispositivos (.NET) | T61 | APIs CRUD de Inventario de Equipos | Desarrollo de endpoints transaccionales en Hardware.Api para registrar, modificar y listar dispositivos de forma virtual. | 4 | Backend Dev | Done |
+| TS19 | Implementación del Microservicio de Gestión de Hardware y Dispositivos (.NET) | T62 | Control de estado operacional de activos | Lógica en .NET para actualizar la bandera de estado (Online/Offline/Maintenance) inyectando la propiedad temporal lastSeen bajo validación de casing. | 2 | Backend Dev | Done |
+| TS17 | Implementación del Microservicio de Control y Orquestación de Riego (.NET) | T63 | Motor de Reglas Hídricas Autónomas | Desarrollo de la lógica de negocio en Irrigation.Api para evaluar las variables y disparar ciclos automáticos lógicos. | 5 | Backend Dev | Done |
+| TS17 | Implementación del Microservicio de Control y Orquestación de Riego (.NET) | T64 | Controlador de comandos de actuadores | Creación de endpoints técnicos para recibir acciones de encendido/apagado y simular logs en el historial de irrigación. | 3 | Backend Dev | Done |
+| TS17 | Implementación del Microservicio de Control y Orquestación de Riego (.NET) | T65 | Pruebas Unitarias integrales con xUnit | Escritura y ejecución de cobertura de pruebas automatizadas con xUnit en las capas de negocio de cada microservicio para validar el comportamiento del dominio. | 5 | Backend Dev | Done |
+| TS18 | Desarrollo del Microservicio de Análisis de Cultivos e Integración de IA (Python) | T66 | Servidor base y API en FastAPI | Configuración del entorno de desarrollo en Python con FastAPI y endpoints HTTP destinados a la recepción de recursos visuales de parcelas. | 4 | Backend Dev | Done |
+| TS18 | Desarrollo del Microservicio de Análisis de Cultivos e Integración de IA (Python) | T67 | Integración de pipeline de inferencia IA | Programación del script en Python para conectarse mediante API Key a los servicios lógicos de IA y retornar la clasificación fenológica sin enlace de hardware ESP32. | 6 | Backend Dev | Done |
+| US26 | Modificación de datos personales y de contacto | T68 | Refactorización de endpoints de perfil | Correcciones y mejoras técnicas en el microservicio de identidades para el guardado consistente de datos de contacto de agricultores. | 5 | Backend Dev | Done |
+| US26 | Modificación de datos personales y de contacto | T69 | Rediseño de Layout de Profile Web | Ajuste visual, unificación de estados reactivos y limpieza de conflictos de fusión en el componente MyProfileView.vue dentro de Vue 3. | 4 | Frontend Dev | Done |
+| US26 | Modificación de datos personales y de contacto | T70 | Maquetación UI móvil de sección Perfil | Construcción responsiva de la pantalla de gestión de perfil dentro de la aplicación móvil basándose en los wireframes. | 4 | Frontend Dev | Done |
+| US15 | Organización de dispositivos por zonas y especies | T71 | Optimización de consultas estructurales | Corrección de bases de datos y asignación jerárquica de granjas/lotes dentro del microservicio Cultivation.Api. | 5 | Backend Dev | Done |
+| US15 | Organización de dispositivos por zonas y especies | T72 | UI móvil de formularios de creación | Implementación en Flutter de las vistas de ingreso de parcelas y asociación a variedades del catálogo botánico. | 6 | Frontend Dev | Done |
+| TS12 | Gestión de mantenimiento de dispositivos IoT | T73 | UI Web de Inventario con Filtros Dinámicos | Construcción de DevicesListView incorporando propiedades computadas para el filtrado reactivo en tiempo real por ID, texto y estado. | 6 | Frontend Dev | Done |
+| TS12 | Gestión de mantenimiento de dispositivos IoT | T74 | UI Web de Bitácora Técnica Depurada | Ajuste de DeviceLogbookView.vue aislando el guardado atómico hacia estados ONLINE/OFFLINE, excluyendo la bandera manual de mantenimiento. | 6 | Frontend Dev | Done |
+| TS12 | Gestión de mantenimiento de dispositivos IoT | T75 | Integración de colecciones de dispositivos | Inyección de colecciones controladas y mapeo del campo de fecha corregido a lastSeen para poblar adecuadamente la UI del frontend. | 4 | Frontend Dev | Done |
+| TS11 | Gestión de Capas de Datos Mock de la Aplicación Móvil | T76 | UI Móvil de Vista de Detalle de Zona Individual | Construcción y maquetación de la pantalla móvil de detalle por zona en Flutter conectando variables directas reales desde Cultivation.Api. | 5 | Frontend Dev | Done |
+| TS11 | Gestión de Capas de Datos Mock de la Aplicación Móvil | T77 | Estructuras Mock para Reportes, Notis y Sensores | Desarrollo de clases estáticas y repositorios temporales en Flutter para renderizar la UI de reportes históricos, notificaciones y gráficas de sensores. | 4 | Frontend Dev | Done |
+| TS15 | Configuración de Arquitectura Base y Scaffolding para la App Móvil | T78 | Inicialización, Capas y Clientes Flutter | Setup estructural bajo arquitectura limpia, empaquetado de cliente HTTP base apuntando al API Gateway, ruteo básico e instalación de paquetes de estado. | 6 | Frontend Dev | Done |
+| US25 | Registro, inicio y cierre de sesión de usuario | T79 | UI móvil de formulario de accesos Login | Maquetación estricta de la pantalla de Login adaptada a la guía gráfica y almacenamiento de tokens JWT. Flujos de envío de correo/registro omitidos. | 5 | Frontend Dev | Done |
+| US32 | Compartir acceso de lectura y monitoreo a otros usuarios | T80 | UI móvil de campos de invitación | Desarrollo del formulario visual en Flutter para ingresar colaboradores secundarios. | 5 | Frontend Dev | Done |
+| US14 | Dashboard de Monitoreo Integral y Resumen de Estado | T81 | UI de Dashboard táctil principal | Maquetación responsiva en Flutter de la pantalla principal de telemetría respetando los indicadores y el diseño circular del wireframe. | 7 | Frontend Dev | Done |
+| US14 | Dashboard de Monitoreo Integral y Resumen de Estado | T82 | Interpolación de Sensores Mock | Consumo del repositorio mock móvil para inyectar datos reactivos de humedad de suelo, luz y temperatura ambiente en los medidores gráficos. | 4 | Frontend Dev | Done |
+| US24 | Clasificación del estado fenológico mediante Inteligencia Artificial | T83 | UI móvil de análisis visual de cultivo | Creación del submódulo móvil en Flutter para desplegar la pantalla de análisis de salud vegetal renderizando las imágenes procesadas por el API de Python. | 6 | Frontend Dev | Done |
+| US21 | Generación y descarga de reportes históricos | T84 | UI móvil de sección de reportes | Maquetación estética en Flutter de la pantalla de reportes proyectando los tres datos clave en UI. | 5 | Frontend Dev | Done |
+| TS04 | Optimización de Latencia y Eficiencia en el Procesamiento | T85 | Afinamiento de DTOs en capas backend | Ajuste fino de objetos de transferencia de datos en .NET para truncar nulos, acelerando drásticamente el peso de las tramas enviadas a las apps móviles. | 4 | Backend Dev | Done |
+
+**Total de tareas:** 29
+
+**Sum of Estimation Hours:** 131
+
+#### 6.2.2.4. Development Evidence for Sprint Review
+
+Durante este Sprint se realizaron avances en la implementación de la solución, tanto en los Web Services como en las aplicaciones web y móvil. Se desarrollaron nuevos endpoints, integraciones con dispositivos y sensores, funcionalidades de búsqueda y filtrado, mejoras en la gestión de perfiles y visualización de datos, así como configuraciones necesarias para el despliegue de la plataforma.
+
+Asimismo, se ejecutaron actividades de corrección de incidencias, optimización de componentes, integración de módulos y actualización de configuraciones de infraestructura. Los commits presentados a continuación evidencian el progreso realizado y las funcionalidades implementadas para cumplir con los objetivos definidos para el Sprint.
+
+**Repository: Grotix_Web**
+
+- **Branch:** develop
+- **Total Commits:** 17
+
+| Secuencia | Repository | Branch | Commit Id | Commit Message | Commit Message Body | Committed on |
+|---|---|---|---|---|---|---|
+| #01 | https://github.com/CeleviGrotix/Grotix_Web | develop | 59797d2 | Merge branch 'develop' of https://github.com/CeleviGrotix/Grotix_Web into develop | Sincronización de cambios entre ramas. | 14/05/2026 |
+| #02 | https://github.com/CeleviGrotix/Grotix_Web | develop | 4b4e221 | Fix crops data source | Corrección de fuente de datos de cultivos. | 14/05/2026 |
+| #03 | https://github.com/CeleviGrotix/Grotix_Web | develop | dce5652 | feat: make web app fully responsive | Adaptación de la interfaz a todos los dispositivos. | 14/05/2026 |
+| #04 | https://github.com/CeleviGrotix/Grotix_Web | develop | 268500e | Add secret | Incorporación de configuración segura. | 14/05/2026 |
+| #05 | https://github.com/CeleviGrotix/Grotix_Web | develop | cf4109f | Add DeviceDetailView | Creación de vista de detalle de dispositivos. | 1/06/2026 |
+| #06 | https://github.com/CeleviGrotix/Grotix_Web | develop | d171564 | fix: resolve profile page merge conflicts | Resolución de conflictos en perfil. | 1/06/2026 |
+| #07 | https://github.com/CeleviGrotix/Grotix_Web | develop | 064a227 | Fix: conflictos resueltos | Corrección de conflictos de integración. | 1/06/2026 |
+| #08 | https://github.com/CeleviGrotix/Grotix_Web | develop | 6445d1d | Fix profile view | Ajustes en la vista de perfil. | 1/06/2026 |
+| #09 | https://github.com/CeleviGrotix/Grotix_Web | develop | 7732c44 | Deploy configuration | Configuración para despliegue. | 6/06/2026 |
+| #10 | https://github.com/CeleviGrotix/Grotix_Web | develop | ef72c40 | feat: integrate real device data into search results and dashboard views | Integración de datos reales de dispositivos. | 6/06/2026 |
+| #11 | https://github.com/CeleviGrotix/Grotix_Web | develop | 32d3808 | fix: Add TaxId to Profile | Adición del campo TaxId al perfil. | 6/06/2026 |
+| #12 | https://github.com/CeleviGrotix/Grotix_Web | develop | 609560b | feat: rediseño premium UI de dispositivos | Mejora visual de la interfaz de dispositivos. | 6/06/2026 |
+| #13 | https://github.com/CeleviGrotix/Grotix_Web | develop | 50b5095 | feat: implementacion de filtros | Implementación de filtros de búsqueda. | 6/06/2026 |
+| #14 | https://github.com/CeleviGrotix/Grotix_Web | develop | 3d62ec7 | Update useDeviceStore.js | Actualización de gestión de dispositivos. | 7/06/2026 |
+| #15 | https://github.com/CeleviGrotix/Grotix_Web | develop | 29d6c7f | Update DeviceApi.js | Actualización de servicios de dispositivos. | 7/06/2026 |
+| #16 | https://github.com/CeleviGrotix/Grotix_Web | develop | 6a80a81 | Update useSearchStore.js | Actualización de lógica de búsqueda. | 7/06/2026 |
+| #17 | https://github.com/CeleviGrotix/Grotix_Web | develop | 4f8ed60 | Update .firebaserc | Actualización de configuración Firebase. | 7/06/2026 |
+
+**Repository: Grotix_Mobile**
+
+- **Branch:** develop
+- **Total Commits:** 35
+
+| Secuencia | Repository | Branch | Commit Id | Commit Message | Commit Message Body | Committed on |
+|---|---|---|---|---|---|---|
+| #01 | https://github.com/CeleviGrotix/Grotix_Mobile | develop | 20ba582 | first commit | Inicialización del proyecto. | 30/05/2026 |
+| #02 | https://github.com/CeleviGrotix/Grotix_Mobile | develop | 4d4572b | Profile implementation | Implementación de perfil. | 31/05/2026 |
+| #03 | https://github.com/CeleviGrotix/Grotix_Mobile | develop | 2fe4db3 | Login implementation | Implementación de inicio de sesión. | 31/05/2026 |
+| #04 | https://github.com/CeleviGrotix/Grotix_Mobile | develop | c79eda2 | Authentication initial implementation | Implementación inicial de autenticación. | 31/05/2026 |
+| #05 | https://github.com/CeleviGrotix/Grotix_Mobile | develop | 2872f02 | smol changes | Ajustes menores. | 31/05/2026 |
+| #06 | https://github.com/CeleviGrotix/Grotix_Mobile | develop | d2f8fdf | Dashboard implementation | Implementación de dashboard. | 31/05/2026 |
+| #07 | https://github.com/CeleviGrotix/Grotix_Mobile | develop | 10653ce | Reports implementation | Implementación de reportes. | 31/05/2026 |
+| #08 | https://github.com/CeleviGrotix/Grotix_Mobile | develop | ec558f2 | i18n and Profile implementation | Soporte multilenguaje y perfil. | 31/05/2026 |
+| #09 | https://github.com/CeleviGrotix/Grotix_Mobile | develop | 905deff | Initial design of fundamental views | Diseño inicial de vistas. | 31/05/2026 |
+| #10 | https://github.com/CeleviGrotix/Grotix_Mobile | develop | 9cd2a02 | Updates in navigation | Actualización de navegación. | 31/05/2026 |
+| #11 | https://github.com/CeleviGrotix/Grotix_Mobile | develop | f5b5784 | Main shell - Navigation initial implementation | Actualización de funcionalidades. | 31/05/2026 |
+| #12 | https://github.com/CeleviGrotix/Grotix_Mobile | develop | 7420fdf | Fixing zone detail view | Actualización de funcionalidades. | 1/06/2026 |
+| #13 | https://github.com/CeleviGrotix/Grotix_Mobile | develop | 2f257c5 | Creating zone detail view | Actualización de funcionalidades. | 1/06/2026 |
+| #14 | https://github.com/CeleviGrotix/Grotix_Mobile | develop | 16854d8 | Fixing some zone issues | Actualización de funcionalidades. | 1/06/2026 |
+| #15 | https://github.com/CeleviGrotix/Grotix_Mobile | develop | 91e07bb | Improvement in data from auth user | Actualización de funcionalidades. | 1/06/2026 |
+| #16 | https://github.com/CeleviGrotix/Grotix_Mobile | develop | 1d121c9 | Zones view improvement | Actualización de funcionalidades. | 1/06/2026 |
+| #17 | https://github.com/CeleviGrotix/Grotix_Mobile | develop | f94957b | Zones application | Actualización de funcionalidades. | 1/06/2026 |
+| #18 | https://github.com/CeleviGrotix/Grotix_Mobile | develop | 38fae52 | Supervision application | Actualización de funcionalidades. | 1/06/2026 |
+| #19 | https://github.com/CeleviGrotix/Grotix_Mobile | develop | 2b7e571 | creating new entities | Actualización de funcionalidades. | 1/06/2026 |
+| #20 | https://github.com/CeleviGrotix/Grotix_Mobile | develop | 9bd5a17 | Updating list of zones in AI Image Processing | Actualización de funcionalidades. | 2/06/2026 |
+| #21 | https://github.com/CeleviGrotix/Grotix_Mobile | develop | 0b007b9 | Main View in Dashboard updates | Actualización de funcionalidades. | 2/06/2026 |
+| #22 | https://github.com/CeleviGrotix/Grotix_Mobile | develop | 64aaf40 | Dashbard updating | Actualización de funcionalidades. | 2/06/2026 |
+| #23 | https://github.com/CeleviGrotix/Grotix_Mobile | develop | 47f966c | mocking notifications | Actualización de funcionalidades. | 5/06/2026 |
+| #24 | https://github.com/CeleviGrotix/Grotix_Mobile | develop | 186315f | Improving People tab in dashboard | Actualización de funcionalidades. | 5/06/2026 |
+| #25 | https://github.com/CeleviGrotix/Grotix_Mobile | develop | 9b7b188 | Fixing Settings tab | Actualización de funcionalidades. | 5/06/2026 |
+| #26 | https://github.com/CeleviGrotix/Grotix_Mobile | develop | df97d4a | Publish APK to GitHub Releases | Actualización de funcionalidades. | 6/06/2026 |
+| #27 | https://github.com/CeleviGrotix/Grotix_Mobile | develop | 44d3ed9 | Fix Flutter version in CI | Actualización de funcionalidades. | 6/06/2026 |
+| #28 | https://github.com/CeleviGrotix/Grotix_Mobile | develop | 647fdae | Add APK build workflow | Actualización de funcionalidades. | 6/06/2026 |
+| #29 | https://github.com/CeleviGrotix/Grotix_Mobile | develop | c710f2f | Some updates in Register and Profile | Actualización de funcionalidades. | 6/06/2026 |
+| #30 | https://github.com/CeleviGrotix/Grotix_Mobile | develop | 0b19316 | Update AndroidManifest.xml | Actualización de funcionalidades. | 7/06/2026 |
+| #31 | https://github.com/CeleviGrotix/Grotix_Mobile | develop | 33e11f1 | Update build-apk.yml | Actualización de funcionalidades. | 7/06/2026 |
+| #32 | https://github.com/CeleviGrotix/Grotix_Mobile | develop | 63fe4d4 | Trigger v1.0.0 release | Actualización de funcionalidades. | 7/06/2026 |
+| #33 | https://github.com/CeleviGrotix/Grotix_Mobile | develop | 62bed46 | Trigger release build | Actualización de funcionalidades. | 7/06/2026 |
+| #34 | https://github.com/CeleviGrotix/Grotix_Mobile | develop | dd28a14 | Release v1.0.0 | Actualización de funcionalidades. | 7/06/2026 |
+| #35 | https://github.com/CeleviGrotix/Grotix_Mobile | develop | b4f20c7 | Add INTERNET permission for release build | Actualización de funcionalidades. | 7/06/2026 |
+
+**Repository: Grotix_Crop_Analysis**
+
+- **Branch:** HttpCrop
+- **Total Commits:** 3
+
+| Secuencia | Repository | Branch | Commit Id | Commit Message | Commit Message Body | Committed on |
+|---|---|---|---|---|---|---|
+| #01 | https://github.com/CeleviGrotix/Grotix_Crop_Analysis | HttpCrop | daa4c79 | esp-http-IA | Implementación de integración HTTP para servicios de inteligencia artificial. | 4/06/2026 |
+| #02 | https://github.com/CeleviGrotix/Grotix_Crop_Analysis | HttpCrop | 37c9348 | IA-HTTP | Configuración de comunicación entre módulos de IA y servicios HTTP. | 4/06/2026 |
+| #03 | https://github.com/CeleviGrotix/Grotix_Crop_Analysis | HttpCrop | 4bd9b98 | Initial commit | Inicialización del proyecto y estructura base del repositorio. | 4/06/2026 |
+
+**Repository: Grotix_Web_Services**
+
+- **Branch:** develop
+- **Total Commits:** 61
+
+| Secuencia | Repository | Branch | Commit Id | Commit Message | Commit Message Body | Committed on |
+|---|---|---|---|---|---|---|
+| #01 | https://github.com/CeleviGrotix/Grotix_Web_Services | develop | c8acb77 | Add irrigation cycle bounded context | Implementación de hardware. | 26/05/2026 |
+| #02 | https://github.com/CeleviGrotix/Grotix_Web_Services | develop | f021636 | Add hardware device bounded context | Implementación de telemetría. | 26/05/2026 |
+| #03 | https://github.com/CeleviGrotix/Grotix_Web_Services | develop | 2ebc912 | Add telemetry bc | Mejoras en perfiles. | 26/05/2026 |
+| #04 | https://github.com/CeleviGrotix/Grotix_Web_Services | develop | 105c569 | refactor: formalize Profiles persistence in dedicated DbContext | Refactorización del sistema. | 26/05/2026 |
+| #05 | https://github.com/CeleviGrotix/Grotix_Web_Services | develop | fc1c5aa | refactor: split cultivation area persistence into dedicated DbContext | Refactorización del sistema. | 26/05/2026 |
+| #06 | https://github.com/CeleviGrotix/Grotix_Web_Services | develop | 7a7dfb4 | refactor split IAM persistence into dedicated DbContext | Corrección de incidencias. | 26/05/2026 |
+| #07 | https://github.com/CeleviGrotix/Grotix_Web_Services | develop | 8d1d4b9 | chore fix nullability warnings | Refactorización del sistema. | 26/05/2026 |
+| #08 | https://github.com/CeleviGrotix/Grotix_Web_Services | develop | 49138af | refactor decouple IAM and modularize service wiring | Actualización de migraciones. | 26/05/2026 |
+| #09 | https://github.com/CeleviGrotix/Grotix_Web_Services | develop | e05ef29 | fix migration snapshot drift in Grotix.Persistence | Refactorización del sistema. | 26/05/2026 |
+| #10 | https://github.com/CeleviGrotix/Grotix_Web_Services | develop | 4a3a4a7 | refactor: split backend into class libraries and extract shared persistence | Refactorización del sistema. | 26/05/2026 |
+| #11 | https://github.com/CeleviGrotix/Grotix_Web_Services | develop | 5a31c3f | refactor: isolate shared service contracts | Refactorización del sistema. | 26/05/2026 |
+| #12 | https://github.com/CeleviGrotix/Grotix_Web_Services | develop | 87136bb | refactor: extract auth | Actualización de funcionalidades. | 26/05/2026 |
+| #13 | https://github.com/CeleviGrotix/Grotix_Web_Services | develop | c0bec30 | feat(backend): cloud diagram tables and maintenance/analysis APIs | Implementación de alertas. | 27/05/2026 |
+| #14 | https://github.com/CeleviGrotix/Grotix_Web_Services | develop | 31386c7 | Implement alerts | Incorporación de endpoint. | 27/05/2026 |
+| #15 | https://github.com/CeleviGrotix/Grotix_Web_Services | develop | c8be4e0 | Add endpoints for sensors and actuators | Corrección de incidencias. | 27/05/2026 |
+| #16 | https://github.com/CeleviGrotix/Grotix_Web_Services | develop | a91cb86 | fix | Corrección de incidencias. | 27/05/2026 |
+| #17 | https://github.com/CeleviGrotix/Grotix_Web_Services | develop | 87e3750 | Fix | Ajustes en endpoint. | 27/05/2026 |
+| #18 | https://github.com/CeleviGrotix/Grotix_Web_Services | develop | 0c57a46 | Delete duplicate endpoint | Actualización de funcionalidades. | 27/05/2026 |
+| #19 | https://github.com/CeleviGrotix/Grotix_Web_Services | develop | bcfef1c | Add data persistence rules | Incorporación de endpoint. | 27/05/2026 |
+| #20 | https://github.com/CeleviGrotix/Grotix_Web_Services | develop | 9dd0ec6 | Add get members per association endpoint | Corrección de incidencias. | 27/05/2026 |
+| #21 | https://github.com/CeleviGrotix/Grotix_Web_Services | develop | 8f920b8 | Fix zone member management | Actualización de funcionalidades. | 27/05/2026 |
+| #22 | https://github.com/CeleviGrotix/Grotix_Web_Services | develop | ec7114c | Link farm to association | Corrección de incidencias. | 27/05/2026 |
+| #23 | https://github.com/CeleviGrotix/Grotix_Web_Services | develop | a7bd5da | Fix contract creation | Actualización de funcionalidades. | 27/05/2026 |
+| #24 | https://github.com/CeleviGrotix/Grotix_Web_Services | develop | 2d3c4a3 | Implement search handler | Actualización de migraciones. | 27/05/2026 |
+| #25 | https://github.com/CeleviGrotix/Grotix_Web_Services | develop | 26cbbda | fix(migrations): enable EF tooling for hardware/irrigation APIs and sync telemetry/hardware/irrigation database models | Implementación de hardware. | 27/05/2026 |
+| #26 | https://github.com/CeleviGrotix/Grotix_Web_Services | develop | b820126 | feat(hardware) | Integración de clima. | 27/05/2026 |
+| #27 | https://github.com/CeleviGrotix/Grotix_Web_Services | develop | 4801361 | feat(irrigation): add weather forecast adapter | Integración con RabbitMQ. | 27/05/2026 |
+| #28 | https://github.com/CeleviGrotix/Grotix_Web_Services | develop | d13d420 | feat(iot): publish and consume actuator commands via RabbitMQ for irrigation control | Mejoras en perfiles. | 27/05/2026 |
+| #29 | https://github.com/CeleviGrotix/Grotix_Web_Services | develop | e9647d8 | feat(profile): add persisted user notifications inbox and APIs | Implementación de riego. | 27/05/2026 |
+| #30 | https://github.com/CeleviGrotix/Grotix_Web_Services | develop | 91f23e9 | Add post for irrigation schedule | Integración de cambios. | 27/05/2026 |
+| #31 | https://github.com/CeleviGrotix/Grotix_Web_Services | develop | 4fa3259 | Merge branch 'feat/cultivation_area' into develop | Integración de cambios. | 27/05/2026 |
+| #32 | https://github.com/CeleviGrotix/Grotix_Web_Services | develop | 7069ec3 | Merge branch 'feat/profile' into develop | Actualización de configuración. | 27/05/2026 |
+| #33 | https://github.com/CeleviGrotix/Grotix_Web_Services | develop | 600fa01 | chore(config): load env vars from .env at startup and fix nullable warnings | Actualización de configuración. | 27/05/2026 |
+| #34 | https://github.com/CeleviGrotix/Grotix_Web_Services | develop | 44f481b | Add .env configuration | Actualización de funcionalidades. | 27/05/2026 |
+| #35 | https://github.com/CeleviGrotix/Grotix_Web_Services | develop | 64ec682 | Add parameters to users patch for admins | Incorporación de endpoint. | 27/05/2026 |
+| #36 | https://github.com/CeleviGrotix/Grotix_Web_Services | develop | f297711 | feat(cultivation): add zone member management endpoints | Corrección de incidencias. | 27/05/2026 |
+| #37 | https://github.com/CeleviGrotix/Grotix_Web_Services | develop | d934e39 | unify prefix for controllers | Actualización de configuración. | 27/05/2026 |
+| #38 | https://github.com/CeleviGrotix/Grotix_Web_Services | develop | d527f2f | normalize local env-based configuration across services and gateway | Actualización de migraciones. | 27/05/2026 |
+| #39 | https://github.com/CeleviGrotix/Grotix_Web_Services | develop | 2496748 | Fix migrations | Actualización de migraciones. | 30/05/2026 |
+| #40 | https://github.com/CeleviGrotix/Grotix_Web_Services | develop | d2ef387 | Fix migrations | Actualización de funcionalidades. | 30/05/2026 |
+| #41 | https://github.com/CeleviGrotix/Grotix_Web_Services | develop | 0d33cf5 | Small changes in appsettings for gateway | Incorporación de endpoint. | 31/05/2026 |
+| #42 | https://github.com/CeleviGrotix/Grotix_Web_Services | develop | 8bb49be | Add endpoint | Corrección de incidencias. | 31/05/2026 |
+| #43 | https://github.com/CeleviGrotix/Grotix_Web_Services | develop | 507b84d | Fix gateway | Actualización de configuración. | 31/05/2026 |
+| #44 | https://github.com/CeleviGrotix/Grotix_Web_Services | develop | e13d4a9 | Add configuration scripts | Actualización de migraciones. | 31/05/2026 |
+| #45 | https://github.com/CeleviGrotix/Grotix_Web_Services | develop | 02e18c5 | Fix migration | Actualización de funcionalidades. | 31/05/2026 |
+| #46 | https://github.com/CeleviGrotix/Grotix_Web_Services | develop | e037003 | Remove api restrictions | Corrección de incidencias. | 31/05/2026 |
+| #47 | https://github.com/CeleviGrotix/Grotix_Web_Services | develop | 1a805ee | Fix | Actualización de funcionalidades. | 31/05/2026 |
+| #48 | https://github.com/CeleviGrotix/Grotix_Web_Services | develop | bb4bba7 | Adjust sensor reading parameters | Actualización de migraciones. | 31/05/2026 |
+| #49 | https://github.com/CeleviGrotix/Grotix_Web_Services | develop | 9b0096f | Fix migrations | Ajustes en endpoint. | 31/05/2026 |
+| #50 | https://github.com/CeleviGrotix/Grotix_Web_Services | develop | a30b7ff | Fix endpoint | Actualización de funcionalidades. | 1/06/2026 |
+| #51 | https://github.com/CeleviGrotix/Grotix_Web_Services | develop | b14ceb1 | Add health check for zone | Integración de cambios. | 1/06/2026 |
+| #52 | https://github.com/CeleviGrotix/Grotix_Web_Services | develop | 774a972 | Merge branch 'develop' of https://github.com/CeleviGrotix/Grotix_Web_Services into develop | Incorporación de endpoint. | 1/06/2026 |
+| #53 | https://github.com/CeleviGrotix/Grotix_Web_Services | develop | fa78824 | Add endpoints | Actualización de funcionalidades. | 1/06/2026 |
+| #54 | https://github.com/CeleviGrotix/Grotix_Web_Services | develop | bd92bde | Updating migrate.ps1 | Actualización de funcionalidades. | 1/06/2026 |
+| #55 | https://github.com/CeleviGrotix/Grotix_Web_Services | develop | 520163f | Connection String changes | Actualización de funcionalidades. | 1/06/2026 |
+| #56 | https://github.com/CeleviGrotix/Grotix_Web_Services | develop | 724261e | Adding connection string in migration command file | Ajustes en endpoint. | 1/06/2026 |
+| #57 | https://github.com/CeleviGrotix/Grotix_Web_Services | develop | ab2dcc1 | Update permissions for endpoint | Ajustes en endpoint. | 2/06/2026 |
+| #58 | https://github.com/CeleviGrotix/Grotix_Web_Services | develop | 1b7a553 | Change response for endpoint | Configuración de despliegue. | 5/06/2026 |
+| #59 | https://github.com/CeleviGrotix/Grotix_Web_Services | develop | 086273c | Add deployment | Configuración de despliegue. | 5/06/2026 |
+| #60 | https://github.com/CeleviGrotix/Grotix_Web_Services | develop | efc8978 | Add compressed file for deploy | Corrección de incidencias. | 5/06/2026 |
+| #61 | https://github.com/CeleviGrotix/Grotix_Web_Services | develop | d6c95b1 | Fix business logic |  | 5/06/2026 |
 
 
+#### 6.2.2.5. Testing Suite Evidence for Sprint Review
+
+Durante el Sprint 2, se consolidó la estrategia de calidad de Grotix mediante la implementación de una suite de pruebas exhaustiva para los seis Bounded Contexts desarrollados: **Telemetry**, **Irrigation Cycle**, **Cultivation Area**, **Hardware Device**, **Profiles** y **Crop Analysis**.
+
+En el nivel unitario, se desarrollaron un total de **50 pruebas automatizadas** enfocadas en la integridad de los dominios y la lógica de negocio. Estas pruebas validan los invariantes de los agregados, como `IrrigationCycleRecord` o `Microcontroller`, la correcta normalización de los Value Objects y el comportamiento esperado de los servicios de aplicación y motores de diagnóstico bajo diversos escenarios, asegurando una lógica robusta mediante el uso intensivo de mocks.
+
+En el nivel de integración, se implementaron **14 tests** que validan la interacción entre los controladores REST, las capas de servicio y la persistencia. Mediante el uso de bases de datos en memoria (`EF Core InMemory`) y `TestClients` de FastAPI, se verificó el flujo completo de los endpoints, asegurando que las reglas de autorización (`RBAC`) y las validaciones de entrada funcionen correctamente antes de interactuar con la infraestructura real.
+
+Finalmente, en el nivel de aceptación (`BDD`), se redactaron **18 escenarios Gherkin** que cubren los criterios de aceptación críticos de las User Stories del Sprint. Estos tests, implementados mediante SpecFlow (.NET) y Pytest-bdd (Python), garantizan que la funcionalidad desarrollada esté alineada con las necesidades de negocio, cubriendo escenarios clave como la detección de anomalías en telemetría, el control hídrico automatizado, la gestión de mantenimiento técnico y la inferencia de salud vegetal.
+
+**Repositorios de testing**
+
+- **Grotix Web Services (Telemetry, Irrigation Cycle, Profile, Cultivation Area, Hardware Device – rama de testing):** https://github.com/CeleviGrotix/Grotix_Web_Services/tree/test/sprint-2-testing-suite
+- **Crop Analysis (rama de testing):** https://github.com/CeleviGrotix/Crop-analysis/tree/test/spring_2_testing_suite
+
+**Commits de la suite de testing**
+
+| Secuencia | Repository | Branch | Commit Id | Commit Message | Committed on (Date) |
+| --- | --- | --- | --- | --- | --- |
+| #01 | https://github.com/CeleviGrotix/Grotix_Web_Services/tree/test/sprint-2-testing-suite | test/sprint-2-testing-suite | 24e36ac66f3ef941906e48f0b7eff9f009baad5e | testing-suite: Add Unit, Integration and BDD Tests for Telemetry Bounded Context | 03/06/2026 |
+| #02 | https://github.com/CeleviGrotix/Grotix_Web_Services/tree/test/sprint-2-testing-suite | test/sprint-2-testing-suite | 2784830113cd0e0476c73eab5010f9e4931d1350 | testing-suite: Add Unit, Integration and BDD Tests for Irrigation Cycle Bounded Context | 03/06/2026 |
+| #03 | https://github.com/CeleviGrotix/Grotix_Web_Services/tree/test/sprint-2-testing-suite | test/sprint-2-testing-suite | b3d058020be2d5aacd996fa303ad1acc3d76f8a4 | testing-suite: Add Unit, Integration and BDD Tests for Cultivation Area Bounded Context | 03/06/2026 |
+| #04 | https://github.com/CeleviGrotix/Grotix_Web_Services/tree/test/sprint-2-testing-suite | test/sprint-2-testing-suite | 6aeca44f84b5f5a7a43952f548987bfe0d900b5f | testing-suite: Add Unit, Integration and BDD Tests for Hardware Device Bounded Context | 03/06/2026 |
+| #05 | https://github.com/CeleviGrotix/Grotix_Web_Services/tree/test/sprint-2-testing-suite | test/sprint-2-testing-suite | 377c1febed88dfea305d8a173d04a06f05abdf60 | testing-suite: Add Unit, Integration and BDD Tests for Profile Bounded Context | 03/06/2026 |
+| #06 | https://github.com/CeleviGrotix/Crop-analysis/tree/test/spring_2_testing_suite | test/sprint_2_testing_suite | 3ce6ae366ffdce7942c0d4960ce18dffec08f734 | Test: Add Unit, Integration and BDD tests for Crop Analysis Service | 06/06/2026 |
+
+**Control de Casos de Prueba - Telemetry Unit Testing**
+
+| Test Case ID | Componente / Clase | Tipo de Prueba | Descripción del Escenario | Datos de Entrada (Input) | Resultado Esperado (Output) | Estado |
+| --- | --- | --- | --- | --- | --- | --- |
+| TC-U01 | ReadingRangeValidator | Unitaria (xUnit) | Lectura física válida | [0-100], Valor 50 | True | Pasó |
+| TC-U02 | ReadingRangeValidator | Unitaria (xUnit) | Lectura física menor al mínimo | [0-100], Valor -10 | False | Pasó |
+| TC-U03 | ReadingRangeValidator | Unitaria (xUnit) | Lectura física mayor al máximo | [0-100], Valor 150 | False | Pasó |
+| TC-U04 | ThresholdEvaluator | Unitaria (xUnit) | Lectura dentro de umbral | 50, Min 20, Max 80 | False (No fuera de rango) | Pasó |
+| TC-U05 | ThresholdEvaluator | Unitaria (xUnit) | Lectura menor al umbral mínimo | 10, Min 20, Max 80 | True (Fuera de rango) | Pasó |
+| TC-U06 | ThresholdEvaluator | Unitaria (xUnit) | Detectar brecha mínima | 10, Min 20, Max 80 | Retorna 20 | Pasó |
+| TC-U07 | ThresholdEvaluator | Unitaria (xUnit) | Detectar brecha máxima | 90, Min 20, Max 80 | Retorna 80 | Pasó |
+| TC-U08 | MovingAverageFilter | Unitaria (xUnit) | Suavizado inicial | Lista vacía, Valor 25.5 | Retorna 25.5 | Pasó |
+| TC-U09 | MovingAverageFilter | Unitaria (xUnit) | Suavizado con historial | Historial [10, 20], Valor 30 | Retorna 20 | Pasó |
+| TC-U10 | TelemetryIngestService | Unitaria (xUnit) | Ingesta de lectura y alerta | Evento de telemetría (25.5 temp) | Se llama a AddAsync 1 vez | Pasó |
+
+**Control de Casos de Prueba - Telemetry Integration Testing**
+
+| Test Case ID | Componente / Clase | Tipo de Prueba | Descripción del Escenario | Datos de Entrada (Input) | Resultado Esperado (Output) | Estado |
+| --- | --- | --- | --- | --- | --- | --- |
+| TC-I01 | TelemetryIngestController | Integración (xUnit) | Ingesta válida como admin | Request con datos, Rol Admin | 202 Accepted | Pasó |
+| TC-I02 | TelemetryIngestController | Integración (xUnit) | Validación de dispositivo | DeviceId 0 | 400 Bad Request | Pasó |
+| TC-I03 | TelemetryIngestController | Integración (xUnit) | Validación de permisos | Rol "guest" | 403 Forbidden | Pasó |
+
+**Control de Casos de Prueba - Telemetry Acceptance Testing**
+
+| Test Case ID | ID Historia | Tipo de Prueba | Descripción del Escenario | Acción / Input | Resultado Esperado | Estado |
+| --- | --- | --- | --- | --- | --- | --- |
+| TC-A01 | US11 | Aceptación (BDD) | Detección de lectura anómala | Sensor [0-100], valor 150 | Marcado como inválida | Pasó |
+| TC-A02 | US13 | Aceptación (BDD) | Suavizado de señal | Historial [40, 42], nuevo 44 | Promedio 42 | Pasó |
+| TC-A03 | US18 | Aceptación (BDD) | Evaluación de umbrales críticos | Umbrales [20, 80], valor 10 | Fuera de rango (BELOW_MIN) | Pasó |
+
+<img src="https://imgur.com/U1um0WH.png">
+
+**Control de Casos de Prueba - Irrigation Cycle Unit Testing**
+
+| Test Case ID | Componente / Clase | Tipo de Prueba | Descripción del Escenario | Datos de Entrada (Input) | Resultado Esperado (Output) | Estado |
+| --- | --- | --- | --- | --- | --- | --- |
+| TC-U11 | IrrigationCalculator | Unitaria (xUnit) | Cálculo con entradas nulas | currentHumidity=null, target=60.0 | Retorna 25 (Default) | Pasó |
+| TC-U12 | IrrigationCalculator | Unitaria (xUnit) | Humedad actual >= objetivo | current=65.0, target=60.0 | Retorna 25 (Default) | Pasó |
+| TC-U13 | IrrigationCalculator | Unitaria (xUnit) | Cálculo con déficit válido | current=40.0, target=60.0 | Retorna 50 | Pasó |
+| TC-U14 | IrrigationCalculator | Unitaria (xUnit) | Estimación de duración | 12 Litros / 5L/min | Retorna 3 minutos | Pasó |
+| TC-U15 | IrrigationCalculator | Unitaria (xUnit) | Resolución de duración | 50 Litros, Req 15 min | Retorna 15 | Pasó |
+| TC-U16 | IrrigationCycleRecord | Unitaria (xUnit) | Constructor válido | zoneId=1, vol=50, dur=10 | Status = IN_PROGRESS | Pasó |
+| TC-U17 | IrrigationCycleRecord | Unitaria (xUnit) | Volumen negativo | vol = -10 | Lanza ArgumentException | Pasó |
+| TC-U18 | IrrigationCycleRecord | Unitaria (xUnit) | Completado de ciclo | actualVolume = 45.0 | Status = COMPLETED, EndTime presente | Pasó |
+| TC-U19 | IrrigationCycleRecord | Unitaria (xUnit) | Aborto de ciclo | Razón = "MANUAL_CANCEL" | Status = ABORTED, Razón guardada | Pasó |
+| TC-U20 | IrrigationCommandSvc | Unitaria (xUnit) | Zona inexistente | zoneId = 99 | Lanza ArgumentException | Pasó |
+
+**Control de Casos de Prueba - Irrigation Cycle Integration Testing**
+
+| Test Case ID | Componente / Clase | Tipo de Prueba | Descripción del Escenario | Datos de Entrada (Input) | Resultado Esperado (Output) | Estado |
+| --- | --- | --- | --- | --- | --- | --- |
+| TC-I04 | IrrigationController | Integración (xUnit) | Inicio de riego manual | zoneId=1, Payload válido | 200 OK con cycleId | Pasó |
+| TC-I05 | IrrigationController | Integración (xUnit) | Acceso a zona no autorizada | zoneId=1, isAuthenticated=false | 403 Forbidden | Pasó |
+| TC-I06 | IrrigationController | Integración (xUnit) | Ciclo activo en zona existe | zoneId=1, Ciclo ya existe | 409 Conflict | Pasó |
+
+**Control de Casos de Prueba - Irrigation Cycle Acceptance Testing**
+
+| Test Case ID | ID Historia | Tipo de Prueba | Descripción del Escenario | Acción / Input | Resultado Esperado | Estado |
+| --- | --- | --- | --- | --- | --- | --- |
+| TC-A04 | US20 (Sc2) | Aceptación (BDD) | Cálculo automático de volumen | Objetivo 60%, Actual 40% | Necesidad 50L, duración 10min | Pasó |
+| TC-A05 | US19 (Sc1) | Aceptación (BDD) | Registro de ciclo manual | Vol 30L, Dur 6min | Status = IN_PROGRESS | Pasó |
+| TC-A06 | US19 (Sc2) | Aceptación (BDD) | Aborto de riego | Razón "Lluvia detectada" | Status = ABORTED, Razón guardada | Pasó |
+
+<img src="https://imgur.com/t0VUo3A.png">
+
+**Control de Casos de Prueba - Cultivation Area Unit Testing**
+
+| Test Case ID | Componente / Clase | Tipo de Prueba | Descripción del Escenario | Datos de Entrada (Input) | Resultado Esperado (Output) | Estado |
+| --- | --- | --- | --- | --- | --- | --- |
+| TC-U21 | DiagnosisEngine | Unitaria (pytest) | Formateo correcto del reporte | Diccionario con respuesta JSON de la IA: health_score, detected_phase, etc. | Reporte formateado correctamente | Pasó |
+| TC-U22 | DiagnosisEngine | Unitaria (pytest) | Detección de estado crítico | health_score = 69.9 | Retorna True | Pasó |
+| TC-U23 | DiagnosisEngine | Unitaria (pytest) | Detección de estado saludable | health_score = 85.0 | Retorna False | Pasó |
+| TC-U24 | Handler | Unitaria (pytest) | Ejecución exitosa y guardado | zone_id=10, path="/img/crop.jpg" | Repositorio llama a save con nombre limpio | Pasó |
+| TC-U25 | Handler | Unitaria (pytest) | Extracción correcta de nombre archivo | image_path path="C:/.../plant.png" | guardado es "plant.png" | Pasó |
+| TC-U26 | Handler | Unitaria (pytest) | Propagación de errores de IA | Exception("AI Error") | Lanza Exception | Pasó |
+| TC-U27 | AIAdapter | Unitaria (pytest) | Petición exitosa a servicio IA | Archivo de imagen válido | Retorna JSON de predicción | Pasó |
+| TC-U28 | AIAdapter | Unitaria (pytest) | Servidor caído | Error 500 del servicio IA | Lanza Exception personalizada | Pasó |
+| TC-U29 | AIAdapter | Unitaria (pytest) | Timeout de red | Timeout en petición IA | Lanza Exception personalizada | Pasó |
+| TC-U30 | DiagnosisEngine | Unitaria (pytest) | Borde de salud (70.0) | health_score = 70.0 | Retorna False | Pasó |
+
+**Control de Casos de Prueba - Cultivation Area Integration Testing**
+
+| Test Case ID | Componente / Clase | Tipo de Prueba | Descripción del Escenario | Datos de Entrada (Input) | Resultado Esperado (Output) | Estado |
+| --- | --- | --- | --- | --- | --- | --- |
+| TC-I07 | AnalysisController | Integración (FastAPI) | Procesamiento completo de zona | Imagen multipart/form-data | Status 200 OK y JSON de análisis | Pasó |
+
+**Control de Casos de Prueba - Cultivation Area Acceptance Testing**
+
+| Test Case ID | ID Historia | Tipo de Prueba | Descripción del Escenario | Acción / Input | Resultado Esperado | Estado |
+| --- | --- | --- | --- | --- | --- | --- |
+| TC-A07 | US24 (Sc1) | Aceptación (BDD) | Categorización de crecimiento | Imagen pre-procesada | Clasificación de fase y salud | Pasó |
+| TC-A08 | US24 (Sc2) | Aceptación (BDD) | Umbral de confianza < 75% | Confianza = 0.60 | Estado marcado como "Indeterminado" | Pasó |
+| TC-A09 | US24 (Sc3) | Aceptación (BDD) | Actualización automática BD | Diagnóstico "Floración" | Repositorio save llamado con "Floración" | Pasó |
+
+<img src="https://imgur.com/LDBR2Qd.png">
+
+**Control de Casos de Prueba - Hardware Unit Testing**
+
+| Test Case ID | Componente / Clase | Tipo de Prueba | Descripción del Escenario | Datos de Entrada (Input) | Resultado Esperado (Output) | Estado |
+| --- | --- | --- | --- | --- | --- | --- |
+| TC-U31 | Microcontroller | Unitaria (xUnit) | Creación válida de dispositivo | Model, MAC, ZoneId | Instancia creada, Status: OFFLINE | Pasó |
+| TC-U32 | Microcontroller | Unitaria (xUnit) | Validación de modelo vacío | Model="" | Lanza ArgumentException | Pasó |
+| TC-U33 | Microcontroller | Unitaria (xUnit) | Validación de MAC vacía | MacAddress="" | Lanza ArgumentException | Pasó |
+| TC-U34 | Microcontroller | Unitaria (xUnit) | Vincular a zona | ZoneId=5 | ZoneId asignado correctamente | Pasó |
+| TC-U35 | Microcontroller | Unitaria (xUnit) | Zona inválida | ZoneId=0 | Lanza ArgumentException | Pasó |
+| TC-U36 | TechnicalMaintenance | Unitaria (xUnit) | Registro de mantenimiento | StaffId, DeviceId, Tipo | Instancia creada | Pasó |
+| TC-U37 | TechnicalMaintenance | Unitaria (xUnit) | StaffId inválido | StaffId=0 | Lanza ArgumentException | Pasó |
+| TC-U38 | MaintenanceService | Unitaria (xUnit) | Log sin dispositivo | DeviceId=1, no existe en DB | Lanza KeyNotFoundException | Pasó |
+| TC-U39 | MaintenanceService | Unitaria (xUnit) | Registro técnico válido | Staff, Device, Datos | Retorna entidad creada | Pasó |
+| TC-U40 | MaintenanceService | Unitaria (xUnit) | Listado de logs | DeviceId=1, Límite 10 | Llama al repositorio una vez | Pasó |
+
+**Control de Casos de Prueba - Hardware Integration Testing**
+
+| Test Case ID | Componente / Clase | Tipo de Prueba | Descripción del Escenario | Datos de Entrada (Input) | Resultado Esperado (Output) | Estado |
+| --- | --- | --- | --- | --- | --- | --- |
+| TC-I08 | MaintenanceController | Integración (xUnit) | Registro bitácora mantenimiento | Action="Reinicio", Status="OK" | 201 Created | Pasó |
+| TC-I09 | MaintenanceController | Integración (xUnit) | Fallo por dispositivo inexistente | DeviceId=99 | 404 Not Found | Pasó |
+| TC-I10 | MaintenanceController | Integración (xUnit) | Consulta de logs | DeviceId=1, Límite=50 | 200 OK | Pasó |
+
+**Control de Casos de Prueba - Hardware Acceptance Testing**
+
+| Test Case ID | ID Historia | Tipo de Prueba | Descripción del Escenario | Acción / Input | Resultado Esperado | Estado |
+| --- | --- | --- | --- | --- | --- | --- |
+| TC-A10 | US12 | Aceptación (BDD) | Mantenimiento de dispositivos | Estado="EN_MANTENIMIENTO" | Estado actualizado | Pasó |
+| TC-A11 | US12 | Aceptación (BDD) | Bitácora técnica | Descrip: "Limpieza sensor" | Registro con fecha actual | Pasó |
+| TC-A12 | US15 | Aceptación (BDD) | Reubicación/Desvinculación | ZoneId = Null | Acción: Desvinculación | Pasó |
+
+<img src="https://imgur.com/0RJfMjZ.png">
+
+**Control de Casos de Prueba - Profile Unit Testing**
+
+| Test Case ID | Componente / Clase | Tipo de Prueba | Descripción del Escenario | Datos de Entrada (Input) | Resultado Esperado (Output) | Estado |
+| --- | --- | --- | --- | --- | --- | --- |
+| TC-U41 | User (Aggregate) | Unitaria (xUnit) | Construcción de usuario válido | ID=100, Nombre="Juan Perez" | Instancia creada, Activo=True | Pasó |
+| TC-U42 | User (Aggregate) | Unitaria (xUnit) | Asignación de rol inválido | RoleId=0 | Lanza ArgumentException | Pasó |
+| TC-U43 | User (Aggregate) | Unitaria (xUnit) | Actualización de perfil | Nombre nuevo, TaxId nuevo | Propiedades actualizadas | Pasó |
+| TC-U44 | Contract (Aggregate) | Unitaria (xUnit) | Validación de fechas | Fecha fin < Fecha inicio | Lanza ArgumentException | Pasó |
+| TC-U45 | Contract (Aggregate) | Unitaria (xUnit) | Validación de límites negativos | MaxZones = -1 | Lanza ArgumentException | Pasó |
+| TC-U46 | Contract (Aggregate) | Unitaria (xUnit) | Actualización de límites | Nuevos límites, Suspended=true | Propiedades actualizadas | Pasó |
+| TC-U47 | UserCommandSvc | Unitaria (xUnit) | Registro con rol inexistente | RoleId=99 | Lanza ArgumentException | Pasó |
+| TC-U48 | UserCommandSvc | Unitaria (xUnit) | Identidad duplicada | IdentityId ya existe en BD | Lanza ArgumentException | Pasó |
+| TC-U49 | UserCommandSvc | Unitaria (xUnit) | Edición de perfil inexistente | UserId=1 (no existe) | Lanza KeyNotFoundException | Pasó |
+| TC-U50 | UserCommandSvc | Unitaria (xUnit) | Asignación de rol válida | UserId=1, RoleId=2 | Rol actualizado a 2 | Pasó |
+
+**Control de Casos de Prueba - Profile Integration Testing**
+
+| Test Case ID | Componente / Clase | Tipo de Prueba | Descripción del Escenario | Datos de Entrada (Input) | Resultado Esperado (Output) | Estado |
+| --- | --- | --- | --- | --- | --- | --- |
+| TC-I11 | UserProfileController | Integración (xUnit) | Obtención de perfil propio | IdentityId=100 (Token) | 200 OK con datos de perfil | Pasó |
+| TC-I12 | UserProfileController | Integración (xUnit) | Patch exitoso de perfil propio | UserId=1 (Dueño) | 200 OK | Pasó |
+| TC-I13 | UserProfileController | Integración (xUnit) | Acceso no autorizado a perfil ajeno | Request a UserId=2, Caller=1 | 403 Forbidden | Pasó |
+
+**Control de Casos de Prueba - Profile Acceptance Testing**
+
+| Test Case ID | ID Historia | Tipo de Prueba | Descripción del Escenario | Acción / Input | Resultado Esperado | Estado |
+| --- | --- | --- | --- | --- | --- | --- |
+| TC-A13 | US26 | Aceptación (BDD) | Modificación de perfil | Cambiar nombre y teléfono | Nombre reflejado correctamente | Pasó |
+| TC-A14 | US11 | Aceptación (BDD) | Ajuste de límites contrato | MaxZones 10 -> 25 | Contrato permite 25 zonas | Pasó |
+| TC-A15 | US11 | Aceptación (BDD) | Suspensión de contrato | Ejecutar suspensión | Bandera IsSuspended = True | Pasó |
+
+<img src="https://imgur.com/1cVGZcR.png">
+
+**Control de Casos de Prueba - Crop Analysis Unit Testing**
+
+| Test Case ID | Componente / Clase | Tipo de Prueba | Descripción del Escenario | Datos de Entrada (Input) | Resultado Esperado (Output) | Estado |
+| --- | --- | --- | --- | --- | --- | --- |
+| TC-U51 | DiagnosisEngine | Unitaria (pytest) | Formateo correcto del reporte | Diccionario con respuesta JSON de la IA: health_score, detected_phase, etc. | Reporte formateado correctamente | Pasó |
+| TC-U52 | DiagnosisEngine | Unitaria (pytest) | Detección de estado crítico | health_score = 69.9 | Retorna True | Pasó |
+| TC-U53 | DiagnosisEngine | Unitaria (pytest) | Detección de estado saludable | health_score = 85.0 | Retorna False | Pasó |
+| TC-U54 | Handler | Unitaria (pytest) | Ejecución exitosa y guardado | zone_id=10, path="/img/crop.jpg" | Repositorio llama a save con nombre limpio | Pasó |
+| TC-U55 | Handler | Unitaria (pytest) | Extracción correcta de nombre archivo | image_path path="C:/.../plant.png" | guardado es "plant.png" | Pasó |
+| TC-U56 | Handler | Unitaria (pytest) | Propagación de errores de IA | Exception("AI Error") | Lanza Exception | Pasó |
+| TC-U57 | AIAdapter | Unitaria (pytest) | Petición exitosa a servicio IA | Archivo de imagen válido | Retorna JSON de predicción | Pasó |
+| TC-U58 | AIAdapter | Unitaria (pytest) | Servidor caído | Error 500 del servicio IA | Lanza Exception personalizada | Pasó |
+| TC-U59 | AIAdapter | Unitaria (pytest) | Timeout de red | Timeout en petición IA | Lanza Exception personalizada | Pasó |
+| TC-U60 | DiagnosisEngine | Unitaria (pytest) | Borde de salud (70.0) | health_score = 70.0 | Retorna False | Pasó |
+
+**Control de Casos de Prueba - Crop Analysis Integration Testing**
+
+| Test Case ID | Componente / Clase | Tipo de Prueba | Descripción del Escenario | Datos de Entrada (Input) | Resultado Esperado (Output) | Estado |
+| --- | --- | --- | --- | --- | --- | --- |
+| TC-I14 | AnalysisController | Integración (FastAPI) | Procesamiento completo de zona | Imagen multipart/form-data | Status 200 OK y JSON de análisis | Pasó |
+
+**Control de Casos de Prueba - Crop Analysis Acceptance Testing**
+
+| Test Case ID | ID Historia | Tipo de Prueba | Descripción del Escenario | Acción / Input | Resultado Esperado | Estado |
+| --- | --- | --- | --- | --- | --- | --- |
+| TC-A16 | US24 (Sc1) | Aceptación (BDD) | Categorización de crecimiento | Imagen pre-procesada | Clasificación de fase y salud | Pasó |
+| TC-A17 | US24 (Sc2) | Aceptación (BDD) | Umbral de confianza < 75% | Confianza = 0.60 | Estado marcado como "Indeterminado" | Pasó |
+| TC-A18 | US24 (Sc3) | Aceptación (BDD) | Actualización automática BD | Diagnóstico "Floración" | Repositorio save es llamado con "Floración" | Pasó |
+
+<img src="https://imgur.com/wyE3OHG.png">
+
+#### 6.2.2.6. Execution Evidence for Sprint Review
+
+**Aplicación Web:**
+
+Durante el presente sprint, se consolidó la integración del frontend con la arquitectura de microservicios desplegada en la nube de Azure, estableciendo la comunicación y el consumo de servicios a través del API Gateway. Se completó el desarrollo del módulo de gestión de dispositivos (Hardware), implementando interfaces dinámicas para el monitoreo de estado, consulta de bitácoras y la orquestación de acciones de mantenimiento, garantizando una sincronización bidireccional con el backend. 
+
+De manera paralela, se optimizaron las funcionalidades de gestión de perfil, habilitando la persistencia de datos personales y fiscales con validación en tiempo real. Finalmente, se ejecutó una mejora integral en la experiencia de usuario (UX) y la visualización de datos dinámicos en el Dashboard y el buscador, reemplazando componentes estáticos por datos reales provenientes de la API y estandarizando la normalización de zonas horarias para la correcta localización del usuario, lo que resulta en una plataforma robusta, profesional y alineada con los requerimientos operativos.
+
+Pantalla de Perfil:
+
+<img src="https://imgur.com/nFwxwjl.png">
+
+Pantalla de la lista de devices:
+
+<img src="https://imgur.com/HP2dC6d.png">
+
+Pantalla de LogBook:
+
+<img src="https://imgur.com/HS9wSHt.png">
+
+Pantalla del mantenimiento:
+
+<img src="https://imgur.com/6NGEcys.png">
+
+Pantalla del device detail:
+
+<img src="https://imgur.com/BrL7ODo.png">
+
+Video de la explicación:
+[ExecutionEvidenceAppWebSP2.mp4](https://upcedupe-my.sharepoint.com/:v:/g/personal/u202311157_upc_edu_pe/IQBTTmNEZmqyRr4wUZ9MbBihAQxXDZ0ogwVLT4vqC23it44?nav=eyJyZWZlcnJhbEluZm8iOnsicmVmZXJyYWxBcHAiOiJTdHJlYW1XZWJBcHAiLCJyZWZlcnJhbFZpZXciOiJTaGFyZURpYWxvZy1MaW5rIiwicmVmZXJyYWxBcHBQbGF0Zm9ybSI6IldlYiIsInJlZmVycmFsTW9kZSI6InZpZXcifX0%3D&e=oCqQpZ) 
+
+**Aplicación Móvil:**
+
+Durante este sprint, se completó la implementación integral de la arquitectura de vistas para la aplicación Grotix, logrando la consolidación del ecosistema visual y su total integración con el ecosistema de servicios en el backend.
+
+Se priorizó el desarrollo y despliegue de la interfaz de usuario en su totalidad, estableciendo una comunicación eficiente mediante la conexión a múltiples endpoints. Esta integración permite ahora la gestión y visualización dinámica de la información en la mayoría de las tablas del sistema, garantizando un flujo de datos coherente y en tiempo real.
+
+Paralelamente, se optimizó la arquitectura de consumo de servicios para asegurar una alta disponibilidad y respuesta en la carga de datos, permitiendo que la aplicación procese de manera precisa las operaciones de lectura y escritura necesarias para el funcionamiento operativo. Con estas actualizaciones, Grotix ha alcanzado una madurez funcional que facilita la interacción fluida del usuario final con la lógica de negocio del backend, sentando una base sólida para las próximas fases de escalamiento.
+
+<img src="https://imgur.com/bJlenag.png">
+<img src="https://imgur.com/UP12RcX.png">
+<img src="https://imgur.com/gPvi2mV.png">
+<img src="https://imgur.com/OCCSaA4.png">
+<img src="https://imgur.com/iQ6eDDr.png">
+<img src="https://imgur.com/64JJpFm.png">
+<img src="https://imgur.com/rowta89.png">
+<img src="https://imgur.com/Z9q0go7.png">
+<img src="https://imgur.com/Nki3G39.png">
+<img src="https://imgur.com/hGFzKkI.png">
+
+Video explicativo:
+[Sprint2_ExecutionEvidence_Mobile.mp4](https://upcedupe-my.sharepoint.com/:v:/g/personal/u202311701_upc_edu_pe/IQAVPXFkgzoFTrKKlMwhjUhKAYqMHu7je5t5Q7fLNWfeHlA?nav=eyJyZWZlcnJhbEluZm8iOnsicmVmZXJyYWxBcHAiOiJPbmVEcml2ZUZvckJ1c2luZXNzIiwicmVmZXJyYWxBcHBQbGF0Zm9ybSI6IldlYiIsInJlZmVycmFsTW9kZSI6InZpZXciLCJyZWZlcnJhbFZpZXciOiJNeUZpbGVzTGlua0NvcHkifX0&e=rYAKff) 
+
+#### 6.2.2.7. Services Documentation Evidence for Sprint Review
+
+Durante el Sprint 2 se amplió de forma significativa la cobertura funcional del ecosistema Grotix: se incorporaron los microservicios de Telemetría (Telemetry.Api), Riego (Irrigation.Api) y Gestión de Hardware (HardwareDevice.Api), se completó la integración del servicio de análisis de cultivos (CropAnalysis.Api/FastAPI), y se enriqueció el microservicio de Perfiles con endpoints de notificaciones y un endpoint de consulta de asociación propia. Adicionalmente, se modificaron los endpoints GET /api/v1/associations/{id}/members (ahora devuelve profilePicture) y POST /api/v1/auth/register (manejo de errores 400 mejorado). La siguiente tabla resume los 56 endpoints nuevos y modificados del sprint.
+
+| Microservicio | Método | Ruta relativa al host | Autorización | Parámetros / cuerpo | Respuesta de éxito y notas |
+|---|---|---|---|---|---|
+| Profiles.Api | GET | /api/v1/associations/mine | Bearer JWT | - | 200 OK. Asociación del usuario. 404 si sin asociación. |
+| Profiles.Api | GET | /api/v1/associations/{id}/members | Bearer JWT | Path: associationId | 200 OK. Lista con profilePicture. [Modificado] |
+| Profiles.Api | POST | /api/v1/profile/{userId}/notifications | admin JWT | JSON: title, message, type | 200 OK. Objeto notificación creado. |
+| Profiles.Api | GET | /api/v1/profile/me/notifications | Bearer JWT | Query: unreadOnly, limit | 200 OK. Array de notificaciones. |
+| Profiles.Api | GET | /api/v1/profile/me/notifications/unread-count | Bearer JWT | - | 200 OK. { unreadCount }. |
+| Profiles.Api | PATCH | /api/v1/profile/me/notifications/{id}/read | Bearer JWT | Path: notificationId | 200 OK. { success: true }. |
+| Profiles.Api | PATCH | /api/v1/profile/me/notifications/read-all | Bearer JWT | - | 200 OK. { success, updated }. |
+| Telemetry.Api | GET | /api/v1/telemetry/zones/{zoneId} | TELEMETRY_VIEW / admin | Query: startTime, endTime, sensorTypes, limit | 200 OK. Lecturas de sensores por zona. |
+| Telemetry.Api | GET | /api/v1/telemetry/zones/{zoneId}/alerts | TELEMETRY_VIEW / admin | Query: limit | 200 OK. Historial de alertas de umbral. |
+| Telemetry.Api | GET | /api/v1/telemetry/zones/{zoneId}/thresholds | Bearer JWT | Path: zoneId | 200 OK. Umbrales activos por sensor. |
+| Telemetry.Api | PATCH | /api/v1/telemetry/zones/{zoneId}/thresholds | THRESHOLD_WRITE / admin | JSON array: { sensorType, minValue, maxValue } | 200 OK. { success: true }. |
+| Telemetry.Api | POST | /api/v1/telemetry/ingest | DEVICE_CONFIG / admin | JSON: deviceId, zoneId, temperature, humidityAir, humiditySoil, lightIntensity | 202 Accepted. { deviceId, zoneId, ingested }. |
+| Telemetry.Api | GET | /api/v1/telemetry/actuators/{actuatorId}/logs | TELEMETRY_VIEW / admin | Query: limit | 200 OK. Historial de acciones del actuador. |
+| Telemetry.Api | GET | /api/v1/telemetry/health/live | Anónimo | - | 200 OK. { status, timestamp, messageBroker }. |
+| Telemetry.Api | GET | /api/v1/telemetry/health/ready | Anónimo | - | 200/503. { status, checks }. |
+| Irrigation.Api | POST | /api/v1/irrigation/start/{zoneId} | MANUAL_CONTROL_EXECUTE / admin | JSON: volumeLiters?, durationMinutes? | 200 OK. { cycleId }. 409 si ciclo activo. |
+| Irrigation.Api | POST | /api/v1/irrigation/stop/{zoneId} | MANUAL_CONTROL_EXECUTE / admin | JSON: reason? | 200 OK. Ciclo finalizado con status ABORTED. |
+| Irrigation.Api | GET | /api/v1/irrigation/schedules | Bearer JWT | Query: zoneId? | 200 OK. Array de programas. |
+| Irrigation.Api | POST | /api/v1/irrigation/schedules | MANUAL_CONTROL_EXECUTE / admin | JSON: zoneId, daysOfTheWeek, startTime, durationMinutes | 200 OK. { scheduleId }. |
+| Irrigation.Api | PATCH | /api/v1/irrigation/schedules/{id} | MANUAL_CONTROL_EXECUTE / admin | JSON parcial de programa | 200 OK. { success: true }. |
+| Irrigation.Api | DELETE | /api/v1/irrigation/schedules/{id} | MANUAL_CONTROL_EXECUTE / admin | Path: id | 200 OK. { success: true }. |
+| Irrigation.Api | GET | /api/v1/irrigation/history | TELEMETRY_VIEW / admin | Query: zoneId?, startTime?, endTime?, limit? | 200 OK. Historial de ciclos. |
+| Irrigation.Api | GET | /api/v1/irrigation/history/{zoneId} | TELEMETRY_VIEW / admin | Path: zoneId. Query: startTime?, endTime?, limit? | 200 OK. Historial de la zona. |
+| Irrigation.Api | GET | /api/v1/irrigation/active | Bearer JWT | Query: zoneId? | 200 OK. Ciclos activos. |
+| Irrigation.Api | GET | /api/v1/irrigation/active/{zoneId} | Bearer JWT | Path: zoneId | 200 OK. Ciclos activos de la zona. |
+| Irrigation.Api | GET | /api/v1/irrigation/health/live | Anónimo | - | 200 OK. { status, timestamp }. |
+| Irrigation.Api | GET | /api/v1/irrigation/health/ready | Anónimo | - | 200/503. { status, checks }. |
+| Hardware.Api | GET | /api/v1/hardware/devices | DEVICE_CONFIG / admin | Query: status?, zoneId? | 200 OK. Array de dispositivos. |
+| Hardware.Api | POST | /api/v1/hardware/devices | DEVICE_CONFIG / admin | JSON: model, macAddress, zoneId?, sensors[], actuators[] | 201 Created. { deviceId }. |
+| Hardware.Api | GET | /api/v1/hardware/devices/{id} | DEVICE_CONFIG / admin | Path: id | 200 OK. Detalle con sensores y actuadores. |
+| Hardware.Api | PATCH | /api/v1/hardware/devices/{id} | DEVICE_CONFIG / admin | JSON parcial: zoneId?, model?, macAddress? | 200 OK. { success: true }. |
+| Hardware.Api | DELETE | /api/v1/hardware/devices/{id} | DEVICE_CONFIG / admin | Path: id | 200 OK. { success: true }. |
+| Hardware.Api | PATCH | /api/v1/hardware/devices/{id}/status | DEVICE_CONFIG / admin | JSON: status, lastSeen? | 200 OK. Estado actualizado. |
+| Hardware.Api | GET | /api/v1/hardware/devices/{id}/status | DEVICE_CONFIG / admin | Path: id | 200 OK. { deviceId, status, lastSeen, uptimeSeconds }. |
+| Hardware.Api | GET | /api/v1/hardware/devices/{id}/telemetry | DEVICE_CONFIG / admin | Query: sensorTypes[]? | 200 OK. Snapshot de telemetría del dispositivo. |
+| Hardware.Api | GET | /api/v1/hardware/devices/{id}/diagnostic | HARDWARE_DIAGNOSTIC / admin | Query: includeSensors, includeActuators | 200 OK. { overallStatus, checks }. |
+| Hardware.Api | POST | /api/v1/hardware/devices/{id}/sensors | DEVICE_CONFIG / admin | JSON: type, unit, pin, minPhysical?, maxPhysical? | 201 Created. { sensorId, type, unit, pin, zoneId }. |
+| Hardware.Api | DELETE | /api/v1/hardware/devices/{id}/sensors/{sensorId} | DEVICE_CONFIG / admin | Path: id, sensorId | 200 OK. { success: true }. |
+| Hardware.Api | POST | /api/v1/hardware/devices/{id}/actuators | DEVICE_CONFIG / admin | JSON: type, pin | 201 Created. { actuatorId, type, pin, status }. |
+| Hardware.Api | DELETE | /api/v1/hardware/devices/{id}/actuators/{actuatorId} | DEVICE_CONFIG / admin | Path: id, actuatorId | 200 OK. { success: true }. |
+| Hardware.Api | POST | /api/v1/hardware/devices/{id}/link-to-zone/{zoneId} | DEVICE_CONFIG / admin | Path: id, zoneId | 200 OK. { success: true }. |
+| Hardware.Api | DELETE | /api/v1/hardware/devices/{id}/unlink-from-zone/{zoneId} | DEVICE_CONFIG / admin | Path: id, zoneId | 200 OK. { success: true }. |
+| Hardware.Api | GET | /api/v1/hardware/devices/{id}/zone | DEVICE_CONFIG / admin | Path: id | 200 OK. { zoneId, zoneName, cropName }. |
+| Hardware.Api | GET | /api/v1/hardware/zones/{zoneId}/devices | DEVICE_CONFIG / admin | Path: zoneId | 200 OK. Array resumen de dispositivos de la zona. |
+| Hardware.Api | GET | /api/v1/hardware/zones/{zoneId}/health | Bearer JWT | Path: zoneId | 200 OK. { zoneId, allActive, totalDevices, devices[] }. |
+| Hardware.Api | POST | /api/v1/hardware/devices/{deviceId}/maintenance-logs | DEVICE_CONFIG / admin | JSON: action, statusAfter | 201 Created. Log de mantenimiento. |
+| Hardware.Api | GET | /api/v1/hardware/devices/{deviceId}/maintenance-logs | DEVICE_CONFIG / admin | Query: limit | 200 OK. Historial de mantenimiento. |
+| Hardware.Api | POST | /api/v1/hardware/devices/{deviceId}/technical-maintenance | DEVICE_CONFIG / admin | JSON: staffId, type, description, results? | 201 Created. Mantenimiento técnico registrado. |
+| Hardware.Api | GET | /api/v1/hardware/devices/{deviceId}/technical-maintenance | DEVICE_CONFIG / admin | Query: limit | 200 OK. Historial de mantenimientos técnicos. |
+| Hardware.Api | GET | /api/v1/hardware/actuators/{actuatorId}/action-queue | DEVICE_CONFIG / admin | Query: limit | 200 OK. Cola de comandos del actuador. |
+| Hardware.Api | GET | /api/v1/hardware/health/live | Anónimo | - | 200 OK. { status, timestamp }. |
+| Hardware.Api | GET | /api/v1/hardware/health/ready | Anónimo | - | 200/503. { status, checks }. |
+| CropAnalysis.Api | POST | /api/v1/analysis/zones/{zoneId}/analyze | Bearer JWT | Form-data: image (file) | 201 Created. { analysisId, imageUrl, healthScore, phase }. |
+| CropAnalysis.Api | GET | /api/v1/analysis/zones/{zoneId}/health | Bearer JWT | Path: zoneId | 200 OK. Último reporte de salud. 404 si sin reportes. |
+| CropAnalysis.Api | GET | /api/v1/analysis/zones/{zoneId}/reports | Bearer JWT | Query: limit, offset | 200 OK. Historial de reportes paginado. |
+| CropAnalysis.Api | GET | /api/v1/analysis/reports/{reportId} | Bearer JWT | Path: reportId | 200 OK. Detalle completo con analysisDetails. |
+
+**Evidencias de Validación Funcional (Sprint 2 Endpoints)**
+
+A continuación se detallan los parámetros, cuerpos de petición y respuestas esperadas de cada endpoint nuevo o modificado, validados mediante Swagger UI y clientes HTTP.
+
+**GET /api/v1/associations/mine**
+
+Permite a cualquier usuario autenticado consultar los datos de la asociación a la que pertenece sin necesidad de privilegios de administrador. El microservicio Profiles.Api resuelve la asociación vinculada al claim de identidad contenido en el token JWT.
+
+**A. Cabeceras (Headers)** 
+
+|Campo (Field)|Tipo (Type)|Descripción|
+|---|---|---|
+|Authorization|String|Token de autenticación. Formato: Bearer {jwt_token}|
+
+**B. Parámetros de Búsqueda (Query Parameters)**
+
+No requiere parámetros adicionales. 
+
+**C. Ejemplo de Petición (Request-Example)** 
+
+```http
+GET /api/v1/associations/mine HTTP/1.1
+Host: api.grotix.pe
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9... 
+```
+
+**Respuestas del servidor (Responses)**
+
+Éxito: Código 200 OK
+
+Retorna el objeto asociación del usuario autenticado.
+
+| Campo (Field) | Tipo (Type) | Descripción |
+|---|---|---|
+| id | Integer | Identificador único de la asociación. |
+| name | String | Nombre oficial de la asociación. |
+| contactEmail | String | Correo de contacto. |
+
+**Ejemplo de Respuesta Exitosa (Success-Example)** 
+
+```json
+{ 
+    "id": 3, 
+    "name": "Cooperativa Agraria Los Andes", "contactEmail": "contacto@losandes.pe" 
+}
+```
+
+**Error: Código 404 Not Found**
+**Ejemplo de Respuesta de Error (Error-Response)** 
+
+```json
+{ 
+    "status": 404, 
+    "message": "NOT_FOUND: El usuario no pertenece a ninguna asociación registrada." 
+}
+```
+
+**D. Evidencia en Swagger**
+
+<img src="">
+
+**GET /api/v1/associations/{associationId}/members [Modificado Sprint 2]**
+
+Lista todos los miembros de una asociación. En Sprint 2 se incorporó el campo profilePicture en cada objeto miembro, permitiendo al frontend mostrar avatares en listados de equipo y paneles de gestión.
+
+**A. Cabeceras (Headers)** 
+
+|Campo (Field)|Tipo (Type)|Descripción|
+|--|---|--|
+|Authorization|String|Token de autenticación. Formato: Bearer {jwt_token}|
+
+**B. Parámetros de Búsqueda (Query Parameters)**
+
+No requiere cuerpo. 
+
+**C. Ejemplo de Petición (Request-Example)** 
+
+```http
+GET /api/v1/associations/3/members HTTP/1.1 
+Host: api.grotix.pe 
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9...
+```
+
+**Respuestas del servidor (Responses)**
+
+Éxito: Código 200 OK
+
+Retorna la lista de miembros con foto de perfil incluida.
+
+| Campo (Field) | Tipo (Type) | Descripción |
+|---|---|---|
+| userId | Integer | Identificador del usuario miembro. |
+| name | String | Nombre completo. |
+| email | String | Correo electrónico. |
+| roleId | Integer | ID del rol asignado. |
+| roleName | String | Nombre del rol (ej. user_basic). |
+| profilePicture | String? | URL de la foto de perfil. null si no tiene. [Nuevo] |
+| assignedAt | DateTime | Fecha de incorporación. |
+
+**Ejemplo de Respuesta Exitosa (Success-Example)**
+
+```json
+{ 
+    "userId": 23, 
+    "name": "Carlos Mamani Quispe", 
+    "email": "c.mamani@grotix.pe", 
+    "roleId": 4, 
+    "roleName": "user_basic", 
+    "profilePicture": "https://storage.grotix.pe/avatars/cmamani.jpg", 
+    "assignedAt": "2026-05-01T08:00:00Z" 
+}
+```
+
+**Error: Código 401 Unauthorized**
+
+**Ejemplo de Respuesta de Error (Error-Response)**
+
+```json
+{
+    "status": 401,
+    "message": "NOT_AUTHORIZED: Token inválido o expirado."
+}
+```
+
+**D. Evidencia en Swagger**
+
+<img src="">
+
+**POST /api/v1/profile/{userId}/notifications**
+
+Permite a un administrador enviar una notificación directa a un usuario específico. La notificación queda almacenada y el usuario puede consultarla mediante GET /profile/me/notifications. El campo type es libre (ej. alert, info, warning).
+
+**A. Cabeceras (Headers)**
+
+| Campo (Field) | Tipo (Type) | Descripción |
+|----|----|----|
+| Content-Type | String | application/json |
+| Authorization | String | Token de autenticación admin. Formato: Bearer {jwt_token} |
+
+**B. Parámetros del Cuerpo (Request Body Parameters)**
+
+| Campo (Field) | Tipo (Type) | Descripción |
+|----|----|----|
+| userId | Integer (path) | Destinatario de la notificación. |
+| title | String | Título corto de la notificación. |
+| message | String | Cuerpo del mensaje. |
+| type | String? | Tipo libre: alert, info, warning. Opcional. |
+
+**C. Ejemplo de Petición (Request-Example)**
+
+```json
+{
+    "title": "Alerta de Humedad",
+    "message": "La zona 5 ha superado el umbral máximo de humedad de suelo.",
+    "type": "alert"
+}
+```
+
+**Respuestas del servidor (Responses)**
+
+Éxito: Código 200 OK
+
+Notificación creada y almacenada.
+
+| Campo (Field) | Tipo (Type) | Descripción |
+|----|----|----|
+| id | Integer | Identificador único de la notificación. |
+| userId | Integer | Usuario destinatario. |
+| title | String | Título de la notificación. |
+| message | String | Contenido del mensaje. |
+| type | String? | Tipo de notificación. |
+| isRead | Boolean | Estado de lectura. Siempre false al crear. |
+| createdAt | DateTime | Fecha y hora de creación. |
+| readAt | DateTime? | Fecha de lectura. null hasta que se marque como leída. |
+
+**Ejemplo de Respuesta Exitosa (Success-Example)**
+
+```json
+{
+    "id": 101,
+    "userId": 23,
+    "title": "Alerta de Humedad",
+    "message": "La zona 5 ha superado el umbral máximo...",
+    "type": "alert",
+    "isRead": false,
+    "createdAt": "2026-06-07T14:00:00Z",
+    "readAt": null
+}
+```
+
+**Error: Código 403 Forbidden**
+
+**Ejemplo de Respuesta de Error (Error-Response)**
+
+```json
+{
+    "status": 403,
+    "message": "FORBIDDEN: Solo administradores pueden enviar notificaciones."
+}
+```
+
+**D. Evidencia en Swagger**
+
+<img src="">
+
+<img src="">
+
+**GET /api/v1/profile/me/notifications**
+
+Obtiene las notificaciones del usuario autenticado. Soporta filtro por estado de lectura y paginación mediante limit. Las notificaciones se retornan ordenadas de más reciente a más antigua.
+
+**A. Cabeceras (Headers)**
+
+| Campo (Field) | Tipo (Type) | Descripción |
+|----|----|----|
+| Authorization | String | Token de autenticación. Formato: Bearer {jwt_token} |
+
+**B. Parámetros de Búsqueda (Query Parameters)**
+
+| Campo (Field) | Tipo (Type) | Descripción |
+|----|----|----|
+| unreadOnly | Boolean (query) | Si true, devuelve solo notificaciones no leídas. Default: false. |
+| limit | Integer (query) | Número máximo de notificaciones a retornar. Default: 50. |
+
+**C. Ejemplo de Petición (Request-Example)**
+
+```http
+GET /api/v1/profile/me/notifications?unreadOnly=true&limit=20 HTTP/1.1
+Host: api.grotix.pe
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9...
+```
+
+**Respuestas del servidor (Responses)**
+
+Éxito: Código 200 OK
+
+Array de notificaciones del usuario. Vacío [] si no hay.
+
+| Campo (Field) | Tipo (Type) | Descripción                   |
+|-------------------|-----------------|-----------------------------------|
+| id                | Integer         | Identificador de la notificación. |
+| title             | String          | Título.                           |
+| message           | String          | Cuerpo del mensaje.               |
+| type              | String?         | Tipo de notificación.             |
+| isRead            | Boolean         | Estado de lectura.                |
+| createdAt         | DateTime        | Fecha de creación.                |
+| readAt            | DateTime?       | Fecha de lectura o null.          |
+
+**Ejemplo de Respuesta Exitosa (Success-Example)**
+
+```json
+[
+    {
+        "id": 101,
+        "title": "Alerta de Humedad",
+        "message": "La zona 5 ha superado el umbral máximo...",
+        "type": "alert",
+        "isRead": false,
+        "createdAt": "2026-06-07T14:00:00Z",
+        "readAt": null
+    }
+]
+```
+
+**Error: Código 401 Unauthorized**
+
+**Ejemplo de Respuesta de Error (Error-Response)**
+
+```json
+{
+    "status": 401,
+    "message": "NOT_AUTHORIZED: Token inválido o expirado."
+}
+```
+
+**D. Evidencia en Swagger**
+
+<img src="">
+
+**GET /api/v1/profile/me/notifications/unread-count**
+
+Retorna el conteo de notificaciones no leídas del usuario autenticado. Endpoint ligero, ideal para actualizar el badge de notificaciones en la barra de navegación sin necesidad de cargar el listado completo.
+
+**A. Cabeceras (Headers)**
+
+| Campo (Field) | Tipo (Type) | Descripción |
+|----|----|----|
+| Authorization | String | Token de autenticación. Formato: Bearer {jwt_token} |
+
+**B. Parámetros de Búsqueda (Query Parameters)**
+
+No requiere parámetros adicionales.
+
+**C. Ejemplo de Petición (Request-Example)**
+
+```http
+GET /api/v1/profile/me/notifications/unread-count HTTP/1.1
+Host: api.grotix.pe
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9...
+```
+
+**Respuestas del servidor (Responses)**
+
+Éxito: Código 200 OK
+
+Conteo de notificaciones no leídas.
+
+| Campo (Field) | Tipo (Type) | Descripción                     |
+|-------------------|-----------------|-------------------------------------|
+| unreadCount       | Integer         | Número de notificaciones no leídas. |
+
+**Ejemplo de Respuesta Exitosa (Success-Example)**
+
+```json
+{
+    "unreadCount": 3
+}
+```
+
+**Error: Código 401 Unauthorized**
+
+**Ejemplo de Respuesta de Error (Error-Response)**
+
+```json
+{
+    "status": 401,
+    "message": "NOT_AUTHORIZED: Token inválido o expirado."
+}
+```
+
+**D. Evidencia en Swagger**
+
+<img src="">
+
+**PATCH /api/v1/profile/me/notifications/{notificationId}/read**
+
+Marca una notificación específica como leída, actualizando los campos isRead=true y readAt con la fecha y hora actual. Solo el propietario de la notificación puede marcarla como leída.
+
+**A. Cabeceras (Headers)**
+
+| Campo (Field) | Tipo (Type) | Descripción |
+|----|----|----|
+| Authorization | String | Token de autenticación. Formato: Bearer {jwt_token} |
+
+**B. Parámetros de Búsqueda (Query Parameters)**
+
+| Campo (Field) | Tipo (Type) | Descripción |
+|----|----|----|
+| notificationId | Integer (path) | Identificador de la notificación a marcar. |
+
+**C. Ejemplo de Petición (Request-Example)**
+
+```http
+PATCH /api/v1/profile/me/notifications/101/read HTTP/1.1
+Host: api.grotix.pe
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9...
+```
+
+**Respuestas del servidor (Responses)**
+
+Éxito: Código 200 OK
+
+Notificación marcada como leída.
+
+| Campo (Field) | Tipo (Type) | Descripción                   |
+|-------------------|-----------------|-----------------------------------|
+| success           | Boolean         | true si la operación fue exitosa. |
+
+**Ejemplo de Respuesta Exitosa (Success-Example)**
+
+```json
+{
+    "success": true
+}
+```
+
+**Error: Código 404 Not Found**
+
+**Ejemplo de Respuesta de Error (Error-Response)**
+
+```json
+{
+    "status": 404,
+    "message": "NOT_FOUND: Notificación no encontrada."
+}
+```
+
+**D. Evidencia en Swagger**
+
+<img src="">
+
+**PATCH /api/v1/profile/me/notifications/read-all**
+
+Marca todas las notificaciones no leídas del usuario autenticado como leídas en una sola operación. Devuelve el número de notificaciones actualizadas.
+
+**A. Cabeceras (Headers)**
+
+| Campo (Field) | Tipo (Type) | Descripción |
+|----|----|----|
+| Authorization | String | Token de autenticación. Formato: Bearer {jwt_token} |
+
+**B. Parámetros de Búsqueda (Query Parameters)**
+
+No requiere cuerpo de petición.
+
+**C. Ejemplo de Petición (Request-Example)**
+
+```http
+PATCH /api/v1/profile/me/notifications/read-all HTTP/1.1
+Host: api.grotix.pe
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9...
+```
+
+**Respuestas del servidor (Responses)**
+
+Éxito: Código 200 OK
+
+Todas las notificaciones pendientes marcadas como leídas.
+
+| Campo (Field) | Tipo (Type) | Descripción                          |
+|-------------------|-----------------|------------------------------------------|
+| success           | Boolean         | true si la operación fue exitosa.        |
+| updated           | Integer         | Cantidad de notificaciones actualizadas. |
+
+**Ejemplo de Respuesta Exitosa (Success-Example)**
+
+```json
+{
+    "success": true,
+    "updated": 5
+}
+```
+
+**Error: Código 401 Unauthorized**
+
+**Ejemplo de Respuesta de Error (Error-Response)**
+
+```json
+{
+    "status": 401,
+    "message": "NOT_AUTHORIZED: Token inválido o expirado."
+}
+```
+
+**D. Evidencia en Swagger**
+
+<img src="">
+
+**GET /api/v1/telemetry/zones/{zoneId}**
+
+Obtiene las lecturas de telemetría de todos los sensores de una zona de cultivo dentro de una ventana temporal. Soporta filtrado por tipo de sensor y paginación mediante limit. Los datos provienen de la base de datos TimescaleDB y están optimizados para consultas de series temporales.
+
+**A. Cabeceras (Headers)**
+
+| Campo (Field) | Tipo (Type) | Descripción |
+|----|----|----|
+| Authorization | String | Permiso TELEMETRY_VIEW o rol admin. Formato: Bearer {jwt_token} |
+
+**B. Parámetros de Búsqueda (Query Parameters)**
+
+| Campo (Field) | Tipo (Type) | Descripción |
+|----|----|----|
+| zoneId | Integer (path) | Identificador de la zona. |
+| startTime | DateTime? (query) | Inicio de la ventana temporal (ISO 8601 UTC). |
+| endTime | DateTime? (query) | Fin de la ventana temporal. Por defecto: ahora. |
+| sensorTypes | String[]? (query) | Filtro por tipo de sensor. Ej: SOIL_MOISTURE, AIR_TEMPERATURE. |
+| limit | Integer (query) | Máximo de lecturas a retornar. Rango: 1-10000. Default: 1000. |
+
+**C. Ejemplo de Petición (Request-Example)**
+
+```http
+GET /api/v1/telemetry/zones/5?sensorTypes=SOIL_MOISTURE&limit=100 HTTP/1.1
+Host: api.grotix.pe
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9...
+```
+
+**Respuestas del servidor (Responses)**
+
+Éxito: Código 200 OK
+
+Objeto de telemetría con lecturas agrupadas por sensor.
+
+| Campo (Field) | Tipo (Type) | Descripción |
+|----|----|----|
+| zoneId | Integer | Zona consultada. |
+| period.start | DateTime | Inicio del periodo devuelto. |
+| period.end | DateTime | Fin del periodo devuelto. |
+| sensors | Array | Lista de sensores con sus lecturas. |
+| sensors[].sensorId | Integer | ID del sensor. |
+| sensors[].type | String | Tipo: SOIL_MOISTURE, AIR_TEMPERATURE, AIR_HUMIDITY, LIGHT_INTENSITY. |
+| sensors[].unit | String | Unidad de medida (%, °C, lux). |
+| sensors[].readings | Array | Lecturas: [{ value, timestamp }]. |
+
+**Ejemplo de Respuesta Exitosa (Success-Example)**
+
+```json
+{
+    "zoneId": 5,
+    "period": { "start": "2026-06-06T00:00:00Z", "end": "2026-06-07T00:00:00Z" },
+    "sensors": [{
+            "sensorId": 1, "type": "SOIL_MOISTURE", "unit": "%",
+            "readings": [{ "value": 34.5, "timestamp": "2026-06-07T08:00:00Z" }]
+        }]
+}
+```
+
+**Error: Código 404 Not Found**
+
+**Ejemplo de Respuesta de Error (Error-Response)**
+
+```json
+{
+    "status": 404,
+    "message": "NOT_FOUND: La zona no tiene sensores registrados."
+}
+```
+
+**D. Evidencia en Swagger**
+
+<img src="">
+
+<img src="">
+
+**GET /api/v1/telemetry/zones/{zoneId}/alerts**
+
+Lista las alertas de umbral disparadas para una zona de cultivo. Una alerta se genera automáticamente cuando una lectura de sensor supera (breach direction ABOVE_MAX) o cae por debajo (BELOW_MIN) de los umbrales configurados. Soporta paginación.
+
+**A. Cabeceras (Headers)**
+
+| Campo (Field) | Tipo (Type) | Descripción |
+|----|----|----|
+| Authorization | String | Permiso TELEMETRY_VIEW o rol admin. Formato: Bearer {jwt_token} |
+
+**B. Parámetros de Búsqueda (Query Parameters)**
+
+| Campo (Field) | Tipo (Type) | Descripción                 |
+|-------------------|-----------------|---------------------------------|
+| zoneId            | Integer (path)  | Identificador de la zona.       |
+| limit             | Integer (query) | Máximo de alertas. Default: 50. |
+
+**C. Ejemplo de Petición (Request-Example)**
+
+```http
+GET /api/v1/telemetry/zones/5/alerts?limit=20 HTTP/1.1
+Host: api.grotix.pe
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9...
+```
+
+**Respuestas del servidor (Responses)**
+
+Éxito: Código 200 OK
+
+Array de alertas de umbral para la zona.
+
+| Campo (Field) | Tipo (Type) | Descripción                         |
+|-------------------|-----------------|-----------------------------------------|
+| id                | Integer         | ID de la alerta.                        |
+| zoneId            | Integer         | Zona afectada.                          |
+| sensorId          | Integer         | Sensor que disparó la alerta.           |
+| sensorType        | String          | Tipo de sensor.                         |
+| value             | Float           | Valor registrado que excedió el umbral. |
+| minThreshold      | Float           | Umbral mínimo configurado.              |
+| maxThreshold      | Float           | Umbral máximo configurado.              |
+| breachDirection   | String          | ABOVE_MAX o BELOW_MIN.                  |
+| triggeredAt       | DateTime        | Fecha y hora de la alerta.              |
+
+**Ejemplo de Respuesta Exitosa (Success-Example)**
+
+```json
+[{
+        "id": 15, "zoneId": 5, "sensorId": 1, "sensorType": "SOIL_MOISTURE",
+        "value": 15.2, "minThreshold": 20.0, "maxThreshold": 80.0,
+        "breachDirection": "BELOW_MIN",
+        "triggeredAt": "2026-06-07T06:30:00Z"
+    }]
+```
+
+**Error: Código 401 Unauthorized**
+
+**Ejemplo de Respuesta de Error (Error-Response)**
+
+```json
+{
+    "status": 401,
+    "message": "NOT_AUTHORIZED: Token inválido o expirado."
+}
+```
+
+**D. Evidencia en Swagger**
+
+<img src="">
+
+**GET /api/v1/telemetry/zones/{zoneId}/thresholds**
+
+Obtiene los umbrales de alerta activos para cada tipo de sensor de una zona. Los umbrales pueden provenir de los defaults del cultivo asignado (source=crop) o de configuraciones personalizadas (source=custom) creadas mediante PATCH.
+
+**A. Cabeceras (Headers)**
+
+| Campo (Field) | Tipo (Type) | Descripción |
+|----|----|----|
+| Authorization | String | Token de autenticación. Formato: Bearer {jwt_token} |
+
+**B. Parámetros de Búsqueda (Query Parameters)**
+
+No requiere cuerpo de petición.
+
+**C. Ejemplo de Petición (Request-Example)**
+
+```http
+GET /api/v1/telemetry/zones/5/thresholds HTTP/1.1
+Host: api.grotix.pe
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9...
+```
+
+**Respuestas del servidor (Responses)**
+
+Éxito: Código 200 OK
+
+Array de umbrales por tipo de sensor.
+
+| Campo (Field) | Tipo (Type) | Descripción |
+|----|----|----|
+| sensorType | String | Tipo de sensor: SOIL_MOISTURE, AIR_TEMPERATURE, etc. |
+| minValue | Float? | Umbral mínimo. null si no definido. |
+| maxValue | Float? | Umbral máximo. null si no definido. |
+| source | String | crop = default del cultivo; custom = personalizado. |
+
+**Ejemplo de Respuesta Exitosa (Success-Example)**
+
+```json
+[
+    { "sensorType": "SOIL_MOISTURE", "minValue": 20.0, "maxValue": 80.0, "source": "custom" },
+    { "sensorType": "AIR_TEMPERATURE", "minValue": 15.0, "maxValue": 35.0, "source": "crop" }
+]
+```
+
+**Error: Código 404 Not Found**
+
+**Ejemplo de Respuesta de Error (Error-Response)**
+
+```json
+{
+    "status": 404,
+    "message": "NOT_FOUND: La zona no tiene umbrales configurados."
+}
+```
+
+**D. Evidencia en Swagger**
+
+<img src="">
+
+**PATCH /api/v1/telemetry/zones/{zoneId}/thresholds**
+
+Actualiza o crea umbrales personalizados para los sensores de una zona de cultivo. El cuerpo debe ser un array JSON (no un objeto). Enviar null en minValue o maxValue para eliminar ese límite individual. Requiere permiso THRESHOLD_WRITE.
+
+**A. Cabeceras (Headers)**
+
+| Campo (Field) | Tipo (Type) | Descripción |
+|----|----|----|
+| Content-Type | String | application/json |
+| Authorization | String | Permiso THRESHOLD_WRITE o rol admin. Formato: Bearer {jwt_token} |
+
+**B. Parámetros del Cuerpo (Request Body Parameters)**
+
+| Campo (Field) | Tipo (Type) | Descripción |
+|----|----|----|
+| [] (array) | Array | El body ES el array de umbrales a actualizar. |
+| [].sensorType | String | Tipo de sensor a configurar. |
+| [].minValue | Float? | Umbral mínimo. null para quitar el límite inferior. |
+| [].maxValue | Float? | Umbral máximo. null para quitar el límite superior. |
+
+**C. Ejemplo de Petición (Request-Example)**
+
+```json
+[
+    { "sensorType": "SOIL_MOISTURE", "minValue": 18.0, "maxValue": 75.0 },
+    { "sensorType": "AIR_TEMPERATURE", "minValue": null, "maxValue": null }
+]
+```
+
+**Respuestas del servidor (Responses)**
+
+Éxito: Código 200 OK
+
+Umbrales actualizados exitosamente.
+
+| Campo (Field) | Tipo (Type) | Descripción                   |
+|-------------------|-----------------|-----------------------------------|
+| success           | Boolean         | true si la operación fue exitosa. |
+
+**Ejemplo de Respuesta Exitosa (Success-Example)**
+
+```json
+{
+    "success": true
+}
+```
+
+**Error: Código 403 Forbidden**
+
+**Ejemplo de Respuesta de Error (Error-Response)**
+
+```json
+{
+    "status": 403,
+    "message": "FORBIDDEN: Permiso THRESHOLD_WRITE requerido."
+}
+```
+
+**D. Evidencia en Swagger**
+
+<img src="">
+
+<img src="">
+
+**POST /api/v1/telemetry/ingest**
+
+Endpoint de ingesta de telemetría. Recibe una lectura de sensor desde un microcontrolador (ESP32) o desde el Edge Service. La lectura se persiste en TimescaleDB y dispara evaluación de umbrales. Requiere permiso DEVICE_CONFIG.
+
+**A. Cabeceras (Headers)**
+
+| Campo (Field) | Tipo (Type) | Descripción |
+|----|----|----|
+| Content-Type | String | application/json |
+| Authorization | String | Permiso DEVICE_CONFIG o rol admin. Formato: Bearer {jwt_token} |
+
+**B. Parámetros del Cuerpo (Request Body Parameters)**
+
+| Campo (Field) | Tipo (Type) | Descripción |
+|----|----|----|
+| sensorId | Integer | Identificador del sensor que generó la lectura. |
+| value | Float | Valor medido. |
+| deviceId | Integer? | ID del microcontrolador. Default: 0. |
+| timestamp | DateTime? | Fecha y hora de la medición. Default: UTC ahora. |
+
+**C. Ejemplo de Petición (Request-Example)**
+
+```json
+{
+    "sensorId": 1,
+    "value": 34.5,
+    "deviceId": 3,
+    "timestamp": "2026-06-07T08:00:00Z"
+}
+```
+
+**Respuestas del servidor (Responses)**
+
+Éxito: Código 202 Accepted
+
+Lectura aceptada para procesamiento asíncrono.
+
+| Campo (Field) | Tipo (Type) | Descripción                   |
+|-------------------|-----------------|-----------------------------------|
+| sensorId          | Integer         | Sensor que recibió la lectura.    |
+| ingested          | Boolean         | true si la lectura fue procesada. |
+
+**Ejemplo de Respuesta Exitosa (Success-Example)**
+
+```json
+{
+    "sensorId": 1,
+    "ingested": true
+}
+```
+
+**Error: Código 403 Forbidden**
+
+**Ejemplo de Respuesta de Error (Error-Response)**
+
+```json
+{
+    "status": 403,
+    "message": "FORBIDDEN: Permiso DEVICE_CONFIG requerido."
+}
+```
+
+**D. Evidencia en Swagger**
+
+<img src="">
+
+<img src="">
+
+**POST /api/v1/irrigation/start/{zoneId}**
+
+Inicia un ciclo de riego manual para una zona de cultivo. Los parámetros volumeLiters y durationMinutes son opcionales; el backend calcula valores predeterminados basados en la zona. Si ya existe un ciclo IN_PROGRESS en la zona, la petición falla con 409.
+
+**A. Cabeceras (Headers)**
+
+| Campo (Field) | Tipo (Type) | Descripción |
+|----|----|----|
+| Content-Type | String | application/json |
+| Authorization | String | Permiso MANUAL_CONTROL_EXECUTE o admin. Formato: Bearer {jwt_token} |
+
+**B. Parámetros del Cuerpo (Request Body Parameters)**
+
+| Campo (Field) | Tipo (Type) | Descripción                        |
+|-------------------|-----------------|----------------------------------------|
+| zoneId            | Integer (path)  | Zona de cultivo a regar.               |
+| volumeLiters      | Float?          | Volumen deseado en litros. Opcional.   |
+| durationMinutes   | Integer?        | Duración deseada en minutos. Opcional. |
+
+**C. Ejemplo de Petición (Request-Example)**
+
+```json
+{
+    "volumeLiters": 10.5,
+    "durationMinutes": 30
+}
+```
+
+**Respuestas del servidor (Responses)**
+
+Éxito: Código 200 OK
+
+Ciclo de riego iniciado exitosamente.
+
+| Campo (Field) | Tipo (Type) | Descripción                          |
+|-------------------|-----------------|------------------------------------------|
+| cycleId           | Integer         | Identificador del ciclo de riego creado. |
+
+**Ejemplo de Respuesta Exitosa (Success-Example)**
+
+```json
+{
+    "cycleId": 42
+}
+```
+
+**Error: Código 409 Conflict**
+
+**Ejemplo de Respuesta de Error (Error-Response)**
+
+```json
+{
+    "status": 409,
+    "message": "CONFLICT: Ya existe un ciclo de riego en progreso para esta zona."
+}
+```
+
+**D. Evidencia en Swagger**
+
+<img src="">
+
+<img src="">
+
+**POST /api/v1/irrigation/stop/{zoneId}**
+
+Detiene el ciclo de riego activo de una zona de cultivo. El ciclo pasa a estado ABORTED con la razón indicada en el campo reason. Devuelve el objeto ciclo completo con la información de inicio y fin del riego.
+
+**A. Cabeceras (Headers)**
+
+| Campo (Field) | Tipo (Type) | Descripción |
+|----|----|----|
+| Content-Type | String | application/json |
+| Authorization | String | Permiso MANUAL_CONTROL_EXECUTE o admin. Formato: Bearer {jwt_token} |
+
+**B. Parámetros del Cuerpo (Request Body Parameters)**
+
+| Campo (Field) | Tipo (Type) | Descripción                         |
+|-------------------|-----------------|-----------------------------------------|
+| zoneId            | Integer (path)  | Zona de cultivo a detener.              |
+| reason            | String?         | Razón de la detención manual. Opcional. |
+
+**C. Ejemplo de Petición (Request-Example)**
+
+```json
+{
+    "reason": "Lluvia detectada manualmente"
+}
+```
+
+**Respuestas del servidor (Responses)**
+
+Éxito: Código 200 OK
+
+Ciclo de riego detenido. Devuelve el ciclo finalizado.
+
+| Campo (Field) | Tipo (Type) | Descripción                   |
+|-------------------|-----------------|-----------------------------------|
+| id                | Integer         | ID del ciclo.                     |
+| zoneId            | Integer         | Zona regada.                      |
+| startTime         | DateTime        | Inicio del ciclo.                 |
+| endTime           | DateTime        | Fin del ciclo (momento del stop). |
+| volumeLiters      | Float           | Volumen estimado utilizado.       |
+| status            | String          | ABORTED (detenido manualmente).   |
+| abortReason       | String?         | Razón del abort.                  |
+
+**Ejemplo de Respuesta Exitosa (Success-Example)**
+
+```json
+{
+    "id": 42,
+    "zoneId": 5,
+    "startTime": "2026-06-07T08:00:00Z",
+    "endTime": "2026-06-07T08:22:00Z",
+    "volumeLiters": 7.7,
+    "status": "ABORTED",
+    "abortReason": "Lluvia detectada manualmente"
+}
+```
+
+**Error: Código 404 Not Found**
+
+**Ejemplo de Respuesta de Error (Error-Response)**
+
+```json
+{
+    "status": 404,
+    "message": "NOT_FOUND: No hay ciclo activo en la zona."
+}
+```
+
+**D. Evidencia en Swagger**
+
+<img src="">
+
+<img src="">
+
+**GET /api/v1/irrigation/schedules**
+
+Lista los programas de riego automático configurados. Puede filtrarse por zona mediante el parámetro de consulta zoneId. Retorna tanto programas activos como inactivos.
+
+**A. Cabeceras (Headers)**
+
+| Campo (Field) | Tipo (Type) | Descripción |
+|----|----|----|
+| Authorization | String | Token de autenticación. Formato: Bearer {jwt_token} |
+
+**B. Parámetros de Búsqueda (Query Parameters)**
+
+| Campo (Field) | Tipo (Type)  | Descripción              |
+|-------------------|------------------|------------------------------|
+| zoneId            | Integer? (query) | Filtrar por zona específica. |
+
+**C. Ejemplo de Petición (Request-Example)**
+
+```http
+GET /api/v1/irrigation/schedules?zoneId=5 HTTP/1.1
+Host: api.grotix.pe
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9...
+```
+
+**Respuestas del servidor (Responses)**
+
+Éxito: Código 200 OK
+
+Array de programas de riego.
+
+| Campo (Field) | Tipo (Type) | Descripción |
+|----|----|----|
+| id | Integer | ID del programa. |
+| zoneId | Integer | Zona asignada. |
+| daysOfTheWeek | String | Días en formato CSV: MON,WED,FRI. |
+| startTime | String | Hora de inicio en formato HH:mm (ej. 06:30). |
+| durationMinutes | Integer | Duración en minutos. |
+| isActive | Boolean | true si el programa está habilitado. |
+| createdAt | DateTime | Fecha de creación. |
+
+**Ejemplo de Respuesta Exitosa (Success-Example)**
+
+```json
+[{
+        "id": 1, "zoneId": 5, "daysOfTheWeek": "MON,WED,FRI",
+        "startTime": "06:30", "durationMinutes": 45,
+        "isActive": true, "createdAt": "2026-05-15T00:00:00Z"
+    }]
+```
+
+**Error: Código 401 Unauthorized**
+
+**Ejemplo de Respuesta de Error (Error-Response)**
+
+```json
+{
+    "status": 401,
+    "message": "NOT_AUTHORIZED: Token inválido o expirado."
+}
+```
+
+**D. Evidencia en Swagger**
+
+<img src="">
+
+**POST /api/v1/irrigation/schedules**
+
+Crea un nuevo programa de riego automático para una zona. El programa se ejecuta automáticamente en los días y hora especificados. Los días se especifican como string CSV en formato abreviado inglés (MON, TUE, WED, THU, FRI, SAT, SUN).
+
+**A. Cabeceras (Headers)**
+
+| Campo (Field) | Tipo (Type) | Descripción |
+|----|----|----|
+| Content-Type | String | application/json |
+| Authorization | String | Permiso MANUAL_CONTROL_EXECUTE o admin. Formato: Bearer {jwt_token} |
+
+**B. Parámetros del Cuerpo (Request Body Parameters)**
+
+| Campo (Field) | Tipo (Type) | Descripción                  |
+|-------------------|-----------------|----------------------------------|
+| zoneId            | Integer         | Zona a programar.                |
+| daysOfTheWeek     | String          | Días en CSV. Ej: MON,WED,FRI.    |
+| startTime         | String          | Hora de inicio HH:mm. Ej: 06:30. |
+| durationMinutes   | Integer         | Duración del riego en minutos.   |
+
+**C. Ejemplo de Petición (Request-Example)**
+
+```json
+{
+    "zoneId": 5,
+    "daysOfTheWeek": "MON,WED,FRI",
+    "startTime": "06:30",
+    "durationMinutes": 45
+}
+```
+
+**Respuestas del servidor (Responses)**
+
+Éxito: Código 200 OK
+
+Programa de riego creado.
+
+| Campo (Field) | Tipo (Type) | Descripción         |
+|-------------------|-----------------|-------------------------|
+| scheduleId        | Integer         | ID del programa creado. |
+
+**Ejemplo de Respuesta Exitosa (Success-Example)**
+
+```json
+{
+    "scheduleId": 1
+}
+```
+
+**Error: Código 400 Bad Request**
+
+**Ejemplo de Respuesta de Error (Error-Response)**
+
+```json
+{
+    "status": 400,
+    "message": "BAD_REQUEST: El formato de startTime debe ser HH:mm."
+}
+```
+
+**D. Evidencia en Swagger**
+
+<img src="">
+
+<img src="">
+
+**GET /api/v1/irrigation/history**
+
+Obtiene el historial de ciclos de riego completados y abortados. Soporta filtrado por zona, rango temporal y paginación. Útil para reportes de consumo hídrico y auditoría de operaciones de riego.
+
+**A. Cabeceras (Headers)**
+
+| Campo (Field) | Tipo (Type) | Descripción |
+|----|----|----|
+| Authorization | String | Permiso TELEMETRY_VIEW o admin. Formato: Bearer {jwt_token} |
+
+**B. Parámetros de Búsqueda (Query Parameters)**
+
+| Campo (Field) | Tipo (Type)   | Descripción              |
+|-------------------|-------------------|------------------------------|
+| zoneId            | Integer? (query)  | Filtrar por zona.            |
+| startTime         | DateTime? (query) | Inicio del rango temporal.   |
+| endTime           | DateTime? (query) | Fin del rango temporal.      |
+| limit             | Integer? (query)  | Máximo de ciclos a retornar. |
+
+**C. Ejemplo de Petición (Request-Example)**
+
+```http
+GET /api/v1/irrigation/history?zoneId=5&limit=10 HTTP/1.1
+Host: api.grotix.pe
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9...
+```
+
+**Respuestas del servidor (Responses)**
+
+Éxito: Código 200 OK
+
+Array de ciclos de riego históricos.
+
+| Campo (Field) | Tipo (Type) | Descripción           |
+|-------------------|-----------------|---------------------------|
+| id                | Integer         | ID del ciclo.             |
+| zoneId            | Integer         | Zona regada.              |
+| startTime         | DateTime        | Inicio.                   |
+| endTime           | DateTime        | Fin.                      |
+| volumeLiters      | Float           | Volumen utilizado.        |
+| status            | String          | COMPLETED o ABORTED.      |
+| abortReason       | String?         | Razón de abort si aplica. |
+
+**Ejemplo de Respuesta Exitosa (Success-Example)**
+
+```json
+[{
+        "id": 42, "zoneId": 5,
+        "startTime": "2026-06-07T06:30:00Z",
+        "endTime": "2026-06-07T07:15:00Z",
+        "volumeLiters": 33.75, "status": "COMPLETED", "abortReason": null
+    }]
+```
+
+**Error: Código 401 Unauthorized**
+
+**Ejemplo de Respuesta de Error (Error-Response)**
+
+```json
+{
+    "status": 401,
+    "message": "NOT_AUTHORIZED: Token inválido o expirado."
+}
+```
+
+**D. Evidencia en Swagger**
+
+<img src="">
+
+<img src="">
+
+**GET /api/v1/hardware/devices**
+
+Lista todos los microcontroladores (ESP32) registrados en el sistema. Permite filtrar por estado de conexión (status) y por zona asignada (zoneId). Requiere permiso DEVICE_CONFIG o rol admin.
+
+**A. Cabeceras (Headers)**
+
+| Campo (Field) | Tipo (Type) | Descripción |
+|----|----|----|
+| Authorization | String | Permiso DEVICE_CONFIG o admin. Formato: Bearer {jwt_token} |
+
+**B. Parámetros de Búsqueda (Query Parameters)**
+
+| Campo (Field) | Tipo (Type) | Descripción |
+|----|----|----|
+| status | String? (query) | Filtrar por estado: ONLINE, OFFLINE, MAINTENANCE, ERROR. |
+| zoneId | Integer? (query) | Filtrar por zona asignada. |
+
+**C. Ejemplo de Petición (Request-Example)**
+
+```http
+GET /api/v1/hardware/devices?status=ONLINE&zoneId=5 HTTP/1.1
+Host: api.grotix.pe
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9...
+```
+
+**Respuestas del servidor (Responses)**
+
+Éxito: Código 200 OK
+
+Array de microcontroladores.
+
+| Campo (Field) | Tipo (Type) | Descripción |
+|----|----|----|
+| id | Integer | ID del dispositivo. |
+| zoneId | Integer? | Zona asignada. null si no tiene zona. |
+| model | String | Modelo del hardware (ej. ESP32-WROOM). |
+| macAddress | String | Dirección MAC única del dispositivo. |
+| status | String | Estado actual: ONLINE, OFFLINE, MAINTENANCE, ERROR. |
+| lastSeen | DateTime? | Último timestamp de actividad. |
+| createdAt | DateTime | Fecha de registro. |
+
+**Ejemplo de Respuesta Exitosa (Success-Example)**
+
+```json
+[{
+        "id": 3, "zoneId": 5, "model": "ESP32-WROOM",
+        "macAddress": "AA:BB:CC:DD:EE:FF", "status": "ONLINE",
+        "lastSeen": "2026-06-07T08:30:00Z",
+        "createdAt": "2026-04-15T00:00:00Z"
+    }]
+```
+
+**Error: Código 403 Forbidden**
+
+**Ejemplo de Respuesta de Error (Error-Response)**
+
+```json
+{
+    "status": 403,
+    "message": "FORBIDDEN: Permiso DEVICE_CONFIG requerido."
+}
+```
+
+**D. Evidencia en Swagger**
+
+<img src="">
+
+**POST /api/v1/hardware/devices**
+
+Registra un nuevo microcontrolador en el sistema. Permite configurar sensores y actuadores en el momento del registro. El campo zoneId es opcional y puede asignarse después mediante el endpoint link-to-zone.
+
+**A. Cabeceras (Headers)**
+
+| Campo (Field) | Tipo (Type) | Descripción |
+|----|----|----|
+| Content-Type | String | application/json |
+| Authorization | String | Permiso DEVICE_CONFIG o admin. Formato: Bearer {jwt_token} |
+
+**B. Parámetros del Cuerpo (Request Body Parameters)**
+
+| Campo (Field) | Tipo (Type) | Descripción |
+|----|----|----|
+| model | String | Modelo del microcontrolador. Requerido. |
+| macAddress | String | Dirección MAC única. Requerido. |
+| zoneId | Integer? | Zona a asignar. Opcional. |
+| sensors | Array? | Lista de sensores a agregar: [{ type, unit, pin, minPhysical, maxPhysical }]. |
+| actuators | Array? | Lista de actuadores: [{ type, pin }]. |
+
+**C. Ejemplo de Petición (Request-Example)**
+
+```json
+{
+    "model": "ESP32-WROOM",
+    "macAddress": "AA:BB:CC:DD:EE:01",
+    "zoneId": 5,
+    "sensors": [{ "type": "SOIL_MOISTURE", "unit": "%", "pin": 34, "minPhysical": 0, "maxPhysical": 100 }],
+    "actuators": [{ "type": "IRRIGATION_VALVE", "pin": 12 }]
+}
+```
+
+**Respuestas del servidor (Responses)**
+
+Éxito: Código 201 Created
+
+Dispositivo registrado exitosamente.
+
+| Campo (Field) | Tipo (Type) | Descripción                     |
+|-------------------|-----------------|-------------------------------------|
+| deviceId          | Integer         | ID del microcontrolador registrado. |
+
+**Ejemplo de Respuesta Exitosa (Success-Example)**
+
+```json
+{
+    "deviceId": 3
+}
+```
+
+**Error: Código 400 Bad Request**
+
+**Ejemplo de Respuesta de Error (Error-Response)**
+
+```json
+{
+    "status": 400,
+    "message": "BAD_REQUEST: La dirección MAC ya está registrada."
+}
+```
+
+**D. Evidencia en Swagger**
+
+<img src="">
+
+<img src="">
+
+**PATCH /api/v1/hardware/devices/{id}/status**
+
+Actualiza el estado de conexión de un microcontrolador. Los valores válidos son: ONLINE, OFFLINE, MAINTENANCE, ERROR. El campo lastSeen puede enviarse para registrar el último timestamp de actividad del dispositivo. Requiere permiso DEVICE_CONFIG.
+
+**A. Cabeceras (Headers)**
+
+| Campo (Field) | Tipo (Type) | Descripción |
+|----|----|----|
+| Content-Type | String | application/json |
+| Authorization | String | Permiso DEVICE_CONFIG o admin. Formato: Bearer {jwt_token} |
+
+**B. Parámetros del Cuerpo (Request Body Parameters)**
+
+| Campo (Field) | Tipo (Type) | Descripción |
+|----|----|----|
+| id | Integer (path) | ID del microcontrolador. |
+| status | String | Nuevo estado: ONLINE, OFFLINE, MAINTENANCE o ERROR. |
+| lastSeen | DateTime? | Timestamp de la última actividad. Opcional. |
+
+**C. Ejemplo de Petición (Request-Example)**
+
+```json
+{
+    "status": "MAINTENANCE",
+    "lastSeen": "2026-06-07T09:00:00Z"
+}
+```
+
+**Respuestas del servidor (Responses)**
+
+Éxito: Código 200 OK
+
+Estado del dispositivo actualizado.
+
+| Campo (Field) | Tipo (Type) | Descripción                |
+|-------------------|-----------------|--------------------------------|
+| deviceId          | Integer         | ID del dispositivo.            |
+| status            | String          | Nuevo estado registrado.       |
+| lastSeen          | DateTime?       | Último timestamp actualizado.  |
+| uptimeSeconds     | Integer?        | Segundos en línea (si aplica). |
+
+**Ejemplo de Respuesta Exitosa (Success-Example)**
+
+```json
+{
+    "deviceId": 3,
+    "status": "MAINTENANCE",
+    "lastSeen": "2026-06-07T09:00:00Z",
+    "uptimeSeconds": null
+}
+```
+
+**Error: Código 400 Bad Request**
+
+**Ejemplo de Respuesta de Error (Error-Response)**
+
+```json
+{
+    "status": 400,
+    "message": "BAD_REQUEST: Valor de status no válido. Use: ONLINE, OFFLINE, MAINTENANCE, ERROR."
+}
+```
+
+**D. Evidencia en Swagger**
+
+<img src="">
+
+<img src="">
+
+**GET /api/v1/hardware/zones/{zoneId}/health**
+
+Verifica el estado de salud de todos los microcontroladores asignados a una zona. Devuelve allActive=true únicamente si hay al menos un dispositivo y todos tienen estado ONLINE. Permite detectar sensores caídos de forma rápida.
+
+**A. Cabeceras (Headers)**
+
+| Campo (Field) | Tipo (Type) | Descripción |
+|----|----|----|
+| Authorization | String | Token de autenticación. Formato: Bearer {jwt_token} |
+
+**B. Parámetros de Búsqueda (Query Parameters)**
+
+No requiere cuerpo de petición.
+
+**C. Ejemplo de Petición (Request-Example)**
+
+```http
+GET /api/v1/hardware/zones/5/health HTTP/1.1
+Host: api.grotix.pe
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9...
+```
+
+**Respuestas del servidor (Responses)**
+
+Éxito: Código 200 OK
+
+Estado de salud consolidado de todos los dispositivos de la zona.
+
+| Campo (Field) | Tipo (Type) | Descripción |
+|----|----|----|
+| zoneId | Integer | Zona consultada. |
+| allActive | Boolean | true si todos los dispositivos están ONLINE. |
+| totalDevices | Integer | Total de dispositivos en la zona. |
+| devices | Array | Detalle por dispositivo. |
+| devices[].id | Integer | ID del microcontrolador. |
+| devices[].model | String | Modelo del dispositivo. |
+| devices[].status | String | Estado: ONLINE, OFFLINE, MAINTENANCE, ERROR. |
+| devices[].lastSeen | DateTime | Último timestamp de actividad. |
+| devices[].isActive | Boolean | true si status es ONLINE. |
+
+**Ejemplo de Respuesta Exitosa (Success-Example)**
+
+```json
+{
+    "zoneId": 5,
+    "allActive": false,
+    "totalDevices": 2,
+    "devices": [
+        { "id": 3, "model": "ESP32-WROOM", "status": "ONLINE", "lastSeen": "2026-06-07T08:30:00Z", "isActive": true },
+        { "id": 4, "model": "ESP32-S3", "status": "OFFLINE","lastSeen": "2026-06-06T18:00:00Z", "isActive": false }
+    ]
+}
+```
+
+**Error: Código 401 Unauthorized**
+
+**Ejemplo de Respuesta de Error (Error-Response)**
+
+```json
+{
+    "status": 401,
+    "message": "NOT_AUTHORIZED: Token inválido o expirado."
+}
+```
+
+**D. Evidencia en Swagger**
+
+<img src="">
+
+**PATCH /api/v1/irrigation/schedules/{id}**
+
+Actualización parcial de un programa de riego existente. Solo se actualizan los campos enviados.
+
+**A. Cabeceras (Headers)**
+
+| Campo (Field) | Tipo (Type) | Descripción |
+|----|----|----|
+| Content-Type | String | application/json |
+| Authorization | String | Permiso MANUAL_CONTROL_EXECUTE o admin. Formato: Bearer {jwt_token} |
+
+**B. Parámetros del Cuerpo (Request Body Parameters)**
+
+| Campo (Field) | Tipo (Type) | Descripción                   |
+|-------------------|-----------------|-----------------------------------|
+| id                | Integer (path)  | ID del programa a actualizar.     |
+| daysOfTheWeek     | String?         | Nuevos días en CSV. Ej: MON,FRI.  |
+| startTime         | String?         | Nueva hora HH:mm.                 |
+| durationMinutes   | Integer?        | Nueva duración en minutos.        |
+| isActive          | Boolean?        | Activar o desactivar el programa. |
+
+**C. Ejemplo de Petición (Request-Example)**
+
+```json
+{
+    "daysOfTheWeek": "MON,FRI",
+    "isActive": false
+}
+```
+
+**Respuestas del servidor (Responses)**
+
+Éxito: Código 200 OK
+
+Programa actualizado.
+
+| Campo (Field) | Tipo (Type) | Descripción                   |
+|-------------------|-----------------|-----------------------------------|
+| success           | Boolean         | true si la operación fue exitosa. |
+
+**Ejemplo de Respuesta Exitosa (Success-Example)**
+
+```json
+{
+    "success": true
+}
+```
+
+**Error: Código 404 Not Found**
+
+**Ejemplo de Respuesta de Error (Error-Response)**
+
+```json
+{
+    "status": 404,
+    "message": "NOT_FOUND: Programa no encontrado."
+}
+```
+
+**D. Evidencia en Swagger**
+
+**DELETE /api/v1/irrigation/schedules/{id}**
+
+Elimina un programa de riego automático. La eliminación es permanente.
+
+**A. Cabeceras (Headers)**
+
+| Campo (Field) | Tipo (Type) | Descripción |
+|----|----|----|
+| Authorization | String | Permiso MANUAL_CONTROL_EXECUTE o admin. Formato: Bearer {jwt_token} |
+
+**B. Parámetros de Búsqueda (Query Parameters)**
+
+| Campo (Field) | Tipo (Type) | Descripción             |
+|-------------------|-----------------|-----------------------------|
+| id                | Integer (path)  | ID del programa a eliminar. |
+
+**C. Ejemplo de Petición (Request-Example)**
+
+```http
+DELETE /api/v1/irrigation/schedules/1 HTTP/1.1
+Host: api.grotix.pe
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9...
+```
+
+**Respuestas del servidor (Responses)**
+
+Éxito: Código 200 OK
+
+Programa eliminado.
+
+| Campo (Field) | Tipo (Type) | Descripción                     |
+|-------------------|-----------------|-------------------------------------|
+| success           | Boolean         | true si la eliminación fue exitosa. |
+
+**Ejemplo de Respuesta Exitosa (Success-Example)**
+
+```json
+{
+    "success": true
+}
+```
+
+**Error: Código 404 Not Found**
+
+**Ejemplo de Respuesta de Error (Error-Response)**
+
+```json
+{
+    "status": 404,
+    "message": "NOT_FOUND: Programa no encontrado."
+}
+```
+
+**D. Evidencia en Swagger**
+
+<img src="">
+
+<img src="">
+
+**GET /api/v1/irrigation/history/{zoneId}**
+
+Variante del historial de riego con zoneId directamente en el path. Equivalente a GET /irrigation/history?zoneId={zoneId}.
+
+**A. Cabeceras (Headers)**
+
+| Campo (Field) | Tipo (Type) | Descripción |
+|----|----|----|
+| Authorization | String | Permiso TELEMETRY_VIEW o admin. Formato: Bearer {jwt_token} |
+
+**B. Parámetros de Búsqueda (Query Parameters)**
+
+| Campo (Field) | Tipo (Type)   | Descripción                  |
+|-------------------|-------------------|----------------------------------|
+| zoneId            | Integer (path)    | Zona cuyo historial se consulta. |
+| startTime         | DateTime? (query) | Inicio del rango temporal.       |
+| endTime           | DateTime? (query) | Fin del rango temporal.          |
+| limit             | Integer? (query)  | Máximo de ciclos.                |
+
+**C. Ejemplo de Petición (Request-Example)**
+
+```http
+GET /api/v1/irrigation/history/5?limit=10 HTTP/1.1
+Host: api.grotix.pe
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9...
+```
+
+**Respuestas del servidor (Responses)**
+
+Éxito: Código 200 OK
+
+Historial de ciclos de la zona.
+
+| Campo (Field) | Tipo (Type) | Descripción           |
+|-------------------|-----------------|---------------------------|
+| id                | Integer         | ID del ciclo.             |
+| zoneId            | Integer         | Zona regada.              |
+| startTime         | DateTime        | Inicio del ciclo.         |
+| endTime           | DateTime        | Fin del ciclo.            |
+| volumeLiters      | Float           | Volumen utilizado.        |
+| status            | String          | COMPLETED o ABORTED.      |
+| abortReason       | String?         | Razón de abort si aplica. |
+
+**Ejemplo de Respuesta Exitosa (Success-Example)**
+
+```json
+[{
+        "id": 42, "zoneId": 5, "status": "COMPLETED", "volumeLiters": 33.75
+        ...
+        "}]
+```
+
+**Error: Código 401 Unauthorized**
+
+**Ejemplo de Respuesta de Error (Error-Response)**
+
+```json
+{
+    "status": 401,
+    "message": "NOT_AUTHORIZED: Token inválido o expirado."
+}
+```
+
+**D. Evidencia en Swagger**
+
+<img src="">
+
+**GET /api/v1/irrigation/active**
+
+Lista todos los ciclos de riego actualmente en progreso. Puede filtrarse por zona con el query param zoneId.
+
+**A. Cabeceras (Headers)**
+
+| Campo (Field) | Tipo (Type) | Descripción |
+|----|----|----|
+| Authorization | String | Token de autenticación. Formato: Bearer {jwt_token} |
+
+**B. Parámetros de Búsqueda (Query Parameters)**
+
+| Campo (Field) | Tipo (Type)  | Descripción   |
+|-------------------|------------------|-------------------|
+| zoneId            | Integer? (query) | Filtrar por zona. |
+
+**C. Ejemplo de Petición (Request-Example)**
+
+```http
+GET /api/v1/irrigation/active HTTP/1.1
+Host: api.grotix.pe
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9...
+```
+
+**Respuestas del servidor (Responses)**
+
+Éxito: Código 200 OK
+
+Array de ciclos activos. Vacío [] si no hay ninguno en progreso.
+
+| Campo (Field) | Tipo (Type) | Descripción      |
+|-------------------|-----------------|----------------------|
+| id                | Integer         | ID del ciclo activo. |
+| zoneId            | Integer         | Zona en riego.       |
+| startTime         | DateTime        | Inicio del ciclo.    |
+| status            | String          | IN_PROGRESS.         |
+| volumeLiters      | Float?          | Volumen estimado.    |
+
+**Ejemplo de Respuesta Exitosa (Success-Example)**
+
+```json
+[{
+        "id": 43, "zoneId": 5, "startTime": "2026-06-08T06:30:00Z", "status": "IN_PROGRESS"
+    }]
+```
+
+**Error: Código 401 Unauthorized**
+
+**Ejemplo de Respuesta de Error (Error-Response)**
+
+```json
+{
+    "status": 401,
+    "message": "NOT_AUTHORIZED: Token inválido o expirado."
+}
+```
+
+**D. Evidencia en Swagger**
+
+<img src="">
+
+**GET /api/v1/irrigation/active/{zoneId}**
+
+Lista los ciclos de riego activos de una zona específica con el zoneId en el path.
+
+**A. Cabeceras (Headers)**
+
+| Campo (Field) | Tipo (Type) | Descripción |
+|----|----|----|
+| Authorization | String | Token de autenticación. Formato: Bearer {jwt_token} |
+
+**B. Parámetros de Búsqueda (Query Parameters)**
+
+| Campo (Field) | Tipo (Type) | Descripción   |
+|-------------------|-----------------|-------------------|
+| zoneId            | Integer (path)  | Zona a consultar. |
+
+**C. Ejemplo de Petición (Request-Example)**
+
+```http
+GET /api/v1/irrigation/active/5 HTTP/1.1
+Host: api.grotix.pe
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9...
+```
+
+**Respuestas del servidor (Responses)**
+
+Éxito: Código 200 OK
+
+Ciclos activos de la zona. Vacío [] si no hay riego en curso.
+
+| Campo (Field) | Tipo (Type) | Descripción |
+|-------------------|-----------------|-----------------|
+| id                | Integer         | ID del ciclo.   |
+| zoneId            | Integer         | Zona en riego.  |
+| startTime         | DateTime        | Inicio.         |
+| status            | String          | IN_PROGRESS.    |
+
+**Ejemplo de Respuesta Exitosa (Success-Example)**
+
+```json
+[{
+        "id": 43, "zoneId": 5, "startTime": "2026-06-08T06:30:00Z", "status": "IN_PROGRESS"
+    }]
+```
+
+**Error: Código 401 Unauthorized**
+
+**Ejemplo de Respuesta de Error (Error-Response)**
+
+```json
+{
+    "status": 401,
+    "message": "NOT_AUTHORIZED: Token inválido o expirado."
+}
+```
+
+**D. Evidencia en Swagger**
+
+<img src="">
+
+**GET /api/v1/irrigation/health/live**
+
+Probe de liveness del microservicio Irrigation.Api. No requiere autenticación. Confirma que el proceso HTTP está activo.
+
+**A. Cabeceras (Headers)**
+
+| Campo (Field) | Tipo (Type) | Descripción                         |
+|-------------------|-----------------|-----------------------------------------|
+| —                 | —               | No requiere cabeceras de autenticación. |
+
+**B. Parámetros de Búsqueda (Query Parameters)**
+
+No requiere parámetros.
+
+**C. Ejemplo de Petición (Request-Example)**
+
+```http
+GET /api/v1/irrigation/health/live HTTP/1.1
+Host: api.grotix.pe
+```
+
+**Respuestas del servidor (Responses)**
+
+Éxito: Código 200 OK
+
+Servicio activo.
+
+| Campo (Field) | Tipo (Type) | Descripción         |
+|-------------------|-----------------|-------------------------|
+| status            | String          | OK.                     |
+| timestamp         | DateTime        | Fecha y hora del check. |
+
+**Ejemplo de Respuesta Exitosa (Success-Example)**
+
+```json
+{
+    "status": "OK",
+    "timestamp": "2026-06-08T00:00:00Z"
+}
+```
+
+**Error: Código 503 Service Unavailable**
+
+**Ejemplo de Respuesta de Error (Error-Response)**
+
+```json
+{
+    "status": "Unhealthy"
+}
+```
+
+**D. Evidencia en Swagger**
+
+<img src="">
+
+**GET /api/v1/irrigation/health/ready**
+
+Probe de readiness del microservicio Irrigation.Api. Verifica la conectividad con MySQL antes de recibir tráfico.
+
+**A. Cabeceras (Headers)**
+
+| Campo (Field) | Tipo (Type) | Descripción                         |
+|-------------------|-----------------|-----------------------------------------|
+| —                 | —               | No requiere cabeceras de autenticación. |
+
+**B. Parámetros de Búsqueda (Query Parameters)**
+
+No requiere parámetros.
+
+**C. Ejemplo de Petición (Request-Example)**
+
+```http
+GET /api/v1/irrigation/health/ready HTTP/1.1
+Host: api.grotix.pe
+```
+
+**Respuestas del servidor (Responses)**
+
+Éxito: Código 200 OK
+
+Servicio listo para recibir tráfico.
+
+| Campo (Field) | Tipo (Type) | Descripción              |
+|-------------------|-----------------|------------------------------|
+| status            | String          | Healthy.                     |
+| checks            | Object          | { coreDatabase: "Healthy" }. |
+
+**Ejemplo de Respuesta Exitosa (Success-Example)**
+
+```json
+{
+    "status": "Healthy",
+    "checks": { "coreDatabase": "Healthy" }
+}
+```
+
+**Error: Código 503 Service Unavailable**
+
+**Ejemplo de Respuesta de Error (Error-Response)**
+
+```json
+{
+    "status": "Unhealthy",
+    "checks": { "coreDatabase": "Unhealthy" }
+}
+```
+
+**D. Evidencia en Swagger**
+
+<img src="">
+
+**GET /api/v1/hardware/devices/{id}**
+
+Obtiene el detalle completo de un microcontrolador incluyendo sus sensores y actuadores registrados.
+
+**A. Cabeceras (Headers)**
+
+| Campo (Field) | Tipo (Type) | Descripción |
+|----|----|----|
+| Authorization | String | Permiso DEVICE_CONFIG o admin. Formato: Bearer {jwt_token} |
+
+**B. Parámetros de Búsqueda (Query Parameters)**
+
+| Campo (Field) | Tipo (Type) | Descripción     |
+|-------------------|-----------------|---------------------|
+| id                | Integer (path)  | ID del dispositivo. |
+
+**C. Ejemplo de Petición (Request-Example)**
+
+```http
+GET /api/v1/hardware/devices/1 HTTP/1.1
+Host: api.grotix.pe
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9...
+```
+
+**Respuestas del servidor (Responses)**
+
+Éxito: Código 200 OK
+
+Detalle del dispositivo con sensores y actuadores.
+
+| Campo (Field) | Tipo (Type) | Descripción |
+|----|----|----|
+| deviceId | Integer | ID del dispositivo. |
+| zoneId | Integer? | Zona asignada. |
+| model | String | Modelo del hardware. |
+| macAddress | String | Dirección MAC. |
+| status | String | ONLINE, OFFLINE, MAINTENANCE, ERROR. |
+| lastSeen | DateTime? | Último timestamp. |
+| sensors | Array | [{ sensorId, type, unit, pin, status, lastSeen }]. |
+| actuators | Array | [{ actuatorId, type, pin, status, lastSeen }]. |
+
+**Ejemplo de Respuesta Exitosa (Success-Example)**
+
+```json
+{
+    "deviceId": 1, "zoneId": 1, "model": "ESP32-WROOM",
+    "macAddress": "AA:BB:CC:DD:EE:FF", "status": "ONLINE",
+    "sensors": [{ "sensorId": 2, "type": "AIR_TEMPERATURE", "unit": "°C", "pin": 4, "status": "NORMAL" }],
+    "actuators": [{ "actuatorId": 1, "type": "IRRIGATION_VALVE", "pin": 12, "status": "CLOSED" }]
+}
+```
+
+**Error: Código 404 Not Found**
+
+**Ejemplo de Respuesta de Error (Error-Response)**
+
+```json
+{
+    "status": 404,
+    "message": "NOT_FOUND: Dispositivo no encontrado."
+}
+```
+
+**D. Evidencia en Swagger**
+
+<img src="">
+
+<img src="">
+
+**PATCH /api/v1/hardware/devices/{id}**
+
+Actualización parcial de los datos de un microcontrolador. Permite cambiar zoneId, model o macAddress.
+
+**A. Cabeceras (Headers)**
+
+| Campo (Field) | Tipo (Type) | Descripción |
+|----|----|----|
+| Content-Type | String | application/json |
+| Authorization | String | Permiso DEVICE_CONFIG o admin. Formato: Bearer {jwt_token} |
+
+**B. Parámetros del Cuerpo (Request Body Parameters)**
+
+| Campo (Field) | Tipo (Type) | Descripción      |
+|-------------------|-----------------|----------------------|
+| id                | Integer (path)  | ID del dispositivo.  |
+| zoneId            | Integer?        | Nueva zona asignada. |
+| model             | String?         | Nuevo modelo.        |
+| macAddress        | String?         | Nueva dirección MAC. |
+
+**C. Ejemplo de Petición (Request-Example)**
+
+```json
+{
+    "zoneId": 2,
+    "model": "ESP32-S3"
+}
+```
+
+**Respuestas del servidor (Responses)**
+
+Éxito: Código 200 OK
+
+Dispositivo actualizado.
+
+| Campo (Field) | Tipo (Type) | Descripción                   |
+|-------------------|-----------------|-----------------------------------|
+| success           | Boolean         | true si la operación fue exitosa. |
+
+**Ejemplo de Respuesta Exitosa (Success-Example)**
+
+```json
+{
+    "success": true
+}
+```
+
+**Error: Código 404 Not Found**
+
+**Ejemplo de Respuesta de Error (Error-Response)**
+
+```json
+{
+    "status": 404,
+    "message": "NOT_FOUND: Dispositivo no encontrado."
+}
+```
+
+**D. Evidencia en Swagger**
+
+<img src="">
+
+<img src="">
+
+**DELETE /api/v1/hardware/devices/{id}**
+
+Elimina un microcontrolador del sistema junto con sus sensores y actuadores asociados.
+
+**A. Cabeceras (Headers)**
+
+| Campo (Field) | Tipo (Type) | Descripción |
+|----|----|----|
+| Authorization | String | Permiso DEVICE_CONFIG o admin. Formato: Bearer {jwt_token} |
+
+**B. Parámetros de Búsqueda (Query Parameters)**
+
+| Campo (Field) | Tipo (Type) | Descripción                |
+|-------------------|-----------------|--------------------------------|
+| id                | Integer (path)  | ID del dispositivo a eliminar. |
+
+**C. Ejemplo de Petición (Request-Example)**
+
+```http
+DELETE /api/v1/hardware/devices/3 HTTP/1.1
+Host: api.grotix.pe
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9...
+```
+
+**Respuestas del servidor (Responses)**
+
+Éxito: Código 200 OK
+
+Dispositivo eliminado.
+
+| Campo (Field) | Tipo (Type) | Descripción                     |
+|-------------------|-----------------|-------------------------------------|
+| success           | Boolean         | true si la eliminación fue exitosa. |
+
+**Ejemplo de Respuesta Exitosa (Success-Example)**
+
+```json
+{
+    "success": true
+}
+```
+
+**Error: Código 404 Not Found**
+
+**Ejemplo de Respuesta de Error (Error-Response)**
+
+```json
+{
+    "status": 404,
+    "message": "NOT_FOUND: Dispositivo no encontrado."
+}
+```
+
+**D. Evidencia en Swagger**
+
+<img src="">
+
+**POST /api/v1/hardware/devices/{id}/sensors**
+
+Agrega un nuevo sensor a un microcontrolador existente. El tipo debe ser uno de los valores reconocidos por el sistema.
+
+**A. Cabeceras (Headers)**
+
+| Campo (Field) | Tipo (Type) | Descripción |
+|----|----|----|
+| Content-Type | String | application/json |
+| Authorization | String | Permiso DEVICE_CONFIG o admin. Formato: Bearer {jwt_token} |
+
+**B. Parámetros del Cuerpo (Request Body Parameters)**
+
+| Campo (Field) | Tipo (Type) | Descripción |
+|----|----|----|
+| id | Integer (path) | ID del dispositivo. |
+| type | String | Tipo de sensor: AIR_TEMPERATURE, AIR_HUMIDITY, SOIL_MOISTURE, LIGHT_INTENSITY. |
+| unit | String | Unidad de medida: °C, %, lux. |
+| pin | Integer | Pin GPIO del ESP32. |
+| minPhysical | Float? | Valor físico mínimo del sensor. Opcional. |
+| maxPhysical | Float? | Valor físico máximo del sensor. Opcional. |
+
+**C. Ejemplo de Petición (Request-Example)**
+
+```json
+{
+    "type": "AIR_TEMPERATURE",
+    "unit": "°C",
+    "pin": 4,
+    "minPhysical": 0,
+    "maxPhysical": 100
+}
+```
+
+**Respuestas del servidor (Responses)**
+
+Éxito: Código 201 Created
+
+Sensor agregado al dispositivo.
+
+| Campo (Field) | Tipo (Type) | Descripción               |
+|-------------------|-----------------|-------------------------------|
+| sensorId          | Integer         | ID del sensor creado.         |
+| type              | String          | Tipo de sensor.               |
+| unit              | String          | Unidad de medida.             |
+| pin               | Integer         | Pin GPIO.                     |
+| zoneId            | Integer?        | Zona asociada al dispositivo. |
+
+**Ejemplo de Respuesta Exitosa (Success-Example)**
+
+```json
+{
+    "sensorId": 2,
+    "type": "AIR_TEMPERATURE",
+    "unit": "°C",
+    "pin": 4,
+    "zoneId": 1
+}
+```
+
+**Error: Código 400 Bad Request**
+
+**Ejemplo de Respuesta de Error (Error-Response)**
+
+```json
+{
+    "status": 400,
+    "message": "BAD_REQUEST: Tipo de sensor no válido."
+}
+```
+
+**D. Evidencia en Swagger**
+
+<img src="">
+
+<img src="">
+
+**DELETE /api/v1/hardware/devices/{id}/sensors/{sensorId}**
+
+Elimina un sensor de un dispositivo. Las lecturas históricas asociadas se conservan en TimescaleDB.
+
+**A. Cabeceras (Headers)**
+
+| Campo (Field) | Tipo (Type) | Descripción |
+|----|----|----|
+| Authorization | String | Permiso DEVICE_CONFIG o admin. Formato: Bearer {jwt_token} |
+
+**B. Parámetros de Búsqueda (Query Parameters)**
+
+| Campo (Field) | Tipo (Type) | Descripción           |
+|-------------------|-----------------|---------------------------|
+| id                | Integer (path)  | ID del dispositivo.       |
+| sensorId          | Integer (path)  | ID del sensor a eliminar. |
+
+**C. Ejemplo de Petición (Request-Example)**
+
+```http
+DELETE /api/v1/hardware/devices/1/sensors/2 HTTP/1.1
+Host: api.grotix.pe
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9...
+```
+
+**Respuestas del servidor (Responses)**
+
+Éxito: Código 200 OK
+
+Sensor eliminado.
+
+| Campo (Field) | Tipo (Type) | Descripción                     |
+|-------------------|-----------------|-------------------------------------|
+| success           | Boolean         | true si la eliminación fue exitosa. |
+
+**Ejemplo de Respuesta Exitosa (Success-Example)**
+
+```json
+{
+    "success": true
+}
+```
+
+**Error: Código 404 Not Found**
+
+**Ejemplo de Respuesta de Error (Error-Response)**
+
+```json
+{
+    "status": 404,
+    "message": "NOT_FOUND: Sensor no encontrado."
+}
+```
+
+**D. Evidencia en Swagger**
+
+<img src="">
+
+**POST /api/v1/hardware/devices/{id}/actuators**
+
+Agrega un actuador (ej. válvula de riego) a un microcontrolador existente.
+
+**A. Cabeceras (Headers)**
+
+| Campo (Field) | Tipo (Type) | Descripción |
+|----|----|----|
+| Content-Type | String | application/json |
+| Authorization | String | Permiso DEVICE_CONFIG o admin. Formato: Bearer {jwt_token} |
+
+**B. Parámetros del Cuerpo (Request Body Parameters)**
+
+| Campo (Field) | Tipo (Type) | Descripción                         |
+|-------------------|-----------------|-----------------------------------------|
+| id                | Integer (path)  | ID del dispositivo.                     |
+| type              | String          | Tipo de actuador. Ej: IRRIGATION_VALVE. |
+| pin               | Integer         | Pin GPIO del ESP32.                     |
+
+**C. Ejemplo de Petición (Request-Example)**
+
+```json
+{
+    "type": "IRRIGATION_VALVE",
+    "pin": 12
+}
+```
+
+**Respuestas del servidor (Responses)**
+
+Éxito: Código 201 Created
+
+Actuador agregado.
+
+| Campo (Field) | Tipo (Type) | Descripción         |
+|-------------------|-----------------|-------------------------|
+| actuatorId        | Integer         | ID del actuador creado. |
+| type              | String          | Tipo de actuador.       |
+| pin               | Integer         | Pin GPIO.               |
+| status            | String          | Estado inicial: CLOSED. |
+
+**Ejemplo de Respuesta Exitosa (Success-Example)**
+
+```json
+{
+    "actuatorId": 2,
+    "type": "IRRIGATION_VALVE",
+    "pin": 12,
+    "status": "CLOSED"
+}
+```
+
+**Error: Código 400 Bad Request**
+
+**Ejemplo de Respuesta de Error (Error-Response)**
+
+```json
+{
+    "status": 400,
+    "message": "BAD_REQUEST: Tipo de actuador no válido."
+}
+```
+
+**D. Evidencia en Swagger**
+
+<img src="">
+
+<img src="">
+
+**DELETE /api/v1/hardware/devices/{id}/actuators/{actuatorId}**
+
+Elimina un actuador de un dispositivo.
+
+**A. Cabeceras (Headers)**
+
+| Campo (Field) | Tipo (Type) | Descripción |
+|----|----|----|
+| Authorization | String | Permiso DEVICE_CONFIG o admin. Formato: Bearer {jwt_token} |
+
+**B. Parámetros de Búsqueda (Query Parameters)**
+
+| Campo (Field) | Tipo (Type) | Descripción             |
+|-------------------|-----------------|-----------------------------|
+| id                | Integer (path)  | ID del dispositivo.         |
+| actuatorId        | Integer (path)  | ID del actuador a eliminar. |
+
+**C. Ejemplo de Petición (Request-Example)**
+
+```http
+DELETE /api/v1/hardware/devices/1/actuators/2 HTTP/1.1
+Host: api.grotix.pe
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9...
+```
+
+**Respuestas del servidor (Responses)**
+
+Éxito: Código 200 OK
+
+Actuador eliminado.
+
+| Campo (Field) | Tipo (Type) | Descripción                     |
+|-------------------|-----------------|-------------------------------------|
+| success           | Boolean         | true si la eliminación fue exitosa. |
+
+**Ejemplo de Respuesta Exitosa (Success-Example)**
+
+```json
+{
+    "success": true
+}
+```
+
+**Error: Código 404 Not Found**
+
+**Ejemplo de Respuesta de Error (Error-Response)**
+
+```json
+{
+    "status": 404,
+    "message": "NOT_FOUND: Actuador no encontrado."
+}
+```
+
+**D. Evidencia en Swagger**
+
+<img src="">
+
+**POST /api/v1/hardware/devices/{id}/link-to-zone/{zoneId}**
+
+Vincula un microcontrolador a una zona de cultivo. No requiere cuerpo. El dispositivo pasa a estar asociado a la zona especificada.
+
+**A. Cabeceras (Headers)**
+
+| Campo (Field) | Tipo (Type) | Descripción |
+|----|----|----|
+| Authorization | String | Permiso DEVICE_CONFIG o admin. Formato: Bearer {jwt_token} |
+
+**B. Parámetros de Búsqueda (Query Parameters)**
+
+| Campo (Field) | Tipo (Type) | Descripción           |
+|-------------------|-----------------|---------------------------|
+| id                | Integer (path)  | ID del dispositivo.       |
+| zoneId            | Integer (path)  | ID de la zona a vincular. |
+
+**C. Ejemplo de Petición (Request-Example)**
+
+```http
+POST /api/v1/hardware/devices/1/link-to-zone/5 HTTP/1.1
+Host: api.grotix.pe
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9...
+```
+
+**Respuestas del servidor (Responses)**
+
+Éxito: Código 200 OK
+
+Dispositivo vinculado a la zona.
+
+| Campo (Field) | Tipo (Type) | Descripción                     |
+|-------------------|-----------------|-------------------------------------|
+| success           | Boolean         | true si la vinculación fue exitosa. |
+
+**Ejemplo de Respuesta Exitosa (Success-Example)**
+
+```json
+{
+    "success": true
+}
+```
+
+**Error: Código 404 Not Found**
+
+**Ejemplo de Respuesta de Error (Error-Response)**
+
+```json
+{
+    "status": 404,
+    "message": "NOT_FOUND: Dispositivo o zona no encontrados."
+}
+```
+
+**D. Evidencia en Swagger**
+
+<img src="">
+
+**DELETE /api/v1/hardware/devices/{id}/unlink-from-zone/{zoneId}**
+
+Desvincula un microcontrolador de su zona de cultivo actual.
+
+**A. Cabeceras (Headers)**
+
+| Campo (Field) | Tipo (Type) | Descripción |
+|----|----|----|
+| Authorization | String | Permiso DEVICE_CONFIG o admin. Formato: Bearer {jwt_token} |
+
+**B. Parámetros de Búsqueda (Query Parameters)**
+
+| Campo (Field) | Tipo (Type) | Descripción              |
+|-------------------|-----------------|------------------------------|
+| id                | Integer (path)  | ID del dispositivo.          |
+| zoneId            | Integer (path)  | ID de la zona a desvincular. |
+
+**C. Ejemplo de Petición (Request-Example)**
+
+```http
+DELETE /api/v1/hardware/devices/1/unlink-from-zone/5 HTTP/1.1
+Host: api.grotix.pe
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9...
+```
+
+**Respuestas del servidor (Responses)**
+
+Éxito: Código 200 OK
+
+Dispositivo desvinculado de la zona.
+
+| Campo (Field) | Tipo (Type) | Descripción                        |
+|-------------------|-----------------|----------------------------------------|
+| success           | Boolean         | true si la desvinculación fue exitosa. |
+
+**Ejemplo de Respuesta Exitosa (Success-Example)**
+
+```json
+{
+    "success": true
+}
+```
+
+**Error: Código 404 Not Found**
+
+**Ejemplo de Respuesta de Error (Error-Response)**
+
+```json
+{
+    "status": 404,
+    "message": "NOT_FOUND: Dispositivo o zona no encontrados."
+}
+```
+
+**D. Evidencia en Swagger**
+
+<img src="">
+
+**GET /api/v1/hardware/devices/{id}/zone**
+
+Obtiene la zona de cultivo a la que está vinculado un dispositivo, incluyendo el nombre del cultivo asignado.
+
+**A. Cabeceras (Headers)**
+
+| Campo (Field) | Tipo (Type) | Descripción |
+|----|----|----|
+| Authorization | String | Permiso DEVICE_CONFIG o admin. Formato: Bearer {jwt_token} |
+
+**B. Parámetros de Búsqueda (Query Parameters)**
+
+| Campo (Field) | Tipo (Type) | Descripción     |
+|-------------------|-----------------|---------------------|
+| id                | Integer (path)  | ID del dispositivo. |
+
+**C. Ejemplo de Petición (Request-Example)**
+
+```http
+GET /api/v1/hardware/devices/1/zone HTTP/1.1
+Host: api.grotix.pe
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9...
+```
+
+**Respuestas del servidor (Responses)**
+
+Éxito: Código 200 OK
+
+Información de la zona vinculada.
+
+| Campo (Field) | Tipo (Type) | Descripción              |
+|-------------------|-----------------|------------------------------|
+| zoneId            | Integer         | ID de la zona.               |
+| zoneName          | String          | Nombre de la zona.           |
+| cropName          | String          | Nombre del cultivo asignado. |
+
+**Ejemplo de Respuesta Exitosa (Success-Example)**
+
+```json
+{
+    "zoneId": 5,
+    "zoneName": "Sector Norte",
+    "cropName": "Tomate"
+}
+```
+
+**Error: Código 404 Not Found**
+
+**Ejemplo de Respuesta de Error (Error-Response)**
+
+```json
+{
+    "status": 404,
+    "message": "NOT_FOUND: El dispositivo no está vinculado a ninguna zona."
+}
+```
+
+**D. Evidencia en Swagger**
+
+<img src="">
+
+**GET /api/v1/hardware/zones/{zoneId}/devices**
+
+Lista todos los microcontroladores asignados a una zona de cultivo con un resumen de sus sensores y actuadores.
+
+**A. Cabeceras (Headers)**
+
+| Campo (Field) | Tipo (Type) | Descripción |
+|----|----|----|
+| Authorization | String | Permiso DEVICE_CONFIG o admin. Formato: Bearer {jwt_token} |
+
+**B. Parámetros de Búsqueda (Query Parameters)**
+
+| Campo (Field) | Tipo (Type) | Descripción |
+|-------------------|-----------------|-----------------|
+| zoneId            | Integer (path)  | ID de la zona.  |
+
+**C. Ejemplo de Petición (Request-Example)**
+
+```http
+GET /api/v1/hardware/zones/5/devices HTTP/1.1
+Host: api.grotix.pe
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9...
+```
+
+**Respuestas del servidor (Responses)**
+
+Éxito: Código 200 OK
+
+Array de dispositivos de la zona.
+
+| Campo (Field) | Tipo (Type) | Descripción                   |
+|-------------------|-----------------|-----------------------------------|
+| deviceId          | Integer         | ID del dispositivo.               |
+| model             | String          | Modelo del hardware.              |
+| macAddress        | String          | Dirección MAC.                    |
+| status            | String          | Estado actual.                    |
+| lastSeen          | DateTime?       | Último timestamp.                 |
+| sensorCount       | Integer         | Número de sensores registrados.   |
+| actuatorCount     | Integer         | Número de actuadores registrados. |
+
+**Ejemplo de Respuesta Exitosa (Success-Example)**
+
+```json
+[{
+        "deviceId": 1, "model": "ESP32-WROOM", "status": "ONLINE",
+        "sensorCount": 2, "actuatorCount": 1
+        ...
+        "}]
+```
+
+**Error: Código 401 Unauthorized**
+
+**Ejemplo de Respuesta de Error (Error-Response)**
+
+```json
+{
+    "status": 401,
+    "message": "NOT_AUTHORIZED: Token inválido o expirado."
+}
+```
+
+**D. Evidencia en Swagger**
+
+<img src="">
+
+**GET /api/v1/hardware/devices/{id}/telemetry**
+
+Obtiene el snapshot más reciente de telemetría de un dispositivo: todas las lecturas actuales de sus sensores, nivel de batería y señal.
+
+**A. Cabeceras (Headers)**
+
+| Campo (Field) | Tipo (Type) | Descripción |
+|----|----|----|
+| Authorization | String | Permiso DEVICE_CONFIG o admin. Formato: Bearer {jwt_token} |
+
+**B. Parámetros de Búsqueda (Query Parameters)**
+
+| Campo (Field) | Tipo (Type)     | Descripción             |
+|-------------------|---------------------|-----------------------------|
+| id                | Integer (path)      | ID del dispositivo.         |
+| sensorTypes       | String[]? (query) | Filtrar por tipo de sensor. |
+
+**C. Ejemplo de Petición (Request-Example)**
+
+```http
+GET /api/v1/hardware/devices/1/telemetry HTTP/1.1
+Host: api.grotix.pe
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9...
+```
+
+**Respuestas del servidor (Responses)**
+
+Éxito: Código 200 OK
+
+Snapshot de telemetría del dispositivo.
+
+| Campo (Field) | Tipo (Type) | Descripción                      |
+|-------------------|-----------------|--------------------------------------|
+| deviceId          | Integer         | ID del dispositivo.                  |
+| timestamp         | DateTime        | Fecha del snapshot.                  |
+| readings          | Array           | [{ sensorId, type, value, unit }]. |
+| batteryLevel      | Integer?        | Nivel de batería en %.               |
+| signalStrength    | Integer?        | Intensidad de señal WiFi en dBm.     |
+
+**Ejemplo de Respuesta Exitosa (Success-Example)**
+
+```json
+{
+    "deviceId": 1,
+    "timestamp": "2026-06-08T00:04:00Z",
+    "readings": [{ "sensorId": 2, "type": "AIR_TEMPERATURE", "value": 38.0, "unit": "°C" }],
+    "batteryLevel": 85,
+    "signalStrength": -65
+}
+```
+
+**Error: Código 404 Not Found**
+
+**Ejemplo de Respuesta de Error (Error-Response)**
+
+```json
+{
+    "status": 404,
+    "message": "NOT_FOUND: Dispositivo no encontrado."
+}
+```
+
+**D. Evidencia en Swagger**
+
+<img src="">
+
+**GET /api/v1/hardware/devices/{id}/status**
+
+Consulta el estado de conexión actual de un microcontrolador junto con el tiempo en línea.
+
+**A. Cabeceras (Headers)**
+
+| Campo (Field) | Tipo (Type) | Descripción |
+|----|----|----|
+| Authorization | String | Permiso DEVICE_CONFIG o admin. Formato: Bearer {jwt_token} |
+
+**B. Parámetros de Búsqueda (Query Parameters)**
+
+| Campo (Field) | Tipo (Type) | Descripción     |
+|-------------------|-----------------|---------------------|
+| id                | Integer (path)  | ID del dispositivo. |
+
+**C. Ejemplo de Petición (Request-Example)**
+
+```http
+GET /api/v1/hardware/devices/1/status HTTP/1.1
+Host: api.grotix.pe
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9...
+```
+
+**Respuestas del servidor (Responses)**
+
+Éxito: Código 200 OK
+
+Estado actual del dispositivo.
+
+| Campo (Field) | Tipo (Type) | Descripción |
+|----|----|----|
+| deviceId | Integer | ID del dispositivo. |
+| status | String | ONLINE, OFFLINE, MAINTENANCE o ERROR. |
+| lastSeen | DateTime? | Último timestamp de actividad. |
+| uptimeSeconds | Integer? | Segundos en línea desde el último arranque. |
+
+**Ejemplo de Respuesta Exitosa (Success-Example)**
+
+```json
+{
+    "deviceId": 1,
+    "status": "ONLINE",
+    "lastSeen": "2026-06-08T00:04:00Z",
+    "uptimeSeconds": 3600
+}
+```
+
+**Error: Código 404 Not Found**
+
+**Ejemplo de Respuesta de Error (Error-Response)**
+
+```json
+{
+    "status": 404,
+    "message": "NOT_FOUND: Dispositivo no encontrado."
+}
+```
+
+**D. Evidencia en Swagger**
+
+<img src="">
+
+**GET /api/v1/hardware/devices/{id}/diagnostic**
+
+Ejecuta un diagnóstico completo del dispositivo verificando conectividad, estado de sensores y actuadores. Requiere permiso HARDWARE_DIAGNOSTIC.
+
+**A. Cabeceras (Headers)**
+
+| Campo (Field) | Tipo (Type) | Descripción |
+|----|----|----|
+| Authorization | String | Permiso HARDWARE_DIAGNOSTIC o admin. Formato: Bearer {jwt_token} |
+
+**B. Parámetros de Búsqueda (Query Parameters)**
+
+| Campo (Field) | Tipo (Type) | Descripción |
+|----|----|----|
+| id | Integer (path) | ID del dispositivo. |
+| includeSensors | Boolean (query) | Incluir diagnóstico de sensores. Default: true. |
+| includeActuators | Boolean (query) | Incluir diagnóstico de actuadores. Default: true. |
+
+**C. Ejemplo de Petición (Request-Example)**
+
+```http
+GET /api/v1/hardware/devices/1/diagnostic?includeSensors=true HTTP/1.1
+Host: api.grotix.pe
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9...
+```
+
+**Respuestas del servidor (Responses)**
+
+Éxito: Código 200 OK
+
+Resultado del diagnóstico del dispositivo.
+
+| Campo (Field) | Tipo (Type) | Descripción |
+|----|----|----|
+| deviceId | Integer | ID del dispositivo. |
+| timestamp | DateTime | Fecha del diagnóstico. |
+| overallStatus | String | HEALTHY, DEGRADED o CRITICAL. |
+| checks | Object | { connectivity, sensors[], actuators[] }. |
+
+**Ejemplo de Respuesta Exitosa (Success-Example)**
+
+```json
+{
+    "deviceId": 1,
+    "timestamp": "2026-06-08T00:05:00Z",
+    "overallStatus": "HEALTHY",
+    "checks": { "connectivity": "OK", "sensors": [], "actuators": [] }
+}
+```
+
+**Error: Código 403 Forbidden**
+
+**Ejemplo de Respuesta de Error (Error-Response)**
+
+```json
+{
+    "status": 403,
+    "message": "FORBIDDEN: Permiso HARDWARE_DIAGNOSTIC requerido."
+}
+```
+
+**D. Evidencia en Swagger**
+
+<img src="">
+
+<img src="">
+
+**POST /api/v1/hardware/devices/{deviceId}/maintenance-logs**
+
+Registra un log de mantenimiento para un dispositivo. El userId se toma automáticamente del token JWT.
+
+**A. Cabeceras (Headers)**
+
+| Campo (Field) | Tipo (Type) | Descripción |
+|----|----|----|
+| Content-Type | String | application/json |
+| Authorization | String | Permiso DEVICE_CONFIG o admin. Formato: Bearer {jwt_token} |
+
+**B. Parámetros del Cuerpo (Request Body Parameters)**
+
+| Campo (Field) | Tipo (Type) | Descripción |
+|----|----|----|
+| deviceId | Integer (path) | ID del dispositivo. |
+| action | String | Acción realizada. Ej: CALIBRACION_SENSOR, LIMPIEZA, REEMPLAZO. |
+| statusAfter | String | Estado del dispositivo tras el mantenimiento. Ej: ONLINE. |
+
+**C. Ejemplo de Petición (Request-Example)**
+
+```json
+{
+    "action": "CALIBRACION_SENSOR",
+    "statusAfter": "ONLINE"
+}
+```
+
+**Respuestas del servidor (Responses)**
+
+Éxito: Código 201 Created
+
+Log de mantenimiento registrado.
+
+| Campo (Field) | Tipo (Type) | Descripción |
+|----|----|----|
+| logId | Integer | ID del log creado. |
+| deviceId | Integer | Dispositivo mantenido. |
+| userId | Integer | Usuario que realizó el mantenimiento (del JWT). |
+| action | String | Acción registrada. |
+| statusAfter | String | Estado post-mantenimiento. |
+| timestamp | DateTime | Fecha del mantenimiento. |
+
+**Ejemplo de Respuesta Exitosa (Success-Example)**
+
+```json
+{
+    "logId": 5,
+    "deviceId": 1,
+    "userId": 3,
+    "action": "CALIBRACION_SENSOR",
+    "statusAfter": "ONLINE",
+    "timestamp": "2026-06-08T00:10:00Z"
+}
+```
+
+**Error: Código 404 Not Found**
+
+**Ejemplo de Respuesta de Error (Error-Response)**
+
+```json
+{
+    "status": 404,
+    "message": "NOT_FOUND: Dispositivo no encontrado."
+}
+```
+
+**D. Evidencia en Swagger**
+
+<img src="">
+
+<img src="">
+
+**GET /api/v1/hardware/devices/{deviceId}/maintenance-logs**
+
+Lista el historial de logs de mantenimiento de un dispositivo.
+
+**A. Cabeceras (Headers)**
+
+| Campo (Field) | Tipo (Type) | Descripción |
+|----|----|----|
+| Authorization | String | Permiso DEVICE_CONFIG o admin. Formato: Bearer {jwt_token} |
+
+**B. Parámetros de Búsqueda (Query Parameters)**
+
+| Campo (Field) | Tipo (Type) | Descripción                        |
+|-------------------|-----------------|----------------------------------------|
+| deviceId          | Integer (path)  | ID del dispositivo.                    |
+| limit             | Integer (query) | Máximo de logs. Default: 50, max: 200. |
+
+**C. Ejemplo de Petición (Request-Example)**
+
+```http
+GET /api/v1/hardware/devices/1/maintenance-logs?limit=10 HTTP/1.1
+Host: api.grotix.pe
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9...
+```
+
+**Respuestas del servidor (Responses)**
+
+Éxito: Código 200 OK
+
+Historial de mantenimiento del dispositivo.
+
+| Campo (Field) | Tipo (Type) | Descripción                       |
+|-------------------|-----------------|---------------------------------------|
+| logId             | Integer         | ID del log.                           |
+| deviceId          | Integer         | ID del dispositivo.                   |
+| userId            | Integer         | Usuario que realizó el mantenimiento. |
+| action            | String          | Acción realizada.                     |
+| statusAfter       | String          | Estado post-mantenimiento.            |
+| timestamp         | DateTime        | Fecha.                                |
+
+**Ejemplo de Respuesta Exitosa (Success-Example)**
+
+```json
+[{
+        "logId": 5, "deviceId": 1, "userId": 3,
+        "action": "CALIBRACION_SENSOR", "statusAfter": "ONLINE",
+        "timestamp": "2026-06-08T00:10:00Z"
+    }]
+```
+
+**Error: Código 401 Unauthorized**
+
+**Ejemplo de Respuesta de Error (Error-Response)**
+
+```json
+{
+    "status": 401,
+    "message": "NOT_AUTHORIZED: Token inválido o expirado."
+}
+```
+
+**D. Evidencia en Swagger**
+
+<img src="">
+
+**POST /api/v1/hardware/devices/{deviceId}/technical-maintenance**
+
+Registra una revisión técnica formal realizada por personal de staff sobre un dispositivo.
+
+**A. Cabeceras (Headers)**
+
+| Campo (Field) | Tipo (Type) | Descripción |
+|----|----|----|
+| Content-Type | String | application/json |
+| Authorization | String | Permiso DEVICE_CONFIG o admin. Formato: Bearer {jwt_token} |
+
+**B. Parámetros del Cuerpo (Request Body Parameters)**
+
+| Campo (Field) | Tipo (Type) | Descripción |
+|----|----|----|
+| deviceId | Integer (path) | ID del dispositivo. |
+| staffId | Integer | ID del miembro de staff que realizó el mantenimiento. |
+| type | String | Tipo: PREVENTIVO, CORRECTIVO. |
+| description | String | Descripción de las tareas realizadas. |
+| results | String? | Resultados o hallazgos. Opcional. |
+
+**C. Ejemplo de Petición (Request-Example)**
+
+```json
+{
+    "staffId": 1,
+    "type": "PREVENTIVO",
+    "description": "Revisión mensual completa",
+    "results": "Todos los sensores calibrados correctamente"
+}
+```
+
+**Respuestas del servidor (Responses)**
+
+Éxito: Código 201 Created
+
+Mantenimiento técnico registrado.
+
+| Campo (Field) | Tipo (Type) | Descripción          |
+|-------------------|-----------------|--------------------------|
+| maintenanceId     | Integer         | ID del registro.         |
+| staffId           | Integer         | ID del staff.            |
+| deviceId          | Integer         | ID del dispositivo.      |
+| type              | String          | Tipo de mantenimiento.   |
+| description       | String          | Descripción.             |
+| date              | DateTime        | Fecha del mantenimiento. |
+| results           | String?         | Resultados.              |
+
+**Ejemplo de Respuesta Exitosa (Success-Example)**
+
+```json
+{
+    "maintenanceId": 3,
+    "staffId": 1,
+    "deviceId": 1,
+    "type": "PREVENTIVO",
+    "date": "2026-06-08T00:15:00Z"
+}
+```
+
+**Error: Código 404 Not Found**
+
+**Ejemplo de Respuesta de Error (Error-Response)**
+
+```json
+{
+    "status": 404,
+    "message": "NOT_FOUND: Dispositivo no encontrado."
+}
+```
+
+**D. Evidencia en Swagger**
+
+<img src="">
+
+<img src="">
+
+**GET /api/v1/hardware/devices/{deviceId}/technical-maintenance**
+
+Lista el historial de mantenimientos técnicos formales de un dispositivo.
+
+**A. Cabeceras (Headers)**
+
+| Campo (Field) | Tipo (Type) | Descripción |
+|----|----|----|
+| Authorization | String | Permiso DEVICE_CONFIG o admin. Formato: Bearer {jwt_token} |
+
+**B. Parámetros de Búsqueda (Query Parameters)**
+
+| Campo (Field) | Tipo (Type) | Descripción                   |
+|-------------------|-----------------|-----------------------------------|
+| deviceId          | Integer (path)  | ID del dispositivo.               |
+| limit             | Integer (query) | Máximo de registros. Default: 50. |
+
+**C. Ejemplo de Petición (Request-Example)**
+
+```http
+GET /api/v1/hardware/devices/1/technical-maintenance HTTP/1.1
+Host: api.grotix.pe
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9...
+```
+
+**Respuestas del servidor (Responses)**
+
+Éxito: Código 200 OK
+
+Historial de mantenimientos técnicos.
+
+| Campo (Field) | Tipo (Type) | Descripción                |
+|-------------------|-----------------|--------------------------------|
+| maintenanceId     | Integer         | ID del registro.               |
+| staffId           | Integer         | Staff responsable.             |
+| type              | String          | Tipo: PREVENTIVO o CORRECTIVO. |
+| description       | String          | Descripción.                   |
+| date              | DateTime        | Fecha.                         |
+| results           | String?         | Resultados.                    |
+
+**Ejemplo de Respuesta Exitosa (Success-Example)**
+
+```json
+[{
+        "maintenanceId": 3, "staffId": 1, "type": "PREVENTIVO",
+        "description": "Revisión mensual", "date": "2026-06-08T00:15:00Z"
+    }]
+```
+
+**Error: Código 401 Unauthorized**
+
+**Ejemplo de Respuesta de Error (Error-Response)**
+
+```json
+{
+    "status": 401,
+    "message": "NOT_AUTHORIZED: Token inválido o expirado."
+}
+```
+
+**D. Evidencia en Swagger**
+
+<img src="">
+
+**GET /api/v1/hardware/actuators/{actuatorId}/action-queue**
+
+Lista la cola de comandos pendientes, enviados y completados para un actuador específico (ej. válvula de riego).
+
+**A. Cabeceras (Headers)**
+
+| Campo (Field) | Tipo (Type) | Descripción |
+|----|----|----|
+| Authorization | String | Permiso DEVICE_CONFIG o admin. Formato: Bearer {jwt_token} |
+
+**B. Parámetros de Búsqueda (Query Parameters)**
+
+| Campo (Field) | Tipo (Type) | Descripción                  |
+|-------------------|-----------------|----------------------------------|
+| actuatorId        | Integer (path)  | ID del actuador.                 |
+| limit             | Integer (query) | Máximo de entradas. Default: 50. |
+
+**C. Ejemplo de Petición (Request-Example)**
+
+```http
+GET /api/v1/hardware/actuators/1/action-queue?limit=20 HTTP/1.1
+Host: api.grotix.pe
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9...
+```
+
+**Respuestas del servidor (Responses)**
+
+Éxito: Código 200 OK
+
+Cola de acciones del actuador.
+
+| Campo (Field) | Tipo (Type) | Descripción                    |
+|-------------------|-----------------|------------------------------------|
+| actionId          | Integer         | ID de la acción.                   |
+| actuatorId        | Integer         | ID del actuador.                   |
+| command           | String          | Comando: OPEN o CLOSE.             |
+| status            | String          | PENDING, SENT, COMPLETED o FAILED. |
+| createdAt         | DateTime        | Fecha de creación del comando.     |
+
+**Ejemplo de Respuesta Exitosa (Success-Example)**
+
+```json
+[{
+        "actionId": 10, "actuatorId": 1,
+        "command": "OPEN", "status": "COMPLETED",
+        "createdAt": "2026-06-08T06:30:00Z"
+    }]
+```
+
+**Error: Código 401 Unauthorized**
+
+**Ejemplo de Respuesta de Error (Error-Response)**
+
+```json
+{
+    "status": 401,
+    "message": "NOT_AUTHORIZED: Token inválido o expirado."
+}
+```
+
+**D. Evidencia en Swagger**
+
+<img src="">
+
+**GET /api/v1/hardware/health/live**
+
+Probe de liveness del microservicio HardwareDevice.Api. Confirma que el proceso HTTP está activo.
+
+**A. Cabeceras (Headers)**
+
+| Campo (Field) | Tipo (Type) | Descripción            |
+|-------------------|-----------------|----------------------------|
+| —                 | —               | No requiere autenticación. |
+
+**B. Parámetros de Búsqueda (Query Parameters)**
+
+No requiere parámetros.
+
+**C. Ejemplo de Petición (Request-Example)**
+
+```http
+GET /api/v1/hardware/health/live HTTP/1.1
+Host: api.grotix.pe
+```
+
+**Respuestas del servidor (Responses)**
+
+Éxito: Código 200 OK
+
+Servicio activo.
+
+| Campo (Field) | Tipo (Type) | Descripción  |
+|-------------------|-----------------|------------------|
+| status            | String          | OK.              |
+| timestamp         | DateTime        | Fecha del check. |
+
+**Ejemplo de Respuesta Exitosa (Success-Example)**
+
+```json
+{
+    "status": "OK",
+    "timestamp": "2026-06-08T00:00:00Z"
+}
+```
+
+**Error: Código 503 Service Unavailable**
+
+**Ejemplo de Respuesta de Error (Error-Response)**
+
+```json
+{
+    "status": "Unhealthy"
+}
+```
+
+**D. Evidencia en Swagger**
+
+<img src="">
+
+**GET /api/v1/hardware/health/ready**
+
+Probe de readiness del microservicio HardwareDevice.Api. Verifica conectividad con MySQL.
+
+**A. Cabeceras (Headers)**
+
+| Campo (Field) | Tipo (Type) | Descripción            |
+|-------------------|-----------------|----------------------------|
+| —                 | —               | No requiere autenticación. |
+
+**B. Parámetros de Búsqueda (Query Parameters)**
+
+No requiere parámetros.
+
+**C. Ejemplo de Petición (Request-Example)**
+
+```http
+GET /api/v1/hardware/health/ready HTTP/1.1
+Host: api.grotix.pe
+```
+
+**Respuestas del servidor (Responses)**
+
+Éxito: Código 200 OK
+
+Servicio listo.
+
+| Campo (Field) | Tipo (Type) | Descripción              |
+|-------------------|-----------------|------------------------------|
+| status            | String          | Healthy.                     |
+| checks            | Object          | { coreDatabase: "Healthy" }. |
+
+**Ejemplo de Respuesta Exitosa (Success-Example)**
+
+```json
+{
+    "status": "Healthy",
+    "checks": { "coreDatabase": "Healthy" }
+}
+```
+
+**Error: Código 503 Service Unavailable**
+
+**Ejemplo de Respuesta de Error (Error-Response)**
+
+```json
+{
+    "status": "Unhealthy"
+}
+```
+
+**D. Evidencia en Swagger**
+
+<img src="">
+
+**GET /api/v1/telemetry/actuators/{actuatorId}/logs**
+
+Lista el historial de acciones ejecutadas por un actuador (apertura/cierre de válvula). Útil para auditoría de ciclos de riego y diagnóstico.
+
+**A. Cabeceras (Headers)**
+
+| Campo (Field) | Tipo (Type) | Descripción |
+|----|----|----|
+| Authorization | String | Permiso TELEMETRY_VIEW o admin. Formato: Bearer {jwt_token} |
+
+**B. Parámetros de Búsqueda (Query Parameters)**
+
+| Campo (Field) | Tipo (Type) | Descripción                         |
+|-------------------|-----------------|-----------------------------------------|
+| actuatorId        | Integer (path)  | ID del actuador.                        |
+| limit             | Integer (query) | Máximo de logs. Default: 100, max: 500. |
+
+**C. Ejemplo de Petición (Request-Example)**
+
+```http
+GET /api/v1/telemetry/actuators/1/logs?limit=50 HTTP/1.1
+Host: api.grotix.pe
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9...
+```
+
+**Respuestas del servidor (Responses)**
+
+Éxito: Código 200 OK
+
+Historial de acciones del actuador.
+
+| Campo (Field) | Tipo (Type) | Descripción |
+|----|----|----|
+| logId | Integer | ID del log. |
+| actuatorId | Integer | ID del actuador. |
+| action | String | Acción ejecutada: OPEN o CLOSE. |
+| duration | Integer? | Duración de la acción en segundos. |
+| timestamp | DateTime | Fecha y hora de la acción. |
+| flowRate | Float? | Caudal registrado durante la acción (si aplica). |
+
+**Ejemplo de Respuesta Exitosa (Success-Example)**
+
+```json
+[{
+        "logId": 25, "actuatorId": 1, "action": "OPEN",
+        "duration": 2700, "timestamp": "2026-06-08T06:30:00Z", "flowRate": 1.25
+    }]
+```
+
+**Error: Código 401 Unauthorized**
+
+**Ejemplo de Respuesta de Error (Error-Response)**
+
+```json
+{
+    "status": 401,
+    "message": "NOT_AUTHORIZED: Token inválido o expirado."
+}
+```
+
+**D. Evidencia en Swagger**
+
+<img src="">
+
+Está vacío porque solo muestra las órdenes pendientes, una vez enviadas pasarán a estar enviadas o completada.
+
+**GET /api/v1/telemetry/health/live**
+
+Probe de liveness del microservicio Telemetry.Api. También reporta el estado de conectividad con RabbitMQ.
+
+**A. Cabeceras (Headers)**
+
+| Campo (Field) | Tipo (Type) | Descripción            |
+|-------------------|-----------------|----------------------------|
+| —                 | —               | No requiere autenticación. |
+
+**B. Parámetros de Búsqueda (Query Parameters)**
+
+No requiere parámetros.
+
+**C. Ejemplo de Petición (Request-Example)**
+
+```http
+GET /api/v1/telemetry/health/live HTTP/1.1
+Host: api.grotix.pe
+```
+
+**Respuestas del servidor (Responses)**
+
+Éxito: Código 200 OK
+
+Servicio activo.
+
+| Campo (Field) | Tipo (Type) | Descripción |
+|----|----|----|
+| status | String | OK. |
+| timestamp | DateTime | Fecha del check. |
+| messageBroker | String | Estado de RabbitMQ: Connected o Disconnected. |
+
+**Ejemplo de Respuesta Exitosa (Success-Example)**
+
+```json
+{
+    "status": "OK",
+    "timestamp": "2026-06-08T00:00:00Z",
+    "messageBroker": "Connected"
+}
+```
+
+**Error: Código 503 Service Unavailable**
+
+**Ejemplo de Respuesta de Error (Error-Response)**
+
+```json
+{
+    "status": "Unhealthy"
+}
+```
+
+**D. Evidencia en Swagger**
+
+<img src="">
+
+**GET /api/v1/telemetry/health/ready**
+
+Probe de readiness del microservicio Telemetry.Api. Verifica TimescaleDB, MySQL y RabbitMQ antes de recibir tráfico.
+
+**A. Cabeceras (Headers)**
+
+| Campo (Field) | Tipo (Type) | Descripción            |
+|-------------------|-----------------|----------------------------|
+| —                 | —               | No requiere autenticación. |
+
+**B. Parámetros de Búsqueda (Query Parameters)**
+
+No requiere parámetros.
+
+**C. Ejemplo de Petición (Request-Example)**
+
+```http
+GET /api/v1/telemetry/health/ready HTTP/1.1
+Host: api.grotix.pe
+```
+
+**Respuestas del servidor (Responses)**
+
+Éxito: Código 200 OK
+
+Servicio listo para recibir tráfico.
+
+| Campo (Field) | Tipo (Type) | Descripción |
+|----|----|----|
+| status | String | Healthy. |
+| checks | Object | { database, coreDatabase, messageBroker }. |
+
+**Ejemplo de Respuesta Exitosa (Success-Example)**
+
+```json
+{
+    "status": "Healthy",
+    "checks": { "database": "Healthy", "coreDatabase": "Healthy", "messageBroker": "Healthy" }
+}
+```
+
+**Error: Código 503 Service Unavailable**
+
+**Ejemplo de Respuesta de Error (Error-Response)**
+
+```json
+{
+    "status": "Unhealthy",
+    "checks": { "database": "Unhealthy" }
+}
+```
+
+**D. Evidencia en Swagger**
+
+<img src="">
+
+#### 6.2.2.8. Software Deployment Evidence for Sprint Review
+
+<img src="https://imgur.com/WPXtAzQ.png">
+
+Configuración inicial de un servidor flexible de PostgreSQL en Microsoft Azure. En esta etapa se definieron los parámetros principales del servicio, incluyendo la suscripción, grupo de recursos, nombre del servidor, región de despliegue y versión de PostgreSQL, preparando la infraestructura de base de datos para soportar los servicios backend de la aplicación.
+
+<img src="https://imgur.com/MNKUmhP.png">
+
+Visualización del servidor PostgreSQL grotixtelemetry una vez completado el aprovisionamiento en Microsoft Azure. En la captura se muestra el estado Ready, confirmando que la instancia de base de datos fue desplegada correctamente y quedó disponible para su integración con los servicios backend de la solución durante el Sprint.
+
+<img src="https://imgur.com/dapVAfY.png">
+
+Configuración de los parámetros avanzados del servidor PostgreSQL en Azure, donde se habilitó la extensión TimescaleDB mediante el parámetro azure.extensions. Esta extensión permite optimizar el almacenamiento y procesamiento de datos de series temporales, facilitando la gestión eficiente de información telemétrica generada por los dispositivos IoT de la solución.
+
+<img src="https://imgur.com/bikIOrd.png">
+
+Configuración del parámetro shared_preload_libraries para precargar la librería TimescaleDB durante el inicio del servidor PostgreSQL. Esta acción es necesaria para habilitar completamente las funcionalidades de la extensión y garantizar su correcto funcionamiento en el procesamiento de datos de series temporales. Posteriormente, se reinició el servidor para aplicar los cambios realizados.
+
+<img src="https://imgur.com/I2sYQBJ.png">
+
+Conexión exitosa al servidor PostgreSQL desplegado en Azure mediante el cliente psql. Durante este paso se creó la base de datos grotix_telemetry y se estableció la conexión a ella, dejando preparado el entorno para el almacenamiento y gestión de los datos telemétricos generados por la aplicación.
+
+<img src="https://imgur.com/I4sfynP.png">
+
+Creación y validación de la extensión TimescaleDB dentro de la base de datos grotix_telemetry mediante comandos SQL ejecutados desde psql. Esta configuración habilita capacidades avanzadas para el almacenamiento y análisis eficiente de datos de series temporales, requisito fundamental para el procesamiento de información telemétrica en la solución IoT.
+
+<img src="https://imgur.com/791cdqE.png">
+
+Verificación de las extensiones instaladas en la base de datos grotix_telemetry mediante el comando \dx. La captura confirma que la extensión TimescaleDB fue instalada correctamente y se encuentra activa, permitiendo el manejo optimizado de datos de series temporales requeridos por el sistema de telemetría.
+
+<img src="https://imgur.com/BP1tzbb.png">
+
+Configuración y actualización de las variables de entorno de la aplicación web desplegada en Azure App Service. En esta etapa se definieron parámetros esenciales como las cadenas de conexión a la base de datos, configuraciones de RabbitMQ, variables de autenticación, entorno de ejecución y opciones de monitoreo, permitiendo que los servicios funcionen correctamente en el entorno productivo de la nube.
+
+<img src="https://imgur.com/yqIysJX.png">
+
+Desarrollo de un script automatizado de despliegue utilizando PowerShell y Azure CLI para simplificar la publicación de servicios en Azure App Service. El script automatiza tareas como la compilación del proyecto .NET, la generación del paquete de despliegue y la publicación de la aplicación en la nube, reduciendo el esfuerzo manual y garantizando un proceso de deployment más rápido, consistente y reproducible.
+
+<img src="https://imgur.com/Uu2Gmyq.png">
+
+<img src="https://imgur.com/QiMsrQX.png">
+
+Ejecución del script automatizado de despliegue para el servicio Profiles.Api. Durante el proceso se realizó la compilación del proyecto, la generación del paquete comprimido de publicación y su despliegue en Azure App Service. La salida de la consola confirma que la compilación, transferencia y puesta en marcha del servicio se completaron exitosamente, validando el correcto funcionamiento del proceso automatizado de deployment para cada microservicio de la solución.
+
+<img src="https://imgur.com/vuVAuv9.png">
+
+Validación del despliegue mediante la ejecución del endpoint de salud (/live) desde la documentación Swagger publicada en Azure. La respuesta exitosa con código 200 OK confirma que el servicio se encuentra operativo, accesible desde Internet y funcionando correctamente después del proceso de deployment realizado durante el Sprint.
+
+<img src="https://imgur.com/bYACcnQ.png">
+
+Creación de una instancia de CloudAMQP como servicio administrado de RabbitMQ en la nube. Esta configuración permitió disponer de un broker de mensajería accesible desde Internet para soportar la comunicación asíncrona entre los microservicios de la solución, facilitando el intercambio de eventos y datos telemétricos de manera escalable y desacoplada.
+
+<img src="https://imgur.com/AHD3fKG.png">
+
+<img src="https://imgur.com/3hRZski.png">
+
+<img src="https://imgur.com/rmcTrxv.png">
+
+<img src="https://imgur.com/iXodZWQ.png">
+
+Configuración de una instancia de RabbitMQ en CloudAMQP y parametrización de los servicios desplegados mediante variables de entorno. Durante este proceso se seleccionó el plan y la región de despliegue del broker, obteniendo posteriormente los datos de conexión (host, puerto, usuario, contraseña y virtual host), los cuales fueron registrados en Azure App Service para permitir la comunicación asíncrona entre los microservicios de la solución.
+
+<img src="https://imgur.com/ACP52js.png">
+
+Procedemos a crear la carpeta dist para el redespliegue de la aplicación web.
+
+<img src="https://imgur.com/Q3l9fcF.png">
+
+Y desplegamos la aplicación web.
+
+<img src="https://imgur.com/djbEy9B.png">
+
+Configuramos GithubActions para que automatice la generación del apk cada vez que se realizan cambios en la rama main y que se desplieguen el release.
+
+<img src="https://imgur.com/0AYHwMj.png">
+
+Una vez subido este cambio, se genera el archivo apk listo para descargar en cualquier dispositivo android.
+
+#### 6.2.2.9. Team Collaboration Insights during Sprint
+
+La implementación de la plataforma Grotix se ha desarrollado bajo un marco de trabajo ágil, priorizando la integración continua y la entrega de valor incremental. El equipo consolidó una estrategia basada en GitFlow para la gestión de versiones, lo que permitió el co-desarrollo y despliegue paralelo de los cuatro ecosistemas clave del proyecto: el módulo de procesamiento de datos e inteligencia agrícola (Grotix_Crop_Analysis), la aplicación para dispositivos móviles (Grotix_Mobile), la arquitectura de microservicios del backend (Web Services) y la aplicación web adaptativa (Web).
+
+**Analíticos de Colaboración y Contribuciones**
+
+A continuación, se presentan los indicadores de actividad de los repositorios oficiales en GitHub, los cuales reflejan la dinámica de trabajo, la frecuencia de integraciones y el flujo de colaboración del equipo durante el presente ciclo de desarrollo.
 
 # Conclusiones
 
@@ -3926,7 +7907,6 @@ El ritmo de implementación se mantuvo constante, con un enfoque en la robustez 
 * Madurez Arquitectónica mediante el Proceso ADD (Iteraciones 1 a 5): La aplicación sistemática de la metodología Architecture-Driven Design (ADD), culminando con los ciclos ADD 3, ADD 4 y ADD 5 para esta entrega AV3, evitó decisiones técnicas arbitrarias y garantizó que la estructura de Grotix responda directamente a sus drivers arquitectónicos. El proceso iterativo refinó el procesamiento distribuido, la escalabilidad horizontal selectiva y las estrategias de integración, transformando las severas restricciones del entorno rural (latencia, intermitencia de red y bajo consumo energético) en una ventaja competitiva de robustez arquitectónica.
 
 * Desacoplamiento Operativo y Escalabilidad con DDD Estratégico: La separación física de los seis Bounded Contexts definidos (Profile, Cultivation Area, Hardware Device, Irrigation Cycle, Crop Analysis y Telemetry) en microservicios independientes programados en C# / .NET y coordinados a través de un API Gateway centralizado en Azure garantiza la resiliencia operativa de la solución. Esta disposición estratégica impide el acoplamiento sistémico, asegurando que fallos aislados en servicios adyacentes no comprometan las actividades críticas de telemetría y ejecución de ciclos de riego, permitiendo además la asignación eficiente de recursos en la nube.
-
 
 * Persistencia Políglota Optimizada para IoT: El diseño de la capa de datos bajo un esquema de persistencia políglota resuelve de forma eficiente las necesidades transaccionales y analíticas de la plataforma. La segregación física entre bases de datos relacionales (Core DB en MySQL para entidades y configuraciones de microservicios) y bases de datos optimizadas para series temporales (Telemetry DB implementada en TimescaleDB sobre Azure) evita cuellos de botella durante la ingesta masiva de lecturas concurrentes provenientes de los sensores de suelo y ambiente, optimizando los tiempos de respuesta de las consultas históricas.
 
