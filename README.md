@@ -3927,12 +3927,12 @@ El ritmo de implementación se mantuvo constante, con un enfoque en la robustez 
 | Location | Reunión Virtual de Google Meet |
 | Prepared By | Cassius Martel |
 | Attendees (to planning meeting) | Binda Arbañil, Marcelo Alejandro / Castillo Garay, Ainhoa Lucía / Martel Andrade, Cassius Estefano / Nakamurakare Teruya, Alex Tomio / Rodas Sotomayor, Ernesto / |
-| Review Summary | Presentación exitosa de los nuevos microservicios core del sistema IoT (Telemetría, Hardware e Irrigación en .NET) y el microservicio de Análisis de Cultivos con Inteligencia Artificial (Python/FastAPI). Despliegue inicial de la aplicación móvil en Flutter con integración de autenticación, dashboard táctil y gestión de zonas. Optimización exitosa de latencia mediante DTOs y refinamiento de la aplicación Web para la gestión técnica de dispositivos. Todas las tareas (131 SP/Horas) marcadas como "Done". |
+| Review Summary | Presentación exitosa de los nuevos microservicios core del sistema IoT (Telemetría, Hardware e Irrigación en .NET) y el microservicio de Análisis de Cultivos con Inteligencia Artificial (Python/FastAPI). Despliegue inicial de la aplicación móvil en Flutter con integración de autenticación, dashboard táctil y gestión de zonas. Optimización exitosa de latencia mediante DTOs y refinamiento de la aplicación Web para la gestión técnica de dispositivos. Todas las tareas (53 SP/Horas) marcadas como "Done". |
 | Retrospective Summary | El equipo logró una gran sinergia al paralelizar el desarrollo móvil en Flutter con la expansión masiva de los microservicios backend. Se identificó que la integración del motor de IA en Python requiere un ruteo estricto en el API Gateway. |
 | **Sprint Goal & User Stories** |  |
 | Sprint 2 Goal | El objetivo de este segundo sprint es expandir la arquitectura de microservicios para soportar la lógica core del ecosistema IoT (Ingesta de Telemetría, Control de Irrigación, Gestión de Hardware) y la inferencia de Inteligencia Artificial mediante FastAPI. Paralelamente, se busca establecer la aplicación móvil multiplataforma (Flutter), brindando a los agricultores acceso a dashboards de monitoreo táctil, gestión de zonas, invitaciones de colaboración y análisis fenológico en tiempo real directamente desde sus smartphones. |
 | Sprint 2 Velocity | 56 |
-| Sum of Story Points | 131 |
+| Sum of Story Points | 53 |
 
 #### 6.2.2.2. Aspect Leaders and Collaborators
 
