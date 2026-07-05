@@ -3004,7 +3004,7 @@ Durante el presente sprint se alcanzó un avance significativo en la implementac
 
 **Repository: Grotix_Web**
 
-- **Branch:** develop
+- **Branch:** develop 
 - **Total Commits:** 20
 
 | Secuencia | Repository | Branch | Commit Id | Commit Message | Commit Message Body | Committed on |
