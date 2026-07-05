@@ -2,7 +2,7 @@
   <img src="https://upload.wikimedia.org/wikipedia/commons/f/fc/UPC_logo_transparente.png" alt="Logo UPC" width="200"/>
 </p>
 
-<h1 align="center">UNIVERSIDAD PERUANA DE CIENCIAS APLICADAS</h1>
+<h1 align="center">UNIVERSIDAD PERUANA DE CIENCIAS APLICADAS</h1> 
 <h2 align="center">Facultad de Ingeniería</h2>
 <h3 align="center">Carrera de Ingeniería de Software</h3>
 <h3 align="center">1ASI0572- Desarrollo de soluciones IOT</h3>
