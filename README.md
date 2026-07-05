@@ -2910,10 +2910,6 @@ La implementación se enfoca en garantizar usabilidad, rendimiento y coherencia 
 
 #### 6.2.1.3. Sprint Backlog 1
 
-| Campo | Detalle |
-|---|---|
-| Sprint # | Sprint 1 |
-
 | User Story Id | User Story Title | Work-Item / Task Id | Task Title | Description | Estimation (Hours) | Assigned To | Status (To-do / In-Process / To-Review / Done) |
 |---|---|---|---|---|---:|---|---|
 | US01 | Visualización de propuesta de valor y servicios | T01 | Maquetado HTML/CSS de Hero Section | Creación de la estructura base del primer bloque visible (Hero) en la landing page. | 3 | Frontend Dev | Done |
@@ -3946,10 +3942,6 @@ El ritmo de implementación se mantuvo constante, con un enfoque en la robustez 
 
 #### 6.2.2.3. Sprint Backlog 2
 
-| Campo | Detalle |
-|---|---|
-| Sprint # | Sprint 2 |
-
 | User Story Id | User Story Title | Work-Item / Task Id | Task Title | Description | Estimation (Hours) | Assigned To | Status (To-do / In-Process / To-Review / Done) |
 |---|---|---|---|---|---:|---|---|
 | TS16 | Implementación del Microservicio de Telemetría e Ingesta IoT (.NET) | T57 | Estructura base en Telemetry API | Creación del proyecto base en .NET (C#) y configuración de las rutas del controlador para la ingesta asíncrona. | 3 | Backend Dev | Done |
@@ -3963,9 +3955,9 @@ El ritmo de implementación se mantuvo constante, con un enfoque en la robustez 
 | TS17 | Implementación del Microservicio de Control y Orquestación de Riego (.NET) | T65 | Pruebas Unitarias integrales con xUnit | Escritura y ejecución de cobertura de pruebas automatizadas con xUnit en las capas de negocio de cada microservicio para validar el comportamiento del dominio. | 5 | Backend Dev | Done |
 | TS18 | Desarrollo del Microservicio de Análisis de Cultivos e Integración de IA (Python) | T66 | Servidor base y API en FastAPI | Configuración del entorno de desarrollo en Python con FastAPI y endpoints HTTP destinados a la recepción de recursos visuales de parcelas. | 4 | Backend Dev | Done |
 | TS18 | Desarrollo del Microservicio de Análisis de Cultivos e Integración de IA (Python) | T67 | Integración de pipeline de inferencia IA | Programación del script en Python para conectarse mediante API Key a los servicios lógicos de IA y retornar la clasificación fenológica sin enlace de hardware ESP32. | 6 | Backend Dev | Done |
-| US26 | Modificación de datos personales y de contacto | T68 | Refactorización de endpoints de perfil | Correcciones y mejoras técnicas en el microservicio de identidades para el guardado consistente de datos de contacto de agricultores. | 5 | Backend Dev | Done |
-| US26 | Modificación de datos personales y de contacto | T69 | Rediseño de Layout de Profile Web | Ajuste visual, unificación de estados reactivos y limpieza de conflictos de fusión en el componente MyProfileView.vue dentro de Vue 3. | 4 | Frontend Dev | Done |
-| US26 | Modificación de datos personales y de contacto | T70 | Maquetación UI móvil de sección Perfil | Construcción responsiva de la pantalla de gestión de perfil dentro de la aplicación móvil basándose en los wireframes. | 4 | Frontend Dev | Done |
+| US25 | Modificación de datos personales y de contacto | T68 | Refactorización de endpoints de perfil | Correcciones y mejoras técnicas en el microservicio de identidades para el guardado consistente de datos de contacto de agricultores. | 5 | Backend Dev | Done |
+| US25 | Modificación de datos personales y de contacto | T69 | Rediseño de Layout de Profile Web | Ajuste visual, unificación de estados reactivos y limpieza de conflictos de fusión en el componente MyProfileView.vue dentro de Vue 3. | 4 | Frontend Dev | Done |
+| US25 | Modificación de datos personales y de contacto | T70 | Maquetación UI móvil de sección Perfil | Construcción responsiva de la pantalla de gestión de perfil dentro de la aplicación móvil basándose en los wireframes. | 4 | Frontend Dev | Done |
 | US15 | Organización de dispositivos por zonas y especies | T71 | Optimización de consultas estructurales | Corrección de bases de datos y asignación jerárquica de granjas/lotes dentro del microservicio Cultivation.Api. | 5 | Backend Dev | Done |
 | US15 | Organización de dispositivos por zonas y especies | T72 | UI móvil de formularios de creación | Implementación en Flutter de las vistas de ingreso de parcelas y asociación a variedades del catálogo botánico. | 6 | Frontend Dev | Done |
 | TS12 | Gestión de mantenimiento de dispositivos IoT | T73 | UI Web de Inventario con Filtros Dinámicos | Construcción de DevicesListView incorporando propiedades computadas para el filtrado reactivo en tiempo real por ID, texto y estado. | 6 | Frontend Dev | Done |
@@ -3974,11 +3966,11 @@ El ritmo de implementación se mantuvo constante, con un enfoque en la robustez 
 | TS11 | Gestión de Capas de Datos Mock de la Aplicación Móvil | T76 | UI Móvil de Vista de Detalle de Zona Individual | Construcción y maquetación de la pantalla móvil de detalle por zona en Flutter conectando variables directas reales desde Cultivation.Api. | 5 | Frontend Dev | Done |
 | TS11 | Gestión de Capas de Datos Mock de la Aplicación Móvil | T77 | Estructuras Mock para Reportes, Notis y Sensores | Desarrollo de clases estáticas y repositorios temporales en Flutter para renderizar la UI de reportes históricos, notificaciones y gráficas de sensores. | 4 | Frontend Dev | Done |
 | TS15 | Configuración de Arquitectura Base y Scaffolding para la App Móvil | T78 | Inicialización, Capas y Clientes Flutter | Setup estructural bajo arquitectura limpia, empaquetado de cliente HTTP base apuntando al API Gateway, ruteo básico e instalación de paquetes de estado. | 6 | Frontend Dev | Done |
-| US25 | Registro, inicio y cierre de sesión de usuario | T79 | UI móvil de formulario de accesos Login | Maquetación estricta de la pantalla de Login adaptada a la guía gráfica y almacenamiento de tokens JWT. Flujos de envío de correo/registro omitidos. | 5 | Frontend Dev | Done |
-| US32 | Compartir acceso de lectura y monitoreo a otros usuarios | T80 | UI móvil de campos de invitación | Desarrollo del formulario visual en Flutter para ingresar colaboradores secundarios. | 5 | Frontend Dev | Done |
+| US24 | Registro, inicio y cierre de sesión de usuario | T79 | UI móvil de formulario de accesos Login | Maquetación estricta de la pantalla de Login adaptada a la guía gráfica y almacenamiento de tokens JWT. Flujos de envío de correo/registro omitidos. | 5 | Frontend Dev | Done |
+| US31 | Compartir acceso de lectura y monitoreo a otros usuarios | T80 | UI móvil de campos de invitación | Desarrollo del formulario visual en Flutter para ingresar colaboradores secundarios. | 5 | Frontend Dev | Done |
 | US14 | Dashboard de Monitoreo Integral y Resumen de Estado | T81 | UI de Dashboard táctil principal | Maquetación responsiva en Flutter de la pantalla principal de telemetría respetando los indicadores y el diseño circular del wireframe. | 7 | Frontend Dev | Done |
 | US14 | Dashboard de Monitoreo Integral y Resumen de Estado | T82 | Interpolación de Sensores Mock | Consumo del repositorio mock móvil para inyectar datos reactivos de humedad de suelo, luz y temperatura ambiente en los medidores gráficos. | 4 | Frontend Dev | Done |
-| US24 | Clasificación del estado fenológico mediante Inteligencia Artificial | T83 | UI móvil de análisis visual de cultivo | Creación del submódulo móvil en Flutter para desplegar la pantalla de análisis de salud vegetal renderizando las imágenes procesadas por el API de Python. | 6 | Frontend Dev | Done |
+| US22 | Clasificación del estado fenológico mediante Inteligencia Artificial | T83 | UI móvil de análisis visual de cultivo | Creación del submódulo móvil en Flutter para desplegar la pantalla de análisis de salud vegetal renderizando las imágenes procesadas por el API de Python. | 6 | Frontend Dev | Done |
 | US21 | Generación y descarga de reportes históricos | T84 | UI móvil de sección de reportes | Maquetación estética en Flutter de la pantalla de reportes proyectando los tres datos clave en UI. | 5 | Frontend Dev | Done |
 | TS04 | Optimización de Latencia y Eficiencia en el Procesamiento | T85 | Afinamiento de DTOs en capas backend | Ajuste fino de objetos de transferencia de datos en .NET para truncar nulos, acelerando drásticamente el peso de las tramas enviadas a las apps móviles. | 4 | Backend Dev | Done |
 
