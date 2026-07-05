@@ -1355,50 +1355,52 @@ Tras elaborar los Impact Maps, el equipo ha identificado que el mayor riesgo que
 | 5 | US14 | Dashboard de Monitoreo Integral y Resumen de Estado | 3 |
 | 6 | US19 | Activación manual del sistema de irrigación | 3 |
 | 7 | US20 | Automatización del riego mediante modelos de aprendizaje automático | 8 |
-| 8 | US23 | Clasificación del estado fenológico mediante Inteligencia Artificial | 13 |
-| 9 | US10 | Vinculación del Microcontrolador con la Aplicación | 5 |
-| 10 | US22 | Gestión de registro fotográfico de cultivos. | 5 |
-| 11 | TS01 | Implementación de Endpoints de Monitoreo de Salud (Health Checks) | 3 |
-| 12 | US21 | Generación y descarga de reportes históricos | 1 |
-| 13 | US30 | Protección y privacidad de los datos | 5 |
-| 14 | TS07 | Estandarización de la Experiencia del Desarrollador y Documentación | 3 |
-| 15 | TS05 | Implementación de Protocolos de Autenticación y Protección de Recursos | 5 |
-| 16 | US17 | Persistencia de datos ante pérdida de conectividad | 3 |
-| 17 | US18 | Notificaciones automáticas por condiciones críticas y cambios de estado | 1 |
-| 18 | US15 | Organización de dispositivos por zonas y especies | 3 |
-| 19 | US16 | Configuración de parámetros y umbrales de control | 1 |
-| 20 | TS08 | Dashboard web con indicadores clave del sistema | 5 |
-| 21 | TS12 | Gestión de mantenimiento de dispositivos IoT | 5 |
-| 22 | TS13 | Consulta rápida del catálogo de cultivos | 3 |
-| 23 | TS09 | Gestión móvil de clientes agricultores | 5 |
-| 24 | TS10 | Registro de contratos externos en campo | 5 |
-| 25 | TS11 | Gestión de suspensión de servicios (Push & Manual) | 3 |
-| 26 | US27 | Visualización de estado de servicios y periodos de campaña | 3 |
-| 27 | US26 | Configuración y gestión de alertas de usuario | 1 |
-| 28 | US25 | Modificación de datos personales y de contacto | 1 |
-| 29 | US24 | Registro, inicio y cierre de sesión de usuario | 1 |
-| 30 | US29 | Acceso garantizado y fluidez en la consulta de datos | 3 |
-| 31 | US28 | Diseño consistente y adaptabilidad multiplataforma | 3 |
-| 32 | TS03 | Desacoplamiento de Lógica de Negocio mediante Inyección de Dependencias | 5 |
-| 33 | TS04 | Optimización de Latencia y Eficiencia en el Procesamiento | 3 |
-| 34 | TS06 | Implementación de Infraestructura de Pruebas Automatizadas | 5 |
-| 35 | US01 | Visualización de propuesta de valor y servicios | 1 |
-| 36 | US02 | Enlaces de acceso a la aplicación móvil | 1 |
-| 37 | US03 | Implementación de CTA | 1 |
-| 38 | US04 | Visualización de misión, visión y equipo | 1 |
-| 39 | US05 | Implementación de formulario y canales de contacto | 1 |
-| 40 | US06 | Enlaces a redes sociales | 1 |
-| 41 | US07 | Implementación de sistemas de navegación simplificada | 1 |
-| 42 | US08 | Implementación de Identidad y Consistencia Visual | 1 |
-| 43 | US09 | Optimización de tiempos de respuesta y carga inicial | 3 |
-| 44 | TS15 | Configuración de Arquitectura Base y Scaffolding para la App Móvil (Flutter) | 3 |
-| 45 | TS16 | Implementación del Microservicio de Telemetría e Ingesta IoT (.NET) | 5 |
-| 46 | TS17 | Implementación del Microservicio de Control y Orquestación de Riego (.NET) | 5 |
-| 47 | TS18 | Desarrollo del Microservicio de Análisis de Cultivos e Integración de IA (Python) | 8 |
-| 48 | TS19 | Implementación del Microservicio de Gestión de Hardware y Dispositivos (.NET) | 5 |
-| 49 | TS20 | Configuración de Estrategia de Simulación y Mocking de Telemetría e Ingesta de Datos | 3 |
+| 8 | US31 | Compartir accesos de lectura a otros usuarios | 3 |
+| 9 | US23 | Clasificación del estado fenológico mediante Inteligencia Artificial | 13 |
+| 10 | US10 | Vinculación del Microcontrolador con la Aplicación | 5 |
+| 11 | US22 | Gestión de registro fotográfico de cultivos. | 5 |
+| 12 | TS01 | Implementación de Endpoints de Monitoreo de Salud (Health Checks) | 3 |
+| 13 | US21 | Generación y descarga de reportes históricos | 1 |
+| 14 | US30 | Protección y privacidad de los datos | 5 |
+| 15 | TS07 | Estandarización de la Experiencia del Desarrollador y Documentación | 3 |
+| 16 | TS05 | Implementación de Protocolos de Autenticación y Protección de Recursos | 5 |
+| 17 | US17 | Persistencia de datos ante pérdida de conectividad | 3 |
+| 18 | US18 | Notificaciones automáticas por condiciones críticas y cambios de estado | 1 |
+| 19 | US15 | Organización de dispositivos por zonas y especies | 3 |
+| 20 | US16 | Configuración de parámetros y umbrales de control | 1 |
+| 21 | TS08 | Dashboard web con indicadores clave del sistema | 5 |
+| 22 | TS12 | Gestión de mantenimiento de dispositivos IoT | 5 |
+| 23 | TS13 | Consulta rápida del catálogo de cultivos | 3 |
+| 24 | TS09 | Gestión móvil de clientes agricultores | 5 |
+| 25 | TS10 | Registro de contratos externos en campo | 5 |
+| 26 | TS11 | Gestión de suspensión de servicios | 3 |
+| 27 | US27 | Visualización de estado de servicios | 3 |
+| 28 | US26 | Configuración y gestión de alertas de usuario | 1 |
+| 29 | US25 | Modificación de datos personales y de contacto | 1 |
+| 30 | US24 | Registro, inicio y cierre de sesión de usuario | 1 |
+| 31 | US29 | Acceso garantizado y fluidez en la consulta de datos | 3 |
+| 32 | US28 | Diseño consistente y adaptabilidad multiplataforma | 3 |
+| 33 | TS03 | Desacoplamiento de Lógica de Negocio mediante Inyección de Dependencias | 5 |
+| 34 | TS04 | Optimización de Latencia y Eficiencia en el Procesamiento | 3 |
+| 35 | TS06 | Implementación de Infraestructura de Pruebas Automatizadas | 5 |
+| 36 | US01 | Visualización de propuesta de valor y servicios | 1 |
+| 37 | US02 | Enlaces de acceso a la aplicación móvil | 1 |
+| 38 | US03 | Implementación de CTA | 1 |
+| 39 | US04 | Visualización de misión, visión y equipo | 1 |
+| 40 | US05 | Implementación de formulario y canales de contacto | 1 |
+| 41 | US06 | Enlaces a redes sociales | 1 |
+| 42 | US07 | Implementación de sistemas de navegación simplificada | 1 |
+| 43 | US08 | Implementación de Identidad y Consistencia Visual | 1 |
+| 44 | US09 | Optimización de tiempos de respuesta y carga inicial | 3 |
+| 45 | TS15 | Configuración de Arquitectura Base y Scaffolding para la App Móvil (Flutter) | 3 |
+| 46 | TS16 | Implementación del Microservicio de Telemetría e Ingesta IoT (.NET) | 5 |
+| 47 | TS17 | Implementación del Microservicio de Control y Orquestación de Riego (.NET) | 5 |
+| 48 | TS18 | Desarrollo del Microservicio de Análisis de Cultivos e Integración de IA (Python) | 8 |
+| 49 | TS19 | Implementación del Microservicio de Gestión de Hardware y Dispositivos (.NET) | 5 |
+| 50 | TS20 | Configuración de Estrategia de Simulación y Mocking de Telemetría e Ingesta de Datos | 3 |
+| 51 | TS14 | Autenticación y Control de Acceso para el Portal de Administración | 2 |
 
-### Product Backlog Funcional:
+### Product Backlog Funcional
 
 | Prioridad | ID | Título | Story Points |
 |---:|---|---|---:|
@@ -1407,55 +1409,57 @@ Tras elaborar los Impact Maps, el equipo ha identificado que el mayor riesgo que
 | 5 | US14 | Dashboard de Monitoreo Integral y Resumen de Estado | 3 |
 | 6 | US19 | Activación manual del sistema de irrigación | 3 |
 | 7 | US20 | Automatización del riego mediante modelos de aprendizaje automático | 8 |
-| 8 | US23 | Clasificación del estado fenológico mediante Inteligencia Artificial | 13 |
-| 9 | US10 | Vinculación del Microcontrolador con la Aplicación | 5 |
-| 10 | US22 | Gestión de registro fotográfico de cultivos. | 5 |
-| 12 | US21 | Generación y descarga de reportes históricos | 1 |
-| 17 | US18 | Notificaciones automáticas por condiciones críticas y cambios de estado | 1 |
-| 18 | US15 | Organización de dispositivos por zonas y especies | 3 |
-| 19 | US16 | Configuración de parámetros y umbrales de control | 1 |
-| 20 | TS08 | Dashboard web con indicadores clave del sistema | 5 |
-| 21 | TS12 | Gestión de mantenimiento de dispositivos IoT | 5 |
-| 22 | TS13 | Consulta rápida del catálogo de cultivos | 3 |
-| 23 | TS09 | Gestión web de clientes agricultores | 5 |
-| 24 | TS10 | Registro de contratos externos en campo | 5 |
-| 25 | TS11 | Gestión de suspensión de servicios (Push & Manual) | 3 |
-| 26 | US27 | Visualización de estado de servicios y periodos de campaña | 3 |
-| 27 | US26 | Configuración y gestión de alertas de usuario | 1 |
-| 28 | US25 | Modificación de datos personales y de contacto | 1 |
-| 29 | US24 | Registro, inicio y cierre de sesión de usuario | 1 |
-| 35 | US01 | Visualización de propuesta de valor y servicios | 1 |
-| 36 | US02 | Enlaces de acceso a la aplicación móvil | 1 |
-| 37 | US03 | Implementación de CTA (Botones de acción) | 1 |
-| 38 | US04 | Visualización de misión, visión y equipo | 1 |
-| 39 | US05 | Implementación de formulario y canales de contacto | 1 |
-| 40 | US06 | Enlaces a redes sociales | 1 |
+| 8 | US31 | Compartir accesos de lectura a otros usuarios | 3 |
+| 9 | US23 | Clasificación del estado fenológico mediante Inteligencia Artificial | 13 |
+| 10 | US10 | Vinculación del Microcontrolador con la Aplicación | 5 |
+| 11 | US22 | Gestión de registro fotográfico de cultivos. | 5 |
+| 13 | US21 | Generación y descarga de reportes históricos | 1 |
+| 18 | US18 | Notificaciones automáticas por condiciones críticas y cambios de estado | 1 |
+| 19 | US15 | Organización de dispositivos por zonas y especies | 3 |
+| 20 | US16 | Configuración de parámetros y umbrales de control | 1 |
+| 21 | TS08 | Dashboard web con indicadores clave del sistema | 5 |
+| 22 | TS12 | Gestión de mantenimiento de dispositivos IoT | 5 |
+| 23 | TS13 | Consulta rápida del catálogo de cultivos | 3 |
+| 24 | TS09 | Gestión web de clientes agricultores | 5 |
+| 25 | TS10 | Registro de contratos externos en campo | 5 |
+| 26 | TS11 | Gestión de suspensión de servicios | 3 |
+| 27 | US27 | Visualización de estado de servicios | 3 |
+| 28 | US26 | Configuración y gestión de alertas de usuario | 1 |
+| 29 | US25 | Modificación de datos personales y de contacto | 1 |
+| 30 | US24 | Registro, inicio y cierre de sesión de usuario | 1 |
+| 36 | US01 | Visualización de propuesta de valor y servicios | 1 |
+| 37 | US02 | Enlaces de acceso a la aplicación móvil | 1 |
+| 38 | US03 | Implementación de CTA (Botones de acción) | 1 |
+| 39 | US04 | Visualización de misión, visión y equipo | 1 |
+| 40 | US05 | Implementación de formulario y canales de contacto | 1 |
+| 41 | US06 | Enlaces a redes sociales | 1 |
 
-### Product Backlog No Funcional:
+### Product Backlog No Funcional
 
 | Prioridad | ID | Título | Story Points |
 |---:|---|---|---:|
 | 1 | TS02 | Estandarización de Contratos de Interoperabilidad IoT | 3 |
 | 4 | US13 | Garantía de exactitud en la medición de datos | 3 |
-| 11 | TS01 | Implementación de Endpoints de Monitoreo de Salud | 3 |
-| 14 | US30 | Protección y privacidad de los datos | 5 |
-| 15 | TS07 | Estandarización de la Exp. del Desarrollador y Documentación | 3 |
-| 16 | TS05 | Implementación de Protocolos de Autenticación | 5 |
-| 17 | US17 | Persistencia de datos ante pérdida de conectividad | 3 |
-| 31 | US29 | Acceso garantizado y fluidez en la consulta de datos | 3 |
-| 32 | US28 | Diseño consistente y adaptabilidad multiplataforma | 3 |
-| 33 | TS03 | Desacoplamiento de Lógica mediante DI/Repository | 5 |
-| 34 | TS04 | Optimización de Latencia y Eficiencia (Async) | 3 |
-| 35 | TS06 | Infraestructura de Pruebas Automatizadas | 5 |
-| 42 | US07 | Implementación de sistemas de navegación simplificada | 1 |
-| 43 | US08 | Implementación de Identidad y Consistencia Visual | 1 |
-| 44 | US09 | Optimización de tiempos de respuesta y carga inicial | 3 |
-| 45 | TS15 | Configuración de Arquitectura Base y Scaffolding para la App Móvil (Flutter) | 3 |
-| 46 | TS16 | Implementación del Microservicio de Telemetría e Ingesta IoT (.NET) | 5 |
-| 47 | TS17 | Implementación del Microservicio de Control y Orquestación de Riego (.NET) | 5 |
-| 48 | TS18 | Desarrollo del Microservicio de Análisis de Cultivos e Integración de IA (.NET) | 8 |
-| 49 | TS19 | Integración de Hardware IoT y Configuración del Microcontrolador (ESP32) | 5 |
+| 12 | TS01 | Implementación de Endpoints de Monitoreo de Salud | 3 |
+| 15 | US30 | Protección y privacidad de los datos | 5 |
+| 16 | TS07 | Estandarización de la Exp. del Desarrollador y Documentación | 3 |
+| 17 | TS05 | Implementación de Protocolos de Autenticación | 5 |
+| 18 | US17 | Persistencia de datos ante pérdida de conectividad | 3 |
+| 32 | US29 | Acceso garantizado y fluidez en la consulta de datos | 3 |
+| 33 | US28 | Diseño consistente y adaptabilidad multiplataforma | 3 |
+| 34 | TS03 | Desacoplamiento de Lógica mediante DI/Repository | 5 |
+| 35 | TS04 | Optimización de Latencia y Eficiencia (Async) | 3 |
+| 36 | TS06 | Infraestructura de Pruebas Automatizadas | 5 |
+| 43 | US07 | Implementación de sistemas de navegación simplificada | 1 |
+| 44 | US08 | Implementación de Identidad y Consistencia Visual | 1 |
+| 45 | US09 | Optimización de tiempos de respuesta y carga inicial | 3 |
+| 46 | TS15 | Configuración de Arquitectura Base y Scaffolding para la App Móvil (Flutter) | 3 |
+| 47 | TS16 | Implementación del Microservicio de Telemetría e Ingesta IoT (.NET) | 5 |
+| 48 | TS17 | Implementación del Microservicio de Control y Orquestación de Riego (.NET) | 5 |
+| 49 | TS18 | Desarrollo del Microservicio de Análisis de Cultivos e Integración de IA (.NET) | 8 |
+| 50 | TS19 | Integración de Hardware IoT y Configuración del Microcontrolador (ESP32) | 5 |
 | 50 | TS20 | Configuración de Persistencia de Datos para Telemetría Masiva | 3 |
+| 51 | TS14 | Autenticación y Control de Acceso para el Portal de Administración | 2 |
 
 ### Product Backlog en Jira: 
 
