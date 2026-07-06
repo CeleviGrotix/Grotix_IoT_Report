@@ -203,10 +203,11 @@
       - [6.2.3.7. Services Documentation Evidence for Sprint Review](#6237-services-documentation-evidence-for-sprint-review)
       - [6.2.3.8. Software Deployment Evidence for Sprint Review](#6238-software-deployment-evidence-for-sprint-review)
       - [6.2.3.9. Team Collaboration Insights during Sprint](#6239-team-collaboration-insights-during-sprint)
-    - [6.2.4. Validation Interviews](#624-validation-interviews)
-      - [6.2.4.1. Diseño de entrevistas](#6241-diseño-de-entrevistas)
-      - [6.2.4.2. Registro de entrevistas](#6242-registro-de-entrevistas)
-      - [6.2.4.3. Evaluaciones según heurísticas](#6243-evaluaciones-según-heurísticas)
+  - [6.3. Validation Interviews](#63-validation-interviews)
+    - [6.3.1. Diseño de entrevistas](#631-diseño-de-entrevistas)
+    - [6.3.2. Registro de entrevistas](#632-registro-de-entrevistas)
+    - [6.3.3. Evaluaciones según heurísticas](#633-evaluaciones-según-heurísticas)
+  - [6.4. Video About-the-Product](#64-video-about-the-product)
 - [Conclusiones](#conclusiones)
 - [Recomendaciones](#recomendaciones)
 - [Bibliografía](#bibliografía)
@@ -224,8 +225,8 @@ En el siguiente cuadro se describe las acciones realizadas y enunciados de concl
 
 | Criterio Específico | Acciones Realizadas | Conclusiones |
 |---|---|---|
-| Trabaja en equipo para proporcionar liderazgo en forma conjunta | **Binda Arbañil, Marcelo Alejandro**<br>**AV1**<br>Desempeñó un rol de liderazgo técnico compartido, sincronizando los requerimientos de hardware con los modelos C4 y la topología IoT estructural.<br>**TP**<br>Articuló el trabajo de integración entre las áreas de hardware y software, mitigando fricciones técnicas en mesas de discusión colectivas.<br>**AV2**<br>Lideró el desarrollo frontend de la aplicación web e integró las reglas de inferencia visual en el Bounded Context de Crop Analysis.<br>**TF**<br>Desempeñó un rol de liderazgo técnico integrador a lo largo del proyecto, logrando sincronizar las restricciones del hardware IoT con los modelos arquitectónicos C4. Su dirección en el desarrollo frontend de la aplicación web y la integración del Bounded Context de Crop Analysis evidencian su capacidad para articular el trabajo entre distintas capas del software, mitigando fricciones técnicas mediante mesas de discusión colectivas que fortalecieron la cohesión del equipo.<br><br>**Castillo Garay, Ainhoa Lucía**<br>**AV1**<br>Dirigió de manera conjunta la delimitación estratégica de los Bounded Contexts aplicando principios de Domain-Driven Design (DDD).<br>**TP**<br>Guió la transición práctica de los modelos estructurales hacia el código fuente de los microservicios core (Profiles y Cultivation Area).<br>**AV2**<br>Lideró el desarrollo móvil en Flutter, implementando la lógica de autenticación JWT, flujo de pantallas y consumo de servicios cloud.<br>**TF**<br>Dirigió de manera conjunta la estrategia arquitectónica aplicando principios de Domain-Driven Design (DDD) para delimitar los Bounded Contexts. Su liderazgo fue fundamental durante la transición de los modelos estructurales hacia la implementación física, asumiendo la dirección del desarrollo móvil multiplataforma en Flutter, donde coordinó exitosamente la integración de flujos de autenticación y el consumo reactivo de servicios cloud junto al equipo de backend.<br><br>**Martel Andrade, Cassius Estefano**<br>**AV1**<br>Fomentó canales de comunicación equitativa durante el modelado inicial del dominio en las sesiones grupales de EventStorming.<br>**TP**<br>Facilitó las dinámicas de sincronización del equipo, distribuyendo de forma eficiente responsabilidades según áreas de especialidad.<br>**AV2**<br>Coordinó la evolución de la arquitectura del sistema a través de la ejecución y documentación de las iteraciones ADD 3, 4 y 5.<br>**TF**<br>Ejerció un liderazgo clave al fomentar canales de comunicación equitativa desde las sesiones iniciales de EventStorming hasta las iteraciones arquitectónicas de diseño (ADD). Su capacidad para distribuir responsabilidades según especialidad y coordinar la documentación técnica rigurosa (ADD 3, 4 y 5) garantizó una evolución ordenada del sistema, facilitando la sincronización técnica necesaria para orquestar microservicios y hardware físico.<br><br>**Nakamurakare Teruya, Alex Tomio**<br>**AV1**<br>Asumió la dirección del diseño y normalización del modelo de datos relacional para los contextos lógicos iniciales.<br>**TP**<br>Resolvió cuellos de botella críticos relacionados con la persistencia relacional durante la integración del API Gateway.<br>**AV2**<br>Dirigió la orquestación de APIs y esquemas distribuidos para asegurar la persistencia políglota entre MySQL y TimescaleDB.<br>**TF**<br>Asumió la dirección arquitectónica del ecosistema backend, liderando el diseño y normalización de los modelos de datos relacionales y distribuidos. Su capacidad para resolver colaborativamente cuellos de botella críticos, como la configuración de persistencia políglota (MySQL y TimescaleDB) y la integración del API Gateway, demostró un liderazgo técnico sólido enfocado en asegurar la escalabilidad y disponibilidad de los servicios cloud.<br><br>**Rodas Sotomayor, Ernesto**<br>**AV1**<br>Condujo la estructuración del Ubiquitous Language y la especificación de las Technical Stories como directrices de calidad.<br>**TP**<br>Coordinó sesiones de pair programming y revisión conjunta para resguardar la uniformidad.<br>**AV2**<br>Lideró la optimización del stack en la nube de Azure.<br>**TF**<br>Lideró la estructuración del Ubiquitous Language (Lenguaje Ubicuo) y la especificación de Technical Stories, estableciendo directrices de calidad claras para todo el equipo. Su coordinación de sesiones de pair programming y revisión conjunta garantizó la uniformidad del código, culminando con la dirección y optimización exitosa del stack tecnológico desplegado en la infraestructura de Azure. | **AV1**<br>El equipo consolidó un modelo de liderazgo técnico colaborativo al unificar las diversas competencias individuales. Esto permitió definir de manera colectiva la topología IoT y las fronteras de los contextos acotados del sistema.<br>**TP**<br>Se descentralizó la toma de decisiones técnicas mediante un esquema de supervisión cruzada. Los retos de mensajería asíncrona e integración en la nube se resolvieron mediante sesiones de diseño unificado y no como aportes aislados.<br>**AV3**<br>La sinergia del equipo permitió rotar orgánicamente el liderazgo según las necesidades del Sprint 2. El dominio compartido sobre microservicios, desarrollo móvil y visión artificial consolidó una solución resiliente y alineada a los estándares de producción de la industria.<br>**TF**<br>Como equipo, consolidamos un modelo de liderazgo técnico verdaderamente descentralizado y colaborativo, maximizando nuestras diversas competencias individuales. Desde la concepción de la topología IoT hasta el despliegue final del ecosistema (Edge-to-Cloud), las decisiones arquitectónicas y la orquestación de microservicios se resolvieron mediante esquemas de supervisión cruzada y sesiones de diseño unificado. La rotación orgánica del liderazgo según los retos del Sprint (desarrollo móvil, backend, firmware y visión artificial) nos permitió mitigar fricciones y construir una solución tecnológica resiliente, alineada con los estándares de producción de la industria. |
-| Crea un entorno colaborativo e inclusivo, establece metas, planifica tareas y cumple objetivos. | **Binda Arbañil, Marcelo Alejandro**<br>**AV1**<br>Planificó los hitos de entrega inicial empleando tableros visuales, garantizando un flujo estructurado de trabajo colaborativo.<br>**TP**<br>Monitoreó los plazos de desarrollo e integración mediante reuniones periódicas de seguimiento y sincronización técnica.<br>**AV2**<br>Adoptó de forma proactiva requerimientos de diseño responsivo y adaptabilidad de vistas basándose en el feedback del equipo.<br>**TF**<br>Garantizó un flujo de trabajo estructurado y transparente planificando los hitos de entrega mediante tableros visuales interactivos (Kanban). Su gestión proactiva al monitorear plazos de desarrollo e incorporar feedback continuo para adaptar vistas web responsivas, aseguró que las metas técnicas se cumplieran en los tiempos establecidos, fomentando un entorno de comunicación abierta y sincronización constante.<br><br>**Castillo Garay, Ainhoa Lucía**<br>**AV1**<br>Modeló la interacción de hardware y software a través de Context Maps, facilitando un entorno inclusivo de comprensión global.<br>**TP**<br>Estructuró los diagramas de componentes y clases del sistema definiendo metas a corto plazo para evitar retrasos.<br>**AV2**<br>Investigó e implementó de manera ágil componentes móviles reutilizables durante el Sprint, robusteciendo la consistencia de la interfaz.<br>**TF**<br>Fomentó un entorno inclusivo de comprensión global al modelar la interacción entre hardware y software mediante Context Maps. Estructuró eficazmente los diagramas de componentes definiendo metas a corto plazo, y mantuvo un enfoque ágil al investigar e implementar componentes móviles reutilizables. Esto previno retrasos y aseguró que el desarrollo de la aplicación móvil cumpliera con los objetivos de usabilidad y rendimiento del proyecto.<br><br>**Martel Andrade, Cassius Estefano**<br>**AV1**<br>Analizó con precisión las competencias individuales del equipo para estructurar una división de tareas equilibrada y eficiente.<br>**TP**<br>Replanteó la planificación del Sprint Backlog adaptándolo de forma dinámica a las restricciones reales de conectividad rural.<br>**AV2**<br>Incorporó buenas prácticas de arquitectura de software para asegurar la mantenibilidad a largo plazo de la plataforma de cara al usuario.<br>**TF**<br>Estructuró una división de tareas equilibrada y eficiente tras analizar con precisión las competencias individuales del equipo. Su flexibilidad para replantear la planificación del Sprint Backlog adaptándolo a restricciones físicas reales (como la conectividad intermitente IoT) y su enfoque en integrar buenas prácticas de ingeniería, aseguraron el cumplimiento de los objetivos garantizando la mantenibilidad a largo plazo de la plataforma de cara al usuario.<br><br>**Nakamurakare Teruya, Alex Tomio**<br>**AV1**<br>Integró las sugerencias técnicas de todos los integrantes dentro del Diagrama Global de Base de Datos para asegurar inclusividad.<br>**TP**<br>Mantuvo canales de comunicación abiertos y transparentes durante la fase crítica de despliegue de bases de datos relacionales.<br>**AV2**<br>Ajustó los esquemas distribuidos de telemetría y series de tiempo en Azure para satisfacer nuevas métricas analíticas del negocio.<br>**TF**<br>Aseguró la inclusividad técnica integrando las sugerencias de todos los miembros en el diseño global de la infraestructura de datos. Su habilidad para mantener canales de comunicación transparentes durante los despliegues críticos en Azure y su proactividad para ajustar esquemas de telemetría a nuevas métricas analíticas, fueron determinantes para cumplir los objetivos operativos del negocio sin sacrificar la estabilidad del entorno colaborativo.<br><br>**Rodas Sotomayor, Ernesto**<br>**AV1**<br>Facilitar el codiseño de los lienzos estratégicos de negocio (Lean UX Canvas) para alinear las metas académicas con las técnicas.<br>**TP**<br>Promovió talleres internos de revisión de código para asegurar la adaptabilidad del equipo frente a nuevas herramientas lógicas.<br>**AV2**<br>Optimizó los entornos de integración continua (CI/CD) en GitHub Actions, garantizando entregas de software estables y sin fallos.<br>**TF**<br>Promovió un entorno altamente adaptativo codiseñando los lienzos estratégicos de negocio (Lean UX Canvas) para alinear metas académicas y técnicas. Su iniciativa al facilitar talleres internos de revisión de código y su gestión para optimizar los flujos de Integración/Despliegue Continuo (CI/CD) en GitHub Actions, garantizaron entregas de software ágiles, estables y fieles a la planificación del equipo. | **AV1**<br>El grupo propició un espacio inclusivo unificado mediante herramientas visuales estratégicas (Lean UX, Context Maps). Esto facilitó que cada meta establecida contribuyera directamente a cimentar una solución IoT escalable.<br>**TP**<br>Se logró un cumplimiento del 100% de los objetivos trazados para el hito parcial mediante la estructuración del Sprint Backlog 1 con metas de corto plazo y revisiones semanales, integrando con éxito el flujo de maquetado con el despliegue cloud.<br>**AV3**<br>El equipo demostró una alta adaptabilidad y compromiso con el aprendizaje continuo frente a los desafíos del Sprint 2. La investigación conjunta, la resolución de cuellos de botella en la persistencia políglota y la automatización de despliegues en Azure validaron la madurez del equipo para cumplir con calidad de exportación los requerimientos del proyecto.<br>**TF**<br>Logramos un cumplimiento integral y exitoso de los objetivos del proyecto mediante una planificación táctica adaptativa. Fomentamos un entorno inclusivo al utilizar herramientas visuales estratégicas (EventStorming, Context Maps, Kanban) que garantizaron la participación de todos. Frente a desafíos complejos como la integración asíncrona, la persistencia políglota y los despliegues automatizados en Azure, nuestra capacidad para replantear el Sprint Backlog, establecer metas a corto plazo y mantener la comunicación constante demostró nuestra madurez para planificar, ejecutar y entregar un producto software-hardware con calidad de exportación. |
+| Trabaja en equipo para proporcionar liderazgo en forma conjunta | **Binda Arbañil, Marcelo Alejandro**<br>**AV1**<br>Desempeñó un rol de liderazgo técnico compartido, sincronizando los requerimientos de hardware con los modelos C4 y la topología IoT estructural.<br>**TP**<br>Articuló el trabajo de integración entre las áreas de hardware y software, mitigando fricciones técnicas en mesas de discusión colectivas.<br>**AV2**<br>Lideró el desarrollo frontend de la aplicación web e integró las reglas de inferencia visual en el Bounded Context de Crop Analysis.<br>**TF**<br>Desempeñó un rol de liderazgo técnico integrador a lo largo del proyecto, logrando sincronizar las restricciones del hardware IoT con los modelos arquitectónicos C4. Su dirección en el desarrollo frontend de la aplicación web y la integración del Bounded Context de Crop Analysis evidencian su capacidad para articular el trabajo entre distintas capas del software, mitigando fricciones técnicas mediante mesas de discusión colectivas que fortalecieron la cohesión del equipo.<br><br>**Castillo Garay, Ainhoa Lucía**<br>**AV1**<br>Dirigió de manera conjunta la delimitación estratégica de los Bounded Contexts aplicando principios de Domain-Driven Design (DDD).<br>**TP**<br>Guió la transición práctica de los modelos estructurales hacia el código fuente de los microservicios core (Profiles y Cultivation Area).<br>**AV2**<br>Lideró el desarrollo móvil en Flutter, implementando la lógica de autenticación JWT, flujo de pantallas y consumo de servicios cloud.<br>**TF**<br>Dirigió de manera conjunta la estrategia arquitectónica aplicando principios de Domain-Driven Design (DDD) para delimitar los Bounded Contexts. Su liderazgo fue fundamental durante la transición de los modelos estructurales hacia la implementación física, asumiendo la dirección del desarrollo móvil multiplataforma en Flutter, donde coordinó exitosamente la integración de flujos de autenticación y el consumo reactivo de servicios cloud junto al equipo de backend.<br><br>**Martel Andrade, Cassius Estefano**<br>**AV1**<br>Fomentó canales de comunicación equitativa durante el modelado inicial del dominio en las sesiones grupales de EventStorming.<br>**TP**<br>Facilitó las dinámicas de sincronización del equipo, distribuyendo de forma eficiente responsabilidades según áreas de especialidad.<br>**AV2**<br>Coordinó la evolución de la arquitectura del sistema a través de la ejecución y documentación de las iteraciones de desarrollo.<br>**TF**<br>Ejerció un liderazgo clave al fomentar canales de comunicación equitativa desde las sesiones iniciales de EventStorming hasta las iteraciones arquitectónicas desarrollo. Su capacidad para distribuir responsabilidades según especialidad y coordinar la documentación técnica rigurosa garantizó una evolución ordenada del sistema, facilitando la sincronización técnica necesaria para orquestar microservicios y hardware físico.<br><br>**Nakamurakare Teruya, Alex Tomio**<br>**AV1**<br>Asumió la dirección del diseño y normalización del modelo de datos relacional para los contextos lógicos iniciales.<br>**TP**<br>Resolvió cuellos de botella críticos relacionados con la persistencia relacional durante la integración del API Gateway.<br>**AV2**<br>Dirigió la orquestación de APIs y esquemas distribuidos para asegurar la persistencia políglota entre MySQL y TimescaleDB.<br>**TF**<br>Asumió la dirección arquitectónica del ecosistema backend, liderando el diseño y normalización de los modelos de datos relacionales y distribuidos. Su capacidad para resolver colaborativamente cuellos de botella críticos, como la configuración de persistencia políglota (MySQL y TimescaleDB) y la integración del API Gateway, demostró un liderazgo técnico sólido enfocado en asegurar la escalabilidad y disponibilidad de los servicios cloud.<br><br>**Rodas Sotomayor, Ernesto**<br>**AV1**<br>Condujo la estructuración del Ubiquitous Language y la especificación de las Technical Stories como directrices de calidad.<br>**TP**<br>Coordinó sesiones de pair programming y revisión conjunta para resguardar la uniformidad.<br>**AV2**<br>Lideró la optimización del stack en la nube de Azure.<br>**TF**<br>Lideró la estructuración del Ubiquitous Language (Lenguaje Ubicuo) y la especificación de Technical Stories, estableciendo directrices de calidad claras para todo el equipo. Su coordinación de sesiones de pair programming y revisión conjunta garantizó la uniformidad del código, culminando con la dirección y optimización exitosa del stack tecnológico desplegado en la infraestructura de Azure. | **AV1**<br>El equipo consolidó un modelo de liderazgo técnico colaborativo al unificar las diversas competencias individuales. Esto permitió definir de manera colectiva la topología IoT y las fronteras de los contextos acotados del sistema.<br>**TP**<br>Se descentralizó la toma de decisiones técnicas mediante un esquema de supervisión cruzada. Los retos de mensajería asíncrona e integración en la nube se resolvieron mediante sesiones de diseño unificado y no como aportes aislados.<br>**AV3**<br>La sinergia del equipo permitió rotar orgánicamente el liderazgo según las necesidades del Sprint 2. El dominio compartido sobre microservicios, desarrollo móvil y visión artificial consolidó una solución resiliente y alineada a los estándares de producción de la industria.<br>**TF**<br>Como equipo, consolidamos un modelo de liderazgo técnico verdaderamente descentralizado y colaborativo, maximizando nuestras diversas competencias individuales. Desde la concepción de la topología IoT hasta el despliegue final del ecosistema (Edge-to-Cloud), las decisiones arquitectónicas y la orquestación de microservicios se resolvieron mediante esquemas de supervisión cruzada y sesiones de diseño unificado. La rotación orgánica del liderazgo según los retos del Sprint (desarrollo móvil, backend, firmware y visión artificial) nos permitió mitigar fricciones y construir una solución tecnológica resiliente, alineada con los estándares de producción de la industria. |
+| Crea un entorno colaborativo e inclusivo, establece metas, planifica tareas y cumple objetivos. | **Binda Arbañil, Marcelo Alejandro**<br>**AV1**<br>Planificó los hitos de entrega inicial empleando tableros visuales, garantizando un flujo estructurado de trabajo colaborativo.<br>**TP**<br>Monitoreó los plazos de desarrollo e integración mediante reuniones periódicas de seguimiento y sincronización técnica.<br>**AV2**<br>Adoptó de forma proactiva requerimientos de diseño responsivo y adaptabilidad de vistas basándose en el feedback del equipo.<br>**TF**<br>Garantizó un flujo de trabajo estructurado y transparente planificando los hitos de entrega. Su gestión proactiva al monitorear plazos de desarrollo e incorporar feedback continuo para adaptar vistas web responsivas, aseguró que las metas técnicas se cumplieran en los tiempos establecidos, fomentando un entorno de comunicación abierta y sincronización constante.<br><br>**Castillo Garay, Ainhoa Lucía**<br>**AV1**<br>Modeló la interacción de hardware y software a través de Context Maps, facilitando un entorno inclusivo de comprensión global.<br>**TP**<br>Estructuró los diagramas de componentes y clases del sistema definiendo metas a corto plazo para evitar retrasos.<br>**AV2**<br>Investigó e implementó de manera ágil componentes móviles reutilizables durante el Sprint, robusteciendo la consistencia de la interfaz.<br>**TF**<br>Fomentó un entorno inclusivo de comprensión global al modelar la interacción entre hardware y software mediante Context Maps. Estructuró eficazmente los diagramas de componentes definiendo metas a corto plazo, y mantuvo un enfoque ágil al investigar e implementar componentes móviles reutilizables. Esto previno retrasos y aseguró que el desarrollo de la aplicación móvil cumpliera con los objetivos de usabilidad y rendimiento del proyecto.<br><br>**Martel Andrade, Cassius Estefano**<br>**AV1**<br>Analizó con precisión las competencias individuales del equipo para estructurar una división de tareas equilibrada y eficiente.<br>**TP**<br>Replanteó la planificación del Sprint Backlog adaptándolo de forma dinámica a las restricciones reales de conectividad rural.<br>**AV2**<br>Incorporó buenas prácticas de arquitectura de software para asegurar la mantenibilidad a largo plazo de la plataforma de cara al usuario.<br>**TF**<br>Estructuró una división de tareas equilibrada y eficiente tras analizar con precisión las competencias individuales del equipo. Su flexibilidad para replantear la planificación del Sprint Backlog adaptándolo a restricciones físicas reales (como la conectividad intermitente IoT) y su enfoque en integrar buenas prácticas de ingeniería, aseguraron el cumplimiento de los objetivos garantizando la mantenibilidad a largo plazo de la plataforma de cara al usuario.<br><br>**Nakamurakare Teruya, Alex Tomio**<br>**AV1**<br>Integró las sugerencias técnicas de todos los integrantes dentro del Diagrama Global de Base de Datos para asegurar inclusividad.<br>**TP**<br>Mantuvo canales de comunicación abiertos y transparentes durante la fase crítica de despliegue de bases de datos relacionales.<br>**AV2**<br>Ajustó los esquemas distribuidos de telemetría y series de tiempo en Azure para satisfacer nuevas métricas analíticas del negocio.<br>**TF**<br>Aseguró la inclusividad técnica integrando las sugerencias de todos los miembros en el diseño global de la infraestructura de datos. Su habilidad para mantener canales de comunicación transparentes durante los despliegues críticos en Azure y su proactividad para ajustar esquemas de telemetría a nuevas métricas analíticas, fueron determinantes para cumplir los objetivos operativos del negocio sin sacrificar la estabilidad del entorno colaborativo.<br><br>**Rodas Sotomayor, Ernesto**<br>**AV1**<br>Facilitar el codiseño de los lienzos estratégicos de negocio (Lean UX Canvas) para alinear las metas académicas con las técnicas.<br>**TP**<br>Promovió talleres internos de revisión de código para asegurar la adaptabilidad del equipo frente a nuevas herramientas lógicas.<br>**AV2**<br>Optimizó los entornos de integración continua (CI/CD) en GitHub Actions, garantizando entregas de software estables y sin fallos.<br>**TF**<br>Promovió un entorno altamente adaptativo codiseñando los lienzos estratégicos de negocio (Lean UX Canvas) para alinear metas académicas y técnicas. Su iniciativa al facilitar talleres internos de revisión de código y su gestión para optimizar los flujos de Integración/Despliegue Continuo (CI/CD) en GitHub Actions, garantizaron entregas de software ágiles, estables y fieles a la planificación del equipo. | **AV1**<br>El grupo propició un espacio inclusivo unificado mediante herramientas visuales estratégicas (Lean UX, Context Maps). Esto facilitó que cada meta establecida contribuyera directamente a cimentar una solución IoT escalable.<br>**TP**<br>Se logró un cumplimiento del 100% de los objetivos trazados para el hito parcial mediante la estructuración del Sprint Backlog 1 con metas de corto plazo y revisiones semanales, integrando con éxito el flujo de maquetado con el despliegue cloud.<br>**AV3**<br>El equipo demostró una alta adaptabilidad y compromiso con el aprendizaje continuo frente a los desafíos del Sprint 2. La investigación conjunta, la resolución de cuellos de botella en la persistencia políglota y la automatización de despliegues en Azure validaron la madurez del equipo para cumplir con calidad de exportación los requerimientos del proyecto.<br>**TF**<br>Logramos un cumplimiento integral y exitoso de los objetivos del proyecto mediante una planificación táctica adaptativa. Fomentamos un entorno inclusivo al utilizar herramientas visuales estratégicas (EventStorming, Context Maps, Kanban) que garantizaron la participación de todos. Frente a desafíos complejos como la integración asíncrona, la persistencia políglota y los despliegues automatizados en Azure, nuestra capacidad para replantear el Sprint Backlog, establecer metas a corto plazo y mantener la comunicación constante demostró nuestra madurez para planificar, ejecutar y entregar un producto software-hardware con calidad de exportación. |
 
 ---
 
@@ -1346,116 +1347,120 @@ Tras elaborar los Impact Maps, el equipo ha identificado que el mayor riesgo que
 
 ## 3.3. Product Backlog
 
-| Prioridad | User Story Id | Título | Story Points |
-|---:|---|---|---:|
-| 1 | TS02 | Estandarización de Contratos de Interoperabilidad IoT | 3 |
-| 2 | US11 | Monitoreo fiel de las condiciones del entorno | 5 |
-| 3 | US12 | Actualización periódica y automática de telemetría | 5 |
-| 4 | US13 | Garantía de exactitud en la medición de datos | 3 |
-| 5 | US14 | Dashboard de Monitoreo Integral y Resumen de Estado | 3 |
-| 6 | US19 | Activación manual del sistema de irrigación | 3 |
-| 7 | US20 | Automatización del riego mediante modelos de aprendizaje automático | 8 |
-| 8 | US23 | Clasificación del estado fenológico mediante Inteligencia Artificial | 13 |
-| 9 | US10 | Vinculación del Microcontrolador con la Aplicación | 5 |
-| 10 | US22 | Gestión de registro fotográfico de cultivos. | 5 |
-| 11 | TS01 | Implementación de Endpoints de Monitoreo de Salud (Health Checks) | 3 |
-| 12 | US21 | Generación y descarga de reportes históricos | 1 |
-| 13 | US30 | Protección y privacidad de los datos | 5 |
-| 14 | TS07 | Estandarización de la Experiencia del Desarrollador y Documentación | 3 |
-| 15 | TS05 | Implementación de Protocolos de Autenticación y Protección de Recursos | 5 |
-| 16 | US17 | Persistencia de datos ante pérdida de conectividad | 3 |
-| 17 | US18 | Notificaciones automáticas por condiciones críticas y cambios de estado | 1 |
-| 18 | US15 | Organización de dispositivos por zonas y especies | 3 |
-| 19 | US16 | Configuración de parámetros y umbrales de control | 1 |
-| 20 | TS08 | Dashboard web con indicadores clave del sistema | 5 |
-| 21 | TS12 | Gestión de mantenimiento de dispositivos IoT | 5 |
-| 22 | TS13 | Consulta rápida del catálogo de cultivos | 3 |
-| 23 | TS09 | Gestión móvil de clientes agricultores | 5 |
-| 24 | TS10 | Registro de contratos externos en campo | 5 |
-| 25 | TS11 | Gestión de suspensión de servicios (Push & Manual) | 3 |
-| 26 | US27 | Visualización de estado de servicios y periodos de campaña | 3 |
-| 27 | US26 | Configuración y gestión de alertas de usuario | 1 |
-| 28 | US25 | Modificación de datos personales y de contacto | 1 |
-| 29 | US24 | Registro, inicio y cierre de sesión de usuario | 1 |
-| 30 | US29 | Acceso garantizado y fluidez en la consulta de datos | 3 |
-| 31 | US28 | Diseño consistente y adaptabilidad multiplataforma | 3 |
-| 32 | TS03 | Desacoplamiento de Lógica de Negocio mediante Inyección de Dependencias | 5 |
-| 33 | TS04 | Optimización de Latencia y Eficiencia en el Procesamiento | 3 |
-| 34 | TS06 | Implementación de Infraestructura de Pruebas Automatizadas | 5 |
-| 35 | US01 | Visualización de propuesta de valor y servicios | 1 |
-| 36 | US02 | Enlaces de acceso a la aplicación móvil | 1 |
-| 37 | US03 | Implementación de CTA | 1 |
-| 38 | US04 | Visualización de misión, visión y equipo | 1 |
-| 39 | US05 | Implementación de formulario y canales de contacto | 1 |
-| 40 | US06 | Enlaces a redes sociales | 1 |
-| 41 | US07 | Implementación de sistemas de navegación simplificada | 1 |
-| 42 | US08 | Implementación de Identidad y Consistencia Visual | 1 |
-| 43 | US09 | Optimización de tiempos de respuesta y carga inicial | 3 |
-| 44 | TS15 | Configuración de Arquitectura Base y Scaffolding para la App Móvil (Flutter) | 3 |
-| 45 | TS16 | Implementación del Microservicio de Telemetría e Ingesta IoT (.NET) | 5 |
-| 46 | TS17 | Implementación del Microservicio de Control y Orquestación de Riego (.NET) | 5 |
-| 47 | TS18 | Desarrollo del Microservicio de Análisis de Cultivos e Integración de IA (Python) | 8 |
-| 48 | TS19 | Implementación del Microservicio de Gestión de Hardware y Dispositivos (.NET) | 5 |
-| 49 | TS20 | Configuración de Estrategia de Simulación y Mocking de Telemetría e Ingesta de Datos | 3 |
+| Prioridad | User Story Id |
+|-----------|---------------|
+| 1         | TS02          |
+| 2         | US11          |
+| 3         | US12          |
+| 4         | US13          |
+| 5         | US14          |
+| 6         | US19          |
+| 7         | US20          |
+| 8         | US31          |
+| 9         | US23          |
+| 10        | US10          |
+| 11        | US22          |
+| 12        | TS01          |
+| 13        | US21          |
+| 14        | US30          |
+| 15        | TS07          |
+| 16        | TS05          |
+| 17        | US17          |
+| 18        | US18          |
+| 19        | US15          |
+| 20        | US16          |
+| 21        | TS08          |
+| 22        | TS12          |
+| 23        | TS13          |
+| 24        | TS09          |
+| 25        | TS10          |
+| 26        | TS11          |
+| 27        | US27          |
+| 28        | US26          |
+| 29        | US25          |
+| 30        | US24          |
+| 31        | US29          |
+| 32        | US28          |
+| 33        | TS03          |
+| 34        | TS04          |
+| 35        | TS06          |
+| 36        | US01          |
+| 37        | US02          |
+| 38        | US03          |
+| 39        | US04          |
+| 40        | US05          |
+| 41        | US06          |
+| 42        | US07          |
+| 43        | US08          |
+| 44        | US09          |
+| 45        | TS15          |
+| 46        | TS16          |
+| 47        | TS17          |
+| 48        | TS18          |
+| 49        | TS19          |
+| 50        | TS20          |
+| 51        | TS14          |
 
 ### Product Backlog Funcional:
 
 | Prioridad | ID | Título | Story Points |
-|---:|---|---|---:|
+|----|----|----|----|
 | 2 | US11 | Monitoreo fiel de las condiciones del entorno | 5 |
 | 3 | US12 | Actualización periódica y automática de telemetría | 5 |
 | 5 | US14 | Dashboard de Monitoreo Integral y Resumen de Estado | 3 |
 | 6 | US19 | Activación manual del sistema de irrigación | 3 |
 | 7 | US20 | Automatización del riego mediante modelos de aprendizaje automático | 8 |
-| 8 | US23 | Clasificación del estado fenológico mediante Inteligencia Artificial | 13 |
-| 9 | US10 | Vinculación del Microcontrolador con la Aplicación | 5 |
-| 10 | US22 | Gestión de registro fotográfico de cultivos. | 5 |
-| 12 | US21 | Generación y descarga de reportes históricos | 1 |
-| 17 | US18 | Notificaciones automáticas por condiciones críticas y cambios de estado | 1 |
-| 18 | US15 | Organización de dispositivos por zonas y especies | 3 |
-| 19 | US16 | Configuración de parámetros y umbrales de control | 1 |
-| 20 | TS08 | Dashboard web con indicadores clave del sistema | 5 |
-| 21 | TS12 | Gestión de mantenimiento de dispositivos IoT | 5 |
-| 22 | TS13 | Consulta rápida del catálogo de cultivos | 3 |
-| 23 | TS09 | Gestión web de clientes agricultores | 5 |
-| 24 | TS10 | Registro de contratos externos en campo | 5 |
-| 25 | TS11 | Gestión de suspensión de servicios (Push & Manual) | 3 |
-| 26 | US27 | Visualización de estado de servicios y periodos de campaña | 3 |
-| 27 | US26 | Configuración y gestión de alertas de usuario | 1 |
-| 28 | US25 | Modificación de datos personales y de contacto | 1 |
-| 29 | US24 | Registro, inicio y cierre de sesión de usuario | 1 |
-| 35 | US01 | Visualización de propuesta de valor y servicios | 1 |
-| 36 | US02 | Enlaces de acceso a la aplicación móvil | 1 |
-| 37 | US03 | Implementación de CTA (Botones de acción) | 1 |
-| 38 | US04 | Visualización de misión, visión y equipo | 1 |
-| 39 | US05 | Implementación de formulario y canales de contacto | 1 |
-| 40 | US06 | Enlaces a redes sociales | 1 |
+| 8 | US31 | Compartir accesos de lectura a otros usuarios | 3 |
+| 9 | US23 | Clasificación del estado fenológico mediante Inteligencia Artificial | 13 |
+| 10 | US10 | Vinculación del Microcontrolador con la Aplicación | 5 |
+| 11 | US22 | Gestión de registro fotográfico de cultivos. | 5 |
+| 13 | US21 | Generación y descarga de reportes históricos | 1 |
+| 18 | US18 | Notificaciones automáticas por condiciones críticas y cambios de estado | 1 |
+| 19 | US15 | Organización de dispositivos por zonas y especies | 3 |
+| 20 | US16 | Configuración de parámetros y umbrales de control | 1 |
+| 21 | TS08 | Dashboard web con indicadores clave del sistema | 5 |
+| 22 | TS12 | Gestión de mantenimiento de dispositivos IoT | 5 |
+| 23 | TS13 | Consulta rápida del catálogo de cultivos | 3 |
+| 24 | TS09 | Gestión web de clientes agricultores | 5 |
+| 25 | TS10 | Registro de contratos externos en campo | 5 |
+| 26 | TS11 | Gestión de suspensión de servicios | 3 |
+| 27 | US27 | Visualización de estado de servicios | 3 |
+| 28 | US26 | Configuración y gestión de alertas de usuario | 1 |
+| 29 | US25 | Modificación de datos personales y de contacto | 1 |
+| 30 | US24 | Registro, inicio y cierre de sesión de usuario | 1 |
+| 36 | US01 | Visualización de propuesta de valor y servicios | 1 |
+| 37 | US02 | Enlaces de acceso a la aplicación móvil | 1 |
+| 38 | US03 | Implementación de CTA (Botones de acción) | 1 |
+| 39 | US04 | Visualización de misión, visión y equipo | 1 |
+| 40 | US05 | Implementación de formulario y canales de contacto | 1 |
+| 41 | US06 | Enlaces a redes sociales | 1 |
 
 ### Product Backlog No Funcional:
 
 | Prioridad | ID | Título | Story Points |
-|---:|---|---|---:|
+|----|----|----|----|
 | 1 | TS02 | Estandarización de Contratos de Interoperabilidad IoT | 3 |
 | 4 | US13 | Garantía de exactitud en la medición de datos | 3 |
-| 11 | TS01 | Implementación de Endpoints de Monitoreo de Salud | 3 |
-| 14 | US30 | Protección y privacidad de los datos | 5 |
-| 15 | TS07 | Estandarización de la Exp. del Desarrollador y Documentación | 3 |
-| 16 | TS05 | Implementación de Protocolos de Autenticación | 5 |
-| 17 | US17 | Persistencia de datos ante pérdida de conectividad | 3 |
-| 31 | US29 | Acceso garantizado y fluidez en la consulta de datos | 3 |
-| 32 | US28 | Diseño consistente y adaptabilidad multiplataforma | 3 |
-| 33 | TS03 | Desacoplamiento de Lógica mediante DI/Repository | 5 |
-| 34 | TS04 | Optimización de Latencia y Eficiencia (Async) | 3 |
-| 35 | TS06 | Infraestructura de Pruebas Automatizadas | 5 |
-| 42 | US07 | Implementación de sistemas de navegación simplificada | 1 |
-| 43 | US08 | Implementación de Identidad y Consistencia Visual | 1 |
-| 44 | US09 | Optimización de tiempos de respuesta y carga inicial | 3 |
-| 45 | TS15 | Configuración de Arquitectura Base y Scaffolding para la App Móvil (Flutter) | 3 |
-| 46 | TS16 | Implementación del Microservicio de Telemetría e Ingesta IoT (.NET) | 5 |
-| 47 | TS17 | Implementación del Microservicio de Control y Orquestación de Riego (.NET) | 5 |
-| 48 | TS18 | Desarrollo del Microservicio de Análisis de Cultivos e Integración de IA (.NET) | 8 |
-| 49 | TS19 | Integración de Hardware IoT y Configuración del Microcontrolador (ESP32) | 5 |
+| 12 | TS01 | Implementación de Endpoints de Monitoreo de Salud | 3 |
+| 15 | US30 | Protección y privacidad de los datos | 5 |
+| 16 | TS07 | Estandarización de la Exp. del Desarrollador y Documentación | 3 |
+| 17 | TS05 | Implementación de Protocolos de Autenticación | 5 |
+| 18 | US17 | Persistencia de datos ante pérdida de conectividad | 3 |
+| 32 | US29 | Acceso garantizado y fluidez en la consulta de datos | 3 |
+| 33 | US28 | Diseño consistente y adaptabilidad multiplataforma | 3 |
+| 34 | TS03 | Desacoplamiento de Lógica mediante DI/Repository | 5 |
+| 35 | TS04 | Optimización de Latencia y Eficiencia (Async) | 3 |
+| 36 | TS06 | Infraestructura de Pruebas Automatizadas | 5 |
+| 43 | US07 | Implementación de sistemas de navegación simplificada | 1 |
+| 44 | US08 | Implementación de Identidad y Consistencia Visual | 1 |
+| 45 | US09 | Optimización de tiempos de respuesta y carga inicial | 3 |
+| 46 | TS15 | Configuración de Arquitectura Base y Scaffolding para la App Móvil (Flutter) | 3 |
+| 47 | TS16 | Implementación del Microservicio de Telemetría e Ingesta IoT (.NET) | 5 |
+| 48 | TS17 | Implementación del Microservicio de Control y Orquestación de Riego (.NET) | 5 |
+| 49 | TS18 | Desarrollo del Microservicio de Análisis de Cultivos e Integración de IA (.NET) | 8 |
+| 50 | TS19 | Integración de Hardware IoT y Configuración del Microcontrolador (ESP32) | 5 |
 | 50 | TS20 | Configuración de Persistencia de Datos para Telemetría Masiva | 3 |
+| 51 | TS14 | Autenticación y Control de Acceso para el Portal de Administración | 2 |
 
 ### Product Backlog en Jira: 
 
@@ -1567,25 +1572,25 @@ En esta sección se modelan los Domain Message Flows para representar la colabor
 
 * **Escenario 1: Registro de Nueva Zona de Cultivo y Vinculación de Hardware**
 
-[foto]
+<img src="https://imgur.com/8URn58p.png">
 
 Este flujo describe la orquestación técnica que ocurre cuando un usuario registra una nueva zona de cultivo en Grotix, iniciando con el comando Crear Zona de Cultivo que, tras superar una política de validación de campos, activa el Bounded Context de Cultivation Area para generar tanto una notificación de éxito como la actualización visual en la interfaz. Simultáneamente, el sistema escala la operación hacia el contexto de Hardware Device mediante el comando Asignar microcontrolador, donde el sistema de sensores valida la vinculación física del dispositivo y ejecuta finalmente el comando de vinculación técnica entre el microcontrolador y la zona lógica, asegurando que los datos de telemetría queden correctamente mapeados desde el primer momento.
 
 * **Escenario 2: Riego Automático por Identificación de IA**
 
-[foto]
+<img src="https://imgur.com/D4yuIYs.png">
 
 Este flujo describe la orquestación técnica que comienza en el Bounded Context de Crop Analysis (IA) con el procesamiento de imágenes y la identificación del tipo de cultivo, generando eventos clave que activan la lógica de decisión del sistema. Tras superar una política de validación de umbrales basada en la especie detectada, el contexto de Irrigation cycle colabora con Cultivation area para obtener los parámetros hídricos óptimos, escalando la operación hacia el Bounded Context de Hardware Device mediante el comando de inicio de riego automático. Finalmente, el sistema interactúa con el actuador físico para ejecutar el comando de activación de la bomba de agua, culminando el proceso con la emisión del evento Riego Iniciado, lo que garantiza que la ejecución hídrica esté perfectamente alineada con las necesidades biológicas detectadas por la inteligencia artificial en tiempo real. 
 
 * **Escenario 3: Respuesta a Umbral Crítico de Telemetría (Alerta)**
 
-[foto]
+<img src="https://imgur.com/ym3UFly.png">
 
 Este flujo detalla la respuesta reactiva del sistema ante condiciones críticas en el campo, comenzando cuando el Sensor emite el evento Lectura de sensor de nivel de humedad, el cual es captado por el contexto de Hardware Device y validado mediante una política que confirma la relación entre el microcontrolador y la zona de cultivo. Una vez verificada la identidad del dispositivo, el flujo se traslada al contexto de Cultivation Area para emitir el evento Nivel de humedad leído, que sirve como entrada para el contexto de Telemetry; allí, una Política de validación de umbral analiza el dato y, al detectar niveles fuera de rango, dispara el evento Umbral crítico de humedad alcanzado. Finalmente, este evento activa el comando Generar alerta de umbral excedido dentro del contexto de Profile, culminando en una Notificación (Toast) enviada directamente al usuario para informarle sobre la anomalía y permitir una toma de decisiones inmediata basada en los datos de telemetría.
 
 * **Escenario 4: Intervención manual remota**
 
-[foto]
+<img src="https://imgur.com/No8NAKr.png">
 
 Este flujo describe la orquestación técnica que ocurre cuando el Usuario de Grotix decide actuar sobre el campo mediante el comando Iniciar riego manual, especificando el ID del área y la duración requerida. Esta instrucción es procesada por el Bounded Context de Irrigation Cycle, que escala la operación hacia el contexto de Hardware Device a través del envío de un mensaje de control manual para la zona afectada. Finalmente, el sistema interactúa con la infraestructura física ejecutando el comando Activar bomba de agua sobre el actuador correspondiente (Bomba/Válvula), culminando el proceso con la emisión del evento Riego iniciado manualmente, lo que asegura la trazabilidad del inicio de la operación y la sincronización del estado hídrico en todo el ecosistema.
 
@@ -1595,27 +1600,27 @@ Esta sección presenta el diseño estratégico de los Bounded Contexts de Grotix
 
 **Profile Bounded Context**
 
-[foto]
+<img src="https://imgur.com/R49hDPK.png">
 
 **Cultivation Area Bounded Context:**
 
-[foto]
+<img src="https://imgur.com/tHl2M45.png">
 
 **Hardware Device Bounded Context:**
 
-[foto]
+<img src="https://imgur.com/BeCv22v.png">
 
 **Irrigation cycle Bounded Context:**
 
-[foto]
+<img src="https://imgur.com/ZywttgL.png">
 
 **Crop Analysis (AI) Bounded Context:**
 
-[foto]
+<img src="https://imgur.com/LsowVYQ.png">
 
 **Telemetry Bounded Context:**
 
-[foto]
+<img src="https://imgur.com/iIqigse.png">
 
 ### 4.1.2. Context Mapping
 El Context Mapping de Grotix representa la estructura estratégica de nuestra solución, definiendo las fronteras de responsabilidad y los patrones de relación entre los seis Bounded Contexts identificados. Este mapeo no solo facilita la organización técnica del sistema, sino que establece contratos de comunicación claros que protegen el Core Domain —centrado en la inteligencia de riego y eficiencia hídrica—. Al aplicar diferentes patrones, aseguramos una arquitectura resiliente, desacoplada y preparada para escalar conforme a las exigencias de sostenibilidad y trazabilidad que el sector agrario demanda.
@@ -1677,7 +1682,7 @@ Para abordar el diseño de la arquitectura de software de Grotix, se ha adoptado
 
 La siguiente leyenda define los elementos visuales y semánticos utilizados para representar la estructura y las interacciones del ecosistema Grotix:
 
-[foto]
+<img src="https://imgur.com/lO55NLZ.png">
 
 * **Boundary, Software System**: Representa el límite físico o lógico que encierra a todos los contenedores que forman parte del sistema (Grotix). Ayuda a distinguir qué piezas desarrolla el equipo y cuáles son externas.
 * **Container, Browser**: Representa una aplicación web o Single Page Application (SPA) que se ejecuta en el navegador del cliente.
@@ -1701,7 +1706,7 @@ El System Landscape de Grotix representa el ecosistema empresarial completo de l
 
 El diagrama de System Context sitúa al Sistema Grotix como el núcleo de la solución, definiendo sus límites operativos y las interacciones directas con su entorno. En este nivel de abstracción, el Hardware Grotix se identifica como un sistema externo con el cual se establece un flujo bidireccional de telemetría y control. Asimismo, se detallan las interfaces con actores humanos (Agricultor, Asociación y Staff) y la dependencia con servicios de terceros (Auth, Notificaciones y Clima). Este diagrama permite visualizar de manera clara cómo el sistema central actúa como orquestador, consumiendo datos externos y comandos de usuario para transformarlos en acciones de riego precisas y reportes de valor agregado.
 
-[foto]
+<img src="https://imgur.com/25l3vsO.png">
 
 Para robustecer su operatividad, el Sistema Grotix se integra con diversos servicios externos y componentes físicos que complementan su lógica de negocio. La seguridad y validación de identidad se delegan a un Servicio de Autenticación, mientras que la comunicación proactiva con el usuario se canaliza mediante un Servicio de Notificaciones para alertas push y un Servicio de Correo para envíos informativos. Asimismo, el sistema consume datos críticos de una API de Clima para la planificación del riego y mantiene una comunicación bidireccional con el Hardware Grotix, recibiendo lecturas de sensores e imágenes, y enviando comandos de actuación a las bombas. Esta arquitectura asegura una orquestación eficiente entre el software, los servicios en la nube y la infraestructura física desplegada.
 
@@ -1786,7 +1791,7 @@ El diagrama de clases del bounded context de Profile muestra el modelo de domini
 
 ##### 4.2.1.6.2. Bounded Context Database Design Diagram
 
-[foto]
+<img src="https://imgur.com/eEpKrh4.png">
 
 El diseño de persistencia para el Bounded Context de Profile ha sido cuidadosamente estructurado bajo el patrón de Agregado, estableciendo a la tabla user como la raíz de agregado (Aggregate Root) encargada de centralizar la gestión de identidad y acceso dentro del ecosistema Grotix. Esta arquitectura de datos se fundamenta en una separación física de responsabilidades mediante una relación de cardinalidad uno a uno entre las tablas user e identity, lo cual permite que la información de contacto y fiscal del agricultor, como su nombre y el identificador tributario, resida en una capa lógica distinta a las credenciales sensibles. Esta normalización es crítica para la seguridad del sistema, ya que permite que el servicio de dominio encargado de la encriptación de contraseñas interactúe exclusivamente con el registro de identidad sin comprometer la integridad de los datos personales, facilitando además la interoperabilidad con servicios externos de autenticación y la futura rotación de claves sin afectar el historial del usuario.
 
@@ -1859,7 +1864,7 @@ El diagrama de clases del bounded context de Cultivation Area presenta tres elem
 
 ##### 4.2.2.6.2. Bounded Context Database Design Diagram
 
-[foto]
+<img src="https://imgur.com/AqLYiOt.png">
 
 El diseño de persistencia para el Bounded Context de Cultivation Area ha sido desarrollado para soportar el FarmAggregate, garantizando una jerarquía clara que va desde la propiedad del terreno hasta el despliegue de hardware en campo. La estructura de datos se organiza en un modelo relacional que prioriza la integridad de la ubicación y la precisión de los parámetros biológicos. La tabla farm funciona como el punto de entrada principal, vinculando al propietario con sus extensiones de tierra, mientras que la tabla zone actúa como el eje de articulación del contexto. En esta última se consolidan las dependencias críticas: la relación con la tabla crop, que provee el conocimiento agronómico necesario, y la vinculación con el microcontroller, estableciendo así la conexión física entre el software de gestión y el dispositivo IoT asignado a dicha área.
 
@@ -1926,13 +1931,13 @@ El diagrama de componentes del Hardware Device ilustra la arquitectura interna d
 
 ##### 4.2.3.6.1. Bounded Context Domain Layer Class Diagrams
 
-[foto]
+<img src="https://imgur.com/hd5TnA4.png">
 
 El diagrama de clases de la capa de dominio de Hardware Device modela la estación física como el Agregado Raíz HardwareDevice, encargado de orquestar el ciclo de vida de los componentes electrónicos en el campo. El sistema distingue entre Sensors, que producen objetos de valor del tipo RawData mediante lecturas ambientales, y Actuators, que ejecutan acciones físicas como la activación de bombas o válvulas. La integridad operativa se mantiene a través del objeto de valor BatteryLevel y el estado enumerado DeviceStatus, mientras que el servicio de dominio DeviceHeartbeatService asegura que la sincronización con la nube sea constante. Finalmente, la interfaz IHardwareInterface actúa como una capa de abstracción (HAL), permitiendo que la lógica de negocio interactúe con los pines físicos del microcontrolador sin quedar acoplada a un modelo de hardware específico (ej. ESP32 vs Raspberry Pi).
 
 ##### 4.2.3.6.2. Bounded Context Database Design Diagram
 
-[foto]
+<img src="https://imgur.com/IpCJO5z.png">
 
 El diseño de persistencia para el Bounded Context de Hardware Device se ha estructurado para representar fielmente la topología física del sistema en el campo, utilizando la tabla microcontroller como la raíz de agregado (Aggregate Root). Esta tabla no solo funciona como un inventario de dispositivos, sino que centraliza el estado de salud del hardware mediante columnas dedicadas al Status y LastSeen, permitiendo que el HeartbeatMonitor persista la disponibilidad del equipo en tiempo real. Al actuar como el nodo central, el microcontrolador extiende su autoridad hacia las entidades dependientes de sensores y actuadores, garantizando que cualquier componente electrónico esté lógicamente vinculado a un controlador físico antes de su operación.
 
@@ -1998,13 +2003,13 @@ El diagrama de componentes del Irrigation Service detalla la orquestación del r
 
 ##### 4.2.4.6.1. Bounded Context Domain Layer Class Diagrams
 
-[foto]
+<img src="https://imgur.com/ESNWI43.png">
 
 El diagrama de clases de la capa de dominio de Irrigation Cycle establece a IrrigationCycle como el Agregado Raíz encargado de gestionar el ciclo de vida de un evento de riego, desde su inicio hasta su culminación o aborto, manteniendo la integridad del volumen de agua consumido mediante el objeto de valor WaterQuantity. La planificación se desacopla a través del agregado IrrigationSchedule, que permite definir frecuencias y duraciones personalizadas para cada zona de cultivo. El motor inteligente del contexto reside en el IrrigationCalculator, un servicio de dominio que evalúa si un riego debe ejecutarse o posponerse comparando la telemetría actual con los umbrales biológicos, mientras que las interfaces de repositorio aseguran que tanto el historial de ejecuciones (registrado en IrrigationLog) como los calendarios activos se persistan correctamente en la infraestructura de datos de Grotix.
 
 ##### 4.2.4.6.2. Bounded Context Database Design Diagram
 
-[foto]
+<img src="https://imgur.com/g28c861.png">
 
 El diseño de persistencia para el Bounded Context de Irrigation Cycle ha sido desarrollado para soportar la ejecución y auditoría de los ciclos hídricos, centrado su arquitectura en la gestión del IrrigationCycleAggregate. La estructura se fundamenta en la capacidad de transformar decisiones lógicas en comandos físicos y registrarlos con precisión. La tabla action_queue funciona como el eje de ejecución inmediata, actuando como una persistencia de estado para el comando actual (abrir o cerrar válvula) y permitiendo que el sistema mantenga la consistencia de la orden incluso ante interrupciones en la comunicación con el hardware. Esta tabla asegura que el StartIrrigationHandler pueda emitir órdenes que queden registradas bajo un estado específico hasta que el dispositivo físico confirme su recepción y ejecución.
 
@@ -2063,13 +2068,13 @@ El diagrama de componentes del Crop Analysis Service ilustra su rol como el cere
 #### 4.2.5.6. Bounded Context Software Architecture Code Level Diagrams
 ##### 4.2.5.6.1. Bounded Context Domain Layer Class Diagrams
 
-[foto]
+<img src="https://imgur.com/399dqq5.png">
 
 El diagrama de clases de la capa de dominio estructura el núcleo analítico de Grotix, estableciendo a AnalysisReport como el Agregado Raíz responsable de unificar los hallazgos de un ciclo de evaluación para una zona de cultivo específica. Este agregado mantiene la integridad de los resultados utilizando objetos de valor inmutables como HealthScore (que determina el estado general mediante el enumerador HealthStatus) y GrowthMetric (que compara el rendimiento real contra el esperado), mientras que las anomalías específicas se modelan mediante entidades AgriculturalInsight para permitir un seguimiento individualizado de alertas agronómicas. La complejidad heurística y predictiva reside en el servicio de dominio DiagnosisEngine, encargado de procesar la telemetría cruda y los umbrales biológicos para instanciar reportes coherentes, los cuales son finalmente abstraídos para su persistencia a través del contrato definido en IAnalysisRepository.
 
 ##### 4.2.5.6.2. Bounded Context Database Design Diagram
 
-[foto]
+<img src="https://imgur.com/Yz57VdF.png">
 
 El diseño de persistencia para el Bounded Context de Crop Analysis ha sido estructurado para transformar la telemetría cruda en información accionable, centrando su arquitectura en la persistencia del AnalysisReportAggregate. A diferencia de los registros técnicos de sensores, este esquema prioriza el almacenamiento de diagnósticos e interpretaciones biológicas. La tabla system_alert funciona como el repositorio principal de este contexto, donde se persisten los resultados del DiagnosisEngine bajo una estructura de severidad y mensajes detallados. Esta tabla no solo registra un evento, sino que encapsula el HealthScore resultante de los modelos de inteligencia artificial, permitiendo que el GenerateCropAnalysisHandler guarde una traza histórica del bienestar de la zona de cultivo para su posterior consulta en el dashboard móvil.
 
@@ -2142,7 +2147,7 @@ El diagrama de clases del bounded context de Telemetry presenta el modelo de dom
 
 ##### 4.2.6.6.2. Bounded Context Database Design Diagram
 
-[foto]
+<img src="https://imgur.com/1HblRho.png">
 
 El diseño de persistencia para el Bounded Context de Telemetry ha sido optimizado para el manejo de flujos masivos de datos y la integridad de series temporales, centrando su arquitectura en el ciclo de vida del TelemetryReadingAggregate. La estructura se divide en dos capas de persistencia que garantizan la disponibilidad del sistema bajo cualquier condición de red. En la capa de borde, la tabla pending_telemetry actúa como una cola de persistencia efímera que asegura que ninguna lectura capturada por el IoTDataConsumer se pierda ante fallos de conectividad, permitiendo que el objeto de valor CaptureTimestamp mantenga la precisión cronológica del dato original antes de su sincronización definitiva con la nube.
 
@@ -2308,13 +2313,29 @@ La aplicación móvil utiliza un menú de navegación inferior (Bottom Navigatio
 
 **Title**
 
-[foto]
+```html
+<title>Grotix</title>
+```
 
 En este meta tag, se define el título que tendrá el sitio web del proyecto. El equipo decidió usar el nombre de la startup seguido del nombre del producto para resaltar nuestra autoría sobre la idea, optando por una mayor simplicidad que facilite la lectura por parte del usuario.
 
 **Meta Tags**
 
-[foto]
+```html
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<!-- META TAGS -->
+<meta name="description" content="AI-Driven Precision Irrigation for Smarter, Water-Efficient Farming.">
+<meta name="keywords" content="Grotix, farming, water, irrigation, sensors, machine learning, agriculture">
+<meta name="author" content="Celevi">
+
+<!-- Open Graph -->
+<meta property="og:site_name" content="Grotix">
+<meta property="og:title" content="Celevi - Grotix">
+<meta property="og:description" content="AI-Driven Precision Irrigation for Smarter, Water-Efficient Farming.">
+<meta property="og:type" content="website">
+```
 
 Para garantizar que la Landing Page de Grotix sea indexada correctamente y presente una identidad visual coherente al ser compartida en plataformas digitales, se ha implementado un sistema de Meta Tags técnicos y descriptivos.
 
@@ -2330,7 +2351,29 @@ Para garantizar que la Landing Page de Grotix sea indexada correctamente y prese
 
 #### Web App (For Staff)
 
-[foto]
+```html
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <!-- Grotix Default Meta Tags -->
+    <title>Grotix Portal - Farm Management Dashboard</title>
+    <meta name="description" content="Access the Grotix management portal to monitor telemetry, control hardware, and review crop health reports." />
+    <meta name="keywords" content="Grotix login, farm management dashboard, agricultural telemetry portal" />
+    <meta name="author" content="Celevi" />
+
+    <!-- Evitar indexación de rutas privadas por defecto -->
+    <meta name="robots" content="noindex, nofollow" />
+  </head>
+  <body>
+    <div id="app"></div>
+    <script type="module" src="/src/main.js"></script>
+  </body>
+</html>
+```
 
 Para la aplicación web de Grotix, se ha configurado el archivo principal (index.html) con un conjunto de etiquetas (tags) y metaetiquetas (meta tags) estructurales y de SEO. Esta configuración base tiene el doble propósito de asegurar una correcta visualización en diversos dispositivos móviles, y de establecer la identidad fundamental del portal. Además, considerando que el Dashboard gestiona datos sensibles de los agricultores y telemetría de los cultivos, se ha implementado una directiva de privacidad por defecto en los motores de búsqueda, asegurando que la información interna no quede expuesta públicamente. 
 
@@ -2343,7 +2386,38 @@ Para la aplicación web de Grotix, se ha configurado el archivo principal (index
 
 #### Mobile App (For Clients)
 
-[foto]
+```xml
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+
+    <application
+        android:allowBackup="true"
+        android:usesCleartextTraffic="true"
+        android:dataExtractionRules="@xml/data_extraction_rules"
+        android:fullBackupContent="@xml/backup_rules"
+        android:icon="@mipmap/ic_launcher"
+        android:label="AdminLivria"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.AdminLivria">
+        <activity
+            android:name=".MainActivity"
+            android:exported="true"
+            android:label="AdminLivria"
+            android:theme="@style/Theme.AdminLivria">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+    </application>
+
+</manifest>
+```
 
 **ASO (App Store Optimizaton) elements:**
 La optimización para tiendas de aplicaciones (ASO) de la aplicación se centra en los siguientes elementos visibles:
@@ -2356,35 +2430,33 @@ En Grotix, los Searching Systems fueron diseñados para simplificar la experienc
 
 #### Web App (For Staff)
 
-[foto]
+<img src="https://imgur.com/kkxKF5L.png">
 
 En primer lugar, está la pantalla de Búsqueda, que está diseñada para ofrecer una experiencia de descubrimiento de catálogo rápida y directa al usuario. Su diseño conciso se enfoca en la eficiencia y la relevancia de los resultados. Permite explorar entre agricultores, contratos y dispositivos.
 
-[foto]
+<img src="https://imgur.com/87OABjk.png">
 
 La pantalla de Contratos incluye un ícono de filtros (representado por barras verticales de diferentes alturas) en la esquina superior derecha. Esta funcionalidad es crucial, ya que permite al staff refinar los resultados obtenidos en la lista general de contratos, aplicando criterios adicionales.
 
-[foto]
+<img src="https://imgur.com/CGwaMsP.png">
 
 De manera similar, en la pantalla de Dispositivos aparece el mismo ícono que permite filtrar entre la lista general de los microcontroladores aplicando ciertos criterios.
 
-[foto]
+<img src="https://imgur.com/eoFwZUU.png">
 
 En la pantalla de Cultivos hay una barra de búsqueda que permite explorar entre el listado de cultivos mediante dos criterios: nombre común o el científico.
 
-[foto]
-
 #### Mobile App (For Clients)
 
-[foto]
+<img src="https://imgur.com/LU1MnpG.png">
 
 Los usuarios poseen una barra de búsqueda en cada zona (Dashboard de Cultivation Area) que creen y posean para la funcionalidad de buscar otros usuarios. Esta le permite encontrar agricultores dentro de su asociación e invitarlos a participar u observar en la zona específica, así como eliminarlos de la misma.
 
-[foto]
+<img src="https://imgur.com/JTUC8lz.png">
 
 En la pantalla de IA (Image Processing), el usuario puede buscar las zonas en específico que tiene para ver su estado. El sistema muestra un listado con las zonas y el estado de germinación que posee; con esta barra de búsqueda se le facilita el encuentro de algún área en particular.
 
-[foto]
+<img src="https://imgur.com/ieZdMxX.png">
 
 En la pantalla general de zonas (Cultivation Areas), el usuario tiene la opción de buscar entre aquellas ya existentes, así como crear una nueva o filtrarlas mediante criterios específicos. Esto le permite realizar su objetivo de manera eficiente.
 
@@ -2393,7 +2465,7 @@ El diseño de la navegación de Grotix se basa en una arquitectura de informaci�
 
 #### Web App (For Staff)
 
-[foto]
+<img src="https://imgur.com/MqIX1wY.png">
 
 En primer lugar, la barra lateral de navegación de la web app para el staff funciona como el eje central del sistema de navegación global, facilitando el acceso directo a los módulos críticos de Grotix.
 
@@ -2401,25 +2473,25 @@ Diseñada bajo un enfoque de navegación persistente, permite al usuario moverse
 
 La jerarquía visual se apoya en una iconografía minimalista y escalable que optimiza el espacio de trabajo, asegurando que las herramientas de configuración y el acceso a la identidad de la marca permanezcan siempre al alcance del equipo operativo.
 
-[foto]
+<img src="https://imgur.com/I7LZMd3.png">
 
 Al momento de seleccionar un agricultor en específico en la pantalla de Agricultores (Agriculturists), la aplicación web dirige al miembro del staff a la pantalla de cliente en singular (Agriculturist). En caso de que desee regresar a ver la lista general de agricultores, puede hacerlo al hacer click en el ícono de flecha a la izquierda al costado del título (o a través del menú lateral).
 
-[foto]
+<img src="https://imgur.com/bOtcPCb.png">
 
 La pantalla de Cultivos (Crops) (y sus singulares) tienen la misma función de navegación que en Agricultores, permitiendo el regreso a la pantalla general de cultivos desde uno en singular.
 
 #### Mobile App (For Clients)
 
-[foto]
+<img src="https://imgur.com/CEDXXNb.png">
 
 En la pantalla de una zona en específico (Dashboard de Cultivation Area) hay botones de navegación. En primer lugar está Main (Principal), que muestra los valores actuales de los criterios de la zona (humedad, luz, etc.) y la información general. En el medio se encuentra Settings (Configuración), que permite cambiar los valores de límite para cada criterio, así como el riego de la zona. Por último, está People (Personas), que permite buscar entre los agricultores de la asociación para que el administrador de la zona lo pueda agregar o eliminar.
 
-[foto]
+<img src="https://imgur.com/FADDyBf.png">
 
 La parte más importante de la navegación en la aplicación móvil es la barra inferior de menú. Cuenta con 5 íconos, cada uno dando acceso a diferentes funcionalidades. El primero, el dashboard, muestra una zona en específico a elección. Le sigue la estrella de cuatro puntas que dirige a la pantalla de AI Image Processing. En el medio se encuentra la planta, que muestra el listado de zonas (Cultivation Areas). El ícono de papel lleva a la pantalla de Reportes, que le permite al usuario generar informes sobre sus zonas y cultivos. Por último, el ícono de persona es el acceso a la pantalla de perfil (Profile), en la cual se muestran los detalles de la cuenta del usuario.
 
-[foto]
+<img src="https://imgur.com/OuwPGvc.png">
 
 Por último, la barra superior de cada pantalla de la aplicación posee dos accesos directos. El logo de Grotix lleva a la pantalla de zonas, como un acceso directo a información general. Y el ícono de campanita abre un drawer o sidebar (pantalla modal) con las notificaciones que recibe el usuario y una opción para configurarlas.
 
@@ -2431,36 +2503,36 @@ La sección de Landing Page Wireframes presenta la arquitectura visual y la disp
 
 A continuación, se muestra cada wireframe pensado para la Landing Page:
 
-[foto]
-[foto]
-[foto]
-[foto]
-[foto]
-[foto]
+<img src="https://imgur.com/pQD3owL.png">
+<img src="https://imgur.com/6he5Glm.png">
+<img src="https://imgur.com/YuDJW1q.png">
+<img src="https://imgur.com/qWxR5xP.png">
+<img src="https://imgur.com/opbin0H.png">
+<img src="https://imgur.com/ugtDL6g.png">
 
 ### 5.3.2. Landing Page Mock-up
 
-[foto]
+<img src="https://imgur.com/UxsADgt.png">
 
 La sección General de la landing page de Grotix presenta una introducción impactante y profesional orientada a soluciones de agricultura de precisión. En el centro de una estética de modo oscuro, destaca el nombre de la plataforma acompañado de su propuesta de valor. Un botón destacado de "GET NOW!" invita a la conversión inmediata, mientras que en la base de la pantalla se despliega una galería visual que ilustra el uso de sensores en campo, monitoreo móvil y análisis de datos en tiempo real. En la parte superior, un menú de navegación claro permite acceder a las secciones de servicios, aplicación, nosotros, contacto y redes sociales, incluyendo además un selector de idioma para mayor accesibilidad.
 
-[foto]
+<img src="https://imgur.com/MhjNeVJ.png">
 
 La sección de Services de la landing page de Grotix detalla las capacidades tecnológicas de la plataforma para la agricultura de precisión mediante un diseño de tarjetas moderno y visual. Muestra un total de 6 tarjetas mostrando las principales características de la aplicación, dando un pequeño resumen de cada una con una imagen representativa de la información brindada.
 
-[foto]
+<img src="https://imgur.com/NmS0uRz.png">
 
 La sección App de la landing page destaca la movilidad y el control total bajo el lema "Your crops in the palm of your hand". En esta parte, se muestra un mockup de la aplicación móvil de Grotix. La descripción enfatiza el uso de inteligencia artificial para transformar datos complejos de sensores en decisiones accionables y reportes detallados de ahorro de agua, facilitando el acceso a estos insights directamente desde el teléfono. Finalmente, se presentan los botones de descarga para las principales tiendas de aplicaciones, reforzando la accesibilidad de la plataforma para el agricultor.
 
-[foto]
+<img src="https://imgur.com/zSPcF0F.png">
 
 La sección Us (Sobre Nosotros) de la landing page presenta a Celevi, la startup detrás de Grotix. En esta parte se explica que el equipo proviene de la Universidad Peruana de Ciencias Aplicadas (UPC) y se enfoca en promover la agricultura inteligente mediante una plataforma IoT escalable. Su misión principal es utilizar la automatización y el análisis de datos para optimizar el riego, buscando mitigar el hambre y transformar la gestión de recursos agrícolas en un motor de bienestar social y sostenibilidad nacional. La interfaz mantiene el estilo de modo oscuro con elementos gráficos abstractos y coloridos que resaltan la identidad de la marca y utilizan los colores de la paleta designada en style guidelines.
 
-[foto]
+<img src="https://imgur.com/UPsWCrT.png">
 
 La sección Contact de la landing page invita a la colaboración bajo el lema "Let’s grow the future together". En el lado izquierdo, destaca un formulario de contacto sobre un fondo verde vibrante que incluye campos para el nombre, correo electrónico, asunto y mensaje, finalizando con un botón de "SEND". El texto descriptivo a la derecha motiva tanto a productores individuales como a grandes asociaciones a realizar consultas técnicas o comerciales sobre los sensores IoT y la plataforma Grotix. Esta interfaz proporciona un canal directo y sencillo para resolver dudas y fomentar la adopción de sus soluciones agrícolas.
 
-[foto]
+<img src="https://imgur.com/P12lNyg.png">
 
 La sección final de la landing page, denominada Social, junto con el pie de página (footer), cierra la experiencia del usuario facilitando la conexión con la marca a través de diversos canales. Bajo el encabezado "Find us everywhere", se presentan iconos destacados de redes sociales como Instagram, Facebook, Twitter y LinkedIn, invitando a la comunidad a seguir las actualizaciones de Grotix. El footer está organizado en cuatro columnas principales:
 
@@ -2479,69 +2551,74 @@ Los wireframes de las aplicaciones móviles de Grotix (tanto para la versión we
 
 **Pantalla Principal (Main)**
 
-[foto]
+<img src="https://imgur.com/pldtjdL.png">
 
 **Pantalla de Búsqueda**
 
-[foto]
+<img src="https://imgur.com/Zp1UPUy.png">
 
 **Pantalla de Agricultores**
 
-[foto]
+<img src="https://imgur.com/0MmdCsc.png">
 
 **Pantalla de Agricultor Individual**
 
-[foto]
+<img src="https://imgur.com/X1033Zf.png">
 
 **Pantalla de Contratos**
 
-[foto]
+<img src="https://imgur.com/1XhzEZZ.png">
 
 **Pantalla de Listado de Dispositivos**
 
-[foto]
+<img src="https://imgur.com/YdJbEmm.png">
 
 **Pantalla de Bitácora en Dispositivos**
 
-[foto]
+<img src="https://imgur.com/pATPsVY.png">
 
 **Pantalla Mantenimiento de Dispositivos**
 
-[foto]
+<img src="https://imgur.com/8C3qgqs.png">
 
 **Pantalla Dispositivo Individual**
 
-[foto]
+<img src="https://imgur.com/2gWrpJf.png">
 
 **Pantalla de Cultivos**
 
-[foto]
+<img src="https://imgur.com/vCLT9De.png">
 
 **Pantalla Cultivo Individual**
 
-[foto]
+<img src="https://imgur.com/1Ub3gT5.png">
 
 **Pantalla de Perfil**
 
-[foto]
+<img src="https://imgur.com/u23z4bI.png">
 
 
 #### Mobile App (For Clients)
 **Pantallas de Dashboard; Main, Settings, People**
 
-[foto]
+<img src="https://imgur.com/0dHHFmV.png">
+<img src="https://imgur.com/ehI9Mou.png">
+<img src="https://imgur.com/PEO6a83.png">
 
 **Pantallas de AI, Cultivation Areas**
 
-[foto]
+<img src="https://imgur.com/DnalwBR.png">
+<img src="https://imgur.com/FI6bD1e.png">
 
 **Pantallas de Reports, Profile**
 
-[foto]
+<img src="https://imgur.com/T6DfXXP.png">
+<img src="https://imgur.com/WfOrJYn.png">
 
 **Pantallas de Notifications**
 
-[foto]
+<img src="https://imgur.com/mLVXaj5.png">
+<img src="https://imgur.com/PwxydnJ.png">
 
 ### 5.4.2. Applications Wireflow Diagrams
 
@@ -2551,11 +2628,11 @@ Los diagramas de wireflow de la aplicación móvil de Grotix constituyen la repr
 Como agricultor usuario de Grotix, quiero visualizar en tiempo real los indicadores de humedad, temperatura e intensidad lumínica de mi zona de cultivo para tomar decisiones operativas de forma inmediata.
 **Task flow:**
 
-[foto]
+<img src="https://imgur.com/WVBV2xJ.png">
 
 **Wireflow:**
 
-[foto]
+<img src="https://imgur.com/76NwFMp.png">
 
 Para poder interactuar con el monitoreo de variables de cultivo que ofrece Grotix, el agricultor accede, en primer lugar, a la pantalla principal del Dashboard al abrir la aplicación. El sistema lo sitúa automáticamente en la vista MAIN de la zona de cultivo activa, donde se despliegan en tiempo real tres métricas críticas obtenidas de los sensores IoT: el nivel de humedad del suelo representado como un indicador circular con valor porcentual y etiqueta semántica, la intensidad lumínica mediante una barra de progreso graduada con nivel descriptivo, y la temperatura ambiental en grados Celsius con indicador de estado. En caso de que alguna variable supere los umbrales configurados, el sistema resalta visualmente el indicador afectado con un cambio de color para facilitar una respuesta inmediata.
 
@@ -2565,13 +2642,14 @@ Finalmente, al seleccionar la pestaña PEOPLE, el sistema presenta el listado de
 
 #### User Goal para Segmento 2: Asociaciones Agrarias 
 Como miembro de una asociación agraria, quiero consultar el análisis visual del estado de germinación y crecimiento de todas las zonas de cultivo gestionadas por la asociación, generado por la inteligencia artificial de Grotix, para conocer el progreso biológico de cada parcela sin necesidad de ser un especialista en botánica.
+
 **Task flow:**
 
-[foto]
+<img src="https://imgur.com/IZu6svL.png">
 
 **Wireflow:**
 
-[foto]
+<img src="https://imgur.com/LsYElfX.png">
 
 Para poder consultar el diagnóstico fenológico que ofrece el módulo de inteligencia artificial de Grotix, el usuario accede, en primer lugar, a la pantalla de Cultivation Areas (Zones), ya sea tocando el ícono central de brote en la barra de navegación inferior o a través del logotipo de Grotix en la cabecera. En esta pantalla se presenta el listado completo de las zonas registradas por la asociación, cada una con su imagen representativa, nombre, timestamp de última sincronización y una etiqueta de estado de sensores —verde si todos están activos, roja si alguno presenta falla.
 
@@ -2584,88 +2662,88 @@ La etapa de Mockups representa la traducción fiel de la estructura definida en 
 
 #### Web App (For Staff)
 
-[foto]
+<img src="https://imgur.com/8tqpyef.png">
 
 El Main Dashboard de la web app para el staff de Grotix presenta una interfaz intuitiva en modo oscuro organizada en tres columnas clave para la gestión operativa. La primera sección permite visualizar el estatus de los clientes activos, mientras que la columna central detalla los contratos vigentes con sus respectivas fechas de inicio. Finalmente, la sección de dispositivos monitorea en tiempo real la conectividad de los microcontroladores, diferenciando mediante etiquetas de color si se encuentran online u offline.
 
-[foto]
+<img src="https://imgur.com/8uaoX4H.png">
 
 La pantalla de Search de la web app para el staff ofrece una herramienta de búsqueda global integrada en una interfaz de modo oscuro, diseñada para filtrar agricultores, contratos o dispositivos de forma simultánea. Los resultados se organizan en tarjetas detalladas que muestran perfiles de usuarios con interruptores de estado, información de microcontroladores con su última fecha de mantenimiento, y el estatus de los contratos (como Active, Draft o Terminated). Esta vista unificada facilita la gestión rápida y el monitoreo del ecosistema de Grotix mediante una disposición limpia y etiquetas visuales de alta legibilidad.
 
-[foto]
+<img src="https://imgur.com/dy6NkWC.png">
 
 La pantalla de Agriculturists de la web app de Grotix presenta una interfaz de gestión de clientes organizada en una cuadrícula de tarjetas individuales bajo una estética de modo oscuro. Cada tarjeta muestra la fotografía del agricultor, su nombre completo y un interruptor (switch) lateral que permite activar o desactivar su estatus de forma rápida y visual. Esta disposición facilita al staff la supervisión y el control administrativo de los usuarios de la plataforma mediante un diseño limpio y funcional.
 
-[foto]
+<img src="https://imgur.com/DRh4k2q.png">
 
 La pantalla Single Agriculturist de la web app para el staff de Grotix ofrece una vista detallada del perfil de un usuario específico dentro de un contenedor centralizado en modo oscuro. En la parte superior del perfil, se muestra la fotografía del agricultor junto a su nombre y ocupación, acompañada de un interruptor de estado que indica claramente si el usuario está Active. El resto del formulario organiza la información de contacto y administrativa en campos de lectura, incluyendo la asociación a la que pertenece, correo electrónico, número telefónico y el rol asignado dentro de la plataforma. Esta interfaz permite al staff revisar los datos personales de manera estructurada y rápida mediante un diseño limpio y profesional.
 
-[foto]
+<img src="https://imgur.com/oa5NYdM.png">
 
 La pantalla de Contracts de la web app para el staff de Grotix presenta un repositorio centralizado de los acuerdos legales con clientes, organizado en una cuadrícula de tarjetas descriptivas sobre un fondo oscuro. En la parte superior, la interfaz incluye botones para alternar entre la vista de List y la opción de Add para registrar nuevos contratos, además de un icono de filtros para búsquedas avanzadas. Cada tarjeta identifica a la organización, la fecha de inicio del servicio y el estado actual del contrato mediante etiquetas de color, tales como Active, Draft, Pending, Renewed, Expired o Terminated. Esta visualización permite al equipo administrativo supervisar el ciclo de vida de cada suscripción y la vigencia de los servicios de manera eficiente.
 
-[foto]
+<img src="https://imgur.com/4m3Fa2r.png">
 
 La pantalla de Devices de la aplicación web de Grotix permite al staff supervisar el hardware desplegado mediante una interfaz en modo oscuro organizada en una cuadrícula de tarjetas de microcontroladores. En la sección superior, el usuario puede navegar entre las funciones de List, Logbook y Maintenance, además de acceder a herramientas de filtrado. Cada tarjeta identifica un dispositivo por su código único y muestra en tiempo real si su estado es Online u Offline, junto con la fecha y hora exacta de su último mantenimiento. Esta disposición facilita un monitoreo técnico preventivo y una respuesta rápida ante cualquier desconexión en las zonas de cultivo.
 
-[foto]
+<img src="https://imgur.com/IW67762.png">
 
 La sección Logbook dentro del módulo de Devices presenta un formulario de registro diseñado para documentar las intervenciones técnicas realizadas en el hardware de Grotix. Enmarcada en una interfaz de modo oscuro, la pantalla permite seleccionar el Device ID correspondiente, detallar la actividad realizada en un campo de texto amplio para la Action y definir el Status After mediante botones de selección rápida para marcar el dispositivo como Online u Offline. Finalmente, la vista incluye botones de acción destacados para Save o Cancel, asegurando que cada mantenimiento quede registrado correctamente en el historial del sistema.
 
 La vista de Maintenance en el módulo de dispositivos de Grotix proporciona una interfaz de control operativo para gestionar las tareas de soporte técnico sobre el hardware. Manteniendo la estética de modo oscuro, esta pantalla organiza los microcontroladores en tarjetas que incluyen botones de acción contextuales: Start Maintenance para iniciar un proceso de revisión o End Maintenance para concluir intervenciones en curso. Cada tarjeta muestra el ID del dispositivo, su estado de conectividad actual y la marca temporal de su último mantenimiento, permitiendo al staff coordinar las tareas de campo y asegurar que todos los equipos funcionen correctamente dentro de los cronogramas establecidos.
 
-[foto]
+<img src="https://imgur.com/o2dVBKk.png">
 
 La pantalla de Single Device en la web app de Grotix ofrece una vista técnica integral de un microcontrolador específico, dividida en dos secciones principales sobre un fondo oscuro. En el panel izquierdo, se presentan los detalles técnicos del hardware, incluyendo el Zone ID, el modelo del dispositivo, su dirección MAC y el estatus de conexión en tiempo real (ONLINE). La sección derecha está dedicada a los Maintenance Logs, donde se listan de forma cronológica las intervenciones realizadas, detallando fechas y acciones técnicas específicas como actualizaciones de firmware o reemplazo de componentes. Esta estructura permite al staff de Grotix tener una trazabilidad completa del ciclo de vida y el estado operativo de cada unidad de hardware.
 
-[foto]
+<img src="https://imgur.com/MOUuNl9.png">
 
 La pantalla de Crops de la aplicación web para el staff de Grotix presenta un catálogo visual de los tipos de cultivos soportados por la plataforma, organizado en una cuadrícula de tarjetas descriptivas sobre un fondo oscuro. En la parte superior, se incluye una barra de búsqueda que permite filtrar los resultados por nombre común o científico. Cada tarjeta contiene una imagen representativa del cultivo y su nombre correspondiente (como tomate, zanahoria o albahaca), facilitando una identificación rápida y clara para la gestión agrícola. Esta interfaz mantiene la coherencia visual con el resto del sistema, ofreciendo una navegación fluida a través de la barra lateral persistente.
 
-[foto]
+<img src="https://imgur.com/lOffVna.png">
 
 La pantalla de Single Crop de la aplicación web de Grotix permite al staff gestionar los parámetros específicos de un cultivo, como el brócoli, mediante una interfaz técnica en modo oscuro. En el panel izquierdo, se muestra una imagen identificativa junto al nombre común y científico del cultivo, además de un selector para definir el Maximum Stress Time permitido. La sección derecha, bajo el encabezado Statistics, presenta controles deslizantes para configurar los rangos ideales de temperatura, humedad y luz, permitiendo ajustar los niveles óptimos de crecimiento de forma visual. Finalmente, la pantalla incluye botones prominentes para Save o Delete, asegurando un control administrativo total sobre la base de datos de cultivos.
 
-[foto]
+<img src="https://imgur.com/Lg2kWvK.png">
 
 La pantalla de Profile en la aplicación web ofrece una vista consolidada de la información del usuario autenticado. En el panel central, se muestra la identidad del equipo o usuario, incluyendo su nombre, el registro del último acceso al sistema y una etiqueta de estado ACTIVE. Debajo de la cabecera, se organizan campos informativos sobre la cuenta. La pantalla se completa con botones de acción rápida para realizar cambios mediante la opción Edit o para finalizar la sesión de forma segura con el botón Log Out.
 
 #### Mobile App (For Clients)
 
-[foto]
+<img src="https://imgur.com/8jlsiLb.png">
 
 La pantalla de Main Dashboard de la aplicación móvil de Grotix constituye el centro de control operativo para el usuario, permitiendo el monitoreo en tiempo real de zonas de cultivo específicas. Bajo una estética de modo oscuro, la interfaz presenta una tarjeta informativa del cultivo que detalla el estado de germinación y las coordenadas geográficas exactas de la plantación. El núcleo de la pantalla utiliza indicadores visuales dinámicos para reportar variables críticas: un gráfico circular para la humedad (Moisture) que indica niveles óptimos, una barra de progreso para la radiación lumínica y medidores de temperatura, todos acompañados por marcas de tiempo de la última actualización para garantizar la precisión de los datos. Asimismo, más abajo en la pantalla sale el resumen de sensores utilizados en esta zona. Esta disposición funcional se complementa con una barra de navegación inferior y pestañas superiores para ajustes y gestión de participantes, facilitando una toma de decisiones informada para mejorar la cosecha.
 
-[foto]
+<img src="https://imgur.com/r2mHG6M.png">
 
 La pantalla de Dashboard Settings en la aplicación móvil de Grotix permite al usuario personalizar de manera precisa el comportamiento del hardware en una zona de cultivo específica. En la sección de Irrigation, la interfaz ofrece interruptores para habilitar el riego automático o iniciar un riego manual de forma inmediata, además de un selector para establecer el Max. time of irrigation. Complementariamente, el apartado de Critical Levels permite definir los umbrales mínimos de humedad y radiación, así como el rango de temperatura ideal, asegurando que el sistema actúe según los requerimientos técnicos del cultivo. Esta configuración granular garantiza una gestión eficiente de los recursos y la protección de la salud de las plantas directamente desde el dispositivo móvil.
 
-[foto]
+<img src="https://imgur.com/yXIWl2L.png">
 
 La pantalla de Dashboard People en la aplicación móvil de Grotix facilita la gestión colaborativa de las zonas de cultivo al permitir la administración de los participantes asociados a cada proyecto. Bajo una interfaz de modo oscuro, esta sección presenta una lista de agricultores con sus respectivas fotografías, nombres y roles, integrando una barra de búsqueda superior para una localización rápida de usuarios. Los controles interactivos permiten invitar a nuevos colaboradores o remover a miembros existentes de la zona seleccionada, asegurando que el equipo de trabajo esté siempre actualizado y coordinado en las tareas de monitoreo agrícola.
 
-[foto]
+<img src="https://imgur.com/k3dk9H8.png">
 
 La pantalla de AI Image Processing en la aplicación móvil de Grotix permite al usuario visualizar el análisis avanzado de sus cultivos mediante inteligencia artificial. En la parte superior, se destaca el AI Trust Level, que indica el grado de confiabilidad del procesamiento actual (ej. 80%). Bajo la sección de Zone Status, se presenta un listado de las diferentes áreas de cultivo, mostrando para cada una la etapa de crecimiento detectada —como Seed o Germination— junto con la hora de la última actualización. Esta interfaz facilita el seguimiento automatizado del desarrollo de las plantas, permitiendo una supervisión precisa de múltiples zonas desde una sola vista centralizada.
 
-[foto]
+<img src="https://imgur.com/YzqYCzn.png">
 
 La pantalla de Cultivation Areas en la aplicación móvil de Grotix sirve como el inventario principal de los sectores de cultivo gestionados por el usuario. En esta interfaz de modo oscuro, se listan todas las zonas activas (como la "Zona Tomatitos" o el "Área de Zanahorias") mediante tarjetas que incluyen una imagen referencial, el nombre del área y la hora de su última sincronización. Un elemento crítico de esta pantalla es el indicador de estado de los dispositivos IoT, el cual notifica visualmente si todos los sensores operan correctamente o si existen fallas técnicas (ej. "Some sensors are failing"). Además, la parte superior integra herramientas funcionales para buscar zonas específicas, añadir nuevas áreas mediante un botón de "+" y acceder a filtros de configuración, manteniendo la coherencia con la barra de navegación inferior del sistema.
 
-[foto]
+<img src="https://imgur.com/mvf3xxY.png">
 
 La pantalla de Generate Report en la aplicación móvil de Grotix proporciona al usuario las herramientas necesarias para extraer y analizar datos históricos de sus cultivos de manera personalizada. Manteniendo la línea visual de modo oscuro de la plataforma, esta sección se enfoca específicamente en reportes de riego (Irrigation), permitiendo configurar rangos de tiempo exactos mediante selectores de fecha de inicio y fin, o mediante un menú desplegable para periodos predefinidos (3 meses, 6 meses, etc.). Una vez establecidos los parámetros, el botón de GENERATE procesa la información para mostrarla en el área de visualización inferior, facilitando al agricultor la revisión de tendencias y el consumo de recursos para una mejor planificación de futuras cosechas.
 
-[foto]
+<img src="https://imgur.com/8zwQ6ze.png">
 
 La pantalla de Personal Info en la aplicación móvil de Grotix permite al agricultor gestionar su identidad digital y datos de contacto de manera centralizada. Bajo un saludo personalizado, la interfaz despliega un formulario que incluye campos para el nombre completo, correo electrónico, número telefónico y el rol del usuario, además de un espacio dedicado para la visualización y actualización de la foto de perfil. En la base de la tarjeta informativa, se ubican los botones de Edit para realizar modificaciones y Log Out para cerrar la sesión, manteniendo la coherencia visual del modo oscuro y la accesibilidad a través de la barra de navegación inferior que conecta con el resto de los módulos de la plataforma.
 Abajo de esta sección podrá encontrar una línea de soporte para contactar con el staff en caso de que uno de sus sensores esté fallando.
 
-[foto]
+<img src="https://imgur.com/YkT2kZR.png">
 
 La sección de Notifications en la aplicación móvil de Grotix se presenta como un panel superpuesto de acceso rápido (drawer) que mantiene al usuario informado sobre eventos clave del sistema. Con un diseño limpio en modo oscuro, el panel organiza las alertas de forma cronológica, permitiendo visualizar mensajes de bienvenida, estados de los sensores o alertas de riego. Cada notificación incluye una opción de eliminación individual mediante un icono de papelera, además de un botón global de CLEAR ALL en la parte inferior para gestionar el historial de avisos de manera eficiente. Esta funcionalidad garantiza que el agricultor no pierda de vista ninguna actualización crítica sobre el rendimiento y la salud de sus cultivos.
 
-[foto]
+<img src="https://imgur.com/DG7GyWX.png">
 
 La vista de Configuration dentro del panel de notificaciones de la aplicación móvil permite al usuario personalizar sus preferencias de alerta de manera detallada. En esta sección, el agricultor puede gestionar los canales de recepción mediante interruptores para Push Notifications y Email Notifications. Además, ofrece un control específico sobre el tipo de contenido que genera avisos, permitiendo activar o desactivar alertas para cambios en el riego (irrigation), alcance de niveles críticos en los sensores o actualizaciones sobre el estado de germinación de los cultivos. Esta flexibilidad asegura que el usuario reciba únicamente la información más relevante.
 
@@ -2680,11 +2758,11 @@ La vista de Configuration dentro del panel de notificaciones de la aplicación m
 
 **Task flow:**
 
-[foto]
+<img src="https://imgur.com/tzrXAuM.png">
 
 **User flow:**
 
-[foto]
+<img src="https://imgur.com/D9lPlXx.png">
 
 Para interactuar con el flujo de monitoreo inteligente y automatización que ofrece Grotix, el agricultor accede inicialmente a la pantalla de Cultivation Areas al abrir la aplicación, donde visualiza un listado general de sus parcelas registradas. Al seleccionar una zona específica, como la "Zona Tomatitos", el sistema lo dirige automáticamente a la vista MAIN del Dashboard. En esta sección, se despliegan en tiempo real las métricas críticas capturadas por los sensores IoT: el nivel de humedad del suelo representado porcentualmente, la intensidad lumínica y la temperatura ambiental. Estas variables permiten al usuario supervisar la salud de su cultivo de manera inmediata, alertando visualmente si algún parámetro se encuentra fuera de los umbrales seguros establecidos.  Sin perder tiempo en navegaciones complejas, el agricultor puede desplazarse hacia la pestaña SETTINGS mediante un toque en la barra de navegación superior de la zona. En esta vista, el usuario tiene la capacidad de configurar con precisión los niveles críticos mínimos para cada variable ambiental (humedad, luz y temperatura), así como activar el interruptor de riego automático mediante un toggle switch. Esta acción garantiza que el hardware en campo responda de forma autónoma a las necesidades hídricas detectadas, optimizando el uso del recurso y permitiendo al agricultor delegar el esfuerzo físico del riego manual.  Finalmente, para validar el progreso biológico y obtener una mayor tranquilidad sobre el estado de su inversión, el usuario selecciona el icono de destello en la barra de navegación inferior para acceder al módulo de AI Image Processing. Aquí, el sistema muestra el diagnóstico generado por inteligencia artificial, identificando automáticamente la etapa fenológica actual del cultivo (como germinación o crecimiento) junto con un nivel de confianza del análisis. Este flujo integrado permite una supervisión remota completa y ágil, transformando datos sensoriales y visuales complejos en decisiones técnicas seguras para el productor.
 
@@ -2696,11 +2774,11 @@ Para interactuar con el flujo de monitoreo inteligente y automatización que ofr
 
 **Task flow:**
 
-[foto]
+<img src="https://imgur.com/AVhJZ1G.png">
 
 **User flow:**
 
-[foto]
+<img src="https://imgur.com/R7bOnKO.png">
 
 Para que el usuario logre auditar el personal asignado a una zona de cultivo específica y generar reportes de riego trimestrales que cumplan con los estándares de calidad de exportación, Grotix ofrece un flujo administrativo centralizado y eficiente. En primer lugar, si el objetivo es la auditoría de personal, el usuario accede desde la pantalla de Cultivation Areas a la zona específica de interés. Una vez dentro, se desplaza a la vista PEOPLE a través de la barra de navegación superior del dashboard. En esta sección, se visualiza la información detallada de los encargados actuales de la zona y un listado de otros agricultores de la granja disponibles para ser vinculados. El administrador tiene la facultad de gestionar estos accesos de forma dinámica: puede remover a un colaborador existente mediante el botón REMOVE, lo que actualiza la lista al instante, o añadir nuevos integrantes utilizando la barra de búsqueda y presionando el botón INVITE. Este control bidireccional asegura que siempre se tenga claridad sobre quién opera cada sector de la producción.  Por otro lado, para la generación de documentación técnica, el usuario accede a la vista de REPORTS directamente desde el menú de navegación inferior. Dentro de este módulo, el proceso de configuración está diseñado para minimizar errores de entrada: al seleccionar la fecha de inicio del reporte, el sistema utiliza una lógica de autocompletado para determinar la fecha de fin basada en el rango de tiempo seleccionado (por ejemplo, "3 months" para trazabilidad trimestral). El agricultor puede ajustar estos periodos mediante un selector desplegable, lo que actualiza automáticamente los límites temporales del informe. Una vez validados los parámetros, el usuario acciona el botón GENERATE, lo que inicia el procesamiento de la telemetría histórica y la descarga del reporte directamente en el dispositivo. Este flujo garantiza la obtención ágil de pruebas de sostenibilidad y huella hídrica, facilitando el cumplimiento de normativas internacionales.
 
@@ -2712,37 +2790,37 @@ El prototipo fue diseñado siguiendo principios de arquitectura de la informaci�
 
 ### Web App (For Staff)
 
-[foto]
+<img src="https://imgur.com/71rEM5m.png">
 
 Video explicativo:
 
-[foto]
+<img src="https://imgur.com/eeRCEYj.png">
 
 Link del video:
-https://drive.google.com/file/d/1DgfYWx-fN4A5AzBG1_7rw40WK8VJpxDh/view?usp=sharing
+[https://drive.google.com/file/d/1DgfYWx-fN4A5AzBG1_7rw40WK8VJpxDh/view?usp=sharing](https://drive.google.com/file/d/1DgfYWx-fN4A5AzBG1_7rw40WK8VJpxDh/view?usp=sharing)
 
 Link al prototipo interactivo:
-https://www.figma.com/proto/oG0SittF4VvPKSelZNuj6J/Grotix?node-id=40-63&p=f&t=dB36gijF28heh7zW-1&scaling=scale-down&content-scaling=fixed&page-id=40%3A61 
+[https://www.figma.com/proto/oG0SittF4VvPKSelZNuj6J/Grotix?node-id=40-63&p=f&t=dB36gijF28heh7zW-1&scaling=scale-down&content-scaling=fixed&page-id=40%3A61](https://www.figma.com/proto/oG0SittF4VvPKSelZNuj6J/Grotix?node-id=40-63&p=f&t=dB36gijF28heh7zW-1&scaling=scale-down&content-scaling=fixed&page-id=40%3A61) 
 
 ### Mobile App (For Clients)
 
-[foto]
+<img src="https://imgur.com/pEFL1p9.png">
 
 Video explicativo:
 
-[foto]
+<img src="https://imgur.com/tcKYIvn.png">
 
 Link del video:
-https://drive.google.com/file/d/1_v9BDa8tAwhBIG6wpW-Yj4evmoUe0aWg/view?usp=sharing
+[https://drive.google.com/file/d/1_v9BDa8tAwhBIG6wpW-Yj4evmoUe0aWg/view?usp=sharing](https://drive.google.com/file/d/1_v9BDa8tAwhBIG6wpW-Yj4evmoUe0aWg/view?usp=sharing)
 
 Link al prototipo interactivo:
-https://www.figma.com/proto/oG0SittF4VvPKSelZNuj6J/Grotix?node-id=148-1047&p=f&t=JdOOShNAUIqGebVF-1&scaling=scale-down&content-scaling=fixed&page-id=40%3A62 
+[https://www.figma.com/proto/oG0SittF4VvPKSelZNuj6J/Grotix?node-id=148-1047&p=f&t=JdOOShNAUIqGebVF-1&scaling=scale-down&content-scaling=fixed&page-id=40%3A62](https://www.figma.com/proto/oG0SittF4VvPKSelZNuj6J/Grotix?node-id=148-1047&p=f&t=JdOOShNAUIqGebVF-1&scaling=scale-down&content-scaling=fixed&page-id=40%3A62) 
 
 ## 5.6. IoT Device Design 
 
 El diseño del dispositivo (Device Design) es la fase arquitectónica fundamental que planifica y documenta la interconexión física del hardware, asegurando una asignación lógica de pines, niveles de voltaje adecuados y aislamiento eléctrico para evitar fallos antes del ensamblaje. Bajo este enfoque técnico, la siguiente figura presenta el diagrama del nodo IoT de Grotix, ilustrando la integración del microcontrolador central ESP32-S3 con la red de sensores de percepción y los componentes de actuación e interfaz local. Este esquema sirve como la guía técnica estandarizada para la construcción del circuito, garantizando la estabilidad operativa y la correcta captura de telemetría en el entorno agrícola. 
 
-[foto]
+<img src="https://imgur.com/rQnpDQ8.png">
 
 # CAPÍTULO VI: Product Implementation, Validation & Deployment
 ## 6.1. Software Configuration Management
@@ -2752,18 +2830,18 @@ La siguiente tabla describe las herramientas y productos de software que el equi
 
 | Categoría | Producto | Propósito de uso | Ruta |
 |---|---|---|---|
-| Project Management | Jira | Seguimiento de tareas, gestión de Sprints y documentación de Historias de Usuario (US) y Técnicas (TS). | [SaaS] atlassian.com/jira |
-| UX/UI Design | Figma | Diseño colaborativo y prototipado de la Mobile App, Staff Web App y la Landing Page. | [SaaS] figma.com |
-| Backend Development | JetBrains Rider | Desarrollo principal de los microservicios en .NET (C#) para Telemetría, Irrigación, Perfiles, entre otros. | [Download] jetbrains.com/rider |
-| Frontend Development | VS Code | Desarrollo de la aplicación web utilizando Vue.js y Landing Page con HTML, CSS y JS. | [Download] code.visualstudio.com |
-| Mobile Development | Android Studio | IDE principal para el desarrollo de la aplicación móvil de Grotix utilizando el framework Flutter. | [Download] developer.android.com |
-| Embedded Systems | VS Code (PlatformIO) | Desarrollo de firmware para los microcontroladores ESP32 utilizando C++. | [Download] platformio.org |
-| API Documentation | Swagger | Documentación interactiva y ejecución de pruebas para los servicios web RESTful. | [Integrated] swagger.io |
-| Cloud Infrastructure | Microsoft Azure | Hosting en la nube, gestión de bases de datos y orquestación del API Gateway del sistema. | [SaaS] portal.azure.com |
-| Database Management | MySQL Workbench | Diseño visual y gestión de la Core DB para los datos transaccionales y maestros. | [Download] dev.mysql.com |
-| Software Testing | Postman | Ejecución de pruebas manuales de los endpoints de la API y validación de peticiones HTTP. | [Download] postman.com |
-| IoT Debugging | MQTT Explorer | Monitoreo y prueba de los mensajes MQTT enviados entre el ESP32 y el broker en la nube. | [Download] mqtt-explorer.com |
-| Containerization | Docker Desktop | Creación y gestión de contenedores ligeros para asegurar un despliegue eficiente de los microservicios. | [Download] docker.com |
+| Project Management | Jira | Seguimiento de tareas, gestión de Sprints y documentación de Historias de Usuario (US) y Técnicas (TS). | [SaaS] [atlassian.com/jira](https://www.atlassian.com/software/jira) |
+| UX/UI Design | Figma | Diseño colaborativo y prototipado de la Mobile App, Staff Web App y la Landing Page. | [SaaS] [figma.com](https://www.figma.com) |
+| Backend Development | JetBrains Rider | Desarrollo principal de los microservicios en .NET (C#) para Telemetría, Irrigación, Perfiles, entre otros. | [Download] [jetbrains.com/rider](https://www.jetbrains.com/rider) |
+| Frontend Development | VS Code | Desarrollo de la aplicación web utilizando Vue.js y Landing Page con HTML, CSS y JS. | [Download] [code.visualstudio.com](https://code.visualstudio.com) |
+| Mobile Development | Android Studio | IDE principal para el desarrollo de la aplicación móvil de Grotix utilizando el framework Flutter. | [Download] [developer.android.com](https://developer.android.com/studio) |
+| Embedded Systems | VS Code (PlatformIO) | Desarrollo de firmware para los microcontroladores ESP32 utilizando C++. | [Download] [platformio.org](https://platformio.org) |
+| API Documentation | Swagger | Documentación interactiva y ejecución de pruebas para los servicios web RESTful. | [Integrated] [swagger.io](https://swagger.io) |
+| Cloud Infrastructure | Microsoft Azure | Hosting en la nube, gestión de bases de datos y orquestación del API Gateway del sistema. | [SaaS] [portal.azure.com](https://portal.azure.com) |
+| Database Management | MySQL Workbench | Diseño visual y gestión de la Core DB para los datos transaccionales y maestros. | [Download] [dev.mysql.com](https://dev.mysql.com) |
+| Software Testing | Postman | Ejecución de pruebas manuales de los endpoints de la API y validación de peticiones HTTP. | [Download] [postman.com](https://postman.com) |
+| IoT Debugging | MQTT Explorer | Monitoreo y prueba de los mensajes MQTT enviados entre el ESP32 y el broker en la nube. | [Download] [mqtt-explorer.com](http://mqtt-explorer.com) |
+| Containerization | Docker Desktop | Creación y gestión de contenedores ligeros para asegurar un despliegue eficiente de los microservicios. | [Download] [docker.com](https://docker.com) |
 
 ### 6.1.2. Source Code Management  
 El equipo de Grotix establece GitHub como la plataforma centralizada para la gestión del código fuente y el control de versiones. Este esquema asegura la trazabilidad de las modificaciones y permite una colaboración eficiente en el desarrollo de la solución IoT. 
@@ -2772,10 +2850,10 @@ Cada producto digital cuenta con un repositorio independiente:
 
 | Producto | URL del Repositorio |
 |---|---|
-| Landing Page | https://github.com/CeleviGrotix/Grotix_LandingPage |
-| Web Services (Backend) | https://github.com/CeleviGrotix/Grotix_Web_Services |
-| Frontend Web Applications | https://github.com/CeleviGrotix/Grotix_Web |
-| Mobile Application (Flutter) | https://github.com/CeleviGrotix/Grotix_Mobile |
+| Landing Page | [https://github.com/CeleviGrotix/Grotix_LandingPage](https://github.com/CeleviGrotix/Grotix_LandingPage) |
+| Web Services (Backend) | [https://github.com/CeleviGrotix/Grotix_Web_Services](https://github.com/CeleviGrotix/Grotix_Web_Services) |
+| Frontend Web Applications | [https://github.com/CeleviGrotix/Grotix_Web](https://github.com/CeleviGrotix/Grotix_Web) |
+| Mobile Application (Flutter) | [https://github.com/CeleviGrotix/Grotix_Mobile](https://github.com/CeleviGrotix/Grotix_Mobile) |
 
 Para la gestión de versiones se implementa el modelo GitFlow, el cual organiza el desarrollo mediante el uso de ramas específicas:
 * **Main:** Es la rama principal que contiene el código siempre estable y listo para producción.
@@ -3923,12 +4001,12 @@ El ritmo de implementación se mantuvo constante, con un enfoque en la robustez 
 | Location | Reunión Virtual de Google Meet |
 | Prepared By | Cassius Martel |
 | Attendees (to planning meeting) | Binda Arbañil, Marcelo Alejandro / Castillo Garay, Ainhoa Lucía / Martel Andrade, Cassius Estefano / Nakamurakare Teruya, Alex Tomio / Rodas Sotomayor, Ernesto / |
-| Review Summary | Presentación exitosa de los nuevos microservicios core del sistema IoT (Telemetría, Hardware e Irrigación en .NET) y el microservicio de Análisis de Cultivos con Inteligencia Artificial (Python/FastAPI). Despliegue inicial de la aplicación móvil en Flutter con integración de autenticación, dashboard táctil y gestión de zonas. Optimización exitosa de latencia mediante DTOs y refinamiento de la aplicación Web para la gestión técnica de dispositivos. Todas las tareas (131 SP/Horas) marcadas como "Done". |
+| Review Summary | Presentación exitosa de los nuevos microservicios core del sistema IoT (Telemetría, Hardware e Irrigación en .NET) y el microservicio de Análisis de Cultivos con Inteligencia Artificial (Python/FastAPI). Despliegue inicial de la aplicación móvil en Flutter con integración de autenticación, dashboard táctil y gestión de zonas. Optimización exitosa de latencia mediante DTOs y refinamiento de la aplicación Web para la gestión técnica de dispositivos. Todas las tareas (53 SP/Horas) marcadas como "Done". |
 | Retrospective Summary | El equipo logró una gran sinergia al paralelizar el desarrollo móvil en Flutter con la expansión masiva de los microservicios backend. Se identificó que la integración del motor de IA en Python requiere un ruteo estricto en el API Gateway. |
 | **Sprint Goal & User Stories** |  |
 | Sprint 2 Goal | El objetivo de este segundo sprint es expandir la arquitectura de microservicios para soportar la lógica core del ecosistema IoT (Ingesta de Telemetría, Control de Irrigación, Gestión de Hardware) y la inferencia de Inteligencia Artificial mediante FastAPI. Paralelamente, se busca establecer la aplicación móvil multiplataforma (Flutter), brindando a los agricultores acceso a dashboards de monitoreo táctil, gestión de zonas, invitaciones de colaboración y análisis fenológico en tiempo real directamente desde sus smartphones. |
 | Sprint 2 Velocity | 56 |
-| Sum of Story Points | 131 |
+| Sum of Story Points | 53 |
 
 #### 6.2.2.2. Aspect Leaders and Collaborators
 
@@ -7898,28 +7976,1697 @@ A continuación, se presentan los indicadores de actividad de los repositorios o
 
 #### 6.2.3.1. Sprint Planning 3
 
+| Campo | Detalle |
+|---|---|
+| Sprint # | Sprint 3 |
+| **Sprint Planning Background** |  |
+| Date | 28/06/26 |
+| Time | 20:00 |
+| Location | Reunión Virtual de Google Meet |
+| Prepared By | Cassius Martel |
+| Attendees (to planning meeting) | Binda Arbañil, Marcelo Alejandro / Castillo Garay, Ainhoa Lucía / Martel Andrade, Cassius Estefano / Nakamurakare Teruya, Alex Tomio |
+| Review Summary | Presentación exitosa de la integración end-to-end entre el hardware IoT (ESP32) y la plataforma Grotix, logrando la captura de telemetría fiel en tiempo real y el control bidireccional del riego (automático y manual). Se logró un hito arquitectónico al desplegar persistencia local (SQLite) en la capa Edge, garantizando el funcionamiento offline del sistema. Asimismo, se integró exitosamente la API de Gemini para diagnósticos fenológicos con visión artificial. La arquitectura ahora soporta reportería histórica, alertas push y vinculación segura de microcontroladores mediante la Web App. Todas las tareas de las historias asignadas fueron integradas y pasaron a estado "Done". |
+| Retrospective Summary | El equipo demostró una excelente capacidad de coordinación técnica al trabajar simultáneamente en firmware (C++), backend (.NET/Python) y frontend (Flutter/Vue.js). La implementación del Edge Computing (Store-and-Forward y SQLite) representó un desafío de bajo nivel que se superó con éxito, aumentando drásticamente la resiliencia de la plataforma ante fallos de red. Se identificó que la generación delegada de links de invitación mejoró la seguridad del *onboarding* de nuevos agricultores. |
+| **Sprint Goal & User Stories** |  |
+| Sprint 3 Goal | Consolidar la capacidad operativa y autónoma del ecosistema Grotix mediante la integración definitiva del hardware IoT en campo. El objetivo es habilitar el monitoreo preciso, la automatización del riego con tolerancia a fallos de conectividad (Edge Computing), proveer análisis avanzado de cultivos mediante Inteligencia Artificial (Gemini), e implementar un robusto sistema de notificaciones y reportes para una toma de decisiones eficiente por parte del agricultor. |
+| Sprint 3 Velocity | 56 |
+| Sum of Story Points | 60 |
+
 #### 6.2.3.2. Aspect Leaders and Collaborators
+
+| Team Member (Last Name, First Name) | GitHub Username | Frontend & UI/UX | Backend & API | QA & Testing | Infrastructure & Deployment | Project Management |
+|----|----|----|----|----|----|----|
+| Martel Andrade, Cassius Estefano | kcc12321 | C | C | C | C | L |
+| Binda Arbañil, Marcelo Alejandro | MarceHkd | L | C | C | C | C |
+| Castillo Garay, Ainhoa Lucía | noaa01100001 | C | C | L | C | C |
+| Nakamurakare Teruya, Alex Tomio | kistoo | C | L | C | L | C |
 
 #### 6.2.3.3. Sprint Backlog 3
 
+| User Story Id | User Story Title | Work-Item / Task Id | Task Title | Description | Estimation (Hours) | Assigned To | Status (To-do / In-Process / To-Review / Done) |
+|---|---|---|---|---|---|---|---|
+| US10 | Vinculación del Microcontrolador con la Aplicación | T86 | Interfaz UI de vinculación en Web App | Desarrollo del formulario en Vue.js para que el staff asigne microcontroladores a zonas específicas. | 3 | Web Dev | Done |
+| US10 | Vinculación del Microcontrolador con la Aplicación | T87 | Lógica Frontend de asignación | Implementación de validaciones en la web para asociar la MAC Address del ESP32 a la cuenta del agricultor. | 2 | Web Dev | Done |
+| US11 | Monitoreo fiel de las condiciones del entorno | T88 | Lectura analógica/digital en C++ | Configuración de pines GPIO en el ESP32 para capturar humedad de suelo, temperatura y luz. | 3 | Embedded Dev | Done |
+| US11 | Monitoreo fiel de las condiciones del entorno | T89 | Integración del flujo Edge a Frontend | Conexión de la App Móvil para consumir directamente los datos crudos desde la capa Edge y renderizarlos. | 3 | Mobile Dev | Done |
+| US11 | Monitoreo fiel de las condiciones del entorno | T90 | Lógica de estado Online/Offline de dispositivos | Lógica en Backend (.NET) para actualizar el estado del dispositivo basándose en la marca de tiempo lastSeen de su última lectura. | 2 | Backend Dev | Done |
+| US12 | Actualización periódica y automática de telemetría | T91 | Ciclo de lectura cada 15 min | Programación de timers en el firmware del microcontrolador para enviar ráfagas de datos dependiendo de la cantidad de tiempo asignada en frontend. | 2 | Embedded Dev | Done |
+| US12 | Actualización periódica y automática de telemetría | T92 | Renderizado reactivo en Dashboard | Configuración en Flutter/Dart para actualizar visualmente las métricas cada que ingresa una nueva trama de datos. | 3 | Mobile Dev | Done |
+| US12 | Actualización periódica y automática de telemetría | T93 | Notificaciones In-App de actualización | Implementación de alertas (snackbars) en la interfaz móvil avisando al usuario que hay nuevas lecturas disponibles. | 2 | Mobile Dev | Done |
+| US13 | Garantía de exactitud en la medición de datos | T94 | Mapeo matemático en firmware | Ajuste en el código del ESP32 para convertir los voltajes analógicos en porcentajes exactos de humedad/temperatura. | 3 | Embedded Dev | Done |
+| US13 | Garantía de exactitud en la medición de datos | T95 | Calibración de precisión de sensores | Pruebas físicas y ajustes de sensibilidad en el código de la Embedded App para asegurar el margen de error < 2%. | 2 | Embedded Dev | Done |
+| US15 | Organización de dispositivos por zonas y especies | T96 | Módulo Web de Creación de Zonas | Desarrollo de las vistas para que el staff de Grotix cree, liste y asigne características a las zonas de cultivo. | 4 | Web Dev | Done |
+| US15 | Organización de dispositivos por zonas y especies | T97 | Renderizado de Zonas en UI | Lógica en el frontend para organizar gráficamente las tarjetas de dispositivos agrupados por zona. | 2 | Web/Mobile Dev | Done |
+| US19 | Activación manual del sistema de irrigación | T98 | Control UI para riego manual | Diseño e integración del botón interactivo en la app móvil para encender o apagar el riego a voluntad. | 2 | Mobile Dev | Done |
+| US19 | Activación manual del sistema de irrigación | T99 | Parámetro IrrigationMode en Zonas | Modificación en la entidad Zone del Backend (.NET) para incluir la bandera IrrigationMode (Auto/Manual). | 1 | Backend Dev | Done |
+| US19 | Activación manual del sistema de irrigación | T100 | Ejecución de actuador | Código en el ESP32 para escuchar la orden manual proveniente de la app y encender físicamente la bomba de agua. | 3 | Embedded Dev | Done |
+| US20 | Automatización del riego mediante aprendizaje automático | T101 | Motor de evaluación autónoma en ESP32 | Lógica embebida en C++ para que el microcontrolador accione el riego por sí solo de forma autónoma. | 4 | Embedded Dev | Done |
+| US20 | Automatización del riego mediante aprendizaje automático | T102 | Reglas de seguridad en Hardware | Programación de un "Auto-Stop" del actuador en el firmware para evitar inundaciones. | 2 | Embedded Dev | Done |
+| US24 | Registro, inicio y cierre de sesión de usuario | T103 | Panel Web de Enlaces de Invitación | Creación de interfaz en la Web App para que el staff genere y copie los links de registro para los agricultores. | 3 | Web Dev | Done |
+| US24 | Registro, inicio y cierre de sesión de usuario | T104 | Pantalla de Registro de Agricultor | Maquetado de la vista de registro accesible vía link para capturar los datos básicos del usuario. | 3 | Web Dev | Done |
+| US24 | Registro, inicio y cierre de sesión de usuario | T105 | Interfaz de Login Móvil | Diseño de la pantalla de autenticación en la app móvil con validación simple de campos y credenciales. | 3 | Mobile Dev | Done |
+| US24 | Registro, inicio y cierre de sesión de usuario | T106 | Almacenamiento local de Sesión | Uso de Secure Storage/SharedPreferences en la App Móvil para mantener la sesión abierta o cerrarla (Logout). | 2 | Mobile Dev | Done |
+| US22 | Gestión de registro fotográfico de cultivos | T107 | Despliegue de Crop Analysis Service | Configuración del contenedor y despliegue del microservicio dedicado al análisis de imágenes en Azure. | 3 | Backend Dev | Done |
+| US22 | Gestión de registro fotográfico de cultivos | T108 | Endpoint POST de ingesta de imágenes | Desarrollo del servicio REST para recibir la imagen desde el cliente, procesarla temporalmente y prepararla para la IA. | 2 | Backend Dev | Done |
+| US22 | Gestión de registro fotográfico de cultivos | T109 | Integración con API de Gemini | Implementación del cliente HTTP en el backend para enviar la imagen al modelo de IA y extraer el diagnóstico fenológico en JSON. | 4 | Backend Dev |  |
+| US22 | Gestión de registro fotográfico de cultivos | T110 | Módulo de cámara y galería Móvil | Implementación de permisos nativos y lógica en la App Móvil para tomar fotos o elegirlas de la galería. | 3 | Mobile Dev |  |
+| US23 | Clasificación del estado fenológico mediante Inteligencia Artificial | T111 | Interfaz de resultados y diagnóstico | Renderizado dinámico en la app móvil de la puntuación de salud y el resumen devuelto por Gemini. | 3 | Mobile Dev |  |
+| US27 | Visualización del estado de servicios | T112 | Endpoint de Contratos y Suscripciones | Creación del endpoint para devolver el estado lógico del servicio del cliente. | 2 | Backend Dev | Done |
+| US27 | Visualización del estado de servicios | T113 | Provider/Service de Contratos en Flutter | Lógica de consumo HTTP y manejo de estado en la aplicación móvil para retener los datos de la suscripción. . | 2 | Mobile Dev | Done |
+| US27 | Visualización del estado de servicios | T114 | Panel "Mi Suscripción" en App Móvil | en App MóvilMaquetado de la tarjeta visual que muestra el plan vigente, fechas de corte y estado de conectividad al usuario. | 2 | Mobile Dev | Done |
+| US17 | Persistencia de datos ante pérdida de conectividad | T115 | Sistema de archivos en Edge | Configuración de la partición de memoria en el ESP32 para permitir almacenamiento no volátil. | 2 | Embedded Dev | Done |
+| US17 | Persistencia de datos ante pérdida de conectividad | T116 | Inicialización de SQLite en firmware | Inserción de la librería SQLite y creación de la tabla local ZoneThresholds dentro del microcontrolador. | 4 | Embedded Dev | Done |
+| US17 | Persistencia de datos ante pérdida de conectividad | T117 | Sincronización de umbrales (Nube -> Edge) | Lógica para descargar y guardar los umbrales de humedad en SQLite cada vez que el ESP32 tiene conexión a Internet. | 3 | Embedded Dev | Done |
+| US17 | Persistencia de datos ante pérdida de conectividad | T118 | Motor de evaluación offline | Algoritmo que lee SQLite localmente para activar el relé de la bomba de agua cuando el internet se cae (Offline mode). | 4 | Embedded Dev | Done |
+| US21 | Generación y descarga de reportes históricos | T119 | Endpoint de agregación estadística | Lógica en BD PostgreSQL/Backend para calcular promedios de humedad, temperatura y luz por rangos de fecha. | 4 | Backend Dev | Done |
+| US21 | Generación y descarga de reportes históricos | T120 | Endpoint de ciclos de riego | Creación de servicio para devolver la cantidad de ciclos de riego en una zona específica. | 2 | Backend Dev | Done |
+| US21 | Generación y descarga de reportes históricos | T121 | Selectores de Fecha (Date Picker) UI | Selectores de Fecha (Date Picker) UI | 2 | Mobile Dev | Done |
+| US21 | Generación y descarga de reportes históricos | T122 | Endpoint GET de Hardware | Creación de servicio para devolver el hardware específico de una zona | 4 | Backend Dev | Done |
+| US21 | Generación y descarga de reportes históricos | T123 | Exportación de reporte a PDF | Implementación del motor de renderizado de documentos en el cliente para descargar la información estructurada. | 3 | Mobile Dev | Done |
+| US26 y U18 | Configuración y gestión de alertas de usuario / Notificaciones automáticas por riego y disponibilidad de dispositivos | T124 | Configuración de servicio | Setup del gestor de notificaciones en el backend con los tokens de dispositivo. | 3 | Backend Dev | Done |
+| US26 y U18 | Configuración y gestión de alertas de usuario / Notificaciones automáticas por riego y disponibilidad de dispositivos | T125 | Emisión de alertas de ciclo de riego | Lógica de disparador al guardar un *ActuatorLog* para notificar al agricultor que el riego empezó o terminó. | 2 | Backend Dev | Done |
+| US26 y U18 | Configuración y gestión de alertas de usuario / Notificaciones automáticas por riego y disponibilidad de dispositivos | T126 | Worker de detección Offline | Tarea en segundo plano que revisa periódicamente el lastSeen y emite una alerta crítica si un microcontrolador se desconecta. | 3 | Backend Dev | Done |
+| US26 y U18 | Configuración y gestión de alertas de usuario / Notificaciones automáticas por riego y disponibilidad de dispositivos | T127 | Listener de notificaciones | Configuración de los servicios nativos en Android/iOS para despertar la app y recibir la notificación Push. | 3 | Mobile Dev | Done |
+| US26 y U18 | Configuración y gestión de alertas de usuario / Notificaciones automáticas por riego y disponibilidad de dispositivos | T128 | Bandeja In-App de Historial de Alertas | Creación de una vista estilo "Campanita" donde el usuario puede leer sus notificaciones pasadas. | 2 | Mobile Dev | Done |
+
 #### 6.2.3.4. Development Evidence for Sprint Review
+
+**Repository: Grotix_Web**
+
+- **Branch:** develop
+
+- **Total Commits:** 15
+
+| Secuencia | Repository | Branch | Commit Id | Commit Message | Committed on |
+|----|----|----|----|----|----|
+| #01 | https://github.com/CeleviGrotix/Grotix_Web | develop | 1da132448804b81e666a230b5a6720fb72d7127b | feat: add registration for agriculturist | 14/06/2026 |
+| #02 | https://github.com/CeleviGrotix/Grotix_Web | develop | 394e7a29d121009c8c16b9461c36bf2979d3d1a2 | Add | 18/06/2026 |
+| #03 | https://github.com/CeleviGrotix/Grotix_Web | develop | 50227ba5671095cfff092b230274ec76f79797bd | Fix display | 18/06/2026 |
+| #04 | https://github.com/CeleviGrotix/Grotix_Web | develop | 02d263cb9b2ab787910f25c1067102a967ae81b0 | add registration invalidation for non staff user | 21/06/2026 |
+| #05 | https://github.com/CeleviGrotix/Grotix_Web | develop | 52f5d1eee2ab6db09383155e9ad0a86c6184e08d | add comments | 21/06/2026 |
+| #06 | https://github.com/CeleviGrotix/Grotix_Web | develop | 2655a006f91733c32227191f3fda75b2c6ea2ccd | feat: setup module scaffolding for device binding | 21/06/2026 |
+| #07 | https://github.com/CeleviGrotix/Grotix_Web | develop | de33f8c8031080d40422d4d6d42a9b58058a9c40 | feat: implement form and validation for microcontroller linkage | 21/06/2026 |
+| #08 | https://github.com/CeleviGrotix/Grotix_Web | develop | 552aa9e31987d869958ad477b3620f6b5bb4bd9f | feat: add zone creation dashboard for staff admin | 21/06/2026 |
+| #09 | https://github.com/CeleviGrotix/Grotix_Web | develop | 90fa81126ec4234715e97d659d473c9c000e837f | feat: integrate zone service to display cultivation zones | 21/06/2026 |
+| #10 | https://github.com/CeleviGrotix/Grotix_Web | develop | cb5126d34094a85ee81f40d3a1e62814e4e9a329 | feat: implement association invite generation UI | 21/06/2026 |
+| #11 | https://github.com/CeleviGrotix/Grotix_Web | develop | ca25b4deb90525e0c0fc2a1aeb9be6f4de21f073 | feat: add route protection for registration invites | 21/06/2026 |
+| #12 | https://github.com/CeleviGrotix/Grotix_Web | develop | fe57e46b944df01a96946bc334fa61c18403c7d6 | feat: develop farmer registration form with token validation | 21/06/2026 |
+| #13 | https://github.com/CeleviGrotix/Grotix_Web | develop | c1cc4add35c0810203f65e4ff212e146a6b6ae7b | fix: resolve form state management in registration flow | 21/06/2026 |
+| #14 | https://github.com/CeleviGrotix/Grotix_Web | develop | d4d4a0c50cb54c1f5b0a482723ff84197b057a23 | refactor: optimize reactive rendering for device status cards | 21/06/2026 |
+| #15 | https://github.com/CeleviGrotix/Grotix_Web | develop | 9cc7ccb078822b5bdfce065dcf000a3e668030d3 | chore: prepare production build and environment configuration | 21/06/2026 |
+
+**Repository: Grotix_Mobile**
+
+- **Branch:** develop
+
+- **Total Commits:** 39
+
+| Secuencia | Repository | Branch | Commit Id | Commit Message | Committed on |
+|----|----|----|----|----|----|
+| #01 | https://github.com/CeleviGrotix/Grotix_Mobile | develop | 4b3d8dfc290fcc90574317ce2a473b15d025b5a2 | Add telemetry | 18/06/2026 |
+| #02 | https://github.com/CeleviGrotix/Grotix_Mobile | develop | 90fbdf399d7c61ab990fa470ae918e2cb662cd85 | fix | 18/06/2026 |
+| #03 | https://github.com/CeleviGrotix/Grotix_Mobile | develop | c861c51de33dfb4ccb6762b0a09e9a0c91183241 | feat: modal de soporte para zonas y selección de cámara/galería en IA. fix: carga de telemetría y renderizado seguro de imágenes | 18/06/2026 |
+| #04 | https://github.com/CeleviGrotix/Grotix_Mobile | develop | 474e2749481b021ccd6ea72764c15dde4397bd21 | Merge branch 'features/zones' into develop - Conflictos resueltos | 18/06/2026 |
+| #05 | https://github.com/CeleviGrotix/Grotix_Mobile | develop | 504707b52a7850084827659c1d6a07cfe98b9586 | fix | 19/06/2026 |
+| #06 | https://github.com/CeleviGrotix/Grotix_Mobile | develop | c1714036f21c2dc96239c54eab82793dc0b5e1c7 | Fix | 19/06/2026 |
+| #07 | https://github.com/CeleviGrotix/Grotix_Mobile | develop | 03c750fa0ec1e2e39fc9acb4b00213d0319a8889 | fix manual irrigation logic | 21/06/2026 |
+| #08 | https://github.com/CeleviGrotix/Grotix_Mobile | develop | 43b31515cfaee7466164c244da2a12142b5d0f4c | fix auto irrigation logic | 21/06/2026 |
+| #09 | https://github.com/CeleviGrotix/Grotix_Mobile | develop | c03a13fb9064a91b6529e1bdf66658e8c6fec41c | add irrigation timer for UX | 21/06/2026 |
+| #10 | https://github.com/CeleviGrotix/Grotix_Mobile | develop | ac8af9b87a5d71161957f6e6552f51ef3c5e120f | feat: integrate telemetry data fetching from edge services | 21/06/2026 |
+| #11 | https://github.com/CeleviGrotix/Grotix_Mobile | develop | fe9f3efc75e1bfb91a6bbe4fe0fef172352d12c8 | feat: add periodic polling for telemetry synchronization | 21/06/2026 |
+| #12 | https://github.com/CeleviGrotix/Grotix_Mobile | develop | 2bb476e23244e781528d0b2b8316964654148638 | feat: implement snackbar notifications for new readings | 21/06/2026 |
+| #13 | https://github.com/CeleviGrotix/Grotix_Mobile | develop | ea18de0ad4e27b94713985e42481b6655da6fcb0 | feat: build irrigation control toggle UI for zones | 21/06/2026 |
+| #14 | https://github.com/CeleviGrotix/Grotix_Mobile | develop | 387d615445eef23fe1a4fe95d8c125cffb159499 | feat: add API service calls for manual irrigation control | 21/06/2026 |
+| #15 | https://github.com/CeleviGrotix/Grotix_Mobile | develop | b91c416309e5fd27a90568214252c73ec9ed826a | refactor: optimize provider state management for sensor data | 21/06/2026 |
+| #16 | https://github.com/CeleviGrotix/Grotix_Mobile | develop | 433589c103324c8773636986412b0303f2836d7a | fix: resolve responsive issues in device status cards | 21/06/2026 |
+| #17 | https://github.com/CeleviGrotix/Grotix_Mobile | develop | 6a5b51d1668a4df382cdaf8b6b6d141b8597f479 | chore(setup): initialize sprint 3 dependencies and config files | 28/06/2026 |
+| #18 | https://github.com/CeleviGrotix/Grotix_Mobile | develop | 52f219089248c48ce195955c2e666c4d8cbc7b1b | feat(domain): add Contract model entity | 28/06/2026 |
+| #19 | https://github.com/CeleviGrotix/Grotix_Mobile | develop | 379d58e313b3954d9de45a4abb10cd55ea1ac3dd | feat(domain): add Notification model and data structures | 28/06/2026 |
+| #20 | https://github.com/CeleviGrotix/Grotix_Mobile | develop | a71e9f196c2cb078fbb50523dd49ee876078894d | feat(data): implement notification datasource | 28/06/2026 |
+| #21 | https://github.com/CeleviGrotix/Grotix_Mobile | develop | e0fa00da63c540e33587e64a5a592f9a7f4662f9 | feat(repository): add notification repository methods | 28/06/2026 |
+| #22 | https://github.com/CeleviGrotix/Grotix_Mobile | develop | 4006a338d158508451234a52fb16d24af509d6e1 | feat(state): integrate notification logic in ProfileProvider | 28/06/2026 |
+| #23 | https://github.com/CeleviGrotix/Grotix_Mobile | develop | 36fe12fb31f40e269ac88133f2bb70564d12a9cd | feat(ui): build notification history list screen | 28/06/2026 |
+| #24 | https://github.com/CeleviGrotix/Grotix_Mobile | develop | ca8cf5f441238b0170ba25d68e5d7d04bc463471 | feat(ui): add notification indicator to profile view | 28/06/2026 |
+| #25 | https://github.com/CeleviGrotix/Grotix_Mobile | develop | 45c9acffc7b6bf62ffaf6296fd3416f6af4141ef | feat(data): extend AssociationRepository with contract fetch methods | 28/06/2026 |
+| #26 | https://github.com/CeleviGrotix/Grotix_Mobile | develop | 6f89f180fde4c8ad0ef78e2913f2496b941d88f5 | feat(state): add subscription data binding to ProfileProvider | 28/06/2026 |
+| #27 | https://github.com/CeleviGrotix/Grotix_Mobile | develop | 12a19a51d4f8f2e3cb632d987ce056219000342a | feat(ui): create subscription status card in profile | 28/06/2026 |
+| #28 | https://github.com/CeleviGrotix/Grotix_Mobile | develop | 837b6751a0842396241bb73c736ad4f1e47b1824 | fix(contracts): implement null safety and empty state for subscriptions | 28/06/2026 |
+| #29 | https://github.com/CeleviGrotix/Grotix_Mobile | develop | 3cc6b6f6f2a30f7adf99cdfb80379f51db2f589b | feat(data): add irrigation history datasource | 28/06/2026 |
+| #30 | https://github.com/CeleviGrotix/Grotix_Mobile | develop | b7324a8021019fc9e45e1eb33516311be7eea554 | feat(repository): implement telemetry query repository | 28/06/2026 |
+| #31 | https://github.com/CeleviGrotix/Grotix_Mobile | develop | 7aa8b6d0aa0e91beb9421e96d80ba3bbc523fee7 | feat(ui): design irrigation report summary screen | 28/06/2026 |
+| #32 | https://github.com/CeleviGrotix/Grotix_Mobile | develop | ee0babdd6f8bbfedc551f9f793176bb8dc750fc8 | feat(ui): integrate data visualization for irrigation cycles | 28/06/2026 |
+| #33 | https://github.com/CeleviGrotix/Grotix_Mobile | develop | abdf7652cc7483f136e09dd11676d758f8ecf32d | feat(data): create image upload datasource with file picker | 28/06/2026 |
+| #34 | https://github.com/CeleviGrotix/Grotix_Mobile | develop | 3ff62f0b436d4b94db565522436d6524909e7185 | feat(ui): implement image selection and upload preview flow | 28/06/2026 |
+| #35 | https://github.com/CeleviGrotix/Grotix_Mobile | develop | 1ad7228dbff327a5e1e068844cdca88717de690b | feat(state): add IA diagnostic provider for state classification | 28/06/2026 |
+| #36 | https://github.com/CeleviGrotix/Grotix_Mobile | develop | 05bc251176ab2ea8d3f4001036ca9632deb92282 | feat(ui): build plant health score and summary dashboard | 28/06/2026 |
+| #37 | https://github.com/CeleviGrotix/Grotix_Mobile | develop | 42be67bc47a43f7ec7bbfc919b14879597e7e227 | fix(dashboard): correct telemetry synchronization and local state cache | 28/06/2026 |
+| #38 | https://github.com/CeleviGrotix/Grotix_Mobile | develop | defcf6ac3f1310d0eefdc24b185d98b5339d4cea | refactor(profile): optimize profile data loading and network logic | 28/06/2026 |
+| #39 | https://github.com/CeleviGrotix/Grotix_Mobile | develop | c19dc4435dddc4b8a5579de1c1c44d2b7b5c1d5b | fix(ui): polish styles, loading states, and error handling for new modules | 28/06/2026 |
+
+**Repository: Grotix_Web_Services**
+
+- **Branch:** develop
+
+- **Total Commits:** 12
+
+| Secuencia | Repository | Branch | Commit Id | Commit Message | Committed on |
+|----|----|----|----|----|----|
+| #01 | https://github.com/CeleviGrotix/Grotix_Web_Services | develop | 9e6d0e6576657aeb62f67ea859405b6c74ec09f3 | Update endpoint | 18/06/2026 |
+| #02 | https://github.com/CeleviGrotix/Grotix_Web_Services | develop | 78451ade9b7a2104f6386dfbd6e2903edb12b60f | Add endpoint | 19/06/2026 |
+| #03 | https://github.com/CeleviGrotix/Grotix_Web_Services | develop | b6de5d3727380eed055bf5cf0e499d7110907ae7 | feat(hardware): implement background worker for device offline detection | 28/06/2026 |
+| #04 | https://github.com/CeleviGrotix/Grotix_Web_Services | develop | 75fc8b3711b92e840f06c1cf3af9cc5f712294c9 | feat(hardware): create service to retrieve hardware inventory by zone | 28/06/2026 |
+| #05 | https://github.com/CeleviGrotix/Grotix_Web_Services | develop | 959e0b51098b5a114c8dddc6d94a9d9248aa3cc0 | feat(irrigation): implement actuator log trigger for irrigation lifecycle notifications | 28/06/2026 |
+| #06 | https://github.com/CeleviGrotix/Grotix_Web_Services | develop | 9b7f287af09f27d380e9eacea7a235c73d01c874 | feat(irrigation): implement service to track irrigation cycles by zone | 28/06/2026 |
+| #07 | https://github.com/CeleviGrotix/Grotix_Web_Services | develop | 7b582737cbb33c900acf1ada7ff41782e52bb39a | feat(notifications): add device token management system for user push notifications | 28/06/2026 |
+| #08 | https://github.com/CeleviGrotix/Grotix_Web_Services | develop | 11f3b5d905734fb3a09afea0fed0e56e829c640e | feat(telemetry): implement aggregation logic for sensor statistics | 28/06/2026 |
+| #09 | https://github.com/CeleviGrotix/Grotix_Web_Services | develop | 541836e07db0118c2c8fec60e1eee3c1cfbaa612 | feat(contracts): create endpoint for client service status reporting | 28/06/2026 |
+| #10 | https://github.com/CeleviGrotix/Grotix_Web_Services | develop | 9f865ef60332ea9f232df732422d56ce1a0cf59b | feat(vision): implement rest endpoint for image upload and processing | 28/06/2026 |
+| #09 | https://github.com/CeleviGrotix/Grotix_Web_Services | develop | fe371f95e2c93f7497b671996160c6c4ba31f927 | feat(vision): implement http client for ia diagnostic model integration | 28/06/2026 |
+| #10 | https://github.com/CeleviGrotix/Grotix_Web_Services | develop | 29e7b6f7c11144b50239d70dc96fc2a7cad1e3c6 | chore(infra): setup azure container deployment for vision microservice | 28/06/2026 |
+
+**Repository: Grotix_Embedded**
+
+- **Branch:** main
+
+- **Total Commits:** 1
+
+| Secuencia | Repository | Branch | Commit Id | Commit Message | Committed on |
+|----|----|----|----|----|----|
+| #01 | https://github.com/CeleviGrotix/Grotix_Embedded | main | 8f6a65a275754a5442314e781a62abb6e80af78b | Add embedded app code | 01/07/2026 |
+
+**Repository: Grotix_Edge**
+
+- **Branch:** main
+
+- **Total Commits:** 1
+
+| Secuencia | Repository | Branch | Commit Id | Commit Message | Committed on |
+|----|----|----|----|----|----|
+| #01 | https://github.com/CeleviGrotix/Grotix_Edge | main | 832fdc9fc1fdc796512809a7faa727eb6c55adce | Add edge app code | 01/07/2026 |
 
 #### 6.2.3.5. Testing Suite Evidence for Sprint Review
 
+Durante el ciclo de desarrollo actual, el equipo de Grotix consolidó una suite de pruebas automatizadas masiva para cubrir todo el ecosistema de microservicios. Nuestro enfoque de calidad garantiza la integridad de los *Bounded Contexts* mediante una estrategia de pruebas multinivel.
+
+Si bien todas las funcionalidades del sistema fueron validadas bajo estándares de calidad, se aplicó una rigurosidad de prueba extendida sobre las User Stories US22, US23, US27, US21 y US26. Esta priorización responde a la alta complejidad técnica y criticidad de negocio que poseen estas funcionalidades
+
+En el nivel unitario, se desarrollaron más de 70 pruebas automatizadas enfocadas en la integridad de los agregados de dominio y lógica de negocio pura, validando invariantes mediante mocks (Moq). En el nivel de integración, se implementaron más de 30 tests utilizando bases de datos en memoria (EF Core InMemory) para verificar la orquestación de servicios y reglas de autorización sin alterar la infraestructura real. Finalmente, en el nivel de aceptación (BDD), se ejecutaron más de 20 escenarios Gherkin mediante SpecFlow (.NET), asegurando que los flujos críticos cumplan estrictamente con las necesidades de negocio.
+
+Enlaces a las ramas de testing:
+
+- Testing de bounded context: [test/sprint-3-testing-suite](https://github.com/CeleviGrotix/Grotix_Web_Services/tree/test/sprint-3-testing-suite)
+
+- Testing específicos de historias de usuario: [test/sprint-4-testing-suite](https://github.com/CeleviGrotix/Grotix_Web_Services/tree/test/sprint-4-testing-suite)
+
+| Secuencia | Repository | Branch | Commit Id | Commit Message | Committed on (Date) |
+|----|----|----|----|----|----|
+| #01 | https://github.com/CeleviGrotix/Grotix_Web_Services/tree/test/sprint-3-testing-suite | test/sprint-3-testing-suite | b8eba5abea5ce53bcef200e7a04b2427a7fad413 | test(sprint-3): implement comprehensive unit testing suite across all bounded contexts | 21/06/2026 |
+| #02 | https://github.com/CeleviGrotix/Grotix_Web_Services/tree/test/sprint-3-testing-suite | test/sprint-3-testing-suite | 6f6a1018ee4b848612b6fd9b9469c9f8d0f39810 | test(sprint-3): implement integration testing suite via EF Core InMemory | 21/06/2026 |
+| #03 | https://github.com/CeleviGrotix/Grotix_Web_Services/tree/test/sprint-3-testing-suite | test/sprint-3-testing-suite |  | test(sprint-3): introduce SpecFlow BDD step definitions for acceptance testing | 21/06/2026 |
+| #04 | https://github.com/CeleviGrotix/Grotix_Web_Services/tree/test/sprint-4-testing-suite | test/sprint-4-testing-suite | e64a239dc0398b66ebbf0b2f6d6ae430c1496054 | testing-suite: Add Unit, Integration and BDD Tests for US22 | 28/06/2026 |
+| #05 | https://github.com/CeleviGrotix/Grotix_Web_Services/tree/test/sprint-4-testing-suite | test/sprint-4-testing-suite | 71222781864373629179af635493aa6af38ef607 | testing-suite: Add Unit, Integration and BDD Tests for US23 | 28/06/2026 |
+| #06 | https://github.com/CeleviGrotix/Grotix_Web_Services/tree/test/sprint-4-testing-suite | test/sprint-4-testing-suite | 383e9ac74fe497292427c701cfc60deb155fada9 | testing-suite: Add Unit, Integration and BDD Tests for US27 | 28/06/2026 |
+| #07 | https://github.com/CeleviGrotix/Grotix_Web_Services/tree/test/sprint-4-testing-suite | test/sprint-4-testing-suite | 7283cba8165c4a49e51e9415cfbc7a8f593a1827 | testing-suite: Add Unit, Integration and BDD Tests for US21 | 28/06/2026 |
+| #08 | https://github.com/CeleviGrotix/Grotix_Web_Services/tree/test/sprint-4-testing-suite | test/sprint-4-testing-suite | fca8c52f3bbc709f9769ce0ccc77d7fb1570383a | testing-suite: Add Unit, Integration and BDD Tests for US26 | 28/06/2026 |
+| #09 | https://github.com/CeleviGrotix/Grotix_Web_Services/tree/test/sprint-4-testing-suite | test/sprint-4-testing-suite | cb1e074bf9f5bb354a4c90526706cf3613ff0410 | testing-suite: Testing and minor fixes | 28/06/2026 |
+
+**Pruebas Unitarias (Unit Tests)**
+
+**Control de Casos de Prueba - Profiles Unit Testing (US25)**
+
+| Test Case ID | Componente / Clase | Tipo de Prueba | Descripción del Escenario | Datos de Entrada (Input) | Resultado Esperado (Output) | Estado |
+|----|----|----|----|----|----|----|
+| TC-U61 | Identity (Aggregate) | Unitaria (xUnit) | Construcción válida de identidad | Email="juan@grotix.pe", PasswordHash válido | Instancia creada correctamente | Pasó |
+| TC-U62 | Identity (Aggregate) | Unitaria (xUnit) | Email con formato inválido | Email="juan@@grotix" | Lanza ArgumentException | Pasó |
+| TC-U63 | InviteTokenHasher | Unitaria (xUnit) | Verificación de token válido | Token plano + hash almacenado coinciden | Retorna true | Pasó |
+| TC-U64 | InviteTokenHasher | Unitaria (xUnit) | Verificación de token expirado | Invite.ExpiresAt < DateTime.UtcNow | Retorna false | Pasó |
+| TC-U65 | CreateAccountHandler | Unitaria (xUnit) | Email no coincide con invitación | InviteEmail≠RequestEmail | Lanza ArgumentException | Pasó |
+| TC-U66 | CreateAccountHandler | Unitaria (xUnit) | Registro exitoso con invitación válida | Token válido, datos completos | Persiste Identity y User, publica UserRegistered | Pasó |
+
+**Control de Casos de Prueba - Hardware Device Unit Testing (US10)**
+
+| Test Case ID | Componente / Clase | Tipo de Prueba | Descripción del Escenario | Datos de Entrada (Input) | Resultado Esperado (Output) | Estado |
+|----|----|----|----|----|----|----|
+| TC-U67 | Microcontroller (Aggregate) | Unitaria (xUnit) | Vinculación válida a zona | MacAddress válida, ZoneId=3 | ZoneId asignado, Status=OFFLINE | Pasó |
+| TC-U68 | Microcontroller (Aggregate) | Unitaria (xUnit) | MAC Address con formato inválido | MacAddress="00:1A:ZZ" | Lanza ArgumentException | Pasó |
+| TC-U69 | Microcontroller (Aggregate) | Unitaria (xUnit) | Vinculación a zona inexistente | ZoneId=0 | Lanza ArgumentException | Pasó |
+| TC-U70 | Microcontroller (Aggregate) | Unitaria (xUnit) | Reasignación de zona sin desvincular | ZoneId 3 -> 7 | ZoneId actualizado a 7 | Pasó |
+| TC-U71 | MicrocontrollerCommandService | Unitaria (xUnit) | MAC ya vinculada a otra cuenta | MacAddress existente en BD | Lanza ArgumentException ("Dispositivo ya vinculado") | Pasó |
+| TC-U72 | MicrocontrollerCommandService | Unitaria (xUnit) | Marca de dispositivo offline por heartbeat vencido | LastSeen hace 16 minutos | Status actualizado a OFFLINE | Pasó |
+
+**Control de Casos de Prueba - Telemetry Unit Testing (US11, US12, US13)**
+
+| Test Case ID | Componente / Clase | Tipo de Prueba | Descripción del Escenario | Datos de Entrada (Input) | Resultado Esperado (Output) | Estado |
+|----|----|----|----|----|----|----|
+| TC-U78 | ReadingRangeValidator | Unitaria (xUnit) | Lectura físicamente imposible (alta) | Sensor humedad, Valor 150% | Retorna false (inválida) | Pasó |
+| TC-U79 | ReadingRangeValidator | Unitaria (xUnit) | Lectura físicamente imposible (baja) | Sensor temperatura, Valor -20°C | Retorna false (inválida) | Pasó |
+| TC-U80 | MovingAverageFilter | Unitaria (xUnit) | Suavizado con historial corto | Historial=[40,42], Nuevo=44 | Retorna 42 (promedio) | Pasó |
+| TC-U81 | RegisterMeasurementHandler | Unitaria (xUnit) | Registro de lectura válida en ciclo de 15 min | Humedad=55%, Temp=22°C, Luz=12000 lux | Llama a AddAsync una vez, actualiza LastSeen | Pasó |
+| TC-U82 | RegisterMeasurementHandler | Unitaria (xUnit) | Descarte de lectura anómala | Salto de 40% a 95% en 1 ciclo sin riego | Lectura marcada como "pendiente de validación" | Pasó |
+| TC-U83 | SensorReading (Aggregate) | Unitaria (xUnit) | Cálculo de margen de error ADC | Voltaje crudo 2.45V, rango calibrado [0-3.3V] | Error de cuantización < 2% | Pasó |
+
+**Control de Casos de Prueba - Irrigation Unit Testing (US19, US20)**
+
+| Test Case ID | Componente / Clase | Tipo de Prueba | Descripción del Escenario | Datos de Entrada (Input) | Resultado Esperado (Output) | Estado |
+|----|----|----|----|----|----|----|
+| TC-U84 | IrrigationCycle (Aggregate) | Unitaria (xUnit) | Activación manual válida | ZoneId=3, Mode=Manual | Status=InProgress, fuente=Manual | Pasó |
+| TC-U85 | IrrigationCycle (Aggregate) | Unitaria (xUnit) | Vencimiento del Safety Timer | Riego manual activo > MaxManualDuration | Status=Aborted, válvula cerrada | Pasó |
+| TC-U86 | IrrigationCycle (Aggregate) | Unitaria (xUnit) | Prioridad del modo manual sobre automático | Modo activo=Auto, llega orden Manual | Pausa lógica automática, ejecuta orden manual | Pasó |
+| TC-U87 | IrrigationCalculator | Unitaria (xUnit) | Cálculo de volumen en modo autónomo | HumedadActual=40%, Objetivo=60% | Retorna WaterQuantity > 0 | Pasó |
+| TC-U88 | IrrigationCalculator | Unitaria (xUnit) | Sin necesidad hídrica | HumedadActual=65%, Objetivo=60% | Retorna WaterQuantity = 0 | Pasó |
+| TC-U89 | IrrigationCommandService | Unitaria (xUnit) | Desactivación manual del riego | Riego en curso, comando Stop | Status=Completed, válvula cerrada | Pasó |
+
+<img src="https://imgur.com/Ti5Voe3.png">
+
+**Control de Casos de Prueba - US22 - Gestión de registro fotográfico de cultivos**
+
+| Test Case ID | Componente / Clase | Tipo de Prueba | Descripción del Escenario | Datos de Entrada (Input) | Resultado Esperado (Output) | Estado |
+|----|----|----|----|----|----|----|
+| TC-U90 | Zone (Aggregate) | Unitaria (xUnit) | Actualización válida de URL HTTPS | imageUrl="https://..." | zone.ImageUrl == url | Pasó |
+| TC-U91 | Zone (Aggregate) | Unitaria (xUnit) | Actualización válida de URL HTTP | imageUrl="http://..." | zone.ImageUrl == url | Pasó |
+| TC-U92 | Zone (Aggregate) | Unitaria (xUnit) | Validación de string vacío | imageUrl="" | zone.ImageUrl == null | Pasó |
+| TC-U93 | Zone (Aggregate) | Unitaria (xUnit) | Validación de espacios en blanco | imageUrl=" " | zone.ImageUrl == null | Pasó |
+| TC-U94 | Zone (Aggregate) | Unitaria (xUnit) | Limpieza de espacios (Trim) | imageUrl=" https://... " | zone.ImageUrl == "https://..." | Pasó |
+| TC-U95 | Zone (Aggregate) | Unitaria (xUnit) | Eliminación de imagen (null) | imageUrl=null | zone.ImageUrl == null | Pasó |
+
+<img src="https://imgur.com/YmAmxwD.png">
+
+**Control de Casos de Prueba - US23 - Clasificación del estado fenológico mediante Inteligencia Artificial**
+
+| Test Case ID | Componente / Clase | Tipo de Prueba | Descripción del Escenario | Datos de Entrada (Input) | Resultado Esperado (Output) | Estado |
+|----|----|----|----|----|----|----|
+| TC-U96 | AnalysisReport | Unitaria (xUnit) | Construcción válida con datos correctos | Id=1, Fase="Germinacion", Score=85 | Objeto creado con valores correctos | Pasó |
+| TC-U97 | AnalysisReport | Unitaria (xUnit) | Validación de fases permitidas | Fase in ["Semilla", "Vegetativo", etc] | Fase asignada correctamente | Pasó |
+| TC-U98 | AnalysisReport | Unitaria (xUnit) | Categoría cuando confianza es baja | Fase="Indeterminado", Score=50 | Asigna fase "Indeterminado" | Pasó |
+| TC-U99 | AnalysisReport | Unitaria (xUnit) | Validación límite inferior score (75%) | Score=75 | Score 75 aceptado | Pasó |
+| TC-U100 | AnalysisReport | Unitaria (xUnit) | Validación ZoneId inválido | ZoneId=0 | Lanza ArgumentException | Pasó |
+| TC-U101 | AnalysisReport | Unitaria (xUnit) | Validación fase vacía | Fase="" | Lanza ArgumentException | Pasó |
+| TC-U102 | AnalysisReport | Unitaria (xUnit) | Validación score > 100 | Score=101 | Lanza ArgumentException | Pasó |
+| TC-U103 | AnalysisReport | Unitaria (xUnit) | Validación score negativo | Score=-1 | Lanza ArgumentException | Pasó |
+| TC-U104 | AnalysisReport | Unitaria (xUnit) | Limpieza de espacios (Trim) | Fase=" Germinacion " | Fase asignada como "Germinacion" | Pasó |
+
+<img src="https://imgur.com/9749IPY.png">
+
+**Control de Casos de Prueba - US27 - Visualización del estado de servicios**
+
+| Test Case ID | Componente / Clase | Tipo de Prueba | Descripción del Escenario | Datos de Entrada (Input) | Resultado Esperado (Output) | Estado |
+|----|----|----|----|----|----|----|
+| TC-U105 | Contract | Unitaria (xUnit) | Estado inicial activo y no suspendido | Status=Active, isSuspended=false | IsSuspended=false, Status=Active | Pasó |
+| TC-U106 | Contract | Unitaria (xUnit) | Suspensión de servicio por flag | isSuspended=true | IsSuspended=true | Pasó |
+| TC-U107 | Contract | Unitaria (xUnit) | Cambio a estado cancelado | Status=Cancelled | Status=Cancelled | Pasó |
+| TC-U108 | Contract | Unitaria (xUnit) | Verificación de fecha de inicio | Fecha creación -10 días | StartDate es correcta | Pasó |
+| TC-U109 | Contract | Unitaria (xUnit) | Verificación de fecha de expiración | Fecha creación +30 días | EndDate es correcta | Pasó |
+| TC-U110 | Contract | Unitaria (xUnit) | Validación de coherencia temporal | Instancia Contract | EndDate > StartDate | Pasó |
+| TC-U111 | Contract | Unitaria (xUnit) | Actualización: Suspensión de servicio | Update(isSuspended=true) | IsSuspended=true | Pasó |
+| TC-U112 | Contract | Unitaria (xUnit) | Actualización: Reactivación de servicio | Update(isSuspended=false) | IsSuspended=false | Pasó |
+| TC-U113 | Contract | Unitaria (xUnit) | Validación: Fecha fin anterior a inicio | StartDate, EndDate (start-1) | Lanza ArgumentException | Pasó |
+| TC-U114 | Contract | Unitaria (xUnit) | Verificación de límites contratados | Creación por defecto | MaxZones=5, MaxMicro=3 | Pasó |
+
+<img src="https://imgur.com/lBYLCeV.png">
+
+**Control de Casos de Prueba - US21 - Generación y descarga de reportes históricos**
+
+| Test Case ID | Componente / Clase | Tipo de Prueba | Descripción del Escenario | Datos de Entrada (Input) | Resultado Esperado (Output) | Estado |
+|----|----|----|----|----|----|----|
+| TC-U115 | ZoneReportData | Unitaria (xUnit) | Rango de tiempo: 7 días | Start=-7d, End=Now | PeriodStart < PeriodEnd | Pasó |
+| TC-U116 | ZoneReportData | Unitaria (xUnit) | Rango de tiempo: 30 días | Start=-30d, End=Now | PeriodStart < PeriodEnd | Pasó |
+| TC-U117 | ZoneReportData | Unitaria (xUnit) | Rango de tiempo: 90 días | Start=-90d, End=Now | PeriodStart < PeriodEnd | Pasó |
+| TC-U118 | ZoneReportData | Unitaria (xUnit) | Rango de tiempo: 180 días | Start=-180d, End=Now | PeriodStart < PeriodEnd | Pasó |
+| TC-U119 | ZoneReportData | Unitaria (xUnit) | Rango de tiempo: 365 días | Start=-365d, End=Now | PeriodStart < PeriodEnd | Pasó |
+| TC-U120 | ZoneReportData | Unitaria (xUnit) | Timestamper de generación | Creación de reporte | GeneratedAtUtc cercano a Now | Pasó |
+| TC-U121 | ZoneReportData | Unitaria (xUnit) | Validación conteo de lecturas | ReadingsCount=150 | Telemetry.ReadingsCount == 150 | Pasó |
+| TC-U122 | ZoneReportData | Unitaria (xUnit) | Precisión de promedios | Datos estándar | Valores promedio coinciden | Pasó |
+| TC-U123 | ZoneReportData | Unitaria (xUnit) | Validación conteo ciclos riego | CyclesCount=10 | Irrigation.CyclesCount == 10 | Pasó |
+| TC-U124 | ZoneReportData | Unitaria (xUnit) | Validación volumen total riego | Datos estándar | Volume == 120.5 | Pasó |
+| TC-U125 | ZoneReportData | Unitaria (xUnit) | Integridad de metadatos de Zona | Objeto Zone | Fields (Name, Crop, Mode) correctos | Pasó |
+| TC-U126 | ZoneReportData | Unitaria (xUnit) | Integridad de metadatos de Granja | Objeto Farm | Fields (Name, Location) correctos | Pasó |
+| TC-U127 | ZoneReportData | Unitaria (xUnit) | Cálculo de duración de periodo | 30 días exactos | Duration == 30 días | Pasó |
+
+<img src="https://imgur.com/0DcCEcx.png">
+
+**Control de Casos de Prueba - US26 - Configuración y gestión de alertas de usuario**
+
+| Test Case ID | Componente / Clase | Tipo de Prueba | Descripción del Escenario | Datos de Entrada (Input) | Resultado Esperado (Output) | Estado |
+|----|----|----|----|----|----|----|
+| TC-U128 | User | Unitaria (xUnit) | Obtener preferencias por defecto | Usuario nuevo sin config | Retorna preferencias base | Pasó |
+| TC-U129 | User | Unitaria (xUnit) | Persistir habilitación de Push | push=true, email=false | Push=true guardado | Pasó |
+| TC-U130 | User | Unitaria (xUnit) | Persistir habilitación de Email | push=false, email=true | Email=true guardado | Pasó |
+| TC-U131 | User | Unitaria (xUnit) | Deshabilitar todos los canales | push=false, email=false | Ambos canales false | Pasó |
+| TC-U132 | User | Unitaria (xUnit) | Habilitar todos los canales | push=true, email=true | Ambos canales true | Pasó |
+| TC-U133 | UserNotification | Unitaria (xUnit) | Construcción válida de notificación | Título, Mensaje, Tipo="alert" | Instancia creada, IsRead=false | Pasó |
+| TC-U134 | UserNotification | Unitaria (xUnit) | Marcar como leída | Notificación nueva | IsRead=true, ReadAt fecha set | Pasó |
+| TC-U135 | UserNotification | Unitaria (xUnit) | Idempotencia de marcar como leída | Llamar MarkAsRead 2 veces | ReadAt mantiene valor inicial | Pasó |
+| TC-U136 | UserNotification | Unitaria (xUnit) | Validación de título requerido | Título="" | Lanza ArgumentException | Pasó |
+| TC-U137 | UserNotification | Unitaria (xUnit) | Validación de ID usuario | UserId=0 | Lanza ArgumentException | Pasó |
+| TC-U138 | UserNotification | Unitaria (xUnit) | Normalización de tipo (default) | Tipo=null o desconocido | Asigna tipo "info" por defecto | Pasó |
+
+<img src="https://imgur.com/zzskkhC.png">
+
+**Pruebas de Integración (Integration Tests)**
+
+**Control de Casos de Prueba - General Integration Testing (Profiles, Hardware Device, Cultivation Area, Telemetry, Irrigation)**
+
+| Test Case ID | Servicio / Flujo | Tipo de Prueba | Descripción del Escenario | Datos de Entrada (Input) | Resultado Esperado (Output) | Estado |
+|----|----|----|----|----|----|----|
+| TC-I14 | AuthController | Integración (xUnit) | Registro exitoso con token de invitación | Body válido + InviteToken vigente | 201 Created con userId | Pasó |
+| TC-I15 | AuthController | Integración (xUnit) | Registro con token expirado | InviteToken vencido | 400 Bad Request | Pasó |
+| TC-I16 | MicrocontrollerController | Integración (xUnit) | Vinculación de dispositivo a zona como staff | Rol="staff", ZoneId válido | 200 OK con Microcontroller actualizado | Pasó |
+| TC-I17 | MicrocontrollerController | Integración (xUnit) | Intento de vinculación por rol no autorizado | Rol="user_basic" | 403 Forbidden | Pasó |
+| TC-I18 | ZoneController | Integración (xUnit) | Creación de zona dentro del límite del contrato | MaxZones=10, ZonasActuales=4 | 201 Created con Zone | Pasó |
+| TC-I19 | ZoneController | Integración (xUnit) | Creación de zona excediendo el límite del contrato | MaxZones=10, ZonasActuales=10 | 409 Conflict | Pasó |
+| TC-I20 | TelemetryController | Integración (xUnit) | Consulta de historial de zona | ZoneId=3, Rango últimas 24h | 200 OK con lista de SensorReading | Pasó |
+| TC-I21 | IrrigationController | Integración (xUnit) | Inicio de riego manual autorizado | ZoneId=3, Rol="user_advanced" | 200 OK con cycleId | Pasó |
+| TC-I22 | IrrigationController | Integración (xUnit) | Inicio de riego manual sobre zona ajena | ZoneId de otra asociación | 403 Forbidden | Pasó |
+
+<img src="https://imgur.com/ktav5pD.png">
+
+**Control de Casos de Prueba - US22 - Gestión de registro fotográfico de cultivos**
+
+| Test Case ID | Componente / Clase | Tipo de Prueba | Descripción del Escenario | Datos de Entrada (Input) | Resultado Esperado (Output) | Estado |
+|----|----|----|----|----|----|----|
+| TC-I23 | ZonesController | Integración (xUnit) | Actualización de imagen exitosa | ZoneId=1, Body con URL válida | 200 OK | Pasó |
+| TC-I24 | ZonesController | Integración (xUnit) | Intento de actualizar zona inexistente | ZoneId=99999, Body válido | 404 NotFound | Pasó |
+| TC-I25 | ZonesController | Integración (xUnit) | Eliminación de imagen (envío de null) | ZoneId=1, Body con ImageUrl=null | 200 OK, Comando recibe ImageUrl=null | Pasó |
+| TC-I26 | ZonesController | Integración (xUnit) | Verificación de parámetros enviados al servicio | ZoneId=1, Body con URL válida | 200 OK, Comando recibe ZoneId y URL correctos | Pasó |
+
+<img src="https://imgur.com/Ketr2yz.png">
+
+**Control de Casos de Prueba - US23 - Clasificación del estado fenológico mediante Inteligencia Artificial**
+
+| Test Case ID | Servicio / Flujo | Tipo de Prueba | Descripción del Escenario | Datos de Entrada (Input) | Resultado Esperado (Output) | Estado |
+|----|----|----|----|----|----|----|
+| TC-I27 | AnalysisReportsController | Integración (xUnit) | Creación exitosa de reporte (Happy Path) | ZoneId=1, Body {Phase, Score} | 201 Created | Pasó |
+| TC-I28 | AnalysisReportsController | Integración (xUnit) | Validación de cuerpo de respuesta en creación | ZoneId=1, Body válido | 201 Created con objeto AnalysisReport no nulo | Pasó |
+| TC-I29 | AnalysisReportsController | Integración (xUnit) | Procesamiento de reporte con baja confianza | ZoneId=1, Body {"Indeterminado", 50f} | 201 Created | Pasó |
+| TC-I30 | AnalysisReportsController | Integración (xUnit) | Fallo por zona inexistente | ZoneId=99999, Body válido | 404 Not Found | Pasó |
+| TC-I31 | AnalysisReportsController | Integración (xUnit) | Verificación de delegación correcta al servicio | ZoneId=1, Body {"Floracion", 90f} | Servicio recibe los parámetros exactos | Pasó |
+
+<img src="https://imgur.com/SiF2l6T.png">
+
+**Control de Casos de Prueba - US27 - Visualización del estado de servicios**
+
+| Test Case ID | Servicio / Flujo | Tipo de Prueba | Descripción del Escenario | Datos de Entrada (Input) | Resultado Esperado (Output) | Estado |
+|----|----|----|----|----|----|----|
+| TC-I32 | ContractsController | Integración (xUnit) | Obtención exitosa (UserAdmin) | role="user_admin", asociación válida | 200 OK con contratos filtrados | Pasó |
+| TC-I33 | ContractsController | Integración (xUnit) | Visualización estado activo | Contrato isSuspended=false | 200 OK, objeto con estado activo | Pasó |
+| TC-I34 | ContractsController | Integración (xUnit) | Visualización estado suspendido | Contrato isSuspended=true | 200 OK, objeto con estado suspendido | Pasó |
+| TC-I35 | ContractsController | Integración (xUnit) | Consulta con asociación sin contratos | List devuelve lista vacía | 200 OK, lista vacía | Pasó |
+| TC-I36 | ContractsController | Integración (xUnit) | Consulta con rol Admin global | role="admin" | 200 OK, todos los contratos existentes | Pasó |
+| TC-I37 | ContractsController | Integración (xUnit) | Validación de seguridad (sin Auth) | ClaimsPrincipal vacío | 401 Unauthorized | Pasó |
+
+<img src="https://imgur.com/vQf62jY.png">
+
+**Control de Casos de Prueba - US21 - Generación y descarga de reportes históricos**
+
+| Test Case ID | Servicio / Flujo | Tipo de Prueba | Descripción del Escenario | Acción / Input | Resultado Esperado | Estado |
+|----|----|----|----|----|----|----|
+| TC-I38 | ZoneReportsController | Integración (xUnit) | Resumen de métricas exitoso | ZoneId=1, Rango 30 días | 200 OK | Pasó |
+| TC-I39 | ZoneReportsController | Integración (xUnit) | Rango de 7 días | ZoneId=1, Rango 7 días | 200 OK | Pasó |
+| TC-I40 | ZoneReportsController | Integración (xUnit) | Rango de 90 días | ZoneId=1, Rango 90 días | 200 OK | Pasó |
+| TC-I41 | ZoneReportsController | Integración (xUnit) | Rango de 365 días | ZoneId=1, Rango 365 días | 200 OK | Pasó |
+| TC-I42 | ZoneReportsController | Integración (xUnit) | Zona inexistente en resumen | ZoneId=99999, Rango=30 | 404 Not Found | Pasó |
+| TC-I43 | ZoneReportsController | Integración (xUnit) | Reporte nulo/indisponible | ZoneId=1, Configuración vacía | 404 Not Found | Pasó |
+| TC-I44 | ZoneReportsController | Integración (xUnit) | Exportación PDF exitosa | ZoneId=1, Rango=30 | 200 OK, FileContentResult | Pasó |
+| TC-I45 | ZoneReportsController | Integración (xUnit) | Validación de tipo MIME (PDF) | ZoneId=1, Rango=30 | ContentType = "application/pdf" | Pasó |
+| TC-I46 | ZoneReportsController | Integración (xUnit) | Exportación en zona inexistente | ZoneId=99999 | 404 Not Found | Pasó |
+
+<img src="https://imgur.com/psSgxCM.png">
+
+**Control de Casos de Prueba - US26 - Configuración y gestión de alertas de usuario**
+
+| Test Case ID | Servicio / Flujo | Tipo de Prueba | Descripción del Escenario | Datos de Entrada (Input) | Resultado Esperado (Output) | Estado |
+|----|----|----|----|----|----|----|
+| TC-I47 | UserProfileController | Integración (xUnit) | Habilitación exitosa de notif. Push | Body {Push: true, Email: false} | 200 OK | Pasó |
+| TC-I48 | UserProfileController | Integración (xUnit) | Habilitación exitosa de Email | Body {Push: false, Email: true} | 200 OK | Pasó |
+| TC-I49 | UserProfileController | Integración (xUnit) | Deshabilitación total de alertas | Body {Push: false, Email: false} | 200 OK | Pasó |
+| TC-I50 | UserProfileController | Integración (xUnit) | Validación de integridad de datos enviados | Body {Push: true, Email: true} | Comando UpdateUserPreferences con data correcta | Pasó |
+| TC-I51 | UserProfileController | Integración (xUnit) | Manejo de usuario no encontrado | UserId=1 (inexistente) | 404 Not Found | Pasó |
+| TC-I52 | UserProfileController | Integración (xUnit) | Listado exitoso de notificaciones | Contexto de usuario autenticado | 200 OK con lista de UserNotification | Pasó |
+
+<img src="https://imgur.com/A8c52uX.png">
+
+**Pruebas de Aceptación bajo enfoque BDD (Acceptance Tests)**
+
+**Control de Casos de Prueba - General Acceptance Testing / BDD (Profiles, Hardware Device, Cultivation Area, Telemetry, Irrigation)**
+
+| Test Case ID | ID Historia | Tipo de Prueba | Descripción del Escenario (Gherkin) | Acción / Input | Resultado Esperado | Estado |
+|----|----|----|----|----|----|----|
+| TC-A19 | US25 (Sc1) | Aceptación (BDD) | Registro exitoso mediante enlace de invitación | Token vigente, datos completos | Cuenta creada y UserRegistered publicado | Pasó |
+| TC-A21 | US10 (Sc1) | Aceptación (BDD) | Vinculación exitosa de microcontrolador | ID único de dispositivo válido | Dispositivo mostrado como "Activo" en el perfil | Pasó |
+| TC-A22 | US10 (Sc4) | Aceptación (BDD) | Vinculación con ID inexistente | DeviceId no registrado en manufactura | Mensaje de error, sin vinculación | Pasó |
+| TC-A23 | US15 (Sc1) | Aceptación (BDD) | Creación de zona | Nombre="Invernadero 1" | Zona creada y visible en el panel | Pasó |
+| TC-A24 | US15 (Sc2) | Aceptación (BDD) | Asignación de hardware a zona y cultivo | Microcontrolador + CropId="Zanahoria" | Hardware asociado a la zona y cultivo | Pasó |
+| TC-A25 | US11 (Sc1) | Aceptación (BDD) | Reflejo inmediato de cambio físico | Cambio de humedad real detectado | Dashboard actualiza el valor en pantalla | Pasó |
+| TC-A26 | US12 (Sc1) | Aceptación (BDD) | Ejecución del ciclo de lectura cada 15 min | Timer interno alcanza 15 min | Sensores capturan y envían datos a la nube | Pasó |
+| TC-A27 | US13 (Sc4) | Aceptación (BDD) | Detección de inconsistencia física | Salto de 40% a 90% sin riego activo | Lectura marcada "pendiente de validación" | Pasó |
+| TC-A28 | US19 (Sc1) | Aceptación (BDD) | Activación remota del riego manual | Usuario activa riego desde la app | Válvula abierta, estado "en curso" | Pasó |
+| TC-A29 | US20 (Sc1) | Aceptación (BDD) | Activación autónoma por necesidad hídrica | Sensores indican déficit de humedad | Válvula abierta sin intervención del usuario | Pasó |
+
+<img src="https://imgur.com/ZSWPKTm.png">
+
+**Control de Casos de Prueba - US22 - Gestión de registro fotográfico de cultivos**
+
+| Test Case ID | ID Historia | Tipo de Prueba | Descripción del Escenario | Acción / Input | Resultado Esperado | Estado |
+|----|----|----|----|----|----|----|
+| TC-A30 | US22 (Sc1) | Aceptación (BDD) | Registrar URL en zona nueva | Zona ID=1, URL válida | 200 OK, imagen persiste | Pasó |
+| TC-A31 | US22 (Sc2) | Aceptación (BDD) | Actualizar URL de imagen existente | Zona ID=1, Nueva URL válida | 200 OK, URL actualizada | Pasó |
+| TC-A32 | US22 (Sc3) | Aceptación (BDD) | Manejo de URL vacía (Remoción) | Zona ID=1, URL vacía ("") | 200 OK, imagen registrada como null | Pasó |
+| TC-A33 | US22 (Sc4) | Aceptación (BDD) | Error al actualizar zona inexistente | Zona ID=99999, URL válida | 404 Not Found | Pasó |
+
+<img src="https://imgur.com/XpaMoKy.png">
+
+**Control de Casos de Prueba - US23 - Clasificación del estado fenológico mediante Inteligencia Artificial**
+
+| Test Case ID | ID Historia | Tipo de Prueba | Descripción del Escenario | Acción / Input | Resultado Esperado | Estado |
+|----|----|----|----|----|----|----|
+| TC-A34 | US23 (Sc1) | Aceptación (BDD) | Categorización exitosa de estado | Fase="Germinacion", Score=85 | 201 Created, fase detectada correcta | Pasó |
+| TC-A35 | US23 (Sc2) | Aceptación (BDD) | Resultado con baja confianza | Fase="Indeterminado", Score=50 | 201 Created, fase "Indeterminado" persistida | Pasó |
+| TC-A36 | US23 (Sc3) | Aceptación (BDD) | Validación de zona inexistente | ZoneId=99999, Fase="Germinacion" | 404 Not Found | Pasó |
+
+<img src="https://imgur.com/HZiHpd8.png">
+
+**Control de Casos de Prueba - US27 - Visualización del estado de servicios**
+
+| Test Case ID | ID Historia | Tipo de Prueba | Descripción del Escenario | Acción / Input | Resultado Esperado | Estado |
+|----|----|----|----|----|----|----|
+| TC-A37 | US28 (Sc1) | Aceptación (BDD) | Servicio activo y habilitado | Contrato activo (no suspendido), usuario admin | 200 OK, estado 'Active' | Pasó |
+| TC-A38 | US28 (Sc3) | Aceptación (BDD) | Servicio con contrato suspendido | Contrato suspendido, usuario admin | 200 OK, estado 'Suspended' | Pasó |
+| TC-A39 | US28 (Sc2) | Aceptación (BDD) | Asociación sin contrato activo | Lista de contratos vacía | 200 OK, lista de contratos vacía | Pasó |
+
+<img src="https://imgur.com/ICs7qwt.png">
+
+**Control de Casos de Prueba - US21 - Generación y descarga de reportes históricos**
+
+| Test Case ID | ID Historia | Tipo de Prueba | Descripción del Escenario | Acción / Input | Resultado Esperado | Estado |
+|----|----|----|----|----|----|----|
+| TC-A40 | US21 (Sc1) | Aceptación (BDD) | Generación reporte semanal | ZoneId=1, Rango=7 días | 200 OK, datos del periodo | Pasó |
+| TC-A41 | US21 (Sc1) | Aceptación (BDD) | Generación reporte mensual | ZoneId=1, Rango=30 días | 200 OK, datos del periodo | Pasó |
+| TC-A42 | US21 (Sc1) | Aceptación (BDD) | Generación reporte trimestral | ZoneId=1, Rango=90 días | 200 OK, datos del periodo | Pasó |
+| TC-A43 | US21 (Sc2) | Aceptación (BDD) | Vista previa de métricas | ZoneId=1, Rango=30 días | 200 OK, telemetría e irrigación | Pasó |
+| TC-A44 | US21 (Sc3) | Aceptación (BDD) | Exportación a archivo PDF | ZoneId=1, Rango=30 días | 200 OK, retorno archivo PDF | Pasó |
+| TC-A45 | US21 (Err) | Aceptación (BDD) | Zona inexistente en reporte | ZoneId=99999 | 404 Not Found | Pasó |
+
+<img src="https://imgur.com/VTSnbfr.png">
+
+**Control de Casos de Prueba - US26 - Configuración y gestión de alertas de usuario**
+
+| Test Case ID | ID Historia | Tipo de Prueba | Descripción del Escenario | Acción / Input | Resultado Esperado | Estado |
+|----|----|----|----|----|----|----|
+| TC-A45 | US26 (Sc1) | Aceptación (BDD) | Activar push y desactivar email | Push: true, Email: false | 200 OK | Pasó |
+| TC-A46 | US26 (Sc2) | Aceptación (BDD) | Desactivar todos los canales | Push: false, Email: false | 200 OK | Pasó |
+| TC-A47 | US26 (Sc3) | Aceptación (BDD) | Activar todos los canales | Push: true, Email: true | 200 OK | Pasó |
+| TC-A48 | US26 (Sc4) | Aceptación (BDD) | Persistencia y validación de comando | Push: true, Email: true | 200 OK, Comando enviado con valores correctos | Pasó |
+
+<img src="https://imgur.com/Suqu1II.png">
+
 #### 6.2.3.6. Execution Evidence for Sprint Review
 
+**Aplicación Web:**
+
+Durante este sprint, se priorizó el fortalecimiento de la capa de identidad y la administración centralizada de la plataforma. Se implementó un módulo robusto de gestión de identidades, integrando un flujo de registro controlado mediante enlaces de invitación generados exclusivamente por el personal administrativo de la asociación, lo cual garantiza un *onboarding* seguro, validado y bajo supervisión. Complementariamente, se desarrolló la infraestructura funcional para que el personal de la plataforma pueda crear, configurar y organizar las zonas de cultivo directamente desde la aplicación web, centralizando la configuración del entorno agrícola y fortaleciendo la gobernanza sobre los datos del usuario.
+
+En paralelo, se habilitó la funcionalidad de vinculación lógica entre los dispositivos físicos (microcontroladores) y las zonas geográficas definidas, permitiendo una configuración ágil de la red de sensores desde la interfaz web. Esta nueva capa de administración facilita significativamente la escalabilidad de la solución, al permitir al equipo configurar diversos tipos de plantas y entornos de manera simultánea y ordenada. Con estas implementaciones, Grotix consolida un ecosistema de gestión integral que articula eficazmente la identidad del usuario, la organización del terreno y la conectividad del hardware, resultando en una plataforma más operativa, profesional y preparada para la automatización agrícola.
+
+Pantalla de Devices:
+
+<img src="https://imgur.com/mBd624T.png">
+
+Datos del Device:
+
+<img src="https://imgur.com/1Pv10RJ.png">
+
+Datos de Sensores y Actuadores:
+
+<img src="https://imgur.com/fJQs1EF.png">
+
+Datos de Cultivation Zone para cada Asociación:
+
+<img src="https://imgur.com/V2WI1vL.png">
+
+Generación de Link de Registro:
+
+<img src="https://imgur.com/9ZVaL7d.png">
+
+Registro de Agricultor:
+
+<img src="https://imgur.com/zvUHups.png">
+
+**Aplicación Móvil**
+
+Se concretó la implementación integral de la aplicación, alcanzando un estado de madurez funcional. En este ciclo se integró la visualización dinámica de zonas de cultivo y la monitorización de umbrales tras el procesamiento de datos de los sensores. Asimismo, se habilitaron los flujos completos de riego manual y automático, se perfeccionó la configuración personalizada de umbrales por parte del usuario, y se integró el módulo de diagnóstico fenológico mediante IA. Finalmente, se optimizó la sección de perfil con la visualización de contratos y se implementó el motor de generación de reportes históricos, permitiendo al usuario auditar lecturas y ciclos de riego sobre periodos específicos.
+
+Dashboard por zona:
+
+<img src="https://imgur.com/zxShuL9.png">
+
+Sección de análisis con IA:
+
+<img src="https://imgur.com/97E9ejN.png">
+
+Score de una planta:
+
+<img src="https://imgur.com/MEsmHfK.png">
+
+Detalle de zona:
+
+<img src="https://imgur.com/oFkKrqP.png">
+
+Edición de zona:
+
+<img src="https://imgur.com/2iHW90o.png">
+
+Generación de Reportes:
+
+<img src="https://imgur.com/oDnZNDn.png">
+
+Reporte de Zona:
+
+<img src="https://imgur.com/0TwiPaF.png">
+
+Perfil de usuario:
+
+<img src="https://imgur.com/lDh9cBs.png">
+
+Plan del usuario:
+
+<img src="https://imgur.com/WQlcgcD.png">
+
+Ventana de notificaciones:
+
+<img src="https://imgur.com/UBaQ4kh.png">
+
+**Edge App**
+
+Se desarrolló e integró la Edge App, la cual ha sido optimizada para actuar como un puente de alta disponibilidad entre la infraestructura física y la nube. En este sprint, se implementó y validó exitosamente un motor de persistencia local basado en SQLite, permitiendo que la lógica de negocio, la gestión de umbrales y la activación de riego autónomo se ejecuten de manera independiente, garantizando la continuidad operativa ante escenarios de conectividad intermitente.
+
+<img src="https://imgur.com/k5xttNA.png">
+
+**Implementación de Hardware**
+
+Se completó el despliegue del nodo IoT central basado en ESP32 (38 pines), integrando y calibrando exitosamente el conjunto de sensores (DHT22 para ambiente, sensor de luz analógico y sensor capacitivo de humedad de suelo). En este periodo, se finalizó la integración física del actuador de riego, implementando el relé de 5V y la bomba de agua con su módulo de alimentación dedicado, verificando que la lógica embebida gestione correctamente las señales de potencia y asegure la estabilidad eléctrica del nodo ante los disparos de riego.
+
+<img src="https://imgur.com/S59QP3V.png">
+
+Repositorio con el código Embebido: https://github.com/CeleviGrotix/Grotix_Embedded
+
+<img src="https://imgur.com/nWPV0bs.png">
+
+Video explicativo:
+
+[Execution EvidenceIoT.mp4](https://upcedupe-my.sharepoint.com/:v:/g/personal/u202312287_upc_edu_pe/IQBqqDaRVN_WTI7RI66FiEDMAVw31SzkDuJa26C5sPOLgR0?nav=eyJyZWZlcnJhbEluZm8iOnsicmVmZXJyYWxBcHAiOiJPbmVEcml2ZUZvckJ1c2luZXNzIiwicmVmZXJyYWxBcHBQbGF0Zm9ybSI6IldlYiIsInJlZmVycmFsTW9kZSI6InZpZXciLCJyZWZlcnJhbFZpZXciOiJNeUZpbGVzTGlua0NvcHkifX0&e=xeDbE9)
+
 #### 6.2.3.7. Services Documentation Evidence for Sprint Review
+
+La documentación de microservicios presenta la evolución técnica de Grotix a lo largo del Sprint 3 consolidando la integración operativa entre dispositivos IoT y la plataforma en la nube mediante un ecosistema de servicios RESTful documentados íntegramente bajo el estándar OpenAPI/Swagger. Este conjunto de evidencias detalla la implementación de endpoints robustos que habilitan desde la gestión crítica de hardware, telemetría en tiempo real y orquestación de riego autónomo, hasta funcionalidades avanzadas como el diagnóstico fenológico asistido por inteligencia artificial, la persistencia offline en la capa edge, la generación de reportes históricos y la gestión de alertas y contratos de usuario; un despliegue coordinado entre los microservicios CultivationArea.Api, Telemetry.Api, IrrigationCycle.Api, Profiles.Api y el servidor de procesamiento de IA que, a través de estos contratos de interfaz, garantiza la trazabilidad, desacoplamiento y consistencia operativa requerida para la arquitectura de Grotix.
+
+| Microservicio | Método | Ruta (relativa al host) | Autorización | Parámetros / cuerpo | Respuesta (éxito y notas) |
+|----|----|----|----|----|----|
+| Cultivation.Api | PATCH | /api/v1/zones/{id} | Bearer JWT | JSON parcial: name, cropId, irrigationMode, etc. | 200 OK. Zona actualizada. [Modificado: irrigationMode] |
+| Cultivation.Api | POST | /api/v1/farms/{farmId}/zones | Bearer JWT | JSON: name, cropId, coords, irrigationMode? | 201 Created. Nueva zona con modo de riego. [Modificado] |
+| Cultivation.Api | GET | /api/v1/zones/{zoneId}/members | Bearer JWT | Path: zoneId. | 200 OK. Personal asignado a la zona. [Nuevo] |
+| Cultivation.Api | POST | /api/v1/zones/{zoneId}/members | user_admin / admin / staff | JSON: { userId }. | 200 OK. { success: true }. [Nuevo] |
+| Cultivation.Api | DELETE | /api/v1/zones/{zoneId}/members/{userId} | user_admin / admin / staff | Path: zoneId, userId. | 200 OK. Quita asignación a la zona. [Nuevo] |
+| CultivationArea.Api | PATCH | /api/v1/zones/{zoneId} | Bearer JWT | JSON parcial: imageUrl | 200 OK. Zona con imageUrl actualizada. [US22] |
+| CultivationArea.Api | POST | /api/v1/zones/{zoneId}/analysis-reports | Bearer JWT / user_admin+ | JSON: detectedPhase, healthScore | 201 Created. Reporte de diagnóstico IA. [US23, Nuevo] |
+| CultivationArea.Api | GET | /api/v1/zones/{zoneId}/analysis-reports | Bearer JWT | Path: zoneId. Query: limit? | 200 OK. Lista de diagnósticos IA. [US23, Nuevo] |
+| CultivationArea.Api | GET | /api/v1/zones/{zoneId}/reports/summary | Bearer JWT | Path: zoneId. Query: from?, to? | 200 OK. Resumen JSON del reporte. [US21, Nuevo] |
+| CultivationArea.Api | GET | /api/v1/zones/{zoneId}/reports/export | Bearer JWT | Path: zoneId. Query: from?, to? | 200 OK. Archivo PDF binario. [US21, Nuevo] |
+| Hardware.Api | GET | /api/v1/hardware/sensors/catalog | DEVICE_CONFIG / admin | — | 200 OK. Catálogo de modelos y tipos de sensor. [Nuevo] |
+| Hardware.Api | POST | /api/v1/hardware/devices/{id}/link-to-zone/{zoneId} | DEVICE_CONFIG / admin | Path: id, zoneId. | 200 OK. Vincula ESP32 a zona. [Validado Sprint 3] |
+| Hardware.Api | GET | /api/v1/hardware/zones/{zoneId}/health | Bearer JWT | Path: zoneId. | 200 OK. Salud de dispositivos con isActive por lastSeen. [Modificado] |
+| Hardware.Api | PATCH | /api/v1/hardware/devices/{id}/status | DEVICE_CONFIG / admin | JSON: status, lastSeen?. | 200 OK. Actualiza estado operacional. [Modificado] |
+| Telemetry.Api | POST | /api/v1/telemetry/ingest | DEVICE_CONFIG / admin | JSON: deviceId, zoneId, lecturas. | 202 Accepted. Persiste telemetría y refresca lastSeen. [Modificado] |
+| Telemetry.Api | GET | /api/v1/telemetry/zones/{zoneId}/thresholds | Bearer JWT | Path: zoneId | 200 OK. Umbrales efectivos por sensor. [US17, Usado por Edge] |
+| Irrigation.Api | POST | /api/v1/irrigation/start/{zoneId} | MANUAL_CONTROL_EXECUTE / admin | JSON: volumeLiters?, durationMinutes?. | 200 OK. { cycleId }. Riego manual (US19). [Integrado Sprint 3] |
+| Irrigation.Api | POST | /api/v1/irrigation/stop/{zoneId} | MANUAL_CONTROL_EXECUTE / admin | JSON: reason?. | 200 OK. Ciclo ABORTED. [Integrado Sprint 3] |
+| Irrigation.Api | GET | /api/v1/irrigation/active | Bearer JWT | Query: zoneId? | 200 OK. Ciclos activos de riego. [US17, Usado por Edge] |
+| Profiles.Api | GET | /api/v1/contracts | Bearer JWT / user_admin+ | — | 200 OK. Contratos de la asociación. [US27] |
+| Profiles.Api | PATCH | /api/v1/profile/{userId}/preferences | Bearer JWT | JSON: push, email | 200 OK. Preferencias actualizadas. [US26, Nuevo] |
+| Profiles.Api | GET | /api/v1/profile/me/notifications | Bearer JWT | Query: unreadOnly?, limit? | 200 OK. Lista de notificaciones. [US26, Nuevo] |
+| Profiles.Api | PATCH | /api/v1/profile/me/notifications/{id}/read | Bearer JWT | Path: notificationId | 200 OK. { success: true }. [US26, Nuevo] |
+| Profiles.Api | PATCH | /api/v1/profile/me/notifications/read-all | Bearer JWT | — | 200 OK. { success: true, updated }. [US26, Nuevo] |
+
+**Evidencias de Validación Funcional**
+
+**PATCH /api/v1/zones/{zoneId}**
+
+Actualiza datos de una zona de cultivo. En Sprint 3 se incorporó el campo irrigationMode (MANUAL \| AUTOMATIC) para controlar si la zona permite riego manual desde la app y si los automatismos (programación y alertas) deben ejecutarse. Valores inválidos devuelven 400.
+
+**A. Cabeceras (Headers)**
+
+| Campo (Field) | Tipo (Type) | Descripción    |
+|-------------------|-----------------|--------------------|
+| Content-Type      | String          | application/json   |
+| Authorization     | String          | Bearer {jwt_token} |
+
+**B. Parámetros de Búsqueda (Query Parameters)**
+
+Path: zoneId (integer).
+
+**C. Ejemplo de Petición (Request-Example)**
+
+```json
+{
+    "name": "Parcela Norte",
+    "irrigationMode": "MANUAL"
+}
+```
+
+**RESPUESTAS DEL SERVIDOR (RESPONSES)**
+
+**Éxito: Código 200 OK**
+
+| Campo (Field) | Tipo (Type) | Descripción |
+|----|----|----|
+| id | Integer | Identificador de la zona. |
+| farmId | Integer | Granja contenedora. |
+| cropId | Integer | Cultivo asociado. |
+| name | String | Nombre visible de la zona. |
+| irrigationMode | String | MANUAL o AUTOMATIC. [Nuevo en respuesta editable] |
+| currentPhase | String? | Fase fenológica actual. |
+| latitude / longitude | Double | Coordenadas geográficas. |
+
+**Ejemplo de Respuesta Exitosa (Success-Example)**
+
+```json
+{
+    "id": 12,
+    "farmId": 3,
+    "cropId": 1,
+    "name": "Parcela Norte",
+    "irrigationMode": "MANUAL",
+    "currentPhase": "Floración",
+    "phaseStartDate": "2026-06-01T00:00:00Z",
+    "imageUrl": null,
+    "latitude": -13.52,
+    "longitude": -71.97
+}
+```
+
+**Error: Código 400 Bad Request**
+
+**Ejemplo de Respuesta de Error (Error-Response)**
+
+```json
+{
+    "message": "Modo de riego inválido. Valores: AUTOMATIC, MANUAL."
+}
+```
+
+**D. Evidencia en Swagger**
+
+<img src="https://imgur.com/ST1azh0.png">
+
+**POST /api/v1/farms/{farmId}/zones**
+
+Crea una zona dentro de una granja. Sprint 3 permite definir irrigationMode al crear la parcela (por defecto AUTOMATIC si se omite). Usado por el módulo web de creación de zonas (US15).
+
+**A. Cabeceras (Headers)**
+
+| Campo (Field) | Tipo (Type) | Descripción    |
+|-------------------|-----------------|--------------------|
+| Content-Type      | String          | application/json   |
+| Authorization     | String          | Bearer {jwt_token} |
+
+**B. Parámetros de Búsqueda (Query Parameters)**
+
+Path: farmId (integer).
+
+**C. Ejemplo de Petición (Request-Example)**
+
+```json
+{
+    "name": "Lote B",
+    "cropId": 2,
+    "latitude": -13.51,
+    "longitude": -71.96,
+    "currentPhase": "Germinación",
+    "irrigationMode": "AUTOMATIC"
+}
+```
+
+**RESPUESTAS DEL SERVIDOR (RESPONSES)**
+
+**Éxito: Código 201 Created**
+
+| Campo (Field) | Tipo (Type) | Descripción             |
+|-------------------|-----------------|-----------------------------|
+| id                | Integer         | ID autogenerado de la zona. |
+| irrigationMode    | String          | Modo de riego persistido.   |
+| name              | String          | Nombre de la zona.          |
+
+**Ejemplo de Respuesta Exitosa (Success-Example)**
+
+```json
+{
+    "id": 18,
+    "farmId": 3,
+    "cropId": 2,
+    "name": "Lote B",
+    "irrigationMode": "AUTOMATIC",
+    "currentPhase": "Germinación",
+    "phaseStartDate": null,
+    "imageUrl": null,
+    "latitude": -13.51,
+    "longitude": -71.96
+}
+```
+
+**Error: Código 403 Forbidden**
+
+**Ejemplo de Respuesta de Error (Error-Response)**
+
+```json
+{
+    "status": 403,
+    "message": "No tienes acceso a esta granja."
+}
+```
+
+**D. Evidencia en Swagger**
+
+<img src="https://imgur.com/z7Oisc7.png">
+
+**GET /api/v1/zones/{zoneId}/members**
+
+Lista el personal asignado a una zona. Cualquier miembro con acceso a la zona puede consultar la lista. Soporta la organización de equipos por parcela (US15).
+
+**A. Cabeceras (Headers)**
+
+| Campo (Field) | Tipo (Type) | Descripción    |
+|-------------------|-----------------|--------------------|
+| Authorization     | String          | Bearer {jwt_token} |
+
+**B. Parámetros de Búsqueda (Query Parameters)**
+
+Path: zoneId. Sin cuerpo.
+
+**C. Ejemplo de Petición (Request-Example)**
+
+```http
+GET /api/v1/zones/12/members HTTP/1.1
+Host: localhost:5102
+Authorization: Bearer {token}
+```
+
+**RESPUESTAS DEL SERVIDOR (RESPONSES)**
+
+**Éxito: Código 200 OK**
+
+| Campo (Field) | Tipo (Type) | Descripción                    |
+|-------------------|-----------------|------------------------------------|
+| userId            | Integer         | ID del perfil de usuario.          |
+| name              | String?         | Nombre completo.                   |
+| email             | String          | Correo del miembro.                |
+| roleId            | Integer         | Rol de negocio.                    |
+| roleName          | String          | Nombre del rol (ej. user_basic).   |
+| assignedAt        | DateTime        | Fecha de asignación a la zona.     |
+| assignedByUserId  | Integer?        | Usuario que realizó la asignación. |
+
+**Ejemplo de Respuesta Exitosa (Success-Example)**
+
+```json
+[
+    {
+        "userId": 23,
+        "name": "Carlos Mamani",
+        "email": "c.mamani@grotix.pe",
+        "roleId": 4,
+        "roleName": "user_basic",
+        "assignedAt": "2026-06-15T10:00:00Z",
+        "assignedByUserId": 5
+    }
+]
+```
+
+**Error: Código 403 Forbidden**
+
+**Ejemplo de Respuesta de Error (Error-Response)**
+
+```json
+{
+    "message": "No tienes acceso a esta zona."
+}
+```
+
+**D. Evidencia en Swagger**
+
+<img src="https://imgur.com/ZCoqFmk.png">
+
+**POST /api/v1/zones/{zoneId}/analysis-reports**
+
+Persiste el resultado del diagnóstico fenológico generado por la Inteligencia Artificial para una zona de cultivo. Es invocado por la app móvil inmediatamente después de recibir la respuesta del servidor Python de IA, guardando la fase detectada y la puntuación de salud en la base de datos (US23).
+
+**A. Cabeceras (Headers)**
+
+| Campo | Tipo | Descripción |
+|----|----|----|
+| Content-Type | String | application/json |
+| Authorization | String | Bearer {jwt_token}. Requiere user_admin, admin o staff. |
+
+**B. Parámetros de Búsqueda (Query Parameters)**
+
+Path: zoneId (integer).
+
+**C. Ejemplo de Petición (Request-Example)**
+
+{
+
+"detectedPhase": "Germinacion",
+
+"healthScore": 85.0
+
+}
+
+**RESPUESTAS DEL SERVIDOR (RESPONSES)**
+
+**Éxito: Código 201 Created**
+
+| Campo     | Tipo | Descripción                     |
+|---------------|----------|-------------------------------------|
+| reportId      | Integer  | ID del reporte generado             |
+| zoneId        | Integer  | Zona analizada                      |
+| detectedPhase | String   | Fase fenológica detectada por la IA |
+| healthScore   | Float    | Puntuación de salud (0–100)         |
+| createdAt     | DateTime | Fecha y hora del diagnóstico        |
+
+**Ejemplo de Respuesta Exitosa (Success-Example)**
+
+{
+
+"reportId": 45,
+
+"zoneId": 12,
+
+"detectedPhase": "Germinacion",
+
+"healthScore": 85.0,
+
+"createdAt": "2026-06-28T14:30:00Z"
+
+}
+
+**Error: Código 400 Bad Request**
+
+{
+
+"message": "HealthScore debe estar entre 0 y 100."
+
+}
+
+**D. Evidencia en Swagger**
+
+<img src="https://imgur.com/yGi05T8.png">
+<img src="https://imgur.com/SgWt6Oe.png">
+
+**GET /api/v1/zones/{zoneId}/analysis-reports**
+
+Devuelve el historial de diagnósticos IA para una zona, ordenados del más reciente al más antiguo. Permite al usuario revisar la evolución fenológica del cultivo a lo largo del tiempo (US23).
+
+**A. Cabeceras (Headers)**
+
+| Campo     | Tipo | Descripción    |
+|---------------|----------|--------------------|
+| Authorization | String   | Bearer {jwt_token} |
+
+**B. Parámetros de Búsqueda (Query Parameters)**
+
+Path: zoneId (integer). Query: limit (integer, default 50, máx 200).
+
+**C. Ejemplo de Petición (Request-Example)**
+
+GET /api/v1/zones/12/analysis-reports?limit=10 HTTP/1.1
+
+Authorization: Bearer {token}
+
+**RESPUESTAS DEL SERVIDOR (RESPONSES)**
+
+**Éxito: Código 200 OK — array de reportes.**
+
+| Campo     | Tipo | Descripción       |
+|---------------|----------|-----------------------|
+| reportId      | Integer  | ID del reporte        |
+| detectedPhase | String   | Fase detectada        |
+| healthScore   | Float    | Puntuación de salud   |
+| createdAt     | DateTime | Fecha del diagnóstico |
+
+**Ejemplo de Respuesta Exitosa**
+
+[
+
+{
+
+"reportId": 45,
+
+"zoneId": 12,
+
+"detectedPhase": "Germinacion",
+
+"healthScore": 85.0,
+
+"createdAt": "2026-06-28T14:30:00Z"
+
+},
+
+{
+
+"reportId": 44,
+
+"zoneId": 12,
+
+"detectedPhase": "Indeterminado",
+
+"healthScore": 50.0,
+
+"createdAt": "2026-06-27T09:15:00Z"
+
+}
+
+]
+
+**Error: Código 404 Not Found**
+
+{
+
+"message": "Zone not found."
+
+}
+
+**D. Evidencia en Swagger**
+
+<img src="https://imgur.com/b2agV2q.png">
+
+<img src="https://imgur.com/UZGyQP4.png">
+
+**GET /api/v1/telemetry/zones/{zoneId}/thresholds**
+
+Devuelve los umbrales efectivos de todos los sensores para una zona, resolviendo la prioridad entre umbrales personalizados (custom) y defaults del cultivo (crop). Es consumido por la capa edge al arrancar y periódicamente para mantener los umbrales sincronizados en SQLite local, garantizando el riego offline cuando se pierde la conexión (US17).
+
+**A. Cabeceras**
+
+| Campo     | Tipo | Descripción    |
+|---------------|----------|--------------------|
+| Authorization | String   | Bearer {jwt_token} |
+
+**B. Parámetros de Búsqueda**
+
+Path: zoneId (integer).
+
+**C. Ejemplo de Petición**
+
+GET /api/v1/telemetry/zones/5/thresholds HTTP/1.1
+
+Authorization: Bearer {token}
+
+**RESPUESTAS DEL SERVIDOR**
+
+**Éxito: Código 200 OK — array de umbrales por tipo de sensor.**
+
+| Campo  | Tipo | Descripción                                       |
+|------------|----------|-------------------------------------------------------|
+| sensorType | String   | Tipo de sensor (SOIL_MOISTURE, AIR_TEMPERATURE, etc.) |
+| minValue   | Double   | Umbral mínimo efectivo                                |
+| maxValue   | Double   | Umbral máximo efectivo                                |
+| source     | String   | Origen del umbral: "custom" o "crop"                  |
+
+**Ejemplo de Respuesta Exitosa**
+
+[
+
+{
+
+"sensorType": "SOIL_MOISTURE",
+
+"minValue": 32,
+
+"maxValue": 52,
+
+"source": "custom"
+
+},
+
+{
+
+"sensorType": "AIR_TEMPERATURE",
+
+"minValue": 22,
+
+"maxValue": 23,
+
+"source": "custom"
+
+}
+
+]
+
+**Error: Código 404 Not Found**
+
+{
+
+"status": 403,
+
+"message": "Forbidden."
+
+}
+
+**D. Evidencia en Swagger**
+
+<img src="https://imgur.com/bV6KABz.png">
+
+<img src="https://imgur.com/uTZWGU5.png">
+
+**POST /api/v1/hardware/devices/{id}/link-to-zone/{zoneId}**
+
+Vincula un microcontrolador (ESP32) registrado por MAC Address a una zona específica. Endpoint central del flujo de vinculación implementado en la Web App por el staff (T86–T87).
+
+**A. Cabeceras (Headers)**
+
+| Campo (Field) | Tipo (Type) | Descripción |
+|----|----|----|
+| Authorization | String | Bearer {jwt_token}. Requiere DEVICE_CONFIG o admin. |
+
+**B. Parámetros de Búsqueda (Query Parameters)**
+
+Path: id (deviceId), zoneId.
+
+**C. Ejemplo de Petición (Request-Example)**
+
+```http
+POST /api/v1/hardware/devices/7/link-to-zone/12 HTTP/1.1
+Authorization: Bearer {token}
+```
+
+**RESPUESTAS DEL SERVIDOR (RESPONSES)**
+
+**Éxito: Código 200 OK**
+
+| Campo (Field) | Tipo (Type) | Descripción |
+|----|----|----|
+| success | Boolean | true si la vinculación se aplicó correctamente. |
+
+**Ejemplo de Respuesta Exitosa (Success-Example)**
+
+```json
+{
+    "success": true
+}
+```
+
+**Error: Código 404 Not Found**
+
+**Ejemplo de Respuesta de Error (Error-Response)**
+
+```json
+{
+    "message": "Dispositivo o zona no encontrados."
+}
+```
+
+**D. Evidencia en Swagger**
+
+<img src="https://imgur.com/j90191j.png">
+
+<img src="https://imgur.com/xFIO4Tv.png">
+
+**GET /api/v1/hardware/zones/{zoneId}/health**
+
+Consulta la salud agregada de los dispositivos de una zona. Sprint 3 incorpora isActive calculado a partir de lastSeen y un job en background que marca OFFLINE dispositivos sin telemetría reciente (umbral configurable, por defecto 60 min).
+
+**A. Cabeceras (Headers)**
+
+| Campo (Field) | Tipo (Type) | Descripción    |
+|-------------------|-----------------|--------------------|
+| Authorization     | String          | Bearer {jwt_token} |
+
+**B. Parámetros de Búsqueda (Query Parameters)**
+
+Path: zoneId.
+
+**RESPUESTAS DEL SERVIDOR (RESPONSES)**
+
+**Éxito: Código 200 OK**
+
+| Campo (Field) | Tipo (Type) | Descripción |
+|----|----|----|
+| zoneId | Integer | Zona consultada. |
+| allActive | Boolean | true si todos los dispositivos están activos. |
+| totalDevices | Integer | Cantidad de dispositivos en la zona. |
+| devices[].deviceId | Integer | ID del microcontrolador. |
+| devices[].status | String | ONLINE \| OFFLINE \| MAINTENANCE. |
+| devices[].lastSeen | DateTime? | Última trama recibida. [Clave Sprint 3] |
+| devices[].isActive | Boolean | Derivado de lastSeen vs umbral. [Nuevo] |
+
+**Ejemplo de Respuesta Exitosa (Success-Example)**
+
+```json
+{
+    "zoneId": 12,
+    "allActive": false,
+    "totalDevices": 2,
+    "devices": [
+        {
+            "deviceId": 7,
+            "model": "ESP32-WROOM",
+            "status": "ONLINE",
+            "lastSeen": "2026-06-19T18:45:00Z",
+            "isActive": true
+        },
+    {
+        "deviceId": 8,
+        "model": "ESP32-WROOM",
+        "status": "OFFLINE",
+        "lastSeen": "2026-06-19T16:00:00Z",
+        "isActive": false
+    }
+]
+}
+```
+
+**Error: Código 403 Forbidden**
+
+**Ejemplo de Respuesta de Error (Error-Response)**
+
+```json
+{
+    "status": 403,
+    "message": "NOT_AUTHORIZED: Sin acceso a la zona solicitada."
+}
+```
+
+**D. Evidencia en Swagger**
+
+<img src="https://imgur.com/BUsv2Rw.png">
+
+<img src="https://imgur.com/qR9oJs7.png">
+
+**POST /api/v1/telemetry/ingest**
+
+Ingesta un paquete de telemetría desde el ESP32 (temperatura, humedad aire/suelo, luz). Además de persistir lecturas en TimescaleDB, actualiza lastSeen del dispositivo y lo marca ONLINE, alimentando el monitoreo periódico de la app móvil (US12).
+
+**A. Cabeceras (Headers)**
+
+| Campo (Field) | Tipo (Type) | Descripción |
+|----|----|----|
+| Content-Type | String | application/json |
+| Authorization | String | Bearer {jwt_token}. DEVICE_CONFIG o admin. |
+
+**C. Ejemplo de Petición (Request-Example)**
+
+```json
+{
+    "deviceId": 7,
+    "zoneId": 12,
+    "temperature": 24.5,
+    "humidityAir": 62.0,
+    "humiditySoil": 41.0,
+    "lightIntensity": 850.0,
+    "timestamp": "2026-06-19T18:45:00Z"
+}
+```
+
+**RESPUESTAS DEL SERVIDOR (RESPONSES)**
+
+**Éxito: Código 202 Accepted**
+
+| Campo (Field) | Tipo (Type) | Descripción                |
+|-------------------|-----------------|--------------------------------|
+| deviceId          | Integer         | Dispositivo origen.            |
+| zoneId            | Integer         | Zona destino.                  |
+| ingested          | Boolean         | Confirmación de procesamiento. |
+
+**Ejemplo de Respuesta Exitosa (Success-Example)**
+
+```json
+{
+    "deviceId": 7,
+    "zoneId": 12,
+    "ingested": true
+}
+```
+
+**Error: Código 400 Bad Request**
+
+**Ejemplo de Respuesta de Error (Error-Response)**
+
+```json
+{
+    "message": "DeviceId inválido."
+}
+```
+
+**D. Evidencia en Swagger**
+
+<img src="https://imgur.com/hGEMVe8.png">
+
+<img src="https://imgur.com/iLOEKxj.png">
+
+**POST /api/v1/irrigation/start/{zoneId}**
+
+Inicia un ciclo de riego manual para la zona indicada. Consumido por la app móvil para encender la bomba bajo demanda. Si ya existe un ciclo IN_PROGRESS en la zona, responde 409.
+
+**A. Cabeceras (Headers)**
+
+| Campo (Field) | Tipo (Type) | Descripción |
+|----|----|----|
+| Content-Type | String | application/json |
+| Authorization | String | Bearer {jwt_token}. Permiso MANUAL_CONTROL_EXECUTE. |
+
+**B. Parámetros de Búsqueda (Query Parameters)**
+
+Path: zoneId. Body opcional.
+
+**C. Ejemplo de Petición (Request-Example)**
+
+```json
+{
+    "volumeLiters": 30.0,
+    "durationMinutes": 10
+}
+```
+
+**RESPUESTAS DEL SERVIDOR (RESPONSES)**
+
+**Éxito: Código 200 OK**
+
+| Campo (Field) | Tipo (Type) | Descripción                          |
+|-------------------|-----------------|------------------------------------------|
+| cycleId           | Integer         | Identificador del ciclo de riego creado. |
+
+**Ejemplo de Respuesta Exitosa (Success-Example)**
+
+```json
+{
+    "cycleId": 104
+}
+```
+
+**Error: Código 409 Conflict**
+
+**Ejemplo de Respuesta de Error (Error-Response)**
+
+```json
+{
+    "message": "Ya existe un ciclo de riego activo en esta zona."
+}
+```
+
+**D. Evidencia en Swagger**
+
+<img src="https://imgur.com/Cy516AG.png">
+
+<img src="https://imgur.com/XYGMsbV.png">
+
+**GET /api/v1/hardware/sensors/catalog**
+
+Expone el catálogo de modelos de sensores soportados (p. ej. DHT22, capacitive soil) con los tipos de lectura permitidos por pin. Usado al registrar sensores en el inventario de hardware.
+
+**A. Cabeceras (Headers)**
+
+| Campo (Field) | Tipo (Type) | Descripción |
+|----|----|----|
+| Authorization | String | Bearer {jwt_token}. DEVICE_CONFIG o admin. |
+
+**B. Parámetros de Búsqueda (Query Parameters)**
+
+Sin parámetros.
+
+**RESPUESTAS DEL SERVIDOR (RESPONSES)**
+
+**Éxito: Código 200 OK**
+
+| Campo (Field) | Tipo (Type) | Descripción |
+|----|----|----|
+| models[].model | String | Código del modelo de sensor. |
+| models[].types | String[] | Tipos de lectura soportados. |
+| models[].allowsMultipleTypesOnSamePin | Boolean | Si admite múltiples tipos en un pin. |
+
+**Ejemplo de Respuesta Exitosa (Success-Example)**
+
+```json
+{
+    "models": [
+        {
+            "model": "DHT22",
+            "types": ["TEMPERATURE", "HUMIDITY_AIR"],
+            "allowsMultipleTypesOnSamePin": true
+        },
+    {
+        "model": "CAP_SOIL_V1",
+        "types": ["HUMIDITY_SOIL"],
+        "allowsMultipleTypesOnSamePin": false
+    }
+]
+}
+```
+
+**Error: Código 403 Forbidden**
+
+**Ejemplo de Respuesta de Error (Error-Response)**
+
+```json
+{
+    "status": 403,
+    "message": "NOT_AUTHORIZED: Permiso DEVICE_CONFIG requerido."
+}
+```
+
+**D. Evidencia en Swagger**
+
+<img src="https://imgur.com/tpJipV2.png">
+
+<img src="https://imgur.com/7BNXfjN.png">
+
+**GET /api/v1/contracts**
+
+Devuelve la lista de contratos comerciales de la asociación del usuario autenticado. La app móvil consume este endpoint para mostrar el estado del servicio (activo o suspendido), las fechas de vigencia de la campaña y los límites contratados de zonas y microcontroladores (US27).
+
+**A. Cabeceras**
+
+| Campo | Tipo | Descripción |
+|----|----|----|
+| Authorization | String | Bearer {jwt_token}. Requiere user_admin, admin o staff. |
+
+**B. Parámetros de Búsqueda**
+
+Sin parámetros. Filtra automáticamente por la asociación del caller.
+
+**C. Ejemplo de Petición**
+
+GET /api/v1/contracts HTTP/1.1
+
+Authorization: Bearer {token}
+
+**RESPUESTAS DEL SERVIDOR**
+
+**Éxito: Código 200 OK**
+
+| Campo           | Tipo | Descripción                     |
+|---------------------|----------|-------------------------------------|
+| id                  | Integer  | ID del contrato                     |
+| associationId       | Integer  | Asociación propietaria              |
+| startDate / endDate | DateTime | Fechas de la campaña                |
+| status              | String   | Active, Cancelled, etc.             |
+| isSuspended         | Boolean  | true si el servicio está suspendido |
+| maxZones            | Integer  | Límite de zonas contratadas         |
+| maxMicrocontrollers | Integer  | Límite de microcontroladores        |
+
+**Ejemplo de Respuesta Exitosa**
+
+[
+
+{
+
+"id": 3,
+
+"associationId": 1,
+
+"startDate": "2026-01-01T00:00:00Z",
+
+"endDate": "2026-12-31T00:00:00Z",
+
+"status": "Active",
+
+"maxZones": 5,
+
+"maxMicrocontrollers": 3,
+
+"totalAmount": 299.99,
+
+"currency": "USD",
+
+"paymentFrequency": "Monthly",
+
+"isSuspended": false
+
+}
+
+]
+
+**Error: Código 403 Forbidden**
+
+{
+
+"status": 403,
+
+"message": "Forbidden."
+
+}
+
+**D. Evidencia en Swagger**
+
+<img src="https://imgur.com/vO2UKMv.png">
+
+<img src="https://imgur.com/KGQ0S5Z.png">
+
+**PATCH /api/v1/profile/{userId}/preferences**
+
+Actualiza las preferencias de notificación del usuario: canales habilitados. El motor de notificaciones aplica la nueva configuración de forma inmediata para los siguientes envíos (US26).
+
+**A. Cabeceras**
+
+| Campo | Tipo | Descripción |
+|----|----|----|
+| Content-Type | String | application/json |
+| Authorization | String | Bearer {jwt_token}. El usuario solo puede modificar sus propias preferencias. |
+
+**B. Parámetros de Búsqueda**
+
+Path: userId (integer).
+
+**C. Ejemplo de Petición**
+
+{
+
+"push": true,
+
+"email": false
+
+}
+
+**RESPUESTAS DEL SERVIDOR**
+
+**Éxito: Código 200 OK — perfil del usuario con preferencias actualizadas.**
+
+| Campo   | Tipo | Descripción                           |
+|-------------|----------|-------------------------------------------|
+| id          | Integer  | ID del usuario                            |
+| name        | String?  | Nombre del usuario                        |
+| preferences | Object   | Preferencias de notificación actualizadas |
+
+**Ejemplo de Respuesta Exitosa**
+
+{
+
+"id": 1,
+
+"name": "Juan Perez",
+
+"email": "juan@grotix.pe",
+
+"preferences": {
+
+"push": true,
+
+"email": false
+
+}
+
+}
+
+**Error: Código 404 Not Found**
+
+{
+
+"message": "Usuario 1 no encontrado."
+
+}
+
+**D. Evidencia en Swagger**
+
+<img src="https://imgur.com/9Rn7Ezq.png">
+
+<img src="https://imgur.com/cDwUhOC.png">
+
+**GET /api/v1/profile/me/notifications**
+
+Devuelve el historial de notificaciones del usuario autenticado. Soporta filtrado por estado de lectura y paginación por límite (US26).
+
+**A. Cabeceras**
+
+| Campo     | Tipo | Descripción    |
+|---------------|----------|--------------------|
+| Authorization | String   | Bearer {jwt_token} |
+
+**B. Parámetros de Búsqueda**
+
+Query: unreadOnly (boolean, default false), limit (integer, default 50).
+
+**C. Ejemplo de Petición**
+
+GET /api/v1/profile/me/notifications?unreadOnly=true&limit=20 HTTP/1.1
+
+Authorization: Bearer {token}
+
+**RESPUESTAS DEL SERVIDOR**
+
+**Éxito: Código 200 OK — array de notificaciones.**
+
+| Campo | Tipo  | Descripción               |
+|-----------|-----------|-------------------------------|
+| id        | Integer   | ID de la notificación         |
+| title     | String    | Título                        |
+| message   | String    | Cuerpo del mensaje            |
+| type      | String    | info, warning, alert, success |
+| isRead    | Boolean   | Estado de lectura             |
+| createdAt | DateTime  | Fecha de creación             |
+| readAt    | DateTime? | Fecha de lectura              |
+
+**Ejemplo de Respuesta Exitosa**
+
+[
+
+{
+
+"id": 12,
+
+"userId": 1,
+
+"title": "Alerta Crítica de Humedad",
+
+"message": "La humedad del suelo en Parcela Norte ha caído por debajo del umbral mínimo.",
+
+"type": "alert",
+
+"isRead": false,
+
+"createdAt": "2026-06-28T14:00:00Z",
+
+"readAt": null
+
+}
+
+]
+
+**Error: Código 401 Unauthorized**
+
+{
+
+"status": 401
+
+}
+
+**D. Evidencia en Swagger**
+
+<img src="https://imgur.com/Mum0MB3.png">
+
+<img src="https://imgur.com/fBrMl5H.png">
+
+**PATCH /api/v1/profile/me/notifications/{notificationId}/read**
+
+Marca una notificación específica del usuario como leída. Actualiza el campo readAt con el timestamp actual (US26).
+
+**A. Cabeceras**
+
+| Campo     | Tipo | Descripción    |
+|---------------|----------|--------------------|
+| Authorization | String   | Bearer {jwt_token} |
+
+**B. Parámetros de Búsqueda**
+
+Path: notificationId (integer).
+
+**C. Ejemplo de Petición**
+
+PATCH /api/v1/profile/me/notifications/12/read HTTP/1.1
+
+Authorization: Bearer {token}
+
+**RESPUESTAS DEL SERVIDOR**
+
+**Éxito: Código 200 OK**
+
+{
+
+"success": true
+
+}
+
+**Error: Código 404 Not Found**
+
+{
+
+"message": "Notification not found."
+
+}
+
+**D. Evidencia en Swagger**
+
+<img src="https://imgur.com/QmJTIeU.png">
+
+<img src="https://imgur.com/pg7Gr7s.png">
+
+**PATCH /api/v1/profile/me/notifications/read-all**
+
+Marca todas las notificaciones no leídas del usuario como leídas en una sola operación. Usado por el botón "Marcar todo como leído" de la bandeja de notificaciones (US26).
+
+**A. Cabeceras**
+
+| Campo     | Tipo | Descripción    |
+|---------------|----------|--------------------|
+| Authorization | String   | Bearer {jwt_token} |
+
+**B. Parámetros de Búsqueda**
+
+Sin parámetros ni cuerpo.
+
+**C. Ejemplo de Petición**
+
+PATCH /api/v1/profile/me/notifications/read-all HTTP/1.1
+
+Authorization: Bearer {token}
+
+**RESPUESTAS DEL SERVIDOR**
+
+**Éxito: Código 200 OK**
+
+| Campo | Tipo | Descripción                                 |
+|-----------|----------|-------------------------------------------------|
+| success   | Boolean  | true si la operación fue exitosa                |
+| updated   | Integer  | Cantidad de notificaciones marcadas como leídas |
+
+**Ejemplo de Respuesta Exitosa**
+
+{
+
+"success": true,
+
+"updated": 5
+
+}
+
+**Error: Código 401 Unauthorized**
+
+{
+
+"status": 401
+
+}
+
+**D. Evidencia en Swagger**
+
+<img src="https://imgur.com/i4sPfsw.png">
+
+<img src="https://imgur.com/7cUfcUc.png">
 
 #### 6.2.3.8. Software Deployment Evidence for Sprint Review
 
 #### 6.2.3.9. Team Collaboration Insights during Sprint
 
-
-### 6.2.4. Validation Interviews
+## 6.3. Validation Interviews
 
 En esta sección, el equipo registra y explica las actividades de entrevistas de validación durante el proyecto. Se debe realizar entrevistas de validación en las que usuarios de los segmentos objetivo interactúen con el landing page y con las aplicaciones de Grotix. El objetivo es comprobar la usabilidad y la correcta resolución de los problemas identificados durante la fase de Needfinding.
 
-#### 6.2.4.1. Diseño de entrevistas
+### 6.3.1. Diseño de entrevistas
 
 En esta sección el equipo establece, por cada segmento objetivo, los elementos a incluir en la sesión de validación, abarcando la presentación de la Landing Page para validar la propuesta de valor y la demostración de la aplicación móvil conectada a los servicios backend. Aquí se especifican los flujos de usuario (User Flows) que formarán parte principal del proceso de validación y las preguntas guía de la sesión.
 
@@ -8001,7 +9748,7 @@ En esta sección el equipo establece, por cada segmento objetivo, los elementos 
 - ¿Aproximadamente cuántas horas de trabajo administrativo estimas que Grotix le ahorraría a tu equipo al centralizar usuarios, contratos y el mantenimiento del hardware IoT en un solo portal?
 - Si pudieras pedir una función extra exclusivamente para tu rol de administrador dentro de esta plataforma, ¿cuál sería y por qué?
 
-#### 6.2.4.2. Registro de entrevistas
+### 6.3.2. Registro de entrevistas
 
 **Segmento Objetivo #1: Productores Independientes de Pequeña y Mediana Escala**
 
@@ -8123,7 +9870,7 @@ Durante la validación de Grotix, Alyssa indicó que uno de los principales prob
 
 Asimismo, señaló que la sección de contratos es clara y fácil de usar, aunque sugirió incluir alertas de renovación y notas internas para mejorar la coordinación. Respecto a los dispositivos, mencionó que la información mostrada es suficiente para ubicar fallas y coordinar soporte técnico. Finalmente, estimó que la plataforma podría generar un ahorro de entre cinco y siete horas semanales, principalmente en la gestión de incidencias y búsqueda de información, y propuso incorporar alertas en tiempo real para mejorar la respuesta operativa.
 
-#### 6.2.4.3. Evaluaciones según heurísticas
+#### 6.3.3. Evaluaciones según heurísticas
 
 **UX Heuristics & Principles Evaluation**
 
@@ -8273,6 +10020,16 @@ Recomendación:
 
 Mostrar el formato esperado explícitamente en el placeholder (p. ej. "DD/MM/AAAA") o apoyarse exclusivamente en un selector de calendario nativo que elimine la ambigüedad de entrada manual.
 
+## 6.4. Video About-the-Product
+
+El presente video ha sido diseñado como una herramienta de comunicación estratégica para presentar nuestra solución integral frente a los retos de la agricultura moderna. El contenido está dirigido a visitantes de nuestra Landing Page y usuarios finales, ofreciendo una visión clara de cómo Grotix optimiza la gestión hídrica mediante hardware IoT resiliente y procesamiento en el borde. A través de una demostración del funcionamiento real de los componentes electrónicos (ESP32), el flujo de la aplicación móvil y la capacidad diagnóstica de nuestra Inteligencia Artificial, el video articula el valor de negocio de Grotix: la capacidad de operar de forma autónoma en entornos de conectividad limitada, transformando la intuición del agricultor en decisiones basadas en datos precisos. La pieza se complementa con un testimonio de validación real que ratifica la reducción de costos operativos y la tranquilidad que nuestra solución aporta a las operaciones agrícolas.
+
+<img src="">
+
+Link del video en Microsoft Streams: [https://upcedupe-my.sharepoint.com/:v:/g/personal/u202312287_upc_edu_pe/IQB_rO1R__CXRrOb6dEIM27bASKboXi3LUS6jOZnjuvsrRo?nav=eyJyZWZlcnJhbEluZm8iOnsicmVmZXJyYWxBcHAiOiJPbmVEcml2ZUZvckJ1c2luZXNzIiwicmVmZXJyYWxBcHBQbGF0Zm9ybSI6IldlYiIsInJlZmVycmFsTW9kZSI6InZpZXciLCJyZWZlcnJhbFZpZXciOiJNeUZpbGVzTGlua0NvcHkifX0&e=1btASA](https://upcedupe-my.sharepoint.com/:v:/g/personal/u202312287_upc_edu_pe/IQB_rO1R__CXRrOb6dEIM27bASKboXi3LUS6jOZnjuvsrRo?nav=eyJyZWZlcnJhbEluZm8iOnsicmVmZXJyYWxBcHAiOiJPbmVEcml2ZUZvckJ1c2luZXNzIiwicmVmZXJyYWxBcHBQbGF0Zm9ybSI6IldlYiIsInJlZmVycmFsTW9kZSI6InZpZXciLCJyZWZlcnJhbFZpZXciOiJNeUZpbGVzTGlua0NvcHkifX0&e=1btASA)
+
+Link del video en YT:
+
 # Conclusiones
 
 * Validación del Modelo de Negocio y Enfoque Lean UX: La consolidación de Grotix como una solución de negocio tecnológicamente viable y financieramente escalable se fundamenta en la ejecución rigurosa del Lean UX Process. Se validó empíricamente que la severa ineficiencia hídrica en el agro peruano —donde el 80% del agua se pierde y el 97.4% de las tierras irrigadas depende del riego por gravedad— puede mitigarse críticamente mediante un ecosistema IoT combinado con Inteligencia Artificial. Este enfoque transforma las prácticas empíricas tradicionales de riego en decisiones técnicas basadas en la precisión de datos en tiempo real, maximizando el valor operativo bajo el modelo Hardware as a Service (HaaS).
@@ -8303,31 +10060,77 @@ Mostrar el formato esperado explícitamente en el placeholder (p. ej. "DD/MM/AAA
 
 # Recomendaciones
 
+Con la finalidad de garantizar la sostenibilidad técnica, la escalabilidad y la futura evolución del ecosistema *Grotix* hacia un entorno de producción industrial bajo el modelo *Hardware as a Service* (HaaS), se formulan las siguientes recomendaciones estratégicas y operativas agrupadas por ejes de ingeniería:
 
+**1. Arquitectura de Software y Diseño Orientado a Dominios**
+
+* Consolidación del Desacoplamiento en la Arquitectura Inicial (.NET): Se recomienda priorizar la estructuración del *Minimum Viable Product* (MVP) asegurando que el esqueleto arquitectónico en .NET refleje estrictamente el desacoplamiento estipulado en las Historias Técnicas de Interoperabilidad (TS02) y Modificabilidad (TS03). La lógica de negocio detallada no debe ser programada antes de validar que los límites lógicos de las capas (*Domain, Application, Infrastructure, Interface*) estén blindados contra dependencias circulares.
+
+* Aislamiento del Core Domain mediante una Capa Anticorrupción (ACL): Es mandatorio implementar un componente ACL riguroso entre el microservicio *Crop Analysis* (IA) y el *Irrigation Cycle Service*. Esto evitará que la complejidad inherente a los modelos de visión artificial e inferencia fenológica contamine el motor transaccional de riego. El contexto de irrigación debe consumir únicamente contratos de datos estables e interfaces limpias, garantizando que futuras actualizaciones, recalibraciones o migraciones de los modelos de IA no fuercen refactorizaciones en la lógica central de negocio.
+
+* Gobernanza Arquitectónica y Revisiones Periódicas: Se sugiere establecer juntas de revisión arquitectónica regulares en las siguientes iteraciones. El objetivo es contrastar la implementación física con los diagramas de contenedores, componentes y el mapa de contextos (*Context Mapping*) definidos en los ciclos ADD 3, 4 y 5, mitigando proactivamente la erosión arquitectónica o el acoplamiento accidental entre microservicios adyacentes.
+
+**2. Ingeniería de Hardware y Resiliencia en el Borde (Edge Computing)**
+
+* Validación de Contratos de Datos mediante PoC Temprana: Se aconseja ejecutar una Prueba de Concepto (PoC) aislada y temprana enfocada de forma exclusiva en validar el intercambio de payloads entre los microcontroladores ESP32 (WROOM/S3) y el backend en C#. Se debe asegurar que las serializaciones y deserializaciones en formato JSON se procesen correctamente bajo condiciones variables de red, mitigando problemas de latencia o desalineación de esquemas antes de la fabricación en serie de los nodos sensores.
+
+* Implementación Prioritaria de Autonomía en el Borde (Edge Autonomy): Ante la latencia e intermitencia crítica de las redes 4G/Wi-Fi en el agro rural peruano, se debe priorizar el desarrollo de la lógica *Store-and-Forward* y el modo de operación degradado en la *Edge App*. El firmware del ESP32 debe ser capaz de ejecutar ciclos de riego programados localmente consultando la base de datos local (*Edge DB*), operando de manera 100% autónoma y encolando la telemetría histórica hasta que el canal de comunicación con el *Message Broker* sea seguro y estable.
+
+**3. Estrategia de Datos y Persistencia Políglota**
+
+* Alineación de la Infraestructura Dual de Persistencia: Es sumamente crítico realizar el setup y la segregación física del almacenamiento transaccional (*Core DB* en MySQL) y el almacenamiento analítico (*Telemetry DB* en TimescaleDB). Se debe asegurar por diseño que no existan consultas cruzadas distribuidas (*cross-context queries*) entre bases de datos de microservicios distintos. Adicionalmente, el *Telemetry Service* debe configurarse para aislar las ráfagas masivas de ingesta de datos concurrentes, evitando la degradación del rendimiento general en recursos compartidos o en planes escalables de infraestructura (como las instancias Azure MySQL Burstable B1ms).
+
+**4. Aseguramiento de la Calidad y Automatización del Pipeline (DevOps)**
+
+* Automatización de la Pirámide de Pruebas en el Ciclo CI/CD: Habiendo establecido suites de pruebas unitarias y de integración (con xUnit para .NET, y frameworks afines), es indispensable automatizar su ejecución mediante *GitHub Actions*. Se recomienda configurar políticas de rama (*Branch Protections*) que bloqueen de forma automática cualquier *Pull Request* o *Merge* hacia la rama develop o main si la cobertura de código cae por debajo del umbral del 80%, o si fallan las pruebas de contrato de la API, impidiendo que el API Gateway exponga contratos rotos.
+
+* Gobernanza Estricta de la Librería Compartida (BuildingBlocks): Dado que se han centralizado las capacidades transversales de infraestructura (autenticación JWT, *Health Checks* de preparación/vida, y abstracciones de Entity Framework) en la librería compartida *BuildingBlocks*, esta debe tratarse internamente como un producto independiente. Cualquier modificación de código en este componente común debe estar sujeta a un proceso riguroso de *Code Review* multipar, previniendo regresiones o fallos en cascada dentro de los microservicios core como *Profiles* y *Cultivation Area*.
+
+* Automatización Estática mediante Linters y Git Hooks: Con el propósito de homogeneizar el código fuente dentro de los cuatro repositorios activos (Landing, Web, Backend, Mobile), se sugiere integrar herramientas de análisis estático (*linters* como StyleCop, ESLint y Pylint) acopladas a *Git Hooks* (mediante herramientas como Husky). Esto obligará a que cada confirmación (*commit*) respete de manera nativa la nomenclatura técnica estrictamente en inglés, las buenas prácticas semánticas y las convenciones de formateo acordadas por la startup *Celevi*.
+
+**5. Infraestructura Cloud y Observabilidad Avanzada**
+
+* Evolución hacia Infraestructura como Código (IaC): Se recomienda migrar la provisión manual realizada en el portal de Azure hacia plantillas declarativas usando *Bicep* o *Terraform*. El almacenamiento de configuraciones de red, contenedores, Azure App Services y las bases de datos en código permitirá replicar el entorno de producción de manera exacta en ambientes de *Staging* o *QA*, reduciendo a cero los errores humanos en el seteo de variables de entorno, cadenas de conexión y *User Secrets*.
+
+* Monitoreo y Observabilidad Post-Despliegue: Aprovechando que los microservicios ya integran endpoints de diagnóstico /api/v1/irrigation/health/live y /ready, el siguiente paso crítico consiste en centralizar estas métricas en *Azure Application Insights*. Se aconseja parametrizar alertas proactivas que notifiquen al equipo de desarrollo ante anomalías en la tasa de transferencia del broker RabbitMQ, incrementos atípicos en la latencia del API Gateway o saturación de memoria por el procesamiento de imágenes, optimizando la tolerancia a fallos del sistema en producción.
+
+**6. Experiencia de Usuario (UI/UX) y Roadmap del Producto**
+
+* Modularización mediante una Librería de Componentes UI: Para resguardar la consistencia visual y la velocidad de desarrollo en las aplicaciones Frontend (Web en Firebase y la App Móvil Android), es altamente recomendable estructurar una librería interna de componentes UI reutilizables basada en las guías de estilo formuladas en el Capítulo V. Esto optimizará los flujos de navegación unificados para productores y cooperativas de exportación.
+
+* Evolución del Roadmap Analítico y del Motor de IA: De cara al futuro comercial de *Grotix*, se sugiere robustecer el microservicio de *Crop Analysis*. El plan de evolución técnica debe priorizar la ingesta de nuevas fuentes de información (imágenes multiespectrales, datos meteorológicos satelitales externos) y ampliar el entrenamiento de los algoritmos para diversificar el catálogo de cultivos compatibles, incrementando con ello la precisión predictiva de las alertas fitosanitarias enviadas a los usuarios de la plataforma.
+
+**7. Gestión del Ciclo de Vida del Hardware IoT y Firmware**
+
+* Implementación de Actualizaciones Remotas (Over-The-Air - OTA): Dado que el modelo HaaS (Hardware as a Service) de Grotix contempla el despliegue de microcontroladores ESP32 en zonas agrícolas rurales y de difícil acceso físico, es mandatorio integrar capacidades de despliegue OTA en el firmware. Esto permitirá a los administradores de la plataforma inyectar parches de seguridad, actualizar credenciales Wi-Fi, o modificar la lógica de calibración de los sensores masivamente desde el backend, reduciendo drásticamente los costos operativos asociados al envío de técnicos al terreno.
+
+* Optimización Energética mediante Estados de Suspensión (Deep Sleep): Para escalar la solución a cultivos extensivos donde no hay acceso a la red eléctrica continua, se recomienda evolucionar el código de los microcontroladores hacia un enfoque de Ultra-Bajo Consumo. Se debe programar el uso del modo Deep Sleep del ESP32, permitiendo que el hardware "despierte" únicamente cada 15 o 30 minutos, encienda el módulo Wi-Fi, envíe la ráfaga de telemetría y vuelva a dormir. Esto, acoplado a paneles solares de bajo amperaje y baterías de litio (ej. 18650), otorgará a los nodos de Grotix una autonomía energética real de meses o años.
+
+* Procesamiento Analítico en el Borde (Edge Analytics) y Filtrado de Ruido: Actualmente, los sensores envían la lectura cruda al backend. Para futuras iteraciones, se recomienda trasladar algoritmos ligeros de procesamiento de señales directamente al firmware del ESP32. Implementar filtros matemáticos (como Promedios Móviles o un Filtro de Kalman básico) en C++ mitigará los falsos positivos derivados de lecturas anómalas (picos de humedad erróneos o fallos del sensor DHT22), asegurando que los *payloads* de telemetría que viajan a la nube sean altamente precisos, ahorrando ancho de banda y minimizando el procesamiento en el servidor.
 
 # Bibliografía
 
-Agencia Andina. (2011, 11 de abril). ANA: 80% del agua destinada a uso agrícola se pierde por deficiencias en riego. https://andina.pe/agencia/noticia-ana-80-del-agua-destinada-a-uso-agricola-se-pierde-deficiencias-riego-343493.aspx
+Agencia Andina. (2011, 11 de abril). ANA: 80% del agua destinada a uso agrícola se pierde por deficiencias en riego. [https://andina.pe/agencia/noticia-ana-80-del-agua-destinada-a-uso-agricola-se-pierde-deficiencias-riego-343493.aspx](https://andina.pe/agencia/noticia-ana-80-del-agua-destinada-a-uso-agricola-se-pierde-deficiencias-riego-343493.aspx)
 
 AgroPerú. (2024, noviembre 8). Déficit hídrico amenaza la campaña agrícola 2024–2025. [AgroPerú](https://www.agroperu.pe/deficit-hidrico-amenaza-la-campana-agricola-2024-2025/?utm_source=chatgpt.com)
 
-Alvarez, A. (2020, 5 de agosto). 5W2H: Qué significa, para qué sirve, cómo aplicarla y algunos ejemplos. LeanConstructionMexico. https://www.leanconstructionmexico.com.mx/post/5w2h-qué-significa-para-qué-sirve-cómo-aplicarla-y-algunos-ejemplos
+Alvarez, A. (2020, 5 de agosto). 5W2H: Qué significa, para qué sirve, cómo aplicarla y algunos ejemplos. LeanConstructionMexico. [https://www.leanconstructionmexico.com.mx/post/5w2h-qué-significa-para-qué-sirve-cómo-aplicarla-y-algunos-ejemplos](https://www.leanconstructionmexico.com.mx/post/5w2h-qué-significa-para-qué-sirve-cómo-aplicarla-y-algunos-ejemplos)
 
 Centro Nacional de Planeamiento Estratégico. (s. f.). Ficha R10: Agricultura (Observatorio Nacional de Prospectiva). [CEPLAN](https://observatorio.ceplan.gob.pe/ficha/r10_an?utm_source=chatgpt.com)
 
-Centro Peruano de Estudios Sociales (CEPES). (2024). Índice Global del Hambre (IGH) 2024: Informe Perú. https://cepes.org.pe/
+Centro Peruano de Estudios Sociales (CEPES). (2024). Índice Global del Hambre (IGH) 2024: Informe Perú. [https://cepes.org.pe/](https://cepes.org.pe/)
 
 Garay Canales, O. B. (2009). Manual de uso consuntivo del agua para los principales cultivos de los Andes centrales peruanos. [Instituto Geofísico del Perú](http://met.igp.gob.pe/proyectos/incagro/datos/ManualConsuntivo.pdf?utm_source=chatgpt.com)
 
-Escobal, J., Trivelli, C., & Revesz, B. (2006). Pequeña agricultura comercial: dinámica y retos en el Perú. Consorcio de Investigación Económica y Social (CIES), Centro de Investigación y Promoción del Campesinado (CIPCA), Instituto de Estudios Peruanos (IEP) y Grupo de Análisis para el Desarrollo (GRADE). https://www.grade.org.pe/upload/publicaciones/archivo/download/pubs/LIBROGRADE_PEQUENAAGRICULTURACOMERCIAL.pdf
+Escobal, J., Trivelli, C., & Revesz, B. (2006). Pequeña agricultura comercial: dinámica y retos en el Perú. Consorcio de Investigación Económica y Social (CIES), Centro de Investigación y Promoción del Campesinado (CIPCA), Instituto de Estudios Peruanos (IEP) y Grupo de Análisis para el Desarrollo (GRADE). [https://www.grade.org.pe/upload/publicaciones/archivo/download/pubs/LIBROGRADE_PEQUENAAGRICULTURACOMERCIAL.pdf](https://www.grade.org.pe/upload/publicaciones/archivo/download/pubs/LIBROGRADE_PEQUENAAGRICULTURACOMERCIAL.pdf)
 
-Excélsior Digital. (2022, 6 de abril). Sector agrícola ocupa hasta 76% de agua del país; es también en el que más se desperdicia. https://www.excelsior.com.mx/nacional/sector-agricola-ocupa-hasta-76-de-agua-del-pais-es-tambien-es-el-que-mas-la-desperdicia 
+Excélsior Digital. (2022, 6 de abril). Sector agrícola ocupa hasta 76% de agua del país; es también en el que más se desperdicia. [https://www.excelsior.com.mx/nacional/sector-agricola-ocupa-hasta-76-de-agua-del-pais-es-tambien-es-el-que-mas-la-desperdicia](https://www.excelsior.com.mx/nacional/sector-agricola-ocupa-hasta-76-de-agua-del-pais-es-tambien-es-el-que-mas-la-desperdicia)
 
 Iberico, J. (2016). Abastecimiento de agua para la agricultura en la costa. En Revista Moneda, (N.º 168). [Banco Central de Reserva del Perú](https://www.bcrp.gob.pe/docs/Publicaciones/Revista-Moneda/moneda-168/moneda-168-07.pdf?utm_source=chatgpt.com)
 
-Instituto Nacional de Estadística e Informática. (2023). Encuesta Nacional Agropecuaria 2022: Principales Resultados. Lima: Instituto Nacional de Estadística e Informática. Recuperado de https://www.inei.gob.pe/media/MenuRecursivo/publicaciones_digitales/Est/Lib1912/libro.pdf
+Instituto Nacional de Estadística e Informática. (2023). Encuesta Nacional Agropecuaria 2022: Principales Resultados. Lima: Instituto Nacional de Estadística e Informática. Recuperado de [https://www.inei.gob.pe/media/MenuRecursivo/publicaciones_digitales/Est/Lib1912/libro.pdf](https://www.inei.gob.pe/media/MenuRecursivo/publicaciones_digitales/Est/Lib1912/libro.pdf)
 
-Instituto Nacional de Estadística e Informática. (2023). Sistema de monitoreo y seguimiento de los indicadores de los Objetivos de Desarrollo Sostenible. https://ods.inei.gob.pe/ods/
+Instituto Nacional de Estadística e Informática. (2023). Sistema de monitoreo y seguimiento de los indicadores de los Objetivos de Desarrollo Sostenible. [https://ods.inei.gob.pe/ods/](https://ods.inei.gob.pe/ods/)
 
 Instituto Nacional de Estadística e Informática. (2024). La agricultura familiar en el Perú: Retos y posibilidades para su transformación en el contexto de los Objetivos de Desarrollo Sostenible (ODS). [INEI](https://www.inei.gob.pe/media/MenuRecursivo/investigaciones/agricultura-familiar-en-el-peru.pdf?utm_source=chatgpt.com)
 
@@ -8339,16 +10142,17 @@ Montaño, F. (2023, noviembre 5). La crisis histórica del agro impacta y amenaz
 
 Nagel, J. (2012). Principales barreras para la adopción de las TIC en la agricultura y en las áreas rurales. Comisión Económica para América Latina y el Caribe (CEPAL). [CEPAL](https://www.cepal.org/es/publicaciones/4011-principales-barreras-la-adopcion-tic-la-agricultura-areas-rurales?utm_source=chatgpt.com)
 
-Organización de las Naciones Unidas para la Alimentación y la Agricultura (FAO). (2024). El estado de la seguridad alimentaria y la nutrición en el mundo (SOFI) 2024. https://www.fao.org/publications/sofi/es/ 
+Organización de las Naciones Unidas para la Alimentación y la Agricultura (FAO). (2024). El estado de la seguridad alimentaria y la nutrición en el mundo (SOFI) 2024. [https://www.fao.org/publications/sofi/es/](https://www.fao.org/publications/sofi/es/) 
 
 Pintado, M. (2022, agosto 22). Calendario agrícola, fertilizantes y seguridad alimentaria. [Centro Peruano de Estudios Sociales](https://cepes.org.pe/2022/08/22/calendario-agricola-fertilizantes-y-seguridad-alimentaria/?utm_source=chatgpt.com)
 
 Pontificia Universidad Católica del Perú. (2024, abril 11). Los impactos de las sequías en el Perú. [Clima de Cambios PUCP](https://www.pucp.edu.pe/climadecambios/noticias/los-impactos-de-las-sequias-en-el-peru/?utm_source=chatgpt.com)
 
-Programa Subsectorial de Irrigaciones (PSI). (2009, abril). El Programa Subsectorial de Irrigaciones y la tecnificación del riego en el Perú. Ministerio de Agricultura. https://repositorio.midagri.gob.pe/bitstream/20.500.13036/418/1/Riego%20tecnificado.pdf
+Programa Subsectorial de Irrigaciones (PSI). (2009, abril). El Programa Subsectorial de Irrigaciones y la tecnificación del riego en el Perú. Ministerio de Agricultura. [https://repositorio.midagri.gob.pe/bitstream/20.500.13036/418/1/Riego%20tecnificado.pdf](https://repositorio.midagri.gob.pe/bitstream/20.500.13036/418/1/Riego%20tecnificado.pdf)
+
 Ramos, E. (2025, septiembre 3). Tecnologías IoT buscan transformar la agricultura peruana. [Agraria.pe](http://Agraria.pe)
 
-Rivadeneira, A. A. (2024). Avances y desafíos del ODS 2: Hambre cero [Presentación]. Foro de los Países de América Latina y el Caribe sobre el Desarrollo Sostenible 2024, CEPAL. https://foroalc2030.cepal.org/2024/sites/foro2024/files/presentations/mesa_2-peru-rivadeneira-_ods_2_hambre_cero.pdf
+Rivadeneira, A. A. (2024). Avances y desafíos del ODS 2: Hambre cero [Presentación]. Foro de los Países de América Latina y el Caribe sobre el Desarrollo Sostenible 2024, CEPAL. [https://foroalc2030.cepal.org/2024/sites/foro2024/files/presentations/mesa_2-peru-rivadeneira-_ods_2_hambre_cero.pdf](https://foroalc2030.cepal.org/2024/sites/foro2024/files/presentations/mesa_2-peru-rivadeneira-_ods_2_hambre_cero.pdf)
 
 Sociedad de Comercio Exterior del Perú. (2024, agosto 16). 1 de cada 5 peruanos padece de inseguridad alimentaria grave. [ComexPerú](https://www.comexperu.org.pe/articulo/1-de-cada-5-peruanos-padece-de-inseguridad-alimentaria-grave?utm_source=chatgpt.com)
 
@@ -8384,31 +10188,83 @@ _Nota. Adaptado de Perú: Indicadores de Resultados de los Programas Presupuesta
 
 # Links
 
-Celevi. 2026. Diagrama de Actividades y estados. https://lucid.app/lucidchart/c8bcf184-0676-40f7-8347-263e3babf686/edit?view_items=SgYRUQgH.nII&page=0_0&invitationId=inv_3a2bf95b-b22a-4add-b99f-02d0ed853fee
+Celevi. 2026. Github Repository for Crop Analysis Service. [https://github.com/CeleviGrotix/Grotix_Crop_Analysis](https://github.com/CeleviGrotix/Grotix_Crop_Analysis)
 
-Celevi. 2026. Diagrama de clase. https://lucid.app/lucidchart/c28cc6bf-8486-4dbb-ba7f-a3210df48a5c/edit?viewport_loc=-3394%2C-1465%2C6925%2C3224%2C0_0&invitationId=inv_67cd59c7-5703-4cb1-8122-5312a9ed8259 
+Celevi. 2026. Github Repository for Edge App. [https://github.com/CeleviGrotix/Grotix_Edge](https://github.com/CeleviGrotix/Grotix_Edge)
 
-Celevi. 2026. Diagrama de base de datos. https://lucid.app/lucidchart/ecbadf35-cf2e-4657-9e6e-2cc36ad54304/edit?viewport_loc=-1240%2C-788%2C3271%2C1482%2C0_0&invitationId=inv_a764d72e-3f6f-41cc-9bb1-5cd2f9f05490
+Celevi. 2026. Github Repository for Embedded App. [https://github.com/CeleviGrotix/Grotix_Embedded](https://github.com/CeleviGrotix/Grotix_Embedded)
 
-Celevi. 2026. Esquemas realizados con UXPRESIA. https://drive.google.com/drive/folders/1AcRLc0XIIurTc_4bcvQW3vW6aLwbFvW2?usp=sharing
+Celevi. 2026. Github Repository for Grotix Landing Page. [https://github.com/CeleviGrotix/Grotix_LandingPage](https://github.com/CeleviGrotix/Grotix_LandingPage)
 
-Celevi. 2026. Grotix Diagrams. https://upcedupe-my.sharepoint.com/:b:/g/personal/u202312287_upc_edu_pe/IQAn8hVFx5EfTb4P72xVU794AZD90knyfQ6wPBYvp6LSBL4?e=7EV2FV
+Celevi. 2026. Github Repository for Grotix Mobile Application. [https://github.com/CeleviGrotix/Grotix_Mobile](https://github.com/CeleviGrotix/Grotix_Mobile)
 
-Celevi. 2026. Grotix EventStorming.
-https://miro.com/welcomeonboard/RHE0Z0ZHYlYxSVU3Y0ozTjEya3JETTc1NzIyVmsyYy9UMHBEN0ovRUF2RDdEbjRQZFBpUEZ3a3lubXRFc0d1NzhHdkNvZUZHeElDWDFRc0lsZEVWUy9GYTVRRWtwZVF5enJyVlpZUzdXQmtYVUp1a2FIVXdESDJDVllXSEZYaXh3VHhHVHd5UWtSM1BidUtUYmxycDRnPT0hdjE=?share_link_id=31489203478
+Celevi. 2026. Github Repository for Grotix Report. [https://github.com/CeleviGrotix/Grotix_IoT_Report](https://github.com/CeleviGrotix/Grotix_IoT_Report)
 
-Celevi. 2026. Lean UX Canvas. https://docs.google.com/document/d/1v9oqi4oCp-7cLg5QIZMB1egRKy5mVaJw/edit?usp=sharing&ouid=112054289490328588638&rtpof=true&sd=true
+Celevi. 2026. Github Repository for Grotix Web Application. [https://github.com/CeleviGrotix/Grotix_Web](https://github.com/CeleviGrotix/Grotix_Web)
 
-Celevi. 2026. Proyecto en Jira. https://sacsayhuamanlover.atlassian.net/jira/software/projects/GTX/boards/2?atlOrigin=eyJpIjoiODViNjFlOWI0MjA5NDY1NzgyZWMyNDFjYzc1N2ZlNmIiLCJwIjoiaiJ9 
+Celevi. 2026. Github Repository for Grotix Web Services. [https://github.com/CeleviGrotix/Grotix_Web_Services](https://github.com/CeleviGrotix/Grotix_Web_Services)
 
-Celevi. 2026. Segmento_1_As-Is/To-Be. https://miro.com/app/board/uXjVGjm4oO4=/?share_link_id=832410871375 
+Celevi. 2026. Diagrama de Actividades y estados. [https://lucid.app/lucidchart/c8bcf184-0676-40f7-8347-263e3babf686/edit?view_items=SgYRUQgH.nII&page=0_0&invitationId=inv_3a2bf95b-b22a-4add-b99f-02d0ed853fee](https://lucid.app/lucidchart/c8bcf184-0676-40f7-8347-263e3babf686/edit?view_items=SgYRUQgH.nII&page=0_0&invitationId=inv_3a2bf95b-b22a-4add-b99f-02d0ed853fee)
 
-Celevi. 2026. Segmento_2_As-Is/To-Be. https://miro.com/app/board/uXjVJHVbkR8=/ 
+Celevi. 2026. Diagrama de clase. [https://lucid.app/lucidchart/c28cc6bf-8486-4dbb-ba7f-a3210df48a5c/edit?viewport_loc=-3394%2C-1465%2C6925%2C3224%2C0_0&invitationId=inv_67cd59c7-5703-4cb1-8122-5312a9ed8259](https://lucid.app/lucidchart/c28cc6bf-8486-4dbb-ba7f-a3210df48a5c/edit?viewport_loc=-3394%2C-1465%2C6925%2C3224%2C0_0&invitationId=inv_67cd59c7-5703-4cb1-8122-5312a9ed8259)
 
-Celevi. 2026. Sprint Backlog 2 en Jira,
-https://cassiusmartel21042006-1776311272559.atlassian.net/jira/software/projects/GSB2/list?jql=project%20%3D%20GSB2%20ORDER%20BY%20cf%5B10019%5D%20ASC
+Celevi. 2026. Diagrama de base de datos. [https://lucid.app/lucidchart/ecbadf35-cf2e-4657-9e6e-2cc36ad54304/edit?viewport_loc=-1240%2C-788%2C3271%2C1482%2C0_0&invitationId=inv_a764d72e-3f6f-41cc-9bb1-5cd2f9f05490](https://lucid.app/lucidchart/ecbadf35-cf2e-4657-9e6e-2cc36ad54304/edit?viewport_loc=-1240%2C-788%2C3271%2C1482%2C0_0&invitationId=inv_a764d72e-3f6f-41cc-9bb1-5cd2f9f05490)
 
-Celevi. 2026. Api gateway service. https://grotixgateway1-hrftg6a4gqf0fqhd.chilecentral-01.azurewebsites.net/
+Celevi. 2026. Esquemas realizados con UXPRESIA. [https://drive.google.com/drive/folders/1AcRLc0XIIurTc_4bcvQW3vW6aLwbFvW2?usp=sharing](https://drive.google.com/drive/folders/1AcRLc0XIIurTc_4bcvQW3vW6aLwbFvW2?usp=sharing)
+
+Celevi. 2026. Grotix Diagrams. [https://upcedupe-my.sharepoint.com/:b:/g/personal/u202312287_upc_edu_pe/IQAn8hVFx5EfTb4P72xVU794AZD90knyfQ6wPBYvp6LSBL4?e=7EV2FV](https://upcedupe-my.sharepoint.com/:b:/g/personal/u202312287_upc_edu_pe/IQAn8hVFx5EfTb4P72xVU794AZD90knyfQ6wPBYvp6LSBL4?e=7EV2FV)
+
+Celevi. 2026. Grotix EventStorming. [https://miro.com/welcomeonboard/RHE0Z0ZHYlYxSVU3Y0ozTjEya3JETTc1NzIyVmsyYy9UMHBEN0ovRUF2RDdEbjRQZFBpUEZ3a3lubXRFc0d1NzhHdkNvZUZHeElDWDFRc0lsZEVWUy9GYTVRRWtwZVF5enJyVlpZUzdXQmtYVUp1a2FIVXdESDJDVllXSEZYaXh3VHhHVHd5UWtSM1BidUtUYmxycDRnPT0hdjE=?share_link_id=31489203478](https://miro.com/welcomeonboard/RHE0Z0ZHYlYxSVU3Y0ozTjEya3JETTc1NzIyVmsyYy9UMHBEN0ovRUF2RDdEbjRQZFBpUEZ3a3lubXRFc0d1NzhHdkNvZUZHeElDWDFRc0lsZEVWUy9GYTVRRWtwZVF5enJyVlpZUzdXQmtYVUp1a2FIVXdESDJDVllXSEZYaXh3VHhHVHd5UWtSM1BidUtUYmxycDRnPT0hdjE=?share_link_id=31489203478)
+
+Celevi. 2026. *Lean UX Canvas*. [https://docs.google.com/document/d/1v9oqi4oCp-7cLg5QIZMB1egRKy5mVaJw/edit?usp=sharing&ouid=112054289490328588638&rtpof=true&sd=true](https://docs.google.com/document/d/1v9oqi4oCp-7cLg5QIZMB1egRKy5mVaJw/edit?usp=sharing&ouid=112054289490328588638&rtpof=true&sd=true)
+
+Celevi. 2026. Proyecto en Jira. [https://sacsayhuamanlover.atlassian.net/jira/software/projects/GTX/boards/2?atlOrigin=eyJpIjoiODViNjFlOWI0MjA5NDY1NzgyZWMyNDFjYzc1N2ZlNmIiLCJwIjoiaiJ9](https://sacsayhuamanlover.atlassian.net/jira/software/projects/GTX/boards/2?atlOrigin=eyJpIjoiODViNjFlOWI0MjA5NDY1NzgyZWMyNDFjYzc1N2ZlNmIiLCJwIjoiaiJ9)
+
+Celevi. 2026. Segmento_1_As-Is/To-Be. [https://miro.com/app/board/uXjVGjm4oO4=/?share_link_id=832410871375](https://miro.com/app/board/uXjVGjm4oO4=/?share_link_id=832410871375)
+
+Celevi. 2026. Segmento_2_As-Is/To-Be. [https://miro.com/app/board/uXjVJHVbkR8=/](https://miro.com/app/board/uXjVJHVbkR8=/)
+
+Celevi. 2026. Sprint Backlog 2 en Jira. [https://cassiusmartel21042006-1776311272559.atlassian.net/jira/software/projects/GSB2/list?jql=project%20%3D%20GSB2%20ORDER%20BY%20cf%5B10019%5D%20ASC](https://cassiusmartel21042006-1776311272559.atlassian.net/jira/software/projects/GSB2/list?jql=project%20%3D%20GSB2%20ORDER%20BY%20cf%5B10019%5D%20ASC)
+
+Celevi. 2026. Api gateway service. [https://grotixgateway1-hrftg6a4gqf0fqhd.chilecentral-01.azurewebsites.net/](https://grotixgateway1-hrftg6a4gqf0fqhd.chilecentral-01.azurewebsites.net/)
+
+Celevi. 2026. Profile service. [http://grotixprofile-byc3drb9gqe9epev.chilecentral-01.azurewebsites.net/swagger/](http://grotixprofile-byc3drb9gqe9epev.chilecentral-01.azurewebsites.net/swagger/)
+
+Celevi. 2026. Cultivation area service. [http://grotixcultivationarea-c5d8hhd3c2defwda.chilecentral-01.azurewebsites.net/swagger/](http://grotixcultivationarea-c5d8hhd3c2defwda.chilecentral-01.azurewebsites.net/swagger/)
+
+Celevi. 2026. Hardware device service. [http://grotixhardware-dsfucydsavcyhffw.chilecentral-01.azurewebsites.net/swagger/](http://grotixhardware-dsfucydsavcyhffw.chilecentral-01.azurewebsites.net/swagger/)
+
+Celevi. 2026. Irrigation cycle service. [http://grotixirrigationcycle-enbkhfe7a4cye2cm.chilecentral-01.azurewebsites.net/swagger/](http://grotixirrigationcycle-enbkhfe7a4cye2cm.chilecentral-01.azurewebsites.net/swagger/)
+
+Celevi. 2026. Telemetry service. [http://grotixtelemetry-amakfshkb4ahbsbm.chilecentral-01.azurewebsites.net/swagger/](http://grotixtelemetry-amakfshkb4ahbsbm.chilecentral-01.azurewebsites.net/swagger/)
+
+Celevi. 2026. Web Application. [https://grotixweb.web.app/](https://grotixweb.web.app/)
+
+Celevi. 2026. Execution evidence for sprint review 1. [https://upcedupe-my.sharepoint.com/:v:/g/personal/u20201f855_upc_edu_pe/IQAX8Qlo6yS-TYuInq-CellWAQNakaunluneG2IIEWIgkZE?nav=eyJyZWZlcnJhbEluZm8iOnsicmVmZXJyYWxBcHAiOiJPbmVEcml2ZUZvckJ1c2luZXNzIiwicmVmZXJyYWxBcHBQbGF0Zm9ybSI6IldlYiIsInJlZmVycmFsTW9kZSI6InZpZXciLCJyZWZlcnJhbFZpZXciOiJNeUZpbGVzTGlua0NvcHkifX0&e=NXcnhZ](https://upcedupe-my.sharepoint.com/:v:/g/personal/u20201f855_upc_edu_pe/IQAX8Qlo6yS-TYuInq-CellWAQNakaunluneG2IIEWIgkZE?nav=eyJyZWZlcnJhbEluZm8iOnsicmVmZXJyYWxBcHAiOiJPbmVEcml2ZUZvckJ1c2luZXNzIiwicmVmZXJyYWxBcHBQbGF0Zm9ybSI6IldlYiIsInJlZmVycmFsTW9kZSI6InZpZXciLCJyZWZlcnJhbFZpZXciOiJNeUZpbGVzTGlua0NvcHkifX0&e=NXcnhZ)
+
+Celevi. 2026. Execution evidence for sprint review 2. [https://upcedupe-my.sharepoint.com/personal/u202311157_upc_edu_pe/_layouts/15/stream.aspx?id=%2Fpersonal%2Fu202311157%5Fupc%5Fedu%5Fpe%2FDocuments%2FExecutionEvidenceAppWebSP2%2Emp4&nav=eyJyZWZlcnJhbEluZm8iOnsicmVmZXJyYWxBcHAiOiJTdHJlYW1XZWJBcHAiLCJyZWZlcnJhbFZpZXciOiJTaGFyZURpYWxvZy1MaW5rIiwicmVmZXJyYWxBcHBQbGF0Zm9ybSI6IldlYiIsInJlZmVycmFsTW9kZSI6InZpZXcifX0&ga=1&referrer=StreamWebApp%2EWeb&referrerScenario=AddressBarCopied%2Eview%2E7e736a7c%2D5e8a%2D4772%2Db375%2Dcddccb03b13d](https://upcedupe-my.sharepoint.com/personal/u202311157_upc_edu_pe/_layouts/15/stream.aspx?id=%2Fpersonal%2Fu202311157%5Fupc%5Fedu%5Fpe%2FDocuments%2FExecutionEvidenceAppWebSP2%2Emp4&nav=eyJyZWZlcnJhbEluZm8iOnsicmVmZXJyYWxBcHAiOiJTdHJlYW1XZWJBcHAiLCJyZWZlcnJhbFZpZXciOiJTaGFyZURpYWxvZy1MaW5rIiwicmVmZXJyYWxBcHBQbGF0Zm9ybSI6IldlYiIsInJlZmVycmFsTW9kZSI6InZpZXcifX0&ga=1&referrer=StreamWebApp%2EWeb&referrerScenario=AddressBarCopied%2Eview%2E7e736a7c%2D5e8a%2D4772%2Db375%2Dcddccb03b13d)
+
+Celevi. 2026. Diagrama de clase. [https://lucid.app/lucidchart/c28cc6bf-8486-4dbb-ba7f-a3210df48a5c/edit?viewport_loc=-3394%2C-1465%2C6925%2C3224%2C0_0&invitationId=inv_67cd59c7-5703-4cb1-8122-5312a9ed8259](https://lucid.app/lucidchart/c28cc6bf-8486-4dbb-ba7f-a3210df48a5c/edit?viewport_loc=-3394%2C-1465%2C6925%2C3224%2C0_0&invitationId=inv_67cd59c7-5703-4cb1-8122-5312a9ed8259)
+
+Celevi. 2026. Diagrama de base de datos. [https://lucid.app/lucidchart/ecbadf35-cf2e-4657-9e6e-2cc36ad54304/edit?viewport_loc=-1240%2C-788%2C3271%2C1482%2C0_0&invitationId=inv_a764d72e-3f6f-41cc-9bb1-5cd2f9f05490](https://lucid.app/lucidchart/ecbadf35-cf2e-4657-9e6e-2cc36ad54304/edit?viewport_loc=-1240%2C-788%2C3271%2C1482%2C0_0&invitationId=inv_a764d72e-3f6f-41cc-9bb1-5cd2f9f05490)
+
+Celevi. 2026. Esquemas realizados con UXPRESIA. [https://drive.google.com/drive/folders/1AcRLc0XIIurTc_4bcvQW3vW6aLwbFvW2?usp=sharing](https://drive.google.com/drive/folders/1AcRLc0XIIurTc_4bcvQW3vW6aLwbFvW2?usp=sharing)
+
+Celevi. 2026. Grotix Diagrams. [https://upcedupe-my.sharepoint.com/:b:/g/personal/u202312287_upc_edu_pe/IQAn8hVFx5EfTb4P72xVU794AZD90knyfQ6wPBYvp6LSBL4?e=7EV2FV](https://upcedupe-my.sharepoint.com/:b:/g/personal/u202312287_upc_edu_pe/IQAn8hVFx5EfTb4P72xVU794AZD90knyfQ6wPBYvp6LSBL4?e=7EV2FV)
+
+Celevi. 2026. Grotix EventStorming. [https://miro.com/welcomeonboard/RHE0Z0ZHYlYxSVU3Y0ozTjEya3JETTc1NzIyVmsyYy9UMHBEN0ovRUF2RDdEbjRQZFBpUEZ3a3lubXRFc0d1NzhHdkNvZUZHeElDWDFRc0lsZEVWUy9GYTVRRWtwZVF5enJyVlpZUzdXQmtYVUp1a2FIVXdESDJDVllXSEZYaXh3VHhHVHd5UWtSM1BidUtUYmxycDRnPT0hdjE=?share_link_id=31489203478](https://miro.com/welcomeonboard/RHE0Z0ZHYlYxSVU3Y0ozTjEya3JETTc1NzIyVmsyYy9UMHBEN0ovRUF2RDdEbjRQZFBpUEZ3a3lubXRFc0d1NzhHdkNvZUZHeElDWDFRc0lsZEVWUy9GYTVRRWtwZVF5enJyVlpZUzdXQmtYVUp1a2FIVXdESDJDVllXSEZYaXh3VHhHVHd5UWtSM1BidUtUYmxycDRnPT0hdjE=?share_link_id=31489203478)
+
+Celevi. 2026. Lean UX Canvas. [https://docs.google.com/document/d/1v9oqi4oCp-7cLg5QIZMB1egRKy5mVaJw/edit?usp=sharing&ouid=112054289490328588638&rtpof=true&sd=true](https://docs.google.com/document/d/1v9oqi4oCp-7cLg5QIZMB1egRKy5mVaJw/edit?usp=sharing&ouid=112054289490328588638&rtpof=true&sd=true)
+
+Celevi. 2026. Proyecto en Jira. [https://sacsayhuamanlover.atlassian.net/jira/software/projects/GTX/boards/2?atlOrigin=eyJpIjoiODViNjFlOWI0MjA5NDY1NzgyZWMyNDFjYzc1N2ZlNmIiLCJwIjoiaiJ9](https://sacsayhuamanlover.atlassian.net/jira/software/projects/GTX/boards/2?atlOrigin=eyJpIjoiODViNjFlOWI0MjA5NDY1NzgyZWMyNDFjYzc1N2ZlNmIiLCJwIjoiaiJ9)
+
+Celevi. 2026. Segmento_1_As-Is/To-Be. [https://miro.com/app/board/uXjVGjm4oO4=/?share_link_id=832410871375](https://miro.com/app/board/uXjVGjm4oO4=/?share_link_id=832410871375)
+
+Celevi. 2026. Segmento_2_As-Is/To-Be. [https://miro.com/app/board/uXjVJHVbkR8=/](https://miro.com/app/board/uXjVJHVbkR8=/)
+
+Celevi. 2026. Sprint Backlog 2 en Jira. [https://cassiusmartel21042006-1776311272559.atlassian.net/jira/software/projects/GSB2/list?jql=project%20%3D%20GSB2%20ORDER%20BY%20cf%5B10019%5D%20ASC](https://cassiusmartel21042006-1776311272559.atlassian.net/jira/software/projects/GSB2/list?jql=project%20%3D%20GSB2%20ORDER%20BY%20cf%5B10019%5D%20ASC)
+
+Celevi. 2026. Api gateway service. [https://grotixgateway1-hrftg6a4gqf0fqhd.chilecentral-01.azurewebsites.net/](https://grotixgateway1-hrftg6a4gqf0fqhd.chilecentral-01.azurewebsites.net/)
 
 Celevi. 2026. Profile service. [grotixprofile-byc3drb9gqe9epev.chilecentral-01.azurewebsites.net/swagger/](http://grotixprofile-byc3drb9gqe9epev.chilecentral-01.azurewebsites.net/swagger/)
 
@@ -8420,10 +10276,13 @@ Celevi. 2026. Irrigation cycle service. [grotixirrigationcycle-enbkhfe7a4cye2cm.
 
 Celevi. 2026. [Telemetry service. grotixtelemetry-amakfshkb4ahbsbm.chilecentral-01.azurewebsites.net/swagger/](http://grotixirrigationcycle-enbkhfe7a4cye2cm.chilecentral-01.azurewebsites.net/swagger/)
 
-Celevi. 2026. Web Application. https://grotixweb.web.app/
+Celevi. 2026. Web Application. [https://grotixweb.web.app/](https://grotixweb.web.app/)
 
-Celevi. 2026. Execution evidence for sprint review 1. https://upcedupe-my.sharepoint.com/:v:/g/personal/u20201f855_upc_edu_pe/IQAX8Qlo6yS-TYuInq-CellWAQNakaunluneG2IIEWIgkZE?nav=eyJyZWZlcnJhbEluZm8iOnsicmVmZXJyYWxBcHAiOiJPbmVEcml2ZUZvckJ1c2luZXNzIiwicmVmZXJyYWxBcHBQbGF0Zm9ybSI6IldlYiIsInJlZmVycmFsTW9kZSI6InZpZXciLCJyZWZlcnJhbFZpZXciOiJNeUZpbGVzTGlua0NvcHkifX0&e=NXcnhZ
+Celevi. 2026. Execution evidence for sprint review 1. [https://upcedupe-my.sharepoint.com/:v:/g/personal/u20201f855_upc_edu_pe/IQAX8Qlo6yS-TYuInq-CellWAQNakaunluneG2IIEWIgkZE?nav=eyJyZWZlcnJhbEluZm8iOnsicmVmZXJyYWxBcHAiOiJPbmVEcml2ZUZvckJ1c2luZXNzIiwicmVmZXJyYWxBcHBQbGF0Zm9ybSI6IldlYiIsInJlZmVycmFsTW9kZSI6InZpZXciLCJyZWZlcnJhbFZpZXciOiJNeUZpbGVzTGlua0NvcHkifX0&e=NXcnhZ](https://upcedupe-my.sharepoint.com/:v:/g/personal/u20201f855_upc_edu_pe/IQAX8Qlo6yS-TYuInq-CellWAQNakaunluneG2IIEWIgkZE?nav=eyJyZWZlcnJhbEluZm8iOnsicmVmZXJyYWxBcHAiOiJPbmVEcml2ZUZvckJ1c2luZXNzIiwicmVmZXJyYWxBcHBQbGF0Zm9ybSI6IldlYiIsInJlZmVycmFsTW9kZSI6InZpZXciLCJyZWZlcnJhbFZpZXciOiJNeUZpbGVzTGlua0NvcHkifX0&e=NXcnhZ)
 
 
-Celevi. 2026. Execution evidence for sprint review 2. https://upcedupe-my.sharepoint.com/personal/u202311157_upc_edu_pe/_layouts/15/stream.aspx?id=%2Fpersonal%2Fu202311157%5Fupc%5Fedu%5Fpe%2FDocuments%2FExecutionEvidenceAppWebSP2%2Emp4&nav=eyJyZWZlcnJhbEluZm8iOnsicmVmZXJyYWxBcHAiOiJTdHJlYW1XZWJBcHAiLCJyZWZlcnJhbFZpZXciOiJTaGFyZURpYWxvZy1MaW5rIiwicmVmZXJyYWxBcHBQbGF0Zm9ybSI6IldlYiIsInJlZmVycmFsTW9kZSI6InZpZXcifX0&ga=1&referrer=StreamWebApp%2EWeb&referrerScenario=AddressBarCopied%2Eview%2E7e736a7c%2D5e8a%2D4772%2Db375%2Dcddccb03b13d
+Celevi. 2026. Execution evidence for sprint review 2. [https://upcedupe-my.sharepoint.com/personal/u202311157_upc_edu_pe/_layouts/15/stream.aspx?id=%2Fpersonal%2Fu202311157%5Fupc%5Fedu%5Fpe%2FDocuments%2FExecutionEvidenceAppWebSP2%2Emp4&nav=eyJyZWZlcnJhbEluZm8iOnsicmVmZXJyYWxBcHAiOiJTdHJlYW1XZWJBcHAiLCJyZWZlcnJhbFZpZXciOiJTaGFyZURpYWxvZy1MaW5rIiwicmVmZXJyYWxBcHBQbGF0Zm9ybSI6IldlYiIsInJlZmVycmFsTW9kZSI6InZpZXcifX0&ga=1&referrer=StreamWebApp%2EWeb&referrerScenario=AddressBarCopied%2Eview%2E7e736a7c%2D5e8a%2D4772%2Db375%2Dcddccb03b13d](https://upcedupe-my.sharepoint.com/personal/u202311157_upc_edu_pe/_layouts/15/stream.aspx?id=%2Fpersonal%2Fu202311157%5Fupc%5Fedu%5Fpe%2FDocuments%2FExecutionEvidenceAppWebSP2%2Emp4&nav=eyJyZWZlcnJhbEluZm8iOnsicmVmZXJyYWxBcHAiOiJTdHJlYW1XZWJBcHAiLCJyZWZlcnJhbFZpZXciOiJTaGFyZURpYWxvZy1MaW5rIiwicmVmZXJyYWxBcHBQbGF0Zm9ybSI6IldlYiIsInJlZmVycmFsTW9kZSI6InZpZXcifX0&ga=1&referrer=StreamWebApp%2EWeb&referrerScenario=AddressBarCopied%2Eview%2E7e736a7c%2D5e8a%2D4772%2Db375%2Dcddccb03b13d)
 
+Celevi. 2026. Execution evidence for sprint review 3. [https://upcedupe-my.sharepoint.com/:v:/g/personal/u202312287_upc_edu_pe/IQBqqDaRVN_WTI7RI66FiEDMAVw31SzkDuJa26C5sPOLgR0?nav=eyJyZWZlcnJhbEluZm8iOnsicmVmZXJyYWxBcHAiOiJPbmVEcml2ZUZvckJ1c2luZXNzIiwicmVmZXJyYWxBcHBQbGF0Zm9ybSI6IldlYiIsInJlZmVycmFsTW9kZSI6InZpZXciLCJyZWZlcnJhbFZpZXciOiJNeUZpbGVzTGlua0NvcHkifX0&e=xeDbE9](https://upcedupe-my.sharepoint.com/:v:/g/personal/u202312287_upc_edu_pe/IQBqqDaRVN_WTI7RI66FiEDMAVw31SzkDuJa26C5sPOLgR0?nav=eyJyZWZlcnJhbEluZm8iOnsicmVmZXJyYWxBcHAiOiJPbmVEcml2ZUZvckJ1c2luZXNzIiwicmVmZXJyYWxBcHBQbGF0Zm9ybSI6IldlYiIsInJlZmVycmFsTW9kZSI6InZpZXciLCJyZWZlcnJhbFZpZXciOiJNeUZpbGVzTGlua0NvcHkifX0&e=xeDbE9)
+
+Celevi. 2026. About-the-product. [https://upcedupe-my.sharepoint.com/:v:/g/personal/u202312287_upc_edu_pe/IQB_rO1R__CXRrOb6dEIM27bASKboXi3LUS6jOZnjuvsrRo?nav=eyJyZWZlcnJhbEluZm8iOnsicmVmZXJyYWxBcHAiOiJPbmVEcml2ZUZvckJ1c2luZXNzIiwicmVmZXJyYWxBcHBQbGF0Zm9ybSI6IldlYiIsInJlZmVycmFsTW9kZSI6InZpZXciLCJyZWZlcnJhbFZpZXciOiJNeUZpbGVzTGlua0NvcHkifX0&e=1btASA](https://upcedupe-my.sharepoint.com/:v:/g/personal/u202312287_upc_edu_pe/IQB_rO1R__CXRrOb6dEIM27bASKboXi3LUS6jOZnjuvsrRo?nav=eyJyZWZlcnJhbEluZm8iOnsicmVmZXJyYWxBcHAiOiJPbmVEcml2ZUZvckJ1c2luZXNzIiwicmVmZXJyYWxBcHBQbGF0Zm9ybSI6IldlYiIsInJlZmVycmFsTW9kZSI6InZpZXciLCJyZWZlcnJhbFZpZXciOiJNeUZpbGVzTGlua0NvcHkifX0&e=1btASA)
