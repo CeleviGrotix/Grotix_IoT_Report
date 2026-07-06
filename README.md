@@ -8878,6 +8878,7 @@ Path: zoneId (integer).
 
 **RESPUESTAS DEL SERVIDOR (RESPONSES)**
 
+
 **Éxito: Código 201 Created**
 
 | Campo     | Tipo | Descripción                     |
