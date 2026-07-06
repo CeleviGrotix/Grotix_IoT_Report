@@ -5032,6 +5032,7 @@ Todas las notificaciones pendientes marcadas como leídas.
 }
 ```
 
+
 **D. Evidencia en Swagger**
 
 <img src="">
