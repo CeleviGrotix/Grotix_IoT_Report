@@ -1400,59 +1400,6 @@ Tras elaborar los Impact Maps, el equipo ha identificado que el mayor riesgo que
 | 49 | TS19 | Implementación del Microservicio de Gestión de Hardware y Dispositivos (.NET) | 5 |
 | 50 | TS20 | Configuración de Estrategia de Simulación y Mocking de Telemetría e Ingesta de Datos | 3 |
 | 51 | TS14 | Autenticación y Control de Acceso para el Portal de Administración | 2 |
-| Prioridad | User Story Id |
-|-----------|---------------|
-| 1         | TS02          |
-| 2         | US11          |
-| 3         | US12          |
-| 4         | US13          |
-| 5         | US14          |
-| 6         | US19          |
-| 7         | US20          |
-| 8         | US31          |
-| 9         | US23          |
-| 10        | US10          |
-| 11        | US22          |
-| 12        | TS01          |
-| 13        | US21          |
-| 14        | US30          |
-| 15        | TS07          |
-| 16        | TS05          |
-| 17        | US17          |
-| 18        | US18          |
-| 19        | US15          |
-| 20        | US16          |
-| 21        | TS08          |
-| 22        | TS12          |
-| 23        | TS13          |
-| 24        | TS09          |
-| 25        | TS10          |
-| 26        | TS11          |
-| 27        | US27          |
-| 28        | US26          |
-| 29        | US25          |
-| 30        | US24          |
-| 31        | US29          |
-| 32        | US28          |
-| 33        | TS03          |
-| 34        | TS04          |
-| 35        | TS06          |
-| 36        | US01          |
-| 37        | US02          |
-| 38        | US03          |
-| 39        | US04          |
-| 40        | US05          |
-| 41        | US06          |
-| 42        | US07          |
-| 43        | US08          |
-| 44        | US09          |
-| 45        | TS15          |
-| 46        | TS16          |
-| 47        | TS17          |
-| 48        | TS18          |
-| 49        | TS19          |
-| 50        | TS20          |
-| 51        | TS14          |
 
 ### Product Backlog Funcional
 
@@ -10114,13 +10061,13 @@ Mostrar el formato esperado explícitamente en el placeholder (p. ej. "DD/MM/AAA
 
 El presente video ha sido diseñado como una herramienta de comunicación estratégica para presentar nuestra solución integral frente a los retos de la agricultura moderna. El contenido está dirigido a visitantes de nuestra Landing Page y usuarios finales, ofreciendo una visión clara de cómo Grotix optimiza la gestión hídrica mediante hardware IoT resiliente y procesamiento en el borde. A través de una demostración del funcionamiento real de los componentes electrónicos (ESP32), el flujo de la aplicación móvil y la capacidad diagnóstica de nuestra Inteligencia Artificial, el video articula el valor de negocio de Grotix: la capacidad de operar de forma autónoma en entornos de conectividad limitada, transformando la intuición del agricultor en decisiones basadas en datos precisos. La pieza se complementa con un testimonio de validación real que ratifica la reducción de costos operativos y la tranquilidad que nuestra solución aporta a las operaciones agrícolas.
 
-<img src="">
+<img src="https://imgur.com/pSdk7pA.png">
 
 Link del video en Microsoft Streams: [https://upcedupe-my.sharepoint.com/:v:/g/personal/u202312287_upc_edu_pe/IQB_rO1R__CXRrOb6dEIM27bASKboXi3LUS6jOZnjuvsrRo?nav=eyJyZWZlcnJhbEluZm8iOnsicmVmZXJyYWxBcHAiOiJPbmVEcml2ZUZvckJ1c2luZXNzIiwicmVmZXJyYWxBcHBQbGF0Zm9ybSI6IldlYiIsInJlZmVycmFsTW9kZSI6InZpZXciLCJyZWZlcnJhbFZpZXciOiJNeUZpbGVzTGlua0NvcHkifX0&e=1btASA](https://upcedupe-my.sharepoint.com/:v:/g/personal/u202312287_upc_edu_pe/IQB_rO1R__CXRrOb6dEIM27bASKboXi3LUS6jOZnjuvsrRo?nav=eyJyZWZlcnJhbEluZm8iOnsicmVmZXJyYWxBcHAiOiJPbmVEcml2ZUZvckJ1c2luZXNzIiwicmVmZXJyYWxBcHBQbGF0Zm9ybSI6IldlYiIsInJlZmVycmFsTW9kZSI6InZpZXciLCJyZWZlcnJhbFZpZXciOiJNeUZpbGVzTGlua0NvcHkifX0&e=1btASA)
 
 Link del video en YT:
 
-## 6.4. Video About-the-Product
+# Conclusiones
 
 * Validación del Modelo de Negocio y Enfoque Lean UX: La consolidación de Grotix como una solución de negocio tecnológicamente viable y financieramente escalable se fundamenta en la ejecución rigurosa del Lean UX Process. Se validó empíricamente que la severa ineficiencia hídrica en el agro peruano —donde el 80% del agua se pierde y el 97.4% de las tierras irrigadas depende del riego por gravedad— puede mitigarse críticamente mediante un ecosistema IoT combinado con Inteligencia Artificial. Este enfoque transforma las prácticas empíricas tradicionales de riego en decisiones técnicas basadas en la precisión de datos en tiempo real, maximizando el valor operativo bajo el modelo Hardware as a Service (HaaS).
 
