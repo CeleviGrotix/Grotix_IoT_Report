@@ -9835,6 +9835,7 @@ Leandro, enfocado en el cultivo de paltas, calificó a Grotix como una herramien
 
 **Acerca de la entrevista:**
 
+
 - Link: [Entrevista de Validación - Claudio Astocondor](https://upcedupe-my.sharepoint.com/:v:/g/personal/u20201f855_upc_edu_pe/IQAOm2MB01IbRLuWlgKTunP5AfV0J-4KVq6Im47ajxRcWYY?nav=eyJyZWZlcnJhbEluZm8iOnsicmVmZXJyYWxBcHAiOiJPbmVEcml2ZUZvckJ1c2luZXNzIiwicmVmZXJyYWxBcHBQbGF0Zm9ybSI6IldlYiIsInJlZmVycmFsTW9kZSI6InZpZXciLCJyZWZlcnJhbFZpZXciOiJNeUZpbGVzTGlua0NvcHkifX0&e=IEXfc1)
 - Instante en el que inicia: 0:00
 - Duración: 23:15
