@@ -230,7 +230,7 @@ En el siguiente cuadro se describe las acciones realizadas y enunciados de concl
 
 ---
 
-# CAPÍTULO I: Introducción
+# CAPÍTULO I: Introducción 
 ## 1.1. Startup Profile
 ### 1.1.1. Descripción del Startup
 
@@ -1347,6 +1347,59 @@ Tras elaborar los Impact Maps, el equipo ha identificado que el mayor riesgo que
 
 ## 3.3. Product Backlog
 
+| Prioridad | User Story Id | Título | Story Points |
+|---:|---|---|---:|
+| 1 | TS02 | Estandarización de Contratos de Interoperabilidad IoT | 3 |
+| 2 | US11 | Monitoreo fiel de las condiciones del entorno | 5 |
+| 3 | US12 | Actualización periódica y automática de telemetría | 5 |
+| 4 | US13 | Garantía de exactitud en la medición de datos | 3 |
+| 5 | US14 | Dashboard de Monitoreo Integral y Resumen de Estado | 3 |
+| 6 | US19 | Activación manual del sistema de irrigación | 3 |
+| 7 | US20 | Automatización del riego mediante modelos de aprendizaje automático | 8 |
+| 8 | US31 | Compartir accesos de lectura a otros usuarios | 3 |
+| 9 | US23 | Clasificación del estado fenológico mediante Inteligencia Artificial | 13 |
+| 10 | US10 | Vinculación del Microcontrolador con la Aplicación | 5 |
+| 11 | US22 | Gestión de registro fotográfico de cultivos. | 5 |
+| 12 | TS01 | Implementación de Endpoints de Monitoreo de Salud (Health Checks) | 3 |
+| 13 | US21 | Generación y descarga de reportes históricos | 1 |
+| 14 | US30 | Protección y privacidad de los datos | 5 |
+| 15 | TS07 | Estandarización de la Experiencia del Desarrollador y Documentación | 3 |
+| 16 | TS05 | Implementación de Protocolos de Autenticación y Protección de Recursos | 5 |
+| 17 | US17 | Persistencia de datos ante pérdida de conectividad | 3 |
+| 18 | US18 | Notificaciones automáticas por condiciones críticas y cambios de estado | 1 |
+| 19 | US15 | Organización de dispositivos por zonas y especies | 3 |
+| 20 | US16 | Configuración de parámetros y umbrales de control | 1 |
+| 21 | TS08 | Dashboard web con indicadores clave del sistema | 5 |
+| 22 | TS12 | Gestión de mantenimiento de dispositivos IoT | 5 |
+| 23 | TS13 | Consulta rápida del catálogo de cultivos | 3 |
+| 24 | TS09 | Gestión móvil de clientes agricultores | 5 |
+| 25 | TS10 | Registro de contratos externos en campo | 5 |
+| 26 | TS11 | Gestión de suspensión de servicios | 3 |
+| 27 | US27 | Visualización de estado de servicios | 3 |
+| 28 | US26 | Configuración y gestión de alertas de usuario | 1 |
+| 29 | US25 | Modificación de datos personales y de contacto | 1 |
+| 30 | US24 | Registro, inicio y cierre de sesión de usuario | 1 |
+| 31 | US29 | Acceso garantizado y fluidez en la consulta de datos | 3 |
+| 32 | US28 | Diseño consistente y adaptabilidad multiplataforma | 3 |
+| 33 | TS03 | Desacoplamiento de Lógica de Negocio mediante Inyección de Dependencias | 5 |
+| 34 | TS04 | Optimización de Latencia y Eficiencia en el Procesamiento | 3 |
+| 35 | TS06 | Implementación de Infraestructura de Pruebas Automatizadas | 5 |
+| 36 | US01 | Visualización de propuesta de valor y servicios | 1 |
+| 37 | US02 | Enlaces de acceso a la aplicación móvil | 1 |
+| 38 | US03 | Implementación de CTA | 1 |
+| 39 | US04 | Visualización de misión, visión y equipo | 1 |
+| 40 | US05 | Implementación de formulario y canales de contacto | 1 |
+| 41 | US06 | Enlaces a redes sociales | 1 |
+| 42 | US07 | Implementación de sistemas de navegación simplificada | 1 |
+| 43 | US08 | Implementación de Identidad y Consistencia Visual | 1 |
+| 44 | US09 | Optimización de tiempos de respuesta y carga inicial | 3 |
+| 45 | TS15 | Configuración de Arquitectura Base y Scaffolding para la App Móvil (Flutter) | 3 |
+| 46 | TS16 | Implementación del Microservicio de Telemetría e Ingesta IoT (.NET) | 5 |
+| 47 | TS17 | Implementación del Microservicio de Control y Orquestación de Riego (.NET) | 5 |
+| 48 | TS18 | Desarrollo del Microservicio de Análisis de Cultivos e Integración de IA (Python) | 8 |
+| 49 | TS19 | Implementación del Microservicio de Gestión de Hardware y Dispositivos (.NET) | 5 |
+| 50 | TS20 | Configuración de Estrategia de Simulación y Mocking de Telemetría e Ingesta de Datos | 3 |
+| 51 | TS14 | Autenticación y Control de Acceso para el Portal de Administración | 2 |
 | Prioridad | User Story Id |
 |-----------|---------------|
 | 1         | TS02          |
@@ -1401,7 +1454,7 @@ Tras elaborar los Impact Maps, el equipo ha identificado que el mayor riesgo que
 | 50        | TS20          |
 | 51        | TS14          |
 
-### Product Backlog Funcional:
+### Product Backlog Funcional
 
 | Prioridad | ID | Título | Story Points |
 |----|----|----|----|
@@ -1434,8 +1487,32 @@ Tras elaborar los Impact Maps, el equipo ha identificado que el mayor riesgo que
 | 39 | US04 | Visualización de misión, visión y equipo | 1 |
 | 40 | US05 | Implementación de formulario y canales de contacto | 1 |
 | 41 | US06 | Enlaces a redes sociales | 1 |
+| 8 | US31 | Compartir accesos de lectura a otros usuarios | 3 |
+| 9 | US23 | Clasificación del estado fenológico mediante Inteligencia Artificial | 13 |
+| 10 | US10 | Vinculación del Microcontrolador con la Aplicación | 5 |
+| 11 | US22 | Gestión de registro fotográfico de cultivos. | 5 |
+| 13 | US21 | Generación y descarga de reportes históricos | 1 |
+| 18 | US18 | Notificaciones automáticas por condiciones críticas y cambios de estado | 1 |
+| 19 | US15 | Organización de dispositivos por zonas y especies | 3 |
+| 20 | US16 | Configuración de parámetros y umbrales de control | 1 |
+| 21 | TS08 | Dashboard web con indicadores clave del sistema | 5 |
+| 22 | TS12 | Gestión de mantenimiento de dispositivos IoT | 5 |
+| 23 | TS13 | Consulta rápida del catálogo de cultivos | 3 |
+| 24 | TS09 | Gestión web de clientes agricultores | 5 |
+| 25 | TS10 | Registro de contratos externos en campo | 5 |
+| 26 | TS11 | Gestión de suspensión de servicios | 3 |
+| 27 | US27 | Visualización de estado de servicios | 3 |
+| 28 | US26 | Configuración y gestión de alertas de usuario | 1 |
+| 29 | US25 | Modificación de datos personales y de contacto | 1 |
+| 30 | US24 | Registro, inicio y cierre de sesión de usuario | 1 |
+| 36 | US01 | Visualización de propuesta de valor y servicios | 1 |
+| 37 | US02 | Enlaces de acceso a la aplicación móvil | 1 |
+| 38 | US03 | Implementación de CTA (Botones de acción) | 1 |
+| 39 | US04 | Visualización de misión, visión y equipo | 1 |
+| 40 | US05 | Implementación de formulario y canales de contacto | 1 |
+| 41 | US06 | Enlaces a redes sociales | 1 |
 
-### Product Backlog No Funcional:
+### Product Backlog No Funcional
 
 | Prioridad | ID | Título | Story Points |
 |----|----|----|----|
@@ -1459,7 +1536,26 @@ Tras elaborar los Impact Maps, el equipo ha identificado que el mayor riesgo que
 | 48 | TS17 | Implementación del Microservicio de Control y Orquestación de Riego (.NET) | 5 |
 | 49 | TS18 | Desarrollo del Microservicio de Análisis de Cultivos e Integración de IA (.NET) | 8 |
 | 50 | TS19 | Integración de Hardware IoT y Configuración del Microcontrolador (ESP32) | 5 |
+| 12 | TS01 | Implementación de Endpoints de Monitoreo de Salud | 3 |
+| 15 | US30 | Protección y privacidad de los datos | 5 |
+| 16 | TS07 | Estandarización de la Exp. del Desarrollador y Documentación | 3 |
+| 17 | TS05 | Implementación de Protocolos de Autenticación | 5 |
+| 18 | US17 | Persistencia de datos ante pérdida de conectividad | 3 |
+| 32 | US29 | Acceso garantizado y fluidez en la consulta de datos | 3 |
+| 33 | US28 | Diseño consistente y adaptabilidad multiplataforma | 3 |
+| 34 | TS03 | Desacoplamiento de Lógica mediante DI/Repository | 5 |
+| 35 | TS04 | Optimización de Latencia y Eficiencia (Async) | 3 |
+| 36 | TS06 | Infraestructura de Pruebas Automatizadas | 5 |
+| 43 | US07 | Implementación de sistemas de navegación simplificada | 1 |
+| 44 | US08 | Implementación de Identidad y Consistencia Visual | 1 |
+| 45 | US09 | Optimización de tiempos de respuesta y carga inicial | 3 |
+| 46 | TS15 | Configuración de Arquitectura Base y Scaffolding para la App Móvil (Flutter) | 3 |
+| 47 | TS16 | Implementación del Microservicio de Telemetría e Ingesta IoT (.NET) | 5 |
+| 48 | TS17 | Implementación del Microservicio de Control y Orquestación de Riego (.NET) | 5 |
+| 49 | TS18 | Desarrollo del Microservicio de Análisis de Cultivos e Integración de IA (.NET) | 8 |
+| 50 | TS19 | Integración de Hardware IoT y Configuración del Microcontrolador (ESP32) | 5 |
 | 50 | TS20 | Configuración de Persistencia de Datos para Telemetría Masiva | 3 |
+| 51 | TS14 | Autenticación y Control de Acceso para el Portal de Administración | 2 |
 | 51 | TS14 | Autenticación y Control de Acceso para el Portal de Administración | 2 |
 
 ### Product Backlog en Jira: 
@@ -2984,10 +3080,6 @@ La implementación se enfoca en garantizar usabilidad, rendimiento y coherencia 
 
 #### 6.2.1.3. Sprint Backlog 1
 
-| Campo | Detalle |
-|---|---|
-| Sprint # | Sprint 1 |
-
 | User Story Id | User Story Title | Work-Item / Task Id | Task Title | Description | Estimation (Hours) | Assigned To | Status (To-do / In-Process / To-Review / Done) |
 |---|---|---|---|---|---:|---|---|
 | US01 | Visualización de propuesta de valor y servicios | T01 | Maquetado HTML/CSS de Hero Section | Creación de la estructura base del primer bloque visible (Hero) en la landing page. | 3 | Frontend Dev | Done |
@@ -3082,7 +3174,7 @@ Durante el presente sprint se alcanzó un avance significativo en la implementac
 
 **Repository: Grotix_Web**
 
-- **Branch:** develop
+- **Branch:** develop 
 - **Total Commits:** 20
 
 | Secuencia | Repository | Branch | Commit Id | Commit Message | Commit Message Body | Committed on |
@@ -4002,10 +4094,12 @@ El ritmo de implementación se mantuvo constante, con un enfoque en la robustez 
 | Prepared By | Cassius Martel |
 | Attendees (to planning meeting) | Binda Arbañil, Marcelo Alejandro / Castillo Garay, Ainhoa Lucía / Martel Andrade, Cassius Estefano / Nakamurakare Teruya, Alex Tomio / Rodas Sotomayor, Ernesto / |
 | Review Summary | Presentación exitosa de los nuevos microservicios core del sistema IoT (Telemetría, Hardware e Irrigación en .NET) y el microservicio de Análisis de Cultivos con Inteligencia Artificial (Python/FastAPI). Despliegue inicial de la aplicación móvil en Flutter con integración de autenticación, dashboard táctil y gestión de zonas. Optimización exitosa de latencia mediante DTOs y refinamiento de la aplicación Web para la gestión técnica de dispositivos. Todas las tareas (53 SP/Horas) marcadas como "Done". |
+| Review Summary | Presentación exitosa de los nuevos microservicios core del sistema IoT (Telemetría, Hardware e Irrigación en .NET) y el microservicio de Análisis de Cultivos con Inteligencia Artificial (Python/FastAPI). Despliegue inicial de la aplicación móvil en Flutter con integración de autenticación, dashboard táctil y gestión de zonas. Optimización exitosa de latencia mediante DTOs y refinamiento de la aplicación Web para la gestión técnica de dispositivos. Todas las tareas (53 SP/Horas) marcadas como "Done". |
 | Retrospective Summary | El equipo logró una gran sinergia al paralelizar el desarrollo móvil en Flutter con la expansión masiva de los microservicios backend. Se identificó que la integración del motor de IA en Python requiere un ruteo estricto en el API Gateway. |
 | **Sprint Goal & User Stories** |  |
 | Sprint 2 Goal | El objetivo de este segundo sprint es expandir la arquitectura de microservicios para soportar la lógica core del ecosistema IoT (Ingesta de Telemetría, Control de Irrigación, Gestión de Hardware) y la inferencia de Inteligencia Artificial mediante FastAPI. Paralelamente, se busca establecer la aplicación móvil multiplataforma (Flutter), brindando a los agricultores acceso a dashboards de monitoreo táctil, gestión de zonas, invitaciones de colaboración y análisis fenológico en tiempo real directamente desde sus smartphones. |
 | Sprint 2 Velocity | 56 |
+| Sum of Story Points | 53 |
 | Sum of Story Points | 53 |
 
 #### 6.2.2.2. Aspect Leaders and Collaborators
@@ -4020,10 +4114,6 @@ El ritmo de implementación se mantuvo constante, con un enfoque en la robustez 
 
 #### 6.2.2.3. Sprint Backlog 2
 
-| Campo | Detalle |
-|---|---|
-| Sprint # | Sprint 2 |
-
 | User Story Id | User Story Title | Work-Item / Task Id | Task Title | Description | Estimation (Hours) | Assigned To | Status (To-do / In-Process / To-Review / Done) |
 |---|---|---|---|---|---:|---|---|
 | TS16 | Implementación del Microservicio de Telemetría e Ingesta IoT (.NET) | T57 | Estructura base en Telemetry API | Creación del proyecto base en .NET (C#) y configuración de las rutas del controlador para la ingesta asíncrona. | 3 | Backend Dev | Done |
@@ -4037,9 +4127,9 @@ El ritmo de implementación se mantuvo constante, con un enfoque en la robustez 
 | TS17 | Implementación del Microservicio de Control y Orquestación de Riego (.NET) | T65 | Pruebas Unitarias integrales con xUnit | Escritura y ejecución de cobertura de pruebas automatizadas con xUnit en las capas de negocio de cada microservicio para validar el comportamiento del dominio. | 5 | Backend Dev | Done |
 | TS18 | Desarrollo del Microservicio de Análisis de Cultivos e Integración de IA (Python) | T66 | Servidor base y API en FastAPI | Configuración del entorno de desarrollo en Python con FastAPI y endpoints HTTP destinados a la recepción de recursos visuales de parcelas. | 4 | Backend Dev | Done |
 | TS18 | Desarrollo del Microservicio de Análisis de Cultivos e Integración de IA (Python) | T67 | Integración de pipeline de inferencia IA | Programación del script en Python para conectarse mediante API Key a los servicios lógicos de IA y retornar la clasificación fenológica sin enlace de hardware ESP32. | 6 | Backend Dev | Done |
-| US26 | Modificación de datos personales y de contacto | T68 | Refactorización de endpoints de perfil | Correcciones y mejoras técnicas en el microservicio de identidades para el guardado consistente de datos de contacto de agricultores. | 5 | Backend Dev | Done |
-| US26 | Modificación de datos personales y de contacto | T69 | Rediseño de Layout de Profile Web | Ajuste visual, unificación de estados reactivos y limpieza de conflictos de fusión en el componente MyProfileView.vue dentro de Vue 3. | 4 | Frontend Dev | Done |
-| US26 | Modificación de datos personales y de contacto | T70 | Maquetación UI móvil de sección Perfil | Construcción responsiva de la pantalla de gestión de perfil dentro de la aplicación móvil basándose en los wireframes. | 4 | Frontend Dev | Done |
+| US25 | Modificación de datos personales y de contacto | T68 | Refactorización de endpoints de perfil | Correcciones y mejoras técnicas en el microservicio de identidades para el guardado consistente de datos de contacto de agricultores. | 5 | Backend Dev | Done |
+| US25 | Modificación de datos personales y de contacto | T69 | Rediseño de Layout de Profile Web | Ajuste visual, unificación de estados reactivos y limpieza de conflictos de fusión en el componente MyProfileView.vue dentro de Vue 3. | 4 | Frontend Dev | Done |
+| US25 | Modificación de datos personales y de contacto | T70 | Maquetación UI móvil de sección Perfil | Construcción responsiva de la pantalla de gestión de perfil dentro de la aplicación móvil basándose en los wireframes. | 4 | Frontend Dev | Done |
 | US15 | Organización de dispositivos por zonas y especies | T71 | Optimización de consultas estructurales | Corrección de bases de datos y asignación jerárquica de granjas/lotes dentro del microservicio Cultivation.Api. | 5 | Backend Dev | Done |
 | US15 | Organización de dispositivos por zonas y especies | T72 | UI móvil de formularios de creación | Implementación en Flutter de las vistas de ingreso de parcelas y asociación a variedades del catálogo botánico. | 6 | Frontend Dev | Done |
 | TS12 | Gestión de mantenimiento de dispositivos IoT | T73 | UI Web de Inventario con Filtros Dinámicos | Construcción de DevicesListView incorporando propiedades computadas para el filtrado reactivo en tiempo real por ID, texto y estado. | 6 | Frontend Dev | Done |
@@ -4048,11 +4138,11 @@ El ritmo de implementación se mantuvo constante, con un enfoque en la robustez 
 | TS11 | Gestión de Capas de Datos Mock de la Aplicación Móvil | T76 | UI Móvil de Vista de Detalle de Zona Individual | Construcción y maquetación de la pantalla móvil de detalle por zona en Flutter conectando variables directas reales desde Cultivation.Api. | 5 | Frontend Dev | Done |
 | TS11 | Gestión de Capas de Datos Mock de la Aplicación Móvil | T77 | Estructuras Mock para Reportes, Notis y Sensores | Desarrollo de clases estáticas y repositorios temporales en Flutter para renderizar la UI de reportes históricos, notificaciones y gráficas de sensores. | 4 | Frontend Dev | Done |
 | TS15 | Configuración de Arquitectura Base y Scaffolding para la App Móvil | T78 | Inicialización, Capas y Clientes Flutter | Setup estructural bajo arquitectura limpia, empaquetado de cliente HTTP base apuntando al API Gateway, ruteo básico e instalación de paquetes de estado. | 6 | Frontend Dev | Done |
-| US25 | Registro, inicio y cierre de sesión de usuario | T79 | UI móvil de formulario de accesos Login | Maquetación estricta de la pantalla de Login adaptada a la guía gráfica y almacenamiento de tokens JWT. Flujos de envío de correo/registro omitidos. | 5 | Frontend Dev | Done |
-| US32 | Compartir acceso de lectura y monitoreo a otros usuarios | T80 | UI móvil de campos de invitación | Desarrollo del formulario visual en Flutter para ingresar colaboradores secundarios. | 5 | Frontend Dev | Done |
+| US24 | Registro, inicio y cierre de sesión de usuario | T79 | UI móvil de formulario de accesos Login | Maquetación estricta de la pantalla de Login adaptada a la guía gráfica y almacenamiento de tokens JWT. Flujos de envío de correo/registro omitidos. | 5 | Frontend Dev | Done |
+| US31 | Compartir acceso de lectura y monitoreo a otros usuarios | T80 | UI móvil de campos de invitación | Desarrollo del formulario visual en Flutter para ingresar colaboradores secundarios. | 5 | Frontend Dev | Done |
 | US14 | Dashboard de Monitoreo Integral y Resumen de Estado | T81 | UI de Dashboard táctil principal | Maquetación responsiva en Flutter de la pantalla principal de telemetría respetando los indicadores y el diseño circular del wireframe. | 7 | Frontend Dev | Done |
 | US14 | Dashboard de Monitoreo Integral y Resumen de Estado | T82 | Interpolación de Sensores Mock | Consumo del repositorio mock móvil para inyectar datos reactivos de humedad de suelo, luz y temperatura ambiente en los medidores gráficos. | 4 | Frontend Dev | Done |
-| US24 | Clasificación del estado fenológico mediante Inteligencia Artificial | T83 | UI móvil de análisis visual de cultivo | Creación del submódulo móvil en Flutter para desplegar la pantalla de análisis de salud vegetal renderizando las imágenes procesadas por el API de Python. | 6 | Frontend Dev | Done |
+| US22 | Clasificación del estado fenológico mediante Inteligencia Artificial | T83 | UI móvil de análisis visual de cultivo | Creación del submódulo móvil en Flutter para desplegar la pantalla de análisis de salud vegetal renderizando las imágenes procesadas por el API de Python. | 6 | Frontend Dev | Done |
 | US21 | Generación y descarga de reportes históricos | T84 | UI móvil de sección de reportes | Maquetación estética en Flutter de la pantalla de reportes proyectando los tres datos clave en UI. | 5 | Frontend Dev | Done |
 | TS04 | Optimización de Latencia y Eficiencia en el Procesamiento | T85 | Afinamiento de DTOs en capas backend | Ajuste fino de objetos de transferencia de datos en .NET para truncar nulos, acelerando drásticamente el peso de las tramas enviadas a las apps móviles. | 4 | Backend Dev | Done |
 
@@ -10030,17 +10120,17 @@ Link del video en Microsoft Streams: [https://upcedupe-my.sharepoint.com/:v:/g/p
 
 Link del video en YT:
 
-# Conclusiones
+## 6.4. Video About-the-Product
 
 * Validación del Modelo de Negocio y Enfoque Lean UX: La consolidación de Grotix como una solución de negocio tecnológicamente viable y financieramente escalable se fundamenta en la ejecución rigurosa del Lean UX Process. Se validó empíricamente que la severa ineficiencia hídrica en el agro peruano —donde el 80% del agua se pierde y el 97.4% de las tierras irrigadas depende del riego por gravedad— puede mitigarse críticamente mediante un ecosistema IoT combinado con Inteligencia Artificial. Este enfoque transforma las prácticas empíricas tradicionales de riego en decisiones técnicas basadas en la precisión de datos en tiempo real, maximizando el valor operativo bajo el modelo Hardware as a Service (HaaS).
 
 * Trazabilidad de Requerimientos centrado en el Usuario: La transición metodológica desde la fase de Needfinding (análisis de competidores, mapas de empatía y User Personas desarrollado en el Capítulo II) hacia la especificación técnica de requerimientos en el Capítulo III y el diseño del software en el Capítulo IV asegura una trazabilidad impecable. Cada User Story y Technical Story (TS) responde de forma directa a un dolor real del pequeño agricultor y de las asociaciones agrarias, garantizando que el software resuelva problemas críticos como la ausencia de históricos climáticos, el monitoreo remoto desarticulado y la falta de control preciso sobre el suelo.
 
-* Rigurosidad Técnica mediante Atributos de Calidad: La inclusión de Atributos de Calidad específicos y sus respectivas Technical Stories eleva la propuesta de Grotix de un prototipo académico a un nivel industrial de producción. Al diseñar el backend de microservicios y las interfaces frontend (Web/Mobile) bajo métricas estrictas de disponibilidad, modificabilidad, seguridad y performance, se garantiza una plataforma resiliente capaz de soportar las exigencias de un entorno agrícola real, controlando ráfagas masivas de ingesta de datos sin degradar el rendimiento del ecosistema cloud.
+- Rigurosidad Técnica mediante Atributos de Calidad: La inclusión de Atributos de Calidad específicos y sus respectivas Technical Stories eleva la propuesta de Grotix de un prototipo académico a un nivel industrial de producción. Al diseñar el backend de microservicios y las interfaces frontend (Web/Mobile) bajo métricas estrictas de disponibilidad, modificabilidad, seguridad y performance, se garantiza una plataforma resiliente capaz de soportar las exigencias de un entorno agrícola real, controlando ráfagas masivas de ingesta de datos sin degradar el rendimiento del ecosistema cloud.
 
-* Resiliencia en la Última Milla mediante Edge Computing y Store-and-Forward: Se concluye que la arquitectura de hardware implementada sobre el microcontrolador ESP32 (WROOM/S3) es capaz de mitigar la inestabilidad de conectividad (Wi-Fi/4G) inherente a las zonas rurales peruanas gracias a la implementación de una Edge App con persistencia local (Edge DB). El diseño e integración del patrón Store-and-Forward demostró ser el mecanismo crítico para garantizar la integridad de las lecturas, sincronizando la información acumulada de manera asíncrona una vez restablecido el enlace con el Message Broker, eliminando así vacíos analíticos en el historial del cultivo.
+- Resiliencia en la Última Milla mediante Edge Computing y Store-and-Forward: Se concluye que la arquitectura de hardware implementada sobre el microcontrolador ESP32 (WROOM/S3) es capaz de mitigar la inestabilidad de conectividad (Wi-Fi/4G) inherente a las zonas rurales peruanas gracias a la implementación de una Edge App con persistencia local (Edge DB). El diseño e integración del patrón Store-and-Forward demostró ser el mecanismo crítico para garantizar la integridad de las lecturas, sincronizando la información acumulada de manera asíncrona una vez restablecido el enlace con el Message Broker, eliminando así vacíos analíticos en el historial del cultivo.
 
-* Madurez Arquitectónica mediante el Proceso ADD (Iteraciones 1 a 5): La aplicación sistemática de la metodología Architecture-Driven Design (ADD), culminando con los ciclos ADD 3, ADD 4 y ADD 5 para esta entrega AV3, evitó decisiones técnicas arbitrarias y garantizó que la estructura de Grotix responda directamente a sus drivers arquitectónicos. El proceso iterativo refinó el procesamiento distribuido, la escalabilidad horizontal selectiva y las estrategias de integración, transformando las severas restricciones del entorno rural (latencia, intermitencia de red y bajo consumo energético) en una ventaja competitiva de robustez arquitectónica.
+- Desacoplamiento Operativo y Escalabilidad con DDD Estratégico: La separación física de los seis Bounded Contexts definidos (Profile, Cultivation Area, Hardware Device, Irrigation Cycle, Crop Analysis y Telemetry) en microservicios independientes programados en C# / .NET y coordinados a través de un API Gateway centralizado en Azure garantiza la resiliencia operativa de la solución. Esta disposición estratégica impide el acoplamiento sistémico, asegurando que fallos aislados en servicios adyacentes no comprometan las actividades críticas de telemetría y ejecución de ciclos de riego, permitiendo además la asignación eficiente de recursos en la nube.
 
 * Desacoplamiento Operativo y Escalabilidad con DDD Estratégico: La separación física de los seis Bounded Contexts definidos (Profile, Cultivation Area, Hardware Device, Irrigation Cycle, Crop Analysis y Telemetry) en microservicios independientes programados en C# / .NET y coordinados a través de un API Gateway centralizado en Azure garantiza la resiliencia operativa de la solución. Esta disposición estratégica impide el acoplamiento sistémico, asegurando que fallos aislados en servicios adyacentes no comprometan las actividades críticas de telemetría y ejecución de ciclos de riego, permitiendo además la asignación eficiente de recursos en la nube.
 
