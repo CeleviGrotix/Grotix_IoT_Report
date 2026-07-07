@@ -807,7 +807,7 @@ La presente sección de User Personas sintetiza las características principales
 
 #### Segmento Objetivo #1: Productores Independientes de Pequeña y Mediana Escala
 
-[foto]
+<img src="https://imgur.com/5OL5RC0.png">
 
 #### Segmento Objetivo #2: Asociaciones Agrarias y Cooperativa
 
@@ -838,13 +838,13 @@ Los User Journey Maps actúan como el sustento empírico de Grotix, permitiendo 
 #### Productores Independientes de Pequeña y Mediana Escala
 User journey mapping 1 de Productores Independientes de Pequeña y Mediana Escala
 
-[foto]
+<img src="https://imgur.com/kbXRo0i.png">
 
 
 #### Asociaciones Agrarias y Cooperativas
 User journey mapping 2 de Asociaciones Agrarias y Cooperativas
 
-[foto]
+<img src="https://imgur.com/3PvLBbX.png">
 
 ### 2.3.4. Empathy Maps
 
@@ -852,7 +852,8 @@ En esta sección se presenta el proceso de elaboración de los Empathy Maps para
 
 #### Segmento Objetivo #1: Productores Independientes de Pequeña y Mediana Escala
 
-[foto]
+<img src="https://imgur.com/arscI2X.png">
+<img src="https://imgur.com/XyynFr0.png">
 
 #### Segmento Objetivo #2: Asociaciones Agrarias y Cooperativa
 
@@ -867,29 +868,29 @@ El proceso se llevó a cabo de manera incremental, iniciando con la identificaci
 
 En esta fase de Big Picture Event Storming, el equipo se enfocó en el reconocimiento y definición de los Domain Events que integran el ecosistema de Grotix. A través de una lluvia de ideas masiva, se identificaron todos los eventos o cambios de estado relevantes para el negocio, abarcando desde la gestión de identidad y telemetría de sensores hasta la lógica inteligente de riego y análisis visual. Este inventario de eventos permite consolidar una visión compartida de todas las capacidades del sistema, sirviendo como base fundamental para la posterior identificación de actores y  sistemas externos. 
 
-[foto]
+<img src="https://imgur.com/X9kJCcd.png">
 
 **Step 2: Sorting Domain Events**
 
 En esta etapa, el equipo procedió a organizar los eventos identificados siguiendo una línea de tiempo lógica y cronológica. Este proceso permitió estructurar el flujo del sistema desde el registro y vinculación del usuario hasta los ciclos automáticos de monitoreo, análisis visual por IA y riego inteligente. Al ordenar los eventos, se establecieron las relaciones de dependencia entre ellos, logrando una narrativa visual clara del recorrido del usuario y el comportamiento autónomo del hardware ante las condiciones del entorno. 
 
-[foto]
+<img src="https://imgur.com/fRAhhj8.png">
 
 **Step 3: Actors**
 
 En esta fase, el equipo identificó y asignó los actores responsables de disparar o interactuar con los eventos de dominio previamente ordenados. Se determinó que, si bien el Usuario Agrícola centraliza la mayoría de las interacciones, existen roles especializados que enriquecen el flujo del sistema. Por ejemplo, se identificó la participación de un actor secundario para la solicitud de acceso a zonas de cultivo, permitiendo la colaboración en la parcela. Asimismo, se definió el rol del Supervisor Agrícola como el actor encargado de la gestión de datos de alto nivel y la visualización de reportes hídricos, diferenciándolo del usuario operativo para alinearse con las necesidades de gestión y toma de decisiones de las cooperativas agrarias. 
 
+<img src="https://imgur.com/5wyNFqx.png">
+
 **Step 4: External Systems**
 
 En la cuarta etapa del Event Storming, el equipo identificó y vinculó los sistemas externos que actúan como proveedores de servicios críticos para el cumplimiento de ciertos eventos de dominio. Se determinó la dependencia de un servicio de autenticación para la seguridad de acceso, un servicio de análisis visual con IA para el procesamiento de imágenes y un motor de inteligencia agronómica para la configuración experta de umbrales de cultivo. Asimismo, se integraron un servicio de notificaciones para la comunicación en tiempo real y un servicio meteorológico encargado de proporcionar datos climáticos para la optimización del riego. La identificación de estos sistemas permite definir claramente los límites de Grotix y asegurar que la arquitectura soporte integraciones robustas que potencien la autonomía y precisión del monitoreo agrícola. 
 
-[foto]
+<img src="https://imgur.com/Jed7NgZ.png">
 
 **Step 5: Conclusion and Storytelling**
 
 Tras concluir la integración de los sistemas externos en el Paso 4, el equipo procedió a realizar una fase de Storytelling. En esta etapa final, se validó narrativamente todo el flujo diseñado, confirmando que la interacción entre los eventos, los actores y los servicios externos mantiene una coherencia total con la experiencia de uso real de la aplicación. Este ejercicio permitió verificar que la lógica de Grotix responde de manera eficiente a las necesidades del entorno agrícola, asegurando que cada funcionalidad esté debidamente respaldada por la arquitectura propuesta. 
-
-[foto]
 
 ## 2.5. Ubiquitous Language
 
@@ -1392,25 +1393,25 @@ Las historias están organizadas en 8 épicas que cubren todo el ciclo de vida d
 
 **Objetivo SMART:** Reducir el consumo de agua en un 25% para los usuarios de Grotix mediante el sistema de riego automatizado en un periodo de 12 meses tras la implementación.
 
-[foto]
+<img src="https://imgur.com/TpdD3Sa.png">
 
 ### Business Goal 2: Establecer una presencia digital sólida para convertir visitantes en usuarios registrados.
 
 **Objetivo SMART:** Lograr una tasa de conversión del 10% de visitantes a usuarios registrados en la plataforma web durante los primeros 6 meses de operación.
 
-[foto]
+<img src="https://imgur.com/Vhg5iIv.png">
 
 ### Business Goal 3: Asegurar la sostenibilidad financiera del proyecto mediante la recurrencia del servicio.
 
 **Objetivo SMART:** Alcanzar una tasa de retención del 80% en suscripciones inteligentes al finalizar cada campaña agrícola en el primer año.
 
-[foto]
+<img src="https://imgur.com/QSDNA6U.png">
 
 ### Business Goal 4: Elevar el estándar de la producción para facilitar el acceso a mercados internacionales.
 
 **Objetivo SMART:** Lograr que el 90% de las parcelas monitoreadas alcancen calibres uniformes de exportación, reduciendo las mermas en un 15% para finales de 2026.
 
-[foto]
+<img src="https://imgur.com/aDzc5GK.png">
 
 ### Riesgo para Grotix:
 Tras elaborar los Impact Maps, el equipo ha identificado que el mayor riesgo que puede afectar el impacto del proyecto es la inestabilidad de la infraestructura de conectividad en zonas rurales. Este riesgo invalidaría el impacto esperado al interrumpir el flujo de datos. Por ello, se han definido entregables específicos de resiliencia y persistencia de datos vinculados a las historias técnicas de arquitectura para asegurar que el comportamiento del usuario no se vea frustrado por factores externos, garantizando así el cumplimiento de nuestros Business Goals.
@@ -1596,56 +1597,56 @@ El proceso comienza con el Design-Level EventStorming, donde profundizamos en el
 Se realizó una sesión colaborativa con todos los integrantes del equipo. Basándonos en los principios de Domain-Driven Design (DDD), se modeló el software de Grotix, detallando la interacción entre comandos, eventos y demás elementos del dominio. El objetivo de la reunión fue traducir procesos de negocio en diseños técnicos, identificando componentes como políticas, comandos, actores, read models, sistemas externos y pain points. Asimismo, este proceso representó un primer acercamiento a la definición y delimitación de los bounded contexts del negocio.
 Leyenda:
 
-[foto]
+<img src="https://imgur.com/jwIEYR1.png">
 
 **Enlace:**
 https://miro.com/welcomeonboard/RHE0Z0ZHYlYxSVU3Y0ozTjEya3JETTc1NzIyVmsyYy9UMHBEN0ovRUF2RDdEbjRQZFBpUEZ3a3lubXRFc0d1NzhHdkNvZUZHeElDWDFRc0lsZEVWUy9GYTVRRWtwZVF5enJyVlpZUzdXQmtYVUp1a2FIVXdESDJDVllXSEZYaXh3VHhHVHd5UWtSM1BidUtUYmxycDRnPT0hdjE=?share_link_id=31489203478
 
 * **Step 1: Unstructured Exploration**
 
-[foto]
+<img src="https://imgur.com/8ip6ezs.png">
 
 El Step 1: Unstructured Exploration es una fase de lluvia de ideas masiva diseñada para identificar y capturar, a través de post-its naranjas, todos los Eventos de Dominio relevantes para el ecosistema de Grotix. Al registrar estos sucesos exclusivamente en tiempo pasado, se busca mapear hechos significativos del negocio sin la rigidez de una estructura jerárquica o cronológica inicial. Este ejercicio es fundamental para consolidar un lenguaje común entre los integrantes del equipo, permitiendo visibilizar la complejidad técnica de la solución agrotecnológica y asegurar que ninguna interacción crítica entre el hardware, la inteligencia artificial y el usuario quede fuera del diseño preliminar del sistema.
 
 * **Step 2: Timelines**
 
-[foto]
+<img src="https://imgur.com/onPhY99.png">
 
 El Step 2: Timelines consiste en la organización cronológica de los eventos de dominio identificados previamente, disponiéndolos secuencialmente de izquierda a derecha para establecer un flujo narrativo coherente dentro del ecosistema de Grotix. Durante esta fase, el equipo estructura las interacciones temporales de los diversos hilos de ejecución —como el monitoreo de telemetría, la gestión de riegos y el procesamiento de visión artificial—, lo que permite detectar inconsistencias lógicas, eliminar redundancias y revelar vacíos de información donde faltan hechos de negocio esenciales. Esta transición de una exploración desordenada hacia un orden lineal es crítica para validar la viabilidad del proceso y asegurar que el modelo refleje con precisión la realidad operativa del entorno agrícola y los protocolos de automatización del software. 
 
 * **Step 3: Pain Points**
 
-[foto]
+<img src="https://imgur.com/QeBj5VM.png">
 
 El Step 3: Pain Points representa una fase de auditoría crítica donde se identifican riesgos, cuellos de botella y ambigüedades técnicas o de negocio dentro de los procesos de Grotix. Mediante el uso de post-its rosados en forma de rombo, el equipo señala interrogantes vitales y puntos de fricción, como la precisión del hardware bajo condiciones climáticas adversas o la fiabilidad de las predicciones de la IA, con el fin de visibilizar las áreas de mayor vulnerabilidad del sistema. Esta etapa es fundamental para anticipar fallos operativos y priorizar la investigación en los componentes que presentan mayor incertidumbre, garantizando así un diseño de software más resiliente y alineado a los desafíos reales del entorno agrícola peruano. 
 
 * **Step 4: Pivotal Points**
 
-[foto]
+<img src="https://imgur.com/rYUKU3Y.png">
 
 El Step 4: Pivotal Points consiste en la identificación de aquellos hitos dentro del flujo de Grotix que representan cambios de estado determinantes o transiciones críticas entre distintas fases del negocio. Estos eventos no son simples pasos operativos, sino puntos de inflexión que disparan consecuencias significativas a lo largo del sistema —como la activación de un ciclo de riego o la validación de un análisis de germinación—, permitiendo establecer las fronteras lógicas entre subdominios. Al resaltar estos momentos clave mediante marcas visuales, el equipo logra segmentar la complejidad del proyecto y definir con mayor precisión los límites de responsabilidad de cada componente tecnológico, sentando las bases estratégicas para la futura delimitación de los contextos acotados.
 
 * **Step 5: Commands**
 
-[foto]
+<img src="https://imgur.com/tattLyW.png">
 
 El Step 5: Commands introduce las acciones deliberadas que disparan los eventos de dominio dentro del ecosistema de Grotix, representadas mediante post-its azules y amarillos respectivamente. Los comandos simbolizan la intención de ejecutar una operación específica, como la activación de un actuador de riego o la solicitud de un análisis de imagen, y se expresan siempre mediante verbos en infinitivo para denotar una orden al sistema. Por su parte, los actores identifican la entidad responsable de ejecutar dicha acción, ya sea un usuario humano (Productor Agrícola) o un componente automatizado (Sistema/IA), permitiendo mapear la interacción entre los requerimientos funcionales y la lógica de ejecución necesaria para movilizar el flujo de negocio. 
 
 * **Step 6: Policies**
 
-[foto]
+<img src="https://imgur.com/mNeTSM2.png">
 
 El Step 6: Policies constituye la formalización de las reglas de negocio reactivas que orquestan el comportamiento autónomo del sistema Grotix, actuando como el nexo lógico entre los eventos de dominio y los comandos resultantes. Representadas mediante post-its de color morado, estas políticas encapsulan la lógica de decisión automatizada bajo la estructura condicional "Siempre que ocurra un evento específico, entonces debe ejecutarse un comando determinado". Este paso es fundamental para implementar la inteligencia del sistema, permitiendo que la solución responda dinámicamente a cambios en el entorno, como la optimización del riego ante pronósticos de lluvia o el escalamiento de alertas ante riesgos en el cultivo, asegurando así la integridad operativa y la eficiencia en el uso de los recursos hídricos. 
 
 * **Step 7: Read Models**
 
-[foto]
+<img src="https://imgur.com/3HOkC5S.png">
 
 El Step 7: Read Models se centra en identificar la información y las representaciones de datos necesarias para que los actores tomen decisiones fundamentadas dentro del dominio de Grotix, plasmándolas en post-its de color verde. Estos modelos actúan como vistas o proyecciones que el usuario consume antes de disparar un comando, facilitando la visualización del estado actual del sistema de manera estructurada. Esta etapa es crucial para definir los requisitos de la interfaz de usuario y asegurar que el agricultor cuente con la visibilidad necesaria sobre sus cultivos, garantizando un flujo de trabajo intuitivo donde la información analítica precede y justifica cada acción operativa. 
 
 * **Step 8: External Systems**
 
-[foto]
+<img src="https://imgur.com/0g8jNWS.png">
 
 El Step 8: External Systems identifica los componentes de hardware o servicios de software que operan fuera de los límites de control directo de Grotix, pero que son indispensables para el cumplimiento de sus procesos de negocio. Representados mediante post-its de color rosado, estos sistemas externos actúan como proveedores de datos o ejecutores de acciones físicas con los cuales el sistema debe interactuar asincrónicamente. Esta fase es crítica para definir las interfaces de integración, estableciendo cómo el dominio central se comunica con infraestructuras de terceros o dispositivos físicos para extender la funcionalidad de la plataforma hacia el mundo real y servicios especializados. 
 
@@ -1656,27 +1657,27 @@ Al finalizar el mapeo masivo, entramos en la fase de Candidate Context Discovery
 
 Este análisis estratégico permitió agrupar los comandos, eventos y modelos de lectura bajo fronteras semánticas coherentes, asegurando que cada sección del modelo responda a un propósito único dentro del ecosistema. Al aplicar estas técnicas de descubrimiento, logramos aislar la lógica más crítica y de mayor valor —como los protocolos de automatización y los controles de auditoría— de las funciones periféricas del sistema. Como resultado, el modelo evoluciona hacia una arquitectura desacoplada que garantiza la integridad de los datos y facilita la futura implementación técnica de los módulos, sin que los cambios en una parte del dominio afecten la estabilidad global de la operación en el campo.
 
-[foto]
+<img src="https://imgur.com/GjgS4sl.png">
 
 El Bounded Context de Profile centraliza la gestión de identidad y seguridad de Grotix, administrando el ciclo de vida del usuario desde el registro y la autenticación hasta el control de sesiones. Su propósito es garantizar un acceso protegido a la plataforma y permitir la personalización de la experiencia del agricultor mediante la edición de datos personales y la configuración de preferencias de notificaciones. Al aislar estas funciones, el sistema asegura que la administración de credenciales y la privacidad del productor se manejen de forma independiente a la lógica operativa del campo, sirviendo como la puerta de acceso segura para todas las funcionalidades del ecosistema. 
 
-[foto]
+<img src="https://imgur.com/MSJassJ.png">
 
 El Bounded Context de Cultivation Area se encarga de la definición y gestión estructural de las áreas de plantación dentro de la plataforma. Su objetivo principal es administrar la configuración de cada parcela, incluyendo datos críticos como el tipo de cultivo, el área física y los umbrales operativos de humedad y temperatura necesarios para su desarrollo. Además, este contexto regula la seguridad y el control de acceso a las zonas, gestionando las solicitudes de ingreso y permisos para los distintos usuarios. Al centralizar estos parámetros agronómicos y de autorización, el sistema establece el marco de referencia esencial sobre el cual se ejecutan los procesos de monitoreo y riego automatizado. 
 
-[foto]
+<img src="https://imgur.com/iM75yOo.png">
 
 El Bounded Context de Hardware Device actúa como el puente entre el mundo físico y digital de Grotix, gestionando integralmente el aprovisionamiento y ciclo de vida de los componentes IoT. Su responsabilidad principal es orquestar la detección de microcontroladores, establecer conexiones de red seguras y administrar la vinculación de sensores físicos con la plataforma lógica. Mediante políticas de asignación, este contexto garantiza que cada dispositivo esté correctamente mapeado a una zona de cultivo específica y mantiene actualizado el estado de disponibilidad y actividad del hardware en tiempo real. Al centralizar la gestión de la infraestructura física, permite que el resto del sistema interactúe con el campo de manera abstracta, asegurando una comunicación robusta entre los actuadores, los sensores y la lógica de control superior. 
 
-[foto]
+<img src="https://imgur.com/UezewUw.png">
 
 El Bounded Context de Irrigation Cycle constituye el motor de ejecución hídrica de Grotix, responsable de gestionar integralmente los ciclos de riego tanto manuales como automáticos. Este dominio orquesta la interacción directa con los actuadores físicos y aplica políticas de decisión críticas, como el ajuste de condiciones o la postergación de actividades ante pronósticos de lluvia para maximizar el ahorro de recursos. Además, supervisa el cumplimiento de límites de consumo de agua y garantiza la trazabilidad operativa mediante la generación de reportes detallados al finalizar cada intervención. Al aislar esta lógica, el sistema asegura una administración eficiente y autónoma del agua, respondiendo dinámicamente tanto a las órdenes directas del usuario como a las variables ambientales detectadas en tiempo real. 
 
-[foto]
+<img src="https://imgur.com/Vvl5BZD.png">
 
 El Bounded Context de Crop Analysis (AI) representa el núcleo de inteligencia visual de Grotix, encargado de monitorear y diagnosticar el desarrollo biológico del cultivo mediante visión artificial. Este dominio orquesta el ciclo de vida de la imagen, desde la captura técnica y el control de iluminación hasta el procesamiento profundo para identificar estados fenológicos y de germinación. Al integrar modelos de IA para el análisis de salud vegetal, este contexto automatiza el seguimiento de los ciclos biológicos, generando reportes históricos y alertas preventivas sobre el estado real de la planta. Su aislamiento garantiza que el procesamiento analítico sea independiente de la mecánica de riego, proporcionando la información crítica necesaria para validar la efectividad de las estrategias agronómicas aplicadas en el campo.
 
-[foto]
+<img src="https://imgur.com/NMXpuUz.png">
 
 El Bounded Context de Telemetry es el pilar de monitoreo y análisis de datos de Grotix, encargado de la ingesta, almacenamiento y visualización de las variables ambientales recolectadas por los sensores de campo. Su responsabilidad abarca desde el procesamiento en tiempo real de niveles de temperatura, luz y humedad, hasta el despliegue de dashboards informativos y la activación de alertas críticas cuando se alcanzan umbrales de riesgo para el cultivo. Al centralizar la telemetría, este contexto permite una supervisión constante de las condiciones del entorno y facilita la auditoría del rendimiento mediante la generación de reportes de eficiencia hídrica, proporcionando la base analítica necesaria para optimizar el uso de recursos y garantizar la salud de la plantación. 
 
@@ -1740,7 +1741,7 @@ El Context Mapping de Grotix representa la estructura estratégica de nuestra so
 
 **Conexión 1: Crop Analysis (AI) → Irrigation Cycle**
 
-[foto]
+<img src="https://imgur.com/gpW20NU.png">
 
 La relación entre Crop Analysis (AI) e Irrigation Cycle se define bajo el patrón Upstream/Downstream, donde el contexto de IA provee información crítica sobre la identidad y etapa de crecimiento del cultivo hacia el sistema de riego. Para proteger la estabilidad del núcleo del negocio, se ha implementado una Anti-Corruption Layer (ACL) en el lado del Ciclo de Riego. Esta capa actúa como un mediador técnico que traduce los datos complejos generados por los modelos de visión artificial en parámetros de riego estandarizados, evitando que cambios en los modelos de IA o en el hardware de la cámara afecten directamente la lógica de bombeo.
 
@@ -1749,7 +1750,7 @@ Esta decisión arquitectónica se tomó tras evaluar la posibilidad de fusionar 
 
 **Conexión 2: Hardware Device ←→ Telemetry**
 
-[foto]
+<img src="https://imgur.com/ysENWGv.png">
 
 La relación entre Hardware Device y Telemetry se establece mediante un patrón de Partnership, reflejando una dependencia mutua donde ambos contextos deben evolucionar en sincronía para garantizar la integridad de los datos. En este flujo, el contexto de hardware actúa como el emisor de los Datos del sensor y el Estado del dispositivo, enviando lecturas en bruto de humedad, temperatura y luz, así como actualizaciones sobre la disponibilidad de los microcontroladores. El contexto de Telemetría recibe esta información para procesarla, almacenarla y validar umbrales críticos, permitiendo que la lógica de negocio se base en un estado físico veraz y actualizado.
 
@@ -1757,7 +1758,7 @@ Se seleccionó este patrón tras descartar una relación de Cliente/Proveedor, d
 
 **Conexión 3: Irrigation Cycle → Hardware Device**
 
-[foto]
+<img src="https://imgur.com/5PW3xPM.png">
 
 La relación entre Irrigation Cycle y Hardware Device se define bajo el patrón Upstream/Downstream, donde el ciclo de riego actúa como el lado Upstream (U) al ser el responsable de tomar las decisiones lógicas y estratégicas. Este contexto emite los Comandos de acción (Encendido/Apagado) que el contexto de Hardware Device, en posición Downstream (D), debe ejecutar físicamente a través de los actuadores y bombas de agua en el campo.
 
@@ -1765,7 +1766,7 @@ Esta jerarquía asegura que la responsabilidad del "cuándo" y "por qué" regar 
 
 **Conexión 4: Cultivation Area ←→ Telemetry**
 
-[foto]
+<img src="https://imgur.com/rMV3bXX.png">
 
 La relación entre Cultivation Area y Telemetry se materializa a través de un Shared Kernel (Núcleo Compartido), donde ambos contextos gestionan de forma conjunta el Umbral de cultivo y el mapeo de áreas. Esta intersección es vital para el sistema, ya que la telemetría necesita conocer las coordenadas y dimensiones de las zonas definidas en el área de cultivo para asignar correctamente las lecturas de los sensores, mientras que el área de cultivo requiere que la telemetría valide si las condiciones ambientales actuales respetan los umbrales específicos de cada planta.
 
@@ -1773,7 +1774,7 @@ Se optó por este patrón para garantizar una consistencia inmediata en los dato
 
 **Conexión 5: Telemetry → Irrigation Cycle**
 
-[foto]
+<img src="https://imgur.com/vxvXrnu.png">
 
 La relación entre Telemetry e Irrigation Cycle se establece bajo el patrón Upstream/Downstream, donde el contexto de telemetría actúa como el lado Upstream (U). Este contexto es el encargado de suministrar los Datos Ambientales y alertas (como niveles de humedad, temperatura y luz) que son fundamentales para que el sistema tome decisiones informadas. El contexto de Irrigation Cycle se sitúa como el Downstream (D), ya que su capacidad para ajustar o postergar el riego automático depende enteramente de la validez y precisión de la información recibida desde la telemetría.
 
@@ -1781,7 +1782,7 @@ Esta conexión es el motor del riego inteligente en Grotix, permitiendo que el s
 
 **Conexión 6: Profile → All**
 
-[foto]
+<img src="https://imgur.com/Q4rvKn3.png">
 
 Finalmente, cerramos el mapeo con la relación entre Profile y el resto de los contextos del sistema, la cual se define mediante el patrón Open Host Service (OHS) con un Published Language (PL).
 
@@ -1813,7 +1814,7 @@ La siguiente leyenda define los elementos visuales y semánticos utilizados para
 
 El System Landscape de Grotix representa el ecosistema empresarial completo de la organización, no limitándose únicamente a la plataforma agrícola inteligente, sino abarcando todos los sistemas que sostienen su operación como empresa. Además del Sistema Grotix — núcleo tecnológico que integra el hardware IoT de campo con la plataforma cloud de monitoreo — se identifican cuatro sistemas internos de soporte: el Sistema de Ventas & CRM, que gestiona el pipeline comercial y la captación de asociaciones agrarias como clientes; el Sistema Financiero, responsable de la facturación y cobranza de suscripciones; el Sistema de Logística, que controla el inventario y despacho de dispositivos IoT hacia las parcelas; y el Sistema de RRHH, que administra al equipo humano de Grotix. Estos sistemas internos interactúan entre sí y con la plataforma principal, reflejando cómo el cierre de un contrato comercial activa automáticamente una cuenta en el sistema agrícola, o cómo el despacho logístico de un sensor queda registrado en la plataforma. Externamente, Grotix se apoya en un servicio de autenticación, una plataforma de notificaciones, una API meteorológica y una pasarela de pagos para completar sus capacidades.
 
-[foto]
+<img src="https://imgur.com/3tt9gK9.png">
 
 #### 4.1.3.2. Software Architecture Context Level Diagrams
 
@@ -1825,7 +1826,7 @@ Para robustecer su operatividad, el Sistema Grotix se integra con diversos servi
 
 #### 4.1.3.3. Software Architecture Container Level Diagrams
 
-[foto]
+<img src="https://imgur.com/aLdIXKX.png">
 
 El diagrama de contenedores del Sistema Grotix presenta la arquitectura completa del ecosistema IoT organizada en cuatro capas diferenciadas. La capa de usuario agrupa tres interfaces: la Landing Page, que sirve como portal informativo y redirige a los visitantes a la descarga de la aplicación móvil; la Mobile App en Flutter, utilizada por agricultores y asociaciones agrarias para el monitoreo y control operativo de sus cultivos; y la Staff Web App, destinada al equipo administrativo de Grotix para la gestión de dispositivos y usuarios. La capa edge es el puente entre el mundo físico y la nube: el Embedded App ejecuta el firmware que lee los sensores y acciona las bombas de riego, reportando los estados físicos al Edge App, que procesa localmente las reglas críticas y sincroniza los datos en una base de datos SQLite para garantizar la persistencia ante pérdidas de conectividad. La capa cloud está compuesta por un API Gateway basado en YARP como punto de entrada único que enruta las solicitudes hacia seis microservicios especializados: el Profile Service para la gestión de cuentas e identidad, el Cultivation Service para la administración de granjas y zonas, el Telemetry Service para la ingesta de datos de sensores almacenados en TimescaleDB, el Irrigation Service para la orquestación del riego automático con consulta de datos meteorológicos externos, el Crop Analysis Service para el diagnóstico fenológico mediante inteligencia artificial, y el Hardware Service para el inventario y vinculación de dispositivos IoT. Los servicios transaccionales persisten en una base de datos MySQL centralizada. Finalmente, el Message Broker (RabbitMQ) actúa como columna vertebral de la comunicación asíncrona, canalizando eventos de integración como UserRegistered, TelemetryReceived, AlertTriggered, IrrigationCompleted, GrowthStateChanged y DeviceStatusChanged, desacoplando los microservicios y permitiendo que el sistema reaccione en tiempo real ante cambios en el entorno de cultivo y dispare notificaciones push a los agricultores a través del Servicio de Notificaciones externo.
 
@@ -1833,7 +1834,7 @@ El diagrama de contenedores del Sistema Grotix presenta la arquitectura completa
 
 El Deployment Diagram de Grotix describe la distribución física de los componentes del sistema en un entorno de producción real. En la capa de usuario, los agricultores y asociaciones acceden a la plataforma mediante una aplicación móvil desarrollada en Flutter, mientras que el equipo de Staff opera desde un navegador web con la Staff Web App construida en Vue.js. En campo, cada zona de cultivo cuenta con una Raspberry Pi que ejecuta el Edge App en un contenedor Docker, permitiendo procesamiento local y operación offline ante pérdidas de conectividad, complementada por nodos ESP32 con firmware embebido que interactúan directamente con los sensores y actuadores físicos. Toda la infraestructura cloud se despliega sobre Microsoft Azure en la región Chile Central: el API Gateway, implementado con ASP.NET Core y YARP, actúa como punto de entrada único y enruta el tráfico hacia los microservicios especializados — Profiles, CultivationArea, Telemetry, Irrigation, Hardware y Crop Analysis — cada uno desplegado de forma independiente como Azure App Service. La comunicación asíncrona entre servicios se gestiona a través de RabbitMQ, mientras que la persistencia se distribuye entre Azure Database for MySQL para los datos maestros y transaccionales, y TimescaleDB para el almacenamiento de series temporales de telemetría. Finalmente, el sistema se integra con servicios externos de terceros para autenticación, notificaciones push y datos meteorológicos.
 
-[foto]
+<img src="https://imgur.com/yL2f6TL.png">
 
 ## 4.2. Tactical-Level Domain-Driven Design 
 
@@ -1891,14 +1892,14 @@ El Deployment Diagram de Grotix describe la distribución física de los compone
 
 #### 4.2.1.5. Bounded Context Software Architecture Component Level Diagrams
 
-[foto]
+<img src="https://imgur.com/m136fIN.png">
 
 El diagrama de componentes del Profile Service refleja la arquitectura en capas del bounded context de perfil e identidad. Las peticiones entrantes llegan a través del API Gateway y son atendidas por tres controladores REST: el Auth Controller para registro y login, el User Profile Controller para consulta y edición del perfil propio, y el Admin Users Controller para operaciones administrativas restringidas al rol admin. Cada controlador delega la lógica a handlers MediatR o application services: el Create Account Handler orquesta el alta validando la invitación, hasheando la contraseña con BCrypt y publicando el evento UserRegistered al broker; el Login Command Handler valida credenciales y genera el JWT con roles y permisos embebidos; y los services de comando y consulta operan directamente sobre los repositorios EF Core que persisten en la Core DB (MySQL). Los servicios de dominio Invite Token Hasher y BCrypt Password Hasher encapsulan la lógica de seguridad pura, mientras que el RabbitMQ Publisher desacopla la notificación de registro hacia los demás microservicios del ecosistema. 
 
 #### 4.2.1.6. Bounded Context Software Architecture Code Level Diagrams
 ##### 4.2.1.6.1. Bounded Context Domain Layer Class Diagrams
 
-[foto]
+<img src="https://imgur.com/h1zUC4O.png">
 
 El diagrama de clases del bounded context de Profile muestra el modelo de dominio organizado en dos paquetes. En el paquete IAM Domain, el agregado raíz Identity encapsula las credenciales de acceso del usuario, almacenando el correo como nombre de usuario y la contraseña como el value object PasswordHash, garantizando que nunca se persista en texto plano; además expone el método estático VerifyPasswordStrength que aplica las reglas de seguridad de contraseña. En el paquete Profile Domain, el agregado raíz User centraliza el perfil de negocio, referenciando a Identity mediante identityId y componiendo los value objects UserEmail, UserPhone y UserPreferences para encapsular validaciones de formato y preferencias de notificación; se vincula además a la entidad Role, la cual agrega permisos mediante la tabla de unión RolePermissionLink en una relación N:N con Permission, cuyo código se valida a través del value object PermissionCode. La entidad AssociationInvite modela las invitaciones de acceso, cuyo token es procesado por el domain service estático InviteTokenHasher. Finalmente, las interfaces de repositorio IUserRepository, IIdentityRepository, IRoleRepository e IAssociationInviteRepository definen los contratos de persistencia que desacoplan el dominio de la infraestructura, junto con IPasswordHasher que abstrae el algoritmo de hashing.
 
@@ -1964,14 +1965,14 @@ Para dar soporte a la lógica de autorización definida en la capa de dominio, e
 
 #### 4.2.2.5. Bounded Context Software Architecture Component Level Diagrams
 
-[foto]
+<img src="https://imgur.com/PbBTGhw.png">
 
 El diagrama de componentes del Cultivation Service refleja la arquitectura en capas del bounded context de administración de cultivos. Las peticiones entrantes llegan a través del API Gateway y son atendidas por tres controladores REST: el Farms Controller para la gestión de granjas y creación de zonas por granja, el Zones Controller para la consulta y edición individual de zonas, y el Catalog Controller para el mantenimiento del catálogo maestro de cultivos, con escritura restringida a roles admin y staff. Cada controlador delega la lógica a sus respectivos command y query services: el Farm Command Service y Zone Command Service orquestan las operaciones de creación y actualización validando reglas de negocio como la existencia del cultivo antes de crear una zona, mientras que el Crop Command Service impide la eliminación de un cultivo si hay zonas que lo referencian. Los repositorios EF Core persisten los datos en la Core DB (MySQL), y el RabbitMQ Consumer se encarga de consumir el evento UserRegistered publicado por el Profile Service para mantener la sincronización entre bounded contexts.
 
 #### 4.2.2.6. Bounded Context Software Architecture Code Level Diagrams
 ##### 4.2.2.6.1. Bounded Context Domain Layer Class Diagrams
 
-[foto]
+<img src="https://imgur.com/rJ1lUez.png">
 
 El diagrama de clases del bounded context de Cultivation Area presenta tres elementos principales. Farm es el agregado raíz que representa la unidad física de cultivo de un agricultor, identificando al propietario mediante userId como referencia al contexto de Profile, y agrupando sus zonas de cultivo. Zone es una entidad que pertenece a una granja específica y referencia un cultivo del catálogo mediante cropId, registrando además la fase fenológica actual, las coordenadas geográficas y una imagen del estado de la planta. Crop es también un agregado raíz independiente que modela el catálogo maestro de especies, encapsulando los parámetros biológicos óptimos como temperatura, humedad, luz y tiempo máximo de estrés. Las interfaces IFarmRepository, IZoneRepository e ICropRepository definen los contratos de persistencia desacoplando el dominio de la infraestructura, destacando métodos especializados como ListByUserIdAsync, ListByFarmIdAsync y AnyByCropIdAsync que soportan las reglas de negocio del servicio.
 
@@ -2036,7 +2037,7 @@ La persistencia del conocimiento biológico se gestiona de forma centralizada a 
 
 #### 4.2.3.5. Bounded Context Software Architecture Component Level Diagrams
 
-[foto]
+<img src="https://imgur.com/82F4rEM.png">
 
 El diagrama de componentes del Hardware Device ilustra la arquitectura interna de la estación de control en el borde, donde el MQTT Broker Adapter actúa como el puente de comunicación bidireccional para el envío de telemetría y la recepción de comandos. La lógica operativa se divide en handlers de aplicación: el Capture Telemetry Handler, que orquesta la lectura de variables ambientales, y el Execute Irrigation Handler, que traduce las órdenes del servicio de riego en acciones físicas mediante el ESP32 GPIO Controller. En el núcleo, el Device Aggregate mantiene el estado de integridad del hardware (niveles de batería y conectividad), mientras que el Heartbeat Monitor garantiza que el dispositivo permanezca visible para el sistema, permitiendo una supervisión técnica constante a través del Hardware Status Controller.
 
@@ -2108,7 +2109,7 @@ La persistencia de los componentes periféricos se gestiona a través de las tab
 
 #### 4.2.4.5. Bounded Context Software Architecture Component Level Diagrams
 
-[foto]
+<img src="https://imgur.com/Os0zMAB.png">
 
 El diagrama de componentes del Irrigation Service detalla la orquestación del riego inteligente, donde el Irrigation Controller y el Threshold Alert Consumer actúan como los disparadores de procesos manuales y reactivos, respectivamente. La inteligencia del sistema reside en el Irrigation Calculator, un servicio de dominio que evalúa la humedad reportada por el contexto de Telemetry frente a los límites definidos por el Cultivation Service, permitiendo que el Start Irrigation Handler tome decisiones informadas sobre la activación de válvulas. El flujo se completa mediante el Hardware Command Publisher, que traduce las decisiones de negocio en comandos ejecutables para el hardware, mientras que el Schedule Manager garantiza la autonomía del sistema al gestionar calendarios de riego persistidos en la Core DB, optimizando el recurso hídrico incluso ante condiciones externas desfavorables consultadas vía el Weather Forecast Adapter.
 
@@ -2174,7 +2175,7 @@ Para cumplir con los requerimientos de la capa de dominio respecto a la trazabil
 
 #### 4.2.5.5. Bounded Context Software Architecture Component Level Diagrams
 
-[foto]
+<img src="https://imgur.com/atXDE55.png">
 
 El diagrama de componentes del Crop Analysis Service ilustra su rol como el cerebro analítico del ecosistema Grotix, donde el proceso puede ser desencadenado manualmente vía el Analysis Controller o de forma automática cuando el Telemetry Aggregated Consumer recibe nuevos lotes de datos ambientales. La orquestación recae sobre el Generate Crop Analysis Handler, el cual delega la validación de reglas agrónomas al Diagnosis Engine; este servicio de dominio cruza los umbrales biológicos y se apoya en el ML Model Adapter para solicitar inferencias complejas (como predicción de estrés hídrico o enfermedades) a un microservicio externo de IA. Una vez que el diagnóstico está completo, el resultado se encapsula en el Analysis Report Aggregate para su almacenamiento en la Core DB, y, en caso de detectar métricas críticas, se invoca asíncronamente al Plant Stress Detected Handler para emitir alertas inmediatas al agricultor mediante el Notification Event Publisher. 
 
@@ -2245,7 +2246,7 @@ Para garantizar que cada reporte tenga el contexto adecuado, la persistencia se 
 
 #### 4.2.6.5. Bounded Context Software Architecture Component Level Diagrams
 
-[foto]
+<img src="https://imgur.com/eIBPvzd.png">
 
 El diagrama de componentes del Telemetry Service modela el flujo de ingesta y análisis de datos de sensores en tiempo real. El punto de entrada principal no es el API Gateway sino el Telemetry Consumer, que recibe el evento TelemetryReceived publicado por el Edge App a través del Message Broker — reflejando la naturaleza asíncrona e IoT del sistema. Este consumer delega al Ingest Command Service, que orquesta la pipeline de procesamiento: primero el Anomaly Detector descarta lecturas físicamente imposibles, luego el Moving Average Filter suaviza la señal para eliminar ruido eléctrico, y finalmente la lectura validada se persiste en TimescaleDB a través del Telemetry Repository. Paralelamente, el Alert Evaluation Service consulta los umbrales biológicos del cultivo asignado a la zona mediante el Zone Threshold Repository y, si una condición crítica persiste durante 4 o más ciclos consecutivos, el Alert Publisher dispara el evento AlertTriggered al broker para que el Irrigation Service y el Servicio de Notificaciones reaccionen de forma autónoma. El Telemetry Controller expone endpoints REST para que la aplicación móvil consulte el historial y estado actual de los sensores por zona. 
 
@@ -2253,7 +2254,7 @@ El diagrama de componentes del Telemetry Service modela el flujo de ingesta y an
 
 ##### 4.2.6.6.1. Bounded Context Domain Layer Class Diagrams
 
-[foto]
+<img src="https://imgur.com/vblfnJ8.png">
 
 El diagrama de clases del bounded context de Telemetry presenta el modelo de dominio orientado a la captura y evaluación de datos de sensores. El agregado raíz SensorReading encapsula una lectura completa de una zona en un instante dado, componiendo el value object ReadingValue que agrupa los tres valores medibles — humedad, temperatura e intensidad lumínica — y expone el método IsPhysicallyValid para detectar datos fuera de rango antes de persistirlos. La entidad ZoneThreshold modela los límites operativos configurados para cada zona según el cultivo asignado, con métodos de validación por variable que son consumidos por el domain service ThresholdEvaluator. Cuando se detecta una condición anómala, se genera una entidad AlertEvent clasificada mediante el enum AlertType, que cubre todas las variables monitoreadas en ambas direcciones. Los domain services AnomalyDetector y MovingAverageFilter encapsulan la lógica de limpieza de señal de forma pura y sin dependencias de infraestructura. Las interfaces ISensorReadingRepository, IZoneThresholdRepository e IAlertEventRepository desacoplan el dominio de la persistencia, con métodos especializados como GetLastNReadingsAsync y CountRecentByZoneAndTypeAsync que soportan la lógica de detección de condiciones persistentes.
 
@@ -3031,7 +3032,7 @@ El siguiente diagrama detalla la arquitectura física y de contenedores en el en
 2. **Capa Edge/IoT (Infraestructura en Campo):** Representa el entorno rural. Incluye el Grotix Gateway (ej. Raspberry Pi) que ejecuta la Edge App (Python) apoyada en una caché local (SQLite), y los nodos físicos (ESP32) que ejecutan el firmware de control en C++.
 3. **Capa Cloud (Azure):** El núcleo central de procesamiento en la región us-east-1. Utiliza Azure API Gateway como único punto de entrada, un clúster EKS (Kubernetes) para orquestar los microservicios (.NET y Python), y servicios RDS para la persistencia políglota (MySQL para la Core DB y TimescaleDB para la Telemetry DB).
 
-[foto]
+<img src="https://imgur.com/qHt7vIi.png">
 
 Para materializar esta arquitectura a partir de los repositorios de código fuente, se han configurado los siguientes pipelines de despliegue automatizado:
 1. **Web Services (Microservicios Backend en C# y Python)**
