@@ -10222,7 +10222,7 @@ Problema:
 
 En la pantalla de detalle de una asociación ("Association Details"), el botón rojo "TERMINATE CONTRACT" aparece inmediatamente debajo del botón "UPDATE CONTRACT", con un tamaño y jerarquía visual similares. Terminar un contrato es una acción destructiva y probablemente irreversible (afecta el servicio activo de una asociación completa, sus zonas y dispositivos), por lo que un clic accidental ‒especialmente al intentar pulsar "Update Contract"‒ puede tener consecuencias graves para el negocio del cliente.
 
-<img src="">
+<img src="https://github.com/user-attachments/assets/3e617182-876a-416e-9235-3b74dbe517e0">
 
 Recomendación:
 
@@ -10240,9 +10240,7 @@ Problema:
 
 La interfaz combina inglés y español de forma impredecible. La página "Mi Perfil" de la Web App está enteramente en español ("Información Personal", "Correo Electrónico", "Nombre Completo", "Identificación (Tax ID)") mientras el resto del dashboard (Main Dashboard, Devices, Crops, Associations) está en inglés. No existe un selector de idioma visible que justifique este comportamiento ni una razón aparente para la mezcla.
 
-<img src="">
-
-<img src="">
+<img src="https://github.com/user-attachments/assets/eceb5346-70e9-4584-8dfa-50792e7b4a2b">
 
 Recomendación:
 
@@ -10260,7 +10258,7 @@ Problema:
 
 El menú lateral persistente muestra siete íconos (inicio, búsqueda, perfil/agricultores, documento, dispositivo, hoja/cultivos, engranaje) sin ningún texto que los acompañe ni tooltips visibles en las capturas analizadas. Íconos como el de "documento" o "dispositivo" (engranaje circular) no tienen un significado universalmente reconocible, por lo que un usuario nuevo debe recurrir a la prueba y error o memorizar la posición de cada función en lugar de reconocerla directamente.
 
-<img src="">
+<img src="https://github.com/user-attachments/assets/c510d2ff-84ed-4424-989b-48e00ed1a0c0">
 
 Recomendación:
 
@@ -10278,7 +10276,7 @@ Problema:
 
 El ícono "+" en la pantalla "Cultivation Areas" es el patrón universal para "crear/agregar un nuevo elemento". Al presionarlo, sin embargo, se abre un modal ("Añadir nueva zona") que explica que la creación de zonas está gestionada exclusivamente por el equipo de soporte, y ofrece únicamente un número de teléfono y un botón "Entendido". El usuario no puede completar la acción que el ícono prometía dentro de la misma app, lo que genera una expectativa incumplida.
 
-<img src="">
+<img src="https://github.com/user-attachments/assets/3b4879c7-cb9c-4280-a8ac-aaa53de1dd2b">
 
 Recomendación:
 
@@ -10296,7 +10294,7 @@ Problema:
 
 Los campos "Start" y "Finish" del formulario de generación de reportes muestran el placeholder genérico "--/--/--", sin indicar si el formato esperado es DD/MM/AAAA (convención peruana) o MM/DD/AAAA. Aunque es probable que un selector de calendario evite el problema en la mayoría de los casos, el placeholder por sí solo no comunica el formato si el usuario llegara a escribir la fecha manualmente.
 
-<img src="">
+<img src="https://github.com/user-attachments/assets/162b9984-9a25-49b4-a68e-d7ab7cd677a1">
 
 Recomendación:
 
@@ -10586,3 +10584,10 @@ Celevi. 2026. Execution evidence for sprint review 2. [https://upcedupe-my.share
 Celevi. 2026. Execution evidence for sprint review 3. [https://upcedupe-my.sharepoint.com/:v:/g/personal/u202312287_upc_edu_pe/IQBqqDaRVN_WTI7RI66FiEDMAVw31SzkDuJa26C5sPOLgR0?nav=eyJyZWZlcnJhbEluZm8iOnsicmVmZXJyYWxBcHAiOiJPbmVEcml2ZUZvckJ1c2luZXNzIiwicmVmZXJyYWxBcHBQbGF0Zm9ybSI6IldlYiIsInJlZmVycmFsTW9kZSI6InZpZXciLCJyZWZlcnJhbFZpZXciOiJNeUZpbGVzTGlua0NvcHkifX0&e=xeDbE9](https://upcedupe-my.sharepoint.com/:v:/g/personal/u202312287_upc_edu_pe/IQBqqDaRVN_WTI7RI66FiEDMAVw31SzkDuJa26C5sPOLgR0?nav=eyJyZWZlcnJhbEluZm8iOnsicmVmZXJyYWxBcHAiOiJPbmVEcml2ZUZvckJ1c2luZXNzIiwicmVmZXJyYWxBcHBQbGF0Zm9ybSI6IldlYiIsInJlZmVycmFsTW9kZSI6InZpZXciLCJyZWZlcnJhbFZpZXciOiJNeUZpbGVzTGlua0NvcHkifX0&e=xeDbE9)
 
 Celevi. 2026. About-the-product. [https://upcedupe-my.sharepoint.com/:v:/g/personal/u202312287_upc_edu_pe/IQB_rO1R__CXRrOb6dEIM27bASKboXi3LUS6jOZnjuvsrRo?nav=eyJyZWZlcnJhbEluZm8iOnsicmVmZXJyYWxBcHAiOiJPbmVEcml2ZUZvckJ1c2luZXNzIiwicmVmZXJyYWxBcHBQbGF0Zm9ybSI6IldlYiIsInJlZmVycmFsTW9kZSI6InZpZXciLCJyZWZlcnJhbFZpZXciOiJNeUZpbGVzTGlua0NvcHkifX0&e=1btASA](https://upcedupe-my.sharepoint.com/:v:/g/personal/u202312287_upc_edu_pe/IQB_rO1R__CXRrOb6dEIM27bASKboXi3LUS6jOZnjuvsrRo?nav=eyJyZWZlcnJhbEluZm8iOnsicmVmZXJyYWxBcHAiOiJPbmVEcml2ZUZvckJ1c2luZXNzIiwicmVmZXJyYWxBcHBQbGF0Zm9ybSI6IldlYiIsInJlZmVycmFsTW9kZSI6InZpZXciLCJyZWZlcnJhbFZpZXciOiJNeUZpbGVzTGlua0NvcHkifX0&e=1btASA)
+
+Celevi. 2026. Landing Page. [https://celevigrotix.github.io/Grotix_LandingPage/](https://celevigrotix.github.io/Grotix_LandingPage/)
+
+
+
+
+
