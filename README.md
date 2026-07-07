@@ -42,6 +42,76 @@
 
 <div style="page-break-after: always;"></div>
 
+---
+
+
+## Project Report Collaboration Insights
+
+Para la elaboración del presente informe, el equipo trabajó de manera colaborativa y centralizada en el repositorio Grotix_IoT_Report, alojado en la organización oficial de GitHub del equipo. Durante este proceso, cada integrante contribuyó activamente en la redacción, estructuración y revisión de los capítulos correspondientes, asegurando que el documento refleje con precisión el progreso técnico, arquitectónico y estratégico del proyecto. La gestión mediante este repositorio permitió mantener un control de versiones riguroso y una integración fluida de los aportes de todos los miembros, cuyas evidencias de participación se detallan en las métricas y analíticos de colaboración presentados a continuación.
+
+URL del repositorio del Project Report en GitHub: https://github.com/CeleviGrotix/Grotix_IoT_Report
+
+**AV1**
+
+Insights:
+
+<p align="center">
+  <img src="https://imgur.com/VmVOI6K.jpg" alt="Insights Report">
+</p>
+
+Commits
+
+<p align="center">
+  <img src="https://imgur.com/3pNjury.jpg" alt="Commits Report">
+</p>
+
+**TB1**
+
+Insights:
+
+<p align="center">
+  <img src="https://imgur.com/afcOgZW.png" alt="Commits Report">
+</p>
+
+
+Commits
+
+<p align="center">
+  <img src="https://imgur.com/jjjDfWc.png" alt="Commits Report">
+</p>
+
+**AV2**
+
+Insights:
+
+<p align="center">
+  <img src="https://imgur.com/l1U0JV6.png" alt="Commits Report">
+</p>
+
+
+Commits
+
+<p align="center">
+  <img src="https://imgur.com/SLGwhdf.png" alt="Commits Report">
+</p>
+
+**TB2**
+
+Insights:
+
+<p align="center">
+  <img src="https://imgur.com/E072LUs.png" alt="Commits Report">
+</p>
+
+
+Commits
+
+<p align="center">
+  <img src="https://imgur.com/TaWS29a.png" alt="Commits Report">
+</p>
+
+---
+
 ## Contenido
 
 - [Contenido](#contenido)
