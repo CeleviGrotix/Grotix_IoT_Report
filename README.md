@@ -8080,6 +8080,73 @@ La implementación de la plataforma Grotix se ha desarrollado bajo un marco de t
 
 A continuación, se presentan los indicadores de actividad de los repositorios oficiales en GitHub, los cuales reflejan la dinámica de trabajo, la frecuencia de integraciones y el flujo de colaboración del equipo durante el presente ciclo de desarrollo.
 
+**Github (Grotix_Crop_Analysis)**
+
+<img src="https://imgur.com/nAJikc1.png">
+
+**Github (Grotix_Mobile)**
+
+<img src="https://imgur.com/MzO5D9l.png">
+
+**Github (Web Services)**
+
+<img src="https://imgur.com/r9Jc2Hk.png">
+
+**Github (Web)**
+
+<img src="https://imgur.com/MmCfUuc.png">
+
+La distribución estratégica de la carga de trabajo en este tercer sprint se ve reflejada claramente en las métricas de contribución del equipo, consolidando una participación activa y coordinada en todo el ecosistema de repositorios. Durante el Sprint 3, los mayores esfuerzos de sincronización se concentraron en el repositorio de Web Services, donde el equipo de Backend no solo migró endpoints y optimizó el consumo del API Gateway en la nube, sino que desplegó una robusta suite de pruebas automatizadas que abarcó desde validaciones unitarias en los agregados de dominio hasta integraciones completas para cada Bounded Context.
+
+Paralelamente, los repositorios de Grotix_Mobile, Grotix_Web y Grotix_Crop_Analysis continuaron su evolución mediante células de trabajo especializadas; en el frente móvil se integró el comportamiento reactivo de la telemetría en tiempo real y los activadores manuales de riego, mientras que el módulo de análisis refinó los algoritmos predictivos del estado del suelo.  
+
+**Frecuencia de Código y Ritmo de Desarrollo**
+
+El ritmo de implementación se mantuvo constante y altamente coordinado, desplazando el enfoque del desarrollo aislado hacia la integración cloud en Azure, la maduración de la arquitectura de microservicios y la sincronización de datos en tiempo real entre las plataformas web, móviles y analíticas.
+
+**Github Pulse**
+
+**Grotix_Crop_Analysis** 
+
+<img src="https://imgur.com/6efSPN2.png">
+
+**App Web**
+
+<img src="https://imgur.com/xljxPbt.png">
+
+**Grotix_Mobile**
+
+<img src="https://imgur.com/OeSn1cO.png">
+
+**Web Services**
+
+<img src="https://imgur.com/IeKZMUi.png">
+
+**Participación Transversal por Producto**
+
+|Producto|Participantes|Naturaleza de la Colaboración|
+|---|---|---|
+|Web Services (Backend & Cloud)|Tomio Nakamurakare|Despliegue de microservicios en Azure, configuración y orquestación del API Gateway, migración de bases de datos relacionales y optimización de endpoints de búsqueda y perfiles.|
+|App Web (Frontend Vue)|Marcelo Binda, Cassius Martel|Integración con el Gateway cloud, rediseño premium de la UI del módulo de dispositivos, manejo de estados globales con Pinia, corrección de persistencia de perfiles y normalización de zonas horarias locales.|
+|Grotix_Mobile (App Móvil)|Ainhoa Castillo|Maquetación y desarrollo de componentes responsivos nativos, diseño de interfaces táctiles para el monitoreo en campo y consumo inicial de servicios de telemetría.|
+|Grotix_Crop_Analysis (IA & Data)|Marcelo Binda, Cassius Martel|Arquitectura de la capa de procesamiento analítico, estructuración de modelos de datos agrícolas y diseño preliminar del dashboard de analítica predictiva de cultivos.|
+
+**Commit History (Grotix_Crop_Analysis)**
+
+<img src="https://imgur.com/qpHmP2b.png">
+
+**Commit History (App Movil)**
+
+<img src="https://imgur.com/Rc7goCk.png">
+
+**Commit History (Web Services)**
+
+<img src="https://imgur.com/XbyhoN9.png">
+
+**Commit History (App Web)**
+
+<img src="https://imgur.com/MxbZsdA.png">
+
 ### 6.2.3. Sprint 3
 
 #### 6.2.3.1. Sprint Planning 3
@@ -9769,7 +9836,111 @@ Authorization: Bearer {token}
 
 #### 6.2.3.8. Software Deployment Evidence for Sprint Review
 
+Preparación del repositorio y configuración de dependencias para el despliegue del servicio de Inteligencia Artificial. Se generó y subió un commit a la rama principal (main) integrando el archivo requirements.txt en el repositorio Grotix_Crop_Analysis. Esta acción es un requisito indispensable para que el entorno de producción instale correctamente las librerías necesarias de Python para el procesamiento de imágenes.
+
+Configuración de un nuevo Web Service en la plataforma en la nube Render. Se vinculó el repositorio de GitHub correspondiente al motor de IA y se definió el entorno de ejecución en Python 3 para alojar el microservicio grotix-ai-api. Esta configuración permite automatizar el proceso de despliegue continuo (CI/CD) cada vez que se detectan cambios en la rama principal. 
+
+<img src="https://imgur.com/tKwDNra.png">
+
+Despliegue exitoso y ejecución del servidor en producción. En la consola de eventos de Render se visualiza la compilación del proyecto y el inicio del servidor Uvicorn. Las trazas confirman el estado "Your service is live", indicando que la instancia fue desplegada correctamente y quedó disponible de forma pública. 
+
+<img src="https://imgur.com/OhiWQOW.png">
+
+Obtención del endpoint productivo del microservicio de Inteligencia Artificial. Al finalizar el aprovisionamiento en Render, se generó la URL pública y segura, la cual servirá como punto de acceso principal para recibir las imágenes desde los dispositivos IoT y la aplicación móvil para su respectivo análisis. 
+
+Actualización de las variables de entorno dentro del proyecto móvil en Android Studio. En esta etapa se reemplazó la dirección de desarrollo local por la nueva URL pública del servicio de IA alojado en Render. Esto permite que la aplicación desarrollada en Flutter establezca una comunicación HTTP directa y envíe las peticiones de análisis visual hacia el servidor en producción. 
+
+<img src="https://imgur.com/WgHZSUm.png">
+
+Para este último sprint, terminamos de ajustar la aplicación web y la aplicación móvil de Grotix, por lo cual tendremos que desplegar las nuevas versiones.
+
+<img src="https://imgur.com/fyHciIG.png">
+
+Nos aseguramos de tener los últimos cambios.
+
+<img src="https://imgur.com/IjXarPs.png">
+
+Creamos la build para el proyecto.
+
+<img src="https://imgur.com/6SwjGfF.png">
+
+Desplegamos la última versión con la build generada.
+
+<img src="https://imgur.com/YcPtpuE.png">
+
+Pasando con la aplicación móvil, primero actualizamos la versión de despliegue en pubspec.yaml.
+
+<img src="https://imgur.com/xxfH5YH.png">
+<img src="https://imgur.com/h8Tsy1Y.png">
+
+Subimos los cambios en la rama main, en la cual ya tenemos automatizado el proceso de despliegue.
+
+<img src="https://imgur.com/JDkQFsd.png">
+
+Esperamos que se genere el apk.
+
+<img src="https://imgur.com/JhxGqrO.png">
+
+Terminado el proceso, está disponible el enlace de descarga
+
 #### 6.2.3.9. Team Collaboration Insights during Sprint
+
+**Analíticos de Colaboración y Contribuciones**
+
+A continuación, se presentan los indicadores de actividad de los repositorios oficiales en GitHub de Grotix correspondientes al último sprint, los cuales resumen la actividad y colaboración del equipo a lo largo de todo el ciclo de vida del proyecto. 
+
+**Github (Grotix_Mobile)**
+
+<img src="https://imgur.com/hPV0Hqx.png">
+
+**Github (Web Services)**
+
+<img src="https://imgur.com/nJyyg1M.png">
+
+**Github (Web)**
+
+<img src="https://imgur.com/AWVWH0C.png">
+
+La distribución de la carga de trabajo durante este cuarto y último sprint se concentró principalmente en los repositorios de Grotix_Mobile, Grotix_Web y Grotix_Web_Services, donde el equipo culminó el desarrollo e integración de las funcionalidades principales del sistema. En esta etapa se completó la implementación de la visualización de telemetría en tiempo real desde la aplicación móvil, así como la activación remota del sistema de riego, consolidando ambas capacidades como funcionalidades core de la solución.   
+
+**Frecuencia de Código y Ritmo de Desarrollo**
+
+El ritmo de implementación se mantuvo constante y altamente coordinado, desplazando el enfoque del desarrollo aislado hacia la integración cloud en Azure, la maduración de la arquitectura de microservicios y la sincronización de datos en tiempo real entre las plataformas web y móvil.
+
+**Github Pulse**
+
+**App Web**
+
+<img src="https://imgur.com/BMIYvW5.png">
+
+**Grotix_Mobile**
+
+<img src="https://imgur.com/ShvJCDc.png">
+
+**Web Services**
+
+<img src="https://imgur.com/2pEzuB9.png">
+
+**Participación Transversal por Producto**
+
+|Producto|Participantes|Naturaleza de la Colaboración|
+|---|---|---|
+|**Web Services** _(Backend & Cloud)_|Tomio Nakamurakare, Marcelo Binda, Cassius Martel, Ainhoa Castillo|Despliegue final de los microservicios de acuerdo con las necesidades de configuración del sistema de riego, asegurando la integración de los servicios requeridos para la operación de la solución. |
+|**App Web** _(Frontend Vue)_|Tomio Nakamurakare, Marcelo Binda, Cassius Martel, Ainhoa Castillo|Mejora integral del diseño de la interfaz de usuario y redespliegue final de la aplicación, consolidando la experiencia de uso y la versión definitiva del sistema. |
+|**Grotix_Mobile** _(App Móvil)_|Tomio Nakamurakare, Marcelo Binda, Cassius Martel, Ainhoa Castillo|Desarrollo final de la aplicación web, incluyendo la implementación de la visualización de telemetría en tiempo real, el control de riego remoto y el sistema de notificaciones. |
+
+**Commit History (App Movil)**
+
+<img src="https://imgur.com/itwntaw.png">
+
+**Commit History (Web Services)**
+
+<img src="https://imgur.com/HjgZ2L0.png">
+
+**Commit History (App Web)**
+
+<img src="https://imgur.com/U3pDKXU.png">
+
 
 ## 6.3. Validation Interviews
 
@@ -10218,6 +10389,25 @@ Con la finalidad de garantizar la sostenibilidad técnica, la escalabilidad y la
 
 * Procesamiento Analítico en el Borde (Edge Analytics) y Filtrado de Ruido: Actualmente, los sensores envían la lectura cruda al backend. Para futuras iteraciones, se recomienda trasladar algoritmos ligeros de procesamiento de señales directamente al firmware del ESP32. Implementar filtros matemáticos (como Promedios Móviles o un Filtro de Kalman básico) en C++ mitigará los falsos positivos derivados de lecturas anómalas (picos de humedad erróneos o fallos del sensor DHT22), asegurando que los *payloads* de telemetría que viajan a la nube sean altamente precisos, ahorrando ancho de banda y minimizando el procesamiento en el servidor.
 
+# Video About-The-Team
+
+En el video About-the-Team, los integrantes del equipo exponen su experiencia durante la colaboración en el desarrollo de Grotix, basándose en los criterios del Student Outcome del curso de Desarrollo de Soluciones IoT.
+
+<img src="https://imgur.com/pvYNQri.png">
+
+|Sección|Timestamp|
+|-----|-----|
+|Intro|0:00|
+|About-the-Team Marcelo Binda|0:15|
+|About-the-Team Ainhoa Castillo|2:30|
+|About-the-Team Cassius Martel|4:00|
+|About-the-Team Tomio Nakamurakare|5:25|
+
+Link en SharePoint: [About-The-Team_IoT_Celevi.mp4](https://upcedupe-my.sharepoint.com/:v:/g/personal/u202312504_upc_edu_pe/IQD3ekRoodYpTpqYI_yI9ZtnATnUn02_GhqpdzNBrL3Uyg4?nav=eyJyZWZlcnJhbEluZm8iOnsicmVmZXJyYWxBcHAiOiJTdHJlYW1XZWJBcHAiLCJyZWZlcnJhbFZpZXciOiJTaGFyZURpYWxvZy1MaW5rIiwicmVmZXJyYWxBcHBQbGF0Zm9ybSI6IldlYiIsInJlZmVycmFsTW9kZSI6InZpZXcifX0%3D&e=N78CH8) 
+
+Link en YouTube: https://youtu.be/PAaCGQEuqwk 
+
+
 # Bibliografía
 
 Agencia Andina. (2011, 11 de abril). ANA: 80% del agua destinada a uso agrícola se pierde por deficiencias en riego. [https://andina.pe/agencia/noticia-ana-80-del-agua-destinada-a-uso-agricola-se-pierde-deficiencias-riego-343493.aspx](https://andina.pe/agencia/noticia-ana-80-del-agua-destinada-a-uso-agricola-se-pierde-deficiencias-riego-343493.aspx)
@@ -10389,8 +10579,6 @@ Celevi. 2026. [Telemetry service. grotixtelemetry-amakfshkb4ahbsbm.chilecentral-
 Celevi. 2026. Web Application. [https://grotixweb.web.app/](https://grotixweb.web.app/)
 
 Celevi. 2026. Execution evidence for sprint review 1. [https://upcedupe-my.sharepoint.com/:v:/g/personal/u20201f855_upc_edu_pe/IQAX8Qlo6yS-TYuInq-CellWAQNakaunluneG2IIEWIgkZE?nav=eyJyZWZlcnJhbEluZm8iOnsicmVmZXJyYWxBcHAiOiJPbmVEcml2ZUZvckJ1c2luZXNzIiwicmVmZXJyYWxBcHBQbGF0Zm9ybSI6IldlYiIsInJlZmVycmFsTW9kZSI6InZpZXciLCJyZWZlcnJhbFZpZXciOiJNeUZpbGVzTGlua0NvcHkifX0&e=NXcnhZ](https://upcedupe-my.sharepoint.com/:v:/g/personal/u20201f855_upc_edu_pe/IQAX8Qlo6yS-TYuInq-CellWAQNakaunluneG2IIEWIgkZE?nav=eyJyZWZlcnJhbEluZm8iOnsicmVmZXJyYWxBcHAiOiJPbmVEcml2ZUZvckJ1c2luZXNzIiwicmVmZXJyYWxBcHBQbGF0Zm9ybSI6IldlYiIsInJlZmVycmFsTW9kZSI6InZpZXciLCJyZWZlcnJhbFZpZXciOiJNeUZpbGVzTGlua0NvcHkifX0&e=NXcnhZ)
-
-
 
 Celevi. 2026. Execution evidence for sprint review 2. [https://upcedupe-my.sharepoint.com/personal/u202311157_upc_edu_pe/_layouts/15/stream.aspx?id=%2Fpersonal%2Fu202311157%5Fupc%5Fedu%5Fpe%2FDocuments%2FExecutionEvidenceAppWebSP2%2Emp4&nav=eyJyZWZlcnJhbEluZm8iOnsicmVmZXJyYWxBcHAiOiJTdHJlYW1XZWJBcHAiLCJyZWZlcnJhbFZpZXciOiJTaGFyZURpYWxvZy1MaW5rIiwicmVmZXJyYWxBcHBQbGF0Zm9ybSI6IldlYiIsInJlZmVycmFsTW9kZSI6InZpZXcifX0&ga=1&referrer=StreamWebApp%2EWeb&referrerScenario=AddressBarCopied%2Eview%2E7e736a7c%2D5e8a%2D4772%2Db375%2Dcddccb03b13d](https://upcedupe-my.sharepoint.com/personal/u202311157_upc_edu_pe/_layouts/15/stream.aspx?id=%2Fpersonal%2Fu202311157%5Fupc%5Fedu%5Fpe%2FDocuments%2FExecutionEvidenceAppWebSP2%2Emp4&nav=eyJyZWZlcnJhbEluZm8iOnsicmVmZXJyYWxBcHAiOiJTdHJlYW1XZWJBcHAiLCJyZWZlcnJhbFZpZXciOiJTaGFyZURpYWxvZy1MaW5rIiwicmVmZXJyYWxBcHBQbGF0Zm9ybSI6IldlYiIsInJlZmVycmFsTW9kZSI6InZpZXcifX0&ga=1&referrer=StreamWebApp%2EWeb&referrerScenario=AddressBarCopied%2Eview%2E7e736a7c%2D5e8a%2D4772%2Db375%2Dcddccb03b13d)
 
